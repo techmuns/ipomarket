@@ -1,76 +1,72 @@
 # Phase 0 — Source Probe Report
 
-Generated: 2026-05-20T19:11:34.289Z
+Generated: 2026-05-20T19:40:05.788Z
 
 ## Status Summary
 
-- GREEN: 7
-- YELLOW: 8
-- RED: 14
+- GREEN: 10
+- YELLOW: 11
+- RED: 8
 
 | Probe | Source | Status | Code | Type | Latency (ms) | Recommendation |
 |---|---|---|---|---|---|---|
-| P-01 | (uncaught error) | RED | - | ERROR | 0 | Debug probe harness error. |
-| P-02 | NSE — Upcoming IPOs | RED | 200 | JSON | 342 | Pair with SEBI Processing Status (P-08b). |
-| P-03 | NSE — Past/Recent IPOs | RED | 200 | JSON | 96 | Fall back to NSE historical (P-15). |
-| P-04 | NSE — Live Subscription | YELLOW | - | EMPTY | 47 | No currently open IPO discovered; re-run during an active issue window. Endpoint not validated this run. |
-| P-05 | NSE Emerge — SME IPOs | RED | 0 | ERROR | 347 | Fall back to BSE SME (P-06b). |
-| P-08 | SEBI — Public Issues Filings | GREEN | 200 | HTML | 3700 | Use as primary for Pipeline tab + DRHP master. |
-| P-08b | SEBI — Processing Status | YELLOW | 200 | EMPTY | 411 | Endpoint reachable; show "no observations today" in Pipeline tab when empty. |
-| P-09 | SEBI — DRHP PDF Download | YELLOW | - | EMPTY | 0 | P-08 produced no PDF URLs; re-run after P-08 GREEN. Fallback = P-10 exchange-side DRHP. |
-| P-10 | NSE/BSE — DRHP Archive | RED | 200 | HTML | 11061 | Skip if SEBI (P-08) is GREEN. |
-| P-15 | BSE — Historical OHLC (fallback) | GREEN | 200 | JSON | 5409 | NSE historical still blocked; use BSE historical as primary (official fallback). |
-| P-15b | NSE — Equity Quote | GREEN | 200 | JSON | 518 | Use as primary for current price. |
-| P-16 | Ticker mapping (NSE list symbol field) | RED | 200 | JSON | 52 | Maintain a manual override file for IPOs whose symbol drifts post-listing. |
-| P-06 | BSE — Mainboard Public Issues | RED | 200 | HTML | 710 | Skip; NSE primary covers this. |
-| P-06b | BSE SME — Public Issues | RED | 0 | ERROR | 10090 | Skip if NSE Emerge is GREEN. |
-| P-07 | BSE — Subscription / Cumulative Bid Details | RED | 200 | HTML | 457 | Rely on NSE only (P-04). |
-| P-11 | Registrar resolution (from NSE list) | RED | 200 | JSON | 77 | Fall back to per-issue page scrape or manual seed. |
-| P-12 | MUFG Intime (Link Intime) — landing | GREEN | 200 | HTML | 903 | Store URL as link-out; do not scrape per-PAN. |
-| P-13 | KFintech — landing | GREEN | 200 | HTML | 198 | Store URL as link-out only. |
-| P-14 | Bigshare — landing | GREEN | 200 | HTML | 5113 | Store URL as link-out only. |
-| P-14b | Maashitla — landing | GREEN | 200 | HTML | 1307 | Store URL as link-out only. |
-| P-17 | RHP PDF parsing — sample | YELLOW | 200 | EMPTY | 2065 | PDF discovery selector may have drifted. |
-| P-18 | Anchor circular PDF parsing — sample | YELLOW | 200 | EMPTY | 250 | PDF discovery selector may have drifted. |
-| P-19 | GMP — IPOWatch | YELLOW | 200 | HTML | 2030 | Include in Phase 6 GMP averager. |
-| P-20 | GMP — Chittorgarh | RED | 200 | HTML | 746 | Skip; Phase 6 stays off if all GMP probes fail. |
-| P-21 | GMP — IPO Central | RED | 403 | BLOCKED | 116 | Skip. |
-| P-22 | GMP — InvestorGain | YELLOW | 200 | HTML | 147 | Include in Phase 6 GMP averager. |
-| P-23a | Broker IPO page — Zerodha (reference only) | RED | 200 | ERROR | 5137 | Blocked from GH Actions runner. Use screenshots/PDF exports as IA reference. |
-| P-23b | Broker IPO page — Upstox (reference only) | RED | 200 | ERROR | 5134 | Blocked from GH Actions runner. Use screenshots/PDF exports as IA reference. |
-| P-24 | Sector / industry classification (NSE + BSE) | YELLOW | 200 | JSON | 1834 | Sector reachable for listed equities via NSE equity quote, but not exposed per-IPO before listing. Use the equity-quote sector once an IPO lists; create a small manual sector-map.json for pre-listing IPOs. |
+| P-01 | NSE — Current/Open IPOs | YELLOW | 200 | JSON | 381 | Source reachable but 0 rows in current snapshot. category=ipo appears to be mainboard-only; if today's only IPOs are SME, P-05 should satisfy the IPO-list-source gate. |
+| P-02 | NSE — Upcoming IPOs | YELLOW | 200 | JSON | 383 | Source reachable but 0 upcoming rows in current snapshot. category=ipo is mainboard-only; SME pipeline lives in P-05. |
+| P-03 | NSE — Past/Recent IPOs | YELLOW | 200 | JSON | 31 | Source reachable but 0 rows in current snapshot. category=ipo is mainboard-only; recently-listed SMEs require P-05. |
+| P-04 | NSE — Live Subscription | YELLOW | - | EMPTY | 31 | No currently open IPO discovered; re-run during an active issue window. Endpoint not validated this run. |
+| P-05 | NSE Emerge — SME IPOs | YELLOW | 200 | JSON | 1157 | Source reachable; 0 SME rows in current snapshot. |
+| P-08 | SEBI — Public Issues Filings | GREEN | 200 | HTML | 2712 | Use as primary for Pipeline tab + DRHP master. |
+| P-08b | SEBI — Processing Status | YELLOW | 200 | EMPTY | 436 | Endpoint reachable; show "no observations today" in Pipeline tab when empty. |
+| P-09 | SEBI — DRHP PDF Download | GREEN | 200 | PDF | 5018 | PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17). |
+| P-10 | NSE/BSE — DRHP Archive | RED | 200 | HTML | 11068 | Skip if SEBI (P-08) is GREEN. |
+| P-15 | BSE — Historical OHLC (fallback) | GREEN | 200 | JSON | 4671 | NSE historical still blocked; use BSE historical as primary (official fallback). |
+| P-15b | NSE — Equity Quote | GREEN | 200 | JSON | 255 | Use as primary for current price. |
+| P-16 | Ticker mapping (NSE list symbol field) | RED | 200 | JSON | 31 | Maintain a manual override file for IPOs whose symbol drifts post-listing. |
+| P-06 | BSE — Mainboard Public Issues | RED | 200 | HTML | 819 | Skip; NSE primary covers this. |
+| P-06b | BSE SME — Public Issues | RED | 0 | ERROR | 10486 | Skip if NSE Emerge is GREEN. |
+| P-07 | BSE — Subscription / Cumulative Bid Details | RED | 200 | HTML | 828 | Rely on NSE only (P-04). |
+| P-11 | Registrar resolution (from NSE list) | RED | 200 | JSON | 31 | Fall back to per-issue page scrape or manual seed. |
+| P-12 | MUFG Intime (Link Intime) — landing | GREEN | 200 | HTML | 1806 | Store URL as link-out; do not scrape per-PAN. |
+| P-13 | KFintech — landing | GREEN | 200 | HTML | 207 | Store URL as link-out only. |
+| P-14 | Bigshare — landing | GREEN | 200 | HTML | 5040 | Store URL as link-out only. |
+| P-14b | Maashitla — landing | GREEN | 200 | HTML | 1353 | Store URL as link-out only. |
+| P-17 | RHP PDF parsing — sample | YELLOW | 200 | EMPTY | 1397 | PDF discovery selector may have drifted. |
+| P-18 | Anchor circular PDF parsing — sample | YELLOW | 200 | EMPTY | 242 | PDF discovery selector may have drifted. |
+| P-19 | GMP — IPOWatch | YELLOW | 200 | HTML | 1952 | Include in Phase 6 GMP averager. |
+| P-20 | GMP — Chittorgarh | RED | 200 | HTML | 1565 | Skip; Phase 6 stays off if all GMP probes fail. |
+| P-21 | GMP — IPO Central | RED | 403 | BLOCKED | 77 | Skip. |
+| P-22 | GMP — InvestorGain | YELLOW | 200 | HTML | 303 | Include in Phase 6 GMP averager. |
+| P-23a | Broker IPO page — Zerodha (reference only) | GREEN | 200 | HTML | 5046 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
+| P-23b | Broker IPO page — Upstox (reference only) | GREEN | 200 | HTML | 4853 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
+| P-24 | Sector / industry classification (NSE + BSE) | YELLOW | 200 | JSON | 1453 | Sector reachable for listed equities via NSE equity quote, but not exposed per-IPO before listing. Use the equity-quote sector once an IPO lists; create a small manual sector-map.json for pre-listing IPOs. |
 
 ## Per-probe detail
 
-### P-01 — (uncaught error) — RED
+### P-01 — NSE — Current/Open IPOs — YELLOW
 
-- URL: ``
-- Method: 
-- Headers/cookies required: (none)
-- Status code: (no response)
-- Response type: ERROR
+- URL: `https://www.nseindia.com/api/all-upcoming-issues?category=ipo`
+- Method: GET (after cookie warm-up)
+- Headers/cookies required: User-Agent, Referer, X-Requested-With, warmed cookies
+- Status code: 200
+- Response type: JSON
 - Fields found: (none)
-- Fields missing: (none)
-- Parsing difficulty: Hard
-- Anti-bot risk: Low
+- Fields missing: symbol, companyName, issueStartDate, issueEndDate, issuePrice, issueSize, status
+- Parsing difficulty: Easy
+- Anti-bot risk: Medium
 - Legal/ToS risk: Low
-- Update frequency: 
-- Recommended action: Debug probe harness error.
-- Fallback: none
-- Latency: 0 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Update frequency: Updated when an IPO opens/closes
+- Recommended action: Source reachable but 0 rows in current snapshot. category=ipo appears to be mainboard-only; if today's only IPOs are SME, P-05 should satisfy the IPO-list-source gate.
+- Fallback: P-05 (SME), P-06 (BSE)
+- Latency: 381 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> Uncaught error: Cannot read properties of undefined (reading 'length')
+> source reachable but no rows in current snapshot.
 
 ```
-TypeError: Cannot read properties of undefined (reading 'length')
-    at truncate (/home/runner/work/ipomarket/ipomarket/scripts/probes/lib/http.ts:189:9)
-    at Module.probe (/home/runner/work/ipomarket/ipomarket/scripts/probes/P-01-nse-current.ts:85:9)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async main (/home/runner/work/ipomarket/ipomarket/scripts/probes/run.ts:105:22)
+[]
 ```
 
-### P-02 — NSE — Upcoming IPOs — RED
+### P-02 — NSE — Upcoming IPOs — YELLOW
 
 - URL: `https://www.nseindia.com/api/all-upcoming-issues?category=ipo`
 - Method: GET (after cookie warm-up)
@@ -83,18 +79,18 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Anti-bot risk: Medium
 - Legal/ToS risk: Low
 - Update frequency: Updated when issues are announced
-- Recommended action: Pair with SEBI Processing Status (P-08b).
-- Fallback: P-08b
-- Latency: 342 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Recommended action: Source reachable but 0 upcoming rows in current snapshot. category=ipo is mainboard-only; SME pipeline lives in P-05.
+- Fallback: P-05 (SME), P-08b
+- Latency: 383 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> Forthcoming rows: 0
+> source reachable but no rows in current snapshot.
 
 ```
 []
 ```
 
-### P-03 — NSE — Past/Recent IPOs — RED
+### P-03 — NSE — Past/Recent IPOs — YELLOW
 
 - URL: `https://www.nseindia.com/api/all-upcoming-issues?category=ipo`
 - Method: GET (after cookie warm-up)
@@ -107,12 +103,12 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Anti-bot risk: Medium
 - Legal/ToS risk: Low
 - Update frequency: Updated on listing
-- Recommended action: Fall back to NSE historical (P-15).
-- Fallback: P-15
-- Latency: 96 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Recommended action: Source reachable but 0 rows in current snapshot. category=ipo is mainboard-only; recently-listed SMEs require P-05.
+- Fallback: P-05 (SME), P-15
+- Latency: 31 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> Past/closed rows: 0
+> source reachable but no rows in current snapshot.
 
 ```
 []
@@ -133,57 +129,88 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Updates every ~10 minutes during bidding window
 - Recommended action: No currently open IPO discovered; re-run during an active issue window. Endpoint not validated this run.
 - Fallback: P-07
-- Latency: 47 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 31 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > Active candidate symbol: (none currently open)
 
-### P-05 — NSE Emerge — SME IPOs — RED
+### P-05 — NSE Emerge — SME IPOs — YELLOW
 
-- URL: `https://www1.nseindia.com/emerge/live_market/content/live_watch/ipo/sme_ipo.htm`
-- Method: GET (after cookie warm-up)
-- Headers/cookies required: User-Agent, Referer, warmed cookies
-- Status code: 0
-- Response type: ERROR
+- URL: `https://www.nseindia.com/api/all-upcoming-issues?category=sme`
+- Method: GET (after cookie warm-up) — multi-candidate
+- Headers/cookies required: User-Agent, Referer, warmed cookies, X-Requested-With (for JSON endpoints)
+- Status code: 200
+- Response type: JSON
 - Fields found: (none)
-- Fields missing: issue rows
+- Fields missing: (empty array)
 - Parsing difficulty: Medium
 - Anti-bot risk: Medium
 - Legal/ToS risk: Low
 - Update frequency: Daily
-- Recommended action: Fall back to BSE SME (P-06b).
+- Recommended action: Source reachable; 0 SME rows in current snapshot.
 - Fallback: P-06b
-- Latency: 347 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 1157 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> Network error: fetch failed
+> [nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed
+
+```
+{}
+```
 
 ### P-08 — SEBI — Public Issues Filings — GREEN
 
 - URL: `https://www.sebi.gov.in/filings/public-issues.html`
-- Method: GET → alt GET → Playwright/Chromium
+- Method: GET (static) → GET (alt) → GET (detail pages) → Playwright
 - Headers/cookies required: User-Agent, Referer, Chromium for JS render
 - Status code: 200
 - Response type: HTML
-- Fields found: rows
-- Fields missing: pdf urls
+- Fields found: pdf urls, rows
+- Fields missing: (none)
 - Parsing difficulty: Medium
 - Anti-bot risk: Low
 - Legal/ToS risk: Low
 - Update frequency: Updated whenever a DRHP/RHP/observation is filed
 - Recommended action: Use as primary for Pipeline tab + DRHP master.
 - Fallback: P-10
-- Latency: 3700 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 2712 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> static ok: tr=0, pdfs=0, bytes=6080 ; static ok: tr=26, pdfs=0, bytes=46183
+> [static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46183 (pdfs=19)
 
 ```
 {
-  "winning_attempt": "static-alt",
-  "rows": 26,
-  "pdf_count": 0,
-  "first_5_pdfs": []
+  "phases_summary": [
+    {
+      "phase": "static-primary",
+      "tr_count": 0,
+      "pdfs_found": 0
+    },
+    {
+      "phase": "static-alt",
+      "tr_count": 26,
+      "pdfs_found": 19
+    }
+  ],
+  "unique_pdf_count": 19,
+  "first_3_pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+      "link_text": "Incred Holdings Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
+      "link_text": "Online Instruments(India) Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
+      "link_text": "Jindal Supreme (India) Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    }
+  ],
+  "detail_urls_found": 31
 }
 ```
 
@@ -202,8 +229,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Updated on filing/observation status changes
 - Recommended action: Endpoint reachable; show "no observations today" in Pipeline tab when empty.
 - Fallback: P-08
-- Latency: 411 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 436 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > static ok: tbody_rows=2, bytes=25096
 
@@ -215,25 +242,37 @@ TypeError: Cannot read properties of undefined (reading 'length')
 }
 ```
 
-### P-09 — SEBI — DRHP PDF Download — YELLOW
+### P-09 — SEBI — DRHP PDF Download — GREEN
 
-- URL: `(no URL — depends on P-08)`
-- Method: GET (binary)
+- URL: `https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf`
+- Method: GET (binary) + pdf-parse.py (page-count)
 - Headers/cookies required: User-Agent, Referer
-- Status code: (no response)
-- Response type: EMPTY
-- Fields found: (none)
-- Fields missing: pdf url from P-08 discovery
+- Status code: 200
+- Response type: PDF
+- Fields found: %PDF magic, bytes, page_count
+- Fields missing: (none)
 - Parsing difficulty: Easy
 - Anti-bot risk: Low
 - Legal/ToS risk: Low
 - Update frequency: Immutable once published
-- Recommended action: P-08 produced no PDF URLs; re-run after P-08 GREEN. Fallback = P-10 exchange-side DRHP.
+- Recommended action: PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).
 - Fallback: P-10
-- Latency: 0 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 5018 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> No discovery file at sebi-publicissues-pdfs.json, or it had zero PDFs (P-08 must run first).
+> discovery=sebi-publicissues-pdfs.json; pdf_url=2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf; bytes=728221; page_count=13; pdf-parse=ok
+
+```
+{
+  "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+  "link_text": "Incred Holdings Limited - Draft Abridged Prospectus",
+  "bytes": 728221,
+  "sha256": "57ed9f25485f5467…",
+  "magic": "%PDF",
+  "page_count": 13,
+  "cover_text_first_200": "(Please scan this QR code to view\nthe UDRHP-I and the Draft\nAbridged Prospectus)\nINCRED HOLDINGS LIMITED\nCORPORATE IDENTITY NUMBER: U67190MH2011PLC211738\nREGISTERED AND CONTACT PERSON EMAIL TELEPHONE "
+}
+```
 
 ### P-10 — NSE/BSE — DRHP Archive — RED
 
@@ -250,8 +289,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Updated with DRHP filings
 - Recommended action: Skip if SEBI (P-08) is GREEN.
 - Fallback: P-08
-- Latency: 11061 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 11068 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > primary status=200; secondary status=0; rows=0; pdf-refs=0
 
@@ -281,20 +320,20 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: EOD daily
 - Recommended action: NSE historical still blocked; use BSE historical as primary (official fallback).
 - Fallback: P-15b (current quote only)
-- Latency: 5409 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 4671 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > [nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', "
 <!DOCTYPE "... is not valid JSON; body starts: 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="noindex, nofollow" name=…[truncated, total 22098 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', "
+<meta content="noindex, nofollow" name=…[truncated, total 22097 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', "
 <!DOCTYPE "... is not valid JSON; body starts: 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="noindex, nofollow" name=…[truncated, total 22098 chars] ; [bse:RELIANCE] BSE rows=26032, fields=1
+<meta content="noindex, nofollow" name=…[truncated, total 22097 chars] ; [bse:RELIANCE] BSE rows=26032, fields=1
 
 ```
 {
@@ -325,8 +364,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Near real-time during market hours
 - Recommended action: Use as primary for current price.
 - Fallback: none
-- Latency: 518 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 255 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > Top-level keys: info, metadata, securityInfo, sddDetails, currentMarketType, priceInfo, industryInfo, preOpenMarket
 
@@ -382,8 +421,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Matches NSE list
 - Recommended action: Maintain a manual override file for IPOs whose symbol drifts post-listing.
 - Fallback: none
-- Latency: 52 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 31 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > total=0, validSymbolPattern=0, rate=0%
 
@@ -406,8 +445,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Updated with public issue lifecycle
 - Recommended action: Skip; NSE primary covers this.
 - Fallback: P-01
-- Latency: 710 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 819 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > <tr> count: 0, total bytes: 12565
 
@@ -436,8 +475,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Updated with SME public issue lifecycle
 - Recommended action: Skip if NSE Emerge is GREEN.
 - Fallback: P-05
-- Latency: 10090 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 10486 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > Network error: fetch failed
 
@@ -456,8 +495,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Intra-day during bidding window
 - Recommended action: Rely on NSE only (P-04).
 - Fallback: P-04
-- Latency: 457 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 828 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > Bid-link markers found: 0, bytes: 12565
 
@@ -486,8 +525,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Matches NSE list cadence
 - Recommended action: Fall back to per-issue page scrape or manual seed.
 - Fallback: P-12
-- Latency: 77 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 31 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > Issues=0, registrars resolved by name match=0
 
@@ -510,8 +549,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Static landing; per-issue lookup is form-based (do not scrape)
 - Recommended action: Store URL as link-out; do not scrape per-PAN.
 - Fallback: none
-- Latency: 903 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 1806 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > primary=200, legacy=(skipped)
 
@@ -542,8 +581,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Static landing
 - Recommended action: Store URL as link-out only.
 - Fallback: none
-- Latency: 198 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 207 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > primary=200, secondary=(skipped)
 
@@ -566,8 +605,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Static landing
 - Recommended action: Store URL as link-out only.
 - Fallback: none
-- Latency: 5113 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 5040 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > status=200
 
@@ -599,8 +638,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Static landing
 - Recommended action: Store URL as link-out only.
 - Fallback: none
-- Latency: 1307 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 1353 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > status=200
 
@@ -637,8 +676,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Immutable
 - Recommended action: PDF discovery selector may have drifted.
 - Fallback: manual
-- Latency: 2065 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 1397 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > No PDF URL discovered.
 
@@ -657,8 +696,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Immutable
 - Recommended action: PDF discovery selector may have drifted.
 - Fallback: manual
-- Latency: 250 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 242 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > No PDF URL discovered.
 
@@ -677,8 +716,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Daily, updates intra-day
 - Recommended action: Include in Phase 6 GMP averager.
 - Fallback: P-20
-- Latency: 2030 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 1952 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > <tr> count: 290, bytes=812004
 
@@ -710,13 +749,13 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Daily
 - Recommended action: Skip; Phase 6 stays off if all GMP probes fail.
 - Fallback: P-21
-- Latency: 746 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 1565 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> <tr> count: 0, bytes=124593
+> <tr> count: 0, bytes=123924
 
 ```
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/fyers-logo-small.png"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/home.png"/><link …[truncated, total 124593 chars]
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/zerodha_logo_small.gif"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/angel-broking-logo-small.png"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/kotak_securities…[truncated, total 123924 chars]
 ```
 
 ### P-21 — GMP — IPO Central — RED
@@ -734,13 +773,13 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Daily
 - Recommended action: Skip.
 - Fallback: P-22
-- Latency: 116 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 77 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > Non-200. status=403
 
 ```
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-q5Zo1VZ2B4XFwlZlfRuFAl&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5598 chars]
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-SlMRJtePQBToN5U3yStQj8&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5598 chars]
 ```
 
 ### P-22 — GMP — InvestorGain — YELLOW
@@ -758,80 +797,156 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Daily, intra-day
 - Recommended action: Include in Phase 6 GMP averager.
 - Fallback: none
-- Latency: 147 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 303 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> <tr> count: 2, bytes=129044
+> <tr> count: 2, bytes=128180
 
 ```
-<!DOCTYPE html><html lang="en" class="inter_a869fe2d-module__Nl2jCG__variable"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/f7fa72dcdf4e461b.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/fe81322e39413244.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/635245f93e41a18e.css" data-precedence="next"/><link rel="stylesheet" href="/_next…[truncated, total 129044 chars]
+<!DOCTYPE html><html lang="en" class="inter_a869fe2d-module__Nl2jCG__variable"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/f7fa72dcdf4e461b.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/fe81322e39413244.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/635245f93e41a18e.css" data-precedence="next"/><link rel="stylesheet" href="/_next…[truncated, total 128180 chars]
 ```
 
-### P-23a — Broker IPO page — Zerodha (reference only) — RED
+### P-23a — Broker IPO page — Zerodha (reference only) — GREEN
 
 - URL: `https://zerodha.com/ipo/440359/nfp-sampoorna-foods/`
 - Method: Playwright/Chromium (headless, no stealth)
 - Headers/cookies required: User-Agent (desktop Chrome), Locale en-IN
 - Status code: 200
-- Response type: ERROR
-- Fields found: (none)
-- Fields missing: (navigation error)
+- Response type: HTML
+- Fields found: Open Date, Close Date, Issue Open, Issue Close, Lot Size, Issue Size, Registrar, Fresh Issue, Allotment Date, Listing Date, NII, Retail, Anchor, Revenue, GMP, Grey Market, Subscription
+- Fields missing: (none)
 - Parsing difficulty: Hard
 - Anti-bot risk: High
 - Legal/ToS risk: Medium
 - Update frequency: Per IPO lifecycle (open/close/listing)
-- Recommended action: Blocked from GH Actions runner. Use screenshots/PDF exports as IA reference.
+- Recommended action: Use as information-architecture benchmark only. Do NOT scrape for production data.
 - Fallback: Screenshots / PDF exports of the broker page provided by user
-- Latency: 5137 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 5046 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37836 | rendered_len=39220 | challenge=false | headings=0 | tables=0 | doc_links=0 | labels=0 | error=extractFields: page.evaluate: ReferenceError: __name is not defined
-    at eval (eval at evaluate (:302:30), <anonymous>:1:83)
-    at UtilityScript.evaluate (<anonymous>:304:16)
-    at UtilityScript.<anonymous> (<anonymous>:1:44)
+> final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37836 | rendered_len=39220 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17
 
 ```
 {
   "title": "NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size",
-  "headings_top10": [],
-  "tables_count": 0,
-  "labels_detected": [],
-  "doc_links_count": 0,
-  "first_doc_links": []
+  "headings_top10": [
+    "NFP Sampoorna Foods IPO",
+    "NFP Sampoorna Foods IPO details",
+    "Schedule of NFP Sampoorna Foods",
+    "About NFP Sampoorna Foods",
+    "Financials of NFP Sampoorna Foods",
+    "Issue size",
+    "Utilisation of proceeds",
+    "Strengths",
+    "Risks",
+    "Allotment Status for NFP Sampoorna Foods"
+  ],
+  "tables_count": 4,
+  "labels_detected": [
+    "Open Date",
+    "Close Date",
+    "Issue Open",
+    "Issue Close",
+    "Lot Size",
+    "Issue Size",
+    "Registrar",
+    "Fresh Issue",
+    "Allotment Date",
+    "Listing Date",
+    "NII",
+    "Retail",
+    "Anchor",
+    "Revenue",
+    "GMP",
+    "Grey Market",
+    "Subscription"
+  ],
+  "doc_links_count": 2,
+  "first_doc_links": [
+    {
+      "text": "Download prospectus (PDF)",
+      "href": "https://www.sampoornanuts.com/_files/ugd/6fcc6d_c8c3f3a226754a24939a595f8242c6f4.pdf"
+    },
+    {
+      "text": "Grievances Redressal Mechanism",
+      "href": "https://zerodha-common.s3.ap-south-1.amazonaws.com/Downloads-and-resources/Smart%20ODR%20info.pdf"
+    }
+  ]
 }
 ```
 
-### P-23b — Broker IPO page — Upstox (reference only) — RED
+### P-23b — Broker IPO page — Upstox (reference only) — GREEN
 
 - URL: `https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/`
 - Method: Playwright/Chromium (headless, no stealth)
 - Headers/cookies required: User-Agent (desktop Chrome), Locale en-IN
 - Status code: 200
-- Response type: ERROR
-- Fields found: (none)
-- Fields missing: (navigation error)
+- Response type: HTML
+- Fields found: Lot Size, Issue Size, QIB, NII, Retail, P/E, Revenue, PAT, Debt to Equity, Subscription, Subscribed
+- Fields missing: (none)
 - Parsing difficulty: Hard
 - Anti-bot risk: High
 - Legal/ToS risk: Medium
 - Update frequency: Per IPO lifecycle (open/close/listing)
-- Recommended action: Blocked from GH Actions runner. Use screenshots/PDF exports as IA reference.
+- Recommended action: Use as information-architecture benchmark only. Do NOT scrape for production data.
 - Fallback: Screenshots / PDF exports of the broker page provided by user
-- Latency: 5134 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 4853 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
-> final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=218103 | rendered_len=264155 | challenge=false | headings=0 | tables=0 | doc_links=0 | labels=0 | error=extractFields: page.evaluate: ReferenceError: __name is not defined
-    at eval (eval at evaluate (:302:30), <anonymous>:1:83)
-    at UtilityScript.evaluate (<anonymous>:304:16)
-    at UtilityScript.<anonymous> (<anonymous>:1:44)
+> final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=218095 | rendered_len=261575 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11
 
 ```
 {
   "title": "Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotment | Upstox",
-  "headings_top10": [],
-  "tables_count": 0,
-  "labels_detected": [],
-  "doc_links_count": 0,
-  "first_doc_links": []
+  "headings_top10": [
+    "Vegorama Punjabi Angithi IPO",
+    "Vegorama Punjabi Angithi Limited IPO Details",
+    "Checklist",
+    "Performance",
+    "Compare",
+    "Objectives",
+    "About Vegorama Punjabi Angithi Limited",
+    "Vegorama Punjabi Angithi IPO Subscription Status",
+    "Frequently asked questions",
+    "How to invest in the Vegorama Punjabi Angithi IPO ?"
+  ],
+  "tables_count": 1,
+  "labels_detected": [
+    "Lot Size",
+    "Issue Size",
+    "QIB",
+    "NII",
+    "Retail",
+    "P/E",
+    "Revenue",
+    "PAT",
+    "Debt to Equity",
+    "Subscription",
+    "Subscribed"
+  ],
+  "doc_links_count": 8,
+  "first_doc_links": [
+    {
+      "text": "Derivatives",
+      "href": "https://assets.upstox.com/website/risk-disclosures/derivatives.pdf"
+    },
+    {
+      "text": "Mutual Funds",
+      "href": "https://assets.upstox.com/website/risk-disclosures/mutual-funds.pdf"
+    },
+    {
+      "text": "Pledge of Securities",
+      "href": "https://assets.upstox.com/website/risk-disclosures/pledge-of-securities.pdf"
+    },
+    {
+      "text": "Unauthorized Trading",
+      "href": "https://assets.upstox.com/website/risk-disclosures/unauthorized-trading.pdf"
+    },
+    {
+      "text": "Third Party Products",
+      "href": "https://assets.upstox.com/website/risk-disclosures/third-party-products.pdf"
+    }
+  ]
 }
 ```
 
@@ -850,8 +965,8 @@ TypeError: Cannot read properties of undefined (reading 'length')
 - Update frequency: Slow-changing (industry codes rarely change per company)
 - Recommended action: Sector reachable for listed equities via NSE equity quote, but not exposed per-IPO before listing. Use the equity-quote sector once an IPO lists; create a small manual sector-map.json for pre-listing IPOs.
 - Fallback: phase-0/samples/sector-manual-map.json (curated)
-- Latency: 1834 ms
-- Ran at (UTC): 2026-05-20T19:10:29.299Z
+- Latency: 1453 ms
+- Ran at (UTC): 2026-05-20T19:38:57.487Z
 
 > [NSE equity quote] top-level keys: info, metadata, securityInfo, sddDetails, currentMarketType, priceInfo, industryInfo, preOpenMarket; sector fields: info.industry, metadata.industry, metadata.pdSectorPe, metadata.pdSectorInd, metadata.pdSectorIndAll, industryInfo, industryInfo.macro, industryInfo.sector, industryInfo.industry, industryInfo.basicIndustry ; [NSE IPO list] NSE IPO list returned 0 items ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=12565
 

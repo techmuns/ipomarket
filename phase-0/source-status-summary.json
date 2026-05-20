@@ -1,12 +1,12 @@
 {
-  "P-01": "RED",
-  "P-02": "RED",
-  "P-03": "RED",
+  "P-01": "YELLOW",
+  "P-02": "YELLOW",
+  "P-03": "YELLOW",
   "P-04": "YELLOW",
-  "P-05": "RED",
+  "P-05": "YELLOW",
   "P-08": "GREEN",
   "P-08b": "YELLOW",
-  "P-09": "YELLOW",
+  "P-09": "GREEN",
   "P-10": "RED",
   "P-15": "GREEN",
   "P-15b": "GREEN",
@@ -25,7 +25,7 @@
   "P-20": "RED",
   "P-21": "RED",
   "P-22": "YELLOW",
-  "P-23a": "RED",
-  "P-23b": "RED",
+  "P-23a": "GREEN",
+  "P-23b": "GREEN",
   "P-24": "YELLOW"
 }

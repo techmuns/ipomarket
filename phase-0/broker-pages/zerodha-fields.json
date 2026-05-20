@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-20T19:10:29.299Z",
+  "captured_at_utc": "2026-05-20T19:38:57.487Z",
   "url": "https://zerodha.com/ipo/440359/nfp-sampoorna-foods/",
   "final_url": "https://zerodha.com/ipo/440359/nfp-sampoorna-foods/",
   "status": 200,
@@ -9,8 +9,166 @@
   "rendered_html_length": 39220,
   "challenge_detected": false,
   "challenge_reasons": [],
-  "headings": [],
-  "tables": [],
-  "doc_links": [],
-  "labels_detected": []
+  "headings": [
+    "NFP Sampoorna Foods IPO",
+    "NFP Sampoorna Foods IPO details",
+    "Schedule of NFP Sampoorna Foods",
+    "About NFP Sampoorna Foods",
+    "Financials of NFP Sampoorna Foods",
+    "Issue size",
+    "Utilisation of proceeds",
+    "Strengths",
+    "Risks",
+    "Allotment Status for NFP Sampoorna Foods",
+    "Subscription Figures for NFP Sampoorna Foods"
+  ],
+  "tables": [
+    {
+      "caption": "",
+      "rows": [
+        [
+          "Issue open date",
+          "18 May 2026"
+        ],
+        [
+          "Issue close date",
+          "20 May 2026"
+        ],
+        [
+          "UPI mandate deadline",
+          "20 May 2026 (5 PM)"
+        ],
+        [
+          "Allotment finalization",
+          "21 May 2026"
+        ],
+        [
+          "Refund initiation",
+          "22 May 2026"
+        ],
+        [
+          "Share credit",
+          "22 May 2026"
+        ],
+        [
+          "Listing date",
+          "25 May 2026"
+        ],
+        [
+          "Mandate end date",
+          "04 Jun 2026"
+        ],
+        [
+          "Lock-in end date for anchor investors (50%)",
+          "19 Jun 2026"
+        ],
+        [
+          "Lock-in end date for anchor investors (remaining)",
+          "18 Aug 2026"
+        ]
+      ]
+    },
+    {
+      "caption": "",
+      "rows": [
+        [
+          "Funds Raised in the IPO",
+          "Amount"
+        ],
+        [
+          "Total issue size",
+          "24.53"
+        ],
+        [
+          "Fresh Issue – Proceeds go to the company",
+          "24.53"
+        ]
+      ]
+    },
+    {
+      "caption": "",
+      "rows": [
+        [
+          "Purpose",
+          "INR crores (%)"
+        ],
+        [
+          "Funding of working capital requirements of the Company",
+          "7.25 (29.56%)"
+        ],
+        [
+          "Prepayment or repayment of certain outstanding borrowings",
+          "9.5 (38.73%)"
+        ],
+        [
+          "General corporate purposes",
+          "7.78 (31.71%)"
+        ]
+      ]
+    },
+    {
+      "caption": "",
+      "rows": [
+        [
+          "Category",
+          "Reserved (lakhs)",
+          "Applied (lakhs)",
+          "Subscription (X times)"
+        ],
+        [
+          "Institutional",
+          "0.42",
+          "0.42",
+          "1x"
+        ],
+        [
+          "NII",
+          "20.94",
+          "7.20",
+          "0.34x"
+        ],
+        [
+          "Retail",
+          "21",
+          "58.72",
+          "2.80x"
+        ],
+        [
+          "Total",
+          "42.36",
+          "66.34",
+          "1.57x"
+        ]
+      ]
+    }
+  ],
+  "doc_links": [
+    {
+      "text": "Download prospectus (PDF)",
+      "href": "https://www.sampoornanuts.com/_files/ugd/6fcc6d_c8c3f3a226754a24939a595f8242c6f4.pdf"
+    },
+    {
+      "text": "Grievances Redressal Mechanism",
+      "href": "https://zerodha-common.s3.ap-south-1.amazonaws.com/Downloads-and-resources/Smart%20ODR%20info.pdf"
+    }
+  ],
+  "labels_detected": [
+    "Open Date",
+    "Close Date",
+    "Issue Open",
+    "Issue Close",
+    "Lot Size",
+    "Issue Size",
+    "Registrar",
+    "Fresh Issue",
+    "Allotment Date",
+    "Listing Date",
+    "NII",
+    "Retail",
+    "Anchor",
+    "Revenue",
+    "GMP",
+    "Grey Market",
+    "Subscription"
+  ]
 }
