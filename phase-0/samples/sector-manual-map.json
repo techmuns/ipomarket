@@ -1,0 +1,30 @@
+{
+  "_purpose": "Manual sector/industry map for pre-listing IPOs. NSE equity industryInfo (macro/sector/industry/basicIndustry) only resolves AFTER an IPO lists. For pre-listing IPOs in our dashboard, populate one entry per IPO at seed time.",
+  "_schema": {
+    "ipo_key": {
+      "macro": "string — e.g. 'Energy' / 'Consumer Discretionary' / 'Industrials'",
+      "sector": "string — e.g. 'Oil Gas & Consumable Fuels'",
+      "industry": "string — e.g. 'Petroleum Products'",
+      "basicIndustry": "string — e.g. 'Refineries & Marketing'",
+      "_source": "string — 'rhp-cover' | 'manual' | 'nse-post-listing'"
+    }
+  },
+  "_lookup_key_format": "Use NSE/BSE listing symbol if already assigned; otherwise the normalized company name (lowercase, no spaces, no 'limited').",
+  "_examples": {
+    "nfp_sampoorna_foods": {
+      "macro": "Consumer Staples",
+      "sector": "Food, Beverage & Tobacco",
+      "industry": "Food Products",
+      "basicIndustry": "Processed Foods",
+      "_source": "manual"
+    },
+    "vegorama_punjabi_angithi": {
+      "macro": "Consumer Discretionary",
+      "sector": "Consumer Services",
+      "industry": "Hotels Restaurants & Tourism",
+      "basicIndustry": "Restaurants",
+      "_source": "manual"
+    }
+  },
+  "entries": {}
+}

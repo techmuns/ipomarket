@@ -1,13 +1,15 @@
-// P-08 — SEBI Public Issues filings.
+// P-08 — SEBI Public Issues filings (DRHP discovery).
 //
-// SEBI's listing page is a Kendo-Grid SPA shell: a static HTTP GET returns
-// the page chrome only (zero <tr>, zero .pdf). To discover DRHP/RHP links
-// we have to render JS. Attempt order:
-//   1. Static GET primary URL  (cheap baseline; usually empty)
-//   2. Static GET alt URL      (sebiweb HomeAction.do variant)
-//   3. Playwright/Chromium render of primary URL
+// SEBI's listing page is Kendo-Grid-rendered. Even when the alt URL surfaces
+// rows in static HTML, the rows often link to detail pages rather than direct
+// .pdf URLs. This probe now:
+//   1. Static GET primary URL → broad PDF scan.
+//   2. Static GET alt URL → broad PDF scan + detail-page URL extraction.
+//   3. Static GET first 5 detail pages → broad PDF scan in each.
+//   4. Playwright render of the listing page (DOM-level PDF scan).
+//   5. Playwright render of the first detail page if still no PDFs.
 //
-// Output for downstream P-09: phase-0/samples/sebi-publicissues-pdfs.json
+// Output for P-09: phase-0/samples/sebi-publicissues-pdfs.json
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -23,39 +25,87 @@ const ALT_URL =
 interface DiscoveredPdf {
   url: string;
   link_text: string;
-  row_context: string;
+  source: string;
 }
 
-interface AttemptResult {
-  attempt: string;
+interface Phase {
+  phase: string;
+  url: string;
   status: number;
   bytes: number;
   tr_count: number;
-  pdf_links: DiscoveredPdf[];
+  pdfs_found: number;
   notes: string;
-  body_snippet: string;
 }
 
-function extractPdfsFromHtml(html: string, baseUrl: string): DiscoveredPdf[] {
+function absolutize(href: string, baseUrl: string): string {
+  let h = href.trim();
+  if (h.startsWith('//')) return 'https:' + h;
+  if (h.startsWith('/')) {
+    const u = new URL(baseUrl);
+    return `${u.protocol}//${u.host}${h}`;
+  }
+  if (!/^https?:\/\//i.test(h)) {
+    const u = new URL(baseUrl);
+    return `${u.protocol}//${u.host}/${h.replace(/^\.?\//, '')}`;
+  }
+  return h;
+}
+
+// Broad PDF scan: finds .pdf URLs anywhere in the body (href, onclick,
+// data-* attributes, JSON blobs, JS strings).
+function extractAllPdfs(html: string, baseUrl: string, sourceLabel: string): DiscoveredPdf[] {
   const out: DiscoveredPdf[] = [];
-  const anchorRe = /<a\s+[^>]*href\s*=\s*"([^"]+\.pdf[^"]*)"[^>]*>([\s\S]*?)<\/a>/gi;
+  const seen = new Set<string>();
+
+  // 1. Anchor PDFs: <a ... href="...pdf">text</a>
+  const anchorRe = /<a\s+[^>]*href\s*=\s*["']([^"']*\.pdf(?:[?#][^"']*)?)["'][^>]*>([\s\S]*?)<\/a>/gi;
   let m: RegExpExecArray | null;
   while ((m = anchorRe.exec(html))) {
-    let href = m[1]!;
-    const inner = m[2]!.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
-    if (href.startsWith('//')) href = 'https:' + href;
-    else if (href.startsWith('/')) {
-      const u = new URL(baseUrl);
-      href = `${u.protocol}//${u.host}${href}`;
-    } else if (!/^https?:\/\//i.test(href)) {
-      const u = new URL(baseUrl);
-      href = `${u.protocol}//${u.host}/${href}`;
-    }
-    out.push({
-      url: href,
-      link_text: inner.slice(0, 200),
-      row_context: '',
-    });
+    const url = absolutize(m[1]!, baseUrl);
+    if (seen.has(url)) continue;
+    seen.add(url);
+    const text = m[2]!
+      .replace(/<[^>]*>/g, '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, 200);
+    out.push({ url, link_text: text, source: sourceLabel });
+  }
+
+  // 2. Any URL ending in .pdf (catches onclick, data attrs, JS).
+  const anyPdfRe = /["'\s(=]((?:https?:\/\/|\/)[^"'\s)]+\.pdf(?:[?#][^"'\s)]*)?)["'\s)]/gi;
+  while ((m = anyPdfRe.exec(html))) {
+    const url = absolutize(m[1]!, baseUrl);
+    if (seen.has(url)) continue;
+    seen.add(url);
+    out.push({ url, link_text: '', source: sourceLabel });
+  }
+
+  // 3. SEBI attachedfile= pattern (PDF served via internal route).
+  const attachedRe = /attachedfile=([^"'&\s]+\.pdf(?:[?#][^"'\s]*)?)/gi;
+  while ((m = attachedRe.exec(html))) {
+    const url = absolutize(`/sebi_data/attachdocs/${m[1]!}`, baseUrl);
+    if (seen.has(url)) continue;
+    seen.add(url);
+    out.push({ url, link_text: '(attachedfile route)', source: sourceLabel });
+  }
+
+  return out;
+}
+
+function extractDetailLinks(html: string, baseUrl: string): string[] {
+  const out: string[] = [];
+  const seen = new Set<string>();
+  const re = /<a\s+[^>]*href\s*=\s*["']([^"']*(?:HomeAction\.do|attachedfile=|\/filings\/)[^"']*)["']/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(html))) {
+    const url = absolutize(m[1]!, baseUrl);
+    if (seen.has(url)) continue;
+    if (url.endsWith('.pdf')) continue;
+    if (url === baseUrl) continue;
+    seen.add(url);
+    out.push(url);
   }
   return out;
 }
@@ -64,7 +114,7 @@ function countTableRows(html: string): number {
   return (html.match(/<tr[\s>]/gi) ?? []).length;
 }
 
-async function staticAttempt(url: string, label: string): Promise<AttemptResult> {
+async function staticPhase(url: string, label: string): Promise<{ phase: Phase; html: string }> {
   const res = await httpGet(url, {
     headers: {
       Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -73,64 +123,68 @@ async function staticAttempt(url: string, label: string): Promise<AttemptResult>
   });
   if (!res.ok) {
     return {
-      attempt: label,
-      status: res.status,
-      bytes: res.bytes,
-      tr_count: 0,
-      pdf_links: [],
-      notes: `static non-200 (status=${res.status}, err=${res.error ?? ''})`,
-      body_snippet: truncate(res.body, 4000),
+      phase: {
+        phase: label,
+        url,
+        status: res.status,
+        bytes: res.bytes,
+        tr_count: 0,
+        pdfs_found: 0,
+        notes: `static non-200 (status=${res.status}, err=${res.error ?? ''})`,
+      },
+      html: '',
     };
   }
   const tr = countTableRows(res.body);
-  const pdfs = extractPdfsFromHtml(res.body, url);
   return {
-    attempt: label,
-    status: res.status,
-    bytes: res.bytes,
-    tr_count: tr,
-    pdf_links: pdfs,
-    notes: `static ok: tr=${tr}, pdfs=${pdfs.length}, bytes=${res.bytes}`,
-    body_snippet: truncate(res.body, 6000),
+    phase: {
+      phase: label,
+      url,
+      status: res.status,
+      bytes: res.bytes,
+      tr_count: tr,
+      pdfs_found: 0,
+      notes: `static ok: tr=${tr}, bytes=${res.bytes}`,
+    },
+    html: res.body,
   };
 }
 
-async function playwrightAttempt(
+async function playwrightPhase(
   url: string,
-  label: string,
-  samplesDir: string
-): Promise<AttemptResult> {
+  label: string
+): Promise<{ phase: Phase; html: string; png: Buffer }> {
   const r = await renderPage(url, { timeoutMs: 35_000, waitAfterLoadMs: 3000 });
   if (r.error && r.status === 0) {
     return {
-      attempt: label,
-      status: 0,
-      bytes: 0,
-      tr_count: 0,
-      pdf_links: [],
-      notes: `playwright failed to launch/load: ${r.error}`,
-      body_snippet: '',
+      phase: {
+        phase: label,
+        url,
+        status: 0,
+        bytes: 0,
+        tr_count: 0,
+        pdfs_found: 0,
+        notes: `playwright failed: ${r.error}`,
+      },
+      html: '',
+      png: Buffer.alloc(0),
     };
   }
-  // Persist full rendered HTML + screenshot as side artifacts (don't pollute sample_record).
-  if (r.rendered_html.length > 0) {
-    writeFileSync(join(samplesDir, 'sebi-publicissues-rendered.html'), r.rendered_html);
-  }
-  if (r.screenshot_png.length > 0) {
-    writeFileSync(join(samplesDir, 'sebi-publicissues-screenshot.png'), r.screenshot_png);
-  }
   const tr = countTableRows(r.rendered_html);
-  const pdfs = extractPdfsFromHtml(r.rendered_html, url);
   return {
-    attempt: label,
-    status: r.status,
-    bytes: r.rendered_html_length,
-    tr_count: tr,
-    pdf_links: pdfs,
-    notes: `playwright ok: status=${r.status}, tr=${tr}, pdfs=${pdfs.length}, rendered_len=${r.rendered_html_length}${
-      r.challenge_detected ? `, challenge=${r.challenge_reasons.join(',')}` : ''
-    }${r.error ? `, error=${r.error}` : ''}`,
-    body_snippet: truncate(r.rendered_html, 6000),
+    phase: {
+      phase: label,
+      url,
+      status: r.status,
+      bytes: r.rendered_html_length,
+      tr_count: tr,
+      pdfs_found: 0,
+      notes: `playwright: status=${r.status}, tr=${tr}, rendered_len=${r.rendered_html_length}${
+        r.challenge_detected ? `, challenge=${r.challenge_reasons.join(',')}` : ''
+      }${r.error ? `, error=${r.error}` : ''}`,
+    },
+    html: r.rendered_html,
+    png: r.screenshot_png,
   };
 }
 
@@ -139,97 +193,152 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   const samplesDir = ctx.samplesDir;
   ensureDir(samplesDir);
 
-  const attempts: AttemptResult[] = [];
-  attempts.push(await staticAttempt(PRIMARY_URL, 'static-primary'));
+  const phases: Phase[] = [];
+  const allPdfs: DiscoveredPdf[] = [];
+  const detailUrls = new Set<string>();
+  let largestBodyHtml = '';
+  let largestBodyLabel = '';
 
-  // Escalate only if static-primary is empty.
-  if (attempts[0]!.pdf_links.length === 0 && attempts[0]!.tr_count < 10) {
-    attempts.push(await staticAttempt(ALT_URL, 'static-alt'));
+  // Phase 1: static primary.
+  const s1 = await staticPhase(PRIMARY_URL, 'static-primary');
+  s1.phase.pdfs_found = extractAllPdfs(s1.html, PRIMARY_URL, 'static-primary').length;
+  allPdfs.push(...extractAllPdfs(s1.html, PRIMARY_URL, 'static-primary'));
+  extractDetailLinks(s1.html, PRIMARY_URL).forEach((u) => detailUrls.add(u));
+  if (s1.html.length > largestBodyHtml.length) {
+    largestBodyHtml = s1.html;
+    largestBodyLabel = 'static-primary';
   }
-  if (
-    attempts.every(function (a) {
-      return a.pdf_links.length === 0 && a.tr_count < 10;
-    })
-  ) {
-    attempts.push(await playwrightAttempt(PRIMARY_URL, 'playwright-primary', samplesDir));
+  phases.push(s1.phase);
+
+  // Phase 2: static alt (only if primary didn't already find PDFs).
+  let altHtml = '';
+  if (allPdfs.length < 1) {
+    const s2 = await staticPhase(ALT_URL, 'static-alt');
+    const pdfs2 = extractAllPdfs(s2.html, ALT_URL, 'static-alt');
+    s2.phase.pdfs_found = pdfs2.length;
+    allPdfs.push(...pdfs2);
+    extractDetailLinks(s2.html, ALT_URL).forEach((u) => detailUrls.add(u));
+    altHtml = s2.html;
+    if (s2.html.length > largestBodyHtml.length) {
+      largestBodyHtml = s2.html;
+      largestBodyLabel = 'static-alt';
+    }
+    phases.push(s2.phase);
   }
 
-  // Pick the winning attempt: most PDFs, then most rows.
-  const winner = attempts
-    .slice()
-    .sort(function (a, b) {
-      if (b.pdf_links.length !== a.pdf_links.length) return b.pdf_links.length - a.pdf_links.length;
-      return b.tr_count - a.tr_count;
-    })[0]!;
+  // Phase 3: follow up to 5 detail-page URLs from alt body.
+  if (allPdfs.length < 1 && detailUrls.size > 0) {
+    const detailList = Array.from(detailUrls).slice(0, 5);
+    let detailPdfs = 0;
+    for (const detailUrl of detailList) {
+      const ds = await staticPhase(detailUrl, `static-detail:${detailUrl.slice(-60)}`);
+      const pdfs = extractAllPdfs(ds.html, detailUrl, 'detail-page');
+      ds.phase.pdfs_found = pdfs.length;
+      detailPdfs += pdfs.length;
+      allPdfs.push(...pdfs);
+      phases.push(ds.phase);
+      if (pdfs.length > 0 && detailPdfs >= 3) break; // enough for P-09
+    }
+  }
 
-  const pdfs = winner.pdf_links;
-  const rows = winner.tr_count;
+  // Phase 4: Playwright on listing page (alt URL, since it had data).
+  if (allPdfs.length < 1) {
+    const pw1 = await playwrightPhase(ALT_URL, 'playwright-listing');
+    const pdfs = extractAllPdfs(pw1.html, ALT_URL, 'playwright-listing');
+    pw1.phase.pdfs_found = pdfs.length;
+    allPdfs.push(...pdfs);
+    extractDetailLinks(pw1.html, ALT_URL).forEach((u) => detailUrls.add(u));
+    phases.push(pw1.phase);
+    if (pw1.html.length > largestBodyHtml.length) {
+      largestBodyHtml = pw1.html;
+      largestBodyLabel = 'playwright-listing';
+    }
+    if (pw1.html.length > 0) {
+      writeFileSync(join(samplesDir, 'sebi-publicissues-rendered.html'), pw1.html);
+      if (pw1.png.length > 0) {
+        writeFileSync(join(samplesDir, 'sebi-publicissues-screenshot.png'), pw1.png);
+      }
+    }
+  }
 
-  // Persist discovery output for P-09.
+  // Phase 5: Playwright first detail page if still nothing.
+  if (allPdfs.length < 1 && detailUrls.size > 0) {
+    const firstDetail = Array.from(detailUrls)[0]!;
+    const pw2 = await playwrightPhase(firstDetail, `playwright-detail:${firstDetail.slice(-50)}`);
+    const pdfs = extractAllPdfs(pw2.html, firstDetail, 'playwright-detail');
+    pw2.phase.pdfs_found = pdfs.length;
+    allPdfs.push(...pdfs);
+    phases.push(pw2.phase);
+    if (pw2.html.length > 0) {
+      writeFileSync(join(samplesDir, 'sebi-detail-rendered.html'), pw2.html);
+    }
+  }
+
+  // Persist discovery output.
+  const uniquePdfs = Array.from(
+    new Map(allPdfs.map((p) => [p.url, p])).values()
+  );
   writeFileSync(
     join(samplesDir, 'sebi-publicissues-pdfs.json'),
     JSON.stringify(
       {
         captured_at_utc: ctx.nowIso,
-        winning_attempt: winner.attempt,
-        attempts: attempts.map(function (a) {
-          return {
-            attempt: a.attempt,
-            status: a.status,
-            bytes: a.bytes,
-            tr_count: a.tr_count,
-            pdf_count: a.pdf_links.length,
-            notes: a.notes,
-          };
-        }),
-        pdfs: pdfs.slice(0, 200),
+        phases,
+        detail_urls_found: detailUrls.size,
+        pdfs: uniquePdfs.slice(0, 200),
       },
       null,
       2
     ) + '\n'
   );
 
-  // Sample HTML for parity with previous probe behavior (git-diff signal on
-  // SEBI page drift). Prefer the winning attempt's body; fall back to static-primary.
-  const sampleSource = winner.body_snippet || attempts[0]?.body_snippet || '';
-  if (sampleSource) {
-    writeSample(samplesDir, 'sample-sebi-publicissues.html', sampleSource);
+  // Write the largest body as the sample (preserve raw signal for diff/inspection).
+  // Use 50 KB budget so the full SEBI alt body is captured.
+  if (largestBodyHtml) {
+    writeSample(samplesDir, 'sample-sebi-publicissues.html', truncate(largestBodyHtml, 50_000));
   }
 
   let status: ProbeResult['status'];
   let response_type: ProbeResult['response_type'];
-  if (winner.status === 0) {
-    status = 'RED';
-    response_type = 'ERROR';
-  } else if (pdfs.length >= 5 || rows >= 10) {
+  const reachable = phases.some((p) => p.status >= 200 && p.status < 400);
+  const rowsAnywhere = phases.some((p) => p.tr_count > 0);
+  if (uniquePdfs.length >= 1) {
     status = 'GREEN';
     response_type = 'HTML';
-  } else if (pdfs.length >= 1 || rows >= 1) {
+  } else if (rowsAnywhere) {
     status = 'YELLOW';
     response_type = 'HTML';
+  } else if (!reachable) {
+    status = 'RED';
+    response_type = 'ERROR';
   } else {
     status = 'RED';
     response_type = 'EMPTY';
   }
 
-  const notes = attempts.map(function (a) { return a.notes; }).join(' ; ');
+  const notes = phases.map((p) => `[${p.phase}] ${p.notes} (pdfs=${p.pdfs_found})`).join(' ; ');
 
   return {
     probe_id: 'P-08',
     source: 'SEBI — Public Issues Filings',
     url_or_endpoint: PRIMARY_URL,
-    fetch_method: 'GET → alt GET → Playwright/Chromium',
+    fetch_method: 'GET (static) → GET (alt) → GET (detail pages) → Playwright',
     headers_or_cookies_required: ['User-Agent', 'Referer', 'Chromium for JS render'],
-    status_code: winner.status,
+    status_code: phases.find((p) => p.status > 0)?.status ?? 0,
     response_type,
-    fields_found: pdfs.length > 0 ? ['pdf urls', 'rows'] : rows > 0 ? ['rows'] : [],
-    fields_missing: pdfs.length === 0 ? ['pdf urls'] : [],
+    fields_found:
+      uniquePdfs.length > 0 ? ['pdf urls', 'rows'] : rowsAnywhere ? ['rows'] : [],
+    fields_missing: uniquePdfs.length === 0 ? ['pdf urls'] : [],
     sample_record: JSON.stringify(
       {
-        winning_attempt: winner.attempt,
-        rows: rows,
-        pdf_count: pdfs.length,
-        first_5_pdfs: pdfs.slice(0, 5),
+        phases_summary: phases.map((p) => ({
+          phase: p.phase,
+          tr_count: p.tr_count,
+          pdfs_found: p.pdfs_found,
+        })),
+        unique_pdf_count: uniquePdfs.length,
+        first_3_pdfs: uniquePdfs.slice(0, 3),
+        detail_urls_found: detailUrls.size,
       },
       null,
       2
@@ -243,7 +352,7 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
       status === 'GREEN'
         ? 'Use as primary for Pipeline tab + DRHP master.'
         : status === 'YELLOW'
-        ? 'Partial discovery — wire P-10 (exchange-side DRHP) as fallback.'
+        ? 'Rows reachable but no PDF URLs harvested — investigate detail-page structure or wire P-10 fallback.'
         : 'All attempts empty; use P-10 (exchange-side DRHP) as primary.',
     fallback_source: 'P-10',
     ran_at_utc: ctx.nowIso,

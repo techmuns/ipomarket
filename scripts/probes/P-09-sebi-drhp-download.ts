@@ -20,14 +20,16 @@ const DISCOVERY_PATH_FRAGMENT = 'sebi-publicissues-pdfs.json';
 interface DiscoveredPdf {
   url: string;
   link_text: string;
-  row_context: string;
+  // Optional source-tag added by P-08 (e.g. "static-alt", "detail-page").
+  // We don't require it; only `url` is mandatory.
+  source?: string;
 }
 
 interface DiscoveryFile {
   captured_at_utc: string;
-  winning_attempt: string;
-  attempts: any[];
+  // Schema accepts both old (winning_attempt + attempts) and new (phases + detail_urls_found) shapes.
   pdfs: DiscoveredPdf[];
+  [key: string]: any;
 }
 
 function readDiscovery(samplesDir: string): DiscoveryFile | null {
@@ -214,6 +216,6 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     fallback_source: 'P-10',
     ran_at_utc: ctx.nowIso,
     latency_ms: Date.now() - started,
-    notes: `discovery=${DISCOVERY_PATH_FRAGMENT}; winner=${discovery.winning_attempt}; bytes=${bin.bytes}; page_count=${pageCount}; pdf-parse=${parsed.ok ? 'ok' : 'failed'}`,
+    notes: `discovery=${DISCOVERY_PATH_FRAGMENT}; pdf_url=${pdfUrl.slice(-60)}; bytes=${bin.bytes}; page_count=${pageCount}; pdf-parse=${parsed.ok ? 'ok' : 'failed'}`,
   };
 };

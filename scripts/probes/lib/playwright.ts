@@ -108,57 +108,69 @@ async function launchBrowser(): Promise<Browser> {
   });
 }
 
+// Use a string-bodied page.evaluate to dodge tsx/esbuild's `__name` emission
+// for named function declarations inside the callback (the prior arrow-form
+// and function-form attempts both leaked `__name` into the page context,
+// breaking the Group H broker-page extractor).
 async function extractFields(page: Page): Promise<BrokerPageFields> {
-  return page.evaluate((labels: string[]) => {
-    function norm(el: Element | null): string {
-      return (el?.textContent ?? '').replace(/\s+/g, ' ').trim();
-    }
-
-    const headings = Array.from(document.querySelectorAll('h1, h2, h3, h4'))
-      .map(function (h) { return norm(h); })
-      .filter(function (s) { return s.length > 0 && s.length < 300; });
-
-    const tables: Array<{ caption: string; rows: string[][] }> = [];
-    document.querySelectorAll('table').forEach(function (tbl) {
-      const caption = norm(tbl.querySelector('caption'));
-      const rows: string[][] = [];
-      tbl.querySelectorAll('tr').forEach(function (tr) {
-        const cells = Array.from(tr.querySelectorAll('th, td')).map(function (c) { return norm(c); });
-        if (cells.some(function (c) { return c.length > 0; })) rows.push(cells);
-      });
-      if (rows.length > 0) tables.push({ caption, rows });
-    });
-
-    const docLinks: Array<{ text: string; href: string }> = [];
-    document.querySelectorAll('a[href]').forEach(function (a) {
-      const href = (a as HTMLAnchorElement).href;
-      const text = norm(a);
-      const docHit =
-        /\.pdf(\?|$)/i.test(href) ||
-        /\b(DRHP|RHP|Prospectus|Anchor|Allotment|Red Herring|Draft Red Herring)\b/i.test(
-          text
-        ) ||
-        /\b(DRHP|RHP|prospectus|anchor|allotment)\b/i.test(href);
-      if (docHit) {
-        docLinks.push({ text: text.slice(0, 200), href });
+  const labelsLiteral = JSON.stringify(IPO_LABELS);
+  const body = `
+    (function () {
+      var labels = ${labelsLiteral};
+      function norm(el) {
+        return (el && el.textContent ? el.textContent : '').replace(/\\s+/g, ' ').trim();
       }
-    });
-
-    const bodyText = document.body?.innerText ?? '';
-    const detected: string[] = [];
-    for (const label of labels) {
-      const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const re = new RegExp(`(^|[^A-Za-z])${escaped}([^A-Za-z]|$)`, 'i');
-      if (re.test(bodyText)) detected.push(label);
-    }
-
-    return {
-      headings,
-      tables,
-      doc_links: docLinks,
-      labels_detected: detected,
-    };
-  }, IPO_LABELS);
+      var headings = [];
+      var hh = document.querySelectorAll('h1, h2, h3, h4');
+      for (var i = 0; i < hh.length; i++) {
+        var t = norm(hh[i]);
+        if (t.length > 0 && t.length < 300) headings.push(t);
+      }
+      var tables = [];
+      var tt = document.querySelectorAll('table');
+      for (var j = 0; j < tt.length; j++) {
+        var tbl = tt[j];
+        var caption = norm(tbl.querySelector('caption'));
+        var rows = [];
+        var trs = tbl.querySelectorAll('tr');
+        for (var k = 0; k < trs.length; k++) {
+          var cells = [];
+          var cs = trs[k].querySelectorAll('th, td');
+          var any = false;
+          for (var c = 0; c < cs.length; c++) {
+            var v = norm(cs[c]);
+            cells.push(v);
+            if (v.length > 0) any = true;
+          }
+          if (any) rows.push(cells);
+        }
+        if (rows.length > 0) tables.push({ caption: caption, rows: rows });
+      }
+      var docLinks = [];
+      var aa = document.querySelectorAll('a[href]');
+      var docRe = /\\.pdf(\\?|$)/i;
+      var textRe = /\\b(DRHP|RHP|Prospectus|Anchor|Allotment|Red Herring|Draft Red Herring)\\b/i;
+      var hrefRe = /\\b(DRHP|RHP|prospectus|anchor|allotment)\\b/i;
+      for (var n = 0; n < aa.length; n++) {
+        var a = aa[n];
+        var href = a.href;
+        var text = norm(a);
+        if (docRe.test(href) || textRe.test(text) || hrefRe.test(href)) {
+          docLinks.push({ text: text.slice(0, 200), href: href });
+        }
+      }
+      var bodyText = (document.body && document.body.innerText) ? document.body.innerText : '';
+      var detected = [];
+      for (var p = 0; p < labels.length; p++) {
+        var label = labels[p];
+        var escaped = label.replace(/[.*+?^\${}()|[\\]\\\\]/g, '\\\\$&');
+        var re = new RegExp('(^|[^A-Za-z])' + escaped + '([^A-Za-z]|$)', 'i');
+        if (re.test(bodyText)) detected.push(label);
+      }
+      return { headings: headings, tables: tables, doc_links: docLinks, labels_detected: detected };
+    })()
+  `;
+  return page.evaluate(body) as Promise<BrokerPageFields>;
 }
 
 function detectChallenge(

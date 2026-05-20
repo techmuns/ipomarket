@@ -1,8 +1,9 @@
 import { httpGet, warmNseCookies, truncate } from './lib/http.ts';
-import { classify, writeSample } from './lib/reporter.ts';
+import { writeSample } from './lib/reporter.ts';
 import type { ProbeFn, ProbeResult } from './lib/types.ts';
 
 const URL_ENDPOINT = 'https://www.nseindia.com/api/all-upcoming-issues?category=ipo';
+const EXPECTED_FIELDS = ['symbol', 'companyName', 'issueStartDate', 'issueEndDate'];
 
 export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   await warmNseCookies();
@@ -13,46 +14,100 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
       'X-Requested-With': 'XMLHttpRequest',
     },
   });
-  let parsed: any = null;
-  let fieldsFound: string[] = [];
-  let responseType: ProbeResult['response_type'] = 'ERROR';
-  let blocked = false;
-  let notes = '';
-  let forthcomingCount = 0;
-  if (res.ok) {
-    try {
-      parsed = JSON.parse(res.body);
-      responseType = 'JSON';
-      const arr = Array.isArray(parsed) ? parsed : Array.isArray(parsed?.data) ? parsed.data : [];
-      if (arr.length > 0) fieldsFound = Object.keys(arr[0] ?? {});
-      forthcomingCount = arr.filter((r: any) => {
-        const s = String(r?.status ?? '').toLowerCase();
-        return s.includes('forthcoming') || s.includes('upcoming');
-      }).length;
-      writeSample(ctx.samplesDir, 'sample-nse-ipo-upcoming.json', JSON.stringify(parsed, null, 2));
-      notes = `Forthcoming rows: ${forthcomingCount}`;
-    } catch (e: any) {
-      responseType = 'EMPTY';
-      notes = `JSON parse failed: ${e?.message ?? e}`;
-    }
-  } else if (res.status === 0) {
-    notes = `Network error: ${res.error ?? 'unknown'}`;
-  } else {
-    responseType = 'BLOCKED';
-    blocked = true;
-    notes = `Non-200. First bytes: ${truncate(res.body, 200)}`;
+
+  if (!res.ok || res.status === 0) {
+    return {
+      probe_id: 'P-02',
+      source: 'NSE — Upcoming IPOs',
+      url_or_endpoint: URL_ENDPOINT,
+      fetch_method: 'GET (after cookie warm-up)',
+      headers_or_cookies_required: ['User-Agent', 'Referer', 'X-Requested-With', 'warmed cookies'],
+      status_code: res.status === 0 ? null : res.status,
+      response_type: res.status === 0 ? 'ERROR' : 'BLOCKED',
+      fields_found: [],
+      fields_missing: EXPECTED_FIELDS,
+      sample_record: truncate(res.body, 500),
+      parsing_difficulty: 'Easy',
+      anti_bot_risk: 'Medium',
+      legal_tos_risk: 'Low',
+      freshness_or_update_frequency: 'Updated when issues are announced',
+      status: 'RED',
+      recommended_action: 'Endpoint unreachable; fall back to SEBI Processing Status (P-08b).',
+      fallback_source: 'P-08b',
+      ran_at_utc: ctx.nowIso,
+      latency_ms: res.latency_ms,
+      notes: res.status === 0 ? `Network error: ${res.error ?? 'unknown'}` : `Non-200: ${res.status}`,
+    };
   }
-  const expected = ['symbol', 'companyName', 'issueStartDate', 'issueEndDate'];
-  const missing = expected.filter((f) => !fieldsFound.map((x) => x.toLowerCase()).includes(f.toLowerCase()));
+
+  let parsed: any;
+  try {
+    parsed = JSON.parse(res.body);
+  } catch (e: any) {
+    return {
+      probe_id: 'P-02',
+      source: 'NSE — Upcoming IPOs',
+      url_or_endpoint: URL_ENDPOINT,
+      fetch_method: 'GET (after cookie warm-up)',
+      headers_or_cookies_required: ['User-Agent', 'Referer', 'X-Requested-With', 'warmed cookies'],
+      status_code: res.status,
+      response_type: 'EMPTY',
+      fields_found: [],
+      fields_missing: EXPECTED_FIELDS,
+      sample_record: truncate(res.body, 500),
+      parsing_difficulty: 'Easy',
+      anti_bot_risk: 'Medium',
+      legal_tos_risk: 'Low',
+      freshness_or_update_frequency: 'Updated when issues are announced',
+      status: 'RED',
+      recommended_action: 'JSON parse failed; likely anti-bot HTML.',
+      fallback_source: 'P-08b',
+      ran_at_utc: ctx.nowIso,
+      latency_ms: res.latency_ms,
+      notes: `JSON parse failed: ${e?.message ?? e}; body starts: ${truncate(res.body, 80)}`,
+    };
+  }
+
+  const arr: any[] = Array.isArray(parsed) ? parsed : Array.isArray(parsed?.data) ? parsed.data : [];
+  writeSample(ctx.samplesDir, 'sample-nse-ipo-upcoming.json', JSON.stringify(parsed, null, 2));
+
+  if (arr.length === 0) {
+    return {
+      probe_id: 'P-02',
+      source: 'NSE — Upcoming IPOs',
+      url_or_endpoint: URL_ENDPOINT,
+      fetch_method: 'GET (after cookie warm-up)',
+      headers_or_cookies_required: ['User-Agent', 'Referer', 'X-Requested-With', 'warmed cookies'],
+      status_code: res.status,
+      response_type: 'JSON',
+      fields_found: [],
+      fields_missing: EXPECTED_FIELDS,
+      sample_record: truncate(JSON.stringify(parsed, null, 2), 800),
+      parsing_difficulty: 'Easy',
+      anti_bot_risk: 'Medium',
+      legal_tos_risk: 'Low',
+      freshness_or_update_frequency: 'Updated when issues are announced',
+      status: 'YELLOW',
+      recommended_action:
+        'Source reachable but 0 upcoming rows in current snapshot. category=ipo is mainboard-only; SME pipeline lives in P-05.',
+      fallback_source: 'P-05 (SME), P-08b',
+      ran_at_utc: ctx.nowIso,
+      latency_ms: res.latency_ms,
+      notes: 'source reachable but no rows in current snapshot.',
+    };
+  }
+
+  const sample = arr[0] ?? {};
+  const fieldsFound = Object.keys(sample);
+  const missing = EXPECTED_FIELDS.filter(
+    (f) => !fieldsFound.map((x) => x.toLowerCase()).includes(f.toLowerCase())
+  );
+  const forthcomingCount = arr.filter((r: any) => {
+    const s = String(r?.status ?? '').toLowerCase();
+    return s.includes('forthcoming') || s.includes('upcoming');
+  }).length;
   const hasRequiredFields = fieldsFound.length > 0;
-  const status = classify({
-    ok: res.ok,
-    hasRequiredFields,
-    parsingDifficulty: 'Easy',
-    legalToSRisk: 'Low',
-    antiBotRisk: 'Medium',
-    blocked,
-  });
+
   return {
     probe_id: 'P-02',
     source: 'NSE — Upcoming IPOs',
@@ -60,19 +115,21 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     fetch_method: 'GET (after cookie warm-up)',
     headers_or_cookies_required: ['User-Agent', 'Referer', 'X-Requested-With', 'warmed cookies'],
     status_code: res.status,
-    response_type: responseType,
+    response_type: 'JSON',
     fields_found: fieldsFound,
     fields_missing: missing,
-    sample_record: parsed ? truncate(JSON.stringify(parsed, null, 2), 800) : truncate(res.body, 500),
+    sample_record: truncate(JSON.stringify(sample, null, 2), 800),
     parsing_difficulty: 'Easy',
     anti_bot_risk: 'Medium',
     legal_tos_risk: 'Low',
     freshness_or_update_frequency: 'Updated when issues are announced',
-    status,
-    recommended_action: status === 'GREEN' ? 'Use as primary for Pipeline tab.' : 'Pair with SEBI Processing Status (P-08b).',
+    status: hasRequiredFields ? 'GREEN' : 'YELLOW',
+    recommended_action: hasRequiredFields
+      ? 'Use as primary for Upcoming/Pipeline tab.'
+      : 'Field schema drifted; review fields_missing.',
     fallback_source: 'P-08b',
     ran_at_utc: ctx.nowIso,
     latency_ms: res.latency_ms,
-    notes,
+    notes: `Total rows: ${arr.length}, Forthcoming/upcoming rows: ${forthcomingCount}`,
   };
 };

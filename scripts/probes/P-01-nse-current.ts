@@ -1,9 +1,18 @@
 import { httpGet, warmNseCookies, truncate } from './lib/http.ts';
-import { classify, writeSample } from './lib/reporter.ts';
+import { writeSample } from './lib/reporter.ts';
 import type { ProbeFn, ProbeResult } from './lib/types.ts';
 
-const URL_ENDPOINT =
-  'https://www.nseindia.com/api/all-upcoming-issues?category=ipo';
+const URL_ENDPOINT = 'https://www.nseindia.com/api/all-upcoming-issues?category=ipo';
+
+const EXPECTED_FIELDS = [
+  'symbol',
+  'companyName',
+  'issueStartDate',
+  'issueEndDate',
+  'issuePrice',
+  'issueSize',
+  'status',
+];
 
 export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   await warmNseCookies();
@@ -14,89 +23,127 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
       'X-Requested-With': 'XMLHttpRequest',
     },
   });
-  const fieldsExpected = [
-    'symbol',
-    'companyName',
-    'issueStartDate',
-    'issueEndDate',
-    'issuePrice',
-    'issueSize',
-    'status',
-  ];
-  let parsed: any = null;
-  let activeRows = 0;
-  let fieldsFound: string[] = [];
-  let responseType: ProbeResult['response_type'] = 'ERROR';
-  let blocked = false;
-  let notes = '';
-  if (res.ok) {
-    try {
-      parsed = JSON.parse(res.body);
-      responseType = 'JSON';
-      const arr = Array.isArray(parsed)
-        ? parsed
-        : Array.isArray(parsed?.data)
-          ? parsed.data
-          : [];
-      if (arr.length > 0) {
-        const sample = arr[0] ?? {};
-        fieldsFound = Object.keys(sample);
-        activeRows = arr.filter((r: any) =>
-          String(r?.status ?? '').toLowerCase().includes('active')
-        ).length;
-      }
-      writeSample(ctx.samplesDir, 'sample-nse-ipo-current.json', JSON.stringify(parsed, null, 2));
-      notes = `Total rows: ${arr.length}, Active rows: ${activeRows}`;
-    } catch (e: any) {
-      responseType = 'EMPTY';
-      notes = `JSON parse failed: ${e?.message ?? e}`;
-    }
-  } else if (res.status === 0) {
-    responseType = 'ERROR';
-    notes = `Network error: ${res.error ?? 'unknown'}`;
-  } else {
-    responseType = 'BLOCKED';
-    blocked = true;
-    notes = `Non-200 (likely anti-bot or session). First bytes: ${truncate(res.body, 200)}`;
+
+  // Fetch failure → RED.
+  if (!res.ok || res.status === 0) {
+    return {
+      probe_id: 'P-01',
+      source: 'NSE — Current/Open IPOs',
+      url_or_endpoint: URL_ENDPOINT,
+      fetch_method: 'GET (after cookie warm-up)',
+      headers_or_cookies_required: ['User-Agent', 'Referer', 'X-Requested-With', 'warmed cookies'],
+      status_code: res.status === 0 ? null : res.status,
+      response_type: res.status === 0 ? 'ERROR' : 'BLOCKED',
+      fields_found: [],
+      fields_missing: EXPECTED_FIELDS,
+      sample_record: truncate(res.body, 500),
+      parsing_difficulty: 'Easy',
+      anti_bot_risk: 'Medium',
+      legal_tos_risk: 'Low',
+      freshness_or_update_frequency: 'Updated when an IPO opens/closes',
+      status: 'RED',
+      recommended_action: 'NSE current-IPO endpoint unreachable. Fall back to BSE (P-06) or SME (P-05).',
+      fallback_source: 'P-06, P-05',
+      ran_at_utc: ctx.nowIso,
+      latency_ms: res.latency_ms,
+      notes: res.status === 0 ? `Network error: ${res.error ?? 'unknown'}` : `Non-200: ${res.status}`,
+    };
   }
-  const missing = fieldsExpected.filter(
+
+  // Parse JSON.
+  let parsed: any;
+  try {
+    parsed = JSON.parse(res.body);
+  } catch (e: any) {
+    return {
+      probe_id: 'P-01',
+      source: 'NSE — Current/Open IPOs',
+      url_or_endpoint: URL_ENDPOINT,
+      fetch_method: 'GET (after cookie warm-up)',
+      headers_or_cookies_required: ['User-Agent', 'Referer', 'X-Requested-With', 'warmed cookies'],
+      status_code: res.status,
+      response_type: 'EMPTY',
+      fields_found: [],
+      fields_missing: EXPECTED_FIELDS,
+      sample_record: truncate(res.body, 500),
+      parsing_difficulty: 'Easy',
+      anti_bot_risk: 'Medium',
+      legal_tos_risk: 'Low',
+      freshness_or_update_frequency: 'Updated when an IPO opens/closes',
+      status: 'RED',
+      recommended_action: 'JSON parse failed; endpoint returned non-JSON (likely anti-bot HTML).',
+      fallback_source: 'P-06, P-05',
+      ran_at_utc: ctx.nowIso,
+      latency_ms: res.latency_ms,
+      notes: `JSON parse failed: ${e?.message ?? e}; body starts: ${truncate(res.body, 80)}`,
+    };
+  }
+
+  const arr: any[] = Array.isArray(parsed) ? parsed : Array.isArray(parsed?.data) ? parsed.data : [];
+
+  // Save sample regardless of row count for git-diff signal.
+  writeSample(ctx.samplesDir, 'sample-nse-ipo-current.json', JSON.stringify(parsed, null, 2));
+
+  // Reachable but no rows → YELLOW.
+  if (arr.length === 0) {
+    return {
+      probe_id: 'P-01',
+      source: 'NSE — Current/Open IPOs',
+      url_or_endpoint: URL_ENDPOINT,
+      fetch_method: 'GET (after cookie warm-up)',
+      headers_or_cookies_required: ['User-Agent', 'Referer', 'X-Requested-With', 'warmed cookies'],
+      status_code: res.status,
+      response_type: 'JSON',
+      fields_found: [],
+      fields_missing: EXPECTED_FIELDS,
+      sample_record: truncate(JSON.stringify(parsed, null, 2), 800),
+      parsing_difficulty: 'Easy',
+      anti_bot_risk: 'Medium',
+      legal_tos_risk: 'Low',
+      freshness_or_update_frequency: 'Updated when an IPO opens/closes',
+      status: 'YELLOW',
+      recommended_action:
+        'Source reachable but 0 rows in current snapshot. category=ipo appears to be mainboard-only; if today\'s only IPOs are SME, P-05 should satisfy the IPO-list-source gate.',
+      fallback_source: 'P-05 (SME), P-06 (BSE)',
+      ran_at_utc: ctx.nowIso,
+      latency_ms: res.latency_ms,
+      notes: 'source reachable but no rows in current snapshot.',
+    };
+  }
+
+  // Has rows → check shape.
+  const sample = arr[0] ?? {};
+  const fieldsFound = Object.keys(sample);
+  const missing = EXPECTED_FIELDS.filter(
     (f) => !fieldsFound.map((x) => x.toLowerCase()).includes(f.toLowerCase())
   );
-  const hasRequiredFields = fieldsFound.length > 0 && missing.length < fieldsExpected.length * 0.6;
-  const status = classify({
-    ok: res.ok,
-    hasRequiredFields,
-    parsingDifficulty: 'Easy',
-    legalToSRisk: 'Low',
-    antiBotRisk: 'Medium',
-    blocked,
-  });
+  const activeRows = arr.filter((r: any) =>
+    String(r?.status ?? '').toLowerCase().includes('active')
+  ).length;
+  const hasRequiredFields = fieldsFound.length > 0 && missing.length < EXPECTED_FIELDS.length * 0.6;
+
   return {
     probe_id: 'P-01',
     source: 'NSE — Current/Open IPOs',
     url_or_endpoint: URL_ENDPOINT,
-    fetch_method: 'GET (after cookie warm-up of https://www.nseindia.com/)',
-    headers_or_cookies_required: ['User-Agent (browser-like)', 'Referer', 'X-Requested-With', 'warmed cookies'],
+    fetch_method: 'GET (after cookie warm-up)',
+    headers_or_cookies_required: ['User-Agent', 'Referer', 'X-Requested-With', 'warmed cookies'],
     status_code: res.status,
-    response_type: responseType,
+    response_type: 'JSON',
     fields_found: fieldsFound,
     fields_missing: missing,
-    sample_record: parsed
-      ? truncate(JSON.stringify(Array.isArray(parsed) ? parsed[0] : parsed?.data?.[0] ?? parsed, null, 2), 800)
-      : truncate(res.body, 500),
+    sample_record: truncate(JSON.stringify(sample, null, 2), 800),
     parsing_difficulty: 'Easy',
     anti_bot_risk: 'Medium',
     legal_tos_risk: 'Low',
-    freshness_or_update_frequency: 'Updated when an IPO opens/closes; intra-day stable',
-    status,
-    recommended_action: status === 'GREEN'
+    freshness_or_update_frequency: 'Updated when an IPO opens/closes',
+    status: hasRequiredFields ? 'GREEN' : 'YELLOW',
+    recommended_action: hasRequiredFields
       ? 'Use as primary source for Live & Upcoming tab.'
-      : status === 'YELLOW'
-        ? 'Use with retries + cookie warm-up; pair with BSE mirror (P-06) as fallback.'
-        : 'Fall back to BSE (P-06). If both red, project blocked — escalate.',
+      : 'Endpoint reachable but field schema drifted; review fields_missing.',
     fallback_source: 'P-06',
     ran_at_utc: ctx.nowIso,
     latency_ms: res.latency_ms,
-    notes,
+    notes: `Total rows: ${arr.length}, Active rows: ${activeRows}`,
   };
 };

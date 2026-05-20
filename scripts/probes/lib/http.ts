@@ -185,7 +185,9 @@ export async function warmNseEquityPage(symbol: string): Promise<FetchResult> {
   });
 }
 
-export function truncate(s: string, n = 500): string {
-  if (s.length <= n) return s;
-  return s.slice(0, n) + `…[truncated, total ${s.length} chars]`;
+export function truncate(s: string | null | undefined, n = 500): string {
+  if (s == null) return '';
+  const str = String(s);
+  if (str.length <= n) return str;
+  return str.slice(0, n) + `…[truncated, total ${str.length} chars]`;
 }
