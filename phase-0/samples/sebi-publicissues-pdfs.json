@@ -1,0 +1,23 @@
+{
+  "captured_at_utc": "2026-05-20T19:10:29.299Z",
+  "winning_attempt": "static-alt",
+  "attempts": [
+    {
+      "attempt": "static-primary",
+      "status": 200,
+      "bytes": 6080,
+      "tr_count": 0,
+      "pdf_count": 0,
+      "notes": "static ok: tr=0, pdfs=0, bytes=6080"
+    },
+    {
+      "attempt": "static-alt",
+      "status": 200,
+      "bytes": 46183,
+      "tr_count": 26,
+      "pdf_count": 0,
+      "notes": "static ok: tr=26, pdfs=0, bytes=46183"
+    }
+  ],
+  "pdfs": []
+}
