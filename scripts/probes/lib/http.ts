@@ -170,6 +170,21 @@ export async function warmNseCookies(): Promise<FetchResult> {
   });
 }
 
+// Warm the per-symbol equity-section session that the historical OHLC API
+// checks (in addition to the root cookies set by warmNseCookies). The
+// historical endpoint rejects requests whose cookie jar lacks evidence of a
+// recent visit to the equity get-quotes page.
+export async function warmNseEquityPage(symbol: string): Promise<FetchResult> {
+  return httpGet(`https://www.nseindia.com/get-quotes/equity?symbol=${symbol}`, {
+    headers: {
+      Accept:
+        'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+      Referer: 'https://www.nseindia.com/',
+    },
+    timeoutMs: 15_000,
+  });
+}
+
 export function truncate(s: string, n = 500): string {
   if (s.length <= n) return s;
   return s.slice(0, n) + `…[truncated, total ${s.length} chars]`;

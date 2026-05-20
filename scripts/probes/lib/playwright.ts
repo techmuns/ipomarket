@@ -110,26 +110,27 @@ async function launchBrowser(): Promise<Browser> {
 
 async function extractFields(page: Page): Promise<BrokerPageFields> {
   return page.evaluate((labels: string[]) => {
-    const norm = (el: Element | null) =>
-      (el?.textContent ?? '').replace(/\s+/g, ' ').trim();
+    function norm(el: Element | null): string {
+      return (el?.textContent ?? '').replace(/\s+/g, ' ').trim();
+    }
 
     const headings = Array.from(document.querySelectorAll('h1, h2, h3, h4'))
-      .map((h) => norm(h))
-      .filter((s) => s.length > 0 && s.length < 300);
+      .map(function (h) { return norm(h); })
+      .filter(function (s) { return s.length > 0 && s.length < 300; });
 
     const tables: Array<{ caption: string; rows: string[][] }> = [];
-    document.querySelectorAll('table').forEach((tbl) => {
+    document.querySelectorAll('table').forEach(function (tbl) {
       const caption = norm(tbl.querySelector('caption'));
       const rows: string[][] = [];
-      tbl.querySelectorAll('tr').forEach((tr) => {
-        const cells = Array.from(tr.querySelectorAll('th, td')).map((c) => norm(c));
-        if (cells.some((c) => c.length > 0)) rows.push(cells);
+      tbl.querySelectorAll('tr').forEach(function (tr) {
+        const cells = Array.from(tr.querySelectorAll('th, td')).map(function (c) { return norm(c); });
+        if (cells.some(function (c) { return c.length > 0; })) rows.push(cells);
       });
       if (rows.length > 0) tables.push({ caption, rows });
     });
 
     const docLinks: Array<{ text: string; href: string }> = [];
-    document.querySelectorAll('a[href]').forEach((a) => {
+    document.querySelectorAll('a[href]').forEach(function (a) {
       const href = (a as HTMLAnchorElement).href;
       const text = norm(a);
       const docHit =
@@ -280,6 +281,119 @@ function inferRenderMode(raw: number, rendered: number): string {
   if (ratio >= 1.5) return 'JS-rendered';
   if (ratio <= 0.8) return 'server-rendered (truncated by JS)';
   return 'server-rendered';
+}
+
+// Generic single-page render helper used by P-08/P-08b (SEBI Kendo-grid SPAs).
+// Self-contained: launches its own browser, renders once, closes. No field
+// extraction — caller decides what to do with the rendered HTML / text.
+
+export interface RenderedPage {
+  url: string;
+  final_url: string;
+  status: number;
+  title: string;
+  raw_html_length: number;
+  rendered_html: string;
+  rendered_html_length: number;
+  visible_text: string;
+  screenshot_png: Buffer;
+  challenge_detected: boolean;
+  challenge_reasons: string[];
+  latency_ms: number;
+  error?: string;
+}
+
+export async function renderPage(
+  url: string,
+  opts: { timeoutMs?: number; waitAfterLoadMs?: number } = {}
+): Promise<RenderedPage> {
+  const started = Date.now();
+  let browser: Browser | null = null;
+  let status = 0;
+  let final_url = url;
+  let title = '';
+  let raw_html_length = 0;
+  let rendered_html = '';
+  let visible_text = '';
+  let screenshot: Buffer = Buffer.alloc(0);
+  let challenge_detected = false;
+  let challenge_reasons: string[] = [];
+  let error: string | undefined;
+
+  try {
+    browser = await launchBrowser();
+    const context = await browser.newContext({
+      userAgent: DESKTOP_UA,
+      locale: 'en-IN',
+      viewport: { width: 1440, height: 900 },
+    });
+    const page = await context.newPage();
+    let response: PWResponse | null = null;
+    try {
+      response = await page.goto(url, {
+        waitUntil: 'networkidle',
+        timeout: opts.timeoutMs ?? 30_000,
+      });
+      status = response?.status() ?? 0;
+      final_url = page.url();
+      if (response) {
+        try {
+          const rawBody = await response.text();
+          raw_html_length = rawBody.length;
+        } catch {
+          raw_html_length = 0;
+        }
+      }
+      title = await page.title();
+      await page.waitForTimeout(opts.waitAfterLoadMs ?? 1500);
+      rendered_html = await page.content();
+      try {
+        visible_text = await page.evaluate(function () {
+          return document.body?.innerText ?? '';
+        });
+      } catch {
+        visible_text = '';
+      }
+      try {
+        screenshot = await page.screenshot({ fullPage: true });
+      } catch {
+        screenshot = Buffer.alloc(0);
+      }
+      const ch = detectChallenge(status, title, rendered_html, response);
+      challenge_detected = ch.detected;
+      challenge_reasons = ch.reasons;
+    } catch (e: any) {
+      error = e?.message ?? String(e);
+    } finally {
+      await context.close();
+    }
+  } catch (e: any) {
+    error = `launch: ${e?.message ?? e}`;
+  } finally {
+    if (browser) {
+      try {
+        await browser.close();
+      } catch {
+        // ignore
+      }
+    }
+  }
+
+  return {
+    url,
+    final_url,
+    status,
+    title,
+    raw_html_length,
+    rendered_html,
+    rendered_html_length: rendered_html.length,
+    visible_text,
+    screenshot_png: screenshot,
+    challenge_detected,
+    challenge_reasons,
+    latency_ms: Date.now() - started,
+    error,
+  };
 }
 
 export function makeBrokerPageProbe(spec: BrokerProbeSpec): ProbeFn {

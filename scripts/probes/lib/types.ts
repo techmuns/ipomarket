@@ -44,6 +44,8 @@ export const PROBE_GROUPS = {
   G: ['P-19', 'P-20', 'P-21', 'P-22'],
   // Phase 0.1 — broker IPO page benchmark (Zerodha, Upstox). Reference only.
   H: ['P-23a', 'P-23b'],
+  // Phase 0.1 repair pass — auxiliary classifiers (sector mapping).
+  I: ['P-24'],
 } as const;
 
 export type ProbeGroup = keyof typeof PROBE_GROUPS;
