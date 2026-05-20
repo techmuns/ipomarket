@@ -1,0 +1,18 @@
+node_modules/
+*.log
+.env
+.env.local
+.DS_Store
+.python-cache/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Phase 0 large/binary samples are excluded from the repo;
+# only structured JSON/HTML excerpts and metadata are committed.
+phase-0/samples/*.pdf
+phase-0/samples/*.full.html
+
+# Local probe scratch
+phase-0/.scratch/

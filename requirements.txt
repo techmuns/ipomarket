@@ -1,0 +1,4 @@
+# Python dependencies used ONLY by Phase 0 PDF-parsing probes (P-17, P-18).
+# Installed in GitHub Actions; not needed for Node-side probes.
+pdfplumber==0.11.4
+camelot-py[cv]==0.11.0

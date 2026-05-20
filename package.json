@@ -1,0 +1,21 @@
+{
+  "name": "ipomarket-phase0-probes",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Phase 0 source-feasibility probes. Not an app. See /root/.claude/plans/ipo-market-dashboard-we-zazzy-liskov.md Section L.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "probe": "tsx scripts/probes/run.ts",
+    "probe:group": "tsx scripts/probes/run.ts --group",
+    "probe:one": "tsx scripts/probes/run.ts --probe"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
