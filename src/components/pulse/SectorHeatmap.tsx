@@ -38,9 +38,17 @@ export function SectorHeatmap() {
         breadcrumb: { show: false },
         label: {
           show: true,
-          formatter: '{b}',
+          // Split "Macro / Sector" onto two lines so narrow tiles don't truncate
+          // mid-word; small tiles fall back to truncating the second line only.
+          formatter: (params: any) => {
+            const parts = String(params.name ?? '').split(' / ');
+            return parts.length >= 2 ? parts.join('\n') : (params.name ?? '');
+          },
           fontSize: 11,
+          lineHeight: 14,
           color: '#f1f5f9',
+          overflow: 'truncate',
+          ellipsis: '…',
         },
         upperLabel: { show: false },
         itemStyle: {

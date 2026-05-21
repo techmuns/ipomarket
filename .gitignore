@@ -1,5 +1,8 @@
 node_modules/
 *.log
+# Exception: keep build/preview logs from the visual-QA workflow so they
+# commit alongside the screenshots for offline diagnosis.
+!phase-1-screens/*.log
 .env
 .env.local
 .DS_Store

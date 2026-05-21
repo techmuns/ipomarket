@@ -58,8 +58,25 @@ export function FadeScatter() {
         },
         markLine: {
           symbol: 'none',
+          silent: true,
           lineStyle: { color: '#475569', type: 'dashed' },
-          data: [{ name: 'y = x', coord: [-100, -100] }, { coord: [200, 200] }] as any,
+          // y = x reference line — a single line defined as [start, end].
+          // ECharts wants `data` to be an array of *lines*, where each line is
+          // a 2-tuple of points. The prior single-array form threw
+          // "Cannot read properties of undefined (reading 'coord')".
+          data: [
+            [
+              { name: 'y = x', coord: [-100, -100] },
+              { coord: [400, 400] },
+            ],
+          ] as any,
+          label: {
+            show: true,
+            position: 'end',
+            formatter: 'y = x',
+            color: '#64748b',
+            fontSize: 10,
+          },
         },
       },
     ],

@@ -53,12 +53,12 @@ export function Sidebar() {
       </nav>
       <div className="border-t border-slate-800/60 p-3">
         <a
-          className="block rounded-md border border-dashed border-slate-800 px-3 py-2 text-[11px] leading-tight text-slate-500 hover:border-slate-700 hover:text-slate-400"
+          className="block rounded-md border border-dashed border-slate-800 px-3 py-2 text-[11px] leading-tight text-slate-400 hover:border-slate-700 hover:text-slate-200"
           href="https://www.sebi.gov.in"
           rel="noreferrer"
           target="_blank"
         >
-          <Archive className="inline h-3 w-3 mr-1" />
+          <Archive className="inline h-3 w-3 mr-1 text-slate-500" />
           Production data is sourced from NSE / BSE / SEBI / RHP and committed registrar links only.
         </a>
       </div>
