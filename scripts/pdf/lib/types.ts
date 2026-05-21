@@ -27,15 +27,60 @@ export interface PdfSliceResult {
   notes: string;
 }
 
+// Phase 5A.1 — doc-type taxonomy. Derived from SEBI listing link_text.
+export type DocType =
+  | 'Draft Red Herring Prospectus'
+  | 'Red Herring Prospectus'
+  | 'Final Offer Document'
+  | 'Prospectus'
+  | 'Draft Abridged Prospectus'
+  | 'unknown';
+
+export interface SebiCandidate {
+  url: string;
+  link_text: string;
+  doc_type: DocType;
+  source_smid: 10 | 11 | 12;
+  captured_at_utc: string;
+}
+
+export interface SebiDiscoverySmidResult {
+  count: number;
+  ok: boolean;
+  error: string | null;
+  source?: string;
+}
+
+export interface SebiDiscoveryFile {
+  generated_at_utc: string;
+  parser_version: string;
+  by_smid: {
+    '10': SebiDiscoverySmidResult;
+    '11': SebiDiscoverySmidResult;
+    '12': SebiDiscoverySmidResult;
+  };
+  candidates: SebiCandidate[];
+}
+
 export interface CandidateScanEntry {
   ipo_id: string;
   url: string;
   page_count: number | null;
-  verdict: 'selected' | 'too_short' | 'not_evaluated' | 'fetch_failed';
+  verdict:
+    | 'selected'
+    | 'too_short'
+    | 'not_evaluated'
+    | 'fetch_failed'
+    | 'doc_type_rejected'; // Phase 5A.1 — DAP rejected before download
+  doc_type?: DocType; // Phase 5A.1 — annotated when known
+  source_smid?: 10 | 11 | 12; // Phase 5A.1 — when sourced from discovery
 }
 
 export interface CandidatePoolMeta {
   total_ipo_documents_with_sebi_url: number;
+  // Phase 5A.1 — count of additional candidates merged from sebi-candidates.json
+  // (i.e. URLs harvested from smid=11/12 that weren't already in ipo-documents.json).
+  total_discovery_candidates_merged?: number;
   pdf_1_cover_target: {
     ipo_id: string;
     url: string;
@@ -46,8 +91,25 @@ export interface CandidatePoolMeta {
     url: string;
     page_count: number;
     reason: string;
+    doc_type?: DocType; // Phase 5A.1
   } | null;
+  // Legacy key — kept as an alias for one parser version. Future Phase 5C
+  // UI work should consume `full_document_candidate_unavailable` instead.
+  // Both flip together; the legacy name conflates "candidate" with "table"
+  // and was misleading.
   financial_table_candidate_unavailable: boolean;
+  // Phase 5A.1 — the canonical signal. True when no full DRHP/RHP/Final-
+  // Offer/Prospectus candidate (page_count >= 200) is available after
+  // merging ipo-documents.json + sebi-candidates.json and applying the
+  // doc-type filter.
+  full_document_candidate_unavailable: boolean;
+  // Phase 5A.1 — human-readable reason when unavailable. One of:
+  //   'no smid=11/12 PDFs found'
+  //   'all candidates were DAPs'
+  //   'all candidates < 200 pages'
+  //   'all candidates fetch_failed'
+  //   'mixed: see scanned[]'
+  full_document_unavailable_reason?: string;
   scanned: CandidateScanEntry[];
 }
 
@@ -166,8 +228,18 @@ export interface IndexSummary {
   generated_at_utc: string;
   parser_version: string;
   pdf_1: { ipo_id: string; doc_kind: string; overall_confidence: PdfConfidence | null } | null;
-  pdf_2: { ipo_id: string; doc_kind: string; overall_confidence: PdfConfidence | null } | null;
+  pdf_2: {
+    ipo_id: string;
+    doc_kind: string;
+    overall_confidence: PdfConfidence | null;
+    doc_type?: DocType; // Phase 5A.1
+  } | null;
+  // Legacy alias (see CandidatePoolMeta) — kept for one parser version.
   financial_table_candidate_unavailable: boolean;
+  // Phase 5A.1 — canonical signal.
+  full_document_candidate_unavailable: boolean;
+  // Phase 5A.1 — per-smid discovery summary mirror for at-a-glance reading.
+  discovery_smid_counts?: { '10': number; '11': number; '12': number };
   notes: string;
 }
 

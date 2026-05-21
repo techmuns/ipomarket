@@ -72,6 +72,59 @@ def _confidence_field(found: bool) -> str:
 _NUM_INT_RE = re.compile(r"[\d,]+")
 _NUM_FLOAT_RE = re.compile(r"[\d,]+(?:\.\d+)?")
 
+# Phase 5A.1 — header-row blocklist. Cover pages in SEBI prospectuses
+# commonly carry a table whose header row reads "NAME OF THE REGISTRAR
+# CONTACT PERSON EMAIL AND TELEPHONE" or "LOGO OF THE BRLM NAME CONTACT
+# PERSON TELEPHONE AND EMAIL". The previous heuristics captured these
+# header rows as if they were values; this regex rejects them.
+_HEADER_BLOCKLIST = re.compile(
+    r"^(?:logo of\b|name of the\b|name of\b|contact person|"
+    r"telephone\s+and\s+email|email\s+and\s+telephone|"
+    r"name\s+address\s+and\s+contact|sl\.?\s*no\.?\b|s\.?\s*no\.?\b)",
+    re.IGNORECASE,
+)
+
+# A line that "looks like" a firm name should carry at least one of these
+# tokens. Used by BRLM and registrar to reject ALL-CAPS header rows that
+# happen to match the lead regex but carry no entity signal.
+_FIRM_SUFFIX = re.compile(
+    r"\b(?:limited|ltd\.?|capital|securities|advisors?|advisers?|"
+    r"holdings|financial|merchant|managers?|services|technologies?|"
+    r"intime|kfin|kfintech|skyline|bigshare|link|cameo|maashitla|registrars?)\b",
+    re.IGNORECASE,
+)
+
+# Contact / next-section stoplines for BRLM line walk. A "contact" stop
+# (Tel:/E-mail:/Contact Person) halts capture mid-line but doesn't end the
+# walk. A "section" stop (Registrar to / Statutory Auditors / Bankers to)
+# ends the walk entirely.
+_BRLM_CONTACT_STOP = re.compile(
+    r"(?:\btel\.?[:\s]|\btelephone[:\s]|\be-?mail[:\s]|\bemail[:\s]|\bcontact person\b|\bphone[:\s])",
+    re.IGNORECASE,
+)
+_BRLM_SECTION_STOP = re.compile(
+    r"^(?:registrar to\b|statutory auditors?\b|bankers? to\b|"
+    r"investor grievance\b|legal advisors?\b|legal counsel\b)",
+    re.IGNORECASE,
+)
+
+
+def _looks_like_header(s: str) -> bool:
+    """Return True if `s` matches a known header-row pattern OR is ALL-CAPS
+    boilerplate with no firm-suffix marker."""
+    if not s:
+        return True
+    stripped = s.strip()
+    if _HEADER_BLOCKLIST.search(stripped):
+        return True
+    # ALL-CAPS line with no firm-suffix → likely a header row.
+    is_mostly_caps = len(stripped) >= 6 and sum(
+        1 for c in stripped if c.isalpha()
+    ) >= 6 and stripped == stripped.upper()
+    if is_mostly_caps and not _FIRM_SUFFIX.search(stripped):
+        return True
+    return False
+
 
 def _to_float(s: str) -> float | None:
     try:
@@ -147,54 +200,99 @@ def _extract_face_value(text: str) -> tuple[float | None, str | None]:
 
 
 def _extract_brlms(text: str) -> tuple[list[str] | None, str | None]:
-    # BRLMs are usually under a "BOOK RUNNING LEAD MANAGERS" / "BOOK-RUNNING
-    # LEAD MANAGER(S)" heading followed by 1-5 firm names. We capture the
-    # heading + the next 200 chars and split by line breaks / common
-    # separators, keeping items that look like a firm name (>= 4 chars,
-    # contains a letter, not all-caps boilerplate).
-    m = re.search(
-        r"book[\s-]+running\s+lead\s+manager[s]?\s*[:\n]?\s*(.{10,300})",
-        text,
-        re.IGNORECASE | re.DOTALL,
-    )
-    if not m:
-        return None, None
-    chunk = m.group(1)
-    # Split on newlines, commas, or " and ".
-    parts = re.split(r"[\n,]| and ", chunk)
-    candidates: list[str] = []
-    for p in parts:
-        s = p.strip().rstrip(".").strip()
-        if len(s) < 4:
-            continue
-        if re.match(r"^[0-9.\s-]+$", s):
-            continue
-        if any(kw in s.lower() for kw in ["registrar", "company", "page", "draft"]):
+    """Line-based BRLM extraction (Phase 5A.1 rewrite).
+
+    Finds the "Book Running Lead Manager(s)" heading line, then walks
+    forward up to 25 lines, applying:
+      - header-row blocklist (`_looks_like_header`)
+      - section-boundary stop (`_BRLM_SECTION_STOP` → end walk)
+      - contact-info trim (`_BRLM_CONTACT_STOP` → slice line at marker)
+      - firm-suffix allowlist (`_FIRM_SUFFIX` must match)
+    Returns up to 5 cleaned firm names.
+    """
+    lines = text.splitlines()
+    heading_re = re.compile(r"book[\s-]+running\s+lead\s+manager[s]?", re.IGNORECASE)
+    heading_idx = -1
+    heading_snippet = ""
+    for i, ln in enumerate(lines):
+        if heading_re.search(ln):
+            heading_idx = i
+            heading_snippet = ln.strip()
             break
+    if heading_idx < 0:
+        return None, None
+
+    candidates: list[str] = []
+    end_walk = min(len(lines), heading_idx + 1 + 25)
+    for j in range(heading_idx + 1, end_walk):
+        raw = lines[j]
+        s = raw.strip()
+        if not s:
+            continue
+        # Section boundary: end the walk entirely.
+        if _BRLM_SECTION_STOP.search(s):
+            break
+        # Header-row blocklist: skip but keep walking.
+        if _looks_like_header(s):
+            continue
+        # Contact-info trim: if Tel: / E-mail: / Contact Person appears
+        # inside the line, slice the firm-name prefix only.
+        contact_m = _BRLM_CONTACT_STOP.search(s)
+        if contact_m:
+            firm = s[: contact_m.start()].strip()
+            firm = firm.rstrip(".,;:").rstrip("-").strip()
+            # If the trim left nothing recognizable, drop it.
+            if not firm:
+                continue
+            s = firm
+        # Firm-suffix allowlist: line must look like a firm name.
+        if not _FIRM_SUFFIX.search(s):
+            continue
+        # Drop parenthetical continuations like "(formerly known as ...)" —
+        # these are not separate firms.
+        if re.match(r"^\(formerly\s+known\s+as\b", s, re.IGNORECASE):
+            continue
         candidates.append(s)
         if len(candidates) >= 5:
             break
+
     if not candidates:
-        return None, None
-    return candidates, m.group(0)
+        return None, heading_snippet
+    return candidates, heading_snippet
 
 
 def _extract_registrar(text: str) -> tuple[str | None, str | None]:
-    m = re.search(
-        r"registrar\s+to\s+the\s+(?:issue|offer)\s*[:\n]?\s*([A-Z][A-Za-z0-9 &().,'-]{4,80})",
-        text,
-        re.IGNORECASE,
-    )
-    if m:
-        return m.group(1).strip().rstrip(".").strip(), m.group(0)
-    # Fallback: "Registrar:" alone
-    m = re.search(
-        r"registrar\s*[:\n]\s*([A-Z][A-Za-z0-9 &().,'-]{4,80})",
-        text,
-        re.IGNORECASE,
-    )
-    if m:
-        return m.group(1).strip().rstrip(".").strip(), m.group(0)
+    """Iterate up to 3 successive regex matches for the registrar anchor;
+    reject any whose captured group is a header-row pattern; return the
+    first survivor (or None).
+    """
+    patterns = [
+        re.compile(
+            r"registrar\s+to\s+the\s+(?:issue|offer)\s*[:\n]?\s*([A-Z][A-Za-z0-9 &().,'-]{4,80})",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"registrar\s*[:\n]\s*([A-Z][A-Za-z0-9 &().,'-]{4,80})",
+            re.IGNORECASE,
+        ),
+    ]
+    # Try the strict-anchor pattern first; for each, walk through all matches
+    # in document order, returning the first non-header capture.
+    for pat in patterns:
+        attempts = 0
+        for m in pat.finditer(text):
+            attempts += 1
+            if attempts > 3:
+                break
+            candidate = m.group(1).strip().rstrip(".").strip()
+            if _looks_like_header(candidate):
+                continue
+            # Optional: the actual registrar firm name almost always carries
+            # a known registrar-firm token; if not, downgrade by requiring
+            # a firm-suffix marker.
+            if not _FIRM_SUFFIX.search(candidate):
+                continue
+            return candidate, m.group(0)
     return None, None
 
 
@@ -246,6 +344,13 @@ def parse_cover(pdf_path: str, out_path: str) -> int:
         "raw_snippet": "",
         "overall_confidence": "low",
         "ok": False,
+        # Phase 5A.1 — Python-side manual-review flag. Set to True when
+        # at least one ANCHOR_LABEL was found in the text (proving the
+        # cover page IS there) but the corresponding field came back null
+        # after blocklist rejection (proving our extractor's heuristics
+        # missed it). The orchestrator ORs this with conf === 'low' when
+        # composing the audit row's manual_review_required.
+        "needs_manual_review": False,
         "errors": [],
     }
     try:
@@ -347,6 +452,22 @@ def parse_cover(pdf_path: str, out_path: str) -> int:
             matched = sum(1 for lbl in ANCHOR_LABELS if lbl in joined_lower)
             result["anchors_matched"] = matched
             result["overall_confidence"] = _confidence_overall(matched, len(ANCHOR_LABELS))
+
+            # Phase 5A.1 — needs_manual_review semantics.
+            # When the cover-page text DOES contain a BRLM or registrar
+            # anchor (so we know the section exists) but the extracted
+            # field is null (blocklist rejection or regex miss), flag
+            # the row for manual review. The orchestrator ORs this with
+            # `overall_confidence === 'low'`.
+            brlm_anchor_present = "brlm" in joined_lower
+            registrar_anchor_present = "registrar" in joined_lower
+            if (
+                brlm_anchor_present and result["fields"]["brlms"]["value"] is None
+            ) or (
+                registrar_anchor_present
+                and result["fields"]["registrar"]["value"] is None
+            ):
+                result["needs_manual_review"] = True
 
             # Raw snippet: the first ~SNIPPET_CAP chars after the first
             # matched anchor (so a reviewer can spot-check provenance).

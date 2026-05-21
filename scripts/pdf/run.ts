@@ -32,18 +32,22 @@ import { dirname, join } from 'node:path';
 
 import { safeWriteJson, readJsonOrNull } from '../ingest/lib/safeWrite.ts';
 import { httpGetBinary } from './lib/http.ts';
+import { discoverSebiCandidates, classifyDocType } from './discover.ts';
 import {
   log,
   warn,
   type CandidatePoolMeta,
   type CandidateScanEntry,
   type CoverExtraction,
+  type DocType,
   type FinancialsExtraction,
   type IpoPdfAuditRow,
   type IndexSummary,
   type PdfConfidence,
   type PdfExtractionAudit,
   type PdfSourceState,
+  type SebiCandidate as DiscoverySebiCandidate,
+  type SebiDiscoveryFile,
 } from './lib/types.ts';
 
 const PARSER_VERSION = '5A.1';
@@ -75,10 +79,29 @@ interface IpoDocsFile {
   >;
 }
 
-interface SebiCandidate {
+// Entry sourced from src/data/snapshots/ipo-documents.json. Carries an
+// IPO id (the snapshot's primary key) — distinguished from the discovery
+// helper's SebiCandidate, which carries no IPO id (just a SEBI listing
+// row).
+interface IpoDocSebiEntry {
   ipo_id: string;
   doc_kind: string;
+  doc_title: string;
   url: string;
+  declared_page_count: number | null;
+  doc_type: DocType;
+}
+
+// Unified candidate seen by PDF #2 selection. Discovery-sourced rows carry
+// a synthetic `discovery:<source_smid>` ipo_id since SEBI's listing rows
+// don't correspond 1:1 to ipo-documents.json rows.
+interface UnifiedCandidate {
+  ipo_id: string; // real IPO id OR synthetic 'discovery:smid-NN:<slug>'
+  doc_kind: string;
+  url: string;
+  doc_type: DocType;
+  source: 'ipo-documents' | 'discovery';
+  source_smid?: 10 | 11 | 12;
   declared_page_count: number | null;
 }
 
@@ -93,22 +116,126 @@ function isSebiUrl(rawUrl: string): boolean {
   }
 }
 
-function collectSebiCandidates(docs: IpoDocsFile): SebiCandidate[] {
-  const out: SebiCandidate[] = [];
+function collectIpoDocSebiEntries(docs: IpoDocsFile): IpoDocSebiEntry[] {
+  const out: IpoDocSebiEntry[] = [];
   for (const [ipoId, entry] of Object.entries(docs.by_ipo)) {
     for (const d of entry.docs ?? []) {
       if (!isSebiUrl(d.url)) continue;
+      // doc_type derived from the document title + URL using the same
+      // classifier as discover.ts. The `kind` field in ipo-documents.json
+      // is coarser ("DRHP" / "RHP" / "Prospectus") and doesn't tell us
+      // abridged-vs-full; the title does.
+      const doc_type = classifyDocType(`${d.title} ${d.url}`);
       out.push({
         ipo_id: ipoId,
         doc_kind: d.kind,
+        doc_title: d.title,
         url: d.url,
         declared_page_count: typeof d.page_count === 'number' ? d.page_count : null,
+        doc_type,
       });
     }
   }
-  // Stable order for idempotent output.
   out.sort((a, b) => a.ipo_id.localeCompare(b.ipo_id));
   return out;
+}
+
+// Doc-type preference for PDF #2 selection. Lower index = higher preference.
+// 'Draft Abridged Prospectus' is excluded entirely (rejected pre-download).
+const DOC_TYPE_PREFERENCE: ReadonlyArray<DocType> = [
+  'Draft Red Herring Prospectus',
+  'Red Herring Prospectus',
+  'Final Offer Document',
+  'Prospectus',
+  'unknown',
+];
+
+function docTypePreferenceIndex(t: DocType): number {
+  const i = DOC_TYPE_PREFERENCE.indexOf(t);
+  return i < 0 ? Number.POSITIVE_INFINITY : i;
+}
+
+function slugifyUrl(url: string): string {
+  try {
+    const u = new URL(url);
+    const last = decodeURIComponent(u.pathname.split('/').pop() ?? '').toLowerCase();
+    return last.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'discovery';
+  } catch {
+    return 'discovery';
+  }
+}
+
+// Build the unified pool: ipo-documents.json SEBI rows ∪ discovery candidates,
+// deduped by URL. Then exclude PDF #1 (pinned). Then sort by:
+//   1. doc_type preference (lower index first; DAPs already excluded upstream)
+//   2. source preference (ipo-documents before discovery — known IPOs first)
+//   3. URL string (stable, idempotent)
+function buildUnifiedPdf2Pool(
+  ipoDocEntries: IpoDocSebiEntry[],
+  discovery: SebiDiscoveryFile | null,
+  pinnedIpoId: string
+): { pool: UnifiedCandidate[]; mergedFromDiscovery: number; rejectedDap: UnifiedCandidate[] } {
+  const seenUrls = new Set<string>();
+  const rejectedDap: UnifiedCandidate[] = [];
+  const pool: UnifiedCandidate[] = [];
+
+  for (const e of ipoDocEntries) {
+    if (e.ipo_id === pinnedIpoId) continue; // PDF #1 is pinned to InCred; skip here
+    if (seenUrls.has(e.url)) continue;
+    seenUrls.add(e.url);
+    const candidate: UnifiedCandidate = {
+      ipo_id: e.ipo_id,
+      doc_kind: e.doc_kind,
+      url: e.url,
+      doc_type: e.doc_type,
+      source: 'ipo-documents',
+      declared_page_count: e.declared_page_count,
+    };
+    if (e.doc_type === 'Draft Abridged Prospectus') {
+      rejectedDap.push(candidate);
+      continue;
+    }
+    pool.push(candidate);
+  }
+
+  let mergedFromDiscovery = 0;
+  if (discovery) {
+    for (const d of discovery.candidates) {
+      // Strip query strings + fragments before dedupe so two
+      // representations of the same SEBI PDF can't both win.
+      if (!isSebiUrl(d.url)) continue; // host filter: real SEBI only
+      if (seenUrls.has(d.url)) continue;
+      seenUrls.add(d.url);
+      mergedFromDiscovery++;
+      const candidate: UnifiedCandidate = {
+        // Underscore (not colon) separators — keeps the value usable as a
+        // filesystem directory under phase-0/pdf-extracts/<ipo_id>/ on every
+        // OS we run on (Linux CI is permissive; macOS/Windows dev box less so).
+        ipo_id: `discovery_smid${d.source_smid}_${slugifyUrl(d.url)}`,
+        doc_kind: d.doc_type, // best-available label for discovery rows
+        url: d.url,
+        doc_type: d.doc_type,
+        source: 'discovery',
+        source_smid: d.source_smid,
+        declared_page_count: null,
+      };
+      if (d.doc_type === 'Draft Abridged Prospectus') {
+        rejectedDap.push(candidate);
+        continue;
+      }
+      pool.push(candidate);
+    }
+  }
+
+  pool.sort((a, b) => {
+    const pa = docTypePreferenceIndex(a.doc_type);
+    const pb = docTypePreferenceIndex(b.doc_type);
+    if (pa !== pb) return pa - pb;
+    if (a.source !== b.source) return a.source === 'ipo-documents' ? -1 : 1;
+    return a.url.localeCompare(b.url);
+  });
+
+  return { pool, mergedFromDiscovery, rejectedDap };
 }
 
 interface DownloadResult {
@@ -199,9 +326,12 @@ function emptyAudit(notes: string, state: PdfSourceState): PdfExtractionAudit {
     parser_version: PARSER_VERSION,
     candidate_pool: {
       total_ipo_documents_with_sebi_url: 0,
+      total_discovery_candidates_merged: 0,
       pdf_1_cover_target: null,
       pdf_2_financial_target: null,
       financial_table_candidate_unavailable: true,
+      full_document_candidate_unavailable: true,
+      full_document_unavailable_reason: notes,
       scanned: [],
     },
     by_ipo: {},
@@ -225,24 +355,65 @@ async function main(): Promise<number> {
     return 0;
   }
 
-  const allSebi = collectSebiCandidates(docs);
-  log('run', `found ${allSebi.length} SEBI-hosted doc URLs across all IPOs`);
+  const ipoDocEntries = collectIpoDocSebiEntries(docs);
+  log('run', `found ${ipoDocEntries.length} SEBI-hosted doc URLs across all IPOs`);
 
-  // PDF #1 — pinned to InCred Holdings.
-  const pdf1Candidate = allSebi.find((c) => c.ipo_id === PINNED_PDF_1_IPO) ?? null;
+  // Phase 5A.1 — run SEBI multi-subsection discovery. Writes
+  // phase-0/pdf-extracts/sebi-candidates.json regardless of fetch outcome
+  // (sandbox 403 / CI live both produce a valid file). NEVER touches
+  // src/data/snapshots/ipo-documents.json (per §X.1 hard rule).
+  let discovery: SebiDiscoveryFile | null = null;
+  try {
+    discovery = await discoverSebiCandidates();
+  } catch (e: unknown) {
+    const msg = e instanceof Error ? e.message : String(e);
+    warn('run', `discovery failed unexpectedly: ${msg} (continuing without discovery)`);
+  }
 
-  // PDF #2 — scan remaining SEBI URLs for a >= 200-page PDF.
-  const pool: SebiCandidate[] = allSebi.filter((c) => c.ipo_id !== PINNED_PDF_1_IPO);
+  // PDF #1 — pinned to InCred Holdings (still from ipo-documents.json).
+  const pdf1Candidate = ipoDocEntries.find((c) => c.ipo_id === PINNED_PDF_1_IPO) ?? null;
+
+  // PDF #2 — build unified pool (ipo-documents.json ∪ discovery candidates,
+  // deduped by URL), reject DAPs up-front, sort by doc_type preference.
+  const { pool: unifiedPool, mergedFromDiscovery, rejectedDap } = buildUnifiedPdf2Pool(
+    ipoDocEntries,
+    discovery,
+    PINNED_PDF_1_IPO
+  );
+  log(
+    'run',
+    `unified PDF #2 pool: ${unifiedPool.length} candidate(s) ` +
+      `(${mergedFromDiscovery} merged from discovery, ${rejectedDap.length} DAPs rejected up-front)`
+  );
+
   const scan: CandidateScanEntry[] = [];
-  let pdf2Selected: { candidate: SebiCandidate; pageCount: number; sha256: string; bytes: number } | null = null;
 
-  for (const cand of pool) {
+  // Record DAP rejections first (no download, no scan; just verdict).
+  for (const c of rejectedDap) {
+    scan.push({
+      ipo_id: c.ipo_id,
+      url: c.url,
+      page_count: c.declared_page_count,
+      verdict: 'doc_type_rejected',
+      doc_type: c.doc_type,
+      source_smid: c.source_smid,
+    });
+    log('scan', `[${c.ipo_id}] doc_type_rejected (Draft Abridged Prospectus)`);
+  }
+
+  let pdf2Selected:
+    | { candidate: UnifiedCandidate; pageCount: number; sha256: string; bytes: number }
+    | null = null;
+
+  for (const cand of unifiedPool) {
     if (pdf2Selected) {
       scan.push({
         ipo_id: cand.ipo_id,
         url: cand.url,
         page_count: cand.declared_page_count,
         verdict: 'not_evaluated',
+        doc_type: cand.doc_type,
+        source_smid: cand.source_smid,
       });
       continue;
     }
@@ -253,6 +424,8 @@ async function main(): Promise<number> {
         url: cand.url,
         page_count: null,
         verdict: 'fetch_failed',
+        doc_type: cand.doc_type,
+        source_smid: cand.source_smid,
       });
       log('scan', `[${cand.ipo_id}] fetch_failed (${dl.status} ${dl.error ?? ''})`);
       continue;
@@ -264,25 +437,68 @@ async function main(): Promise<number> {
         url: cand.url,
         page_count: null,
         verdict: 'fetch_failed',
+        doc_type: cand.doc_type,
+        source_smid: cand.source_smid,
       });
       log('scan', `[${cand.ipo_id}] could not read page_count`);
-      // Leave the downloaded source.pdf in place — it's gitignored.
       continue;
     }
     if (pc < FINANCIAL_PAGE_MIN) {
-      scan.push({ ipo_id: cand.ipo_id, url: cand.url, page_count: pc, verdict: 'too_short' });
+      scan.push({
+        ipo_id: cand.ipo_id,
+        url: cand.url,
+        page_count: pc,
+        verdict: 'too_short',
+        doc_type: cand.doc_type,
+        source_smid: cand.source_smid,
+      });
       log('scan', `[${cand.ipo_id}] too_short (${pc} pages, need >= ${FINANCIAL_PAGE_MIN})`);
       continue;
     }
-    scan.push({ ipo_id: cand.ipo_id, url: cand.url, page_count: pc, verdict: 'selected' });
+    scan.push({
+      ipo_id: cand.ipo_id,
+      url: cand.url,
+      page_count: pc,
+      verdict: 'selected',
+      doc_type: cand.doc_type,
+      source_smid: cand.source_smid,
+    });
     pdf2Selected = { candidate: cand, pageCount: pc, sha256: dl.sha256 ?? '', bytes: dl.bytes };
-    log('scan', `[${cand.ipo_id}] SELECTED as PDF #2 (${pc} pages, ${dl.bytes} bytes)`);
+    log(
+      'scan',
+      `[${cand.ipo_id}] SELECTED as PDF #2 (${pc} pages, ${dl.bytes} bytes, doc_type=${cand.doc_type})`
+    );
     break;
+  }
+
+  // Compose unavailable-reason string based on what the scan trail actually contains.
+  const fullDocUnavailable = pdf2Selected == null;
+  let fullDocUnavailableReason: string | undefined;
+  if (fullDocUnavailable) {
+    const scannedExcludingDap = scan.filter((s) => s.verdict !== 'doc_type_rejected');
+    if (scannedExcludingDap.length === 0 && rejectedDap.length > 0) {
+      fullDocUnavailableReason = 'all candidates were DAPs';
+    } else if (
+      scannedExcludingDap.length > 0 &&
+      scannedExcludingDap.every((s) => s.verdict === 'fetch_failed')
+    ) {
+      fullDocUnavailableReason = 'all candidates fetch_failed';
+    } else if (
+      scannedExcludingDap.length > 0 &&
+      scannedExcludingDap.every((s) => s.verdict === 'too_short' || s.verdict === 'fetch_failed')
+    ) {
+      fullDocUnavailableReason = 'all candidates < 200 pages';
+    } else if (unifiedPool.length === 0 && rejectedDap.length === 0) {
+      fullDocUnavailableReason = 'no smid=11/12 PDFs found AND no non-DAP rows in ipo-documents.json';
+    } else {
+      fullDocUnavailableReason = 'mixed: see scanned[]';
+    }
   }
 
   // Build candidate_pool meta.
   const candidatePool: CandidatePoolMeta = {
-    total_ipo_documents_with_sebi_url: allSebi.length,
+    total_ipo_documents_with_sebi_url: ipoDocEntries.length,
+    total_discovery_candidates_merged: mergedFromDiscovery,
     pdf_1_cover_target: pdf1Candidate
       ? {
           ipo_id: pdf1Candidate.ipo_id,
@@ -295,10 +511,20 @@ async function main(): Promise<number> {
           ipo_id: pdf2Selected.candidate.ipo_id,
           url: pdf2Selected.candidate.url,
           page_count: pdf2Selected.pageCount,
-          reason: `first scanned SEBI URL with page_count >= ${FINANCIAL_PAGE_MIN}`,
+          reason:
+            `first ${pdf2Selected.candidate.doc_type} candidate ` +
+            `(source=${pdf2Selected.candidate.source}` +
+            (pdf2Selected.candidate.source_smid != null
+              ? `, smid=${pdf2Selected.candidate.source_smid}`
+              : '') +
+            `) with page_count >= ${FINANCIAL_PAGE_MIN}`,
+          doc_type: pdf2Selected.candidate.doc_type,
         }
       : null,
-    financial_table_candidate_unavailable: pdf2Selected == null,
+    // Both flags flip together; legacy alias kept for one parser version.
+    financial_table_candidate_unavailable: fullDocUnavailable,
+    full_document_candidate_unavailable: fullDocUnavailable,
+    full_document_unavailable_reason: fullDocUnavailableReason,
     scanned: scan,
   };
 
@@ -373,6 +599,11 @@ async function main(): Promise<number> {
 
         anyLive = true;
         const conf = (cover.overall_confidence ?? 'low') as PdfConfidence;
+        // Phase 5A.1 — OR the Python-side needs_manual_review flag (set when
+        // anchors matched but registrar/BRLM extraction was blocklist-rejected)
+        // with the existing low-confidence path.
+        const needsManualReviewFromPython =
+          (cover as unknown as { needs_manual_review?: boolean }).needs_manual_review === true;
         byIpo[ipoId] = {
           doc_url: pdf1Candidate.url,
           doc_kind: pdf1Candidate.doc_kind,
@@ -393,7 +624,7 @@ async function main(): Promise<number> {
             },
           },
           overall_confidence: conf,
-          manual_review_required: conf === 'low',
+          manual_review_required: conf === 'low' || needsManualReviewFromPython,
           errors: cover.errors ?? [],
         };
       }
@@ -490,8 +721,12 @@ async function main(): Promise<number> {
     }
   } else if (pdf1Candidate) {
     // No PDF #2 selected and we did try (PDF #1 exists). Record this in errors
-    // so the audit's source_meta makes the unavailability obvious.
-    errors.push('financial table candidate unavailable: no scanned SEBI URL met page_count >= ' + FINANCIAL_PAGE_MIN);
+    // so the audit's source_meta makes the unavailability obvious. Phase 5A.1
+    // adds the explicit reason string sourced from candidate_pool.
+    errors.push(
+      `full document candidate unavailable (${fullDocUnavailableReason ?? 'unknown reason'}): ` +
+        `no candidate met page_count >= ${FINANCIAL_PAGE_MIN} after doc-type filter`
+    );
   }
 
   // Compose source state.
@@ -532,10 +767,20 @@ async function main(): Promise<number> {
       ? {
           ipo_id: candidatePool.pdf_2_financial_target.ipo_id,
           doc_kind: byIpo[candidatePool.pdf_2_financial_target.ipo_id]?.doc_kind ?? 'unknown',
-          overall_confidence: byIpo[candidatePool.pdf_2_financial_target.ipo_id]?.overall_confidence ?? null,
+          overall_confidence:
+            byIpo[candidatePool.pdf_2_financial_target.ipo_id]?.overall_confidence ?? null,
+          doc_type: candidatePool.pdf_2_financial_target.doc_type,
         }
       : null,
     financial_table_candidate_unavailable: candidatePool.financial_table_candidate_unavailable,
+    full_document_candidate_unavailable: candidatePool.full_document_candidate_unavailable,
+    discovery_smid_counts: discovery
+      ? {
+          '10': discovery.by_smid['10'].count,
+          '11': discovery.by_smid['11'].count,
+          '12': discovery.by_smid['12'].count,
+        }
+      : undefined,
     notes: audit.source_meta.notes,
   };
   safeWriteJson(INDEX_PATH, index);
@@ -561,6 +806,7 @@ function emptyIndex(notes: string): IndexSummary {
     pdf_1: null,
     pdf_2: null,
     financial_table_candidate_unavailable: true,
+    full_document_candidate_unavailable: true,
     notes,
   };
 }

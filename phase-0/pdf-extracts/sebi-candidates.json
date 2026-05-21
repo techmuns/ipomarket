@@ -1,0 +1,157 @@
+{
+  "generated_at_utc": "2026-05-21T18:02:04.982Z",
+  "parser_version": "5A.1",
+  "by_smid": {
+    "10": {
+      "count": 19,
+      "ok": true,
+      "error": null,
+      "source": "cached-from-P-08"
+    },
+    "11": {
+      "count": 0,
+      "ok": false,
+      "error": "HTTP 403"
+    },
+    "12": {
+      "count": 0,
+      "ok": false,
+      "error": "HTTP 403"
+    }
+  },
+  "candidates": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+      "link_text": "Incred Holdings Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
+      "link_text": "Online Instruments(India) Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
+      "link_text": "Jindal Supreme (India) Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
+      "link_text": "Playsimple Games Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
+      "link_text": "Punjab Carbonic Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Expression%20360%20Services%20India%20Limited-Abridged%20Prospectus_p.pdf",
+      "link_text": "Expression 360 Services India Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/TC%20TERRYTEX%20LIMITED-Abridged%20Prospectus_p.pdf",
+      "link_text": "T.C. TERRYTEX LIMITED - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/GUJARAT%20VICTORY%20FORGINGS%20LIMITED-Abridged%20Prospectus_p.pdf",
+      "link_text": "Gujarat Victory Forgings Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Nityas%20Gems%20and%20Jewellery%20Limited-Abridged%20Prospectus_p.pdf",
+      "link_text": "Nityas Gems and Jewellery Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Bvishal%20Oil%20and%20Energy%20Limited-Abridged%20Prospectus_p.pdf",
+      "link_text": "Bvishal Oil and Energy Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Sathya%20Agencies%20Limited-Abridged%20Prospectus_p.pdf",
+      "link_text": "Sathya Agencies Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Kay%20Jay%20Forgings%20Limited-Abridged%20Prospectus_p.pdf",
+      "link_text": "Kay Jay Forgings Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Adroit%20Industries%20India)Limited-Abridged%20Prospectus_p.pdf",
+      "link_text": "Adroit Industries (India) Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Intellius%20Recode%20Ltd%20-%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Intellius Recode Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Manipal%20Health%20Enterprises%20Limited-Abridged%20Prospectus_p.pdf",
+      "link_text": "Manipal Health Enterprises Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Rentomojo%20Limited-Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Rentomojo Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/COSMIC%20PV%20POWER%20LIMITED-Abridged%20prospectus_p.pdf",
+      "link_text": "Cosmic PV Power Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Pioneer%20Fil-Med%20Limited-Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Pioneer Fil-Med Limited-Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/RKB%20Global%20Limited%20-%20Abridged%20prospectus_p.pdf",
+      "link_text": "RKB Global Limited - Draft Abridged Prospectus",
+      "doc_type": "Draft Abridged Prospectus",
+      "source_smid": 10,
+      "captured_at_utc": "2026-05-21T14:21:11.719Z"
+    }
+  ]
+}

@@ -17,15 +17,32 @@ export type PdfSourceState =
   | 'partial'
   | 'missing';
 
+// Phase 5A.1 — doc-type taxonomy mirrored from scripts/pdf/lib/types.ts.
+export type DocType =
+  | 'Draft Red Herring Prospectus'
+  | 'Red Herring Prospectus'
+  | 'Final Offer Document'
+  | 'Prospectus'
+  | 'Draft Abridged Prospectus'
+  | 'unknown';
+
 export interface CandidateScanEntry {
   ipo_id: string;
   url: string;
   page_count: number | null;
-  verdict: 'selected' | 'too_short' | 'not_evaluated' | 'fetch_failed';
+  verdict:
+    | 'selected'
+    | 'too_short'
+    | 'not_evaluated'
+    | 'fetch_failed'
+    | 'doc_type_rejected';
+  doc_type?: DocType;
+  source_smid?: 10 | 11 | 12;
 }
 
 export interface CandidatePoolMeta {
   total_ipo_documents_with_sebi_url: number;
+  total_discovery_candidates_merged?: number;
   pdf_1_cover_target: {
     ipo_id: string;
     url: string;
@@ -36,8 +53,13 @@ export interface CandidatePoolMeta {
     url: string;
     page_count: number;
     reason: string;
+    doc_type?: DocType;
   } | null;
+  // Legacy alias — kept for one parser version. Phase 5C UI should consume
+  // `full_document_candidate_unavailable` instead.
   financial_table_candidate_unavailable: boolean;
+  full_document_candidate_unavailable: boolean;
+  full_document_unavailable_reason?: string;
   scanned: CandidateScanEntry[];
 }
 
