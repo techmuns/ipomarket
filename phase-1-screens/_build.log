@@ -4,10 +4,10 @@
 
 [36mvite v5.4.21 [32mbuilding for production...[36m[39m
 transforming...
-[32m✓[39m 3277 modules transformed.
+[32m✓[39m 3278 modules transformed.
 rendering chunks...
 computing gzip size...
-[2mdist/[22m[32mindex.html                                                 [39m[1m[2m    0.62 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m
+[2mdist/[22m[32mindex.html                                                 [39m[1m[2m    0.74 kB[22m[1m[22m[2m │ gzip:   0.44 kB[22m
 [2mdist/[22m[2massets/[22m[32mjetbrains-mono-greek-400-normal-C190GLew.woff2      [39m[1m[2m    4.23 kB[22m[1m[22m
 [2mdist/[22m[2massets/[22m[32mjetbrains-mono-greek-500-normal-JpySY46c.woff2      [39m[1m[2m    4.28 kB[22m[1m[22m
 [2mdist/[22m[2massets/[22m[32minter-vietnamese-400-normal-DMkecbls.woff2          [39m[1m[2m    4.97 kB[22m[1m[22m
@@ -82,11 +82,11 @@ computing gzip size...
 [2mdist/[22m[2massets/[22m[32minter-latin-ext-500-normal-BxGbmqWO.woff            [39m[1m[2m   48.49 kB[22m[1m[22m
 [2mdist/[22m[2massets/[22m[32minter-latin-ext-700-normal-TidjK2hL.woff            [39m[1m[2m   48.63 kB[22m[1m[22m
 [2mdist/[22m[2massets/[22m[32minter-latin-ext-600-normal-CIVaiw4L.woff            [39m[1m[2m   48.67 kB[22m[1m[22m
-[2mdist/[22m[2massets/[22m[35mindex-DhEPJqIB.css                                  [39m[1m[2m   61.56 kB[22m[1m[22m[2m │ gzip:  20.66 kB[22m
-[2mdist/[22m[2massets/[22m[36mindex-CzmNgtX5.js                                   [39m[1m[33m1,870.18 kB[39m[22m[2m │ gzip: 588.63 kB[22m[2m │ map: 9,158.02 kB[22m
+[2mdist/[22m[2massets/[22m[35mindex-Cra9oKy-.css                                  [39m[1m[2m   62.95 kB[22m[1m[22m[2m │ gzip:  20.88 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-Cul5kmM1.js                                   [39m[1m[33m1,891.02 kB[39m[22m[2m │ gzip: 592.73 kB[22m[2m │ map: 9,193.43 kB[22m
 [33m
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 10.66s[39m
+[32m✓ built in 8.54s[39m
