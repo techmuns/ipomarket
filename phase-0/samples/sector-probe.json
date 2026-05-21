@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-21T02:01:29.376Z",
+  "captured_at_utc": "2026-05-21T14:21:11.719Z",
   "sector_reachable": {
     "listed_equity": true,
     "pre_ipo": false
@@ -36,7 +36,7 @@
       "sector_field_values": {
         "info.industry": "Refineries & Marketing",
         "metadata.industry": "Refineries & Marketing",
-        "metadata.pdSectorPe": 18.72,
+        "metadata.pdSectorPe": 19.25,
         "metadata.pdSectorInd": "NIFTY 50",
         "metadata.pdSectorIndAll": [
           "NIFTY 50",
