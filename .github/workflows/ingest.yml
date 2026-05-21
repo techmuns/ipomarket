@@ -74,7 +74,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "phase-2A: SEBI ingest refresh ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git commit -m "phase-2: consolidated ingest refresh ($(date -u +%Y-%m-%dT%H:%MZ))"
 
           echo "[commit] rebasing on origin/${{ github.ref_name }} before push"
           git pull --rebase --autostash origin ${{ github.ref_name }} || true

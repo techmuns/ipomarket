@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T10:44:02.227Z",
+  "generated_at_utc": "2026-05-21T10:57:50.766Z",
   "by_ipo": {
     "nfp-sampoorna-foods": {
       "ipo_id": "nfp-sampoorna-foods",
@@ -228,6 +228,6 @@
   },
   "source_meta": {
     "source_state": "failed",
-    "last_attempted_utc": "2026-05-21T10:44:02.227Z"
+    "last_attempted_utc": "2026-05-21T10:57:50.766Z"
   }
 }

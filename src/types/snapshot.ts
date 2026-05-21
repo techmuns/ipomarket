@@ -61,8 +61,24 @@ export interface SectorMapSnapshot {
   entries: SectorMapEntry[];
 }
 
+/**
+ * One row per ingest slice (produced by the consolidated runner in
+ * `scripts/ingest/run.ts`). Mirrors the ingest-side SliceResult shape.
+ *
+ * `partial` = some sub-sources live and some failed in the same slice
+ * (e.g. NSE mainboard live but NSE SME failed). Rendered amber/awaiting.
+ */
+export interface SliceResult {
+  name: string;
+  source_state: 'live' | 'empty' | 'failed' | 'missing' | 'skipped' | 'partial';
+  counts: { added: number; updated: number; preserved: number };
+  errors: string[];
+  notes: string;
+}
+
 export interface SourceHealthSnapshot {
   generated_at_utc: string;
   totals: { green: number; yellow: number; red: number };
   probes: ProbeHealth[];
+  ingest_slices?: SliceResult[];
 }

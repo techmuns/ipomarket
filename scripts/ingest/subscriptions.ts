@@ -27,10 +27,10 @@ interface IpoMasterRow {
   name: string;
   short_name?: string;
   status: string;
-  // We hint at a potential nse symbol — Phase 2B writes `source: 'NSE-mainboard'|'NSE-SME'`.
-  // For the subscription fetch we still need a real NSE symbol. We try a few:
-  //   1. id (which is slugified symbol if Phase 2B was the source)
-  //   2. uppercase of id
+  // Real NSE symbol when 2B populated this row (Phase 2 cleanup). When
+  // present, we use it verbatim. When absent (synthetic or pre-2B rows),
+  // we fall back to a slug-derived guess (which rarely matches reality).
+  nse_symbol?: string | null;
 }
 
 interface IpoMasterSnapshot {
@@ -192,11 +192,17 @@ export async function run(): Promise<SliceResult> {
   let updated = 0;
 
   for (const ipo of openIpos) {
-    const symbol = deriveSymbolFromId(ipo.id);
+    // Prefer the real NSE symbol when 2B populated it; fall back to the
+    // slug-derived guess only when there's no better choice.
+    const symbol = ipo.nse_symbol ?? deriveSymbolFromId(ipo.id);
+    const symbolSource = ipo.nse_symbol ? 'nse_symbol' : 'derived';
     const r = await fetchSubscription(symbol);
     if (!r.ok) {
-      errors.push(`${ipo.id} (${symbol}): ${r.error}`);
-      warn('subscription', `  ${ipo.id} (${symbol}): ${r.error} — existing row preserved`);
+      errors.push(`${ipo.id} (${symbol}/${symbolSource}): ${r.error}`);
+      warn(
+        'subscription',
+        `  ${ipo.id} (${symbol} via ${symbolSource}): ${r.error} — existing row preserved`
+      );
       continue;
     }
     const fresh = mapNseSubscription(r.parsed, ipo.id);

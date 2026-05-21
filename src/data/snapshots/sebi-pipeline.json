@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-05-21T10:44:02.226Z",
+  "generated_at_utc": "2026-05-21T10:57:50.766Z",
   "source_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
   "source_meta": {
     "source_state": "live",
-    "last_attempted_utc": "2026-05-21T10:44:02.226Z"
+    "last_attempted_utc": "2026-05-21T10:57:50.766Z"
   },
   "entries": [
     {
@@ -15,7 +15,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "bvishal-oil-and-energy",
@@ -26,7 +26,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "cosmic-pv-power",
@@ -37,7 +37,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "expression-360-services-india",
@@ -48,7 +48,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "gujarat-victory-forgings",
@@ -59,7 +59,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "intellius-recode",
@@ -70,7 +70,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "kay-jay-forgings",
@@ -81,7 +81,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "manipal-health-enterprises",
@@ -92,7 +92,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "nityas-gems-and-jewellery",
@@ -103,7 +103,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "pioneer-fil-med",
@@ -114,7 +114,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "rentomojo",
@@ -125,7 +125,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "rkb-global",
@@ -136,7 +136,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "sathya-agencies",
@@ -147,7 +147,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "t-c-terrytex",
@@ -158,7 +158,7 @@
       "status": "filed",
       "sector_hint": null,
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "sebi-filing-9",
@@ -223,7 +223,7 @@
       "status": "filed",
       "sector_hint": "Industrials / Industrial Gases",
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "sebi-filing-16",
@@ -243,7 +243,7 @@
       "status": "filed",
       "sector_hint": "Financial Services / NBFC",
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "jindal-supreme-india",
@@ -254,7 +254,7 @@
       "status": "filed",
       "sector_hint": "Materials",
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "sebi-filing-18",
@@ -292,7 +292,7 @@
       "status": "filed",
       "sector_hint": "Industrials",
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "playsimple-games",
@@ -303,7 +303,7 @@
       "status": "filed",
       "sector_hint": "Consumer Discretionary / Gaming",
       "source": "SEBI",
-      "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+      "fetched_at_utc": "2026-05-21T10:57:50.766Z"
     },
     {
       "id": "sebi-filing-8",

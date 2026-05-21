@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T10:44:02.227Z",
+  "generated_at_utc": "2026-05-21T10:57:50.766Z",
   "by_ipo": {
     "nfp-sampoorna-foods": {
       "ipo_id": "nfp-sampoorna-foods",
@@ -200,7 +200,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
-          "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+          "fetched_at_utc": "2026-05-21T10:57:50.766Z"
         },
         {
           "field": "filing_status",
@@ -274,7 +274,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
-          "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+          "fetched_at_utc": "2026-05-21T10:57:50.766Z"
         }
       ]
     },
@@ -295,7 +295,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
-          "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+          "fetched_at_utc": "2026-05-21T10:57:50.766Z"
         }
       ]
     },
@@ -316,7 +316,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
-          "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+          "fetched_at_utc": "2026-05-21T10:57:50.766Z"
         }
       ]
     },
@@ -337,7 +337,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
-          "fetched_at_utc": "2026-05-21T10:44:02.226Z"
+          "fetched_at_utc": "2026-05-21T10:57:50.766Z"
         }
       ]
     }

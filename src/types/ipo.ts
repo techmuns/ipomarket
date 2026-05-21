@@ -44,6 +44,10 @@ export interface Ipo {
   state: DataState;
   // Per-IPO short tagline for cards (optional).
   tagline?: string | null;
+  // Real NSE symbol when 2B NSE master ingest populated this row. Used by 2D
+  // subscriptions to fetch /api/ipo-current-issue?symbol=<real-symbol>
+  // instead of guessing from the slug.
+  nse_symbol?: string | null;
 }
 
 export interface IpoTimeline {

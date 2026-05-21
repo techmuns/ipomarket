@@ -12,7 +12,8 @@ export type SourceState =
   | 'empty'    // fetched, valid shape, zero rows in current snapshot
   | 'failed'   // expected upstream failure (HTTP/parse/shape), snapshot preserved
   | 'missing'  // upstream artifact missing (Phase 2A bridge path)
-  | 'skipped'; // not eligible (e.g. no open IPO for subscriptions); snapshot preserved
+  | 'skipped'  // not eligible (e.g. no open IPO for subscriptions); snapshot preserved
+  | 'partial'; // mixed: at least one sub-source live AND at least one failed
 
 export interface SliceResult {
   name: string;

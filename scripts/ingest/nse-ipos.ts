@@ -52,6 +52,7 @@ interface Ipo {
   reservation: unknown;
   state: DataState;
   tagline?: string | null;
+  nse_symbol?: string | null;
   source?: string;
   fetched_at_utc?: string;
 }
@@ -208,6 +209,9 @@ function mapNseRow(item: any, segment: Segment, sourceUrl: string): Ipo | null {
     listing_exchange: ['NSE'],
     reservation: null,
     state: 'live',
+    // Preserve the real NSE symbol so 2D subscriptions can target it
+    // directly instead of guessing from the slug.
+    nse_symbol: symbol || null,
     source: segment === 'mainboard' ? 'NSE-mainboard' : 'NSE-SME',
     fetched_at_utc: NOW,
   };
@@ -306,12 +310,23 @@ export async function run(): Promise<SliceResult> {
   // Sort by id for deterministic output.
   mergedIpos.sort((a, b) => a.id.localeCompare(b.id));
 
-  // Overall slice source-state: live if either feed produced rows; empty if
-  // both feeds returned empty arrays; failed otherwise.
+  // Overall slice source-state:
+  //   both live      → live
+  //   one live + one failed → partial (some rows ingested, some sub-source failed)
+  //   one live + one empty  → live (at least one fed; nothing to flag)
+  //   both empty     → empty
+  //   one empty + one failed → empty (degrade gracefully — at least one was reachable)
+  //   both failed    → failed
   let overall_state: SliceResult['source_state'] = 'failed';
-  if (mainboardState === 'live' || smeState === 'live') overall_state = 'live';
-  else if (mainboardState === 'empty' && smeState === 'empty') overall_state = 'empty';
-  else if (mainboardState === 'empty' || smeState === 'empty') overall_state = 'empty';
+  const liveCount = (mainboardState === 'live' ? 1 : 0) + (smeState === 'live' ? 1 : 0);
+  const failedCount = (mainboardState === 'failed' ? 1 : 0) + (smeState === 'failed' ? 1 : 0);
+  const emptyCount = (mainboardState === 'empty' ? 1 : 0) + (smeState === 'empty' ? 1 : 0);
+  if (liveCount === 2) overall_state = 'live';
+  else if (liveCount === 1 && failedCount === 1) overall_state = 'partial';
+  else if (liveCount === 1) overall_state = 'live';
+  else if (emptyCount === 2) overall_state = 'empty';
+  else if (emptyCount === 1 && failedCount === 1) overall_state = 'empty';
+  else overall_state = 'failed';
 
   const newSnapshot: IpoMasterSnapshot = {
     ...existing,

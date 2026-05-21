@@ -1,10 +1,32 @@
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Tooltip } from '@/components/ui/tooltip';
 import { Snapshots } from '@/lib/loadSnapshots';
 import { relativeTime } from '@/lib/format';
+import type { SliceResult } from '@/types/snapshot';
+
+const SLICE_TONE: Record<SliceResult['source_state'], 'live' | 'awaiting' | 'unavailable' | 'default'> = {
+  live: 'live',
+  empty: 'awaiting',
+  partial: 'awaiting',
+  failed: 'unavailable',
+  missing: 'unavailable',
+  skipped: 'default',
+};
+
+const SLICE_LABEL: Record<string, string> = {
+  sebi: '2A · SEBI bridge',
+  nse: '2B · NSE IPO master',
+  listing: '2C · Listing performance',
+  sector: '2C · Sector map',
+  subscription: '2D · Subscription',
+  'source-audit': '2E · Source audit',
+  '2E-source-audit': '2E · Source audit',
+};
 
 export function SourceHealth() {
-  const { totals, probes, generated_at_utc } = Snapshots.sourceHealth;
+  const { totals, probes, generated_at_utc, ingest_slices } = Snapshots.sourceHealth;
+  const slices = ingest_slices ?? [];
   const groups = {
     GREEN: probes.filter((p) => p.status === 'GREEN'),
     YELLOW: probes.filter((p) => p.status === 'YELLOW'),
@@ -25,6 +47,74 @@ export function SourceHealth() {
         <Tile tone="awaiting" label="YELLOW" value={totals.yellow} />
         <Tile tone="unavailable" label="RED" value={totals.red} />
       </div>
+
+      <Card>
+        <CardHeader className="flex items-center justify-between">
+          <div>
+            <CardTitle>Ingest pipeline</CardTitle>
+            <CardDescription>
+              Per-slice outcomes from the latest <code className="text-[11px] text-slate-400">npm run ingest</code> run
+              {slices.length > 0 && ` · ${slices.length} slices`}
+            </CardDescription>
+          </div>
+          <Badge tone="info">{slices.length || 'none'}</Badge>
+        </CardHeader>
+        <CardContent>
+          {slices.length === 0 ? (
+            <p className="text-sm text-slate-500">No ingest pipeline data yet.</p>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead className="text-[11px] uppercase tracking-wider text-slate-500">
+                  <tr className="border-b border-slate-800/60">
+                    <th className="px-3 py-2 text-left font-medium">Slice</th>
+                    <th className="px-3 py-2 text-left font-medium">State</th>
+                    <th className="px-3 py-2 text-right font-medium">+added</th>
+                    <th className="px-3 py-2 text-right font-medium">~updated</th>
+                    <th className="px-3 py-2 text-right font-medium">=preserved</th>
+                    <th className="px-3 py-2 text-left font-medium">Notes</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/60">
+                  {slices.map((s) => (
+                    <tr key={s.name} className="hover:bg-slate-900/40">
+                      <td className="px-3 py-2 text-slate-200">{SLICE_LABEL[s.name] ?? s.name}</td>
+                      <td className="px-3 py-2">
+                        <Badge tone={SLICE_TONE[s.source_state] ?? 'default'}>{s.source_state}</Badge>
+                      </td>
+                      <td className="px-3 py-2 num text-right text-slate-300">{s.counts.added}</td>
+                      <td className="px-3 py-2 num text-right text-slate-300">{s.counts.updated}</td>
+                      <td className="px-3 py-2 num text-right text-slate-300">{s.counts.preserved}</td>
+                      <td className="px-3 py-2 text-[11px] text-slate-500 max-w-md truncate">
+                        {s.errors.length > 0 ? (
+                          <Tooltip
+                            content={
+                              <div className="space-y-1">
+                                {s.errors.slice(0, 6).map((e, i) => (
+                                  <div key={i} className="text-[11px] text-slate-300">· {e}</div>
+                                ))}
+                                {s.errors.length > 6 && (
+                                  <div className="text-[10px] text-slate-500">+ {s.errors.length - 6} more</div>
+                                )}
+                              </div>
+                            }
+                          >
+                            <span className="cursor-help underline decoration-rose-400/40 decoration-dotted">
+                              {s.notes}
+                            </span>
+                          </Tooltip>
+                        ) : (
+                          <span title={s.notes}>{s.notes}</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </CardContent>
+      </Card>
 
       {(['GREEN', 'YELLOW', 'RED'] as const).map((g) => (
         <Card key={g}>
