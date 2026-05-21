@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-05-21T18:02:05.352Z",
+  "generated_at_utc": "2026-05-21T23:56:00.809Z",
   "parser_version": "5A.1",
   "pdf_1": {
     "ipo_id": "incred-holdings",
     "doc_kind": "DRHP",
-    "overall_confidence": null
+    "overall_confidence": "medium"
   },
   "pdf_2": null,
   "financial_table_candidate_unavailable": true,
@@ -14,5 +14,5 @@
     "11": 0,
     "12": 0
   },
-  "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=failed"
+  "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=live"
 }

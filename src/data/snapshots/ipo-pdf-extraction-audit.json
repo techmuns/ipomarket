@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T18:02:05.352Z",
+  "generated_at_utc": "2026-05-21T23:56:00.809Z",
   "parser_version": "5A.1",
   "candidate_pool": {
     "total_ipo_documents_with_sebi_url": 7,
@@ -182,33 +182,33 @@
     "incred-holdings": {
       "doc_url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
       "doc_kind": "DRHP",
-      "pdf_sha256": null,
-      "page_count": null,
-      "parsed_at_utc": "2026-05-21T18:02:05.352Z",
+      "pdf_sha256": "57ed9f25485f5467234399e16733858e0e73af10ca322fa72ecd85b7d3b3f8e0",
+      "page_count": 13,
+      "parsed_at_utc": "2026-05-21T23:56:00.809Z",
       "sections": {
         "cover": {
-          "attempted": false,
-          "reason": "download failed: HTTP 403"
+          "attempted": true,
+          "confidence": "medium",
+          "anchors_matched": 5,
+          "anchors_total": 8,
+          "errors": []
         },
         "financials": {
           "attempted": false,
-          "reason": "PDF #1 cover-target only"
+          "reason": "PDF #1 is cover-page target only (abridged prospectus, not a full RHP)"
         }
       },
-      "overall_confidence": null,
+      "overall_confidence": "medium",
       "manual_review_required": true,
-      "errors": [
-        "download failed: HTTP 403"
-      ]
+      "errors": []
     }
   },
   "source_meta": {
-    "source_state": "failed",
-    "last_attempted_utc": "2026-05-21T18:02:05.352Z",
+    "source_state": "live",
+    "last_attempted_utc": "2026-05-21T23:56:00.809Z",
     "errors": [
-      "pdf-1 incred-holdings: download failed: HTTP 403",
       "full document candidate unavailable (all candidates fetch_failed): no candidate met page_count >= 200 after doc-type filter"
     ],
-    "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=failed"
+    "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=live"
   }
 }
