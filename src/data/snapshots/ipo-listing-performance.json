@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T10:57:50.766Z",
+  "generated_at_utc": "2026-05-21T11:11:34.596Z",
   "by_ipo": {
     "greendale-cement": {
       "ipo_id": "greendale-cement",
@@ -32,6 +32,6 @@
   },
   "source_meta": {
     "source_state": "skipped",
-    "last_attempted_utc": "2026-05-21T10:57:50.766Z"
+    "last_attempted_utc": "2026-05-21T11:11:34.596Z"
   }
 }
