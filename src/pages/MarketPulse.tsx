@@ -22,6 +22,10 @@ export function MarketPulse() {
     listed.length > 0
       ? (listed.filter((p) => (p.listing_gain_pct ?? 0) > 0).length / listed.length) * 100
       : null;
+  // KPI values above are computed from listing-performance rows. When every
+  // row is a manual seed (synthetic), tag the value as mock so an analyst
+  // can't mistake "+22.8%" or "100%" for a live-data product claim.
+  const listedAllMock = listed.length > 0 && listed.every((p) => p.state === 'manual');
 
   return (
     <div className="space-y-6">
@@ -41,12 +45,14 @@ export function MarketPulse() {
           hint={listed.length > 0 ? `over ${listed.length} listed` : 'awaiting fresh data'}
           trend={avgListingGain != null ? (avgListingGain > 0 ? 'up' : 'down') : 'flat'}
           accent="amber"
+          mock={listedAllMock}
         />
         <KpiCard
           label="Hit rate"
           value={hitRate != null ? formatPct(hitRate) : '—'}
           hint="listing gain > 0 (Phase 5 metric)"
           accent="violet"
+          mock={listedAllMock}
         />
       </div>
 

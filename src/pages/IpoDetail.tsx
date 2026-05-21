@@ -4,6 +4,7 @@ import { Snapshots, findIpoBySlug } from '@/lib/loadSnapshots';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { HeroHeader } from '@/components/ipo/HeroHeader';
+import { PriorityReadCard } from '@/components/ipo/PriorityReadCard';
 import { IssueTermsGrid } from '@/components/ipo/IssueTermsGrid';
 import { TimelineRail } from '@/components/ipo/TimelineRail';
 import { SubscriptionBlock } from '@/components/ipo/SubscriptionBlock';
@@ -43,6 +44,7 @@ export function IpoDetail() {
   return (
     <div className="space-y-6">
       <HeroHeader ipo={ipo} />
+      <PriorityReadCard ipo={ipo} sub={sub} timeline={tl} audit={audit} />
 
       <Tabs defaultValue="about">
         <TabsList>

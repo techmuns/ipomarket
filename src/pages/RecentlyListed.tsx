@@ -6,6 +6,7 @@ import { StateBadge } from '@/components/chrome/StateBadge';
 import { formatDate, formatPct, formatRupee } from '@/lib/format';
 import { ListingGainBar } from '@/components/recently/ListingGainBar';
 import { FadeScatter } from '@/components/recently/FadeScatter';
+import { Info } from 'lucide-react';
 
 export function RecentlyListed() {
   const rows = Snapshots.master.ipos
@@ -16,6 +17,7 @@ export function RecentlyListed() {
     }));
 
   const winners = rows.filter((r) => (r.perf.listing_gain_pct ?? 0) > 0).length;
+  const allManual = rows.length > 0 && rows.every((r) => r.perf.state === 'manual');
 
   return (
     <div className="space-y-6">
@@ -32,6 +34,21 @@ export function RecentlyListed() {
           <StateBadge state="manual" />
         </div>
       </div>
+
+      {allManual && (
+        <Card className="border-amber-500/40 bg-amber-500/5">
+          <CardContent className="flex items-start gap-3">
+            <Info className="mt-0.5 h-4 w-4 shrink-0 text-amber-300" />
+            <div className="min-w-0">
+              <div className="text-sm font-medium text-amber-200">Mock seed in use</div>
+              <p className="mt-0.5 text-[12px] leading-relaxed text-amber-200/80">
+                Listing performance currently uses mock seed rows until official BSE/NSE listing data is mapped.
+                Per-row <span className="font-medium">MANUAL SEED</span> badges below repeat the same signal.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <ListingGainBar />

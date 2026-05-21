@@ -24,9 +24,23 @@ const SLICE_LABEL: Record<string, string> = {
   '2E-source-audit': '2E · Source audit',
 };
 
+// Healthy at the top, problematic at the bottom. Re-sort the ingest slice
+// table so the first thing the eye lands on is the GREEN row, not whichever
+// slice happens to come back amber/red first in dependency order.
+const SLICE_STATE_ORDER: Record<SliceResult['source_state'], number> = {
+  live: 0,
+  partial: 1,
+  empty: 2,
+  skipped: 3,
+  failed: 4,
+  missing: 5,
+};
+
 export function SourceHealth() {
   const { totals, probes, generated_at_utc, ingest_slices } = Snapshots.sourceHealth;
-  const slices = ingest_slices ?? [];
+  const slices = [...(ingest_slices ?? [])].sort(
+    (a, b) => SLICE_STATE_ORDER[a.source_state] - SLICE_STATE_ORDER[b.source_state]
+  );
   const groups = {
     GREEN: probes.filter((p) => p.status === 'GREEN'),
     YELLOW: probes.filter((p) => p.status === 'YELLOW'),
@@ -55,6 +69,9 @@ export function SourceHealth() {
             <CardDescription>
               Per-slice outcomes from the latest <code className="text-[11px] text-slate-400">npm run ingest</code> run
               {slices.length > 0 && ` · ${slices.length} slices`}
+              <span className="mt-1 block text-[11px] text-slate-500">
+                Empty / skipped can be healthy — they mean "no upstream data yet", not "broken".
+              </span>
             </CardDescription>
           </div>
           <Badge tone="info">{slices.length || 'none'}</Badge>
