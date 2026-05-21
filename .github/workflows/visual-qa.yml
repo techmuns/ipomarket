@@ -2,7 +2,8 @@ name: phase-1-visual-qa
 
 # Lightweight visual QA: build the app, run `vite preview`, screenshot every
 # route with Playwright, upload as artifact, commit screenshots + auto-summary
-# back to the branch.
+# back to the branch. Hardened: the capture script writes phase-1-visual-qa.md
+# even on failure, so we always have a diagnosis on `main`.
 
 on:
   workflow_dispatch:
@@ -15,9 +16,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
+          fetch-depth: 0  # need full history for rebase-then-push later
+
+      - name: Print environment
+        run: |
+          echo "Node: $(node --version)"
+          echo "npm:  $(npm --version)"
+          echo "OS:   $(uname -a)"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Run ID: ${{ github.run_id }}"
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -32,31 +43,73 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Build app
-        run: npm run build
+        id: build
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee /tmp/build.log
+          echo "build_size=$(du -sh dist/ | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo ""
+          echo "=== build output (first/last 40 lines of dist tree) ==="
+          ls -la dist/ || true
+          ls -la dist/assets/ 2>/dev/null | head -10 || true
+          ls -la dist/assets/ 2>/dev/null | tail -10 || true
 
       - name: Start vite preview server (background)
         run: |
           nohup npx vite preview --port 4173 --host 127.0.0.1 > /tmp/preview.log 2>&1 &
-          echo $! > /tmp/preview.pid
+          PID=$!
+          echo $PID > /tmp/preview.pid
+          echo "preview pid: $PID"
 
-      - name: Wait for preview server
+      - name: Wait for preview server (curl health)
         run: |
-          for i in $(seq 1 30); do
-            if curl -sf http://127.0.0.1:4173/ >/dev/null; then
-              echo "Preview server is up after ${i}s"
+          set +e
+          for i in $(seq 1 60); do
+            code=$(curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:4173/ || echo "000")
+            if [ "$code" = "200" ]; then
+              echo "[wait] preview UP after ${i}s (HTTP $code)"
               exit 0
+            fi
+            if [ $((i % 5)) -eq 0 ]; then
+              echo "[wait] still waiting (i=${i}s, last HTTP=$code)"
             fi
             sleep 1
           done
-          echo "Preview server failed to start in 30s"
+          echo "[wait] preview NOT reachable after 60s"
           echo "--- preview log ---"
           cat /tmp/preview.log || true
-          exit 1
+          # Do NOT exit 1 here — let the capture script record the failure into
+          # phase-1-visual-qa.md so it lands on main as evidence.
+          echo "[wait] handing off to capture script which will document the failure"
 
       - name: Capture screenshots + auto-summary
+        id: capture
+        continue-on-error: true
         env:
           QA_BASE_URL: http://127.0.0.1:4173
-        run: node scripts/visual-qa/capture.mjs
+        run: |
+          set +e
+          node scripts/visual-qa/capture.mjs
+          echo "capture_exit=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Print capture output state
+        if: always()
+        run: |
+          echo "=== phase-1-screens listing ==="
+          ls -la phase-1-screens/ 2>/dev/null || echo "(phase-1-screens/ does not exist)"
+          echo ""
+          echo "=== phase-1-visual-qa.md head ==="
+          head -60 phase-1-visual-qa.md 2>/dev/null || echo "(phase-1-visual-qa.md does not exist)"
+          echo ""
+          echo "=== preview server log ==="
+          tail -60 /tmp/preview.log 2>/dev/null || echo "(no preview log)"
+
+      - name: Stage preview log into artifact dir
+        if: always()
+        run: |
+          mkdir -p phase-1-screens
+          cp /tmp/preview.log phase-1-screens/_preview-server.log 2>/dev/null || true
+          cp /tmp/build.log phase-1-screens/_build.log 2>/dev/null || true
 
       - name: Stop preview server
         if: always()
@@ -65,7 +118,7 @@ jobs:
             kill "$(cat /tmp/preview.pid)" 2>/dev/null || true
           fi
 
-      - name: Upload screenshots as workflow artifact
+      - name: Upload screenshots + summary as workflow artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -79,12 +132,37 @@ jobs:
       - name: Commit screenshots + summary back to branch
         if: always()
         run: |
+          set -e
           git config user.name "phase-1-visual-qa"
           git config user.email "phase-1-visual-qa@users.noreply.github.com"
-          git add phase-1-screens/ phase-1-visual-qa.md || true
+          git add phase-1-screens/ phase-1-visual-qa.md 2>/dev/null || true
+
           if git diff --cached --quiet; then
-            echo "no screenshot changes to commit"
-          else
-            git commit -m "phase-1: visual QA capture ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git push origin HEAD:${{ github.ref_name }}
+            echo "[commit] nothing to commit. Diagnostic:"
+            echo "  - phase-1-screens/ exists? $([ -d phase-1-screens ] && echo YES || echo NO)"
+            echo "  - phase-1-screens/ contents:"
+            ls -la phase-1-screens/ 2>/dev/null || echo "    (no directory)"
+            echo "  - phase-1-visual-qa.md exists? $([ -f phase-1-visual-qa.md ] && echo YES || echo NO)"
+            echo "  - phase-1-visual-qa.md size: $([ -f phase-1-visual-qa.md ] && wc -c < phase-1-visual-qa.md || echo 0)"
+            echo "[commit] capture script exit code: ${{ steps.capture.outputs.capture_exit || 'n/a' }}"
+            exit 0
           fi
+
+          git commit -m "phase-1: visual QA capture ($(date -u +%Y-%m-%dT%H:%MZ))"
+
+          # Rebase on top of remote before push to survive concurrent commits.
+          echo "[commit] rebasing on origin/${{ github.ref_name }} before push"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+
+          # Retry push up to 3× in case of a race.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              echo "[commit] pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "[commit] push attempt $attempt failed, fetching + rebasing"
+            git fetch origin ${{ github.ref_name }} || true
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          done
+          echo "[commit] push failed after 3 attempts"
+          exit 1
