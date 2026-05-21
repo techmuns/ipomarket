@@ -1,0 +1,52 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-slate-950 text-slate-100;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(99, 102, 241, 0.10), transparent 60%),
+      radial-gradient(ellipse 60% 60% at 100% 100%, rgba(52, 211, 153, 0.05), transparent 60%);
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  ::selection {
+    @apply bg-indigo-500/40 text-white;
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply rounded-xl border border-slate-800/80 bg-slate-900/60 backdrop-blur-sm;
+  }
+  .card-hover {
+    @apply transition-all hover:border-slate-700 hover:bg-slate-900/80 hover:shadow-card;
+  }
+  .num {
+    @apply font-mono tabular tracking-tight;
+  }
+  .num-pos {
+    @apply text-emerald-400;
+  }
+  .num-neg {
+    @apply text-rose-400;
+  }
+  .label-muted {
+    @apply text-xs uppercase tracking-wider text-slate-500;
+  }
+  .accent-gradient {
+    background-image: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(52,211,153,0.10) 50%, transparent);
+  }
+}

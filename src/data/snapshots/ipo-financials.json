@@ -1,0 +1,79 @@
+{
+  "generated_at_utc": "2026-05-21T05:30:00Z",
+  "by_ipo": {
+    "vegorama-punjabi-angithi": {
+      "ipo_id": "vegorama-punjabi-angithi",
+      "state": "manual",
+      "periods": [
+        { "period": "FY 24", "revenue_cr": 65.95, "ebitda_cr": 9.4,  "pat_cr": 4.2, "assets_cr": 38.1, "net_worth_cr": 22.4, "debt_cr": 3.4 },
+        { "period": "FY 25", "revenue_cr": 101.31, "ebitda_cr": 14.2, "pat_cr": 8.22, "assets_cr": 51.7, "net_worth_cr": 30.6, "debt_cr": 4.6 },
+        { "period": "9M FY 26", "revenue_cr": 105.05, "ebitda_cr": 15.0, "pat_cr": 10.8, "assets_cr": 58.2, "net_worth_cr": 41.4, "debt_cr": 6.2 }
+      ],
+      "derived": {
+        "revenue_3y_cagr_pct": 145,
+        "pat_3y_cagr_pct": 60,
+        "d_to_e": 0.15,
+        "market_cap_cr": 127.9,
+        "pe_at_upper_band": 11.83
+      }
+    },
+    "nfp-sampoorna-foods": {
+      "ipo_id": "nfp-sampoorna-foods",
+      "state": "manual",
+      "periods": [],
+      "derived": {
+        "d_to_e": null,
+        "market_cap_cr": null,
+        "pe_at_upper_band": null
+      }
+    },
+    "quasar-robotics": {
+      "ipo_id": "quasar-robotics",
+      "state": "manual",
+      "periods": [
+        { "period": "FY 24", "revenue_cr": 880, "ebitda_cr": 96, "pat_cr": 41, "assets_cr": 1140 },
+        { "period": "FY 25", "revenue_cr": 1240, "ebitda_cr": 168, "pat_cr": 78, "assets_cr": 1480 },
+        { "period": "9M FY 26", "revenue_cr": 1100, "ebitda_cr": 162, "pat_cr": 79, "assets_cr": 1660 }
+      ],
+      "derived": {
+        "revenue_3y_cagr_pct": 26,
+        "pat_3y_cagr_pct": 38,
+        "d_to_e": 0.32,
+        "market_cap_cr": 7860,
+        "pe_at_upper_band": 71.4
+      }
+    },
+    "lumino-hyperscale": {
+      "ipo_id": "lumino-hyperscale",
+      "state": "manual",
+      "periods": [
+        { "period": "FY 24", "revenue_cr": 1820, "ebitda_cr": 380, "pat_cr": 142, "assets_cr": 2680 },
+        { "period": "FY 25", "revenue_cr": 2480, "ebitda_cr": 528, "pat_cr": 218, "assets_cr": 3340 },
+        { "period": "9M FY 26", "revenue_cr": 2210, "ebitda_cr": 510, "pat_cr": 222, "assets_cr": 3520 }
+      ],
+      "derived": {
+        "revenue_3y_cagr_pct": 22,
+        "pat_3y_cagr_pct": 36,
+        "d_to_e": 0.41,
+        "market_cap_cr": 13800,
+        "pe_at_upper_band": 47.3
+      }
+    },
+    "greendale-cement": {
+      "ipo_id": "greendale-cement",
+      "state": "manual",
+      "periods": [
+        { "period": "FY 24", "revenue_cr": 62, "ebitda_cr": 9.1, "pat_cr": 3.8, "assets_cr": 41 },
+        { "period": "FY 25", "revenue_cr": 88, "ebitda_cr": 13.6, "pat_cr": 6.2, "assets_cr": 56 },
+        { "period": "9M FY 26", "revenue_cr": 82, "ebitda_cr": 13.0, "pat_cr": 6.4, "assets_cr": 62 }
+      ],
+      "derived": {
+        "revenue_3y_cagr_pct": 19,
+        "pat_3y_cagr_pct": 28,
+        "d_to_e": 0.36,
+        "market_cap_cr": 240,
+        "pe_at_upper_band": 22.1
+      }
+    }
+  }
+}

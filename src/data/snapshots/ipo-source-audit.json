@@ -1,0 +1,63 @@
+{
+  "generated_at_utc": "2026-05-21T05:30:00Z",
+  "by_ipo": {
+    "nfp-sampoorna-foods": {
+      "ipo_id": "nfp-sampoorna-foods",
+      "source_mix": { "nse": 42, "bse": 0, "sebi": 12, "rhp": 8, "manual": 32, "derived": 6, "broker_ref": 0 },
+      "fields": [
+        { "field": "name", "source": "NSE", "state": "live", "url": "https://www.nseindia.com/api/all-upcoming-issues?category=sme", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "open_date", "source": "NSE", "state": "live", "url": "https://www.nseindia.com/api/all-upcoming-issues?category=sme", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "close_date", "source": "NSE", "state": "live", "url": "https://www.nseindia.com/api/all-upcoming-issues?category=sme", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "price_band", "source": "NSE", "state": "live", "url": "https://www.nseindia.com/api/all-upcoming-issues?category=sme", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "lot_size", "source": "NSE", "state": "live", "url": "https://www.nseindia.com/api/all-upcoming-issues?category=sme", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "issue_size_cr", "source": "NSE", "state": "live", "url": "https://www.nseindia.com/api/all-upcoming-issues?category=sme", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "subscription", "source": "NSE", "state": "live", "url": "https://www.nseindia.com/api/ipo-detail", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "registrar", "source": "RHP", "state": "live", "url": "https://www.skylinerta.com/ipo.php", "fetched_at_utc": "2026-05-20T19:05:00Z" },
+        { "field": "company_overview", "source": "Manual", "state": "manual", "url": null, "fetched_at_utc": null },
+        { "field": "strengths", "source": "Manual", "state": "manual", "url": null, "fetched_at_utc": null },
+        { "field": "risks", "source": "Manual", "state": "manual", "url": null, "fetched_at_utc": null },
+        { "field": "objectives", "source": "RHP", "state": "manual", "url": null, "fetched_at_utc": null },
+        { "field": "sector", "source": "Manual", "state": "manual", "url": null, "fetched_at_utc": null }
+      ]
+    },
+    "vegorama-punjabi-angithi": {
+      "ipo_id": "vegorama-punjabi-angithi",
+      "source_mix": { "nse": 38, "bse": 6, "sebi": 10, "rhp": 12, "manual": 26, "derived": 8, "broker_ref": 0 },
+      "fields": [
+        { "field": "name", "source": "BSE", "state": "live", "url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "open_date", "source": "BSE", "state": "live", "url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "price_band", "source": "BSE", "state": "live", "url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "lot_size", "source": "BSE", "state": "live", "url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx", "fetched_at_utc": "2026-05-20T11:30:00Z" },
+        { "field": "subscription", "source": "BSE", "state": "live", "url": "https://www.bseindia.com/markets/PublicIssues/Subscription.aspx", "fetched_at_utc": "2026-05-20T16:00:00Z" },
+        { "field": "rhp", "source": "SEBI", "state": "live", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Vegorama%20Punjabi%20Angithi%20Limited-RHP_p.pdf", "fetched_at_utc": "2026-05-20T19:05:00Z" },
+        { "field": "financials", "source": "RHP", "state": "manual", "url": null, "fetched_at_utc": null },
+        { "field": "objectives", "source": "RHP", "state": "manual", "url": null, "fetched_at_utc": null },
+        { "field": "registrar", "source": "RHP", "state": "live", "url": "https://www.bigshareonline.com/IPO_Status.aspx", "fetched_at_utc": "2026-05-20T19:05:00Z" }
+      ]
+    },
+    "incred-holdings": {
+      "ipo_id": "incred-holdings",
+      "source_mix": { "nse": 0, "bse": 0, "sebi": 70, "rhp": 20, "manual": 10, "derived": 0, "broker_ref": 0 },
+      "fields": [
+        { "field": "drhp", "source": "SEBI", "state": "live", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf", "fetched_at_utc": "2026-05-20T19:05:00Z" },
+        { "field": "filing_status", "source": "SEBI", "state": "live", "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10", "fetched_at_utc": "2026-05-20T19:05:00Z" },
+        { "field": "page_count", "source": "Derived", "state": "live", "url": null, "fetched_at_utc": "2026-05-20T19:05:00Z" }
+      ]
+    },
+    "quasar-robotics": {
+      "ipo_id": "quasar-robotics",
+      "source_mix": { "nse": 0, "bse": 0, "sebi": 0, "rhp": 0, "manual": 100, "derived": 0, "broker_ref": 0 },
+      "fields": []
+    },
+    "lumino-hyperscale": {
+      "ipo_id": "lumino-hyperscale",
+      "source_mix": { "nse": 0, "bse": 0, "sebi": 0, "rhp": 0, "manual": 100, "derived": 0, "broker_ref": 0 },
+      "fields": []
+    },
+    "greendale-cement": {
+      "ipo_id": "greendale-cement",
+      "source_mix": { "nse": 0, "bse": 0, "sebi": 0, "rhp": 0, "manual": 100, "derived": 0, "broker_ref": 0 },
+      "fields": []
+    }
+  }
+}

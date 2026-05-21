@@ -1,0 +1,83 @@
+{
+  "generated_at_utc": "2026-05-20T19:30:00Z",
+  "by_ipo": {
+    "nfp-sampoorna-foods": {
+      "ipo_id": "nfp-sampoorna-foods",
+      "as_of_utc": "2026-05-20T11:30:00Z",
+      "state": "live",
+      "rows": [
+        { "category": "QIB", "times": 1.0, "reserved_shares_lakhs": 0.42, "applied_shares_lakhs": 0.42 },
+        { "category": "NII", "times": 0.34, "reserved_shares_lakhs": 20.94, "applied_shares_lakhs": 7.2 },
+        { "category": "Retail", "times": 2.80, "reserved_shares_lakhs": 21, "applied_shares_lakhs": 58.72 },
+        { "category": "Total", "times": 1.57, "reserved_shares_lakhs": 42.36, "applied_shares_lakhs": 66.34 }
+      ],
+      "daily": [
+        { "date": "2026-05-18", "qib": 0.10, "nii": 0.05, "retail": 0.42, "total": 0.21 },
+        { "date": "2026-05-19", "qib": 0.42, "nii": 0.18, "retail": 1.30, "total": 0.82 },
+        { "date": "2026-05-20", "qib": 1.00, "nii": 0.34, "retail": 2.80, "total": 1.57 }
+      ]
+    },
+    "vegorama-punjabi-angithi": {
+      "ipo_id": "vegorama-punjabi-angithi",
+      "as_of_utc": "2026-05-20T16:00:00Z",
+      "state": "live",
+      "rows": [
+        { "category": "QIB", "times": 0.69 },
+        { "category": "NII", "times": 6.28 },
+        { "category": "Retail", "times": 1.61 },
+        { "category": "Total", "times": 1.69 }
+      ],
+      "daily": [
+        { "date": "2026-05-20", "qib": 0.69, "nii": 6.28, "retail": 1.61, "total": 1.69 }
+      ]
+    },
+    "quasar-robotics": {
+      "ipo_id": "quasar-robotics",
+      "as_of_utc": "2026-05-19T11:30:00Z",
+      "state": "manual",
+      "rows": [
+        { "category": "QIB", "times": 87.4 },
+        { "category": "NII", "times": 142.6 },
+        { "category": "Retail", "times": 28.1 },
+        { "category": "Total", "times": 79.5 }
+      ],
+      "daily": [
+        { "date": "2026-05-15", "qib": 0.6, "nii": 4.2, "retail": 1.8, "total": 1.9 },
+        { "date": "2026-05-16", "qib": 4.5, "nii": 18.4, "retail": 7.2, "total": 8.9 },
+        { "date": "2026-05-19", "qib": 87.4, "nii": 142.6, "retail": 28.1, "total": 79.5 }
+      ]
+    },
+    "lumino-hyperscale": {
+      "ipo_id": "lumino-hyperscale",
+      "as_of_utc": "2026-04-14T11:30:00Z",
+      "state": "manual",
+      "rows": [
+        { "category": "QIB", "times": 64.2 },
+        { "category": "NII", "times": 113.8 },
+        { "category": "Retail", "times": 18.6 },
+        { "category": "Total", "times": 58.7 }
+      ],
+      "daily": [
+        { "date": "2026-04-10", "qib": 0.3, "nii": 2.1, "retail": 0.9, "total": 1.0 },
+        { "date": "2026-04-11", "qib": 2.4, "nii": 9.6, "retail": 3.8, "total": 4.6 },
+        { "date": "2026-04-14", "qib": 64.2, "nii": 113.8, "retail": 18.6, "total": 58.7 }
+      ]
+    },
+    "greendale-cement": {
+      "ipo_id": "greendale-cement",
+      "as_of_utc": "2026-04-30T11:30:00Z",
+      "state": "manual",
+      "rows": [
+        { "category": "QIB", "times": 3.1 },
+        { "category": "NII", "times": 22.4 },
+        { "category": "Retail", "times": 14.6 },
+        { "category": "Total", "times": 11.8 }
+      ],
+      "daily": [
+        { "date": "2026-04-28", "qib": 0.1, "nii": 0.8, "retail": 0.5, "total": 0.4 },
+        { "date": "2026-04-29", "qib": 0.8, "nii": 6.2, "retail": 4.2, "total": 3.5 },
+        { "date": "2026-04-30", "qib": 3.1, "nii": 22.4, "retail": 14.6, "total": 11.8 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-05-21T05:30:00Z",
+  "by_ipo": {
+    "lumino-hyperscale": {
+      "ipo_id": "lumino-hyperscale",
+      "state": "manual",
+      "issue_price": 282,
+      "listing_open": 348,
+      "listing_high": 372,
+      "listing_low": 332,
+      "listing_close": 358,
+      "current_price": 412,
+      "listing_gain_pct": 26.95,
+      "current_gain_pct": 46.10,
+      "listing_date": "2026-04-22",
+      "source": "BSE"
+    },
+    "greendale-cement": {
+      "ipo_id": "greendale-cement",
+      "state": "manual",
+      "issue_price": 102,
+      "listing_open": 119,
+      "listing_high": 124,
+      "listing_low": 116,
+      "listing_close": 121,
+      "current_price": 108,
+      "listing_gain_pct": 18.63,
+      "current_gain_pct": 5.88,
+      "listing_date": "2026-05-06",
+      "source": "BSE"
+    }
+  }
+}

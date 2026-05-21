@@ -1,0 +1,85 @@
+{
+  "generated_at_utc": "2026-05-21T05:30:00Z",
+  "by_ipo": {
+    "nfp-sampoorna-foods": {
+      "ipo_id": "nfp-sampoorna-foods",
+      "state": "manual",
+      "company_overview": "NFP Sampoorna Foods Limited is a food processing and trading company engaged in the procurement, import, processing, grading, packaging, marketing, and distribution of dry fruits. The product portfolio includes cashew nuts, makhana (fox nuts), almonds, and walnuts, sold through B2B, B2C, institutional, and government channels. The company sources raw cashew nuts directly from selected farms in African countries and processes them in-house into different grades of kernels. To expand its health-food segment it added makhana in 2024, and almonds and walnuts in 2025. The company also acquired Yashvardhan Food Industries Private Limited in 2025 through a share swap.",
+      "strengths": [
+        "Sources raw cashew nuts directly from African farms at competitive prices.",
+        "Operates across B2B, B2C, institutional, and government sales channels.",
+        "Product portfolio spans cashews, makhana, almonds, and walnuts.",
+        "Processes and grades cashew nuts in-house into multiple kernel varieties.",
+        "Expanded into health-focused food products to meet changing consumer demand."
+      ],
+      "risks": [
+        "Business depends heavily on the seasonal availability of raw cashew nuts.",
+        "Fluctuations in raw material prices can affect profitability.",
+        "Any disruption in the procurement of quality raw materials may impact operations.",
+        "Operates in a highly competitive food processing industry.",
+        "Changes in government regulations or policies may adversely affect the business."
+      ],
+      "objectives": [
+        { "purpose": "Funding of working capital requirements of the Company", "amount_cr": 7.25, "pct": 29.56 },
+        { "purpose": "Prepayment or repayment of certain outstanding borrowings", "amount_cr": 9.5, "pct": 38.73 },
+        { "purpose": "General corporate purposes", "amount_cr": 7.78, "pct": 31.71 }
+      ],
+      "promoters": ["Naresh Foods Pvt Ltd (Promoter Group)"],
+      "promoter_holding_pre_pct": 92.4,
+      "promoter_holding_post_pct": 70.8,
+      "shares_pledged_pct": 0
+    },
+    "vegorama-punjabi-angithi": {
+      "ipo_id": "vegorama-punjabi-angithi",
+      "state": "manual",
+      "company_overview": "Incorporated in 2022, Vegorama Punjabi Angithi has grown from a cloud kitchen and takeaway to a brand that delivers premium-quality vegetarian North Indian cuisine. The company currently runs its business through 27 cloud kitchens and 2 fine-dining restaurants in five cities — Delhi, Noida, Gurugram, Faridabad, and Dehradun. It operates a chain under the \"Punjabi Angithi\" brand and offers five food brands including Chinese Veg Crunch, Dilli Tawa Parantha, Food of Dreams, and Swaad of Punjab. As of December 2025, e-commerce portals contributed 91.93% of sales, with takeaway services accounting for 4.24%, dine-in 2.14%, and catering 1.70%. Delhi contributed the highest revenue share at 52.62%; the top 10 customers contributed 92.85% of revenue in December 2025.",
+      "strengths": [
+        "High three-year revenue CAGR of 145% — well above the listed-hotel sector average.",
+        "Capital-light cloud-kitchen model with strong unit economics.",
+        "Multi-brand portfolio (5 sub-brands) reduces single-brand concentration risk.",
+        "Profitable at the operating level, with D/E of 0.15× (sector average 0.70×)."
+      ],
+      "risks": [
+        "Heavy revenue concentration: top 10 customers account for 92.85% of December 2025 sales.",
+        "Top 2 food-delivery portals alone contribute 91.87% of revenue — platform dependency risk.",
+        "Geographically concentrated: Delhi alone is 52.62% of revenue.",
+        "Competition from listed hotel groups with much larger balance sheets."
+      ],
+      "objectives": [
+        { "purpose": "Construction of restaurant", "amount_cr": 14.97, "pct": 39.4 },
+        { "purpose": "General corporate purposes", "amount_cr": 8.44, "pct": 22.2 },
+        { "purpose": "Capex for cloud kitchen", "amount_cr": 6.23, "pct": 16.4 },
+        { "purpose": "Centralised kitchen", "amount_cr": 5.40, "pct": 14.2 },
+        { "purpose": "Capex for upgradation", "amount_cr": 2.89, "pct": 7.6 }
+      ],
+      "promoters": ["Sukhdeep Singh (Promoter)", "Punjabi Angithi Holdings"],
+      "promoter_holding_pre_pct": 88.2,
+      "promoter_holding_post_pct": 65.4,
+      "shares_pledged_pct": 0
+    },
+    "quasar-robotics": {
+      "ipo_id": "quasar-robotics",
+      "state": "manual",
+      "company_overview": "Quasar Robotics designs and manufactures industrial robotic arms and integrated automation cells for automotive, electronics, and pharma assembly lines (synthetic seed for Phase 1 demo).",
+      "strengths": [
+        "Domestic alternative in industrial-robotics segment dominated by imports.",
+        "Multi-vertical exposure — automotive, electronics, and pharma.",
+        "PAT growing at 38% 3Y CAGR with margin expansion."
+      ],
+      "risks": [
+        "High dependence on capex cycles in automotive OEMs.",
+        "Exposure to imported sub-assembly costs and FX volatility.",
+        "Competition from global majors (ABB, KUKA, Fanuc) intensifying."
+      ],
+      "objectives": [
+        { "purpose": "Capex for new manufacturing line", "amount_cr": 380, "pct": 32.2 },
+        { "purpose": "Repayment of borrowings", "amount_cr": 260, "pct": 22.0 },
+        { "purpose": "Working capital", "amount_cr": 220, "pct": 18.6 },
+        { "purpose": "General corporate purposes", "amount_cr": 180, "pct": 15.3 },
+        { "purpose": "Issue expenses", "amount_cr": 140, "pct": 11.9 }
+      ],
+      "promoter_holding_pre_pct": 76.4,
+      "promoter_holding_post_pct": 54.2
+    }
+  }
+}

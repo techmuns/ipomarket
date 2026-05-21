@@ -9,6 +9,9 @@ __pycache__/
 .venv/
 venv/
 
+# Vite build output
+dist/
+
 # Phase 0 large/binary samples are excluded from the repo;
 # only structured JSON/HTML excerpts and metadata are committed.
 phase-0/samples/*.pdf
