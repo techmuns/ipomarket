@@ -1,0 +1,64 @@
+{
+  "mode": "cover",
+  "parser_version": "5A.1",
+  "page_count": 13,
+  "fields": {
+    "company_name": {
+      "value": "INCRED HOLDINGS LIMITED",
+      "page": 1,
+      "confidence": "high"
+    },
+    "document_type": {
+      "value": "Draft Abridged Prospectus",
+      "page": null,
+      "confidence": "high"
+    },
+    "issue_size_cr": {
+      "value": null,
+      "page": null,
+      "confidence": null
+    },
+    "price_band": {
+      "value": null,
+      "page": null,
+      "confidence": null
+    },
+    "lot_size": {
+      "value": null,
+      "page": null,
+      "confidence": null
+    },
+    "face_value": {
+      "value": 10,
+      "page": 1,
+      "confidence": "high"
+    },
+    "brlms": {
+      "value": [
+        "LOGO OF THE BRLM NAME CONTACT PERSON TELEPHONE AND EMAIL",
+        "IIFL Capital Services Limited Gaurav Mittal / Tel: +91 22 4646 4728",
+        "(formerly known as IIFL Securities Limited) Pawan Kumar Jain E-mail: ihl.ipo@iiflcap.com",
+        "InCred Capital Wealth Portfolio Harish Mallawat / Tel: +91 22 4161 1500",
+        "Managers Priva"
+      ],
+      "page": 2,
+      "confidence": "high"
+    },
+    "registrar": {
+      "value": "NAME OF THE REGISTRAR CONTACT PERSON EMAIL AND TELEPHONE",
+      "page": 2,
+      "confidence": "high"
+    }
+  },
+  "anchors_matched": 5,
+  "anchors_total": 8,
+  "raw_snippet": "Fresh Issue [●] Equity Shares Up to 99,020,833 Up to [●] Equity This Offer is being made in compliance with Regulation 6(1) of the\nand Offer of face value of Equity Shares of face Shares of face Securities and Exchange Board of India (Issue",
+  "overall_confidence": "medium",
+  "ok": true,
+  "errors": [],
+  "ipo_id": "incred-holdings",
+  "doc_url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+  "doc_kind": "DRHP",
+  "pdf_sha256": "57ed9f25485f5467234399e16733858e0e73af10ca322fa72ecd85b7d3b3f8e0",
+  "parsed_at_utc": "2026-05-21T17:03:19.085Z"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T16:46:38.675Z",
+  "generated_at_utc": "2026-05-21T17:03:19.086Z",
   "parser_version": "5A.1",
   "candidate_pool": {
     "total_ipo_documents_with_sebi_url": 7,
@@ -14,8 +14,8 @@
       {
         "ipo_id": "jindal-supreme-india",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
-        "page_count": null,
-        "verdict": "fetch_failed"
+        "page_count": 11,
+        "verdict": "too_short"
       },
       {
         "ipo_id": "nfp-sampoorna-foods",
@@ -26,20 +26,20 @@
       {
         "ipo_id": "online-instruments-india",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
-        "page_count": null,
-        "verdict": "fetch_failed"
+        "page_count": 16,
+        "verdict": "too_short"
       },
       {
         "ipo_id": "playsimple-games",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
-        "page_count": null,
-        "verdict": "fetch_failed"
+        "page_count": 14,
+        "verdict": "too_short"
       },
       {
         "ipo_id": "punjab-carbonic",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
-        "page_count": null,
-        "verdict": "fetch_failed"
+        "page_count": 14,
+        "verdict": "too_short"
       },
       {
         "ipo_id": "vegorama-punjabi-angithi",
@@ -53,33 +53,33 @@
     "incred-holdings": {
       "doc_url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
       "doc_kind": "DRHP",
-      "pdf_sha256": null,
-      "page_count": null,
-      "parsed_at_utc": "2026-05-21T16:46:38.675Z",
+      "pdf_sha256": "57ed9f25485f5467234399e16733858e0e73af10ca322fa72ecd85b7d3b3f8e0",
+      "page_count": 13,
+      "parsed_at_utc": "2026-05-21T17:03:19.086Z",
       "sections": {
         "cover": {
-          "attempted": false,
-          "reason": "download failed: HTTP 403"
+          "attempted": true,
+          "confidence": "medium",
+          "anchors_matched": 5,
+          "anchors_total": 8,
+          "errors": []
         },
         "financials": {
           "attempted": false,
-          "reason": "PDF #1 cover-target only"
+          "reason": "PDF #1 is cover-page target only (abridged prospectus, not a full RHP)"
         }
       },
-      "overall_confidence": null,
-      "manual_review_required": true,
-      "errors": [
-        "download failed: HTTP 403"
-      ]
+      "overall_confidence": "medium",
+      "manual_review_required": false,
+      "errors": []
     }
   },
   "source_meta": {
-    "source_state": "failed",
-    "last_attempted_utc": "2026-05-21T16:46:38.675Z",
+    "source_state": "live",
+    "last_attempted_utc": "2026-05-21T17:03:19.086Z",
     "errors": [
-      "pdf-1 incred-holdings: download failed: HTTP 403",
       "financial table candidate unavailable: no scanned SEBI URL met page_count >= 200"
     ],
-    "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=failed"
+    "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=live"
   }
 }
