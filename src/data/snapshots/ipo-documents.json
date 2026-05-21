@@ -1,59 +1,183 @@
 {
-  "generated_at_utc": "2026-05-21T05:30:00Z",
+  "generated_at_utc": "2026-05-21T09:08:07.691Z",
   "by_ipo": {
     "nfp-sampoorna-foods": {
       "ipo_id": "nfp-sampoorna-foods",
       "state": "live",
       "docs": [
-        { "kind": "Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/nfp-sampoorna-foods_p.pdf", "title": "NFP Sampoorna Foods — Abridged Prospectus (PDF)", "fetched_at_utc": "2026-05-20T19:05:00Z" }
+        {
+          "kind": "Prospectus",
+          "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/nfp-sampoorna-foods_p.pdf",
+          "title": "NFP Sampoorna Foods — Abridged Prospectus (PDF)",
+          "fetched_at_utc": "2026-05-20T19:05:00Z"
+        }
       ],
-      "registrar": { "name": "Skyline Financial Services Private Limited", "portal_url": "https://www.skylinerta.com/ipo.php" },
-      "brlms": ["GYR Capital Advisors Private Limited"]
+      "registrar": {
+        "name": "Skyline Financial Services Private Limited",
+        "portal_url": "https://www.skylinerta.com/ipo.php"
+      },
+      "brlms": [
+        "GYR Capital Advisors Private Limited"
+      ]
     },
     "vegorama-punjabi-angithi": {
       "ipo_id": "vegorama-punjabi-angithi",
       "state": "live",
       "docs": [
-        { "kind": "RHP", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Vegorama%20Punjabi%20Angithi%20Limited-RHP_p.pdf", "title": "Vegorama Punjabi Angithi — Red Herring Prospectus", "fetched_at_utc": "2026-05-20T19:05:00Z" }
+        {
+          "kind": "RHP",
+          "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Vegorama%20Punjabi%20Angithi%20Limited-RHP_p.pdf",
+          "title": "Vegorama Punjabi Angithi — Red Herring Prospectus",
+          "fetched_at_utc": "2026-05-20T19:05:00Z"
+        }
       ],
-      "registrar": { "name": "Bigshare Services Private Limited", "portal_url": "https://www.bigshareonline.com/IPO_Status.aspx" },
-      "brlms": ["Hem Securities Limited"]
+      "registrar": {
+        "name": "Bigshare Services Private Limited",
+        "portal_url": "https://www.bigshareonline.com/IPO_Status.aspx"
+      },
+      "brlms": [
+        "Hem Securities Limited"
+      ]
     },
     "incred-holdings": {
       "ipo_id": "incred-holdings",
       "state": "live",
       "docs": [
-        { "kind": "DRHP", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf", "title": "InCred Holdings — Draft Abridged Prospectus", "fetched_at_utc": "2026-05-20T19:05:00Z", "bytes": 728221, "page_count": 13 }
+        {
+          "kind": "DRHP",
+          "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+          "title": "InCred Holdings — Draft Abridged Prospectus",
+          "fetched_at_utc": "2026-05-21T09:08:07.691Z",
+          "bytes": 728221,
+          "page_count": 13
+        }
       ],
-      "registrar": { "name": "KFin Technologies Limited", "portal_url": "https://ris.kfintech.com/ipostatus/" },
-      "brlms": ["Kotak Mahindra Capital Company", "Morgan Stanley India", "Axis Capital"]
+      "registrar": {
+        "name": "KFin Technologies Limited",
+        "portal_url": "https://ris.kfintech.com/ipostatus/"
+      },
+      "brlms": [
+        "Kotak Mahindra Capital Company",
+        "Morgan Stanley India",
+        "Axis Capital"
+      ]
     },
     "quasar-robotics": {
       "ipo_id": "quasar-robotics",
       "state": "manual",
       "docs": [
-        { "kind": "RHP", "url": "https://example.invalid/quasar-robotics-rhp.pdf", "title": "Quasar Robotics — RHP (synthetic seed)", "fetched_at_utc": null }
+        {
+          "kind": "RHP",
+          "url": "https://example.invalid/quasar-robotics-rhp.pdf",
+          "title": "Quasar Robotics — RHP (synthetic seed)",
+          "fetched_at_utc": null
+        }
       ],
-      "registrar": { "name": "Link Intime India / MUFG Intime", "portal_url": "https://www.mufgintimeindia.com/ipo-status" },
-      "brlms": ["Jefferies India", "Axis Capital", "JM Financial"]
+      "registrar": {
+        "name": "Link Intime India / MUFG Intime",
+        "portal_url": "https://www.mufgintimeindia.com/ipo-status"
+      },
+      "brlms": [
+        "Jefferies India",
+        "Axis Capital",
+        "JM Financial"
+      ]
     },
     "lumino-hyperscale": {
       "ipo_id": "lumino-hyperscale",
       "state": "manual",
       "docs": [
-        { "kind": "Prospectus", "url": "https://example.invalid/lumino-hyperscale-prospectus.pdf", "title": "Lumino Hyperscale — Prospectus (synthetic seed)", "fetched_at_utc": null }
+        {
+          "kind": "Prospectus",
+          "url": "https://example.invalid/lumino-hyperscale-prospectus.pdf",
+          "title": "Lumino Hyperscale — Prospectus (synthetic seed)",
+          "fetched_at_utc": null
+        }
       ],
-      "registrar": { "name": "KFin Technologies Limited", "portal_url": "https://ris.kfintech.com/ipostatus/" },
-      "brlms": ["Goldman Sachs (India)", "Citi", "Kotak"]
+      "registrar": {
+        "name": "KFin Technologies Limited",
+        "portal_url": "https://ris.kfintech.com/ipostatus/"
+      },
+      "brlms": [
+        "Goldman Sachs (India)",
+        "Citi",
+        "Kotak"
+      ]
     },
     "greendale-cement": {
       "ipo_id": "greendale-cement",
       "state": "manual",
       "docs": [
-        { "kind": "Prospectus", "url": "https://example.invalid/greendale-cement-prospectus.pdf", "title": "Greendale Cement — Prospectus (synthetic seed)", "fetched_at_utc": null }
+        {
+          "kind": "Prospectus",
+          "url": "https://example.invalid/greendale-cement-prospectus.pdf",
+          "title": "Greendale Cement — Prospectus (synthetic seed)",
+          "fetched_at_utc": null
+        }
       ],
-      "registrar": { "name": "Maashitla Securities Private Limited", "portal_url": "https://maashitla.com/PublicIssues/Default.aspx" },
-      "brlms": ["Hem Securities Limited"]
+      "registrar": {
+        "name": "Maashitla Securities Private Limited",
+        "portal_url": "https://maashitla.com/PublicIssues/Default.aspx"
+      },
+      "brlms": [
+        "Hem Securities Limited"
+      ]
+    },
+    "online-instruments-india": {
+      "ipo_id": "online-instruments-india",
+      "state": "live",
+      "docs": [
+        {
+          "kind": "DRHP",
+          "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
+          "title": "Online Instruments — Draft Abridged Prospectus",
+          "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+        }
+      ],
+      "registrar": null,
+      "brlms": []
+    },
+    "jindal-supreme-india": {
+      "ipo_id": "jindal-supreme-india",
+      "state": "live",
+      "docs": [
+        {
+          "kind": "DRHP",
+          "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
+          "title": "Jindal Supreme — Draft Abridged Prospectus",
+          "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+        }
+      ],
+      "registrar": null,
+      "brlms": []
+    },
+    "playsimple-games": {
+      "ipo_id": "playsimple-games",
+      "state": "live",
+      "docs": [
+        {
+          "kind": "DRHP",
+          "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
+          "title": "Playsimple Games — Draft Abridged Prospectus",
+          "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+        }
+      ],
+      "registrar": null,
+      "brlms": []
+    },
+    "punjab-carbonic": {
+      "ipo_id": "punjab-carbonic",
+      "state": "live",
+      "docs": [
+        {
+          "kind": "DRHP",
+          "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
+          "title": "Punjab Carbonic — Draft Abridged Prospectus",
+          "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+        }
+      ],
+      "registrar": null,
+      "brlms": []
     }
   }
 }

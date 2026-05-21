@@ -1,0 +1,91 @@
+name: ingest
+
+# Phase 2A — SEBI Pipeline + Documents ingest bridge.
+# Reads the probe-maintained phase-0/samples/sebi-publicissues-pdfs.json
+# (kept fresh by phase-0-probes.yml / P-08) and bridges it into the
+# production snapshot files under src/data/snapshots/.
+#
+# workflow_dispatch only for now — no cron until the bridge is proven stable.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0  # need full history for rebase-then-push
+
+      - name: Print environment
+        run: |
+          echo "Node: $(node --version)"
+          echo "npm:  $(npm --version)"
+          echo "OS:   $(uname -a)"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Run ID: ${{ github.run_id }}"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install node deps
+        run: npm install --no-audit --no-fund
+
+      - name: Phase 2A — SEBI pipeline ingest
+        run: npm run ingest:sebi
+
+      - name: TypeScript typecheck (blocks bad snapshots from main)
+        run: npm run typecheck
+
+      - name: Vite build (proves snapshots still satisfy the UI types)
+        run: npm run build
+
+      - name: Show changed files
+        if: always()
+        run: |
+          echo "=== git status ==="
+          git status --short
+          echo ""
+          echo "=== diff stat (src/data/snapshots) ==="
+          git diff --stat src/data/snapshots/ || true
+
+      - name: Commit changed snapshots back to branch
+        if: success()
+        run: |
+          set -e
+          git config user.name "phase-2-ingest"
+          git config user.email "phase-2-ingest@users.noreply.github.com"
+          git add src/data/snapshots/ 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "[commit] no snapshot changes to commit. Diagnostic:"
+            ls -la src/data/snapshots/ || true
+            exit 0
+          fi
+
+          git commit -m "phase-2A: SEBI ingest refresh ($(date -u +%Y-%m-%dT%H:%MZ))"
+
+          echo "[commit] rebasing on origin/${{ github.ref_name }} before push"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              echo "[commit] pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "[commit] push attempt $attempt failed; fetching + rebasing"
+            git fetch origin ${{ github.ref_name }} || true
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          done
+          echo "[commit] push failed after 3 attempts"
+          exit 1

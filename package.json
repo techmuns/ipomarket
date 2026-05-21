@@ -11,7 +11,9 @@
     "typecheck": "tsc --noEmit",
     "probe": "tsx scripts/probes/run.ts",
     "probe:group": "tsx scripts/probes/run.ts --group",
-    "probe:one": "tsx scripts/probes/run.ts --probe"
+    "probe:one": "tsx scripts/probes/run.ts --probe",
+    "ingest": "npm run ingest:sebi",
+    "ingest:sebi": "tsx scripts/ingest/sebi-pipeline.ts"
   },
   "engines": {
     "node": ">=20"

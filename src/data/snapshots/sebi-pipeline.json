@@ -1,25 +1,345 @@
 {
-  "generated_at_utc": "2026-05-20T19:10:29Z",
+  "generated_at_utc": "2026-05-21T09:08:07.691Z",
   "source_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
+  "source_meta": {
+    "source_state": "live",
+    "last_attempted_utc": "2026-05-21T09:08:07.691Z"
+  },
   "entries": [
-    { "id": "incred-holdings", "company_name": "Incred Holdings Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Financial Services / NBFC" },
-    { "id": "online-instruments-india", "company_name": "Online Instruments (India) Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Industrials" },
-    { "id": "jindal-supreme-india", "company_name": "Jindal Supreme (India) Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Materials" },
-    { "id": "playsimple-games", "company_name": "Playsimple Games Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Consumer Discretionary / Gaming" },
-    { "id": "punjab-carbonic", "company_name": "Punjab Carbonic Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Industrials / Industrial Gases" },
-    { "id": "sebi-filing-6", "company_name": "Veritas Pharma Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Veritas%20Pharma_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Healthcare" },
-    { "id": "sebi-filing-7", "company_name": "Brightway Energy Solutions Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Brightway%20Energy_p.pdf", "filing_month": "may-2026", "status": "observations_issued", "sector_hint": "Energy / Renewables" },
-    { "id": "sebi-filing-8", "company_name": "Sundaram Specialty Chemicals Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Sundaram%20Specialty_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Materials / Specialty Chemicals" },
-    { "id": "sebi-filing-9", "company_name": "AeroFin Aerospace Components Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/AeroFin_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Industrials / Aerospace" },
-    { "id": "sebi-filing-10", "company_name": "Civica Diagnostics Network Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Civica%20Diagnostics_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Healthcare / Diagnostics" },
-    { "id": "sebi-filing-11", "company_name": "Tirumala Agro Foods Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Tirumala%20Agro_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Consumer Staples" },
-    { "id": "sebi-filing-12", "company_name": "Northbridge Logistics Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Northbridge%20Logistics_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Industrials / Logistics" },
-    { "id": "sebi-filing-13", "company_name": "BlueCircle Telecom Infra Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/BlueCircle%20Telecom_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Communication Services" },
-    { "id": "sebi-filing-14", "company_name": "Sunhaven Hospitality Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Sunhaven%20Hospitality_p.pdf", "filing_month": "may-2026", "status": "withdrawn", "sector_hint": "Consumer Discretionary / Hospitality" },
-    { "id": "sebi-filing-15", "company_name": "Avanti Microfinance Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Avanti%20Microfinance_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Financial Services / MFI" },
-    { "id": "sebi-filing-16", "company_name": "Greenwave Solar Tech Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Greenwave%20Solar_p.pdf", "filing_month": "may-2026", "status": "cleared", "sector_hint": "Energy / Renewables" },
-    { "id": "sebi-filing-17", "company_name": "Citadel Insurance Brokers Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Citadel%20Insurance_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Financial Services / Insurance" },
-    { "id": "sebi-filing-18", "company_name": "Mahaveer Industrial Equipments Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Mahaveer%20Industrial_p.pdf", "filing_month": "may-2026", "status": "filed", "sector_hint": "Industrials / Capital Goods" },
-    { "id": "sebi-filing-19", "company_name": "Nexora Edtech Platforms Limited", "doc_type": "Draft Abridged Prospectus", "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Nexora%20Edtech_p.pdf", "filing_month": "may-2026", "status": "observations_issued", "sector_hint": "Communication Services / Edtech" }
+    {
+      "id": "adroit-industries",
+      "company_name": "Adroit Industries (India) Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Adroit%20Industries%20India)Limited-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "bvishal-oil-and-energy",
+      "company_name": "Bvishal Oil and Energy Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Bvishal%20Oil%20and%20Energy%20Limited-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "cosmic-pv-power",
+      "company_name": "Cosmic PV Power Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/COSMIC%20PV%20POWER%20LIMITED-Abridged%20prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "expression-360-services-india",
+      "company_name": "Expression 360 Services India Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Expression%20360%20Services%20India%20Limited-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "gujarat-victory-forgings",
+      "company_name": "Gujarat Victory Forgings Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/GUJARAT%20VICTORY%20FORGINGS%20LIMITED-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "intellius-recode",
+      "company_name": "Intellius Recode Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Intellius%20Recode%20Ltd%20-%20Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "kay-jay-forgings",
+      "company_name": "Kay Jay Forgings Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Kay%20Jay%20Forgings%20Limited-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "manipal-health-enterprises",
+      "company_name": "Manipal Health Enterprises Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Manipal%20Health%20Enterprises%20Limited-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "nityas-gems-and-jewellery",
+      "company_name": "Nityas Gems and Jewellery Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Nityas%20Gems%20and%20Jewellery%20Limited-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "pioneer-fil-med",
+      "company_name": "Pioneer Fil-Med Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Pioneer%20Fil-Med%20Limited-Draft%20Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "rentomojo",
+      "company_name": "Rentomojo Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Rentomojo%20Limited-Draft%20Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "rkb-global",
+      "company_name": "RKB Global Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/RKB%20Global%20Limited%20-%20Abridged%20prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "sathya-agencies",
+      "company_name": "Sathya Agencies Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Sathya%20Agencies%20Limited-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "t-c-terrytex",
+      "company_name": "T.C. TERRYTEX LIMITED",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/TC%20TERRYTEX%20LIMITED-Abridged%20Prospectus_p.pdf",
+      "filing_month": "apr-2026",
+      "status": "filed",
+      "sector_hint": null,
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "sebi-filing-9",
+      "company_name": "AeroFin Aerospace Components Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/AeroFin_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Industrials / Aerospace"
+    },
+    {
+      "id": "sebi-filing-15",
+      "company_name": "Avanti Microfinance Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Avanti%20Microfinance_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Financial Services / MFI"
+    },
+    {
+      "id": "sebi-filing-13",
+      "company_name": "BlueCircle Telecom Infra Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/BlueCircle%20Telecom_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Communication Services"
+    },
+    {
+      "id": "sebi-filing-7",
+      "company_name": "Brightway Energy Solutions Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Brightway%20Energy_p.pdf",
+      "filing_month": "may-2026",
+      "status": "observations_issued",
+      "sector_hint": "Energy / Renewables"
+    },
+    {
+      "id": "sebi-filing-17",
+      "company_name": "Citadel Insurance Brokers Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Citadel%20Insurance_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Financial Services / Insurance"
+    },
+    {
+      "id": "sebi-filing-10",
+      "company_name": "Civica Diagnostics Network Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Civica%20Diagnostics_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Healthcare / Diagnostics"
+    },
+    {
+      "id": "punjab-carbonic",
+      "company_name": "Punjab Carbonic Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Industrials / Industrial Gases",
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "sebi-filing-16",
+      "company_name": "Greenwave Solar Tech Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Greenwave%20Solar_p.pdf",
+      "filing_month": "may-2026",
+      "status": "cleared",
+      "sector_hint": "Energy / Renewables"
+    },
+    {
+      "id": "incred-holdings",
+      "company_name": "Incred Holdings Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Financial Services / NBFC",
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "jindal-supreme-india",
+      "company_name": "Jindal Supreme (India) Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Materials",
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "sebi-filing-18",
+      "company_name": "Mahaveer Industrial Equipments Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Mahaveer%20Industrial_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Industrials / Capital Goods"
+    },
+    {
+      "id": "sebi-filing-19",
+      "company_name": "Nexora Edtech Platforms Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Nexora%20Edtech_p.pdf",
+      "filing_month": "may-2026",
+      "status": "observations_issued",
+      "sector_hint": "Communication Services / Edtech"
+    },
+    {
+      "id": "sebi-filing-12",
+      "company_name": "Northbridge Logistics Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Northbridge%20Logistics_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Industrials / Logistics"
+    },
+    {
+      "id": "online-instruments-india",
+      "company_name": "Online Instruments(India) Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Industrials",
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "playsimple-games",
+      "company_name": "Playsimple Games Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Consumer Discretionary / Gaming",
+      "source": "SEBI",
+      "fetched_at_utc": "2026-05-21T09:08:07.691Z"
+    },
+    {
+      "id": "sebi-filing-8",
+      "company_name": "Sundaram Specialty Chemicals Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Sundaram%20Specialty_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Materials / Specialty Chemicals"
+    },
+    {
+      "id": "sebi-filing-14",
+      "company_name": "Sunhaven Hospitality Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Sunhaven%20Hospitality_p.pdf",
+      "filing_month": "may-2026",
+      "status": "withdrawn",
+      "sector_hint": "Consumer Discretionary / Hospitality"
+    },
+    {
+      "id": "sebi-filing-11",
+      "company_name": "Tirumala Agro Foods Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Tirumala%20Agro_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Consumer Staples"
+    },
+    {
+      "id": "sebi-filing-6",
+      "company_name": "Veritas Pharma Limited",
+      "doc_type": "Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Veritas%20Pharma_p.pdf",
+      "filing_month": "may-2026",
+      "status": "filed",
+      "sector_hint": "Healthcare"
+    }
   ]
 }
