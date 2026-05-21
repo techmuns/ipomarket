@@ -4,7 +4,28 @@ This deploys the static Vite + React build to Cloudflare Pages. **Phase 1 only**
 
 ---
 
-## TL;DR
+## Live URL
+
+> **Production**: `<paste-live-url-here>` *(fill in after first Cloudflare deploy; see "How to redeploy" below)*
+> **Latest deploy**: see Cloudflare → Workers & Pages → ipomarket → Deployments
+> **Post-deploy smoke test**: see `post-deploy-checklist.md` at the repo root
+
+---
+
+## How to redeploy
+
+| Trigger | What happens |
+|---|---|
+| `git push origin main` | Cloudflare auto-detects the push (native GitHub integration), runs `npm install` → `npm run build`, deploys `dist/`. ~1–2 min total. New deploy replaces the production deployment when the build succeeds. |
+| Push to any non-`main` branch | Cloudflare creates a **preview deployment** at `https://<branch>.<project-name>.pages.dev` — production stays untouched. Handy for testing Phase 2 ingestion later. |
+| Manual rollback | Cloudflare → Workers & Pages → `ipomarket` → Deployments → pick a previous successful deploy → **Rollback**. |
+| Redeploy without code change | Cloudflare → Workers & Pages → `ipomarket` → Deployments → latest → **Retry deployment**. |
+
+Build config is fixed and stored in the Pages project (see "Build configuration" below) — no need to re-enter on each deploy.
+
+---
+
+## Build configuration
 
 | Setting | Value |
 |---|---|
