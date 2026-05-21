@@ -1,0 +1,122 @@
+name: pdf-parse
+
+# Phase 5A PDF parser feasibility run.
+# Downloads SEBI PDFs to a gitignored temp path, runs the two Python
+# extractors (pdf-cover + pdf-financials), writes the audit JSON +
+# per-IPO side artifacts, then commits the JSON back to the branch.
+#
+# Hard guardrails (per master plan §V.7 + §W.5):
+#   - NO PDF binaries are committed. CI fails red if any *.pdf is staged.
+#   - NO full text dumps committed. Only bounded JSON + raw_snippet <= 240 chars.
+#   - Production snapshots are NOT touched (ipo-financials/narrative/documents/source-audit).
+#   - Parser failures are classified → green; only true code bugs fail red.
+#
+# workflow_dispatch only — no cron until Phase 5A is accepted (Gate B).
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pdf-parse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0  # need full history for rebase-then-push
+
+      - name: Print environment
+        run: |
+          echo "Node: $(node --version)"
+          echo "npm:  $(npm --version)"
+          echo "OS:   $(uname -a)"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Run ID: ${{ github.run_id }}"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install node deps
+        run: npm install --no-audit --no-fund
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install python deps (pdfplumber + camelot)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Phase 5A — PDF parser feasibility
+        run: npm run pdf
+
+      - name: TypeScript typecheck (blocks bad audit shape from main)
+        run: npm run typecheck
+
+      - name: Vite build (proves dashboard still builds; UI untouched)
+        run: npm run build
+
+      - name: PDF binary guard (CI fails red if any *.pdf is staged)
+        run: |
+          set -e
+          git add -A 2>/dev/null || true
+          if git diff --cached --name-only | grep -Ei '\.pdf$'; then
+            echo "[guard] PDF binary staged — failing red per W.5 item 9"
+            exit 1
+          fi
+          if git diff --cached --name-only | grep -Ei '\.full\.txt$|/full-text-.*\.txt$'; then
+            echo "[guard] full text dump staged — failing red per W.5 item 3"
+            exit 1
+          fi
+          echo "[guard] no PDF binaries or full text dumps staged."
+
+      - name: Show changed files
+        if: always()
+        run: |
+          echo "=== git status ==="
+          git status --short
+          echo ""
+          echo "=== diff stat ==="
+          git diff --cached --stat || true
+
+      - name: Commit changed audit + side artifacts back to branch
+        if: success()
+        run: |
+          set -e
+          git config user.name "phase-5a-pdf-parse"
+          git config user.email "phase-5a-pdf-parse@users.noreply.github.com"
+
+          if git diff --cached --quiet; then
+            echo "[commit] no changes to commit. Diagnostic:"
+            ls -la src/data/snapshots/ipo-pdf-extraction-audit.json || true
+            ls -la phase-0/pdf-extracts/ || true
+            exit 0
+          fi
+
+          git commit -m "phase-5A: PDF parser feasibility run ($(date -u +%Y-%m-%dT%H:%MZ))"
+
+          echo "[commit] rebasing on origin/${{ github.ref_name }} before push"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              echo "[commit] pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "[commit] push attempt $attempt failed; fetching + rebasing"
+            git fetch origin ${{ github.ref_name }} || true
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          done
+          echo "[commit] push failed after 3 attempts"
+          exit 1

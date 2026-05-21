@@ -1,0 +1,85 @@
+{
+  "generated_at_utc": "2026-05-21T16:46:38.675Z",
+  "parser_version": "5A.1",
+  "candidate_pool": {
+    "total_ipo_documents_with_sebi_url": 7,
+    "pdf_1_cover_target": {
+      "ipo_id": "incred-holdings",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+      "reason": "pinned to InCred Holdings DRHP — validated end-to-end by P-09"
+    },
+    "pdf_2_financial_target": null,
+    "financial_table_candidate_unavailable": true,
+    "scanned": [
+      {
+        "ipo_id": "jindal-supreme-india",
+        "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
+        "page_count": null,
+        "verdict": "fetch_failed"
+      },
+      {
+        "ipo_id": "nfp-sampoorna-foods",
+        "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/nfp-sampoorna-foods_p.pdf",
+        "page_count": null,
+        "verdict": "fetch_failed"
+      },
+      {
+        "ipo_id": "online-instruments-india",
+        "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
+        "page_count": null,
+        "verdict": "fetch_failed"
+      },
+      {
+        "ipo_id": "playsimple-games",
+        "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
+        "page_count": null,
+        "verdict": "fetch_failed"
+      },
+      {
+        "ipo_id": "punjab-carbonic",
+        "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
+        "page_count": null,
+        "verdict": "fetch_failed"
+      },
+      {
+        "ipo_id": "vegorama-punjabi-angithi",
+        "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Vegorama%20Punjabi%20Angithi%20Limited-RHP_p.pdf",
+        "page_count": null,
+        "verdict": "fetch_failed"
+      }
+    ]
+  },
+  "by_ipo": {
+    "incred-holdings": {
+      "doc_url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+      "doc_kind": "DRHP",
+      "pdf_sha256": null,
+      "page_count": null,
+      "parsed_at_utc": "2026-05-21T16:46:38.675Z",
+      "sections": {
+        "cover": {
+          "attempted": false,
+          "reason": "download failed: HTTP 403"
+        },
+        "financials": {
+          "attempted": false,
+          "reason": "PDF #1 cover-target only"
+        }
+      },
+      "overall_confidence": null,
+      "manual_review_required": true,
+      "errors": [
+        "download failed: HTTP 403"
+      ]
+    }
+  },
+  "source_meta": {
+    "source_state": "failed",
+    "last_attempted_utc": "2026-05-21T16:46:38.675Z",
+    "errors": [
+      "pdf-1 incred-holdings: download failed: HTTP 403",
+      "financial table candidate unavailable: no scanned SEBI URL met page_count >= 200"
+    ],
+    "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=failed"
+  }
+}

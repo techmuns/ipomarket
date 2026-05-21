@@ -18,7 +18,8 @@
     "ingest:listing": "tsx scripts/ingest/listing-performance.ts",
     "ingest:sector": "tsx scripts/ingest/sector-map.ts",
     "ingest:subscription": "tsx scripts/ingest/subscriptions.ts",
-    "ingest:source-audit": "tsx scripts/ingest/source-audit.ts"
+    "ingest:source-audit": "tsx scripts/ingest/source-audit.ts",
+    "pdf": "tsx scripts/pdf/run.ts"
   },
   "engines": {
     "node": ">=20"

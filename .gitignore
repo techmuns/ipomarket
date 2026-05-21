@@ -22,3 +22,13 @@ phase-0/samples/*.full.html
 
 # Local probe scratch
 phase-0/.scratch/
+
+# Phase 5A PDF parser — downloaded PDF binaries + full text dumps are
+# NEVER committed (per master plan §V.7 item 11). Only the per-IPO
+# extraction JSON (cover.json / financials.json), the index summary, and
+# the bounded raw_snippet rows in src/data/snapshots/ipo-pdf-extraction-audit.json
+# land in git.
+phase-0/pdf-extracts/**/*.pdf
+phase-0/pdf-extracts/**/source.pdf
+phase-0/pdf-extracts/**/*.txt
+phase-0/pdf-extracts/**/pagecount.json
