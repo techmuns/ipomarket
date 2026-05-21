@@ -9,7 +9,7 @@
 
 ## 1. Live URL
 
-> **Production URL**: `<paste-live-url-here>` *— to be filled in once shared from Cloudflare → Workers & Pages → ipomarket → latest deployment*
+> **Production URL**: http://ipomarket-pages.pages.dev/
 
 **Note on direct verification from this environment**: the sandbox that drove this Phase 1.5 work has its outbound HTTPS allowlist set to deny `pages.dev`, `cloudflare.com`, and most external hosts (verified: all three return HTTP 403 to `curl`). Live-URL curls and screenshot verification must therefore be done from your browser or a GitHub Actions runner. The smoke checklist (`post-deploy-checklist.md`) is the authoritative manual gate; running through it takes 3–5 minutes.
 

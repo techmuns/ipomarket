@@ -6,7 +6,7 @@ This deploys the static Vite + React build to Cloudflare Pages. **Phase 1 only**
 
 ## Live URL
 
-> **Production**: `<paste-live-url-here>` *(fill in after first Cloudflare deploy; see "How to redeploy" below)*
+> **Production**: http://ipomarket-pages.pages.dev/
 > **Latest deploy**: see Cloudflare → Workers & Pages → ipomarket → Deployments
 > **Post-deploy smoke test**: see `post-deploy-checklist.md` at the repo root
 
