@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T05:30:00Z",
+  "generated_at_utc": "2026-05-21T10:37:27.253Z",
   "totals": {
     "green": 10,
     "yellow": 11,
@@ -8,7 +8,7 @@
   "probes": [
     {
       "probe_id": "P-01",
-      "source": "NSE \u2014 Current/Open IPOs",
+      "source": "NSE — Current/Open IPOs",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "JSON",
@@ -20,7 +20,7 @@
     },
     {
       "probe_id": "P-02",
-      "source": "NSE \u2014 Upcoming IPOs",
+      "source": "NSE — Upcoming IPOs",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "JSON",
@@ -32,7 +32,7 @@
     },
     {
       "probe_id": "P-03",
-      "source": "NSE \u2014 Past/Recent IPOs",
+      "source": "NSE — Past/Recent IPOs",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "JSON",
@@ -44,7 +44,7 @@
     },
     {
       "probe_id": "P-04",
-      "source": "NSE \u2014 Live Subscription",
+      "source": "NSE — Live Subscription",
       "status": "YELLOW",
       "status_code": null,
       "response_type": "EMPTY",
@@ -56,7 +56,7 @@
     },
     {
       "probe_id": "P-05",
-      "source": "NSE Emerge \u2014 SME IPOs",
+      "source": "NSE Emerge — SME IPOs",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "JSON",
@@ -68,7 +68,7 @@
     },
     {
       "probe_id": "P-08",
-      "source": "SEBI \u2014 Public Issues Filings",
+      "source": "SEBI — Public Issues Filings",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "HTML",
@@ -80,7 +80,7 @@
     },
     {
       "probe_id": "P-08b",
-      "source": "SEBI \u2014 Processing Status",
+      "source": "SEBI — Processing Status",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "EMPTY",
@@ -92,7 +92,7 @@
     },
     {
       "probe_id": "P-09",
-      "source": "SEBI \u2014 DRHP PDF Download",
+      "source": "SEBI — DRHP PDF Download",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "PDF",
@@ -104,7 +104,7 @@
     },
     {
       "probe_id": "P-10",
-      "source": "NSE/BSE \u2014 DRHP Archive",
+      "source": "NSE/BSE — DRHP Archive",
       "status": "RED",
       "status_code": 200,
       "response_type": "HTML",
@@ -116,11 +116,11 @@
     },
     {
       "probe_id": "P-15",
-      "source": "BSE \u2014 Historical OHLC (fallback)",
+      "source": "BSE — Historical OHLC (fallback)",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "JSON",
-      "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \" <!DOCTYPE \"... is not valid JSON; body starts:  <!DOCTYPE html> <html lang=\"en\"> <head> <meta content=\"noindex, nofollow\" name=\u2026[truncated, total 22096 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \" ",
+      "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \" <!DOCTYPE \"... is not valid JSON; body starts:  <!DOCTYPE html> <html lang=\"en\"> <head> <meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \" ",
       "ran_at_utc": "2026-05-21T02:01:29.376Z",
       "latency_ms": 3867,
       "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
@@ -128,7 +128,7 @@
     },
     {
       "probe_id": "P-15b",
-      "source": "NSE \u2014 Equity Quote",
+      "source": "NSE — Equity Quote",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "JSON",
@@ -152,7 +152,7 @@
     },
     {
       "probe_id": "P-06",
-      "source": "BSE \u2014 Mainboard Public Issues",
+      "source": "BSE — Mainboard Public Issues",
       "status": "RED",
       "status_code": 200,
       "response_type": "HTML",
@@ -164,7 +164,7 @@
     },
     {
       "probe_id": "P-06b",
-      "source": "BSE SME \u2014 Public Issues",
+      "source": "BSE SME — Public Issues",
       "status": "RED",
       "status_code": 0,
       "response_type": "ERROR",
@@ -176,7 +176,7 @@
     },
     {
       "probe_id": "P-07",
-      "source": "BSE \u2014 Subscription / Cumulative Bid Details",
+      "source": "BSE — Subscription / Cumulative Bid Details",
       "status": "RED",
       "status_code": 200,
       "response_type": "HTML",
@@ -200,7 +200,7 @@
     },
     {
       "probe_id": "P-12",
-      "source": "MUFG Intime (Link Intime) \u2014 landing",
+      "source": "MUFG Intime (Link Intime) — landing",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "HTML",
@@ -212,7 +212,7 @@
     },
     {
       "probe_id": "P-13",
-      "source": "KFintech \u2014 landing",
+      "source": "KFintech — landing",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "HTML",
@@ -224,7 +224,7 @@
     },
     {
       "probe_id": "P-14",
-      "source": "Bigshare \u2014 landing",
+      "source": "Bigshare — landing",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "HTML",
@@ -236,7 +236,7 @@
     },
     {
       "probe_id": "P-14b",
-      "source": "Maashitla \u2014 landing",
+      "source": "Maashitla — landing",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "HTML",
@@ -248,7 +248,7 @@
     },
     {
       "probe_id": "P-17",
-      "source": "RHP PDF parsing \u2014 sample",
+      "source": "RHP PDF parsing — sample",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "EMPTY",
@@ -260,7 +260,7 @@
     },
     {
       "probe_id": "P-18",
-      "source": "Anchor circular PDF parsing \u2014 sample",
+      "source": "Anchor circular PDF parsing — sample",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "EMPTY",
@@ -272,7 +272,7 @@
     },
     {
       "probe_id": "P-19",
-      "source": "GMP \u2014 IPOWatch",
+      "source": "GMP — IPOWatch",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "HTML",
@@ -284,7 +284,7 @@
     },
     {
       "probe_id": "P-20",
-      "source": "GMP \u2014 Chittorgarh",
+      "source": "GMP — Chittorgarh",
       "status": "RED",
       "status_code": 200,
       "response_type": "HTML",
@@ -296,7 +296,7 @@
     },
     {
       "probe_id": "P-21",
-      "source": "GMP \u2014 IPO Central",
+      "source": "GMP — IPO Central",
       "status": "RED",
       "status_code": 403,
       "response_type": "BLOCKED",
@@ -308,7 +308,7 @@
     },
     {
       "probe_id": "P-22",
-      "source": "GMP \u2014 InvestorGain",
+      "source": "GMP — InvestorGain",
       "status": "YELLOW",
       "status_code": 200,
       "response_type": "HTML",
@@ -320,7 +320,7 @@
     },
     {
       "probe_id": "P-23a",
-      "source": "Broker IPO page \u2014 Zerodha (reference only)",
+      "source": "Broker IPO page — Zerodha (reference only)",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "HTML",
@@ -332,7 +332,7 @@
     },
     {
       "probe_id": "P-23b",
-      "source": "Broker IPO page \u2014 Upstox (reference only)",
+      "source": "Broker IPO page — Upstox (reference only)",
       "status": "GREEN",
       "status_code": 200,
       "response_type": "HTML",
@@ -353,6 +353,69 @@
       "latency_ms": 1507,
       "recommended_action": "Sector reachable for listed equities via NSE equity quote, but not exposed per-IPO before listing. Use the equity-quote sector once an IPO lists; create a small manual sector-map.json for pre-listing IPOs.",
       "fallback_source": "phase-0/samples/sector-manual-map.json (curated)"
+    }
+  ],
+  "ingest_slices": [
+    {
+      "name": "sebi",
+      "source_state": "live",
+      "counts": {
+        "added": 0,
+        "updated": 19,
+        "preserved": 14
+      },
+      "errors": [],
+      "notes": "pipeline: +0/19/14 · docs: +0/5 · audit: +0/5 · matches: 5"
+    },
+    {
+      "name": "nse",
+      "source_state": "failed",
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "preserved": 10
+      },
+      "errors": [
+        "mainboard: HTTP 403: Host not in allowlist",
+        "sme: HTTP 403: Host not in allowlist"
+      ],
+      "notes": "mainboard=failed · sme=failed · +0 added · ~0 updated · =10 preserved"
+    },
+    {
+      "name": "listing",
+      "source_state": "skipped",
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "preserved": 2
+      },
+      "errors": [],
+      "notes": "2 listed IPOs · live-fetches=0 · skipped(no-mapping)=2 · +0/0/2"
+    },
+    {
+      "name": "sector",
+      "source_state": "skipped",
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "preserved": 0
+      },
+      "errors": [],
+      "notes": "0 of 2 listed IPOs have NSE symbol; sector-map unchanged"
+    },
+    {
+      "name": "subscription",
+      "source_state": "failed",
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "preserved": 5
+      },
+      "errors": [
+        "nfp-sampoorna-foods (NFPSAMPOORNAFOODS): NSE HTTP 403: Host not in allowlist",
+        "vegorama-punjabi-angithi (VEGORAMAPUNJABIANGITHI): NSE HTTP 403: Host not in allowlist"
+      ],
+      "notes": "2 open IPOs · live=0 · +0/0/5"
     }
   ]
 }

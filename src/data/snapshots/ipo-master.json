@@ -1,49 +1,42 @@
 {
-  "generated_at_utc": "2026-05-21T05:30:00Z",
+  "generated_at_utc": "2026-05-21T10:37:27.253Z",
   "ipos": [
     {
-      "id": "nfp-sampoorna-foods",
-      "slug": "nfp-sampoorna-foods",
-      "name": "NFP Sampoorna Foods",
-      "short_name": "NFP Sampoorna",
+      "id": "greendale-cement",
+      "slug": "greendale-cement",
+      "name": "Greendale Cement India",
+      "short_name": "Greendale Cement",
       "segment": "sme",
-      "status": "open",
-      "sector": { "macro": "Consumer Staples", "sector": "Food, Beverage & Tobacco", "industry": "Food Products", "basic_industry": "Processed Foods" },
-      "open_date": "2026-05-18",
-      "close_date": "2026-05-20",
-      "listing_date": "2026-05-25",
-      "price_band": { "low": 52, "high": 55 },
-      "lot_size": 2000,
-      "issue_size_cr": 24.53,
-      "fresh_cr": 24.53,
+      "status": "listed",
+      "sector": {
+        "macro": "Materials",
+        "sector": "Cement & Construction Materials",
+        "industry": "Cement",
+        "basic_industry": "Cement & Cement Products"
+      },
+      "open_date": "2026-04-28",
+      "close_date": "2026-04-30",
+      "listing_date": "2026-05-06",
+      "price_band": {
+        "low": 96,
+        "high": 102
+      },
+      "lot_size": 1200,
+      "issue_size_cr": 48,
+      "fresh_cr": 48,
       "ofs_cr": 0,
       "face_value": 10,
-      "listing_exchange": ["NSE"],
-      "reservation": { "qib_pct": 50, "nii_pct": 15, "retail_pct": 35, "emp_pct": 0 },
-      "state": "live",
-      "tagline": "Dry-fruit processor expanding into makhana, almonds, walnuts."
-    },
-    {
-      "id": "vegorama-punjabi-angithi",
-      "slug": "vegorama-punjabi-angithi",
-      "name": "Vegorama Punjabi Angithi Limited",
-      "short_name": "Vegorama",
-      "segment": "sme",
-      "status": "open",
-      "sector": { "macro": "Consumer Discretionary", "sector": "Consumer Services", "industry": "Hotels Restaurants & Tourism", "basic_industry": "Restaurants" },
-      "open_date": "2026-05-20",
-      "close_date": "2026-05-22",
-      "listing_date": "2026-05-27",
-      "price_band": { "low": 73, "high": 77 },
-      "lot_size": 1600,
-      "issue_size_cr": 38,
-      "fresh_cr": 38,
-      "ofs_cr": 0,
-      "face_value": 10,
-      "listing_exchange": ["BSE"],
-      "reservation": { "qib_pct": 50, "nii_pct": 15, "retail_pct": 35, "emp_pct": 0 },
-      "state": "live",
-      "tagline": "Cloud-kitchen + dine-in vegetarian chain across NCR & Dehradun."
+      "listing_exchange": [
+        "BSE"
+      ],
+      "reservation": {
+        "qib_pct": 50,
+        "nii_pct": 15,
+        "retail_pct": 35,
+        "emp_pct": 0
+      },
+      "state": "manual",
+      "tagline": "Regional green-cement producer (synthetic seed)."
     },
     {
       "id": "incred-holdings",
@@ -52,7 +45,12 @@
       "short_name": "InCred Holdings",
       "segment": "mainboard",
       "status": "upcoming",
-      "sector": { "macro": "Financials", "sector": "Financial Services", "industry": "Non Banking Financial Company (NBFC)", "basic_industry": "Diversified NBFC" },
+      "sector": {
+        "macro": "Financials",
+        "sector": "Financial Services",
+        "industry": "Non Banking Financial Company (NBFC)",
+        "basic_industry": "Diversified NBFC"
+      },
       "open_date": null,
       "close_date": null,
       "listing_date": null,
@@ -62,98 +60,13 @@
       "fresh_cr": null,
       "ofs_cr": null,
       "face_value": null,
-      "listing_exchange": ["NSE", "BSE"],
+      "listing_exchange": [
+        "NSE",
+        "BSE"
+      ],
       "reservation": null,
       "state": "live",
       "tagline": "Diversified NBFC; DRHP filed via SEBI May 2026."
-    },
-    {
-      "id": "quasar-robotics",
-      "slug": "quasar-robotics",
-      "name": "Quasar Robotics Limited",
-      "short_name": "Quasar Robotics",
-      "segment": "mainboard",
-      "status": "closed",
-      "sector": { "macro": "Industrials", "sector": "Capital Goods", "industry": "Industrial Machinery", "basic_industry": "Robotics & Automation" },
-      "open_date": "2026-05-15",
-      "close_date": "2026-05-19",
-      "listing_date": "2026-05-26",
-      "price_band": { "low": 412, "high": 432 },
-      "lot_size": 34,
-      "issue_size_cr": 1180,
-      "fresh_cr": 720,
-      "ofs_cr": 460,
-      "face_value": 2,
-      "listing_exchange": ["NSE", "BSE"],
-      "reservation": { "qib_pct": 50, "nii_pct": 15, "retail_pct": 35, "emp_pct": 0 },
-      "state": "manual",
-      "tagline": "Industrial robotics arm of a listed automation group (synthetic seed)."
-    },
-    {
-      "id": "lumino-hyperscale",
-      "slug": "lumino-hyperscale",
-      "name": "Lumino Hyperscale Networks",
-      "short_name": "Lumino Hyperscale",
-      "segment": "mainboard",
-      "status": "listed",
-      "sector": { "macro": "Information Technology", "sector": "Software & Services", "industry": "IT Services", "basic_industry": "Data Centre Infrastructure" },
-      "open_date": "2026-04-10",
-      "close_date": "2026-04-14",
-      "listing_date": "2026-04-22",
-      "price_band": { "low": 268, "high": 282 },
-      "lot_size": 53,
-      "issue_size_cr": 2840,
-      "fresh_cr": 1700,
-      "ofs_cr": 1140,
-      "face_value": 2,
-      "listing_exchange": ["NSE", "BSE"],
-      "reservation": { "qib_pct": 50, "nii_pct": 15, "retail_pct": 35, "emp_pct": 0 },
-      "state": "manual",
-      "tagline": "Hyperscaler infra play (synthetic seed for Recently Listed)."
-    },
-    {
-      "id": "greendale-cement",
-      "slug": "greendale-cement",
-      "name": "Greendale Cement India",
-      "short_name": "Greendale Cement",
-      "segment": "sme",
-      "status": "listed",
-      "sector": { "macro": "Materials", "sector": "Cement & Construction Materials", "industry": "Cement", "basic_industry": "Cement & Cement Products" },
-      "open_date": "2026-04-28",
-      "close_date": "2026-04-30",
-      "listing_date": "2026-05-06",
-      "price_band": { "low": 96, "high": 102 },
-      "lot_size": 1200,
-      "issue_size_cr": 48,
-      "fresh_cr": 48,
-      "ofs_cr": 0,
-      "face_value": 10,
-      "listing_exchange": ["BSE"],
-      "reservation": { "qib_pct": 50, "nii_pct": 15, "retail_pct": 35, "emp_pct": 0 },
-      "state": "manual",
-      "tagline": "Regional green-cement producer (synthetic seed)."
-    },
-    {
-      "id": "online-instruments-india",
-      "slug": "online-instruments-india",
-      "name": "Online Instruments (India) Limited",
-      "short_name": "Online Instruments",
-      "segment": "sme",
-      "status": "upcoming",
-      "sector": null,
-      "open_date": null,
-      "close_date": null,
-      "listing_date": null,
-      "price_band": null,
-      "lot_size": null,
-      "issue_size_cr": null,
-      "fresh_cr": null,
-      "ofs_cr": null,
-      "face_value": null,
-      "listing_exchange": ["NSE"],
-      "reservation": null,
-      "state": "live",
-      "tagline": "DRHP filed via SEBI May 2026; details awaiting."
     },
     {
       "id": "jindal-supreme-india",
@@ -172,10 +85,112 @@
       "fresh_cr": null,
       "ofs_cr": null,
       "face_value": null,
-      "listing_exchange": ["NSE", "BSE"],
+      "listing_exchange": [
+        "NSE",
+        "BSE"
+      ],
       "reservation": null,
       "state": "live",
       "tagline": "DRHP filed via SEBI May 2026."
+    },
+    {
+      "id": "lumino-hyperscale",
+      "slug": "lumino-hyperscale",
+      "name": "Lumino Hyperscale Networks",
+      "short_name": "Lumino Hyperscale",
+      "segment": "mainboard",
+      "status": "listed",
+      "sector": {
+        "macro": "Information Technology",
+        "sector": "Software & Services",
+        "industry": "IT Services",
+        "basic_industry": "Data Centre Infrastructure"
+      },
+      "open_date": "2026-04-10",
+      "close_date": "2026-04-14",
+      "listing_date": "2026-04-22",
+      "price_band": {
+        "low": 268,
+        "high": 282
+      },
+      "lot_size": 53,
+      "issue_size_cr": 2840,
+      "fresh_cr": 1700,
+      "ofs_cr": 1140,
+      "face_value": 2,
+      "listing_exchange": [
+        "NSE",
+        "BSE"
+      ],
+      "reservation": {
+        "qib_pct": 50,
+        "nii_pct": 15,
+        "retail_pct": 35,
+        "emp_pct": 0
+      },
+      "state": "manual",
+      "tagline": "Hyperscaler infra play (synthetic seed for Recently Listed)."
+    },
+    {
+      "id": "nfp-sampoorna-foods",
+      "slug": "nfp-sampoorna-foods",
+      "name": "NFP Sampoorna Foods",
+      "short_name": "NFP Sampoorna",
+      "segment": "sme",
+      "status": "open",
+      "sector": {
+        "macro": "Consumer Staples",
+        "sector": "Food, Beverage & Tobacco",
+        "industry": "Food Products",
+        "basic_industry": "Processed Foods"
+      },
+      "open_date": "2026-05-18",
+      "close_date": "2026-05-20",
+      "listing_date": "2026-05-25",
+      "price_band": {
+        "low": 52,
+        "high": 55
+      },
+      "lot_size": 2000,
+      "issue_size_cr": 24.53,
+      "fresh_cr": 24.53,
+      "ofs_cr": 0,
+      "face_value": 10,
+      "listing_exchange": [
+        "NSE"
+      ],
+      "reservation": {
+        "qib_pct": 50,
+        "nii_pct": 15,
+        "retail_pct": 35,
+        "emp_pct": 0
+      },
+      "state": "live",
+      "tagline": "Dry-fruit processor expanding into makhana, almonds, walnuts."
+    },
+    {
+      "id": "online-instruments-india",
+      "slug": "online-instruments-india",
+      "name": "Online Instruments (India) Limited",
+      "short_name": "Online Instruments",
+      "segment": "sme",
+      "status": "upcoming",
+      "sector": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "price_band": null,
+      "lot_size": null,
+      "issue_size_cr": null,
+      "fresh_cr": null,
+      "ofs_cr": null,
+      "face_value": null,
+      "listing_exchange": [
+        "NSE"
+      ],
+      "reservation": null,
+      "state": "live",
+      "tagline": "DRHP filed via SEBI May 2026; details awaiting."
     },
     {
       "id": "playsimple-games",
@@ -194,7 +209,10 @@
       "fresh_cr": null,
       "ofs_cr": null,
       "face_value": null,
-      "listing_exchange": ["NSE", "BSE"],
+      "listing_exchange": [
+        "NSE",
+        "BSE"
+      ],
       "reservation": null,
       "state": "live",
       "tagline": "DRHP filed; mobile/games studio."
@@ -216,10 +234,87 @@
       "fresh_cr": null,
       "ofs_cr": null,
       "face_value": null,
-      "listing_exchange": ["NSE"],
+      "listing_exchange": [
+        "NSE"
+      ],
       "reservation": null,
       "state": "live",
       "tagline": "DRHP filed; industrial gases."
+    },
+    {
+      "id": "quasar-robotics",
+      "slug": "quasar-robotics",
+      "name": "Quasar Robotics Limited",
+      "short_name": "Quasar Robotics",
+      "segment": "mainboard",
+      "status": "closed",
+      "sector": {
+        "macro": "Industrials",
+        "sector": "Capital Goods",
+        "industry": "Industrial Machinery",
+        "basic_industry": "Robotics & Automation"
+      },
+      "open_date": "2026-05-15",
+      "close_date": "2026-05-19",
+      "listing_date": "2026-05-26",
+      "price_band": {
+        "low": 412,
+        "high": 432
+      },
+      "lot_size": 34,
+      "issue_size_cr": 1180,
+      "fresh_cr": 720,
+      "ofs_cr": 460,
+      "face_value": 2,
+      "listing_exchange": [
+        "NSE",
+        "BSE"
+      ],
+      "reservation": {
+        "qib_pct": 50,
+        "nii_pct": 15,
+        "retail_pct": 35,
+        "emp_pct": 0
+      },
+      "state": "manual",
+      "tagline": "Industrial robotics arm of a listed automation group (synthetic seed)."
+    },
+    {
+      "id": "vegorama-punjabi-angithi",
+      "slug": "vegorama-punjabi-angithi",
+      "name": "Vegorama Punjabi Angithi Limited",
+      "short_name": "Vegorama",
+      "segment": "sme",
+      "status": "open",
+      "sector": {
+        "macro": "Consumer Discretionary",
+        "sector": "Consumer Services",
+        "industry": "Hotels Restaurants & Tourism",
+        "basic_industry": "Restaurants"
+      },
+      "open_date": "2026-05-20",
+      "close_date": "2026-05-22",
+      "listing_date": "2026-05-27",
+      "price_band": {
+        "low": 73,
+        "high": 77
+      },
+      "lot_size": 1600,
+      "issue_size_cr": 38,
+      "fresh_cr": 38,
+      "ofs_cr": 0,
+      "face_value": 10,
+      "listing_exchange": [
+        "BSE"
+      ],
+      "reservation": {
+        "qib_pct": 50,
+        "nii_pct": 15,
+        "retail_pct": 35,
+        "emp_pct": 0
+      },
+      "state": "live",
+      "tagline": "Cloud-kitchen + dine-in vegetarian chain across NCR & Dehradun."
     }
   ],
   "timelines": [
@@ -283,5 +378,17 @@
       "anchor_lockin_50pct_end": "2026-06-01",
       "anchor_lockin_100pct_end": "2026-07-31"
     }
-  ]
+  ],
+  "source_meta": {
+    "nse_mainboard": {
+      "source_state": "failed",
+      "last_attempted_utc": "2026-05-21T10:37:27.253Z",
+      "last_error": "HTTP 403: Host not in allowlist"
+    },
+    "nse_sme": {
+      "source_state": "failed",
+      "last_attempted_utc": "2026-05-21T10:37:27.253Z",
+      "last_error": "HTTP 403: Host not in allowlist"
+    }
+  }
 }

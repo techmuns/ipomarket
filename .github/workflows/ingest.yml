@@ -1,11 +1,12 @@
 name: ingest
 
-# Phase 2A — SEBI Pipeline + Documents ingest bridge.
-# Reads the probe-maintained phase-0/samples/sebi-publicissues-pdfs.json
-# (kept fresh by phase-0-probes.yml / P-08) and bridges it into the
-# production snapshot files under src/data/snapshots/.
+# Consolidated Phase 2 ingest runner (2A SEBI + 2B NSE + 2C listing/sector
+# + 2D subscription + 2E source-audit/health). Reads the probe-maintained
+# phase-0/samples/sebi-publicissues-pdfs.json (kept fresh by
+# phase-0-probes.yml / P-08), plus hits NSE/BSE official endpoints for
+# the remaining slices.
 #
-# workflow_dispatch only for now — no cron until the bridge is proven stable.
+# workflow_dispatch only for now — no cron until proven stable.
 
 on:
   workflow_dispatch:
@@ -41,8 +42,8 @@ jobs:
       - name: Install node deps
         run: npm install --no-audit --no-fund
 
-      - name: Phase 2A — SEBI pipeline ingest
-        run: npm run ingest:sebi
+      - name: Phase 2 — consolidated ingest (2A → 2B → 2C → 2D → 2E)
+        run: npm run ingest
 
       - name: TypeScript typecheck (blocks bad snapshots from main)
         run: npm run typecheck

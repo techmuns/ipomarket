@@ -16,6 +16,7 @@ import { join } from 'node:path';
 import { safeWriteJson, readJsonOrNull } from './lib/safeWrite.ts';
 import { mergeByKey } from './lib/merge.ts';
 import { appendAuditEntry } from './lib/audit.ts';
+import type { SliceResult } from './lib/slice.ts';
 import type { ProbeArtifact, ProbePdf, SourceMeta } from './lib/types.ts';
 
 const REPO_ROOT = process.cwd();
@@ -147,9 +148,9 @@ function matchesIpo(linkText: string, ipoSlug: string): boolean {
   });
 }
 
-// ----- Main -----
+// ----- run() — slice entry point -----
 
-async function main(): Promise<number> {
+export async function run(): Promise<SliceResult> {
   console.log('[ingest:sebi] start');
   console.log(`[ingest:sebi]   probe artifact: ${PROBE_ARTIFACT}`);
   console.log(`[ingest:sebi]   snapshots dir:  ${SNAP_DIR}`);
@@ -158,21 +159,30 @@ async function main(): Promise<number> {
   if (!existsSync(PROBE_ARTIFACT)) {
     console.warn(`[ingest:sebi] probe artifact MISSING — recording source_state=missing.`);
     const existing = readJsonOrNull<SebiPipelineSnapshot>(SEBI_PIPELINE_PATH);
+    let preserved = 0;
     if (existing) {
       existing.source_meta = { source_state: 'missing', last_attempted_utc: NOW };
       existing.generated_at_utc = NOW;
       safeWriteJson(SEBI_PIPELINE_PATH, existing);
-      console.log(`[ingest:sebi] preserved ${existing.entries.length} existing entries; metadata-only write.`);
+      preserved = existing.entries.length;
+      console.log(`[ingest:sebi] preserved ${preserved} existing entries; metadata-only write.`);
     } else {
       console.warn(`[ingest:sebi] no existing snapshot either — nothing to write.`);
     }
-    return 0;
+    return {
+      name: 'sebi',
+      source_state: 'missing',
+      counts: { added: 0, updated: 0, preserved },
+      errors: [`probe artifact missing at ${PROBE_ARTIFACT}`],
+      notes: `artifact missing; ${preserved} existing entries preserved`,
+    };
   }
 
   const artifact = readJsonOrNull<ProbeArtifact>(PROBE_ARTIFACT);
   if (!artifact || !Array.isArray(artifact.pdfs)) {
     console.error(`[ingest:sebi] probe artifact MALFORMED (missing pdfs[]) — recording source_state=failed.`);
     const existing = readJsonOrNull<SebiPipelineSnapshot>(SEBI_PIPELINE_PATH);
+    let preserved = 0;
     if (existing) {
       existing.source_meta = {
         source_state: 'failed',
@@ -181,8 +191,15 @@ async function main(): Promise<number> {
       };
       existing.generated_at_utc = NOW;
       safeWriteJson(SEBI_PIPELINE_PATH, existing);
+      preserved = existing.entries.length;
     }
-    return 0;
+    return {
+      name: 'sebi',
+      source_state: 'failed',
+      counts: { added: 0, updated: 0, preserved },
+      errors: ['probe artifact malformed (missing pdfs[])'],
+      notes: 'malformed artifact; existing rows preserved',
+    };
   }
 
   const pdfs: ProbePdf[] = artifact.pdfs;
@@ -205,8 +222,15 @@ async function main(): Promise<number> {
     existingPipeline.source_meta = { source_state: 'empty', last_attempted_utc: NOW };
     existingPipeline.generated_at_utc = NOW;
     safeWriteJson(SEBI_PIPELINE_PATH, existingPipeline);
-    console.log(`[ingest:sebi] ${existingPipeline.entries.length} existing entries preserved.`);
-    return 0;
+    const preserved = existingPipeline.entries.length;
+    console.log(`[ingest:sebi] ${preserved} existing entries preserved.`);
+    return {
+      name: 'sebi',
+      source_state: 'empty',
+      counts: { added: 0, updated: 0, preserved },
+      errors: [],
+      notes: `artifact returned 0 pdfs; ${preserved} existing entries preserved`,
+    };
   }
 
   // 4. Build incoming SebiEntry[] from the artifact.
@@ -342,12 +366,31 @@ async function main(): Promise<number> {
   for (const m of matches) console.log(`[ingest:sebi]   - ${m.ipo_id}  ← "${m.link_text}"`);
 
   console.log('[ingest:sebi] done.');
-  return 0;
+  return {
+    name: 'sebi',
+    source_state: 'live',
+    counts: pipelineStats,
+    errors: [],
+    notes:
+      `pipeline: +${pipelineStats.added}/${pipelineStats.updated}/${pipelineStats.preserved} ` +
+      `· docs: +${docsAdded}/${docsRefreshed} ` +
+      `· audit: +${auditAdded}/${auditRefreshed} ` +
+      `· matches: ${matches.length}`,
+  };
 }
 
-main()
-  .then((code) => process.exit(code))
-  .catch((e) => {
-    console.error('[ingest:sebi] threw:', e?.stack ?? e?.message ?? String(e));
-    process.exit(2);
-  });
+// Standalone CLI entry point (`npm run ingest:sebi`). The runner imports
+// `run` directly and does NOT use this entry point.
+const isDirectInvocation =
+  process.argv[1] && process.argv[1].includes('sebi-pipeline');
+if (isDirectInvocation) {
+  run()
+    .then((r) => {
+      console.log(`[ingest:sebi] result: ${r.source_state}`);
+      process.exit(0);
+    })
+    .catch((e) => {
+      console.error('[ingest:sebi] UNEXPECTED:', e?.stack ?? e?.message ?? String(e));
+      process.exit(2);
+    });
+}

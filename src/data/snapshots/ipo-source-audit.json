@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-05-21T09:25:55.161Z",
+  "generated_at_utc": "2026-05-21T10:37:27.253Z",
   "by_ipo": {
     "nfp-sampoorna-foods": {
       "ipo_id": "nfp-sampoorna-foods",
       "source_mix": {
-        "nse": 42,
+        "nse": 54,
         "bse": 0,
-        "sebi": 12,
-        "rhp": 8,
-        "manual": 32,
-        "derived": 6,
+        "sebi": 0,
+        "rhp": 15,
+        "manual": 31,
+        "derived": 0,
         "broker_ref": 0
       },
       "fields": [
@@ -109,12 +109,12 @@
     "vegorama-punjabi-angithi": {
       "ipo_id": "vegorama-punjabi-angithi",
       "source_mix": {
-        "nse": 38,
-        "bse": 6,
-        "sebi": 10,
-        "rhp": 12,
-        "manual": 26,
-        "derived": 8,
+        "nse": 0,
+        "bse": 56,
+        "sebi": 11,
+        "rhp": 33,
+        "manual": 0,
+        "derived": 0,
         "broker_ref": 0
       },
       "fields": [
@@ -188,10 +188,10 @@
       "source_mix": {
         "nse": 0,
         "bse": 0,
-        "sebi": 70,
-        "rhp": 20,
-        "manual": 10,
-        "derived": 0,
+        "sebi": 67,
+        "rhp": 0,
+        "manual": 0,
+        "derived": 33,
         "broker_ref": 0
       },
       "fields": [
@@ -200,7 +200,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
-          "fetched_at_utc": "2026-05-21T09:25:55.161Z"
+          "fetched_at_utc": "2026-05-21T10:37:27.253Z"
         },
         {
           "field": "filing_status",
@@ -262,7 +262,7 @@
       "source_mix": {
         "nse": 0,
         "bse": 0,
-        "sebi": 0,
+        "sebi": 100,
         "rhp": 0,
         "manual": 0,
         "derived": 0,
@@ -274,7 +274,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
-          "fetched_at_utc": "2026-05-21T09:25:55.161Z"
+          "fetched_at_utc": "2026-05-21T10:37:27.253Z"
         }
       ]
     },
@@ -283,7 +283,7 @@
       "source_mix": {
         "nse": 0,
         "bse": 0,
-        "sebi": 0,
+        "sebi": 100,
         "rhp": 0,
         "manual": 0,
         "derived": 0,
@@ -295,7 +295,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
-          "fetched_at_utc": "2026-05-21T09:25:55.161Z"
+          "fetched_at_utc": "2026-05-21T10:37:27.253Z"
         }
       ]
     },
@@ -304,7 +304,7 @@
       "source_mix": {
         "nse": 0,
         "bse": 0,
-        "sebi": 0,
+        "sebi": 100,
         "rhp": 0,
         "manual": 0,
         "derived": 0,
@@ -316,7 +316,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
-          "fetched_at_utc": "2026-05-21T09:25:55.161Z"
+          "fetched_at_utc": "2026-05-21T10:37:27.253Z"
         }
       ]
     },
@@ -325,7 +325,7 @@
       "source_mix": {
         "nse": 0,
         "bse": 0,
-        "sebi": 0,
+        "sebi": 100,
         "rhp": 0,
         "manual": 0,
         "derived": 0,
@@ -337,7 +337,7 @@
           "source": "SEBI",
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
-          "fetched_at_utc": "2026-05-21T09:25:55.161Z"
+          "fetched_at_utc": "2026-05-21T10:37:27.253Z"
         }
       ]
     }

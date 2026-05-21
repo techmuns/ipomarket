@@ -12,8 +12,13 @@
     "probe": "tsx scripts/probes/run.ts",
     "probe:group": "tsx scripts/probes/run.ts --group",
     "probe:one": "tsx scripts/probes/run.ts --probe",
-    "ingest": "npm run ingest:sebi",
-    "ingest:sebi": "tsx scripts/ingest/sebi-pipeline.ts"
+    "ingest": "tsx scripts/ingest/run.ts",
+    "ingest:sebi": "tsx scripts/ingest/sebi-pipeline.ts",
+    "ingest:nse": "tsx scripts/ingest/nse-ipos.ts",
+    "ingest:listing": "tsx scripts/ingest/listing-performance.ts",
+    "ingest:sector": "tsx scripts/ingest/sector-map.ts",
+    "ingest:subscription": "tsx scripts/ingest/subscriptions.ts",
+    "ingest:source-audit": "tsx scripts/ingest/source-audit.ts"
   },
   "engines": {
     "node": ">=20"
