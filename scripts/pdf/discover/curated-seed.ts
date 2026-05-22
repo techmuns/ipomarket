@@ -20,7 +20,7 @@ import {
 
 const CURATED_INPUT_PATH = 'phase-0/curated-official-pdfs.json';
 const CURATED_OUT_PATH = 'phase-0/pdf-extracts/curated-official-pdfs.json';
-const PARSER_VERSION = '5A.2';
+const PARSER_VERSION = '5A.4';
 
 interface RawCuratedInput {
   entries?: Array<Partial<CuratedOfficialPdfEntry>>;
@@ -94,8 +94,20 @@ export function loadCuratedSeed(): CuratedOfficialPdfFile {
       });
       continue;
     }
+    // Phase 5A.4 — operator quarantine. Explicit `false` skips the entry.
+    // Missing or any other value (including the default `true`) accepts.
+    if (e.allowed_for_parser === false) {
+      rejected.push({
+        ipo_id,
+        doc_url,
+        reason: 'allowed_for_parser=false (operator-quarantined)',
+      });
+      continue;
+    }
     // Recorded source_host is canonicalised from the URL — not whatever
     // the curator typed — so the audit can't be misled by a stale literal.
+    // Phase 5A.4 additive optional metadata passes through verbatim; it's
+    // never used as a security gate, only as audit / provenance signal.
     accepted.push({
       ipo_id,
       doc_kind: e.doc_kind,
@@ -107,6 +119,15 @@ export function loadCuratedSeed(): CuratedOfficialPdfFile {
           ? e.verified_at_utc
           : null,
       notes: typeof e.notes === 'string' ? e.notes : '',
+      ...(typeof e.company_name === 'string' ? { company_name: e.company_name } : {}),
+      ...(typeof e.discovered_via === 'string' ? { discovered_via: e.discovered_via } : {}),
+      ...(typeof e.discovered_at_utc === 'string'
+        ? { discovered_at_utc: e.discovered_at_utc }
+        : {}),
+      ...(typeof e.curated_by === 'string' ? { curated_by: e.curated_by } : {}),
+      ...(typeof e.allowed_for_parser === 'boolean'
+        ? { allowed_for_parser: e.allowed_for_parser }
+        : {}),
     });
   }
 

@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-05-22T00:58:57.053Z",
-  "parser_version": "5A.2",
+  "generated_at_utc": "2026-05-22T07:17:00.138Z",
+  "parser_version": "5A.4",
   "entries": [
     {
       "ipo_id": "vegorama-punjabi-angithi",
@@ -10,6 +10,34 @@
       "curated_at_utc": "2026-05-22T00:00:00Z",
       "verified_at_utc": null,
       "notes": "URL sourced from src/data/snapshots/ipo-documents.json (RHP entry, fetched 2026-05-20). Phase 5A.1 CI run on 2026-05-21 returned fetch_failed for this URL — may be stale. CI will re-attempt and surface result in scanned[] verdict."
+    },
+    {
+      "ipo_id": "bagmane-prime-office-reit",
+      "doc_kind": "Final Offer Document",
+      "doc_url": "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf",
+      "source_host": "www.bseindia.com",
+      "curated_at_utc": "2026-05-22T03:30:00Z",
+      "verified_at_utc": null,
+      "notes": "BSE-hosted Offer Document for the Bagmane Prime Office REIT. Surfaced by P-26's extractOfficialPdfLinks() on the Chittorgarh detail page and classified on_allowlist. Chittorgarh is the discovery channel only — the data source is BSE itself. URL path pattern /downloads/ipo/...-od_<timestamp>.pdf is the canonical BSE Offer Document upload form.",
+      "company_name": "Bagmane Prime Office REIT",
+      "discovered_via": "chittorgarh-p26-2026-05-22",
+      "discovered_at_utc": "2026-05-22T03:06:00Z",
+      "curated_by": "phase-5A.4-operator",
+      "allowed_for_parser": true
+    },
+    {
+      "ipo_id": "onemi-technology-solutions",
+      "doc_kind": "RHP",
+      "doc_url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
+      "source_host": "www.bseindia.com",
+      "curated_at_utc": "2026-05-22T03:30:00Z",
+      "verified_at_utc": null,
+      "notes": "BSE-hosted signed Red Herring Prospectus for OnEMI Technology Solutions, filed for an in-flight IPO. Surfaced by P-26's extractOfficialPdfLinks() on the Chittorgarh detail page and classified on_allowlist. URL filename '6RedHerringProspectussigned_<timestamp>.pdf' plus path '/IPO Open/' identify this as the canonical signed RHP. Chittorgarh is the discovery channel only; the data source is BSE.",
+      "company_name": "OnEMI Technology Solutions",
+      "discovered_via": "chittorgarh-p26-2026-05-22",
+      "discovered_at_utc": "2026-05-22T03:06:00Z",
+      "curated_by": "phase-5A.4-operator",
+      "allowed_for_parser": true
     }
   ],
   "rejected": []

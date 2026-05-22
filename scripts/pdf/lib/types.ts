@@ -136,6 +136,15 @@ export interface CuratedOfficialPdfEntry {
   curated_at_utc: string;
   verified_at_utc: string | null;
   notes: string;
+  // Phase 5A.4 — additive optional metadata. None of these gate the
+  // host-allow-list security boundary; they are provenance / audit fields.
+  company_name?: string;
+  discovered_via?: string; // e.g. 'chittorgarh-p26-2026-05-22', 'operator-manual-2026-05-22'
+  discovered_at_utc?: string;
+  curated_by?: string;
+  // Operator quarantine: when explicitly false, the loader skips this entry
+  // and records it under rejected[]. Default (missing) = allowed.
+  allowed_for_parser?: boolean;
 }
 
 export interface CuratedOfficialPdfFile {
