@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T05:30:00Z",
+  "generated_at_utc": "2026-05-22T10:04:10.133Z",
   "by_ipo": {
     "vegorama-punjabi-angithi": {
       "ipo_id": "vegorama-punjabi-angithi",
@@ -73,6 +73,23 @@
         "d_to_e": 0.36,
         "market_cap_cr": 240,
         "pe_at_upper_band": 22.1
+      }
+    },
+    "onemi-technology-solutions": {
+      "ipo_id": "onemi-technology-solutions",
+      "state": "live",
+      "periods": [
+        { "period": "9M FY 26", "revenue_cr": 1559.9, "ebitda_cr": null, "pat_cr": 199.27, "assets_cr": 3568.78, "net_worth_cr": 1254.34, "debt_cr": null, "eps": null },
+        { "period": "FY 25", "revenue_cr": 1337.47, "ebitda_cr": null, "pat_cr": 160.62, "assets_cr": 2701.1, "net_worth_cr": 1005.99, "debt_cr": null, "eps": null },
+        { "period": "FY 24", "revenue_cr": 1674.45, "ebitda_cr": null, "pat_cr": 197.29, "assets_cr": 1796.53, "net_worth_cr": 804.57, "debt_cr": null, "eps": null },
+        { "period": "FY 23", "revenue_cr": 984.46, "ebitda_cr": null, "pat_cr": 27.67, "assets_cr": 1275.2, "net_worth_cr": 566.23, "debt_cr": null, "eps": null }
+      ],
+      "derived": {
+        "revenue_3y_cagr_pct": null,
+        "pat_3y_cagr_pct": null,
+        "d_to_e": null,
+        "market_cap_cr": null,
+        "pe_at_upper_band": null
       }
     }
   }

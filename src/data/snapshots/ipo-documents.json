@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T11:11:34.595Z",
+  "generated_at_utc": "2026-05-22T10:04:10.133Z",
   "by_ipo": {
     "nfp-sampoorna-foods": {
       "ipo_id": "nfp-sampoorna-foods",
@@ -174,6 +174,20 @@
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
           "title": "Punjab Carbonic — Draft Abridged Prospectus",
           "fetched_at_utc": "2026-05-21T11:11:34.595Z"
+        }
+      ],
+      "registrar": null,
+      "brlms": []
+    },
+    "onemi-technology-solutions": {
+      "ipo_id": "onemi-technology-solutions",
+      "state": "live",
+      "docs": [
+        {
+          "kind": "RHP",
+          "url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
+          "title": "OnEMI Technology Solutions — Red Herring Prospectus",
+          "fetched_at_utc": "2026-05-22T09:13:44Z"
         }
       ],
       "registrar": null,
