@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-05-22T00:49:36.540Z",
+  "parser_version": "5A.2",
+  "entries": [
+    {
+      "ipo_id": "vegorama-punjabi-angithi",
+      "doc_kind": "RHP",
+      "doc_url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Vegorama%20Punjabi%20Angithi%20Limited-RHP_p.pdf",
+      "source_host": "www.sebi.gov.in",
+      "curated_at_utc": "2026-05-22T00:00:00Z",
+      "verified_at_utc": null,
+      "notes": "URL sourced from src/data/snapshots/ipo-documents.json (RHP entry, fetched 2026-05-20). Phase 5A.1 CI run on 2026-05-21 returned fetch_failed for this URL — may be stale. CI will re-attempt and surface result in scanned[] verdict."
+    }
+  ],
+  "rejected": []
+}

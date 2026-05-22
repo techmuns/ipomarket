@@ -42,6 +42,10 @@ export interface SebiCandidate {
   doc_type: DocType;
   source_smid: 10 | 11 | 12;
   captured_at_utc: string;
+  // Phase 5A.2 — `static` when harvested via httpGet; `playwright` when
+  // harvested via JS-rendered fallback; `cached` when read from the
+  // P-08 sample artifact. Lets the audit distinguish render modes.
+  fetch_mode?: 'static' | 'playwright' | 'cached';
 }
 
 export interface SebiDiscoverySmidResult {
@@ -49,6 +53,14 @@ export interface SebiDiscoverySmidResult {
   ok: boolean;
   error: string | null;
   source?: string;
+  // Phase 5A.2 — when Playwright was tried as a fallback, capture the
+  // outcome separately so the audit can show static vs JS-rendered.
+  playwright?: {
+    attempted: boolean;
+    count: number;
+    error: string | null;
+    note?: string;
+  };
 }
 
 export interface SebiDiscoveryFile {
@@ -60,6 +72,81 @@ export interface SebiDiscoveryFile {
     '12': SebiDiscoverySmidResult;
   };
   candidates: SebiCandidate[];
+}
+
+// Phase 5A.2 — BSE / BSE SME discovery file shapes. Mirror the SEBI shape
+// so the orchestrator can union them with one merge path.
+
+export interface BseCandidate {
+  url: string;
+  link_text: string;
+  doc_type: DocType;
+  source: 'bse-sme' | 'bse-mainboard';
+  captured_at_utc: string;
+  fetch_mode: 'playwright';
+}
+
+export interface BseDiscoveryResult {
+  count: number;
+  ok: boolean;
+  error: string | null;
+  note?: string;
+  latency_ms: number;
+}
+
+export interface BseDiscoveryFile {
+  generated_at_utc: string;
+  parser_version: string;
+  source: 'bse-sme' | 'bse-mainboard';
+  url: string;
+  result: BseDiscoveryResult;
+  candidates: BseCandidate[];
+}
+
+// Phase 5A.2 — manually curated official PDF URL seed. Host must match
+// the allow-list; runtime rejects anything else.
+export type CuratedOfficialHost =
+  | 'sebi.gov.in'
+  | 'www.sebi.gov.in'
+  | 'nseindia.com'
+  | 'www.nseindia.com'
+  | 'nsearchives.nseindia.com'
+  | 'bseindia.com'
+  | 'www.bseindia.com'
+  | 'bsesme.com'
+  | 'www.bsesme.com';
+
+export const CURATED_OFFICIAL_HOSTS: ReadonlyArray<CuratedOfficialHost> = [
+  'sebi.gov.in',
+  'www.sebi.gov.in',
+  'nseindia.com',
+  'www.nseindia.com',
+  'nsearchives.nseindia.com',
+  'bseindia.com',
+  'www.bseindia.com',
+  'bsesme.com',
+  'www.bsesme.com',
+];
+
+export interface CuratedOfficialPdfEntry {
+  ipo_id: string;
+  doc_kind: 'DRHP' | 'RHP' | 'Final Offer Document' | 'Prospectus';
+  doc_url: string;
+  source_host: string;
+  curated_at_utc: string;
+  verified_at_utc: string | null;
+  notes: string;
+}
+
+export interface CuratedOfficialPdfFile {
+  generated_at_utc: string;
+  parser_version: string;
+  entries: CuratedOfficialPdfEntry[];
+  rejected: Array<{
+    ipo_id: string;
+    doc_url: string;
+    reason: string;
+  }>;
 }
 
 export interface CandidateScanEntry {
@@ -74,6 +161,15 @@ export interface CandidateScanEntry {
     | 'doc_type_rejected'; // Phase 5A.1 — DAP rejected before download
   doc_type?: DocType; // Phase 5A.1 — annotated when known
   source_smid?: 10 | 11 | 12; // Phase 5A.1 — when sourced from discovery
+  // Phase 5A.2 — which discovery source contributed this row. Maps to
+  // CandidatePoolMeta.merged_counts. Defaults to 'ipo-documents' for rows
+  // sourced from the production snapshot.
+  origin?:
+    | 'ipo-documents'
+    | 'sebi-discovery'
+    | 'bse-sme-discovery'
+    | 'bse-mainboard-discovery'
+    | 'curated-seed';
 }
 
 export interface CandidatePoolMeta {
@@ -81,6 +177,14 @@ export interface CandidatePoolMeta {
   // Phase 5A.1 — count of additional candidates merged from sebi-candidates.json
   // (i.e. URLs harvested from smid=11/12 that weren't already in ipo-documents.json).
   total_discovery_candidates_merged?: number;
+  // Phase 5A.2 — per-source merged counts so the audit shows where each
+  // entry came from without having to traverse `scanned[]`.
+  merged_counts?: {
+    sebi_discovery: number; // smid=10/11/12 (static + playwright)
+    bse_sme_discovery: number;
+    bse_mainboard_discovery: number;
+    curated_seed: number;
+  };
   pdf_1_cover_target: {
     ipo_id: string;
     url: string;
@@ -240,6 +344,13 @@ export interface IndexSummary {
   full_document_candidate_unavailable: boolean;
   // Phase 5A.1 — per-smid discovery summary mirror for at-a-glance reading.
   discovery_smid_counts?: { '10': number; '11': number; '12': number };
+  // Phase 5A.2 — per-source merged counts mirror for at-a-glance reading.
+  merged_counts?: {
+    sebi_discovery: number;
+    bse_sme_discovery: number;
+    bse_mainboard_discovery: number;
+    curated_seed: number;
+  };
   notes: string;
 }
 

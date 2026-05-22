@@ -33,12 +33,17 @@ import { dirname, join } from 'node:path';
 import { safeWriteJson, readJsonOrNull } from '../ingest/lib/safeWrite.ts';
 import { httpGetBinary } from './lib/http.ts';
 import { discoverSebiCandidates, classifyDocType } from './discover.ts';
+import { discoverBseSme } from './discover/bse-sme.ts';
+import { discoverBseMainboard } from './discover/bse-mainboard.ts';
+import { loadCuratedSeed } from './discover/curated-seed.ts';
 import {
   log,
   warn,
+  type BseDiscoveryFile,
   type CandidatePoolMeta,
   type CandidateScanEntry,
   type CoverExtraction,
+  type CuratedOfficialPdfFile,
   type DocType,
   type FinancialsExtraction,
   type IpoPdfAuditRow,
@@ -46,11 +51,10 @@ import {
   type PdfConfidence,
   type PdfExtractionAudit,
   type PdfSourceState,
-  type SebiCandidate as DiscoverySebiCandidate,
   type SebiDiscoveryFile,
 } from './lib/types.ts';
 
-const PARSER_VERSION = '5A.1';
+const PARSER_VERSION = '5A.2';
 const SEBI_HOST = 'www.sebi.gov.in';
 const SEBI_PATH_PREFIX = '/sebi_data/';
 const FINANCIAL_PAGE_MIN = 200;
@@ -93,14 +97,21 @@ interface IpoDocSebiEntry {
 }
 
 // Unified candidate seen by PDF #2 selection. Discovery-sourced rows carry
-// a synthetic `discovery:<source_smid>` ipo_id since SEBI's listing rows
-// don't correspond 1:1 to ipo-documents.json rows.
+// a synthetic ipo_id since exchange listing rows don't correspond 1:1 to
+// ipo-documents.json rows.
 interface UnifiedCandidate {
-  ipo_id: string; // real IPO id OR synthetic 'discovery:smid-NN:<slug>'
+  ipo_id: string; // real IPO id OR synthetic 'discovery_*_<slug>' / 'curated_<slug>'
   doc_kind: string;
   url: string;
   doc_type: DocType;
-  source: 'ipo-documents' | 'discovery';
+  source: 'ipo-documents' | 'discovery' | 'curated';
+  // Maps to CandidateScanEntry.origin and CandidatePoolMeta.merged_counts.
+  origin:
+    | 'ipo-documents'
+    | 'sebi-discovery'
+    | 'bse-sme-discovery'
+    | 'bse-mainboard-discovery'
+    | 'curated-seed';
   source_smid?: 10 | 11 | 12;
   declared_page_count: number | null;
 }
@@ -165,22 +176,61 @@ function slugifyUrl(url: string): string {
   }
 }
 
-// Build the unified pool: ipo-documents.json SEBI rows ∪ discovery candidates,
-// deduped by URL. Then exclude PDF #1 (pinned). Then sort by:
-//   1. doc_type preference (lower index first; DAPs already excluded upstream)
-//   2. source preference (ipo-documents before discovery — known IPOs first)
-//   3. URL string (stable, idempotent)
-function buildUnifiedPdf2Pool(
-  ipoDocEntries: IpoDocSebiEntry[],
-  discovery: SebiDiscoveryFile | null,
-  pinnedIpoId: string
-): { pool: UnifiedCandidate[]; mergedFromDiscovery: number; rejectedDap: UnifiedCandidate[] } {
+// Phase 5A.2 — host allow-list for BSE / curated rows entering the pool.
+// SEBI is already filtered by isSebiUrl(). BSE candidates may live on
+// bseindia.com, bsesme.com, or nsearchives.nseindia.com (cross-linked
+// PDFs are common); curated entries are already host-checked at load.
+const BSE_DOWNLOAD_HOSTS: ReadonlyArray<string> = [
+  'www.bseindia.com',
+  'bseindia.com',
+  'www.bsesme.com',
+  'bsesme.com',
+  'www.nseindia.com',
+  'nseindia.com',
+  'nsearchives.nseindia.com',
+  'www.sebi.gov.in',
+  'sebi.gov.in',
+];
+
+function isAllowedDiscoveryHost(rawUrl: string): boolean {
+  try {
+    return BSE_DOWNLOAD_HOSTS.includes(new URL(rawUrl).host.toLowerCase());
+  } catch {
+    return false;
+  }
+}
+
+// Build the unified pool: ipo-documents.json SEBI rows ∪ SEBI smid discovery
+// ∪ BSE SME discovery ∪ BSE mainboard discovery ∪ curated seed. Deduped by
+// URL. Excludes PDF #1 (pinned). Sort order:
+//   1. source = 'curated' first (highest operator trust)
+//   2. then doc_type preference (lower index first; DAPs excluded upstream)
+//   3. then source preference (ipo-documents → discovery)
+//   4. then URL string (stable, idempotent)
+function buildUnifiedPdf2Pool(opts: {
+  ipoDocEntries: IpoDocSebiEntry[];
+  sebiDiscovery: SebiDiscoveryFile | null;
+  bseSme: BseDiscoveryFile | null;
+  bseMainboard: BseDiscoveryFile | null;
+  curated: CuratedOfficialPdfFile | null;
+  pinnedIpoId: string;
+}): {
+  pool: UnifiedCandidate[];
+  mergedCounts: NonNullable<CandidatePoolMeta['merged_counts']>;
+  rejectedDap: UnifiedCandidate[];
+} {
   const seenUrls = new Set<string>();
   const rejectedDap: UnifiedCandidate[] = [];
   const pool: UnifiedCandidate[] = [];
+  const mergedCounts = {
+    sebi_discovery: 0,
+    bse_sme_discovery: 0,
+    bse_mainboard_discovery: 0,
+    curated_seed: 0,
+  };
 
-  for (const e of ipoDocEntries) {
-    if (e.ipo_id === pinnedIpoId) continue; // PDF #1 is pinned to InCred; skip here
+  for (const e of opts.ipoDocEntries) {
+    if (e.ipo_id === opts.pinnedIpoId) continue; // PDF #1 is pinned to InCred; skip here
     if (seenUrls.has(e.url)) continue;
     seenUrls.add(e.url);
     const candidate: UnifiedCandidate = {
@@ -189,6 +239,7 @@ function buildUnifiedPdf2Pool(
       url: e.url,
       doc_type: e.doc_type,
       source: 'ipo-documents',
+      origin: 'ipo-documents',
       declared_page_count: e.declared_page_count,
     };
     if (e.doc_type === 'Draft Abridged Prospectus') {
@@ -198,15 +249,12 @@ function buildUnifiedPdf2Pool(
     pool.push(candidate);
   }
 
-  let mergedFromDiscovery = 0;
-  if (discovery) {
-    for (const d of discovery.candidates) {
-      // Strip query strings + fragments before dedupe so two
-      // representations of the same SEBI PDF can't both win.
+  if (opts.sebiDiscovery) {
+    for (const d of opts.sebiDiscovery.candidates) {
       if (!isSebiUrl(d.url)) continue; // host filter: real SEBI only
       if (seenUrls.has(d.url)) continue;
       seenUrls.add(d.url);
-      mergedFromDiscovery++;
+      mergedCounts.sebi_discovery++;
       const candidate: UnifiedCandidate = {
         // Underscore (not colon) separators — keeps the value usable as a
         // filesystem directory under phase-0/pdf-extracts/<ipo_id>/ on every
@@ -216,6 +264,7 @@ function buildUnifiedPdf2Pool(
         url: d.url,
         doc_type: d.doc_type,
         source: 'discovery',
+        origin: 'sebi-discovery',
         source_smid: d.source_smid,
         declared_page_count: null,
       };
@@ -227,15 +276,77 @@ function buildUnifiedPdf2Pool(
     }
   }
 
+  for (const bseFile of [opts.bseSme, opts.bseMainboard]) {
+    if (!bseFile) continue;
+    for (const c of bseFile.candidates) {
+      if (!isAllowedDiscoveryHost(c.url)) continue;
+      if (seenUrls.has(c.url)) continue;
+      seenUrls.add(c.url);
+      if (bseFile.source === 'bse-sme') mergedCounts.bse_sme_discovery++;
+      else mergedCounts.bse_mainboard_discovery++;
+      const candidate: UnifiedCandidate = {
+        ipo_id: `discovery_${bseFile.source.replace(/-/g, '_')}_${slugifyUrl(c.url)}`,
+        doc_kind: c.doc_type,
+        url: c.url,
+        doc_type: c.doc_type,
+        source: 'discovery',
+        origin: bseFile.source === 'bse-sme' ? 'bse-sme-discovery' : 'bse-mainboard-discovery',
+        declared_page_count: null,
+      };
+      if (c.doc_type === 'Draft Abridged Prospectus') {
+        rejectedDap.push(candidate);
+        continue;
+      }
+      pool.push(candidate);
+    }
+  }
+
+  if (opts.curated) {
+    for (const e of opts.curated.entries) {
+      if (seenUrls.has(e.doc_url)) continue;
+      seenUrls.add(e.doc_url);
+      mergedCounts.curated_seed++;
+      const dt: DocType =
+        e.doc_kind === 'DRHP'
+          ? 'Draft Red Herring Prospectus'
+          : e.doc_kind === 'RHP'
+          ? 'Red Herring Prospectus'
+          : e.doc_kind === 'Final Offer Document'
+          ? 'Final Offer Document'
+          : 'Prospectus';
+      // Curated entries are operator-vetted: the slug uses the IPO id
+      // verbatim so the side-artifact directory is predictable.
+      pool.push({
+        ipo_id: `curated_${e.ipo_id}`,
+        doc_kind: e.doc_kind,
+        url: e.doc_url,
+        doc_type: dt,
+        source: 'curated',
+        origin: 'curated-seed',
+        declared_page_count: null,
+      });
+    }
+  }
+
   pool.sort((a, b) => {
+    // Curated wins ties — operator-curated URLs should be downloaded first.
+    if (a.source !== b.source) {
+      if (a.source === 'curated' && b.source !== 'curated') return -1;
+      if (b.source === 'curated' && a.source !== 'curated') return 1;
+    }
     const pa = docTypePreferenceIndex(a.doc_type);
     const pb = docTypePreferenceIndex(b.doc_type);
     if (pa !== pb) return pa - pb;
-    if (a.source !== b.source) return a.source === 'ipo-documents' ? -1 : 1;
+    if (a.source !== b.source) {
+      // Within doc-type, prefer ipo-documents (operator-curated production
+      // snapshot) over raw discovery rows.
+      if (a.source === 'ipo-documents') return -1;
+      if (b.source === 'ipo-documents') return 1;
+    }
     return a.url.localeCompare(b.url);
   });
 
-  return { pool, mergedFromDiscovery, rejectedDap };
+  return { pool, mergedCounts, rejectedDap };
 }
 
 interface DownloadResult {
@@ -358,32 +469,70 @@ async function main(): Promise<number> {
   const ipoDocEntries = collectIpoDocSebiEntries(docs);
   log('run', `found ${ipoDocEntries.length} SEBI-hosted doc URLs across all IPOs`);
 
-  // Phase 5A.1 — run SEBI multi-subsection discovery. Writes
-  // phase-0/pdf-extracts/sebi-candidates.json regardless of fetch outcome
-  // (sandbox 403 / CI live both produce a valid file). NEVER touches
-  // src/data/snapshots/ipo-documents.json (per §X.1 hard rule).
-  let discovery: SebiDiscoveryFile | null = null;
+  // Phase 5A.1 — run SEBI multi-subsection discovery (smid=10 cache,
+  // smid=11/12 static + Playwright fallback). Writes
+  // phase-0/pdf-extracts/sebi-candidates.json regardless of fetch outcome.
+  // Phase 5A.2 — also run BSE SME, BSE mainboard, and curated-seed loaders.
+  // All four are independent: a failure in one MUST NOT block the others.
+  // Per §X.1 hard rule, none of them mutate ipo-documents.json.
+  let sebiDiscovery: SebiDiscoveryFile | null = null;
   try {
-    discovery = await discoverSebiCandidates();
+    sebiDiscovery = await discoverSebiCandidates();
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : String(e);
-    warn('run', `discovery failed unexpectedly: ${msg} (continuing without discovery)`);
+    warn('run', `SEBI discovery failed unexpectedly: ${msg} (continuing without it)`);
+  }
+  let bseSme: BseDiscoveryFile | null = null;
+  try {
+    bseSme = await discoverBseSme();
+  } catch (e: unknown) {
+    const msg = e instanceof Error ? e.message : String(e);
+    warn('run', `BSE SME discovery failed unexpectedly: ${msg} (continuing without it)`);
+  }
+  let bseMainboard: BseDiscoveryFile | null = null;
+  try {
+    bseMainboard = await discoverBseMainboard();
+  } catch (e: unknown) {
+    const msg = e instanceof Error ? e.message : String(e);
+    warn('run', `BSE mainboard discovery failed unexpectedly: ${msg} (continuing without it)`);
+  }
+  let curated: CuratedOfficialPdfFile | null = null;
+  try {
+    curated = loadCuratedSeed();
+  } catch (e: unknown) {
+    const msg = e instanceof Error ? e.message : String(e);
+    warn('run', `curated seed load failed unexpectedly: ${msg} (continuing without it)`);
   }
 
   // PDF #1 — pinned to InCred Holdings (still from ipo-documents.json).
   const pdf1Candidate = ipoDocEntries.find((c) => c.ipo_id === PINNED_PDF_1_IPO) ?? null;
 
-  // PDF #2 — build unified pool (ipo-documents.json ∪ discovery candidates,
-  // deduped by URL), reject DAPs up-front, sort by doc_type preference.
-  const { pool: unifiedPool, mergedFromDiscovery, rejectedDap } = buildUnifiedPdf2Pool(
+  // PDF #2 — build unified pool from all five sources, dedup by URL, reject
+  // DAPs up-front, sort with curated entries first.
+  const { pool: unifiedPool, mergedCounts, rejectedDap } = buildUnifiedPdf2Pool({
     ipoDocEntries,
-    discovery,
-    PINNED_PDF_1_IPO
-  );
+    sebiDiscovery,
+    bseSme,
+    bseMainboard,
+    curated,
+    pinnedIpoId: PINNED_PDF_1_IPO,
+  });
+  const mergedFromDiscovery =
+    mergedCounts.sebi_discovery +
+    mergedCounts.bse_sme_discovery +
+    mergedCounts.bse_mainboard_discovery +
+    mergedCounts.curated_seed;
   log(
     'run',
     `unified PDF #2 pool: ${unifiedPool.length} candidate(s) ` +
-      `(${mergedFromDiscovery} merged from discovery, ${rejectedDap.length} DAPs rejected up-front)`
+      `(${mergedFromDiscovery} merged from discovery+curated, ${rejectedDap.length} DAPs rejected up-front)`
+  );
+  log(
+    'run',
+    `merged_counts: sebi=${mergedCounts.sebi_discovery} ` +
+      `bse_sme=${mergedCounts.bse_sme_discovery} ` +
+      `bse_mainboard=${mergedCounts.bse_mainboard_discovery} ` +
+      `curated=${mergedCounts.curated_seed}`
   );
 
   const scan: CandidateScanEntry[] = [];
@@ -397,6 +546,7 @@ async function main(): Promise<number> {
       verdict: 'doc_type_rejected',
       doc_type: c.doc_type,
       source_smid: c.source_smid,
+      origin: c.origin,
     });
     log('scan', `[${c.ipo_id}] doc_type_rejected (Draft Abridged Prospectus)`);
   }
@@ -414,6 +564,7 @@ async function main(): Promise<number> {
         verdict: 'not_evaluated',
         doc_type: cand.doc_type,
         source_smid: cand.source_smid,
+        origin: cand.origin,
       });
       continue;
     }
@@ -426,6 +577,7 @@ async function main(): Promise<number> {
         verdict: 'fetch_failed',
         doc_type: cand.doc_type,
         source_smid: cand.source_smid,
+        origin: cand.origin,
       });
       log('scan', `[${cand.ipo_id}] fetch_failed (${dl.status} ${dl.error ?? ''})`);
       continue;
@@ -439,6 +591,7 @@ async function main(): Promise<number> {
         verdict: 'fetch_failed',
         doc_type: cand.doc_type,
         source_smid: cand.source_smid,
+        origin: cand.origin,
       });
       log('scan', `[${cand.ipo_id}] could not read page_count`);
       continue;
@@ -451,6 +604,7 @@ async function main(): Promise<number> {
         verdict: 'too_short',
         doc_type: cand.doc_type,
         source_smid: cand.source_smid,
+        origin: cand.origin,
       });
       log('scan', `[${cand.ipo_id}] too_short (${pc} pages, need >= ${FINANCIAL_PAGE_MIN})`);
       continue;
@@ -462,6 +616,7 @@ async function main(): Promise<number> {
       verdict: 'selected',
       doc_type: cand.doc_type,
       source_smid: cand.source_smid,
+      origin: cand.origin,
     });
     pdf2Selected = { candidate: cand, pageCount: pc, sha256: dl.sha256 ?? '', bytes: dl.bytes };
     log(
@@ -499,6 +654,7 @@ async function main(): Promise<number> {
   const candidatePool: CandidatePoolMeta = {
     total_ipo_documents_with_sebi_url: ipoDocEntries.length,
     total_discovery_candidates_merged: mergedFromDiscovery,
+    merged_counts: mergedCounts,
     pdf_1_cover_target: pdf1Candidate
       ? {
           ipo_id: pdf1Candidate.ipo_id,
@@ -513,7 +669,7 @@ async function main(): Promise<number> {
           page_count: pdf2Selected.pageCount,
           reason:
             `first ${pdf2Selected.candidate.doc_type} candidate ` +
-            `(source=${pdf2Selected.candidate.source}` +
+            `(origin=${pdf2Selected.candidate.origin}` +
             (pdf2Selected.candidate.source_smid != null
               ? `, smid=${pdf2Selected.candidate.source_smid}`
               : '') +
@@ -774,13 +930,14 @@ async function main(): Promise<number> {
       : null,
     financial_table_candidate_unavailable: candidatePool.financial_table_candidate_unavailable,
     full_document_candidate_unavailable: candidatePool.full_document_candidate_unavailable,
-    discovery_smid_counts: discovery
+    discovery_smid_counts: sebiDiscovery
       ? {
-          '10': discovery.by_smid['10'].count,
-          '11': discovery.by_smid['11'].count,
-          '12': discovery.by_smid['12'].count,
+          '10': sebiDiscovery.by_smid['10'].count,
+          '11': sebiDiscovery.by_smid['11'].count,
+          '12': sebiDiscovery.by_smid['12'].count,
         }
       : undefined,
+    merged_counts: mergedCounts,
     notes: audit.source_meta.notes,
   };
   safeWriteJson(INDEX_PATH, index);

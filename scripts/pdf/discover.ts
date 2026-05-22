@@ -15,6 +15,7 @@
 import { httpGet } from './lib/http.ts';
 import { extractAllPdfs, type DiscoveredPdf } from '../probes/lib/sebi-pdf-extract.ts';
 import { readJsonOrNull, safeWriteJson } from '../ingest/lib/safeWrite.ts';
+import { renderSebiSmidWithPlaywright } from './discover/sebi-playwright.ts';
 import type {
   DocType,
   SebiCandidate,
@@ -30,7 +31,7 @@ const SEBI_SMID_URLS = {
 
 const P08_ARTIFACT_PATH = 'phase-0/samples/sebi-publicissues-pdfs.json';
 const DISCOVERY_OUT_PATH = 'phase-0/pdf-extracts/sebi-candidates.json';
-const PARSER_VERSION = '5A.1';
+const PARSER_VERSION = '5A.2';
 
 interface P08Artifact {
   captured_at_utc?: string;
@@ -78,6 +79,7 @@ async function fetchSmid(
     doc_type: classifyDocType(d.link_text),
     source_smid: smid,
     captured_at_utc: capturedAtUtc,
+    fetch_mode: 'static',
   }));
   return {
     result: { count: candidates.length, ok: true, error: null },
@@ -108,6 +110,7 @@ function loadSmid10FromCache(capturedAtUtcFallback: string): {
     doc_type: classifyDocType(p.link_text),
     source_smid: 10,
     captured_at_utc: ts,
+    fetch_mode: 'cached',
   }));
   return {
     result: {
@@ -143,13 +146,41 @@ export async function discoverSebiCandidates(): Promise<SebiDiscoveryFile> {
 
   const [s11, s12] = await Promise.all([fetchSmid(11, generatedAt), fetchSmid(12, generatedAt)]);
   console.log(
-    `[pdf:discover] smid=11 ${s11.result.ok ? 'ok' : 'failed'} count=${s11.result.count}` +
+    `[pdf:discover] smid=11 static ${s11.result.ok ? 'ok' : 'failed'} count=${s11.result.count}` +
       (s11.result.error ? ` error=${s11.result.error}` : '')
   );
   console.log(
-    `[pdf:discover] smid=12 ${s12.result.ok ? 'ok' : 'failed'} count=${s12.result.count}` +
+    `[pdf:discover] smid=12 static ${s12.result.ok ? 'ok' : 'failed'} count=${s12.result.count}` +
       (s12.result.error ? ` error=${s12.result.error}` : '')
   );
+
+  // Phase 5A.2 — Playwright fallback for smid=11/12 when static GET
+  // returned 0. Each invocation is independent (parallel) and either
+  // surfaces JS-rendered PDF anchors or records why it couldn't.
+  for (const [smid, slot] of [
+    [11, s11],
+    [12, s12],
+  ] as const) {
+    if (slot.result.count > 0 || !slot.result.ok) continue;
+    const pw = await renderSebiSmidWithPlaywright(smid, SEBI_SMID_URLS[smid], generatedAt);
+    slot.result.playwright = {
+      attempted: pw.attempted,
+      count: pw.count,
+      error: pw.error,
+      note: pw.note,
+    };
+    if (pw.candidates.length > 0) {
+      // Roll Playwright finds up into the smid's total so the index
+      // summary's `discovery_smid_counts[<smid>]` reflects both modes.
+      slot.candidates.push(...pw.candidates);
+      slot.result.count += pw.candidates.length;
+    }
+    console.log(
+      `[pdf:discover] smid=${smid} playwright attempted=${pw.attempted} count=${pw.count}` +
+        (pw.error ? ` error=${pw.error}` : '') +
+        ` (${pw.note})`
+    );
+  }
 
   const allCandidates = dedupeByUrl([
     ...s10.candidates,

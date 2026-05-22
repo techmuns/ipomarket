@@ -38,11 +38,25 @@ export interface CandidateScanEntry {
     | 'doc_type_rejected';
   doc_type?: DocType;
   source_smid?: 10 | 11 | 12;
+  // Phase 5A.2 — which discovery source contributed this row.
+  origin?:
+    | 'ipo-documents'
+    | 'sebi-discovery'
+    | 'bse-sme-discovery'
+    | 'bse-mainboard-discovery'
+    | 'curated-seed';
 }
 
 export interface CandidatePoolMeta {
   total_ipo_documents_with_sebi_url: number;
   total_discovery_candidates_merged?: number;
+  // Phase 5A.2 — per-source merged counts mirror.
+  merged_counts?: {
+    sebi_discovery: number;
+    bse_sme_discovery: number;
+    bse_mainboard_discovery: number;
+    curated_seed: number;
+  };
   pdf_1_cover_target: {
     ipo_id: string;
     url: string;

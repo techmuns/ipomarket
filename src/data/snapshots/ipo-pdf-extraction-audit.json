@@ -1,9 +1,15 @@
 {
-  "generated_at_utc": "2026-05-21T23:56:00.809Z",
-  "parser_version": "5A.1",
+  "generated_at_utc": "2026-05-22T00:49:36.551Z",
+  "parser_version": "5A.2",
   "candidate_pool": {
     "total_ipo_documents_with_sebi_url": 7,
     "total_discovery_candidates_merged": 15,
+    "merged_counts": {
+      "sebi_discovery": 15,
+      "bse_sme_discovery": 0,
+      "bse_mainboard_discovery": 0,
+      "curated_seed": 0
+    },
     "pdf_1_cover_target": {
       "ipo_id": "incred-holdings",
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
@@ -19,35 +25,40 @@
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
         "page_count": null,
         "verdict": "doc_type_rejected",
-        "doc_type": "Draft Abridged Prospectus"
+        "doc_type": "Draft Abridged Prospectus",
+        "origin": "ipo-documents"
       },
       {
         "ipo_id": "nfp-sampoorna-foods",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/nfp-sampoorna-foods_p.pdf",
         "page_count": null,
         "verdict": "doc_type_rejected",
-        "doc_type": "Draft Abridged Prospectus"
+        "doc_type": "Draft Abridged Prospectus",
+        "origin": "ipo-documents"
       },
       {
         "ipo_id": "online-instruments-india",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
         "page_count": null,
         "verdict": "doc_type_rejected",
-        "doc_type": "Draft Abridged Prospectus"
+        "doc_type": "Draft Abridged Prospectus",
+        "origin": "ipo-documents"
       },
       {
         "ipo_id": "playsimple-games",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
         "page_count": null,
         "verdict": "doc_type_rejected",
-        "doc_type": "Draft Abridged Prospectus"
+        "doc_type": "Draft Abridged Prospectus",
+        "origin": "ipo-documents"
       },
       {
         "ipo_id": "punjab-carbonic",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
         "page_count": null,
         "verdict": "doc_type_rejected",
-        "doc_type": "Draft Abridged Prospectus"
+        "doc_type": "Draft Abridged Prospectus",
+        "origin": "ipo-documents"
       },
       {
         "ipo_id": "discovery_smid10_incred-holdings-limited-abridged-prospectus-p-pdf",
@@ -55,7 +66,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_expression-360-services-india-limited-abridged-prospectus-p-",
@@ -63,7 +75,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_tc-terrytex-limited-abridged-prospectus-p-pdf",
@@ -71,7 +84,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_gujarat-victory-forgings-limited-abridged-prospectus-p-pdf",
@@ -79,7 +93,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_nityas-gems-and-jewellery-limited-abridged-prospectus-p-pdf",
@@ -87,7 +102,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_bvishal-oil-and-energy-limited-abridged-prospectus-p-pdf",
@@ -95,7 +111,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_sathya-agencies-limited-abridged-prospectus-p-pdf",
@@ -103,7 +120,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_kay-jay-forgings-limited-abridged-prospectus-p-pdf",
@@ -111,7 +129,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_adroit-industries-india-limited-abridged-prospectus-p-pdf",
@@ -119,7 +138,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_intellius-recode-ltd-abridged-prospectus-p-pdf",
@@ -127,7 +147,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_manipal-health-enterprises-limited-abridged-prospectus-p-pdf",
@@ -135,7 +156,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_rentomojo-limited-draft-abridged-prospectus-p-pdf",
@@ -143,7 +165,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_cosmic-pv-power-limited-abridged-prospectus-p-pdf",
@@ -151,7 +174,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_pioneer-fil-med-limited-draft-abridged-prospectus-p-pdf",
@@ -159,7 +183,8 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "discovery_smid10_rkb-global-limited-abridged-prospectus-p-pdf",
@@ -167,14 +192,16 @@
         "page_count": null,
         "verdict": "doc_type_rejected",
         "doc_type": "Draft Abridged Prospectus",
-        "source_smid": 10
+        "source_smid": 10,
+        "origin": "sebi-discovery"
       },
       {
         "ipo_id": "vegorama-punjabi-angithi",
         "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Vegorama%20Punjabi%20Angithi%20Limited-RHP_p.pdf",
         "page_count": null,
         "verdict": "fetch_failed",
-        "doc_type": "Red Herring Prospectus"
+        "doc_type": "Red Herring Prospectus",
+        "origin": "ipo-documents"
       }
     ]
   },
@@ -182,33 +209,33 @@
     "incred-holdings": {
       "doc_url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
       "doc_kind": "DRHP",
-      "pdf_sha256": "57ed9f25485f5467234399e16733858e0e73af10ca322fa72ecd85b7d3b3f8e0",
-      "page_count": 13,
-      "parsed_at_utc": "2026-05-21T23:56:00.809Z",
+      "pdf_sha256": null,
+      "page_count": null,
+      "parsed_at_utc": "2026-05-22T00:49:36.550Z",
       "sections": {
         "cover": {
-          "attempted": true,
-          "confidence": "medium",
-          "anchors_matched": 5,
-          "anchors_total": 8,
-          "errors": []
+          "attempted": false,
+          "reason": "download failed: HTTP 403"
         },
         "financials": {
           "attempted": false,
-          "reason": "PDF #1 is cover-page target only (abridged prospectus, not a full RHP)"
+          "reason": "PDF #1 cover-target only"
         }
       },
-      "overall_confidence": "medium",
+      "overall_confidence": null,
       "manual_review_required": true,
-      "errors": []
+      "errors": [
+        "download failed: HTTP 403"
+      ]
     }
   },
   "source_meta": {
-    "source_state": "live",
-    "last_attempted_utc": "2026-05-21T23:56:00.809Z",
+    "source_state": "failed",
+    "last_attempted_utc": "2026-05-22T00:49:36.551Z",
     "errors": [
+      "pdf-1 incred-holdings: download failed: HTTP 403",
       "full document candidate unavailable (all candidates fetch_failed): no candidate met page_count >= 200 after doc-type filter"
     ],
-    "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=live"
+    "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=failed"
   }
 }
