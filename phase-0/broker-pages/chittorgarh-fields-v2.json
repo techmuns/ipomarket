@@ -1,0 +1,63 @@
+{
+  "captured_at_utc": "2026-05-22T22:42:25.654Z",
+  "third_ipo_selection": {
+    "slug": "m-r-maniveni-ipo",
+    "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
+    "status": "current",
+    "reason": "current-open: list \"sme\" row date range \"22 - 26 May\" covers today",
+    "date_text": "22 - 26 May",
+    "source_list": "sme"
+  },
+  "picked_detail_urls": [
+    {
+      "index": 1,
+      "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+      "slug": "onemi-technology-ipo"
+    },
+    {
+      "index": 2,
+      "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+      "slug": "bagmane-reit"
+    },
+    {
+      "index": 3,
+      "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
+      "slug": "m-r-maniveni-ipo"
+    }
+  ],
+  "details": [
+    {
+      "index": 1,
+      "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+      "mode": "static",
+      "status": 200,
+      "bytes": 343417,
+      "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
+      "challenge_detected": false,
+      "challenge_reasons": [],
+      "error": null
+    },
+    {
+      "index": 2,
+      "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+      "mode": "static",
+      "status": 200,
+      "bytes": 309225,
+      "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
+      "challenge_detected": false,
+      "challenge_reasons": [],
+      "error": null
+    },
+    {
+      "index": 3,
+      "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
+      "mode": "static",
+      "status": 200,
+      "bytes": 280432,
+      "title": "M R Maniveni IPO Date, Price, GMP, Review, Details",
+      "challenge_detected": false,
+      "challenge_reasons": [],
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "detail_index": 2,
+  "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered-v2.html",
+  "source_url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+  "slug": "bagmane-reit",
+  "fields": {
+    "company_name": {
+      "value": "Bagmane Prime Office REIT Details",
+      "found": true,
+      "confidence": "high",
+      "method": "h1-cleaned",
+      "why_missing": null,
+      "source_snippet": "Bagmane Prime Office REIT Details"
+    },
+    "issue_size_cr": {
+      "value": "34,05,00,000 shares (agg. up to ₹ 3,405 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "34,05,00,000 shares (agg. up to ₹ 3,405 Cr)"
+    },
+    "price_band": {
+      "value": "₹95.00 to ₹100.00",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[2] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹95.00 to ₹100.00"
+    },
+    "lot_size": {
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
+      "source_snippet": null
+    },
+    "open_date": {
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"IPO Open Date\" / \"Opening Date\" / \"Bid Open\"; \"IPO Date\"/\"Bid Date\" range fallback also missed",
+      "source_snippet": null
+    },
+    "close_date": {
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"IPO Close Date\" / \"Closing Date\" / \"Bid Close\"; \"IPO Date\"/\"Bid Date\" range fallback also missed",
+      "source_snippet": null
+    },
+    "listing_date": {
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Listing Date\" / \"Tentative Listing\"; \"IPO Date\"/\"Bid Date\" range fallback also missed",
+      "source_snippet": null
+    },
+    "registrar": {
+      "value": "Kfin Technologies Ltd",
+      "found": true,
+      "confidence": "medium",
+      "method": "class=\"registrar-name\" anchor (Chittorgarh-specific)",
+      "why_missing": null,
+      "source_snippet": "Kfin Technologies Ltd"
+    },
+    "brlms": {
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lead Manager(s)\" / \"BRLM\" / \"Merchant Banker(s)\"",
+      "source_snippet": null
+    },
+    "official_pdf_links": {
+      "value": [
+        "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 2 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"
+    }
+  },
+  "found_count_full": 5,
+  "found_count_narrow": 1,
+  "precision_ratio_full": 0.5,
+  "precision_ratio_narrow": 0.2,
+  "official_pdf_links_on_allowlist": [
+    "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"
+  ],
+  "official_pdf_links_off_allowlist": [
+    "https://www.bagmanereit.com/media/investor_reports/Final_Offer_Document.pdf",
+    "https://www.chittorgarh.net/reports/anchor-investor/bagmane-reit-ipo-anchor-allocation-report.pdf"
+  ],
+  "noise_stripped_bytes": 79604,
+  "main_content_bytes": 79604,
+  "tables_parsed": 10,
+  "table_rows_parsed": 53
+}
