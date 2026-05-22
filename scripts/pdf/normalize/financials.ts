@@ -108,6 +108,19 @@ const POSITIVE_REQUIRED: ReadonlySet<LineItemKey> = new Set([
   'cash_and_equivalents',
 ]);
 
+// Per-share line items — EPS variants. Their raw value is in rupees per
+// share, NOT in crore-aggregate units. They MUST be skipped by the crore
+// conversion (which assumes the table-wide unit applies to all numeric
+// cells, e.g. ₹ in millions → divide by 10). Without this guard an
+// "INR millions" table would divide EPS by 10 and produce meaningless
+// per-share output.
+//
+// `eps_diluted` is reserved here so that adding it to LINE_ITEM_KEYS in a
+// future selector-tuning pass does not require touching this file again.
+// Typed as ReadonlySet<string> so the constant can list future keys that
+// aren't yet members of the LineItemKey union.
+const PER_SHARE_KEYS: ReadonlySet<string> = new Set(['eps_basic', 'eps_diluted']);
+
 // ─── Public API ───────────────────────────────────────────────────────
 
 export interface NormalizeFinancialsOptions {
@@ -235,8 +248,13 @@ export function normalizeFinancialsForIpo(
         if (colIdx >= row.length) continue;
         const raw = (row[colIdx] ?? '').trim();
         const parsed = parseNumeric(raw);
+        // Phase 5B fix: per-share line items (EPS basic / diluted) stay in
+        // raw rupees per share — they are NOT crore aggregates and must not
+        // be divided by the table-wide unit factor.
         const normalized_cr = parsed.value == null
           ? null
+          : PER_SHARE_KEYS.has(key)
+          ? round2(parsed.value)
           : convertToCrores(parsed.value, unit.value);
         // §6 rule 8: negative values rejected for positive-required keys.
         let cellConf: NormalizationConfidence = parsed.confidence;
