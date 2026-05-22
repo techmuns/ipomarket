@@ -31,7 +31,11 @@ const STATIC_MIN_BYTES = 10_240; // below this, fall back to Playwright
 // IPO table content (which lives past byte 50 KB) is inspectable. Detail
 // pages stay at the original ~50 KB cap.
 const DASHBOARD_ARTIFACT_CAP = 204_800;
-const DETAIL_ARTIFACT_CAP = 51_200;
+// Phase 5C.3 — Chittorgarh detail pages observed at 309 KB and 343 KB. The
+// IPO data table lives well past the previous 51 KB cap. Raise to ~400 KB
+// so P-26 can read the main content. Dashboard cap (200 KB) stays bounded
+// and detail pages remain capped (no full-page dumps).
+const DETAIL_ARTIFACT_CAP = 409_600;
 const HOST = 'www.chittorgarh.com';
 
 interface FetchOutcome {

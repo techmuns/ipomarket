@@ -1,15 +1,37 @@
-// P-26 — Chittorgarh sample detail field extraction (Phase 5C source characterization).
+// P-26 — Chittorgarh sample detail field extraction (Phase 5C.3 calibration).
 //
-// Reads HTML files written by P-25 from disk and runs node-side regex
+// Reads HTML files written by P-25 from disk and runs node-side table-aware
 // extraction against the Chittorgarh detail-page structure. Does NOT
 // re-fetch — that would violate the §Y.4 rule 7 single-request-per-page
 // rule. If P-25 hasn't been run yet, P-26 returns RED with a clear note.
 //
-// Per-field extraction precision is computed against the set of expected
-// fields (company / issue size / price band / lot size / open date /
-// close date / listing date / registrar / BRLMs / DRHP-RHP PDF link
-// list). Writes one `chittorgarh-detail-{N}-extracted.json` per detail
+// Phase 5C.3 changes vs the prior body-wide regex approach:
+//   1. Strip sidebar / nav / footer / aside / script / style noise blocks
+//      before extraction so SEO chrome can't pollute matches.
+//   2. Prefer <main>...</main> content when present; otherwise operate on
+//      the noise-stripped body.
+//   3. Parse <table>/<tr>/<td|th> into label→value rows. Per-field
+//      extraction looks ONLY at table rows whose label cell exactly /
+//      narrowly matches the expected label patterns. This eliminates the
+//      previous false-positive class (sidebar headings matching "Issue
+//      Size" / "Registrar" body-wide).
+//   4. Each field records: value, found, confidence (high/medium/low),
+//      method (which extractor strategy fired), why_missing (when found is
+//      false), source_snippet.
+//   5. Suspicious values (e.g. company_name containing SEO suffix keywords,
+//      issue_size containing "Subscription/Year-wise/% Gain") are marked
+//      found=false / confidence=low rather than counted as extracted.
+//   6. precision_ratio counts only fields with `found: true` AND
+//      `confidence != 'low'`.
+//
+// Per-field extraction precision is computed against the 10 expected
+// fields. Writes one `chittorgarh-detail-{N}-extracted.json` per detail
 // page, plus an aggregate precision summary.
+//
+// Status thresholds (unchanged from prior version):
+//   avg precision ≥ 0.80 → GREEN
+//   avg precision ≥ 0.60 → YELLOW
+//   else → RED
 
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -42,10 +64,14 @@ const EXPECTED_FIELDS = [
 ] as const;
 
 type FieldKey = (typeof EXPECTED_FIELDS)[number];
+type Confidence = 'high' | 'medium' | 'low';
 
 interface ExtractedField<T = unknown> {
   value: T | null;
   found: boolean;
+  confidence: Confidence | null;
+  method: string | null;
+  why_missing: string | null;
   source_snippet: string | null;
 }
 
@@ -58,7 +84,14 @@ interface ExtractedDetail {
   precision_ratio: number;
   official_pdf_links_on_allowlist: string[];
   official_pdf_links_off_allowlist: string[];
+  // Phase 5C.3 — diagnostics for the calibration pass.
+  noise_stripped_bytes: number;
+  main_content_bytes: number;
+  tables_parsed: number;
+  table_rows_parsed: number;
 }
+
+// ─── Loaders ───────────────────────────────────────────────────────────
 
 function loadFieldsSummary(brokerPagesDir: string): {
   list_url?: string;
@@ -73,142 +106,432 @@ function loadFieldsSummary(brokerPagesDir: string): {
   }
 }
 
-function stripTags(s: string): string {
+// ─── Generic HTML helpers ──────────────────────────────────────────────
+
+function decodeEntities(s: string): string {
   return s
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ')
     .replace(/&nbsp;/g, ' ')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
-    .replace(/&#\d+;/g, ' ')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&rsquo;/g, "'")
+    .replace(/&lsquo;/g, "'")
+    .replace(/&ldquo;/g, '"')
+    .replace(/&rdquo;/g, '"')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(parseInt(n, 10)))
+    .replace(/&[a-z]+;/g, ' ');
+}
+
+function stripTags(s: string): string {
+  return decodeEntities(
+    s
+      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<[^>]+>/g, ' ')
+  )
     .replace(/\s+/g, ' ')
     .trim();
 }
 
-function snippet(s: string | null, n = 160): string | null {
+// Strip site chrome — sidebars, nav, footer, header, scripts, styles. The
+// remaining HTML represents the page's main content area + any in-flow
+// content. Conservative: removes well-known semantic chrome elements; does
+// NOT try to remove ad blocks (those would need site-specific class
+// matchers).
+function stripNoise(html: string): string {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<noscript[\s\S]*?<\/noscript>/gi, ' ')
+    .replace(/<nav\b[\s\S]*?<\/nav>/gi, ' ')
+    .replace(/<aside\b[\s\S]*?<\/aside>/gi, ' ')
+    .replace(/<header\b[\s\S]*?<\/header>/gi, ' ')
+    .replace(/<footer\b[\s\S]*?<\/footer>/gi, ' ')
+    // Common sidebar class names — strip the whole div if matched.
+    .replace(/<div\b[^>]*\bclass\s*=\s*["'][^"']*\b(?:sidebar|side-bar|side_nav|side_menu|advertisement|ads-container)\b[^"']*["'][\s\S]*?<\/div>/gi, ' ');
+}
+
+// Prefer <main>...</main>. Fall back to noise-stripped body.
+function extractMainContent(html: string): string {
+  const m = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i);
+  if (m && m[1]!.length > 1024) return m[1]!;
+  return stripNoise(html);
+}
+
+function snippet(s: string | null, n = 200): string | null {
   if (!s) return null;
-  const t = s.trim();
+  const t = s.replace(/\s+/g, ' ').trim();
   return t.length <= n ? t : t.slice(0, n) + '…';
 }
 
-function extractCompanyName(html: string): ExtractedField<string> {
-  // Try <h1>...</h1> first.
-  const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
-  if (h1) {
-    const txt = stripTags(h1[1]!);
-    if (txt.length > 0 && txt.length < 200) {
-      return { value: txt, found: true, source_snippet: snippet(h1[1]!) };
-    }
-  }
-  // Fall back to <title>.
-  const t = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
-  if (t) {
-    const txt = stripTags(t[1]!).replace(/\s*IPO\s*(GMP|Price|Date|Allotment).*$/i, '').trim();
-    if (txt) return { value: txt, found: true, source_snippet: snippet(t[1]!) };
-  }
-  return { value: null, found: false, source_snippet: null };
+// ─── Table parser ─────────────────────────────────────────────────────
+
+interface ParsedRow {
+  cells: string[]; // already stripTags'd + normalised
+}
+interface ParsedTable {
+  rows: ParsedRow[];
 }
 
-function extractByLabel(text: string, labels: string[]): ExtractedField<string> {
-  for (const label of labels) {
-    // Labels like "Issue Size", "Price Band", followed by value (lookahead).
-    const re = new RegExp(
-      `${label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*[:\\-]?\\s*([\\s\\S]{1,200}?)(?:\\n|$|\\s{2,}|\\.\\s)`,
-      'i'
-    );
-    const m = text.match(re);
-    if (m && m[1]) {
-      const val = m[1].trim().replace(/\s+/g, ' ');
-      if (val && val.length < 200) {
-        return { value: val, found: true, source_snippet: snippet(val) };
+function parseTables(html: string): ParsedTable[] {
+  const tables: ParsedTable[] = [];
+  const tableRe = /<table\b[^>]*>([\s\S]*?)<\/table>/gi;
+  let tm: RegExpExecArray | null;
+  while ((tm = tableRe.exec(html))) {
+    const tableHtml = tm[1]!;
+    const rows: ParsedRow[] = [];
+    const rowRe = /<tr\b[^>]*>([\s\S]*?)<\/tr>/gi;
+    let rm: RegExpExecArray | null;
+    while ((rm = rowRe.exec(tableHtml))) {
+      const rowHtml = rm[1]!;
+      const cells: string[] = [];
+      const cellRe = /<(?:td|th)\b[^>]*>([\s\S]*?)<\/(?:td|th)>/gi;
+      let cm: RegExpExecArray | null;
+      while ((cm = cellRe.exec(rowHtml))) {
+        cells.push(stripTags(cm[1]!));
+      }
+      if (cells.length > 0) rows.push({ cells });
+    }
+    if (rows.length > 0) tables.push({ rows });
+  }
+  return tables;
+}
+
+function countTableRows(tables: ParsedTable[]): number {
+  return tables.reduce((s, t) => s + t.rows.length, 0);
+}
+
+// Find the first row whose first cell (label) matches one of the supplied
+// patterns. Returns the value (joined from cells[1..]) plus diagnostic
+// locator. Empty labels are skipped.
+function findLabelValue(
+  tables: ParsedTable[],
+  labelPatterns: RegExp[]
+): { value: string; table_index: number; row_index: number; matched_label: string } | null {
+  for (let t = 0; t < tables.length; t++) {
+    const table = tables[t]!;
+    for (let r = 0; r < table.rows.length; r++) {
+      const row = table.rows[r]!;
+      if (row.cells.length < 2) continue;
+      const label = (row.cells[0] ?? '').replace(/\s+/g, ' ').trim();
+      if (!label) continue;
+      for (const pat of labelPatterns) {
+        if (pat.test(label)) {
+          const value = row.cells
+            .slice(1)
+            .map((c) => (c ?? '').replace(/\s+/g, ' ').trim())
+            .filter(Boolean)
+            .join(' | ');
+          if (value) {
+            return { value, table_index: t, row_index: r, matched_label: label };
+          }
+        }
       }
     }
   }
-  return { value: null, found: false, source_snippet: null };
+  return null;
 }
 
-function extractIssueSizeCr(text: string): ExtractedField<string> {
-  // Chittorgarh typically reports "Issue Size ₹ XXX.XX Cr".
-  const re = /Issue Size[^A-Za-z0-9₹]*₹?\s*([\d,]+(?:\.\d+)?)\s*(?:Cr|Crore|Cr\.)/i;
-  const m = text.match(re);
-  if (m) {
-    return { value: `₹${m[1]} Cr`, found: true, source_snippet: snippet(m[0]) };
-  }
-  return extractByLabel(text, ['Issue Size', 'Total Issue Size']);
-}
+// ─── Field extractors ─────────────────────────────────────────────────
 
-function extractPriceBand(text: string): ExtractedField<string> {
-  const re = /Price\s*(?:Band|Range)[^A-Za-z0-9₹]*₹?\s*([\d,]+(?:\.\d+)?)\s*(?:-|to|–|—)\s*₹?\s*([\d,]+(?:\.\d+)?)/i;
-  const m = text.match(re);
-  if (m) {
-    return {
-      value: `₹${m[1]} - ₹${m[2]}`,
-      found: true,
-      source_snippet: snippet(m[0]),
-    };
-  }
-  return extractByLabel(text, ['Price Band', 'Price Range']);
-}
+// company_name — h1-cleaned with SEO-suffix stripping. Marked low when the
+// cleaned text still smells of SEO content.
+function extractCompanyName(html: string): ExtractedField<string> {
+  const cleanSeo = (raw: string): string => {
+    let t = stripTags(raw);
+    // Aggressive: anything from " IPO Date" / " IPO Price" / " IPO GMP" /
+    // " IPO Review" / " IPO Analysis" onward is SEO suffix.
+    t = t.replace(/\s+IPO\s+(?:Date|Price|GMP|Review|Analysis|Detail|Allotment|Subscription|Open|Close|Listing)[\s\S]*$/i, ' IPO');
+    // Anything after " IPO" if the suffix is purely SEO-marker comma list:
+    //   "X IPO Date, Price, GMP, Review, Analysis & Details"
+    //   "X Date, Price, GMP, Review, Analysis & Details"
+    t = t.replace(/\s+Date\s*,\s*Price[\s\S]*$/i, '');
+    t = t.replace(/\s+(?:Review|Analysis|Allotment|Subscription)[\s\S]*$/i, '');
+    // Trailing " IPO" is OK to keep; Chittorgarh slugs often end -ipo.
+    return t.replace(/\s+/g, ' ').trim();
+  };
+  const isSuspicious = (t: string): boolean => {
+    return /\b(?:Date|Price|GMP|Review|Analysis|Allotment|Subscription)\b/i.test(t)
+      || t.length < 3
+      || t.length > 100;
+  };
 
-function extractLotSize(text: string): ExtractedField<string> {
-  const re = /Lot\s*Size[^A-Za-z0-9]*([\d,]+)\s*(?:Shares|shares|\(|$)/i;
-  const m = text.match(re);
-  if (m) {
-    return { value: m[1]!.replace(/,/g, ''), found: true, source_snippet: snippet(m[0]) };
-  }
-  return extractByLabel(text, ['Lot Size', 'Market Lot']);
-}
-
-function extractDate(text: string, kinds: string[]): ExtractedField<string> {
-  // Chittorgarh date pattern: "Open Date Nov 18, 2026" or "Mon, Nov 18, 2026"
-  for (const kind of kinds) {
-    const re = new RegExp(
-      `${kind.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*[:\\-]?\\s*((?:[A-Z][a-z]{2,8}\\s*,?\\s*)?[A-Z][a-z]{2,8}\\s+\\d{1,2}\\s*,?\\s+\\d{4})`,
-      'i'
-    );
-    const m = text.match(re);
-    if (m) {
-      return { value: m[1]!.trim(), found: true, source_snippet: snippet(m[0]) };
+  const h1 = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i);
+  if (h1) {
+    const cleaned = cleanSeo(h1[1]!);
+    if (cleaned && !isSuspicious(cleaned)) {
+      return {
+        value: cleaned,
+        found: true,
+        confidence: 'high',
+        method: 'h1-cleaned',
+        why_missing: null,
+        source_snippet: snippet(cleaned),
+      };
+    }
+    if (cleaned) {
+      return {
+        value: cleaned,
+        found: false,
+        confidence: 'low',
+        method: 'h1-cleaned-rejected',
+        why_missing: `h1 text still contained SEO keywords or out-of-range length after cleaning: "${cleaned.slice(0, 80)}"`,
+        source_snippet: snippet(cleaned),
+      };
     }
   }
-  return { value: null, found: false, source_snippet: null };
+  const t = html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
+  if (t) {
+    const cleaned = cleanSeo(t[1]!);
+    if (cleaned && !isSuspicious(cleaned)) {
+      return {
+        value: cleaned,
+        found: true,
+        confidence: 'medium',
+        method: 'title-fallback-cleaned',
+        why_missing: null,
+        source_snippet: snippet(cleaned),
+      };
+    }
+  }
+  return {
+    value: null,
+    found: false,
+    confidence: null,
+    method: null,
+    why_missing: '<h1> absent or post-cleaning still SEO-noisy; <title> fallback also unusable',
+    source_snippet: null,
+  };
 }
 
-function extractRegistrar(text: string): ExtractedField<string> {
-  const re = /Registrar\s*[:\-]?\s*([A-Z][A-Za-z0-9&.,\s'/()-]{5,120}?)(?:\sLimited|\sLtd|\sPrivate|\sPvt|\.|$)/;
-  const m = text.match(re);
-  if (m) {
+// Money / numeric / date validators
+
+function looksLikeMoneyCr(v: string): boolean {
+  return /[\d,.]+\s*(?:Cr|Crore|crores?|Rs\.?|₹)/i.test(v) && !/%|Subscription|Year-wise|Gain\s+on\s+Listing|Performance/i.test(v);
+}
+function looksLikePriceBand(v: string): boolean {
+  return /[\d,.]+\s*[-–to]\s*[\d,.]+|\₹\s*[\d,.]+\s*(?:to|-)\s*\₹?\s*[\d,.]+/i.test(v)
+    && !/Year-wise|Subscription|%/i.test(v);
+}
+function looksLikeLotSize(v: string): boolean {
+  // Either pure digits, or digits followed by "Shares"
+  return /^\d{1,7}(?:\s*Shares)?$/i.test(v.trim().replace(/,/g, ''))
+    || /\b\d{2,7}\s*Shares?\b/i.test(v);
+}
+function looksLikeDate(v: string): boolean {
+  return /\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+\d{4}/i.test(v)
+    || /\b\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}/i.test(v)
+    || /\b\d{4}-\d{2}-\d{2}\b/.test(v);
+}
+function looksLikeCompanyName(v: string): boolean {
+  // Heuristic: has Capitalized words, length 6-150, doesn't have nav/sidebar trigger words,
+  // optionally ends in suffix like Limited/Ltd/Pvt etc.
+  if (v.length < 6 || v.length > 150) return false;
+  if (/\b(?:List\s+of\s+Issues|Lead\s+Manager|Performance|Allotment|Calculator|Comparison|Calendar|Discussions?)\b/i.test(v)) return false;
+  return /[A-Z]/.test(v);
+}
+
+function extractIssueSize(tables: ParsedTable[]): ExtractedField<string> {
+  const lv = findLabelValue(tables, [
+    /^\s*(?:Total\s+)?Issue\s+Size\s*\(?\s*₹?\s*Cr(?:ore)?\.?\)?\s*$/i,
+    /^\s*(?:Total\s+)?Issue\s+Size\s*$/i,
+    /^\s*Issue\s+Size\s+(?:in\s+)?(?:Cr|Crore)/i,
+    /^\s*IPO\s+Size\s*$/i,
+  ]);
+  if (!lv) {
     return {
-      value: (m[1]!.trim() + (m[0].endsWith('Limited') ? ' Limited' : m[0].endsWith('Ltd') ? ' Ltd' : '')).trim(),
-      found: true,
-      source_snippet: snippet(m[0]),
+      value: null, found: false, confidence: null, method: null,
+      why_missing: 'no table row whose label matches "(Total) Issue Size" / "IPO Size"',
+      source_snippet: null,
     };
   }
-  return extractByLabel(text, ['Registrar', 'IPO Registrar']);
+  if (looksLikeMoneyCr(lv.value) && lv.value.length < 80) {
+    return {
+      value: lv.value,
+      found: true,
+      confidence: 'high',
+      method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`,
+      why_missing: null,
+      source_snippet: snippet(lv.value),
+    };
+  }
+  return {
+    value: lv.value.slice(0, 100),
+    found: false,
+    confidence: 'low',
+    method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`,
+    why_missing: `value '${lv.value.slice(0, 60)}' failed Cr-money validation (likely sidebar/performance text)`,
+    source_snippet: snippet(lv.value),
+  };
 }
 
-function extractBrlms(text: string, html: string): ExtractedField<string[]> {
-  // Try to find a "Lead Manager" or "Book Running Lead Manager" block.
-  // Chittorgarh often lists BRLMs in a table or bulleted list.
-  const idx = text.search(/Book\s*Running\s*Lead\s*Manager|Lead\s*Manager\(s\)|BRLM/i);
-  if (idx < 0) return { value: null, found: false, source_snippet: null };
-  // Take the next ~600 chars and split on common separators.
-  const window = text.slice(idx, idx + 600);
-  // Pull plausible firm names (lines ending in Limited / Ltd / Private Limited).
-  const firmRe = /([A-Z][A-Za-z0-9&.,\s'/()-]{4,80}?(?:Limited|Ltd|Private\s+Limited|Pvt\.?\s+Ltd))/g;
-  const names = new Set<string>();
-  let m: RegExpExecArray | null;
-  while ((m = firmRe.exec(window))) {
-    const name = m[1]!.trim().replace(/\s+/g, ' ');
-    if (name.length >= 8 && name.length <= 80) names.add(name);
+function extractPriceBand(tables: ParsedTable[]): ExtractedField<string> {
+  const lv = findLabelValue(tables, [
+    /^\s*(?:IPO\s+)?Price\s+Band\s*$/i,
+    /^\s*Price\s+Range\s*$/i,
+    /^\s*Price\s*$/i,
+  ]);
+  if (!lv) {
+    return {
+      value: null, found: false, confidence: null, method: null,
+      why_missing: 'no table row whose label matches "Price Band" / "Price Range" / "Price"',
+      source_snippet: null,
+    };
   }
-  if (names.size === 0) return { value: null, found: false, source_snippet: snippet(window) };
+  if (looksLikePriceBand(lv.value) && lv.value.length < 80) {
+    return {
+      value: lv.value,
+      found: true,
+      confidence: 'high',
+      method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`,
+      why_missing: null,
+      source_snippet: snippet(lv.value),
+    };
+  }
   return {
-    value: Array.from(names).slice(0, 10),
-    found: true,
-    source_snippet: snippet(window),
+    value: lv.value.slice(0, 100),
+    found: false,
+    confidence: 'low',
+    method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`,
+    why_missing: `value '${lv.value.slice(0, 60)}' failed price-band validation (expect "₹X - ₹Y" form)`,
+    source_snippet: snippet(lv.value),
+  };
+}
+
+function extractLotSize(tables: ParsedTable[]): ExtractedField<string> {
+  const lv = findLabelValue(tables, [
+    /^\s*(?:IPO\s+)?Lot\s+Size\s*$/i,
+    /^\s*Market\s+Lot\s*$/i,
+    /^\s*Minimum\s+Order\s+Quantity\s*$/i,
+  ]);
+  if (!lv) {
+    return {
+      value: null, found: false, confidence: null, method: null,
+      why_missing: 'no table row whose label matches "Lot Size" / "Market Lot" / "Minimum Order Quantity"',
+      source_snippet: null,
+    };
+  }
+  if (looksLikeLotSize(lv.value)) {
+    return {
+      value: lv.value,
+      found: true,
+      confidence: 'high',
+      method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`,
+      why_missing: null,
+      source_snippet: snippet(lv.value),
+    };
+  }
+  return {
+    value: lv.value.slice(0, 80),
+    found: false,
+    confidence: 'low',
+    method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`,
+    why_missing: `value '${lv.value.slice(0, 60)}' failed lot-size validation (expect digits like "2000" or "2000 Shares")`,
+    source_snippet: snippet(lv.value),
+  };
+}
+
+function extractDate(tables: ParsedTable[], labelPatterns: RegExp[], kindLabel: string): ExtractedField<string> {
+  const lv = findLabelValue(tables, labelPatterns);
+  if (!lv) {
+    return {
+      value: null, found: false, confidence: null, method: null,
+      why_missing: `no table row whose label matches ${kindLabel}`,
+      source_snippet: null,
+    };
+  }
+  if (looksLikeDate(lv.value)) {
+    return {
+      value: lv.value,
+      found: true,
+      confidence: 'high',
+      method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`,
+      why_missing: null,
+      source_snippet: snippet(lv.value),
+    };
+  }
+  return {
+    value: lv.value.slice(0, 100),
+    found: false,
+    confidence: 'low',
+    method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`,
+    why_missing: `value '${lv.value.slice(0, 60)}' failed date validation (expected "Mon DD, YYYY" or similar)`,
+    source_snippet: snippet(lv.value),
+  };
+}
+
+function extractRegistrar(tables: ParsedTable[]): ExtractedField<string> {
+  const lv = findLabelValue(tables, [
+    /^\s*(?:IPO\s+)?Registrar\s*$/i,
+    /^\s*Registrar\s+to\s+(?:the\s+)?Issue\s*$/i,
+  ]);
+  if (!lv) {
+    return {
+      value: null, found: false, confidence: null, method: null,
+      why_missing: 'no table row whose label matches "Registrar" / "Registrar to the Issue"',
+      source_snippet: null,
+    };
+  }
+  if (looksLikeCompanyName(lv.value)) {
+    return {
+      value: lv.value,
+      found: true,
+      confidence: 'high',
+      method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`,
+      why_missing: null,
+      source_snippet: snippet(lv.value),
+    };
+  }
+  return {
+    value: lv.value.slice(0, 120),
+    found: false,
+    confidence: 'low',
+    method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`,
+    why_missing: `value '${lv.value.slice(0, 60)}' failed company-name validation (likely sidebar nav text)`,
+    source_snippet: snippet(lv.value),
+  };
+}
+
+function extractBrlms(tables: ParsedTable[]): ExtractedField<string[]> {
+  const lv = findLabelValue(tables, [
+    /^\s*(?:Book\s+Running\s+)?Lead\s+Manager(?:\(s\))?\s*$/i,
+    /^\s*BRLM\s*$/i,
+    /^\s*IPO\s+Lead\s+Manager(?:s|\(s\))?\s*$/i,
+    /^\s*Merchant\s+Banker(?:s|\(s\))?\s*$/i,
+  ]);
+  if (!lv) {
+    return {
+      value: null, found: false, confidence: null, method: null,
+      why_missing: 'no table row whose label matches "Lead Manager(s)" / "BRLM" / "Merchant Banker(s)"',
+      source_snippet: null,
+    };
+  }
+  // Split the value cell on common separators (comma, pipe, " and ").
+  // Each chunk should look like a company name.
+  const candidates = lv.value
+    .split(/\s*(?:\||,|\s+and\s+|;)\s*/i)
+    .map((s) => s.trim())
+    .filter((s) => s.length >= 6 && s.length <= 120);
+  const accepted = candidates.filter(looksLikeCompanyName);
+  if (accepted.length > 0) {
+    return {
+      value: accepted.slice(0, 10),
+      found: true,
+      confidence: accepted.length === candidates.length ? 'high' : 'medium',
+      method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}" split-on-separator`,
+      why_missing: null,
+      source_snippet: snippet(lv.value),
+    };
+  }
+  return {
+    value: null,
+    found: false,
+    confidence: 'low',
+    method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`,
+    why_missing: `${candidates.length} candidate chunk(s) found but none passed company-name validation`,
+    source_snippet: snippet(lv.value),
   };
 }
 
@@ -237,27 +560,72 @@ function extractOfficialPdfLinks(html: string): {
     if (HOST_ALLOWLIST.has(host)) on.push(url);
     else off.push(url);
   }
-  const field: ExtractedField<string[]> = on.length > 0
-    ? { value: on, found: true, source_snippet: snippet(on.join(' | ')) }
-    : { value: null, found: false, source_snippet: null };
-  return { field, on_allowlist: on, off_allowlist: off };
+  if (on.length > 0) {
+    return {
+      field: {
+        value: on,
+        found: true,
+        confidence: 'high',
+        method: `href[*.pdf] scan; ${on.length} on-allowlist, ${off.length} off-allowlist`,
+        why_missing: null,
+        source_snippet: snippet(on.join(' | ')),
+      },
+      on_allowlist: on,
+      off_allowlist: off,
+    };
+  }
+  return {
+    field: {
+      value: null,
+      found: false,
+      confidence: off.length > 0 ? 'low' : null,
+      method: off.length > 0 ? `href[*.pdf] scan; ${off.length} found but all off-allowlist` : null,
+      why_missing:
+        off.length > 0
+          ? `${off.length} PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)`
+          : 'no .pdf href found in the captured HTML',
+      source_snippet: off.length > 0 ? snippet(off.slice(0, 3).join(' | ')) : null,
+    },
+    on_allowlist: on,
+    off_allowlist: off,
+  };
 }
+
+// ─── Per-detail orchestration ─────────────────────────────────────────
 
 function extractOne(detailIndex: number, htmlPath: string, sourceUrl: string | null): ExtractedDetail | null {
   if (!existsSync(htmlPath)) return null;
   const html = readFileSync(htmlPath, 'utf-8');
-  const text = stripTags(html);
 
-  const company = extractCompanyName(html);
-  const issueSize = extractIssueSizeCr(text);
-  const priceBand = extractPriceBand(text);
-  const lotSize = extractLotSize(text);
-  const openDate = extractDate(text, ['IPO Open Date', 'Open Date', 'Issue Open']);
-  const closeDate = extractDate(text, ['IPO Close Date', 'Close Date', 'Issue Close']);
-  const listingDate = extractDate(text, ['Listing Date', 'IPO Listing Date']);
-  const registrar = extractRegistrar(text);
-  const brlms = extractBrlms(text, html);
-  const pdfs = extractOfficialPdfLinks(html);
+  // Pipeline: noise-strip → take <main> if present → parse tables.
+  const stripped = stripNoise(html);
+  const main = extractMainContent(html);
+  const tables = parseTables(main);
+  const tableRows = countTableRows(tables);
+
+  const company = extractCompanyName(html); // company_name is allowed to read raw <h1>/<title>
+  const issueSize = extractIssueSize(tables);
+  const priceBand = extractPriceBand(tables);
+  const lotSize = extractLotSize(tables);
+  const openDate = extractDate(tables, [
+    /^\s*(?:IPO\s+)?(?:Issue\s+)?Open\s+Date\s*$/i,
+    /^\s*(?:IPO\s+)?Open\s+Date\s*$/i,
+    /^\s*Bid\/Offer\s+Open\s*$/i,
+    /^\s*Issue\s+Open\s*$/i,
+  ], '"Open Date" / "Issue Open Date"');
+  const closeDate = extractDate(tables, [
+    /^\s*(?:IPO\s+)?(?:Issue\s+)?Close\s+Date\s*$/i,
+    /^\s*(?:IPO\s+)?Close\s+Date\s*$/i,
+    /^\s*Bid\/Offer\s+Close\s*$/i,
+    /^\s*Issue\s+Close\s*$/i,
+  ], '"Close Date" / "Issue Close Date"');
+  const listingDate = extractDate(tables, [
+    /^\s*(?:IPO\s+)?Listing\s+Date\s*$/i,
+    /^\s*Tentative\s+Listing\s+Date\s*$/i,
+  ], '"Listing Date"');
+  const registrar = extractRegistrar(tables);
+  const brlms = extractBrlms(tables);
+  const pdfs = extractOfficialPdfLinks(main); // scan main content only to avoid sidebar PDFs
 
   const fields: Record<FieldKey, ExtractedField> = {
     company_name: company,
@@ -272,7 +640,12 @@ function extractOne(detailIndex: number, htmlPath: string, sourceUrl: string | n
     official_pdf_links: pdfs.field,
   };
 
-  const found_count = Object.values(fields).filter((f) => f.found).length;
+  // Phase 5C.3 — strict found_count: a field counts as extracted only when
+  // `found: true` AND `confidence != 'low'`. Suspicious / rejected values
+  // are not counted, regardless of whether they appear in `value`.
+  const found_count = Object.values(fields).filter(
+    (f) => f.found && f.confidence !== 'low' && f.confidence !== null
+  ).length;
   const precision_ratio = found_count / EXPECTED_FIELDS.length;
 
   return {
@@ -284,8 +657,14 @@ function extractOne(detailIndex: number, htmlPath: string, sourceUrl: string | n
     precision_ratio,
     official_pdf_links_on_allowlist: pdfs.on_allowlist,
     official_pdf_links_off_allowlist: pdfs.off_allowlist,
+    noise_stripped_bytes: stripped.length,
+    main_content_bytes: main.length,
+    tables_parsed: tables.length,
+    table_rows_parsed: tableRows,
   };
 }
+
+// ─── Probe entrypoint ─────────────────────────────────────────────────
 
 export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   const started = Date.now();
@@ -309,7 +688,6 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     }
   }
 
-  // Aggregate
   const avgPrecision =
     extracted.length > 0
       ? extracted.reduce((s, e) => s + e.precision_ratio, 0) / extracted.length
@@ -317,7 +695,7 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   const totalOnAllowlist = extracted.reduce((s, e) => s + e.official_pdf_links_on_allowlist.length, 0);
   const totalOffAllowlist = extracted.reduce((s, e) => s + e.official_pdf_links_off_allowlist.length, 0);
 
-  // Aggregate summary file
+  // Aggregate summary file (consumed by phase-5C-status.md authoring).
   writeFileSync(
     join(brokerPagesDir, 'chittorgarh-extraction-summary.json'),
     JSON.stringify(
@@ -330,6 +708,21 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
           source_url: e.source_url,
           found_count: e.found_count,
           precision_ratio: Number(e.precision_ratio.toFixed(3)),
+          main_content_bytes: e.main_content_bytes,
+          tables_parsed: e.tables_parsed,
+          table_rows_parsed: e.table_rows_parsed,
+          fields_high_confidence: Object.entries(e.fields)
+            .filter(([, v]) => v.found && v.confidence === 'high')
+            .map(([k]) => k),
+          fields_medium_confidence: Object.entries(e.fields)
+            .filter(([, v]) => v.found && v.confidence === 'medium')
+            .map(([k]) => k),
+          fields_rejected_low_confidence: Object.entries(e.fields)
+            .filter(([, v]) => v.confidence === 'low')
+            .map(([k]) => k),
+          fields_missing: Object.entries(e.fields)
+            .filter(([, v]) => !v.found && v.confidence !== 'low')
+            .map(([k]) => k),
           official_pdf_links_on_allowlist: e.official_pdf_links_on_allowlist,
           official_pdf_links_off_allowlist_count: e.official_pdf_links_off_allowlist.length,
         })),
@@ -339,9 +732,7 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     ) + '\n'
   );
 
-  // Status classification per §Y.9.1 precondition 3 (≥ 80% precision target,
-  // but probe status is GREEN at ≥ 60% as the soft floor; user decision uses
-  // the 80% precision-gate threshold from the status report).
+  // Status classification per §Y.9.1 precondition 3.
   let status: ProbeResult['status'];
   let recommended_action: string;
   let response_type: ProbeResult['response_type'];
@@ -352,7 +743,7 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   } else if (avgPrecision >= 0.8) {
     status = 'GREEN';
     response_type = 'JSON';
-    recommended_action = 'Extraction meets the §Y.9.1 precondition-3 threshold (≥ 80%). Continue to user-decision gate.';
+    recommended_action = 'Extraction meets the §Y.9.1 precondition-3 threshold (≥ 80%). Continue to ingestion-slice decision gate.';
   } else if (avgPrecision >= 0.6) {
     status = 'YELLOW';
     response_type = 'JSON';
@@ -360,19 +751,24 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   } else {
     status = 'RED';
     response_type = 'JSON';
-    recommended_action = 'Extraction precision too low. Chittorgarh ingestion slice should be rejected at the §Y.9.1 gate.';
+    recommended_action = 'Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.';
   }
 
   const fields_found: string[] = [];
   for (const e of extracted) {
     for (const k of EXPECTED_FIELDS) {
-      if (e.fields[k].found) fields_found.push(`d${e.detail_index}.${k}`);
+      const f = e.fields[k];
+      if (f.found && f.confidence !== 'low') fields_found.push(`d${e.detail_index}.${k}[${f.confidence}]`);
     }
   }
   const fields_missing: string[] = [];
   for (const e of extracted) {
     for (const k of EXPECTED_FIELDS) {
-      if (!e.fields[k].found) fields_missing.push(`d${e.detail_index}.${k}`);
+      const f = e.fields[k];
+      if (!f.found || f.confidence === 'low') {
+        const tag = f.confidence === 'low' ? '[rejected-low]' : '[missing]';
+        fields_missing.push(`d${e.detail_index}.${k}${tag}`);
+      }
     }
   }
 
@@ -381,13 +777,17 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     `avg_precision=${avgPrecision.toFixed(3)}`,
     `official_pdf_links_on_allowlist=${totalOnAllowlist}`,
     `official_pdf_links_off_allowlist=${totalOffAllowlist}`,
+    ...extracted.map(
+      (e) =>
+        `d${e.detail_index}: main=${e.main_content_bytes}b tables=${e.tables_parsed} rows=${e.table_rows_parsed}`
+    ),
   ].join(' | ');
 
   return {
     probe_id: 'P-26',
-    source: 'Chittorgarh — detail field extraction (Phase 5C)',
+    source: 'Chittorgarh — detail field extraction (Phase 5C.3 calibration)',
     url_or_endpoint: 'phase-0/broker-pages/chittorgarh-detail-*-rendered.html (on disk)',
-    fetch_method: 'disk read (no network) — extracts from P-25 captured HTML',
+    fetch_method: 'disk read (no network) — extracts from P-25 captured HTML via table-aware parser',
     headers_or_cookies_required: [],
     status_code: null,
     response_type,
@@ -401,6 +801,8 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
           source_url: e.source_url,
           found_count: e.found_count,
           precision_ratio: Number(e.precision_ratio.toFixed(3)),
+          tables_parsed: e.tables_parsed,
+          table_rows_parsed: e.table_rows_parsed,
         })),
       },
       null,
