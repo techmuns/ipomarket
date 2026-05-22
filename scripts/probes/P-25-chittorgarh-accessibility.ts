@@ -23,7 +23,8 @@ import { ensureDir } from './lib/reporter.ts';
 import { renderPage } from './lib/playwright.ts';
 import type { ProbeFn, ProbeResult } from './lib/types.ts';
 
-const LIST_URL = 'https://www.chittorgarh.com/ipo/';
+const MAINBOARD_DASHBOARD_URL = 'https://www.chittorgarh.com/ipo/ipo_dashboard.asp';
+const SME_DASHBOARD_URL = 'https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme';
 const STATIC_MIN_BYTES = 10_240; // below this, fall back to Playwright
 const HOST = 'www.chittorgarh.com';
 
@@ -178,29 +179,63 @@ function extractTitle(html: string): string {
   return m ? m[1]!.trim().slice(0, 200) : '';
 }
 
+// Capture up to `n` raw hrefs from a body for diagnostics when detail-URL
+// discovery returns zero. Bounded to avoid full-page dumps; each href is
+// trimmed to ≤ 160 chars.
+function extractFirstHrefs(html: string, n = 50): string[] {
+  const out: string[] = [];
+  const re = /href\s*=\s*["']([^"']{1,400})["']/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(html)) && out.length < n) {
+    out.push(m[1]!.slice(0, 160));
+  }
+  return out;
+}
+
 export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   const started = Date.now();
   const outDir = join(ctx.outDir, 'broker-pages');
   ensureDir(outDir);
 
-  // List page
-  const list = await fetchPage(LIST_URL, 'chittorgarh-list');
-  if (list.mode !== 'failed' && list.html) {
-    const title = extractTitle(list.html);
-    const ch = detectChallengeInHtml(list.html, title);
-    if (ch.detected) {
-      list.challenge_detected = true;
-      list.challenge_reasons = ch.reasons;
-      list.error = `list challenge in ${list.mode}: ${ch.reasons.join(',')}`;
-      list.mode = 'failed';
+  // Dashboard pages — fetch both. Per §Y.4 rule 7: one request per page,
+  // 60s per-host timeout, no retries within the pass. Iterated sequentially
+  // (not parallel) to keep the host-impact profile minimal.
+  const dashboardSpecs: Array<{ kind: 'mainboard' | 'sme'; url: string; file: string }> = [
+    { kind: 'mainboard', url: MAINBOARD_DASHBOARD_URL, file: 'chittorgarh-list-rendered.html' },
+    { kind: 'sme', url: SME_DASHBOARD_URL, file: 'chittorgarh-sme-rendered.html' },
+  ];
+  const dashboards: Array<{
+    kind: 'mainboard' | 'sme';
+    outcome: FetchOutcome;
+    first_hrefs: string[];
+  }> = [];
+  for (const spec of dashboardSpecs) {
+    const outcome = await fetchPage(spec.url, `chittorgarh-${spec.kind}`);
+    if (outcome.mode !== 'failed' && outcome.html) {
+      const title = extractTitle(outcome.html);
+      const ch = detectChallengeInHtml(outcome.html, title);
+      if (ch.detected) {
+        outcome.challenge_detected = true;
+        outcome.challenge_reasons = ch.reasons;
+        outcome.error = `${spec.kind} challenge in ${outcome.mode}: ${ch.reasons.join(',')}`;
+        outcome.mode = 'failed';
+      }
     }
-  }
-  if (list.html) {
-    writeFileSync(join(outDir, 'chittorgarh-list-rendered.html'), truncate(list.html, 51_200));
+    if (outcome.html) {
+      writeFileSync(join(outDir, spec.file), truncate(outcome.html, 51_200));
+    }
+    dashboards.push({
+      kind: spec.kind,
+      outcome,
+      // Captured eagerly but only emitted to the diagnostics block when
+      // detail-URL discovery returns zero (see below).
+      first_hrefs: outcome.html ? extractFirstHrefs(outcome.html, 50) : [],
+    });
   }
 
-  // Detail URLs
-  const candidates = list.html ? discoverDetailUrls(list.html) : [];
+  // Detail URL discovery — run against the union of both dashboard bodies.
+  const combinedHtml = dashboards.map((d) => d.outcome.html).join('\n');
+  const candidates = combinedHtml ? discoverDetailUrls(combinedHtml) : [];
   const picks = pickTwoDetailUrls(candidates);
   const detailOutcomes: FetchOutcome[] = [];
   for (let i = 0; i < picks.length; i++) {
@@ -224,18 +259,25 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   }
 
   // Fields summary file consumed by P-26.
+  // - `dashboards[]` replaces the previous `list:` singleton — each dashboard
+  //   carries kind / url / mode / status / bytes / title / challenge state.
+  // - `diagnostics` populated ONLY when no detail URLs were discovered, so the
+  //   operator can see what raw hrefs the dashboards exposed (bounded to 50
+  //   per dashboard via extractFirstHrefs).
+  // - `picked_detail_urls` preserved unchanged — P-26 reads this key.
   const summary = {
     captured_at_utc: ctx.nowIso,
-    list: {
-      url: list.url,
-      mode: list.mode,
-      status: list.status,
-      bytes: list.bytes,
-      title: list.html ? extractTitle(list.html) : '',
-      challenge_detected: list.challenge_detected,
-      challenge_reasons: list.challenge_reasons,
-      error: list.error ?? null,
-    },
+    dashboards: dashboards.map((d) => ({
+      kind: d.kind,
+      url: d.outcome.url,
+      mode: d.outcome.mode,
+      status: d.outcome.status,
+      bytes: d.outcome.bytes,
+      title: d.outcome.html ? extractTitle(d.outcome.html) : '',
+      challenge_detected: d.outcome.challenge_detected,
+      challenge_reasons: d.outcome.challenge_reasons,
+      error: d.outcome.error ?? null,
+    })),
     discovered_detail_urls: candidates.slice(0, 20).map((c) => c.url),
     picked_detail_urls: picks.map((p, i) => ({
       index: i + 1,
@@ -253,18 +295,37 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
       challenge_reasons: d.challenge_reasons,
       error: d.error ?? null,
     })),
+    diagnostics:
+      candidates.length === 0
+        ? {
+            reason: 'detail_urls_discovered=0 — emitting first hrefs from each dashboard for inspection',
+            per_dashboard: dashboards.map((d) => ({
+              kind: d.kind,
+              url: d.outcome.url,
+              title: d.outcome.html ? extractTitle(d.outcome.html) : '',
+              body_length: d.outcome.bytes,
+              challenge_detected: d.outcome.challenge_detected,
+              first_hrefs: d.first_hrefs,
+            })),
+          }
+        : null,
   };
   writeFileSync(
     join(outDir, 'chittorgarh-fields.json'),
     JSON.stringify(summary, null, 2) + '\n'
   );
 
-  // Status classification
+  // Status classification — Phase 5C.1: rely on dashboard-level OK rather
+  // than single-list OK. `anyDashboardOk` = at least one dashboard fetched
+  // cleanly with a non-empty body. `allOk` requires both dashboards OK AND
+  // at least 2 detail picks reachable.
   const anyChallenge =
-    list.challenge_detected || detailOutcomes.some((d) => d.challenge_detected);
-  const listOk = list.mode !== 'failed' && list.bytes > 0;
+    dashboards.some((d) => d.outcome.challenge_detected) ||
+    detailOutcomes.some((d) => d.challenge_detected);
+  const anyDashboardOk = dashboards.some((d) => d.outcome.mode !== 'failed' && d.outcome.bytes > 0);
+  const allDashboardsOk = dashboards.every((d) => d.outcome.mode !== 'failed' && d.outcome.bytes > 0);
   const detailsOk = detailOutcomes.length >= 1 && detailOutcomes.every((d) => d.mode !== 'failed');
-  const allOk = listOk && detailsOk && picks.length >= 2;
+  const allOk = allDashboardsOk && detailsOk && picks.length >= 2;
 
   let status: ProbeResult['status'];
   let response_type: ProbeResult['response_type'];
@@ -277,24 +338,39 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     status = 'GREEN';
     response_type = 'HTML';
     recommended_action = 'Run P-26 to evaluate field extraction precision against the captured HTML.';
-  } else if (listOk && detailOutcomes.some((d) => d.mode !== 'failed')) {
+  } else if (anyDashboardOk && detailOutcomes.some((d) => d.mode !== 'failed')) {
     status = 'YELLOW';
     response_type = 'HTML';
     recommended_action = 'Partial success — review chittorgarh-fields.json and decide whether to retry with manual URLs.';
+  } else if (anyDashboardOk && candidates.length === 0) {
+    status = 'YELLOW';
+    response_type = 'HTML';
+    recommended_action = 'Dashboard(s) reachable but no detail URLs discovered — inspect chittorgarh-fields.json diagnostics block (first_hrefs) and refine the regex.';
   } else {
     status = 'RED';
     response_type = 'ERROR';
-    recommended_action = 'List + detail fetches failed. Skip Chittorgarh as ingestion candidate.';
+    recommended_action = 'Dashboard + detail fetches failed. Skip Chittorgarh as ingestion candidate.';
   }
 
   const fields_found: string[] = [];
-  if (listOk) fields_found.push('list page reachable');
+  for (const d of dashboards) {
+    if (d.outcome.mode !== 'failed' && d.outcome.bytes > 0) {
+      fields_found.push(`${d.kind} dashboard reachable`);
+    }
+  }
   if (candidates.length > 0) fields_found.push(`${candidates.length} detail URL(s) discovered`);
   for (let i = 0; i < detailOutcomes.length; i++) {
     if (detailOutcomes[i]!.mode !== 'failed') fields_found.push(`detail-${i + 1} reachable`);
   }
   const fields_missing: string[] = [];
-  if (!listOk) fields_missing.push('list page');
+  for (const d of dashboards) {
+    if (d.outcome.mode === 'failed' || d.outcome.bytes === 0) {
+      fields_missing.push(`${d.kind} dashboard (${d.outcome.error ?? 'unknown'})`);
+    }
+  }
+  if (candidates.length === 0 && anyDashboardOk) {
+    fields_missing.push('detail URL discovery (0 candidates — see diagnostics block)');
+  }
   if (picks.length < 2) fields_missing.push('second detail URL');
   for (let i = 0; i < detailOutcomes.length; i++) {
     if (detailOutcomes[i]!.mode === 'failed') {
@@ -303,7 +379,9 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   }
 
   const notes = [
-    `list: ${list.mode} status=${list.status} bytes=${list.bytes}`,
+    ...dashboards.map(
+      (d) => `${d.kind}: ${d.outcome.mode} status=${d.outcome.status} bytes=${d.outcome.bytes}`
+    ),
     `detail_urls_discovered=${candidates.length}`,
     `detail_urls_picked=${picks.length}`,
     ...detailOutcomes.map(
@@ -316,20 +394,26 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   return {
     probe_id: 'P-25',
     source: 'Chittorgarh — IPO list + detail accessibility (Phase 5C)',
-    url_or_endpoint: LIST_URL,
-    fetch_method: 'GET static → Playwright fallback (no retry within pass)',
+    url_or_endpoint: `${MAINBOARD_DASHBOARD_URL} + ${SME_DASHBOARD_URL}`,
+    fetch_method: 'GET static → Playwright fallback (no retry within pass); two dashboards probed per pass',
     headers_or_cookies_required: ['User-Agent (desktop Chrome)', 'Referer'],
-    status_code: list.status || null,
+    status_code: dashboards[0]?.outcome.status || null,
     response_type,
     fields_found,
     fields_missing,
     sample_record: JSON.stringify(
       {
-        list_title: summary.list.title,
+        dashboard_titles: summary.dashboards.map((d) => ({ kind: d.kind, title: d.title })),
         discovered_detail_count: candidates.length,
         picked_detail_urls: picks.map((p) => p.url),
         detail_titles: summary.details.map((d) => d.title),
         challenges_detected: anyChallenge,
+        diagnostics_first_hrefs_per_dashboard: summary.diagnostics
+          ? summary.diagnostics.per_dashboard.map((d) => ({
+              kind: d.kind,
+              first_3_hrefs: d.first_hrefs.slice(0, 3),
+            }))
+          : null,
       },
       null,
       2
