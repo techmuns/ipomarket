@@ -32,9 +32,9 @@
     "status": "Listed",
     "listingDate": "29-Nov-1995",
     "industry": "Refineries & Marketing",
-    "lastUpdateTime": "21-May-2026 16:00:00",
-    "pdSectorPe": 19.25,
-    "pdSymbolPe": 19.25,
+    "lastUpdateTime": "22-May-2026 16:00:00",
+    "pdSectorPe": 19.1,
+    "pdSymbolPe": 19.1,
     "pdSectorInd": "NIFTY 50",
     "pdSectorIndAll": [
       "NIFTY 50",
@@ -93,29 +93,29 @@
   },
   "currentMarketType": "NM",
   "priceInfo": {
-    "lastPrice": 1349,
-    "change": -10.700000000000045,
-    "pChange": -0.7869382952121825,
-    "previousClose": 1359.7,
-    "open": 1367.2,
-    "close": 1349.6,
-    "vwap": 1352.82,
+    "lastPrice": 1358,
+    "change": 8.400000000000091,
+    "pChange": 0.6224066390041562,
+    "previousClose": 1349.6,
+    "open": 1350,
+    "close": 1354.5,
+    "vwap": 1357.24,
     "stockIndClosePrice": 0,
-    "lowerCP": "1223.80",
-    "upperCP": "1495.60",
+    "lowerCP": "1219.10",
+    "upperCP": "1489.90",
     "pPriceBand": "No Band",
-    "basePrice": 1359.7,
+    "basePrice": 1349.6,
     "intraDayHighLow": {
-      "min": 1345.2,
-      "max": 1370.9,
-      "value": 1349
+      "min": 1349.1,
+      "max": 1367.4,
+      "value": 1358
     },
     "weekHighLow": {
       "min": 1290,
       "minDate": "06-Apr-2026",
       "max": 1611.8,
       "maxDate": "05-Jan-2026",
-      "value": 1349
+      "value": 1358
     },
     "iNavValue": null,
     "checkINAV": false,
@@ -131,72 +131,72 @@
   "preOpenMarket": {
     "preopen": [
       {
-        "price": 1366.4,
-        "buyQty": 1265,
+        "price": 1349.1,
+        "buyQty": 163,
         "sellQty": 0
       },
       {
-        "price": 1366.5,
-        "buyQty": 1049,
+        "price": 1349.5,
+        "buyQty": 107,
         "sellQty": 0
       },
       {
-        "price": 1367,
-        "buyQty": 3689,
+        "price": 1349.6,
+        "buyQty": 4841,
         "sellQty": 0
       },
       {
-        "price": 1367.1,
-        "buyQty": 25,
+        "price": 1349.7,
+        "buyQty": 141,
         "sellQty": 0
       },
       {
-        "price": 1367.2,
-        "buyQty": 518,
+        "price": 1350,
+        "buyQty": 3650,
         "sellQty": 0,
         "iep": true
       },
       {
-        "price": 1367.4,
+        "price": 1350.6,
         "buyQty": 0,
-        "sellQty": 102
+        "sellQty": 2
       },
       {
-        "price": 1367.5,
+        "price": 1350.8,
         "buyQty": 0,
-        "sellQty": 1
+        "sellQty": 18884
       },
       {
-        "price": 1367.8,
+        "price": 1350.9,
         "buyQty": 0,
-        "sellQty": 1001
+        "sellQty": 5
       },
       {
-        "price": 1368,
+        "price": 1351,
         "buyQty": 0,
-        "sellQty": 1090
+        "sellQty": 40
       },
       {
-        "price": 1368.5,
+        "price": 1352,
         "buyQty": 0,
-        "sellQty": 100
+        "sellQty": 48
       }
     ],
     "ato": {
       "buy": 0,
       "sell": 0
     },
-    "IEP": 1367.2,
-    "totalTradedVolume": 79897,
-    "finalPrice": 1367.2,
-    "finalQuantity": 79897,
-    "lastUpdateTime": "21-May-2026 09:07:22",
-    "totalBuyQuantity": 222352,
-    "totalSellQuantity": 205063,
+    "IEP": 1350,
+    "totalTradedVolume": 98719,
+    "finalPrice": 1350,
+    "finalQuantity": 98719,
+    "lastUpdateTime": "22-May-2026 09:07:20",
+    "totalBuyQuantity": 148367,
+    "totalSellQuantity": 232457,
     "atoBuyQty": 0,
     "atoSellQty": 0,
-    "Change": 7.5,
-    "perChange": 0.55,
-    "prevClose": 1359.7
+    "Change": 0.4,
+    "perChange": 0.03,
+    "prevClose": 1349.6
   }
 }
