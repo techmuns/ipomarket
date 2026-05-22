@@ -1,0 +1,61 @@
+{
+  "detail_index": 2,
+  "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
+  "source_url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+  "fields": {
+    "company_name": {
+      "value": "OnEMI Technology",
+      "found": true,
+      "source_snippet": "OnEMI Technology IPO Date, Price, GMP, Review, Details"
+    },
+    "issue_size_cr": {
+      "value": "(Year-wise) % Gain on Listing % Gain (Issue price v/s Market price) Subscription (Year-wise) Retail Subscription Amount Collected on Retail Applications No.of Retail Applications Lead Managers No",
+      "found": true,
+      "source_snippet": "(Year-wise) % Gain on Listing % Gain (Issue price v/s Market price) Subscription (Year-wise) Retail Subscription Amount Collected on Retail Applications No.of R…"
+    },
+    "price_band": {
+      "value": null,
+      "found": false,
+      "source_snippet": null
+    },
+    "lot_size": {
+      "value": null,
+      "found": false,
+      "source_snippet": null
+    },
+    "open_date": {
+      "value": null,
+      "found": false,
+      "source_snippet": null
+    },
+    "close_date": {
+      "value": null,
+      "found": false,
+      "source_snippet": null
+    },
+    "listing_date": {
+      "value": null,
+      "found": false,
+      "source_snippet": null
+    },
+    "registrar": {
+      "value": "List of Issues Managed Registrar- No",
+      "found": true,
+      "source_snippet": "Registrar- List of Issues Managed Registrar- No."
+    },
+    "brlms": {
+      "value": null,
+      "found": false,
+      "source_snippet": null
+    },
+    "official_pdf_links": {
+      "value": null,
+      "found": false,
+      "source_snippet": null
+    }
+  },
+  "found_count": 3,
+  "precision_ratio": 0.3,
+  "official_pdf_links_on_allowlist": [],
+  "official_pdf_links_off_allowlist": []
+}

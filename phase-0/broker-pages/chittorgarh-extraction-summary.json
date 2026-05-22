@@ -1,6 +1,23 @@
 {
-  "generated_at_utc": "2026-05-22T02:16:07.228Z",
-  "details_extracted": 0,
-  "average_precision_ratio": 0,
-  "per_detail": []
+  "generated_at_utc": "2026-05-22T02:42:13.916Z",
+  "details_extracted": 2,
+  "average_precision_ratio": 0.3,
+  "per_detail": [
+    {
+      "index": 1,
+      "source_url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+      "found_count": 3,
+      "precision_ratio": 0.3,
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 0
+    },
+    {
+      "index": 2,
+      "source_url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+      "found_count": 3,
+      "precision_ratio": 0.3,
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 0
+    }
+  ]
 }

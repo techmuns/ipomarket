@@ -12,23 +12,23 @@
     "response_type": "HTML",
     "fields_found": [
       "mainboard dashboard reachable",
-      "sme dashboard reachable"
+      "sme dashboard reachable",
+      "40 detail URL(s) discovered",
+      "detail-1 reachable",
+      "detail-2 reachable"
     ],
-    "fields_missing": [
-      "detail URL discovery (0 candidates — see diagnostics block)",
-      "second detail URL"
-    ],
-    "sample_record": "{\n  \"dashboard_titles\": [\n    {\n      \"kind\": \"mainboard\",\n      \"title\": \"Mainboard IPO Dashboard (Main board IPO at BSE and NSE)\"\n    },\n    {\n      \"kind\": \"sme\",\n      \"title\": \"SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)\"\n    }\n  ],\n  \"discovered_detail_count\": 0,\n  \"picked_detail_urls\": [],\n  \"detail_titles\": [],\n  \"challenges_detected\": false,\n  \"diagnostics_first_hrefs_per_dashboard\": [\n    {\n      \"kind\": \"mainboard\",\n      \"first_3_hrefs\": [\n        \"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\",\n        \"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\",\n        \"https://www.chittorgarh.net/images/home.png\"\n      ]\n    },\n    {\n      \"kind\": \"sme\",\n      \"first_3_hrefs\": [\n        \"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\",\n        \"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\",\n        \"https://www.chittorgarh.net/images/home.png\"\n      ]\n    }\n  ]\n}",
+    "fields_missing": [],
+    "sample_record": "{\n  \"dashboard_titles\": [\n    {\n      \"kind\": \"mainboard\",\n      \"title\": \"Mainboard IPO Dashboard (Main board IPO at BSE and NSE)\"\n    },\n    {\n      \"kind\": \"sme\",\n      \"title\": \"SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)\"\n    }\n  ],\n  \"discovered_detail_count\": 40,\n  \"picked_detail_urls\": [\n    \"https://www.chittorgarh.com/ipo/bagmane-reit/3090/\",\n    \"https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/\"\n  ],\n  \"detail_titles\": [\n    \"Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details\",\n    \"OnEMI Technology IPO Date, Price, GMP, Review, Details\"\n  ],\n  \"challenges_detected\": false,\n  \"diagnostics_first_hrefs_per_dashboard\": null\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
     "freshness_or_update_frequency": "Daily (manual editor maintained)",
-    "status": "YELLOW",
-    "recommended_action": "Dashboard(s) reachable but no detail URLs discovered — inspect chittorgarh-fields.json diagnostics block (first_hrefs) and refine the regex.",
+    "status": "GREEN",
+    "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-05-22T02:16:07.228Z",
-    "latency_ms": 1007,
-    "notes": "mainboard: static status=200 bytes=147030 | sme: static status=200 bytes=148963 | detail_urls_discovered=0 | detail_urls_picked=0 | challenges_detected=false"
+    "ran_at_utc": "2026-05-22T02:42:13.916Z",
+    "latency_ms": 228,
+    "notes": "mainboard: static status=200 bytes=145883 | sme: static status=200 bytes=148146 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=309225 | detail-2: static status=200 bytes=343417 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -37,20 +37,42 @@
     "fetch_method": "disk read (no network) — extracts from P-25 captured HTML",
     "headers_or_cookies_required": [],
     "status_code": null,
-    "response_type": "EMPTY",
-    "fields_found": [],
-    "fields_missing": [],
-    "sample_record": "{\n  \"avg_precision_ratio\": 0,\n  \"details\": []\n}",
+    "response_type": "JSON",
+    "fields_found": [
+      "d1.company_name",
+      "d1.issue_size_cr",
+      "d1.registrar",
+      "d2.company_name",
+      "d2.issue_size_cr",
+      "d2.registrar"
+    ],
+    "fields_missing": [
+      "d1.price_band",
+      "d1.lot_size",
+      "d1.open_date",
+      "d1.close_date",
+      "d1.listing_date",
+      "d1.brlms",
+      "d1.official_pdf_links",
+      "d2.price_band",
+      "d2.lot_size",
+      "d2.open_date",
+      "d2.close_date",
+      "d2.listing_date",
+      "d2.brlms",
+      "d2.official_pdf_links"
+    ],
+    "sample_record": "{\n  \"avg_precision_ratio\": 0.3,\n  \"details\": [\n    {\n      \"index\": 1,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/bagmane-reit/3090/\",\n      \"found_count\": 3,\n      \"precision_ratio\": 0.3\n    },\n    {\n      \"index\": 2,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/\",\n      \"found_count\": 3,\n      \"precision_ratio\": 0.3\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
     "freshness_or_update_frequency": "N/A — operates on disk",
     "status": "RED",
-    "recommended_action": "P-25 has not been run yet, or its HTML output is missing. Run P-25 first.",
+    "recommended_action": "Extraction precision too low. Chittorgarh ingestion slice should be rejected at the §Y.9.1 gate.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-05-22T02:16:07.228Z",
-    "latency_ms": 0,
-    "notes": "details_extracted=0 | avg_precision=0.000 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=0"
+    "ran_at_utc": "2026-05-22T02:42:13.916Z",
+    "latency_ms": 4,
+    "notes": "details_extracted=2 | avg_precision=0.300 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=0"
   },
   {
     "probe_id": "P-27",
@@ -91,8 +113,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-05-22T02:16:07.228Z",
-    "latency_ms": 4360,
+    "ran_at_utc": "2026-05-22T02:42:13.916Z",
+    "latency_ms": 5105,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37896 | rendered_len=39280 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -128,8 +150,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-05-22T02:16:07.228Z",
-    "latency_ms": 5179,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=221226 | rendered_len=267113 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-05-22T02:42:13.916Z",
+    "latency_ms": 7242,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=222058 | rendered_len=267702 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   }
 ]

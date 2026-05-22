@@ -1,41 +1,41 @@
 # Phase 0 — Source Probe Report
 
-Generated: 2026-05-22T02:16:18.606Z
+Generated: 2026-05-22T02:42:29.835Z
 
 ## Status Summary
 
-- GREEN: 2
-- YELLOW: 1
+- GREEN: 3
+- YELLOW: 0
 - RED: 1
 
 | Probe | Source | Status | Code | Type | Latency (ms) | Recommendation |
 |---|---|---|---|---|---|---|
-| P-25 | Chittorgarh — IPO list + detail accessibility (Phase 5C) | YELLOW | 200 | HTML | 1007 | Dashboard(s) reachable but no detail URLs discovered — inspect chittorgarh-fields.json diagnostics block (first_hrefs) and refine the regex. |
-| P-26 | Chittorgarh — detail field extraction (Phase 5C) | RED | - | EMPTY | 0 | P-25 has not been run yet, or its HTML output is missing. Run P-25 first. |
-| P-27 | Zerodha — IPO detail refresh (Phase 5C, reference only) | GREEN | 200 | HTML | 4360 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
-| P-28 | Upstox — IPO detail refresh (Phase 5C, reference only) | GREEN | 200 | HTML | 5179 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
+| P-25 | Chittorgarh — IPO list + detail accessibility (Phase 5C) | GREEN | 200 | HTML | 228 | Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static). |
+| P-26 | Chittorgarh — detail field extraction (Phase 5C) | RED | - | JSON | 4 | Extraction precision too low. Chittorgarh ingestion slice should be rejected at the §Y.9.1 gate. |
+| P-27 | Zerodha — IPO detail refresh (Phase 5C, reference only) | GREEN | 200 | HTML | 5105 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
+| P-28 | Upstox — IPO detail refresh (Phase 5C, reference only) | GREEN | 200 | HTML | 7242 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
 
 ## Per-probe detail
 
-### P-25 — Chittorgarh — IPO list + detail accessibility (Phase 5C) — YELLOW
+### P-25 — Chittorgarh — IPO list + detail accessibility (Phase 5C) — GREEN
 
 - URL: `https://www.chittorgarh.com/ipo/ipo_dashboard.asp + https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme`
 - Method: GET static → Playwright fallback (no retry within pass); two dashboards probed per pass
 - Headers/cookies required: User-Agent (desktop Chrome), Referer
 - Status code: 200
 - Response type: HTML
-- Fields found: mainboard dashboard reachable, sme dashboard reachable
-- Fields missing: detail URL discovery (0 candidates — see diagnostics block), second detail URL
+- Fields found: mainboard dashboard reachable, sme dashboard reachable, 40 detail URL(s) discovered, detail-1 reachable, detail-2 reachable
+- Fields missing: (none)
 - Parsing difficulty: Medium
 - Anti-bot risk: Low
 - Legal/ToS risk: Medium
 - Update frequency: Daily (manual editor maintained)
-- Recommended action: Dashboard(s) reachable but no detail URLs discovered — inspect chittorgarh-fields.json diagnostics block (first_hrefs) and refine the regex.
+- Recommended action: Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).
 - Fallback: P-26 (field extraction off captured HTML)
-- Latency: 1007 ms
-- Ran at (UTC): 2026-05-22T02:16:07.228Z
+- Latency: 228 ms
+- Ran at (UTC): 2026-05-22T02:42:13.916Z
 
-> mainboard: static status=200 bytes=147030 | sme: static status=200 bytes=148963 | detail_urls_discovered=0 | detail_urls_picked=0 | challenges_detected=false
+> mainboard: static status=200 bytes=145883 | sme: static status=200 bytes=148146 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=309225 | detail-2: static status=200 bytes=343417 | challenges_detected=false
 
 ```
 {
@@ -49,28 +49,17 @@ Generated: 2026-05-22T02:16:18.606Z
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)"
     }
   ],
-  "discovered_detail_count": 0,
-  "picked_detail_urls": [],
-  "detail_titles": [],
+  "discovered_detail_count": 40,
+  "picked_detail_urls": [
+    "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+    "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/"
+  ],
+  "detail_titles": [
+    "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
+    "OnEMI Technology IPO Date, Price, GMP, Review, Details"
+  ],
   "challenges_detected": false,
-  "diagnostics_first_hrefs_per_dashboard": [
-    {
-      "kind": "mainboard",
-      "first_3_hrefs": [
-        "https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg",
-        "https://www.chittorgarh.net/images/ipo/fyers-logo-small.png",
-        "https://www.chittorgarh.net/images/home.png"
-      ]
-    },
-    {
-      "kind": "sme",
-      "first_3_hrefs": [
-        "https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg",
-        "https://www.chittorgarh.net/images/ipo/fyers-logo-small.png",
-        "https://www.chittorgarh.net/images/home.png"
-      ]
-    }
-  ]
+  "diagnostics_first_hrefs_per_dashboard": null
 }
 ```
 
@@ -80,24 +69,37 @@ Generated: 2026-05-22T02:16:18.606Z
 - Method: disk read (no network) — extracts from P-25 captured HTML
 - Headers/cookies required: (none)
 - Status code: (no response)
-- Response type: EMPTY
-- Fields found: (none)
-- Fields missing: (none)
+- Response type: JSON
+- Fields found: d1.company_name, d1.issue_size_cr, d1.registrar, d2.company_name, d2.issue_size_cr, d2.registrar
+- Fields missing: d1.price_band, d1.lot_size, d1.open_date, d1.close_date, d1.listing_date, d1.brlms, d1.official_pdf_links, d2.price_band, d2.lot_size, d2.open_date, d2.close_date, d2.listing_date, d2.brlms, d2.official_pdf_links
 - Parsing difficulty: Medium
 - Anti-bot risk: Low
 - Legal/ToS risk: Medium
 - Update frequency: N/A — operates on disk
-- Recommended action: P-25 has not been run yet, or its HTML output is missing. Run P-25 first.
+- Recommended action: Extraction precision too low. Chittorgarh ingestion slice should be rejected at the §Y.9.1 gate.
 - Fallback: P-25 (re-run to refresh HTML)
-- Latency: 0 ms
-- Ran at (UTC): 2026-05-22T02:16:07.228Z
+- Latency: 4 ms
+- Ran at (UTC): 2026-05-22T02:42:13.916Z
 
-> details_extracted=0 | avg_precision=0.000 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=0
+> details_extracted=2 | avg_precision=0.300 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=0
 
 ```
 {
-  "avg_precision_ratio": 0,
-  "details": []
+  "avg_precision_ratio": 0.3,
+  "details": [
+    {
+      "index": 1,
+      "source_url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+      "found_count": 3,
+      "precision_ratio": 0.3
+    },
+    {
+      "index": 2,
+      "source_url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+      "found_count": 3,
+      "precision_ratio": 0.3
+    }
+  ]
 }
 ```
 
@@ -116,8 +118,8 @@ Generated: 2026-05-22T02:16:18.606Z
 - Update frequency: Per IPO lifecycle (open/close/listing)
 - Recommended action: Use as information-architecture benchmark only. Do NOT scrape for production data.
 - Fallback: Screenshots / PDF exports of the broker page provided by user
-- Latency: 4360 ms
-- Ran at (UTC): 2026-05-22T02:16:07.228Z
+- Latency: 5105 ms
+- Ran at (UTC): 2026-05-22T02:42:13.916Z
 
 > final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37896 | rendered_len=39280 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17
 
@@ -185,10 +187,10 @@ Generated: 2026-05-22T02:16:18.606Z
 - Update frequency: Per IPO lifecycle (open/close/listing)
 - Recommended action: Use as information-architecture benchmark only. Do NOT scrape for production data.
 - Fallback: Screenshots / PDF exports of the broker page provided by user
-- Latency: 5179 ms
-- Ran at (UTC): 2026-05-22T02:16:07.228Z
+- Latency: 7242 ms
+- Ran at (UTC): 2026-05-22T02:42:13.916Z
 
-> final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=221226 | rendered_len=267113 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11
+> final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=222058 | rendered_len=267702 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11
 
 ```
 {
