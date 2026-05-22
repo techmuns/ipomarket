@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T08:29:18.138Z",
+  "generated_at_utc": "2026-05-22T09:10:20.720Z",
   "parser_version": "5A.2",
   "by_smid": {
     "10": {
@@ -189,7 +189,7 @@
       "link_text": "FAQs on Inter-Operable Regulatory Sandbox (IoRS)",
       "doc_type": "unknown",
       "source_smid": 11,
-      "captured_at_utc": "2026-05-22T08:29:18.138Z",
+      "captured_at_utc": "2026-05-22T09:10:20.720Z",
       "fetch_mode": "playwright"
     },
     {
@@ -197,7 +197,7 @@
       "link_text": "Frequently Asked Questions (FAQs) on Cybersecurity and Cyber Resilience Framework (CSCRF) for SEBI REs and Framework for Adoption of Cloud Services by SEBI REs",
       "doc_type": "unknown",
       "source_smid": 11,
-      "captured_at_utc": "2026-05-22T08:29:18.138Z",
+      "captured_at_utc": "2026-05-22T09:10:20.720Z",
       "fetch_mode": "playwright"
     },
     {
@@ -205,7 +205,7 @@
       "link_text": "Caution to public against buying / dealing with assets of Sai Prasad Group of companies and its Directors (English, Hindi, Marathi)",
       "doc_type": "unknown",
       "source_smid": 11,
-      "captured_at_utc": "2026-05-22T08:29:18.138Z",
+      "captured_at_utc": "2026-05-22T09:10:20.720Z",
       "fetch_mode": "playwright"
     },
     {
@@ -213,7 +213,7 @@
       "link_text": "Requirements for filing objections w.r.t properties of PACL Limited",
       "doc_type": "unknown",
       "source_smid": 11,
-      "captured_at_utc": "2026-05-22T08:29:18.138Z",
+      "captured_at_utc": "2026-05-22T09:10:20.720Z",
       "fetch_mode": "playwright"
     },
     {
@@ -221,7 +221,7 @@
       "link_text": "FAQs for grant of registration as Alternative Investment Fund (AIF)",
       "doc_type": "unknown",
       "source_smid": 11,
-      "captured_at_utc": "2026-05-22T08:29:18.138Z",
+      "captured_at_utc": "2026-05-22T09:10:20.720Z",
       "fetch_mode": "playwright"
     },
     {
@@ -229,7 +229,7 @@
       "link_text": "Guidelines for Data Sharing",
       "doc_type": "unknown",
       "source_smid": 11,
-      "captured_at_utc": "2026-05-22T08:29:18.138Z",
+      "captured_at_utc": "2026-05-22T09:10:20.720Z",
       "fetch_mode": "playwright"
     }
   ]

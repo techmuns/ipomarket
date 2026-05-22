@@ -4,7 +4,7 @@
   "source_pdf_url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
   "source_pdf_sha256": "4668b4e22fde35670ccc8405e185a0fe4cd532f84597eed339265c00a84de22f",
   "source_doc_kind": "RHP",
-  "parsed_at_utc": "2026-05-22T08:32:45.439Z",
+  "parsed_at_utc": "2026-05-22T09:13:44.551Z",
   "parser_version": "5B.0",
   "manual_review_required": false,
   "unit_detected": {
@@ -21,7 +21,32 @@
     "preferred": "Restated",
     "rationale": "SEBI-mandated restated form is the audited baseline"
   },
-  "periods_detected": [],
+  "periods_detected": [
+    {
+      "label_raw": "As at and for the nine months period ended December 31, 2025",
+      "normalized": "9M FY 26",
+      "source_page": 71,
+      "confidence": "high"
+    },
+    {
+      "label_raw": "As at March 31, 2025",
+      "normalized": "FY 25",
+      "source_page": 71,
+      "confidence": "high"
+    },
+    {
+      "label_raw": "As at March 31, 2024",
+      "normalized": "FY 24",
+      "source_page": 71,
+      "confidence": "high"
+    },
+    {
+      "label_raw": "As at March 31, 2023",
+      "normalized": "FY 23",
+      "source_page": 71,
+      "confidence": "high"
+    }
+  ],
   "line_items": [
     {
       "key": "total_assets",
@@ -29,7 +54,28 @@
       "normalized_label": "Total assets",
       "source_page": 68,
       "source_table_index": 7,
-      "values_by_period": {},
+      "values_by_period": {
+        "9M FY 26": {
+          "raw": "35,687.78",
+          "normalized_cr": 3568.78,
+          "confidence": "high"
+        },
+        "FY 25": {
+          "raw": "27,011.04",
+          "normalized_cr": 2701.1,
+          "confidence": "high"
+        },
+        "FY 24": {
+          "raw": "17,965.25",
+          "normalized_cr": 1796.53,
+          "confidence": "high"
+        },
+        "FY 23": {
+          "raw": "12,752.00",
+          "normalized_cr": 1275.2,
+          "confidence": "high"
+        }
+      },
       "manual_review_required": false
     },
     {
@@ -38,7 +84,28 @@
       "normalized_label": "Net worth / total equity",
       "source_page": 68,
       "source_table_index": 7,
-      "values_by_period": {},
+      "values_by_period": {
+        "9M FY 26": {
+          "raw": "12,543.38",
+          "normalized_cr": 1254.34,
+          "confidence": "high"
+        },
+        "FY 25": {
+          "raw": "10,059.94",
+          "normalized_cr": 1005.99,
+          "confidence": "high"
+        },
+        "FY 24": {
+          "raw": "8,045.69",
+          "normalized_cr": 804.57,
+          "confidence": "high"
+        },
+        "FY 23": {
+          "raw": "5,662.34",
+          "normalized_cr": 566.23,
+          "confidence": "high"
+        }
+      },
       "manual_review_required": false
     },
     {
@@ -47,7 +114,28 @@
       "normalized_label": "Revenue from operations",
       "source_page": 70,
       "source_table_index": 8,
-      "values_by_period": {},
+      "values_by_period": {
+        "9M FY 26": {
+          "raw": "15,599.00",
+          "normalized_cr": 1559.9,
+          "confidence": "high"
+        },
+        "FY 25": {
+          "raw": "13,374.65",
+          "normalized_cr": 1337.47,
+          "confidence": "high"
+        },
+        "FY 24": {
+          "raw": "16,744.46",
+          "normalized_cr": 1674.45,
+          "confidence": "high"
+        },
+        "FY 23": {
+          "raw": "9,844.57",
+          "normalized_cr": 984.46,
+          "confidence": "high"
+        }
+      },
       "manual_review_required": false
     },
     {
@@ -56,7 +144,28 @@
       "normalized_label": "Profit after tax",
       "source_page": 70,
       "source_table_index": 8,
-      "values_by_period": {},
+      "values_by_period": {
+        "9M FY 26": {
+          "raw": "1,992.69",
+          "normalized_cr": 199.27,
+          "confidence": "high"
+        },
+        "FY 25": {
+          "raw": "1,606.21",
+          "normalized_cr": 160.62,
+          "confidence": "high"
+        },
+        "FY 24": {
+          "raw": "1,972.90",
+          "normalized_cr": 197.29,
+          "confidence": "high"
+        },
+        "FY 23": {
+          "raw": "276.67",
+          "normalized_cr": 27.67,
+          "confidence": "high"
+        }
+      },
       "manual_review_required": false
     }
   ],
@@ -101,15 +210,12 @@
     }
   ],
   "warnings": [
-    "page=71: header row had non-empty cells but no period pattern matched any cell",
     "skipped table_index=0 (page=8) — non-restated form (unknown) not preferred (Restated equivalent exists)",
     "skipped table_index=1 (page=16) — non-restated form (unknown) not preferred (Restated equivalent exists)",
     "skipped table_index=2 (page=16) — non-restated form (unknown) not preferred (Restated equivalent exists)",
     "skipped table_index=4 (page=41) — non-restated form (unknown) not preferred (Restated equivalent exists)",
-    "page=68: header row had non-empty cells but no period pattern matched any cell",
-    "page=70: header row had non-empty cells but no period pattern matched any cell",
     "duplicate line_item=revenue at table_index=8 (page=70, conf=medium) — kept earlier higher-confidence entry",
-    "page=71: header row had non-empty cells but no period pattern matched any cell",
+    "page=71: tried header spans 1..5 but no period pattern matched any reconstructed column header",
     "skipped table_index=12 (page=122) — non-restated form (unknown) not preferred (Restated equivalent exists)"
   ],
   "errors": []
