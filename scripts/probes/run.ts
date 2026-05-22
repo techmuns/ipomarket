@@ -44,6 +44,8 @@ const REGISTRY: Record<string, () => Promise<ProbeModule>> = {
   'P-26': () => import('./P-26-chittorgarh-detail-extract.ts'),
   'P-27': () => import('./P-27-broker-zerodha-refresh.ts'),
   'P-28': () => import('./P-28-broker-upstox-refresh.ts'),
+  'P-25b': () => import('./P-25b-chittorgarh-retune.ts'),
+  'P-26b': () => import('./P-26b-chittorgarh-extract-retune.ts'),
 };
 
 function parseArgs() {
@@ -77,6 +79,7 @@ function pickIds(group: ProbeGroup | null, probe: string | null): string[] {
     ...PROBE_GROUPS.H,
     ...PROBE_GROUPS.I,
     ...PROBE_GROUPS.J,
+    ...PROBE_GROUPS.K,
   ];
 }
 

@@ -49,6 +49,10 @@ export const PROBE_GROUPS = {
   // Phase 5C — broker/aggregator source characterization (Chittorgarh +
   // Zerodha/Upstox refresh). Characterization-only; no production ingest.
   J: ['P-25', 'P-26', 'P-27', 'P-28'],
+  // Phase 6A.1 — Chittorgarh detail-page retune for aggregator fast-fill
+  // strategy pivot. Characterization-only; no production ingest until
+  // separate operator approval of Phase 6A.2 planning doc.
+  K: ['P-25b', 'P-26b'],
 } as const;
 
 export type ProbeGroup = keyof typeof PROBE_GROUPS;
