@@ -1,6 +1,6 @@
 {
   "mode": "financials_feasibility",
-  "parser_version": "5A.2",
+  "parser_version": "5B.0",
   "page_count": 464,
   "candidate_pages": [
     {
@@ -492,6 +492,2675 @@
       "confidence_signal": "medium"
     }
   ],
+  "tables_with_cells": [
+    {
+      "table_index": 0,
+      "page": 8,
+      "flavor": "stream",
+      "confidence_signal": "medium",
+      "scope_hint": null,
+      "form_hint": null,
+      "page_text_window": "Term Description\nESOP – 2022 Kissht Stock Option Plan – 2022, as amended\nESOP Schemes Collectively, ESOP – 2019, ESOP – 2021 and ESOP – 2022\n“Executive Director(s)” The executive Directors on our Board, as disclosed in “Our Management” on page 237\nGIL SPA Share purchase agreement dated April 25, 2022, entered into amongst Vertex Growth Fund Pte. Ltd.,\nVertex Growth Fund II Pte. Ltd., Vertex Ventures SEA Fund III Pte. Ltd., AION Advisory Services\nLLP, Ammar Sdn Bhd, Greatest Investments Limited, Ruizheng Investment (BVI) Limited and our\nCompany\n“Non-Executive Independent The independent director(s) of our Company, appointed as per the Companies Act, 2013 and the SEBI\nDirector(s)” or “Independent Listing Regulations, as described in “Our Management” on page 237\nDirector(s)”\nIPO Committee The IPO committee of our Board\n“Key Managerial Personnel” or The key managerial personnel of our Company in accordance with Regulation 2(1)(bb) of the SEBI\n“KMP” ICDR Regulations and Section 2(51) of the Companies Act, as descr",
+      "cells": [
+        [
+          "Term",
+          "Description"
+        ],
+        [
+          "ESOP – 2022",
+          "Kissht Stock Option Plan – 2022, as amended"
+        ],
+        [
+          "ESOP Schemes",
+          "Collectively, ESOP – 2019, ESOP – 2021 and ESOP – 2022"
+        ],
+        [
+          "“Executive Director(s)”",
+          "The executive Directors on our Board, as disclosed in “Our Management” on page 237"
+        ],
+        [
+          "GIL SPA",
+          "Share purchase agreement dated April 25, 2022, entered into amongst Vertex Growth Fund Pte. Ltd.,"
+        ],
+        [
+          "",
+          "Vertex Growth Fund II Pte. Ltd., Vertex Ventures SEA Fund III Pte. Ltd., AION Advisory Services"
+        ],
+        [
+          "",
+          "LLP, Ammar Sdn Bhd, Greatest Investments Limited, Ruizheng Investment (BVI) Limited and our"
+        ],
+        [
+          "",
+          "Company"
+        ],
+        [
+          "“Non-Executive \nIndependent",
+          "The independent director(s) of our Company, appointed as per the Companies Act, 2013 and the SEBI"
+        ],
+        [
+          "Director(s)” \nor \n“Independent",
+          "Listing Regulations, as described in “Our Management” on page 237"
+        ],
+        [
+          "Director(s)”",
+          ""
+        ],
+        [
+          "IPO Committee",
+          "The IPO committee of our Board"
+        ],
+        [
+          "“Key  Managerial  Personnel” \nor",
+          "The key managerial personnel of our Company in accordance with Regulation 2(1)(bb) of the SEBI"
+        ],
+        [
+          "“KMP”",
+          "ICDR Regulations and Section 2(51) of the Companies Act, as described in “Our Management - Key"
+        ],
+        [
+          "",
+          "Managerial Personnel” on page 249"
+        ],
+        [
+          "KV SPA I",
+          "Share purchase agreement dated March 4, 2026, entered into by and among Vertex Ventures SEA"
+        ],
+        [
+          "",
+          "Fund III Pte. Ltd. and Krishnan Vishwanathan"
+        ],
+        [
+          "KV SPA II",
+          "Share  purchase  agreement  dated  March  4,  2026,  entered  into  by  and  among  VenturEast  SEDCO"
+        ],
+        [
+          "",
+          "Proactive Fund LLC and Krishnan Vishwanathan"
+        ],
+        [
+          "“Memorandum  of  Association”  or",
+          "The memorandum of association of our Company, as amended from time to time"
+        ],
+        [
+          "“MoA”",
+          ""
+        ],
+        [
+          "Nomination \nand \nRemuneration",
+          "The  nomination  and  remuneration  committee  of  our  Board,  as  described  in  “Our  Management  –"
+        ],
+        [
+          "Committee",
+          "Committees of the Board - Nomination and Remuneration Committee” on page 245"
+        ],
+        [
+          "OCRPS",
+          "Optionally convertible redeemable preference shares"
+        ],
+        [
+          "Preference Shares",
+          "Collectively, Series A CCPS, Series A OCRPS, Series B CCPS, Series B OCRPS, Series C CCPS,"
+        ],
+        [
+          "",
+          "Series D1 CCPS, Series E CCPS, Series E1 CCPS, Series Z1 CCPS, Series Z1 OCRPS, Series Z2"
+        ],
+        [
+          "",
+          "CCPS, Series Z3 CCPS and Series Z4 CCPS"
+        ],
+        [
+          "Promoter(s)",
+          "Collectively, Ranvir Singh and Krishnan Vishwanathan"
+        ],
+        [
+          "Promoter Group",
+          "Persons and entities constituting the promoter group of our Company, pursuant to Regulation 2(1)(pp)"
+        ],
+        [
+          "",
+          "of  the  SEBI  ICDR  Regulations,  as  disclosed  in  “Our  Promoters  and  Promoter  Group  -  Promoter"
+        ],
+        [
+          "",
+          "Group” on page 252"
+        ],
+        [
+          "Prophet SPA",
+          "Share  purchase  agreement  dated  May  10,  2022,  entered  into  amongst  Ammar  Sdn  Bhd,  Prophet"
+        ],
+        [
+          "",
+          "Capital Partners Limited and our Company"
+        ],
+        [
+          "Registered and Corporate Office",
+          "The registered and corporate office of our Company, situated at 10th Floor, Tower 4, Equinox Park,"
+        ],
+        [
+          "",
+          "LBS Marg, Kurla (West), Mumbai 400 070, Maharashtra, India"
+        ],
+        [
+          "“Registrar of Companies” or “RoC”  Registrar of Companies, Mumbai - I at Mumbai",
+          ""
+        ],
+        [
+          "RoC CPC",
+          "Registrar of Companies, Central Processing Centre"
+        ],
+        [
+          "RoC CRC",
+          "Registrar of Companies, Central Registration Centre"
+        ],
+        [
+          "Restated \nConsolidated \nFinancial",
+          "Restated consolidated financial information of our Company and Subsidiary as of and for  the nine"
+        ],
+        [
+          "Information",
+          "months period ended December 31, 2025 and the Financial years ended March 31, 2025, March 31,"
+        ],
+        [
+          "",
+          "2024 and March 31, 2023 comprising the restated consolidated statement of assets and liabilities as of"
+        ],
+        [
+          "",
+          "and for the nine months period ended December 31, 2025 and the Financial Years ended March 31,"
+        ],
+        [
+          "",
+          "2025,  March  31,  2024  and  March  31,  2023,  the  restated  consolidated  statement  of  profit  and  loss"
+        ],
+        [
+          "",
+          "(including other comprehensive income), the restated consolidated statement of changes in equity, the"
+        ],
+        [
+          "",
+          "restated consolidated statement of cash flow, for the nine months period ended December 31, 2025"
+        ],
+        [
+          "",
+          "and the Financial Years ended March 31, 2025, March 31, 2024 and March 31, 2023, the summary"
+        ],
+        [
+          "",
+          "statement  of  material  accounting  policies  and  other  explanatory  information  (collectively,  together"
+        ],
+        [
+          "",
+          "with  the  notes,  schedules  and  annexures)  each  restated  in  accordance  with  the  requirement  of  the"
+        ],
+        [
+          "",
+          "Companies  Act,  2013,  SEBI  ICDR  Regulations,  and  the  Guidance  Note  on  ‘Reports  in  Company"
+        ],
+        [
+          "",
+          "Prospectuses (Revised 2019)’ issued by the Institute of Chartered Accountants of India, to the extent"
+        ],
+        [
+          "",
+          "applicable, as amended from time to time"
+        ],
+        [
+          "Risk Management Committee",
+          "The risk management committee of our Board, as described in “Our Management – Committees of the"
+        ],
+        [
+          "",
+          "Board – Risk Management Committee” on page 247"
+        ],
+        [
+          "RS SPA I",
+          "Share  purchase  agreement  dated  March  4,  2026,  entered  into  by  and  among  Abhijit  Bhandari  and"
+        ],
+        [
+          "",
+          "Ranvir Singh"
+        ],
+        [
+          "RS SPA II",
+          "Share purchase agreement dated March 4, 2026, entered into by and among AION Advisory Services"
+        ],
+        [
+          "",
+          "LLP and Ranvir Singh"
+        ],
+        [
+          "Selling Shareholders",
+          "Collectively, Ammar Sdn Bhd, Vertex Ventures SEA Fund III Pte. Ltd., Vertex Growth Fund Pte."
+        ],
+        [
+          "",
+          "Ltd., Vertex Growth Fund II Pte. Ltd., Ventureast Proactive Fund II, Endiya Seed Co-creation Fund,"
+        ],
+        [
+          "",
+          "VenturEast  Proactive  Fund  LLC,  AION  Advisory  Services  LLP,  Ventureast  Proactive  Fund  and"
+        ],
+        [
+          "",
+          "VenturEast SEDCO Proactive Fund LLC"
+        ],
+        [
+          "Senior Management",
+          "The members of the senior management of our Company in accordance with Regulation 2(1)(bbbb)"
+        ],
+        [
+          "",
+          "of the SEBI ICDR Regulations, as described in “Our Management – Senior Management” on page"
+        ],
+        [
+          "",
+          "249"
+        ],
+        [
+          "Series A CCPS",
+          "Compulsorily convertible series A preference shares of face value of ₹10 each of our Company"
+        ],
+        [
+          "Series A OCRPS",
+          "Optionally  convertible  series  A  redeemable  preference  shares  of  face  value  of  ₹100  each  of  our"
+        ],
+        [
+          "",
+          "Company"
+        ],
+        [
+          "Series B CCPS",
+          "Compulsorily convertible series B preference shares of face value of ₹10 each of our Company"
+        ],
+        [
+          "Series B OCRPS",
+          "Optionally  convertible  series  B  redeemable  preference  shares  of  face  value  of  ₹100  each  of  our"
+        ],
+        [
+          "",
+          "Company"
+        ],
+        [
+          "Series C CCPS",
+          "Compulsorily convertible series C preference shares of face value of ₹10 each of our Company"
+        ],
+        [
+          "Series D1 CCPS",
+          "Compulsorily convertible series D1 preference shares of face value of ₹10 each of our Company"
+        ],
+        [
+          "",
+          "2"
+        ]
+      ]
+    },
+    {
+      "table_index": 1,
+      "page": 16,
+      "flavor": "stream",
+      "confidence_signal": "medium",
+      "scope_hint": null,
+      "form_hint": null,
+      "page_text_window": "Term Description\nALM Asset liability management\nAPI Application programming interface\nAUM Assets under management\nDA Direct assignments\nDPD Days past due\nDSA Direct selling agents\nEIR Effective interest rate\nFLDG First loss default guarantee\nFOIR Fixed obligation to income ratio\nGross Stage 3 loans A loan is categorised as Stage 3 when a borrower fails to make contractual payments within 90 days\nfrom the day the loan becomes due.\nKYC Know-your-customer\nLAP Loans against property\nLMS Loan management system\nLOS Loan origination system\nML Machine learning\nNet promoter score Net promoter score is an indicator of customer loyalty and satisfaction. The metric is derived from\nresponses to the question regarding the likelihood that a customer will recommend our Company’s\nproducts or services to others. Respondents assigning a score of 9 or 10 on a ten-point scale are\ncategorized as “promoters,” whereas those providing a score in the range of 0 to 6 are classified as\n“detractors”. The net promoter score is calculated ",
+      "cells": [
+        [
+          "Term",
+          "Description"
+        ],
+        [
+          "ALM",
+          "Asset liability management"
+        ],
+        [
+          "API",
+          "Application programming interface"
+        ],
+        [
+          "AUM",
+          "Assets under management"
+        ],
+        [
+          "DA",
+          "Direct assignments"
+        ],
+        [
+          "DPD",
+          "Days past due"
+        ],
+        [
+          "DSA",
+          "Direct selling agents"
+        ],
+        [
+          "EIR",
+          "Effective interest rate"
+        ],
+        [
+          "FLDG",
+          "First loss default guarantee"
+        ],
+        [
+          "FOIR",
+          "Fixed obligation to income ratio"
+        ],
+        [
+          "Gross Stage 3 loans",
+          "A loan is categorised as Stage 3 when a borrower fails to make contractual payments within 90 days"
+        ],
+        [
+          "",
+          "from the day the loan becomes due."
+        ],
+        [
+          "KYC",
+          "Know-your-customer"
+        ],
+        [
+          "LAP",
+          "Loans against property"
+        ],
+        [
+          "LMS",
+          "Loan management system"
+        ],
+        [
+          "LOS",
+          "Loan origination system"
+        ],
+        [
+          "ML",
+          "Machine learning"
+        ],
+        [
+          "Net promoter score",
+          "Net promoter score is an indicator of customer loyalty and satisfaction. The metric is derived from"
+        ],
+        [
+          "",
+          "responses to the question regarding the likelihood that a customer will recommend our Company’s"
+        ],
+        [
+          "",
+          "products  or  services  to  others.  Respondents  assigning  a  score  of  9  or  10  on  a  ten-point  scale  are"
+        ],
+        [
+          "",
+          "categorized as “promoters,” whereas those providing a score in the range of 0 to 6 are classified as"
+        ],
+        [
+          "",
+          "“detractors”.  The  net  promoter  score  is  calculated  as  the  difference  between  the  percentage  of"
+        ],
+        [
+          "",
+          "promoters and the percentage of detractors"
+        ],
+        [
+          "O2O",
+          "Offline-to-online"
+        ],
+        [
+          "Off-book loans",
+          "Loans held on the balance sheet of the Company’s lending partners"
+        ],
+        [
+          "",
+          "Loans  held  on  the  balance  sheet  of  the  Company’s  Subsidiary,  Si  Creva  Capital  Services  Private"
+        ],
+        [
+          "On-book loans",
+          ""
+        ],
+        [
+          "",
+          "Limited"
+        ],
+        [
+          "PL",
+          "Personal loans"
+        ],
+        [
+          "PTC",
+          "Pass-through certificates"
+        ],
+        [
+          "TAT",
+          "Turnaround time"
+        ],
+        [
+          "Thick file",
+          "Refers to the credit report of an individual or entity with previously managed credit"
+        ],
+        [
+          "Thin file",
+          "Refers to the credit report of an individual or entity with minimal or no credit history"
+        ]
+      ]
+    },
+    {
+      "table_index": 2,
+      "page": 16,
+      "flavor": "stream",
+      "confidence_signal": "medium",
+      "scope_hint": null,
+      "form_hint": null,
+      "page_text_window": "Term Description\nALM Asset liability management\nAPI Application programming interface\nAUM Assets under management\nDA Direct assignments\nDPD Days past due\nDSA Direct selling agents\nEIR Effective interest rate\nFLDG First loss default guarantee\nFOIR Fixed obligation to income ratio\nGross Stage 3 loans A loan is categorised as Stage 3 when a borrower fails to make contractual payments within 90 days\nfrom the day the loan becomes due.\nKYC Know-your-customer\nLAP Loans against property\nLMS Loan management system\nLOS Loan origination system\nML Machine learning\nNet promoter score Net promoter score is an indicator of customer loyalty and satisfaction. The metric is derived from\nresponses to the question regarding the likelihood that a customer will recommend our Company’s\nproducts or services to others. Respondents assigning a score of 9 or 10 on a ten-point scale are\ncategorized as “promoters,” whereas those providing a score in the range of 0 to 6 are classified as\n“detractors”. The net promoter score is calculated ",
+      "cells": [
+        [
+          "Thin file",
+          "Refers to the credit report of an individual or entity with minimal or no credit history"
+        ],
+        [
+          "K\ney Performance Indicators",
+          ""
+        ],
+        [
+          "Key Performance Indicators",
+          "Description"
+        ],
+        [
+          "Operational metrics",
+          ""
+        ],
+        [
+          "AUM",
+          "AUM  represents  aggregate  of  principal  outstanding  held  in  On-book  and  held  in  Off-book  lending"
+        ],
+        [
+          "",
+          "partner books as on the last day of the relevant period (includes On-book and Off-book AUM)"
+        ],
+        [
+          "-   On-book AUM",
+          "On-book AUM represents the aggregate of principal outstanding held in On-book as on the last day of"
+        ],
+        [
+          "",
+          "the relevant period"
+        ],
+        [
+          "-  On-book AUM%",
+          "On-book AUM% represents aggregate of principal outstanding held in On-book as on the last day over"
+        ],
+        [
+          "",
+          "total On-book and Off-book AUM as on the last day of the relevant period"
+        ],
+        [
+          "-   Off-book AUM",
+          "Off-book AUM represents the aggregate of principal outstanding held in Off-book as on the last day of"
+        ],
+        [
+          "",
+          "the relevant period"
+        ],
+        [
+          "-  Off-book AUM%",
+          "Off-book AUM% represents aggregate of principal outstanding held in Off-book lending partner books"
+        ],
+        [
+          "",
+          "as on the last day of the relevant period over total On-book and Off-book AUM as on the last day of the"
+        ],
+        [
+          "",
+          "relevant period"
+        ],
+        [
+          "AUM Growth",
+          "AUM Growth represents percentage growth in AUM comprising of On-book AUM and Off-book AUM"
+        ],
+        [
+          "",
+          "for the relevant period over AUM of the previous period"
+        ],
+        [
+          "Repeat Customer AUM",
+          "Repeat customers AUM represents AUM outstanding for repeat customers as on last day of relevant"
+        ],
+        [
+          "",
+          "period as a percentage of total AUM (On-book and Off-book AUM) as on the last day of the relevant"
+        ],
+        [
+          "",
+          "period"
+        ],
+        [
+          "Disbursement",
+          "Disbursement represents total amount of loans disbursed (On-book loans and Off-book loans) for the"
+        ],
+        [
+          "",
+          "relevant period"
+        ],
+        [
+          "Average Ticket Size",
+          "Average ticket size is computed by dividing the amount disbursed (both to new and existing customers)"
+        ],
+        [
+          "",
+          "by the number of loans disbursed for the relevant period"
+        ],
+        [
+          "Registered User Base",
+          "Registered user base refers to cumulative number of unique users who have signed up with our Company"
+        ],
+        [
+          "",
+          "using their mobile number as on the last day of relevant period"
+        ],
+        [
+          "Customer Base",
+          "Customer base refers to the cumulative number of unique customers who have availed at least one loan"
+        ],
+        [
+          "",
+          "from our Company as on the last day of relevant period"
+        ],
+        [
+          "Average Age of Customers",
+          "Average age of customers at the time of taking the loan (On-book and Off-book) for the relevant period"
+        ],
+        [
+          "Financial metrics",
+          ""
+        ],
+        [
+          "Total Income",
+          "Total Income represents the sum of revenue from operations and other income for the relevant period"
+        ],
+        [
+          "Net Total Income",
+          "Net Total Income represents Total Income less finance costs for the relevant period"
+        ],
+        [
+          "Profit before Tax (“PBT”)",
+          "Profit before tax (“PBT”) represents Total Income reduced by total expenses"
+        ],
+        [
+          "Profit after Tax (“PAT”)",
+          "Profit after tax (“PAT”) represents profit before tax reduced by total taxes"
+        ],
+        [
+          "Return on Assets (“ROA”)",
+          "Return on Assets is calculated basis profit after tax as percentage of average total assets of our Company"
+        ],
+        [
+          "",
+          "for the relevant period. Average total assets for the nine months period is calculated as average of total"
+        ],
+        [
+          "",
+          "assets as on the last day of the previous fiscal year (i.e., March 31, 2024 or March 31, 2025, as applicable)"
+        ],
+        [
+          "",
+          "and total assets as on the last day of the nine months period (i.e., December 31, 2025, as applicable)."
+        ],
+        [
+          "",
+          "10"
+        ]
+      ]
+    },
+    {
+      "table_index": 4,
+      "page": 41,
+      "flavor": "stream",
+      "confidence_signal": "medium",
+      "scope_hint": null,
+      "form_hint": null,
+      "page_text_window": "additional operating costs and there can be no assurance that we will be successful in meeting the standards required by such\noperating systems for listing approvals.\nFurther, on February 8, 2023, the Ministry of Electronics & Information Technology, Government of India, (“MeitY”) imposed\na restriction on the “Kissht” app of our Company, under Section 69A of the IT Act. Our Company submitted an undertaking\nvide e-mail dated February 9, 2023, to MeitY in response to the meeting held with MeitY. Pursuant to the submission of our\nresponses, the imposed restriction was uplifted by MeitY within 24 hours. While we have not received any further\ncommunications from the MietY in relation to the abovementioned matters since submitting our responses and that our mobile\napplication has not been suspended or barred from the application marketplaces or from any device that uses such marketplace\nin the nine months ended December 31, 2025 and Fiscals 2025, 2024 and 2023, there can be no assurance that these instances\nwill no",
+      "cells": [
+        [
+          "additional operating costs and there can be no assurance that we will be successful in meeting the standards required by such",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "operating systems for listing approvals.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "F",
+          "urther, on February 8, 2023, the Ministry of Electronics & Information Technology, Government of India, (“MeitY”) imposed",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "a restriction on the “Kissht” app of our Company, under Section 69A of the IT Act. Our Company submitted an undertaking",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "vide e-mail dated February 9, 2023, to MeitY in response to the meeting held with MeitY. Pursuant to the submission of our",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "responses,",
+          "the",
+          "imposed  restriction  was  uplifted  by  MeitY  within  24  hours.  While  we  have  not  received  any  further",
+          "",
+          "",
+          ""
+        ],
+        [
+          "communications from the MietY in relation to the abovementioned matters since submitting our responses and that our mobile",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "application has not been suspended or barred from the application marketplaces or from any device that uses such marketplace",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "in the nine months ended December 31, 2025 and Fiscals 2025, 2024 and 2023, there can be no assurance that these instances",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "will not occur in the future.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "F",
+          "urther, as new mobile devices,  mobile platforms and mobile browsers are released, there can be no guarantee  that certain",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "mobile devices will continue to support our platform or effectively roll out updates to our application. Additionally, in order to",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "deliver a high-quality application, we need to ensure that our platform is designed to work effectively with a range of mobile",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "technologies,  systems,  networks,  and  standards.  If  our  customers  encounter  any  difficulty  accessing  or  using  our  mobile",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "application on their mobile devices or if we are unable to adapt to changes in popular mobile operating systems, we expect that",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "the growth and engagement of our customers would be adversely affected.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "28.  Our inability to maintain our capital adequacy ratio could adversely affect our business, financial condition, cash flows,",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "results of operations and prospects.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "T",
+          "",
+          "he RBI Master Directions currently require NBFCs to comply with a capital to risk (weighted) assets ratio, or capital risk",
+          "",
+          "",
+          ""
+        ],
+        [
+          "adequacy ratio (“CRAR”), consisting of Tier - I and Tier - II capital. Under these requirements, Tier - I and Tier - II capital",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "should not be less than 15% of the sum of the NBFC’s risk-weighted assets on-balance sheet and of risk adjusted value of off-",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "balance  sheet  items,  as  applicable.  Accordingly,  Our  Subsidiary,  Si  Creva  Capital  Services  Private  Limited,  is  required  to",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "maintain a capital adequacy ratio consisting of Tier - I and Tier - II capital, which shall not be less than 15% of our aggregate",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "risk weighted assets on-balance sheet and of risk adjusted value of off-balance sheet items. In addition, our Subsidiary’s Tier -",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "I capital, at any point in time, shall not be less than 10%. While our CRAR did not fall below the level prescribed by the RBI",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "in the nine months ended December 31, 2025 and Fiscals 2025, 2024 and 2023, there can be no assurance that our CRAR will",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "continue to be compliant with the RBI requirements in the future. Additionally, the RBI’s assessment of our CRAR may differ",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "from our own. Any changes in the regulatory framework affecting non-banking financial services companies, including the",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "provisioning for NPAs, or capital adequacy requirements, or differences in interpretation of the same, could adversely affect",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "our profitability or our future financial performance, by requiring a restructuring of our activities or an increase in our costs to",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "comply with regulations applicable to us. For details, see “Key Regulations and Policies” on page 208. Set out below are details",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "of our CRAR and other key metrics as of the dates indicated:",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "As of December 31,",
+          "As of March 31,",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Particulars",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "2025",
+          "2025",
+          "2024",
+          "2023"
+        ],
+        [
+          "",
+          "CRAR (%)",
+          "26.69%",
+          "25.18%",
+          "25.77%",
+          "21.13%"
+        ],
+        [
+          "",
+          "- Tier - I Capital (%)",
+          "25.93%",
+          "25.18%",
+          "24.69%",
+          "19.88%"
+        ],
+        [
+          "",
+          "- Tier - II Capital (%)",
+          "0.76%",
+          "0.00%",
+          "1.08%",
+          "1.25%"
+        ],
+        [
+          "Note: Capital to risk weighted assets ratio is computed by dividing our Tier - I and Tier - II capital by risk weighted assets (computed in accordance with the",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "relevant RBI guidelines) as on the last day of the relevant period by the Subsidiary.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "A",
+          "",
+          "s we continue to grow our loan portfolio and asset base, we will be required to raise additional Tier - I and Tier - II capital in",
+          "",
+          "",
+          ""
+        ],
+        [
+          "order to remain in compliance with the applicable capital adequacy ratios. Further, the RBI may increase its minimum CRAR",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "threshold, which may require us to raise additional capital. We cannot assure you that we will be able to raise adequate additional",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "capital in the future on terms favorable to us, or at all, which may adversely affect the growth of our business. Further, the RBI",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "may also in the future require compliance with other prudential norms and standards, which may require us to alter our business",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "and accounting practices or take other actions that could adversely affect our business, financial condition, cash flows, results",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "of operations and prospects.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "29.  We may not be able to identify, monitor and manage risks or effectively implement our risk management policies, which",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "may adversely affect our business, financial condition, cash flows, results of operations and prospects.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "T",
+          "",
+          "he effectiveness of our risk management is affected by the quality and timeliness of risk management policy and procedures",
+          "",
+          "",
+          ""
+        ],
+        [
+          "and  available  data.  We  have  devoted  significant  resources  to  develop  and  implement  our  risk  management  policies  and",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "procedures and intend to continue doing so in the future. Our policies include our resource planning policy, business model",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "loan  policy, underwriting policies  for unsecured  personal  loans,  unsecured  business  loans  and  loans  against  property,  asset",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "liability management policy, ICAAP policy, interest rate policy, whistle blower policy, fair practices code, customer grievance",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "redressal policy, policy on internal guidelines on corporate governance, investment policy, risk management policy, fraud risk",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "management policy, outsourcing policy, asset classification and write off policy, expected credit losses policy, privacy policy,",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "IT  policies  and  procedures,  and  know-your-customer  (“KYC”)  and  anti-money  laundering  policy.  We  also  depend  on  our",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "information technology systems to assist us with our risk management functions including carrying out periodic IT audits. Our",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Board  and  various  committees  of  our  Board,  including  the  Risk  Management  Committee,  review  our  internal  policies  and",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "35",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_index": 7,
+      "page": 68,
+      "flavor": "stream",
+      "confidence_signal": "medium",
+      "scope_hint": null,
+      "form_hint": "Restated Statement of Assets and Liabilities",
+      "page_text_window": "SUMMARY OF RESTATED STATEMENT OF ASSETS AND LIABILITIES\n(₹ in millions, unless otherwise stated)\nAs at and for the nine\nAs at March 31, As at March 31, As at March 31,\nParticulars months period ended\n2025 2024 2023\nDecember 31, 2025\nAssets\n(1) Non-current assets\nNon-financial assets\n(a) Property, plant and equipment 65.29 62.56 73.82 89.82\n(b) Right-of-use assets 421.87 454.23 482.97 526.44\n(c) Other Intangible assets 10.73 13.16 15.58 46.38\n(d) Intangible assets under development 95.03 47.79 1.50 -\n(e) Deferred tax assets (net) 1,398.88 1,127.30 1,283.35 1,024.53\n(f) Other Non Current assets 150.88 - - -\nFinancial assets\n(g) Loans 4,024.87 2,808.02 870.78 10.72\n(h) Other financial assets 1,128.42 884.82 730.62 318.75\nTotal non-current assets 7,295.97 5,397.88 3,458.62 2,016.64\n(2) Current assets\nFinancial assets\n(a) Investments 855.51 - - -\n(b) Trade receivables 1,413.98 700.77 1,624.36 657.79\n(c) Cash and cash equivalents 1,894.51 1,327.23 2,850.37 5,699.68\n(d) Bank balance other than cash and cash\n553.90 1",
+      "cells": [
+        [
+          "",
+          "As at and for the nine",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "As at March 31,",
+          "As at March 31,",
+          "As at March 31,"
+        ],
+        [
+          "Particulars",
+          "months period ended",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "2025",
+          "2024",
+          "2023"
+        ],
+        [
+          "",
+          "December 31, 2025",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(1)    Non-current assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Non-financial assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(a)   Property, plant and equipment",
+          "65.29",
+          "62.56",
+          "73.82",
+          "89.82"
+        ],
+        [
+          "(b)   Right-of-use assets",
+          "421.87",
+          "454.23",
+          "482.97",
+          "526.44"
+        ],
+        [
+          "(c)   Other Intangible assets",
+          "10.73",
+          "13.16",
+          "15.58",
+          "46.38"
+        ],
+        [
+          "(d)   Intangible assets under development",
+          "95.03",
+          "47.79",
+          "1.50",
+          "-"
+        ],
+        [
+          "(e)   Deferred tax assets (net)",
+          "1,398.88",
+          "1,127.30",
+          "1,283.35",
+          "1,024.53"
+        ],
+        [
+          "(f)  Other Non Current assets",
+          "150.88",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Financial assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(g)    Loans",
+          "4,024.87",
+          "2,808.02",
+          "870.78",
+          "10.72"
+        ],
+        [
+          "(h)   Other financial assets",
+          "1,128.42",
+          "884.82",
+          "730.62",
+          "318.75"
+        ],
+        [
+          "Total non-current assets",
+          "7,295.97",
+          "5,397.88",
+          "3,458.62",
+          "2,016.64"
+        ],
+        [
+          "(2)    Current assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Financial assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(a)  Investments",
+          "855.51",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "(b)   Trade receivables",
+          "1,413.98",
+          "700.77",
+          "1,624.36",
+          "657.79"
+        ],
+        [
+          "(c)  Cash and cash equivalents",
+          "1,894.51",
+          "1,327.23",
+          "2,850.37",
+          "5,699.68"
+        ],
+        [
+          "(d)  Bank balance other than cash and cash",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "553.90",
+          "117.70",
+          "331.43",
+          "913.11"
+        ],
+        [
+          "equivalents above",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(e)   Loans",
+          "22,765.30",
+          "18,769.42",
+          "9,601.75",
+          "2,933.45"
+        ],
+        [
+          "(f)   Other financial assets",
+          "651.87",
+          "581.78",
+          "63.61",
+          "498.95"
+        ],
+        [
+          "Non financial assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(g)   Other current assets",
+          "256.74",
+          "116.26",
+          "35.11",
+          "32.38"
+        ],
+        [
+          "Total current assets",
+          "28,391.81",
+          "21,613.16",
+          "14,506.63",
+          "10,735.36"
+        ],
+        [
+          "Total Assets",
+          "35,687.78",
+          "27,011.04",
+          "17,965.25",
+          "12,752.00"
+        ],
+        [
+          "Equity and liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Equity",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(a)   Share capital",
+          "54.10",
+          "53.63",
+          "47.80",
+          "47.80"
+        ],
+        [
+          "(b)  Instruments entirely equity in nature",
+          "66.05",
+          "53.16",
+          "52.93",
+          "52.81"
+        ],
+        [
+          "(c)   Other equity",
+          "12,423.23",
+          "9,953.15",
+          "7,944.96",
+          "5,561.73"
+        ],
+        [
+          "Total equity",
+          "12,543.38",
+          "10,059.94",
+          "8,045.69",
+          "5,662.34"
+        ],
+        [
+          "Liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Non-current liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Financial liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(a)   Debt securities",
+          "3,323.25",
+          "2,016.63",
+          "1,188.99",
+          "-"
+        ],
+        [
+          "(b)  Borrowings (other than debt securities)",
+          "396.82",
+          "676.46",
+          "498.81",
+          "198.40"
+        ],
+        [
+          "(c)   Lease liabilities",
+          "283.89",
+          "325.91",
+          "362.22",
+          "415.55"
+        ],
+        [
+          "(d)  Other financial liabilities",
+          "-",
+          "0.05",
+          "0.05",
+          "0.05"
+        ],
+        [
+          "Non-financial liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(e)   Provisions",
+          "108.53",
+          "78.83",
+          "51.94",
+          "25.68"
+        ],
+        [
+          "(f)   Other non-current liabilities",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Total non-current liabilities",
+          "4,112.49",
+          "3,097.88",
+          "2,102.01",
+          "639.68"
+        ],
+        [
+          "Current liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Financial liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(a)   Trade payables",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(i)    Total \noutstanding \ndues \nof  micro",
+          "295.71",
+          "78.68",
+          "33.60",
+          "11.38"
+        ],
+        [
+          "enterprises and small enterprises",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(ii)   Total  outstanding  dues  of  creditors",
+          "459.36",
+          "443.30",
+          "284.78",
+          "238.11"
+        ],
+        [
+          "other \nthan  micro  enterprises  and \nsmall",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "enterprises",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(b)  Debt securities",
+          "8,684.71",
+          "3,117.52",
+          "2,069.12",
+          "576.14"
+        ],
+        [
+          "(c)   Borrowings (other than debt",
+          "8,070.39",
+          "9,265.20",
+          "4,086.04",
+          "3,104.32"
+        ],
+        [
+          "securities)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(d)  Lease liabilities",
+          "174.74",
+          "161.81",
+          "155.36",
+          "140.61"
+        ],
+        [
+          "(e)   Other financial liabilities",
+          "1,081.79",
+          "497.86",
+          "717.83",
+          "2,140.45"
+        ]
+      ]
+    },
+    {
+      "table_index": 8,
+      "page": 70,
+      "flavor": "stream",
+      "confidence_signal": "medium",
+      "scope_hint": null,
+      "form_hint": "Restated Statement of Profit and Loss",
+      "page_text_window": "SUMMARY OF RESTATED STATEMENT OF PROFIT AND LOSS\n(₹ in millions, unless otherwise stated)\nParticulars As at and for the nine As at March As at March As at March\nmonths period ended 31, 2025 31, 2024 31, 2023\nDecember 31, 2025\nIncome\nRevenue from operations 15,599.00 13,374.65 16,744.46 9,844.57\nOther income 240.28 152.23 258.56 170.48\nTotal Income (I) 15,839.28 13,526.88 17,003.02 10,015.05\nExpenses\nEmployee benefits expenses 1,873.24 1,932.36 1,807.56 1,157.72\nImpairment on financial instruments 3,446.25 3,268.34 6,211.51 2,993.00\nFinance costs 2,057.45 1,644.02 686.39 559.02\nDepreciation and amortization 162.66 227.02 228.78 178.56\nOther expenses 5,635.26 4,292.50 5,394.37 4,887.22\nTotal expenses (II) 13,174.86 11,364.24 14,328.61 9,775.52\nProfit before tax (III = I – II) 2,664.42 2,162.64 2,674.41 239.53\nTax expense: (IV)\n(1) Current tax 940.90 379.37 938.52 531.40\n(2) Excess/(Short) Provision of tax for earlier 17.92 21.38 (99.25)\n0.95\nyears\n(3) Deferred tax (270.12) 159.14 (258.39) (469.29)\nTotal tax exp",
+      "cells": [
+        [
+          "Particulars",
+          "As at and for the nine",
+          "As at March",
+          "As at March",
+          "As at March"
+        ],
+        [
+          "",
+          "months period ended",
+          "31, 2025",
+          "31, 2024",
+          "31, 2023"
+        ],
+        [
+          "",
+          "December 31, 2025",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Income",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Revenue from operations",
+          "15,599.00",
+          "13,374.65",
+          "16,744.46",
+          "9,844.57"
+        ],
+        [
+          "Other income",
+          "240.28",
+          "152.23",
+          "258.56",
+          "170.48"
+        ],
+        [
+          "Total Income (I)",
+          "15,839.28",
+          "13,526.88",
+          "17,003.02",
+          "10,015.05"
+        ],
+        [
+          "Expenses",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Employee benefits expenses",
+          "1,873.24",
+          "1,932.36",
+          "1,807.56",
+          "1,157.72"
+        ],
+        [
+          "Impairment on financial instruments",
+          "3,446.25",
+          "3,268.34",
+          "6,211.51",
+          "2,993.00"
+        ],
+        [
+          "Finance costs",
+          "2,057.45",
+          "1,644.02",
+          "686.39",
+          "559.02"
+        ],
+        [
+          "Depreciation and amortization",
+          "162.66",
+          "227.02",
+          "228.78",
+          "178.56"
+        ],
+        [
+          "Other expenses",
+          "5,635.26",
+          "4,292.50",
+          "5,394.37",
+          "4,887.22"
+        ],
+        [
+          "Total expenses (II)",
+          "13,174.86",
+          "11,364.24",
+          "14,328.61",
+          "9,775.52"
+        ],
+        [
+          "Profit before tax (III = I – II)",
+          "2,664.42",
+          "2,162.64",
+          "2,674.41",
+          "239.53"
+        ],
+        [
+          "Tax expense: (IV)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(1) Current tax",
+          "940.90",
+          "379.37",
+          "938.52",
+          "531.40"
+        ],
+        [
+          "(2) Excess/(Short) Provision of tax for earlier",
+          "",
+          "17.92",
+          "21.38",
+          "(99.25)"
+        ],
+        [
+          "",
+          "0.95",
+          "",
+          "",
+          ""
+        ],
+        [
+          "years",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(3) Deferred tax",
+          "(270.12)",
+          "159.14",
+          "(258.39)",
+          "(469.29)"
+        ],
+        [
+          "Total tax expense",
+          "671.73",
+          "556.43",
+          "701.51",
+          "(37.14)"
+        ],
+        [
+          "Profit for the year (V= III - IV)",
+          "1,992.69",
+          "1,606.21",
+          "1,972.90",
+          "276.67"
+        ],
+        [
+          "Other comprehensive income",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Items that will not be reclassified to profit or loss",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(i)  Re-measurement gain/ (loss) on defined",
+          "(5.81)",
+          "(12.30)",
+          "(1.78)",
+          "(3.82)"
+        ],
+        [
+          "benefit plans",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(ii) Income tax relating to items that will not be",
+          "1.46",
+          "3.10",
+          "0.45",
+          "0.96"
+        ],
+        [
+          "reclassified to profit or loss",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Total other comprehensive income (VI)",
+          "(4.35)",
+          "(9.20)",
+          "(1.33)",
+          "(2.86)"
+        ],
+        [
+          "Total comprehensive income for the year",
+          "1,988.34",
+          "1,597.01",
+          "1,971.57",
+          "273.81"
+        ],
+        [
+          "(V+VI)",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_index": 9,
+      "page": 71,
+      "flavor": "stream",
+      "confidence_signal": "medium",
+      "scope_hint": null,
+      "form_hint": "Restated Statement of Cash Flows",
+      "page_text_window": "SUMMARY OF RESTATED STATEMENT OF CASH FLOWS\n(₹ in millions, unless otherwise stated)\nParticulars As at and for the As at March 31, As at March 31, As at March 31,\nnine months period 2025 2024 2023\nended December\n31, 2025\nCASH FLOW FROM OPERATING\nACTIVITIES:\nProfit before tax: 2,664.42 2,162.64 2,674.41 239.53\nAdjustments:\nDepreciation and amortisation 162.66 227.02 228.78 178.56\nEmployee stock option expenses 231.82 377.18 425.64 511.02\nShare based payment stock option 44.34 11.62 - -\nProvision for gratuity 18.55 17.84 13.76 11.31\nProvision for leave encashment 16.19 13.99 19.59 -\nImpairment allowances on trade 2.70 8.18 20.79 -\nreceivables (Net)\nImpairment of Financial Instruments 493.01 (1,111.48) 2,718.12 407.48\nProvision on off balance sheet exposure 124.41 8.99 (1,342.96) 1,485.27\nFinancials assets written off 2,953.24 4,379.82 3,493.39 2,585.52\nFinance cost 2,057.45 1,644.02 686.39 559.02\nInterest Income (9,160.82) (9,943.06) (12,110.14) (6,749.03)\nGain on modification/termination of (1.41) (10.68) - -\n",
+      "cells": [
+        [
+          "Impairment of Financial Instruments",
+          "493.01",
+          "(1,111.48)",
+          "2,718.12",
+          "407.48"
+        ],
+        [
+          "Provision on off balance sheet exposure",
+          "124.41",
+          "8.99",
+          "(1,342.96)",
+          "1,485.27"
+        ],
+        [
+          "Financials assets written off",
+          "2,953.24",
+          "4,379.82",
+          "3,493.39",
+          "2,585.52"
+        ],
+        [
+          "Finance cost",
+          "2,057.45",
+          "1,644.02",
+          "686.39",
+          "559.02"
+        ],
+        [
+          "Interest Income",
+          "(9,160.82)",
+          "(9,943.06)",
+          "(12,110.14)",
+          "(6,749.03)"
+        ],
+        [
+          "Gain \non  modification/termination \nof",
+          "(1.41)",
+          "(10.68)",
+          "-",
+          "-"
+        ],
+        [
+          "lease",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Net  gain  on  derecognition  of  financial",
+          "(89.70)",
+          "(20.30)",
+          "-",
+          "-"
+        ],
+        [
+          "instruments \nunder \namortised \ncost",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "category",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Interest \non \nunwinding \nof \nsecurity",
+          "(6.66)",
+          "(7.96)",
+          "(7.16)",
+          "(4.47)"
+        ],
+        [
+          "deposits",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Profit/(loss) on sale of assets (net)",
+          "0.04",
+          "(1.36)",
+          "-",
+          "(0.40)"
+        ],
+        [
+          "Net gain on fair value changes",
+          "(0.26)",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Interest on Investment",
+          "(0.23)",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Profit/(Loss)  on \nsale  of \nInvestments",
+          "-",
+          "-",
+          "-",
+          "(0.01)"
+        ],
+        [
+          "(Net)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Interest income on bank deposits",
+          "(139.77)",
+          "(111.28)",
+          "(248.36)",
+          "(151.33)"
+        ],
+        [
+          "Operating \nprofit \nbefore \nworking",
+          "(630.02)",
+          "(2,354.82)",
+          "(3,427.75)",
+          "(927.53)"
+        ],
+        [
+          "capital changes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Working capital adjustments:",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(Increase)/decrease in trade receivables",
+          "(715.91)",
+          "915.42",
+          "(986.62)",
+          "(597.08)"
+        ],
+        [
+          "(Increase) \n/decrease \nin  other  financial",
+          "5.89",
+          "(70.05)",
+          "420.17",
+          "(352.89)"
+        ],
+        [
+          "assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(Increase) /decrease in other non-current",
+          "(255.67)",
+          "(52.76)",
+          "(2.72)",
+          "(11.06)"
+        ],
+        [
+          "assets/current assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(Increase) / decrease in loans & advances",
+          "(9,112.76)",
+          "(14,751.06)",
+          "(13,415.98)",
+          "(3,627.62)"
+        ],
+        [
+          "Increase/(decrease) in trade payables",
+          "233.08",
+          "203.6",
+          "68.87",
+          "199.17"
+        ],
+        [
+          "Increase  /  (decrease)  in  other  financial",
+          "459.49",
+          "(228.96)",
+          "(79.67)",
+          "375.96"
+        ],
+        [
+          "liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Increase / (decrease) in provisions",
+          "(5.80)",
+          "(12.31)",
+          "(1.77)",
+          "(3.82)"
+        ],
+        [
+          "Increase/(decrease) \nin \nother \nnon",
+          "(29.45)",
+          "(140.01)",
+          "157.05",
+          "142.73"
+        ],
+        [
+          "current/current liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cash generated from operations",
+          "(10,051.15)",
+          "(16,490.95)",
+          "(17,268.42)",
+          "(4,802.14)"
+        ],
+        [
+          "Add: Interest income received",
+          "9,614.61",
+          "10,320.87",
+          "11,786.25",
+          "6,366.12"
+        ],
+        [
+          "Less: Income taxes paid (net of refunds)",
+          "(941.09)",
+          "(444.18)",
+          "(892.17)",
+          "(449.20)"
+        ],
+        [
+          "Net \ncash \ninflow/(outflow) \nfrom",
+          "(1,377.63)",
+          "(6,614.26)",
+          "(6,374.34)",
+          "1,114.78"
+        ],
+        [
+          "operating activities (A)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cash Flow from Investing Activities:",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Purchase/sale \nof \nProperty, \nPlant  &",
+          "(75.96)",
+          "(77.46)",
+          "(30.42)",
+          "(91.05)"
+        ],
+        [
+          "Equipment & Intangible Assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Purchase / sale of investments (net)",
+          "(855.02)",
+          "-",
+          "-",
+          "2.47"
+        ],
+        [
+          "Bank  deposits  with original  maturity of",
+          "(231.34)",
+          "(579.83)",
+          "(395.39)",
+          "(81.10)"
+        ],
+        [
+          "more than 12 months",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_index": 10,
+      "page": 71,
+      "flavor": "stream",
+      "confidence_signal": "high",
+      "scope_hint": null,
+      "form_hint": "Restated Statement of Cash Flows",
+      "page_text_window": "SUMMARY OF RESTATED STATEMENT OF CASH FLOWS\n(₹ in millions, unless otherwise stated)\nParticulars As at and for the As at March 31, As at March 31, As at March 31,\nnine months period 2025 2024 2023\nended December\n31, 2025\nCASH FLOW FROM OPERATING\nACTIVITIES:\nProfit before tax: 2,664.42 2,162.64 2,674.41 239.53\nAdjustments:\nDepreciation and amortisation 162.66 227.02 228.78 178.56\nEmployee stock option expenses 231.82 377.18 425.64 511.02\nShare based payment stock option 44.34 11.62 - -\nProvision for gratuity 18.55 17.84 13.76 11.31\nProvision for leave encashment 16.19 13.99 19.59 -\nImpairment allowances on trade 2.70 8.18 20.79 -\nreceivables (Net)\nImpairment of Financial Instruments 493.01 (1,111.48) 2,718.12 407.48\nProvision on off balance sheet exposure 124.41 8.99 (1,342.96) 1,485.27\nFinancials assets written off 2,953.24 4,379.82 3,493.39 2,585.52\nFinance cost 2,057.45 1,644.02 686.39 559.02\nInterest Income (9,160.82) (9,943.06) (12,110.14) (6,749.03)\nGain on modification/termination of (1.41) (10.68) - -\n",
+      "cells": [
+        [
+          "Particulars",
+          "As at and for the",
+          "As at March 31,",
+          "As at March 31,",
+          "As at March 31,"
+        ],
+        [
+          "",
+          "nine months period",
+          "2025",
+          "2024",
+          "2023"
+        ],
+        [
+          "",
+          "ended December",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "31, 2025",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CASH  FLOW  FROM  OPERATING",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ACTIVITIES:",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Profit before tax:",
+          "2,664.42",
+          "2,162.64",
+          "2,674.41",
+          "239.53"
+        ],
+        [
+          "Adjustments:",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Depreciation and amortisation",
+          "162.66",
+          "227.02",
+          "228.78",
+          "178.56"
+        ],
+        [
+          "Employee stock option expenses",
+          "231.82",
+          "377.18",
+          "425.64",
+          "511.02"
+        ],
+        [
+          "Share based payment stock option",
+          "44.34",
+          "11.62",
+          "-",
+          "-"
+        ],
+        [
+          "Provision for gratuity",
+          "18.55",
+          "17.84",
+          "13.76",
+          "11.31"
+        ],
+        [
+          "Provision for leave encashment",
+          "16.19",
+          "13.99",
+          "19.59",
+          "-"
+        ],
+        [
+          "Impairment \nallowances \non \ntrade",
+          "2.70",
+          "8.18",
+          "20.79",
+          "-"
+        ],
+        [
+          "receivables (Net)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Impairment of Financial Instruments",
+          "493.01",
+          "(1,111.48)",
+          "2,718.12",
+          "407.48"
+        ],
+        [
+          "Provision on off balance sheet exposure",
+          "124.41",
+          "8.99",
+          "(1,342.96)",
+          "1,485.27"
+        ],
+        [
+          "Financials assets written off",
+          "2,953.24",
+          "4,379.82",
+          "3,493.39",
+          "2,585.52"
+        ],
+        [
+          "Finance cost",
+          "2,057.45",
+          "1,644.02",
+          "686.39",
+          "559.02"
+        ],
+        [
+          "Interest Income",
+          "(9,160.82)",
+          "(9,943.06)",
+          "(12,110.14)",
+          "(6,749.03)"
+        ],
+        [
+          "Gain \non  modification/termination \nof",
+          "(1.41)",
+          "(10.68)",
+          "-",
+          "-"
+        ],
+        [
+          "lease",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Net  gain  on  derecognition  of  financial",
+          "(89.70)",
+          "(20.30)",
+          "-",
+          "-"
+        ],
+        [
+          "instruments \nunder \namortised \ncost",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "category",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Interest \non \nunwinding \nof \nsecurity",
+          "(6.66)",
+          "(7.96)",
+          "(7.16)",
+          "(4.47)"
+        ],
+        [
+          "deposits",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Profit/(loss) on sale of assets (net)",
+          "0.04",
+          "(1.36)",
+          "-",
+          "(0.40)"
+        ],
+        [
+          "Net gain on fair value changes",
+          "(0.26)",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Interest on Investment",
+          "(0.23)",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Profit/(Loss)  on \nsale  of \nInvestments",
+          "-",
+          "-",
+          "-",
+          "(0.01)"
+        ],
+        [
+          "(Net)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Interest income on bank deposits",
+          "(139.77)",
+          "(111.28)",
+          "(248.36)",
+          "(151.33)"
+        ],
+        [
+          "Operating \nprofit \nbefore \nworking",
+          "(630.02)",
+          "(2,354.82)",
+          "(3,427.75)",
+          "(927.53)"
+        ],
+        [
+          "capital changes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Working capital adjustments:",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(Increase)/decrease in trade receivables",
+          "(715.91)",
+          "915.42",
+          "(986.62)",
+          "(597.08)"
+        ],
+        [
+          "(Increase) \n/decrease \nin  other  financial",
+          "5.89",
+          "(70.05)",
+          "420.17",
+          "(352.89)"
+        ],
+        [
+          "assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(Increase) /decrease in other non-current",
+          "(255.67)",
+          "(52.76)",
+          "(2.72)",
+          "(11.06)"
+        ],
+        [
+          "assets/current assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "(Increase) / decrease in loans & advances",
+          "(9,112.76)",
+          "(14,751.06)",
+          "(13,415.98)",
+          "(3,627.62)"
+        ],
+        [
+          "Increase/(decrease) in trade payables",
+          "233.08",
+          "203.6",
+          "68.87",
+          "199.17"
+        ],
+        [
+          "Increase  /  (decrease)  in  other  financial",
+          "459.49",
+          "(228.96)",
+          "(79.67)",
+          "375.96"
+        ],
+        [
+          "liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Increase / (decrease) in provisions",
+          "(5.80)",
+          "(12.31)",
+          "(1.77)",
+          "(3.82)"
+        ],
+        [
+          "Increase/(decrease) \nin \nother \nnon",
+          "(29.45)",
+          "(140.01)",
+          "157.05",
+          "142.73"
+        ],
+        [
+          "current/current liabilities",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cash generated from operations",
+          "(10,051.15)",
+          "(16,490.95)",
+          "(17,268.42)",
+          "(4,802.14)"
+        ],
+        [
+          "Add: Interest income received",
+          "9,614.61",
+          "10,320.87",
+          "11,786.25",
+          "6,366.12"
+        ],
+        [
+          "Less: Income taxes paid (net of refunds)",
+          "(941.09)",
+          "(444.18)",
+          "(892.17)",
+          "(449.20)"
+        ],
+        [
+          "Net \ncash \ninflow/(outflow) \nfrom",
+          "(1,377.63)",
+          "(6,614.26)",
+          "(6,374.34)",
+          "1,114.78"
+        ],
+        [
+          "operating activities (A)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cash Flow from Investing Activities:",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Purchase/sale \nof \nProperty, \nPlant  &",
+          "(75.96)",
+          "(77.46)",
+          "(30.42)",
+          "(91.05)"
+        ],
+        [
+          "Equipment & Intangible Assets",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Purchase / sale of investments (net)",
+          "(855.02)",
+          "-",
+          "-",
+          "2.47"
+        ],
+        [
+          "Bank  deposits  with original  maturity of",
+          "(231.34)",
+          "(579.83)",
+          "(395.39)",
+          "(81.10)"
+        ],
+        [
+          "more than 12 months",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Bank  deposit  with  original  maturity  of",
+          "(436.20)",
+          "213.73",
+          "581.67",
+          "(706.18)"
+        ],
+        [
+          "more  than  3  months  but  less  than  12",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "months",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Interest Income on bank deposits",
+          "139.77",
+          "111.28",
+          "248.36",
+          "151.33"
+        ]
+      ]
+    },
+    {
+      "table_index": 12,
+      "page": 122,
+      "flavor": "stream",
+      "confidence_signal": "medium",
+      "scope_hint": null,
+      "form_hint": null,
+      "page_text_window": "Proposed Schedule of Implementation and Deployment of Funds\nThe Net Proceeds are proposed to be deployed in accordance with the details provided hereunder\n(in ₹ million)\nParticulars Estimated cost Amount to be Estimated utilisation of Net\nfunded from Net Proceeds\nProceeds Fiscal 2027\nAugmenting the capital base of our Subsidiary, Si Creva, 6,375.00 6,375.00 6,375.00\nto meet its future capital requirements arising out of the\ngrowth of our Subsidiary, Si Creva’s, business\nGeneral corporate purposes^* [●] [●] [●]\nTotal* [●] [●] [●]\n^ The amount to be utilised for general corporate purposes shall not exceed 25% of the Gross Proceeds.\n*To be determined upon finalisation of the Offer Price and updated in the Prospectus prior to filing with the RoC.\nPursuant to a resolution passed by the Board dated April 25, 2026 our Company has approved the utilisation of the Net Proceeds\nfor the Object and the schedule of deployment and implementation, as set out above.\nThe fund deployment is based on current circumstances of our",
+      "cells": [
+        [
+          "accruals as required under the SEBI ICDR Regulations.",
+          "",
+          ""
+        ],
+        [
+          "D",
+          "etails of the Objects of the Fresh Issue",
+          ""
+        ],
+        [
+          "1",
+          ".",
+          "Augmenting  the  capital  base  of our  Subsidiary  Si  Creva,  to  meet  its  future  capital  requirements  arising  out  of  the"
+        ],
+        [
+          "",
+          "",
+          "growth of our Subsidiary, Si Creva’s business"
+        ],
+        [
+          "",
+          "",
+          "O\nur Subsidiary, Si Creva, is a NBFC-ML and is registered with the RBI under section 45 IA of the Reserve Bank of India"
+        ],
+        [
+          "",
+          "",
+          "Act,  1934,  and  offers  a  variety  of  unsecured  personal  loans  to  salaried  and  self-employed  individuals  for  various"
+        ],
+        [
+          "",
+          "",
+          "consumption and business needs across India. For more details, see “Our Business” on page 177. Our Subsidiary, Si Creva,"
+        ],
+        [
+          "",
+          "",
+          "being  an  NBFC,  is  subject  to  regulations  pertaining  to  the  capital  adequacy  norms  issued  by  RBI.  Accordingly,  our"
+        ],
+        [
+          "",
+          "",
+          "Subsidiary, Si Creva, is required to maintain a minimum capital adequacy ratio, consisting of Tier - I Capital and Tier - II"
+        ],
+        [
+          "",
+          "",
+          "Capital. The total of Tier - II Capital at any point of time, cannot exceed 100% of Tier - I Capital. The minimum capital"
+        ],
+        [
+          "",
+          "",
+          "ratio as prescribed by RBI guidelines and applicable to our Subsidiary, Si Creva, consisting of Tier - I and Tier - II Capital,"
+        ],
+        [
+          "",
+          "",
+          "cannot be less than 15% with Tier - I not being below 10% of our Subsidiary, Si Creva’s aggregate risk weighted assets"
+        ],
+        [
+          "",
+          "",
+          "on-balance sheet and of risk adjusted value of off balance sheet. For further details, see “Key Regulations and Policies -"
+        ],
+        [
+          "",
+          "",
+          "Reserve Bank of India (Non-Banking Financial Company- Prudential Norms on Capital Adequacy) Directions, 2025 dated"
+        ],
+        [
+          "",
+          "",
+          "November 28, 2025 (“NBFC  Prudential Norms on Capital Adequacy Directions”) on page 211. As at December 31,"
+        ],
+        [
+          "",
+          "",
+          "2025, our Subsidiary, Si Creva,’s Tier - I capital adequacy ratio stood at 25.93% and Tier - II capital adequacy ratio was"
+        ],
+        [
+          "",
+          "",
+          "0.76%."
+        ],
+        [
+          "",
+          "",
+          "T\nhe table below sets forth the details of composition of our Subsidiary, Si Creva,’s Tier – I and Tier – II Capital as at and"
+        ],
+        [
+          "",
+          "",
+          "for the nine months period ended December 31, 2025, and the financial years ended March 31, 2025, March 31, 2024 and"
+        ],
+        [
+          "",
+          "",
+          "March 31, 2023 as per the audited financial statements of our Subsidiary, Si Creva:"
+        ]
+      ]
+    }
+  ],
+  "tables_with_cells_truncation_warnings": [],
   "overall_confidence": "high",
   "ok": true,
   "errors": [],
@@ -499,5 +3168,5 @@
   "doc_url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
   "doc_kind": "RHP",
   "pdf_sha256": "4668b4e22fde35670ccc8405e185a0fe4cd532f84597eed339265c00a84de22f",
-  "parsed_at_utc": "2026-05-22T07:52:41.817Z"
+  "parsed_at_utc": "2026-05-22T08:32:45.433Z"
 }

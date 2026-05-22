@@ -1,0 +1,116 @@
+{
+  "ipo_id": "curated_onemi-technology-solutions",
+  "company_name": "OnEMI Technology Solutions",
+  "source_pdf_url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
+  "source_pdf_sha256": "4668b4e22fde35670ccc8405e185a0fe4cd532f84597eed339265c00a84de22f",
+  "source_doc_kind": "RHP",
+  "parsed_at_utc": "2026-05-22T08:32:45.439Z",
+  "parser_version": "5B.0",
+  "manual_review_required": false,
+  "unit_detected": {
+    "value": "INR millions",
+    "source": "page-68 text window",
+    "confidence": "high"
+  },
+  "scope_preference": {
+    "preferred": "unknown",
+    "available": [],
+    "rationale": "scope hint absent from page text windows; defaulted to unknown"
+  },
+  "restated_preference": {
+    "preferred": "Restated",
+    "rationale": "SEBI-mandated restated form is the audited baseline"
+  },
+  "periods_detected": [],
+  "line_items": [
+    {
+      "key": "total_assets",
+      "raw_label": "Total Assets",
+      "normalized_label": "Total assets",
+      "source_page": 68,
+      "source_table_index": 7,
+      "values_by_period": {},
+      "manual_review_required": false
+    },
+    {
+      "key": "net_worth",
+      "raw_label": "Total equity",
+      "normalized_label": "Net worth / total equity",
+      "source_page": 68,
+      "source_table_index": 7,
+      "values_by_period": {},
+      "manual_review_required": false
+    },
+    {
+      "key": "revenue",
+      "raw_label": "Revenue from operations",
+      "normalized_label": "Revenue from operations",
+      "source_page": 70,
+      "source_table_index": 8,
+      "values_by_period": {},
+      "manual_review_required": false
+    },
+    {
+      "key": "pat",
+      "raw_label": "Profit for the year (V= III - IV)",
+      "normalized_label": "Profit after tax",
+      "source_page": 70,
+      "source_table_index": 8,
+      "values_by_period": {},
+      "manual_review_required": false
+    }
+  ],
+  "line_items_missing": [
+    {
+      "key": "ebitda",
+      "reason": "EBITDA not directly disclosed by row label; Phase 5B does not derive (PBT + interest + depreciation) — would require an explicit derivation pass"
+    },
+    {
+      "key": "eps_basic",
+      "reason": "no row label in extracted tables matched the §6.7 dictionary for \"eps_basic\" (searched 9 table(s))"
+    },
+    {
+      "key": "total_borrowings",
+      "reason": "no row label in extracted tables matched the §6.7 dictionary for \"total_borrowings\" (searched 9 table(s))"
+    },
+    {
+      "key": "cash_and_equivalents",
+      "reason": "no row label in extracted tables matched the §6.7 dictionary for \"cash_and_equivalents\" (searched 9 table(s))"
+    }
+  ],
+  "table_origin_map": [
+    {
+      "key_present": [
+        "total_assets",
+        "net_worth"
+      ],
+      "source_page": 68,
+      "table_index": 7,
+      "scope": "unknown",
+      "form": "Restated Statement of Assets and Liabilities"
+    },
+    {
+      "key_present": [
+        "revenue",
+        "pat"
+      ],
+      "source_page": 70,
+      "table_index": 8,
+      "scope": "unknown",
+      "form": "Restated Statement of Profit and Loss"
+    }
+  ],
+  "warnings": [
+    "page=71: header row had non-empty cells but no period pattern matched any cell",
+    "skipped table_index=0 (page=8) — non-restated form (unknown) not preferred (Restated equivalent exists)",
+    "skipped table_index=1 (page=16) — non-restated form (unknown) not preferred (Restated equivalent exists)",
+    "skipped table_index=2 (page=16) — non-restated form (unknown) not preferred (Restated equivalent exists)",
+    "skipped table_index=4 (page=41) — non-restated form (unknown) not preferred (Restated equivalent exists)",
+    "page=68: header row had non-empty cells but no period pattern matched any cell",
+    "page=70: header row had non-empty cells but no period pattern matched any cell",
+    "duplicate line_item=revenue at table_index=8 (page=70, conf=medium) — kept earlier higher-confidence entry",
+    "page=71: header row had non-empty cells but no period pattern matched any cell",
+    "skipped table_index=12 (page=122) — non-restated form (unknown) not preferred (Restated equivalent exists)"
+  ],
+  "errors": []
+}

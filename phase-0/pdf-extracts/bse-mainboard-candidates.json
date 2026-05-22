@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T07:50:39.127Z",
+  "generated_at_utc": "2026-05-22T08:30:37.709Z",
   "parser_version": "5A.2",
   "source": "bse-mainboard",
   "url": "https://www.bseindia.com/markets/PublicIssues/DRHP.aspx",
@@ -7,8 +7,8 @@
     "count": 0,
     "ok": true,
     "error": null,
-    "note": "page rendered with very small body (324 bytes) — JS render may not have completed",
-    "latency_ms": 3807
+    "note": "page rendered with very small body (322 bytes) — JS render may not have completed",
+    "latency_ms": 3643
   },
   "candidates": []
 }

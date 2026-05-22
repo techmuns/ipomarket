@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-05-22T07:52:41.817Z",
-  "parser_version": "5A.2",
+  "generated_at_utc": "2026-05-22T08:32:45.440Z",
+  "parser_version": "5B.0",
   "candidate_pool": {
     "total_ipo_documents_with_sebi_url": 7,
     "total_discovery_candidates_merged": 21,
@@ -216,7 +216,7 @@
       "doc_kind": "DRHP",
       "pdf_sha256": "57ed9f25485f5467234399e16733858e0e73af10ca322fa72ecd85b7d3b3f8e0",
       "page_count": 13,
-      "parsed_at_utc": "2026-05-22T07:50:50.084Z",
+      "parsed_at_utc": "2026-05-22T08:30:48.406Z",
       "sections": {
         "cover": {
           "attempted": true,
@@ -239,7 +239,7 @@
       "doc_kind": "RHP",
       "pdf_sha256": "4668b4e22fde35670ccc8405e185a0fe4cd532f84597eed339265c00a84de22f",
       "page_count": 464,
-      "parsed_at_utc": "2026-05-22T07:52:41.817Z",
+      "parsed_at_utc": "2026-05-22T08:32:45.434Z",
       "sections": {
         "cover": {
           "attempted": false,
@@ -260,8 +260,42 @@
   },
   "source_meta": {
     "source_state": "live",
-    "last_attempted_utc": "2026-05-22T07:52:41.817Z",
+    "last_attempted_utc": "2026-05-22T08:32:45.440Z",
     "errors": [],
-    "notes": "pdf_1=incred-holdings pdf_2=curated_onemi-technology-solutions source_state=live"
+    "notes": "pdf_1=incred-holdings pdf_2=curated_onemi-technology-solutions source_state=live normalization=0h/4m/0l/4miss"
+  },
+  "normalization": {
+    "attempted_for": [
+      "curated_onemi-technology-solutions"
+    ],
+    "staging_path": "phase-0/pdf-extracts/curated_onemi-technology-solutions/normalized-financials.json",
+    "line_items_extracted_high_confidence": [],
+    "line_items_extracted_medium_confidence": [
+      "total_assets",
+      "net_worth",
+      "revenue",
+      "pat"
+    ],
+    "line_items_rejected_low_confidence": [],
+    "line_items_missing": [
+      "ebitda",
+      "eps_basic",
+      "total_borrowings",
+      "cash_and_equivalents"
+    ],
+    "manual_review_required": false,
+    "production_snapshot_mutated": false,
+    "warnings": [
+      "page=71: header row had non-empty cells but no period pattern matched any cell",
+      "skipped table_index=0 (page=8) — non-restated form (unknown) not preferred (Restated equivalent exists)",
+      "skipped table_index=1 (page=16) — non-restated form (unknown) not preferred (Restated equivalent exists)",
+      "skipped table_index=2 (page=16) — non-restated form (unknown) not preferred (Restated equivalent exists)",
+      "skipped table_index=4 (page=41) — non-restated form (unknown) not preferred (Restated equivalent exists)",
+      "page=68: header row had non-empty cells but no period pattern matched any cell",
+      "page=70: header row had non-empty cells but no period pattern matched any cell",
+      "duplicate line_item=revenue at table_index=8 (page=70, conf=medium) — kept earlier higher-confidence entry",
+      "page=71: header row had non-empty cells but no period pattern matched any cell",
+      "skipped table_index=12 (page=122) — non-restated form (unknown) not preferred (Restated equivalent exists)"
+    ]
   }
 }

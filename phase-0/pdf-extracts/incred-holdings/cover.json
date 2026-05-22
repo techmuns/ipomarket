@@ -1,6 +1,6 @@
 {
   "mode": "cover",
-  "parser_version": "5A.2",
+  "parser_version": "5B.0",
   "page_count": 13,
   "fields": {
     "company_name": {
@@ -61,5 +61,5 @@
   "doc_url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
   "doc_kind": "DRHP",
   "pdf_sha256": "57ed9f25485f5467234399e16733858e0e73af10ca322fa72ecd85b7d3b3f8e0",
-  "parsed_at_utc": "2026-05-22T07:50:50.084Z"
+  "parsed_at_utc": "2026-05-22T08:30:48.405Z"
 }
