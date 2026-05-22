@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T11:11:34.596Z",
+  "generated_at_utc": "2026-05-22T10:46:51.958Z",
   "ipos": [
     {
       "id": "greendale-cement",
@@ -315,6 +315,30 @@
       },
       "state": "live",
       "tagline": "Cloud-kitchen + dine-in vegetarian chain across NCR & Dehradun."
+    },
+    {
+      "id": "onemi-technology-solutions",
+      "slug": "onemi-technology-solutions",
+      "name": "OnEMI Technology Solutions",
+      "segment": "mainboard",
+      "status": "upcoming",
+      "sector": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "price_band": null,
+      "lot_size": null,
+      "issue_size_cr": null,
+      "fresh_cr": null,
+      "ofs_cr": null,
+      "face_value": null,
+      "listing_exchange": [
+        "BSE"
+      ],
+      "reservation": null,
+      "state": "manual",
+      "tagline": null,
+      "nse_symbol": null
     }
   ],
   "timelines": [
