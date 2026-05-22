@@ -1,24 +1,24 @@
 {
-  "generated_at_utc": "2026-05-22T00:49:36.551Z",
+  "generated_at_utc": "2026-05-22T00:59:06.480Z",
   "parser_version": "5A.2",
   "pdf_1": {
     "ipo_id": "incred-holdings",
     "doc_kind": "DRHP",
-    "overall_confidence": null
+    "overall_confidence": "medium"
   },
   "pdf_2": null,
   "financial_table_candidate_unavailable": true,
   "full_document_candidate_unavailable": true,
   "discovery_smid_counts": {
     "10": 19,
-    "11": 0,
-    "12": 0
+    "11": 6,
+    "12": 6
   },
   "merged_counts": {
-    "sebi_discovery": 15,
+    "sebi_discovery": 19,
     "bse_sme_discovery": 0,
     "bse_mainboard_discovery": 0,
     "curated_seed": 0
   },
-  "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=failed"
+  "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=live"
 }

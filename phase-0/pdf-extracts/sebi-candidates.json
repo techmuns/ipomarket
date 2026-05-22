@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T00:49:35.110Z",
+  "generated_at_utc": "2026-05-22T00:57:35.270Z",
   "parser_version": "5A.2",
   "by_smid": {
     "10": {
@@ -9,14 +9,26 @@
       "source": "cached-from-P-08"
     },
     "11": {
-      "count": 0,
-      "ok": false,
-      "error": "HTTP 403"
+      "count": 6,
+      "ok": true,
+      "error": null,
+      "playwright": {
+        "attempted": true,
+        "count": 6,
+        "error": null,
+        "note": "playwright harvested 6 PDF anchor(s)"
+      }
     },
     "12": {
-      "count": 0,
-      "ok": false,
-      "error": "HTTP 403"
+      "count": 6,
+      "ok": true,
+      "error": null,
+      "playwright": {
+        "attempted": true,
+        "count": 6,
+        "error": null,
+        "note": "playwright harvested 6 PDF anchor(s)"
+      }
     }
   },
   "candidates": [
@@ -171,6 +183,54 @@
       "source_smid": 10,
       "captured_at_utc": "2026-05-21T22:59:03.878Z",
       "fetch_mode": "cached"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/faqfiles/sep-2025/1758091557500.pdf",
+      "link_text": "FAQs on Inter-Operable Regulatory Sandbox (IoRS)",
+      "doc_type": "unknown",
+      "source_smid": 11,
+      "captured_at_utc": "2026-05-22T00:57:35.270Z",
+      "fetch_mode": "playwright"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/faqfiles/jun-2025/1749647139924.pdf",
+      "link_text": "Frequently Asked Questions (FAQs) on Cybersecurity and Cyber Resilience Framework (CSCRF) for SEBI REs and Framework for Adoption of Cloud Services by SEBI REs",
+      "doc_type": "unknown",
+      "source_smid": 11,
+      "captured_at_utc": "2026-05-22T00:57:35.270Z",
+      "fetch_mode": "playwright"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2025/Caution Notice in the matter of Sai Prasad - English, Hindi &amp; Marathi_p.pdf",
+      "link_text": "Caution to public against buying / dealing with assets of Sai Prasad Group of companies and its Directors (English, Hindi, Marathi)",
+      "doc_type": "unknown",
+      "source_smid": 11,
+      "captured_at_utc": "2026-05-22T00:57:35.270Z",
+      "fetch_mode": "playwright"
+    },
+    {
+      "url": "https://www.sebi.gov.in/documents/Requirements%20for%20filing%20objections%20wrt%20properties%20of%20PACL%20Limited.pdf",
+      "link_text": "Requirements for filing objections w.r.t properties of PACL Limited",
+      "doc_type": "unknown",
+      "source_smid": 11,
+      "captured_at_utc": "2026-05-22T00:57:35.270Z",
+      "fetch_mode": "playwright"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/faqfiles/nov-2022/1667476171429.pdf",
+      "link_text": "FAQs for grant of registration as Alternative Investment Fund (AIF)",
+      "doc_type": "unknown",
+      "source_smid": 11,
+      "captured_at_utc": "2026-05-22T00:57:35.270Z",
+      "fetch_mode": "playwright"
+    },
+    {
+      "url": "https://www.sebi.gov.in/pdf/guidelines-of-data-sharing-final.pdf",
+      "link_text": "Guidelines for Data Sharing",
+      "doc_type": "unknown",
+      "source_smid": 11,
+      "captured_at_utc": "2026-05-22T00:57:35.270Z",
+      "fetch_mode": "playwright"
     }
   ]
 }

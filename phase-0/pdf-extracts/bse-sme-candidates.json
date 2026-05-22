@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-05-22T00:49:35.715Z",
+  "generated_at_utc": "2026-05-22T00:57:53.174Z",
   "parser_version": "5A.2",
   "source": "bse-sme",
   "url": "https://www.bsesme.com/static/markets/publicissues/issues_drhp.aspx",
   "result": {
     "count": 0,
     "ok": false,
-    "error": null,
-    "note": "chromium launch failed (binary missing?): browserType.launch: Executable doesn't exist at /opt/pw-browsers/chromium_headless_shell-1223/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
-    "latency_ms": 819
+    "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.bsesme.com/static/markets/publicissues/issues_drhp.aspx\", waiting until \"networkidle\"\n",
+    "note": "playwright navigation failed",
+    "latency_ms": 60093
   },
   "candidates": []
 }
