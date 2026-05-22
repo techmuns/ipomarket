@@ -2,31 +2,33 @@
   {
     "probe_id": "P-25",
     "source": "Chittorgarh — IPO list + detail accessibility (Phase 5C)",
-    "url_or_endpoint": "https://www.chittorgarh.com/ipo/",
-    "fetch_method": "GET static → Playwright fallback (no retry within pass)",
+    "url_or_endpoint": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp + https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
+    "fetch_method": "GET static → Playwright fallback (no retry within pass); two dashboards probed per pass",
     "headers_or_cookies_required": [
       "User-Agent (desktop Chrome)",
       "Referer"
     ],
     "status_code": 200,
-    "response_type": "ERROR",
+    "response_type": "HTML",
     "fields_found": [
-      "list page reachable"
+      "mainboard dashboard reachable",
+      "sme dashboard reachable"
     ],
     "fields_missing": [
+      "detail URL discovery (0 candidates — see diagnostics block)",
       "second detail URL"
     ],
-    "sample_record": "{\n  \"list_title\": \"Mainboard IPO Dashboard (Main board IPO at BSE and NSE)\",\n  \"discovered_detail_count\": 0,\n  \"picked_detail_urls\": [],\n  \"detail_titles\": [],\n  \"challenges_detected\": false\n}",
+    "sample_record": "{\n  \"dashboard_titles\": [\n    {\n      \"kind\": \"mainboard\",\n      \"title\": \"Mainboard IPO Dashboard (Main board IPO at BSE and NSE)\"\n    },\n    {\n      \"kind\": \"sme\",\n      \"title\": \"SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)\"\n    }\n  ],\n  \"discovered_detail_count\": 0,\n  \"picked_detail_urls\": [],\n  \"detail_titles\": [],\n  \"challenges_detected\": false,\n  \"diagnostics_first_hrefs_per_dashboard\": [\n    {\n      \"kind\": \"mainboard\",\n      \"first_3_hrefs\": [\n        \"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\",\n        \"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\",\n        \"https://www.chittorgarh.net/images/home.png\"\n      ]\n    },\n    {\n      \"kind\": \"sme\",\n      \"first_3_hrefs\": [\n        \"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\",\n        \"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\",\n        \"https://www.chittorgarh.net/images/home.png\"\n      ]\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
     "freshness_or_update_frequency": "Daily (manual editor maintained)",
-    "status": "RED",
-    "recommended_action": "List + detail fetches failed. Skip Chittorgarh as ingestion candidate.",
+    "status": "YELLOW",
+    "recommended_action": "Dashboard(s) reachable but no detail URLs discovered — inspect chittorgarh-fields.json diagnostics block (first_hrefs) and refine the regex.",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-05-22T01:57:05.024Z",
-    "latency_ms": 595,
-    "notes": "list: static status=200 bytes=147030 | detail_urls_discovered=0 | detail_urls_picked=0 | challenges_detected=false"
+    "ran_at_utc": "2026-05-22T02:16:07.228Z",
+    "latency_ms": 1007,
+    "notes": "mainboard: static status=200 bytes=147030 | sme: static status=200 bytes=148963 | detail_urls_discovered=0 | detail_urls_picked=0 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -46,7 +48,7 @@
     "status": "RED",
     "recommended_action": "P-25 has not been run yet, or its HTML output is missing. Run P-25 first.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-05-22T01:57:05.024Z",
+    "ran_at_utc": "2026-05-22T02:16:07.228Z",
     "latency_ms": 0,
     "notes": "details_extracted=0 | avg_precision=0.000 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=0"
   },
@@ -89,8 +91,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-05-22T01:57:05.024Z",
-    "latency_ms": 4449,
+    "ran_at_utc": "2026-05-22T02:16:07.228Z",
+    "latency_ms": 4360,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37896 | rendered_len=39280 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -126,8 +128,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-05-22T01:57:05.024Z",
-    "latency_ms": 4873,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=221087 | rendered_len=266779 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-05-22T02:16:07.228Z",
+    "latency_ms": 5179,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=221226 | rendered_len=267113 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   }
 ]
