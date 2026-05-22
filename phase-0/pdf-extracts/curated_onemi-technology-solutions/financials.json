@@ -1,0 +1,503 @@
+{
+  "mode": "financials_feasibility",
+  "parser_version": "5A.2",
+  "page_count": 464,
+  "candidate_pages": [
+    {
+      "page": 8,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss\n(including other comprehensive income), the restated consolidated statement of changes in equity, the\nrestated consolidated statement of cash flow, for the nine months period ended December 31, 2025\nand the Fina"
+    },
+    {
+      "page": 16,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet of the Company’s lending partners\nLoans held on the balance sheet of the Company’s Subsidiary, Si Creva Capital Services Private\nOn-book loans\nLimited\nPL Personal loans\nPTC Pass-through certificates\nTAT Turnaround time\nThick f"
+    },
+    {
+      "page": 37,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet\nexposure. For further details, see “Management’s Discussion and Analysis of Financial Condition and Results of Operations -\nResults of Operations – Fiscal 2025 compared to Fiscal 2024 – Total Income – Revenue from Operations”"
+    },
+    {
+      "page": 41,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet and of risk adjusted value of off-\nbalance sheet items, as applicable. Accordingly, Our Subsidiary, Si Creva Capital Services Private Limited, is required to\nmaintain a capital adequacy ratio consisting of Tier - I and Tier -"
+    },
+    {
+      "page": 54,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss expense\nor credit for a period represents the movement in cumulative expense recognized as at the beginning and end of that period and\nis recognized in employee benefits expense. In addition to the effect on the"
+    },
+    {
+      "page": 59,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss (including other comprehensive income) and the restated consolidated statement of cash flows and\nrestated consolidated statement of changes in equity for the nine months ended December 31, 2025 and for the years"
+    },
+    {
+      "page": 68,
+      "heading_match": "restated statement of assets and liabilities",
+      "raw_snippet": "RESTATED STATEMENT OF ASSETS AND LIABILITIES\n(₹ in millions, unless otherwise stated)\nAs at and for the nine\nAs at March 31, As at March 31, As at March 31,\nParticulars months period ended\n2025 2024 2023\nDecember 31, 2025\nAssets\n(1) Non-cur"
+    },
+    {
+      "page": 70,
+      "heading_match": "restated statement of profit and loss",
+      "raw_snippet": "RESTATED STATEMENT OF PROFIT AND LOSS\n(₹ in millions, unless otherwise stated)\nParticulars As at and for the nine As at March As at March As at March\nmonths period ended 31, 2025 31, 2024 31, 2023\nDecember 31, 2025\nIncome\nRevenue from opera"
+    },
+    {
+      "page": 71,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposure 124.41 8.99 (1,342.96) 1,485.27\nFinancials assets written off 2,953.24 4,379.82 3,493.39 2,585.52\nFinance cost 2,057.45 1,644.02 686.39 559.02\nInterest Income (9,160.82) (9,943.06) (12,110.14) (6,749.03)\nGain on modif"
+    },
+    {
+      "page": 122,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet and of risk adjusted value of off balance sheet. For further details, see “Key Regulations and Policies -\nReserve Bank of India (Non-Banking Financial Company- Prudential Norms on Capital Adequacy) Directions, 2025 dated\nNovem"
+    },
+    {
+      "page": 127,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet for such Fiscal periods as required under the SEBI ICDR Regulations, the SEBI\nListing Regulations and any other applicable laws or regulations, clearly specifying the purposes for which the Net Proceeds\nhave been utilised, til"
+    },
+    {
+      "page": 134,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet strength of our\naccordance with Regulation 2(1)(hh) of the SEBI ICDR Company.\nRegulations\nCapital to Risk Weighted Capital to risk weighted assets ratio (“CRAR”) is computed by Used by our management to\nAsset Ratio (“CRAR”) di"
+    },
+    {
+      "page": 166,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheets can grow. With NBFCs required to maintain a\nminimum Capital Adequacy Ratio (CRAR) of 15%, the higher risk weight automatically raises the capital intensity of unsecured\nportfolios, reinforcing the RBI’s intent that rapid digi"
+    },
+    {
+      "page": 177,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet with\nconsistent AUM and net worth growth.\n171"
+    },
+    {
+      "page": 185,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet of our wholly-owned\nSubsidiary, Si Creva (an RBI regulated middle-layer NBFC), and off-book loans, i.e., loans on the balance sheet of our\nlending partners. We engage with our lending partners through three distinct arrangemen"
+    },
+    {
+      "page": 194,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet of our lending partners. In the co-lending model, loans originate jointly with our\nlending partners and a pre-agreed portion of each loan is retained on our Subsidiary, Si Creva’s balance sheet, while the\nremaining portion is"
+    },
+    {
+      "page": 208,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet of our Subsidiary, Si Creva, with all associated credit risk and income recognition. In the case of\nPTCs, we originate and continue to hold the loans on our balance sheet, without transferring the credit risk to external inves"
+    },
+    {
+      "page": 209,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet of our lending partners. In the co-lending model,\nloans are originated jointly with our lending partners and a pre-agreed portion of each loan is retained on our Subsidiary, Si\nCreva’s balance sheet, while the remaining portio"
+    },
+    {
+      "page": 216,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposures, structured products\nissued by them and other disclosures, as prescribed under the NBFC Financial Statements Directions ;\n(vi) capital to risk assets ratio (CRAR);\n(vii) exposure to real estate sector, both direct an"
+    },
+    {
+      "page": 217,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet and of risk adjusted value\nof off-balance sheet items. The Tier – I capital in respect of such NBFCs, at any point of time, shall not be less than 10%.\nNBFCs risk exposure to a single party or a single group of parties is also"
+    },
+    {
+      "page": 219,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet of the Applicable NBFCs.\nReserve Bank of India (Non-Banking Financial Companies – Asset Liability Management) Directions, 2025 dated\nNovember 28, 2025 (“NBFC ALM Directions”)\nNon-deposit taking NBFCs with an asset size of ₹1,0"
+    },
+    {
+      "page": 225,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet a single asset or a pool of assets to a special purpose entity as a part of a\nsecuritisation transaction.\nMaster Directions – Reserve Bank of India (Priority Sector Lending – Targets and Classification) Directions, 2025\n(“RBI"
+    },
+    {
+      "page": 235,
+      "heading_match": "cash flow statement",
+      "raw_snippet": "cash flow statements; (iii) monthly management\nreview detailing key operational performance indicators and monthly operational reports; and (iv) minutes of meetings of\nour Board and our Shareholders;\nD. Qualified majority and Investor major"
+    },
+    {
+      "page": 263,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss (including other comprehensive income), the Restated Consolidated Statement of Changes in Equity,\nthe Restated Consolidated Statement of Cash Flows for the nine months period ended on December 31, 2025 and for t"
+    },
+    {
+      "page": 265,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet as at April 01, 2022 included in these consolidated financial statements, are\nbased on the previously issued statutory financial statements prepared in accordance with the Companies (Accounting\nStandards) Rules, 2006 audited b"
+    },
+    {
+      "page": 266,
+      "heading_match": "restated financial information",
+      "raw_snippet": "Restated Financial information have been prepared after incorporating adjustments for the changes in accounting\npolicies, any material errors and regroupings/ reclassifications retrospectively for the years ended March 31, 2025,\nMarch 31, 2"
+    },
+    {
+      "page": 268,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss (including Other Comprehensive Income)\n(Rs. in million)\nPeriod ended Year ended Year ended Year ended\nParticulars Note\n31 December 2025 31 March 2025 31 March 2024 31 March 2023\nIncome\nRevenue from operations 23"
+    },
+    {
+      "page": 271,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposure 1 24.41 8.99 (1,342.96) 1,485.27\nFinancials assets written off 2,953.24 4,379.82 3,493.39 2,585.52\nFinance cost 2,057.45 1,644.02 686.39 559.02\nInterest Income (9,160.82) (9,943.06) (12,110.14) (6,749.03)\nGain on modi"
+    },
+    {
+      "page": 272,
+      "heading_match": "statement of cash flows",
+      "raw_snippet": "Statement of Cash Flows of the Company and for the -period ended 31 December 2025 and financial year ended March 31, 2025, March 31, 2024\nand March 31, 2023 and the Summary of Material Accounting Policies and other explanatory information ("
+    },
+    {
+      "page": 273,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss and the Statement of Changes in Equity are prepared and presented in the format prescribed\nin Division II of Schedule III to the Act. The Statement of Cash Flows has been prepared and presented as per the requir"
+    },
+    {
+      "page": 274,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of profit and loss.\n2.6 Historical cost convention\nThe Restated Consolidated Financial Information have been prepared under the historical cost convention on the accrual basis except for certain\nfinancial instruments and plan asse"
+    },
+    {
+      "page": 275,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss is recognised outside the Statement of Profit and Loss\n(either in other comprehensive income or in equity). Management periodically evaluates positions taken in the tax returns with respect to situations\nin whic"
+    },
+    {
+      "page": 276,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss.\n(ii) Subsequent measurement\nBased on the business model, the contractual characteristics of the financial assets and specific elections where appropriate, the Group classifies\nand measures financial assets in t"
+    },
+    {
+      "page": 277,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss.\nThe EIR method is a method of calculating the amortised cost of a financial instrument and of allocating interest over the relevant\nperiod. The EIR is the rate that exactly discounts estimated future cash flows"
+    },
+    {
+      "page": 278,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss.\n(ii) Subsequent measurement\nThe Company subsequently measures all financial liabilities at amortised cost using the EIR method as per Ind AS 109.\n(iii) Derecognition of financial liabilities\nA financial liabili"
+    },
+    {
+      "page": 279,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet date. Fair value is the price that would be received to sell an\nasset or paid to transfer a liability in an orderly transaction between market participants at the measurement date in the principle market or in\nabsence of the p"
+    },
+    {
+      "page": 280,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss in the year the asset is derecognised.\n2.15 Impairment of Non-Financial Asset\nNon-financial assets are tested for impairment whenever events or changes in circumstances indicate that the carrying amount may not"
+    },
+    {
+      "page": 281,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss, with a corresponding increase in equity.\n275"
+    },
+    {
+      "page": 282,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet cannot be derived from active markets, they are determined using a variety of valuation\ntechniques that include the use of valuation models. The inputs to these models are taken from observable markets where possible, but wher"
+    },
+    {
+      "page": 283,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss with a corresponding adjustment to equity.\nviii) Recognition of deferred tax assets\nThe Group has recognized deferred tax assets and concluded that the deferred tax assets will be recoverable using the estimated"
+    },
+    {
+      "page": 302,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss in subsequent periods.\nSpecial reserve under section 45 IC of RBI Act, 1934\nSpecial reserve is created as per the requirement of RBI at the rate of 20% of the profit after tax for the year. Transfer to special r"
+    },
+    {
+      "page": 306,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposure - - 428.57 304.17 295.18 1,638.14\nOther Payables - - - - 496.52 163.75 422.65 5 02.31\nProvision for IPO Expenses - - - - 33.88 - - -\nPayable on account of assignment - - - - 122.82 29.94 - -\nOptionally Convertible Red"
+    },
+    {
+      "page": 309,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposure 1271.51 6 19.22 740.49 1,940.27\nNet loss on foreign currency transaction 1.09 0.70 0.52 1.20\nLoss on sale of fixed assets 0.36 - - -\nOffice & miscellaneous expenses 72.6 38.67 7 6.35 109.51\nTotal 5,635.26 4,292.50 5,3"
+    },
+    {
+      "page": 310,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss differs from the tax charge that would apply if all profits had been charged at India corporate tax rate. A\nreconciliation between the tax expense and the accounting profit multiplied by India’s corporate tax ra"
+    },
+    {
+      "page": 313,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss as they accrue. The\nGroup makes Provident Fund, Employee State Insurance Scheme and Maharashtra Labour Welfare Fund contributions which are defined contribution plans for qualifying employees. Under\nthe Schemes,"
+    },
+    {
+      "page": 314,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of profit and loss:\n(Rs. in million)\nAs at 31 December As at As at As at\nParticulars\n2025 31 March 2025 31 March 2024 31 March 2023\nEmployee Benefit Expenses:\nCurrent service cost 13.23 1 5.22 11.66 7.84\nFinance cost 3.44 3.15 2.2"
+    },
+    {
+      "page": 315,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet is as under:\n(Rs. in million)\nAs at 31 December As at As at As at\nParticulars\n2025 31 March 2025 31 March 2024 31 March 2023\nPresent value of the obligation at the beginning of the period 33.58 1 9.59 - -\nCurrent service cost"
+    },
+    {
+      "page": 319,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet financial instruments approximated their fair value. These financial instruments include cash on hand, balances\nwith banks and other financial assets and liabilities that are considered financial instruments. Carrying values w"
+    },
+    {
+      "page": 331,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss as part of employee benefit expense are as follows:\n(Rs. in million)\nPeriod ended\nYear ended Year ended Year ended\nParticulars 31 December\n31 March 2025 31 March 2024 31 March 2023\n2025\nEmployee stock option sch"
+    },
+    {
+      "page": 334,
+      "heading_match": "restated financial information",
+      "raw_snippet": "restated financial information:\nMaterial Restatement Adjustments\nThe accounting policies applied in Restated financial information as at and for each of the year ended 31 March 2025, 31 March 2024 and 31 March 2023 are consistent with those"
+    },
+    {
+      "page": 346,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss.\nSimilarly, any realised gain or loss on sale of financial instruments measured at FVTPL and debt or equity instruments measured\nat FVOCI is recognised in net gain / loss on fair value changes. As at the reporti"
+    },
+    {
+      "page": 348,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss.\nFinancial Instrument\nRecognition of financial instruments\nFinancial assets and liabilities, with the exception of loans, debt securities, deposits and borrowings are initially recognised on\nthe trade date, i.e."
+    },
+    {
+      "page": 349,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss.\nThe EIR method is a method of calculating the amortised cost of a financial instrument and of allocating interest over the\nrelevant period. The EIR is the rate that exactly discounts estimated future cash flows"
+    },
+    {
+      "page": 350,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss. Generally, the transaction price is treated as fair value unless there are\ncircumstances which prove to the contrary in which case, the difference, if material, is charged to the Statement of Profit and\nLoss.\nS"
+    },
+    {
+      "page": 351,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss. Any gain or loss on de-recognition of financial liabilities is also\nrecognised in profit or loss. Undrawn loan commitments are not recorded in the balance sheet.\nDebt securities and other borrowed funds:\nAfter"
+    },
+    {
+      "page": 352,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet date. Fair value is the price that would be\nreceived to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement\ndate in the principle market or in absence of the p"
+    },
+    {
+      "page": 353,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss in the year the asset is derecognised.\nImpairment of Non-Financial Asset\nNon-financial assets are tested for impairment whenever events or changes in circumstances indicate that the carrying amount\nmay not be re"
+    },
+    {
+      "page": 354,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "Statement of Profit and Loss\nTotal Income\nOur total income comprises revenue from operations and other income.\nRevenue from operations\nOur revenue from operations comprises: (i) interest on loans; (ii) sourcing and servicing fees; (iii) mar"
+    },
+    {
+      "page": 355,
+      "heading_match": "statement of profit and loss",
+      "raw_snippet": "statement of profit and loss for the\nnine months ended December 31, 2025 and Fiscals 2025, 2024 and 2023, the components of which are expressed as a percentage\nof total income for such period/ years.\n349"
+    },
+    {
+      "page": 357,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposure of ₹1,271.51 million in the nine months ended December 31, 2025\ndriven by our off-book AUM.\nProfit before tax. For the various reasons discussed above, profit before tax was ₹2,664.42 million in the nine months ended"
+    },
+    {
+      "page": 358,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposure by 16.38% from ₹740.49 million in Fiscal 2024 to ₹619.22 million\nin Fiscal 2025. This decrease was primarily attributable to the improvement in the overall credit quality of our off-book\nloan portfolio.\n● decrease in"
+    },
+    {
+      "page": 360,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposure from ₹1,940.27 million in Fiscal\n2023 to ₹740.49 million in Fiscal 2024, primarily driven by our data-driven credit assessment and risk management processes\nleading to improvement in our asset quality.\nProfit before t"
+    },
+    {
+      "page": 363,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet exposure on account of increase in AUM, other payables and payable\non account of assignment. Our other financial liabilities were ₹497.86 million as of March 31, 2025, ₹717.83 million as of\nMarch 31, 2024 and ₹2,140.45 million"
+    },
+    {
+      "page": 364,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet\nexposure of ₹(1,342.96) million, financials assets written off amounting to ₹3,493.39 million and impairment of financial\ninstruments of ₹2,718.12 million. Our operating profit before working capital changes was ₹(3,427.75) mi"
+    },
+    {
+      "page": 368,
+      "heading_match": "balance sheet",
+      "raw_snippet": "Balance Sheet Arrangements\nWe do not have any off-balance sheet arrangements that we believe have or are reasonably likely to have a current or future\nmaterial effect on our financial condition, change in financial condition, revenues or ex"
+    },
+    {
+      "page": 426,
+      "heading_match": "balance sheet",
+      "raw_snippet": "balance sheet of our Company indicating the purpose for which\nsuch monies have been utilized; and (iii) details of all unutilized monies out of the Fresh Issue, if any shall be disclosed under\nan appropriate separate head in the balance she"
+    }
+  ],
+  "tables_detected": [
+    {
+      "page": 8,
+      "flavor": "stream",
+      "rows": 73,
+      "cols": 2,
+      "header_row_sample": [
+        "Term",
+        "Description"
+      ],
+      "confidence_signal": "medium"
+    },
+    {
+      "page": 16,
+      "flavor": "stream",
+      "rows": 33,
+      "cols": 2,
+      "header_row_sample": [
+        "Term",
+        "Description"
+      ],
+      "confidence_signal": "medium"
+    },
+    {
+      "page": 16,
+      "flavor": "stream",
+      "rows": 39,
+      "cols": 2,
+      "header_row_sample": [
+        "Thin file",
+        "Refers to the credit report of an individual or entity with minimal or no credit history"
+      ],
+      "confidence_signal": "medium"
+    },
+    {
+      "page": 37,
+      "flavor": "stream",
+      "rows": 13,
+      "cols": 1,
+      "header_row_sample": [
+        "be affected by a change over time in the mix of the types of loans we provide to our customers and a shift among our channels"
+      ],
+      "confidence_signal": "low"
+    },
+    {
+      "page": 41,
+      "flavor": "stream",
+      "rows": 60,
+      "cols": 6,
+      "header_row_sample": [
+        "additional operating costs and there can be no assurance that we will be successful in meeting the standards required by such",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "confidence_signal": "medium"
+    },
+    {
+      "page": 54,
+      "flavor": "stream",
+      "rows": 58,
+      "cols": 1,
+      "header_row_sample": [
+        "52.  The grant of options in future under any employee stock option schemes by our Company will result in a charge to our"
+      ],
+      "confidence_signal": "low"
+    },
+    {
+      "page": 59,
+      "flavor": "stream",
+      "rows": 59,
+      "cols": 1,
+      "header_row_sample": [
+        "The Competition Act aims to, among other things, prohibit all agreements and transactions which may have an AAEC in India."
+      ],
+      "confidence_signal": "low"
+    },
+    {
+      "page": 68,
+      "flavor": "stream",
+      "rows": 62,
+      "cols": 5,
+      "header_row_sample": [
+        "",
+        "As at and for the nine",
+        "",
+        "",
+        ""
+      ],
+      "confidence_signal": "medium"
+    },
+    {
+      "page": 70,
+      "flavor": "stream",
+      "rows": 32,
+      "cols": 5,
+      "header_row_sample": [
+        "Particulars",
+        "As at and for the nine",
+        "As at March",
+        "As at March",
+        "As at March"
+      ],
+      "confidence_signal": "medium"
+    },
+    {
+      "page": 71,
+      "flavor": "stream",
+      "rows": 44,
+      "cols": 5,
+      "header_row_sample": [
+        "Impairment of Financial Instruments",
+        "493.01",
+        "(1,111.48)",
+        "2,718.12",
+        "407.48"
+      ],
+      "confidence_signal": "medium"
+    },
+    {
+      "page": 71,
+      "flavor": "stream",
+      "rows": 63,
+      "cols": 5,
+      "header_row_sample": [
+        "Particulars",
+        "As at and for the",
+        "As at March 31,",
+        "As at March 31,",
+        "As at March 31,"
+      ],
+      "confidence_signal": "high"
+    },
+    {
+      "page": 122,
+      "flavor": "stream",
+      "rows": 15,
+      "cols": 1,
+      "header_row_sample": [
+        "P\nursuant to a resolution passed by the Board dated April 25, 2026 our Company has approved the utilisation of the Net Proceeds"
+      ],
+      "confidence_signal": "low"
+    },
+    {
+      "page": 122,
+      "flavor": "stream",
+      "rows": 20,
+      "cols": 3,
+      "header_row_sample": [
+        "accruals as required under the SEBI ICDR Regulations.",
+        "",
+        ""
+      ],
+      "confidence_signal": "medium"
+    }
+  ],
+  "overall_confidence": "high",
+  "ok": true,
+  "errors": [],
+  "ipo_id": "curated_onemi-technology-solutions",
+  "doc_url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
+  "doc_kind": "RHP",
+  "pdf_sha256": "4668b4e22fde35670ccc8405e185a0fe4cd532f84597eed339265c00a84de22f",
+  "parsed_at_utc": "2026-05-22T07:52:41.817Z"
+}

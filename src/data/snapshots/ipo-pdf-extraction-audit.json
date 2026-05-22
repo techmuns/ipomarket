@@ -1,24 +1,29 @@
 {
-  "generated_at_utc": "2026-05-22T00:59:06.480Z",
+  "generated_at_utc": "2026-05-22T07:52:41.817Z",
   "parser_version": "5A.2",
   "candidate_pool": {
     "total_ipo_documents_with_sebi_url": 7,
-    "total_discovery_candidates_merged": 19,
+    "total_discovery_candidates_merged": 21,
     "merged_counts": {
       "sebi_discovery": 19,
       "bse_sme_discovery": 0,
       "bse_mainboard_discovery": 0,
-      "curated_seed": 0
+      "curated_seed": 2
     },
     "pdf_1_cover_target": {
       "ipo_id": "incred-holdings",
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
       "reason": "pinned to InCred Holdings DRHP — validated end-to-end by P-09"
     },
-    "pdf_2_financial_target": null,
-    "financial_table_candidate_unavailable": true,
-    "full_document_candidate_unavailable": true,
-    "full_document_unavailable_reason": "all candidates < 200 pages",
+    "pdf_2_financial_target": {
+      "ipo_id": "curated_onemi-technology-solutions",
+      "url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
+      "page_count": 464,
+      "reason": "first Red Herring Prospectus candidate (origin=curated-seed) with page_count >= 200",
+      "doc_type": "Red Herring Prospectus"
+    },
+    "financial_table_candidate_unavailable": false,
+    "full_document_candidate_unavailable": false,
     "scanned": [
       {
         "ipo_id": "jindal-supreme-india",
@@ -196,48 +201,12 @@
         "origin": "sebi-discovery"
       },
       {
-        "ipo_id": "vegorama-punjabi-angithi",
-        "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Vegorama%20Punjabi%20Angithi%20Limited-RHP_p.pdf",
-        "page_count": null,
-        "verdict": "fetch_failed",
+        "ipo_id": "curated_onemi-technology-solutions",
+        "url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
+        "page_count": 464,
+        "verdict": "selected",
         "doc_type": "Red Herring Prospectus",
-        "origin": "ipo-documents"
-      },
-      {
-        "ipo_id": "discovery_smid11_caution-notice-in-the-matter-of-sai-prasad-english-hindi-amp",
-        "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2025/Caution Notice in the matter of Sai Prasad - English, Hindi &amp; Marathi_p.pdf",
-        "page_count": null,
-        "verdict": "fetch_failed",
-        "doc_type": "unknown",
-        "source_smid": 11,
-        "origin": "sebi-discovery"
-      },
-      {
-        "ipo_id": "discovery_smid11_1749647139924-pdf",
-        "url": "https://www.sebi.gov.in/sebi_data/faqfiles/jun-2025/1749647139924.pdf",
-        "page_count": 23,
-        "verdict": "too_short",
-        "doc_type": "unknown",
-        "source_smid": 11,
-        "origin": "sebi-discovery"
-      },
-      {
-        "ipo_id": "discovery_smid11_1667476171429-pdf",
-        "url": "https://www.sebi.gov.in/sebi_data/faqfiles/nov-2022/1667476171429.pdf",
-        "page_count": null,
-        "verdict": "fetch_failed",
-        "doc_type": "unknown",
-        "source_smid": 11,
-        "origin": "sebi-discovery"
-      },
-      {
-        "ipo_id": "discovery_smid11_1758091557500-pdf",
-        "url": "https://www.sebi.gov.in/sebi_data/faqfiles/sep-2025/1758091557500.pdf",
-        "page_count": 5,
-        "verdict": "too_short",
-        "doc_type": "unknown",
-        "source_smid": 11,
-        "origin": "sebi-discovery"
+        "origin": "curated-seed"
       }
     ]
   },
@@ -247,7 +216,7 @@
       "doc_kind": "DRHP",
       "pdf_sha256": "57ed9f25485f5467234399e16733858e0e73af10ca322fa72ecd85b7d3b3f8e0",
       "page_count": 13,
-      "parsed_at_utc": "2026-05-22T00:59:06.480Z",
+      "parsed_at_utc": "2026-05-22T07:50:50.084Z",
       "sections": {
         "cover": {
           "attempted": true,
@@ -264,14 +233,35 @@
       "overall_confidence": "medium",
       "manual_review_required": true,
       "errors": []
+    },
+    "curated_onemi-technology-solutions": {
+      "doc_url": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf",
+      "doc_kind": "RHP",
+      "pdf_sha256": "4668b4e22fde35670ccc8405e185a0fe4cd532f84597eed339265c00a84de22f",
+      "page_count": 464,
+      "parsed_at_utc": "2026-05-22T07:52:41.817Z",
+      "sections": {
+        "cover": {
+          "attempted": false,
+          "reason": "PDF #2 is financial feasibility target only"
+        },
+        "financials": {
+          "attempted": true,
+          "confidence": "high",
+          "candidate_pages": 66,
+          "tables_detected": 13,
+          "errors": []
+        }
+      },
+      "overall_confidence": "high",
+      "manual_review_required": false,
+      "errors": []
     }
   },
   "source_meta": {
     "source_state": "live",
-    "last_attempted_utc": "2026-05-22T00:59:06.480Z",
-    "errors": [
-      "full document candidate unavailable (all candidates < 200 pages): no candidate met page_count >= 200 after doc-type filter"
-    ],
-    "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=live"
+    "last_attempted_utc": "2026-05-22T07:52:41.817Z",
+    "errors": [],
+    "notes": "pdf_1=incred-holdings pdf_2=curated_onemi-technology-solutions source_state=live"
   }
 }

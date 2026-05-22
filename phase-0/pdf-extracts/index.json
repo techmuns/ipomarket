@@ -1,14 +1,19 @@
 {
-  "generated_at_utc": "2026-05-22T00:59:06.480Z",
+  "generated_at_utc": "2026-05-22T07:52:41.817Z",
   "parser_version": "5A.2",
   "pdf_1": {
     "ipo_id": "incred-holdings",
     "doc_kind": "DRHP",
     "overall_confidence": "medium"
   },
-  "pdf_2": null,
-  "financial_table_candidate_unavailable": true,
-  "full_document_candidate_unavailable": true,
+  "pdf_2": {
+    "ipo_id": "curated_onemi-technology-solutions",
+    "doc_kind": "RHP",
+    "overall_confidence": "high",
+    "doc_type": "Red Herring Prospectus"
+  },
+  "financial_table_candidate_unavailable": false,
+  "full_document_candidate_unavailable": false,
   "discovery_smid_counts": {
     "10": 19,
     "11": 6,
@@ -18,7 +23,7 @@
     "sebi_discovery": 19,
     "bse_sme_discovery": 0,
     "bse_mainboard_discovery": 0,
-    "curated_seed": 0
+    "curated_seed": 2
   },
-  "notes": "pdf_1=incred-holdings pdf_2=unavailable source_state=live"
+  "notes": "pdf_1=incred-holdings pdf_2=curated_onemi-technology-solutions source_state=live"
 }

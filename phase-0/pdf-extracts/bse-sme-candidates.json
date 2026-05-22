@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T00:57:53.174Z",
+  "generated_at_utc": "2026-05-22T07:49:38.922Z",
   "parser_version": "5A.2",
   "source": "bse-sme",
   "url": "https://www.bsesme.com/static/markets/publicissues/issues_drhp.aspx",
@@ -8,7 +8,7 @@
     "ok": false,
     "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.bsesme.com/static/markets/publicissues/issues_drhp.aspx\", waiting until \"networkidle\"\n",
     "note": "playwright navigation failed",
-    "latency_ms": 60093
+    "latency_ms": 60182
   },
   "candidates": []
 }
