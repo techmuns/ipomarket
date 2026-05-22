@@ -271,8 +271,38 @@ async function main(): Promise<void> {
   // Preflight 1: cover.json
   const cover = readJsonOrNull<CoverExtraction>(COVER_PATH);
   if (!cover) fail(`${COVER_PATH} missing — run scripts/pdf/extract/onemi-cover.ts first`);
+
+  // Phase 5B.2 post-CI fix: the extractor's `needs_manual_review` flag is
+  // field-scoped — it fires only when the brlms or registrar anchor text
+  // appears on the cover but the per-field extraction returned null
+  // (pdf-cover.py:456-470). It does NOT say anything about price_band /
+  // issue_size_cr / lot_size / face_value, which can still be HIGH
+  // confidence and safe to promote.
+  //
+  // The true global safety bar is `overall_confidence === 'low'`, which
+  // means < 3 of the 8 anchor labels matched — i.e. the PDF probably
+  // isn't a standard RHP cover at all. Below that bar, refuse everything.
+  //
+  // Above that bar, the existing per-field decide() does the right thing:
+  //   - null-valued fields (e.g. brlms / registrar when the flag fires) →
+  //     `skipped-none`, leaving the production value untouched.
+  //   - low-confidence fields → `skipped-low`.
+  //   - sanity failures → `skipped-sanity`.
+  //   - HIGH/MEDIUM with sanity pass + production-empty → `promoted`.
+  // This matches phase-5B2-onemi-cover-extraction-plan.md §6 verbatim.
+  if (cover.overall_confidence === 'low') {
+    fail(
+      `cover.json has overall_confidence='low' (< 3 of 8 anchors matched) — ` +
+        `the PDF may not be a standard RHP cover. Refusing to promote anything.`,
+    );
+  }
   if (cover.needs_manual_review === true) {
-    fail(`cover.json has needs_manual_review: true — refusing to promote. Status doc must explain.`);
+    log(
+      'preflight',
+      `cover.needs_manual_review=true — brlms/registrar anchor present but value extracted as null. ` +
+        `Per-field decide() will leave those production fields unchanged (skipped-none). ` +
+        `Other HIGH/MEDIUM fields will still be considered per planning §6.`,
+    );
   }
   log('preflight', `cover.json OK (overall=${cover.overall_confidence}, anchors=${cover.anchors_matched}/${cover.anchors_total})`);
 
