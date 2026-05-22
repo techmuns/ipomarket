@@ -1,0 +1,18 @@
+{
+  "captured_at_utc": "2026-05-22T01:51:58.342Z",
+  "list": {
+    "url": "https://www.chittorgarh.com/ipo/",
+    "mode": "failed",
+    "status": 403,
+    "bytes": 0,
+    "title": "",
+    "challenge_detected": true,
+    "challenge_reasons": [
+      "http-403"
+    ],
+    "error": "static GET returned 403 — hard stop per §Y.4 rule 7"
+  },
+  "discovered_detail_urls": [],
+  "picked_detail_urls": [],
+  "details": []
+}
