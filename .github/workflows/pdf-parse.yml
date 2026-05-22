@@ -64,6 +64,12 @@ jobs:
       - name: Run Phase 5A — PDF parser feasibility
         run: npm run pdf
 
+      - name: Run Phase 5B.2 — OnEMI cover extraction (BSE reachable from CI)
+        run: npx tsx scripts/pdf/extract/onemi-cover.ts
+
+      - name: Run Phase 5B.2 — OnEMI issue-term promoter (HIGH/MEDIUM only)
+        run: npx tsx scripts/pdf/promote/onemi-issue-terms.ts
+
       - name: TypeScript typecheck (blocks bad audit shape from main)
         run: npm run typecheck
 
