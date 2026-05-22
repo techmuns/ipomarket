@@ -211,22 +211,37 @@ export function normalizeFinancialsForIpo(
     const cells = t.cells ?? [];
     if (cells.length < 2) continue;
 
-    // Header row → periods. Per the camelot/pdfplumber pattern, the first
-    // row of `cells` IS the header row.
-    const headerRow = cells[0]!;
-    const periodIndexMap = parsePeriodsFromHeader(headerRow, t.page, allWarnings);
+    // Header rows → periods. Phase 5B tuning: SEBI restated statements often
+    // split a single logical period label across multiple visual rows
+    // (e.g. row 0 "As at March", row 1 "31, 2025"). parsePeriodsFromHeader
+    // now inspects up to MAX_HEADER_ROWS rows, concatenating per-column
+    // text, and returns the row count (`headerRowSpan`) it used. The body
+    // loop starts at that span so non-numeric "header continuation" rows
+    // are NOT misread as data rows.
+    const { periodIndexMap, headerRowSpan } = parsePeriodsFromHeader(
+      cells,
+      t.page,
+      allWarnings
+    );
     for (const [, p] of periodIndexMap) {
       const key = p.normalized;
-      // §6 rule 2 + 6: prefer higher-confidence period reading; first wins
-      // (tables are already sorted by confidence above).
-      if (!periodAccumulator.has(key)) {
+      // §6 rule 2 + 6: prefer higher-confidence period reading. Phase 5B
+      // tuning: explicitly compare confidence rather than first-wins, so a
+      // later high-confidence column reading overrides an earlier low-
+      // confidence one (happens when two header reconstructions normalize
+      // to the same FY via different paths).
+      const existing = periodAccumulator.get(key);
+      if (
+        !existing ||
+        confidencePriority(p.confidence) < confidencePriority(existing.confidence)
+      ) {
         periodAccumulator.set(key, p);
       }
     }
 
     // Body rows → label → key + numeric values per period.
     const keysSeenInTable = new Set<LineItemKey>();
-    for (let rowIdx = 1; rowIdx < cells.length; rowIdx++) {
+    for (let rowIdx = headerRowSpan; rowIdx < cells.length; rowIdx++) {
       const row = cells[rowIdx]!;
       if (row.length < 2) continue;
       const rawLabel = (row[0] ?? '').trim();
@@ -286,7 +301,13 @@ export function normalizeFinancialsForIpo(
       const labelConf: NormalizationConfidence = 'high'; // starts-with match → high
       const tableConf = (t.confidence_signal ?? 'low') as NormalizationConfidence;
       const overallConf = minConfidence([labelConf, ...valueConfidences, tableConf]);
+      // Phase 5B tuning: an empty values_by_period means the label matched
+      // but no period columns produced numeric values (period-header detection
+      // shortfall). This is a "shell-only" extraction — must be flagged for
+      // manual review rather than counted as a successful match.
+      const hasAnyValue = Object.keys(valuesByPeriod).length > 0;
       const manualReview =
+        !hasAnyValue ||
         overallConf === 'low' ||
         Object.values(valuesByPeriod).some((v) => v.confidence === 'low');
 
@@ -344,7 +365,15 @@ export function normalizeFinancialsForIpo(
   const periodsOrdered = orderPeriodsNewestFirst([...periodAccumulator.values()]);
 
   // Roll up §6 rule 11.
-  const anyRequiredMissing = REQUIRED_KEYS.some((k) => !lineItemByKey.has(k));
+  // Phase 5B tuning: a required key counts as "missing" if its shell isn't
+  // present OR if its shell exists but values_by_period is empty (period
+  // detection failed). The previous version only checked shell existence,
+  // which let header-parse failures pass the rollup with empty values.
+  const anyRequiredMissing = REQUIRED_KEYS.some((k) => {
+    const item = lineItemByKey.get(k);
+    if (!item) return true;
+    return Object.keys(item.values_by_period).length === 0;
+  });
   const anyLowPeriod = periodsOrdered.some((p) => p.confidence === 'low');
   const anyLowItem = [...lineItemByKey.values()].some(
     (i) =>
@@ -621,7 +650,9 @@ function periodFromHeaderCell(
   if (m) return { normalized: indianFyLabelForFiscalYearEnd(parseInt(m[1]!, 10)), confidence: 'high' };
 
   // "nine months ended Mon DD, YYYY" → 9M FY (year-of-fiscal-end-after-this-date)
-  m = s.match(/nine\s+months?\s+ended\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+\d{1,2}\s*,?\s*(\d{4})/i);
+  // Phase 5B tuning: allow one optional word between "months" and "ended"
+  // (handles SEBI-restated headers like "nine months period ended Dec 31").
+  m = s.match(/nine\s+months?(?:\s+\w+)?\s+ended\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+\d{1,2}\s*,?\s*(\d{4})/i);
   if (m) {
     const month = MONTH_BY_NAME[m[1]!.toLowerCase()] ?? 0;
     const year = parseInt(m[2]!, 10);
@@ -631,8 +662,8 @@ function periodFromHeaderCell(
     return { normalized: `9M ${indianFyLabelForFiscalYearEnd(fyEnd)}`, confidence: 'high' };
   }
 
-  // "six months ended Mon DD, YYYY" → H1 FY ...
-  m = s.match(/six\s+months?\s+ended\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+\d{1,2}\s*,?\s*(\d{4})/i);
+  // "six months ended Mon DD, YYYY" → H1 FY ... (same optional-word tolerance)
+  m = s.match(/six\s+months?(?:\s+\w+)?\s+ended\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+\d{1,2}\s*,?\s*(\d{4})/i);
   if (m) {
     const month = MONTH_BY_NAME[m[1]!.toLowerCase()] ?? 0;
     const year = parseInt(m[2]!, 10);
@@ -664,31 +695,88 @@ function periodFromHeaderCell(
   return null;
 }
 
-function parsePeriodsFromHeader(
-  headerRow: ReadonlyArray<string>,
-  page: number,
-  warnings: string[]
+// Phase 5B tuning — multi-row header reconstruction.
+//
+// SEBI restated statements often split a single logical period label across
+// multiple visual rows. Example from OnEMI's page-70 Restated P&L (real CI
+// extraction):
+//
+//   row 0: ['Particulars', 'As at and for the nine', 'As at March', 'As at March', 'As at March']
+//   row 1: ['',            'months period ended',     '31, 2025',    '31, 2024',    '31, 2023']
+//   row 2: ['',            'December 31, 2025',       '',            '',            '']
+//   row 3: ['Income',      '',                        '',            '',            '']
+//   row 4: ['Revenue from operations', '15,599.00', '13,374.65', '16,744.46', '9,844.57']
+//
+// A single-row header parse fails: row 0 col 1 = "As at and for the nine"
+// has no date pattern. The fix iterates span ∈ {1..MAX_HEADER_ROWS},
+// concatenates non-empty cells per column across rows 0..span-1, and applies
+// the existing periodFromHeaderCell() regex to each reconstructed label.
+// Smallest span that yields the maximum match count wins; body loop starts
+// at that span.
+const MAX_HEADER_ROWS = 5;
+
+interface HeaderParseResult {
+  periodIndexMap: Map<number, PeriodDetected>;
+  headerRowSpan: number;
+}
+
+function buildPeriodMapForSpan(
+  cells: ReadonlyArray<ReadonlyArray<string>>,
+  span: number,
+  page: number
 ): Map<number, PeriodDetected> {
-  const out = new Map<number, PeriodDetected>();
-  for (let i = 0; i < headerRow.length; i++) {
-    const raw = (headerRow[i] ?? '').trim();
-    if (!raw) continue;
-    const p = periodFromHeaderCell(raw);
+  const map = new Map<number, PeriodDetected>();
+  const slice = cells.slice(0, span);
+  const numCols = Math.max(0, ...slice.map((r) => r.length));
+  for (let col = 0; col < numCols; col++) {
+    const concatenated = slice
+      .map((r) => (r[col] ?? '').trim())
+      .filter((s) => s.length > 0)
+      .join(' ');
+    if (!concatenated) continue;
+    const p = periodFromHeaderCell(concatenated);
     if (p) {
-      out.set(i, {
-        label_raw: raw.slice(0, 200),
+      map.set(col, {
+        label_raw: concatenated.slice(0, 200),
         normalized: p.normalized,
         source_page: page,
         confidence: p.confidence,
       });
     }
   }
-  if (out.size === 0 && headerRow.some((c) => (c ?? '').trim().length > 0)) {
+  return map;
+}
+
+function parsePeriodsFromHeader(
+  cells: ReadonlyArray<ReadonlyArray<string>>,
+  page: number,
+  warnings: string[]
+): HeaderParseResult {
+  if (cells.length === 0) {
+    return { periodIndexMap: new Map(), headerRowSpan: 1 };
+  }
+  const maxSpan = Math.min(MAX_HEADER_ROWS, cells.length);
+  // Try span = 1 first; only switch to a larger span if it strictly improves
+  // the match count. This preserves the original single-row-header behaviour
+  // for tables where one row is enough.
+  let bestSpan = 1;
+  let bestMap = buildPeriodMapForSpan(cells, 1, page);
+  for (let span = 2; span <= maxSpan; span++) {
+    const map = buildPeriodMapForSpan(cells, span, page);
+    if (map.size > bestMap.size) {
+      bestMap = map;
+      bestSpan = span;
+    }
+  }
+  if (
+    bestMap.size === 0 &&
+    cells[0]!.some((c) => (c ?? '').trim().length > 0)
+  ) {
     warnings.push(
-      `page=${page}: header row had non-empty cells but no period pattern matched any cell`
+      `page=${page}: tried header spans 1..${maxSpan} but no period pattern matched any reconstructed column header`
     );
   }
-  return out;
+  return { periodIndexMap: bestMap, headerRowSpan: bestSpan };
 }
 
 function orderPeriodsNewestFirst(periods: PeriodDetected[]): PeriodDetected[] {
