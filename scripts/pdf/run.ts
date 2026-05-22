@@ -36,6 +36,7 @@ import { discoverSebiCandidates, classifyDocType } from './discover.ts';
 import { discoverBseSme } from './discover/bse-sme.ts';
 import { discoverBseMainboard } from './discover/bse-mainboard.ts';
 import { loadCuratedSeed } from './discover/curated-seed.ts';
+import { normalizeFinancialsForIpo } from './normalize/financials.ts';
 import {
   log,
   warn,
@@ -50,11 +51,13 @@ import {
   type IndexSummary,
   type PdfConfidence,
   type PdfExtractionAudit,
+  type PdfNormalizationAuditBlock,
   type PdfSourceState,
   type SebiDiscoveryFile,
 } from './lib/types.ts';
+import type { NormalizationRunSummary } from './normalize/types.ts';
 
-const PARSER_VERSION = '5A.2';
+const PARSER_VERSION = '5B.0';
 const SEBI_HOST = 'www.sebi.gov.in';
 const SEBI_PATH_PREFIX = '/sebi_data/';
 const FINANCIAL_PAGE_MIN = 200;
@@ -688,6 +691,10 @@ async function main(): Promise<number> {
   const errors: string[] = [];
   let anyLive = false;
   let anyFailed = false;
+  // Phase 5B — populated when the normalizer ran for the selected PDF #2.
+  // The only production-adjacent snapshot mutation Phase 5B introduces is the
+  // additive `normalization` block stamped into the audit below.
+  let normalizationSummary: NormalizationRunSummary | null = null;
 
   // ── PDF #1 — cover-page extraction (InCred) ──
   if (pdf1Candidate) {
@@ -873,6 +880,62 @@ async function main(): Promise<number> {
           manual_review_required: conf !== 'high',
           errors: fin.errors ?? [],
         };
+
+        // Phase 5B — call the financial normalizer for the selected PDF #2.
+        // Scope: ONLY when the candidate is from the curated seed AND
+        // tables_with_cells[] was emitted by the extended pdf-financials.py.
+        // The single permitted "production-adjacent" snapshot mutation is the
+        // additive `normalization` block on the audit JSON — see §8.2 of the
+        // Phase 5B plan. No production snapshots are touched.
+        const fromCuratedSeed = pdf2Selected.candidate.origin === 'curated-seed';
+        const hasCells = Array.isArray(fin.tables_with_cells) && fin.tables_with_cells.length > 0;
+        if (fromCuratedSeed && hasCells) {
+          const curatedRow = curated?.entries.find(
+            (e) => `curated_${e.ipo_id}` === ipoId
+          );
+          const companyName = curatedRow?.company_name ?? curatedRow?.ipo_id ?? ipoId;
+          const stagingOut = join(EXTRACT_OUT_DIR, ipoId, 'normalized-financials.json');
+          try {
+            normalizationSummary = normalizeFinancialsForIpo({
+              ipoId,
+              companyName,
+              sourcePdfUrl: url,
+              sourcePdfSha256: pdf2Selected.sha256,
+              sourceDocKind: pdf2Selected.candidate.doc_kind,
+              financialsJsonPath: outJson,
+              outPath: stagingOut,
+              parserVersion: PARSER_VERSION,
+            });
+            log(
+              'normalize',
+              `[${ipoId}] high=${normalizationSummary.line_items_high.length} ` +
+                `medium=${normalizationSummary.line_items_medium.length} ` +
+                `low=${normalizationSummary.line_items_low.length} ` +
+                `missing=${normalizationSummary.line_items_missing.length} ` +
+                `manual_review=${normalizationSummary.manual_review_required}`
+            );
+          } catch (e: unknown) {
+            const msg = e instanceof Error ? e.message : String(e);
+            warn('normalize', `[${ipoId}] normalizer threw: ${msg}`);
+            normalizationSummary = {
+              ipo_id: ipoId,
+              staging_path: null,
+              written: false,
+              line_items_high: [],
+              line_items_medium: [],
+              line_items_low: [],
+              line_items_missing: [],
+              manual_review_required: true,
+              warnings: [],
+              errors: [`normalizer threw: ${msg}`],
+            };
+          }
+        } else {
+          log(
+            'normalize',
+            `[${ipoId}] skipped — fromCuratedSeed=${fromCuratedSeed} hasCells=${hasCells}`
+          );
+        }
       }
     }
   } else if (pdf1Candidate) {
@@ -892,6 +955,23 @@ async function main(): Promise<number> {
   else if (anyLive) sourceState = 'live';
   else if (anyFailed) sourceState = 'failed';
 
+  // Phase 5B — additive normalization audit block. Present only when the
+  // normalizer ran. `production_snapshot_mutated` is always false in 5B.0;
+  // Phase 5B.1 (production promotion) is gated separately.
+  const normalizationBlock: PdfNormalizationAuditBlock | undefined = normalizationSummary
+    ? {
+        attempted_for: [normalizationSummary.ipo_id],
+        staging_path: normalizationSummary.staging_path,
+        line_items_extracted_high_confidence: normalizationSummary.line_items_high,
+        line_items_extracted_medium_confidence: normalizationSummary.line_items_medium,
+        line_items_rejected_low_confidence: normalizationSummary.line_items_low,
+        line_items_missing: normalizationSummary.line_items_missing,
+        manual_review_required: normalizationSummary.manual_review_required,
+        production_snapshot_mutated: false,
+        warnings: [...normalizationSummary.warnings, ...normalizationSummary.errors],
+      }
+    : undefined;
+
   const audit: PdfExtractionAudit = {
     generated_at_utc: nowIso(),
     parser_version: PARSER_VERSION,
@@ -904,8 +984,12 @@ async function main(): Promise<number> {
       notes:
         `pdf_1=${candidatePool.pdf_1_cover_target?.ipo_id ?? 'none'}` +
         ` pdf_2=${candidatePool.pdf_2_financial_target?.ipo_id ?? 'unavailable'}` +
-        ` source_state=${sourceState}`,
+        ` source_state=${sourceState}` +
+        (normalizationBlock
+          ? ` normalization=${normalizationSummary!.line_items_high.length}h/${normalizationSummary!.line_items_medium.length}m/${normalizationSummary!.line_items_low.length}l/${normalizationSummary!.line_items_missing.length}miss`
+          : ''),
     },
+    ...(normalizationBlock ? { normalization: normalizationBlock } : {}),
   };
   safeWriteJson(AUDIT_PATH, audit);
 

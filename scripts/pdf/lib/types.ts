@@ -273,6 +273,22 @@ export interface FinancialsTableDetected {
   confidence_signal: PdfConfidence;
 }
 
+// Phase 5B — bounded cell data emitted by the extended pdf-financials.py for
+// tables qualifying under §8.1 (confidence_signal ∈ {high, medium} AND on a
+// candidate page). Each table is capped at 100 rows × 8 cols × 200 chars/cell;
+// total cells payload per IPO is capped at 200 KB. The cap is enforced AT THE
+// PYTHON BOUNDARY — see phase-5B-financial-normalization-plan.md §8.1.
+export interface FinancialsTableWithCells {
+  table_index: number;
+  page: number;
+  flavor: 'lattice' | 'stream' | 'pdfplumber';
+  confidence_signal: PdfConfidence;
+  scope_hint: 'Standalone' | 'Consolidated' | null;
+  form_hint: string | null;
+  page_text_window: string;
+  cells: string[][];
+}
+
 export interface FinancialsExtraction {
   ipo_id: string;
   doc_url: string;
@@ -283,6 +299,11 @@ export interface FinancialsExtraction {
   parser_version: string;
   candidate_pages: FinancialsCandidatePage[];
   tables_detected: FinancialsTableDetected[];
+  // Phase 5B additive: present when the Python extractor (version 5B.0+)
+  // emitted bounded cell data for qualifying tables. Older Phase 5A.x
+  // extractor outputs MAY lack this key — readers must tolerate undefined.
+  tables_with_cells?: FinancialsTableWithCells[];
+  tables_with_cells_truncation_warnings?: string[];
   overall_confidence: PdfConfidence;
   ok: boolean;
   errors: string[];
@@ -324,6 +345,22 @@ export interface IpoPdfAuditRow {
   errors: string[];
 }
 
+// Phase 5B — additive `normalization` block. The ONLY production-adjacent
+// snapshot mutation Phase 5B is allowed to introduce on
+// `src/data/snapshots/ipo-pdf-extraction-audit.json` per §8.2 of the plan.
+// Reference-only mirror lives in `src/types/pdf-audit.ts`.
+export interface PdfNormalizationAuditBlock {
+  attempted_for: string[];
+  staging_path: string | null;
+  line_items_extracted_high_confidence: string[];
+  line_items_extracted_medium_confidence: string[];
+  line_items_rejected_low_confidence: string[];
+  line_items_missing: string[];
+  manual_review_required: boolean;
+  production_snapshot_mutated: false;
+  warnings: string[];
+}
+
 export interface PdfExtractionAudit {
   generated_at_utc: string;
   parser_version: string;
@@ -335,6 +372,9 @@ export interface PdfExtractionAudit {
     errors: string[];
     notes: string;
   };
+  // Phase 5B additive: present when the normalizer ran. Older Phase 5A.x
+  // audits MAY lack this key — readers must tolerate undefined.
+  normalization?: PdfNormalizationAuditBlock;
 }
 
 export interface IndexSummary {

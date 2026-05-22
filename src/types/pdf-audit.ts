@@ -113,6 +113,21 @@ export interface IpoPdfAuditRow {
   errors: string[];
 }
 
+// Phase 5B — additive mirror of the normalization audit block. Reference-only
+// per §W.6.1; not consumed by UI in this phase. Matches
+// `PdfNormalizationAuditBlock` in scripts/pdf/lib/types.ts.
+export interface PdfNormalizationAuditBlock {
+  attempted_for: string[];
+  staging_path: string | null;
+  line_items_extracted_high_confidence: string[];
+  line_items_extracted_medium_confidence: string[];
+  line_items_rejected_low_confidence: string[];
+  line_items_missing: string[];
+  manual_review_required: boolean;
+  production_snapshot_mutated: false;
+  warnings: string[];
+}
+
 export interface PdfExtractionAudit {
   generated_at_utc: string;
   parser_version: string;
@@ -124,4 +139,5 @@ export interface PdfExtractionAudit {
     errors: string[];
     notes: string;
   };
+  normalization?: PdfNormalizationAuditBlock;
 }
