@@ -1,7 +1,7 @@
 {
-  "captured_at_utc": "2026-05-22T22:42:25.654Z",
+  "captured_at_utc": "2026-05-23T09:29:07.587Z",
   "sector_reachable": {
-    "listed_equity": true,
+    "listed_equity": false,
     "pre_ipo": false
   },
   "manual_map_needed": true,
@@ -9,82 +9,15 @@
     {
       "source": "NSE equity quote",
       "url": "https://www.nseindia.com/api/quote-equity?symbol=RELIANCE",
-      "ok": true,
+      "ok": false,
       "status": 200,
       "sample_keys": [
-        "info",
-        "metadata",
-        "securityInfo",
-        "sddDetails",
-        "currentMarketType",
-        "priceInfo",
-        "industryInfo",
-        "preOpenMarket"
+        "data",
+        "msg"
       ],
-      "sector_fields_found": [
-        "info.industry",
-        "metadata.industry",
-        "metadata.pdSectorPe",
-        "metadata.pdSectorInd",
-        "metadata.pdSectorIndAll",
-        "industryInfo",
-        "industryInfo.macro",
-        "industryInfo.sector",
-        "industryInfo.industry",
-        "industryInfo.basicIndustry"
-      ],
-      "sector_field_values": {
-        "info.industry": "Refineries & Marketing",
-        "metadata.industry": "Refineries & Marketing",
-        "metadata.pdSectorPe": 19.1,
-        "metadata.pdSectorInd": "NIFTY 50",
-        "metadata.pdSectorIndAll": [
-          "NIFTY 50",
-          "NIFTY500 MULTICAP INFRASTRUCTURE 50:30:20",
-          "NIFTY LARGEMIDCAP 250",
-          "NIFTY100 ESG",
-          "NIFTY100 ENHANCED ESG",
-          "NIFTY50 EQUAL WEIGHT",
-          "NIFTY 100",
-          "NIFTY 200",
-          "NIFTY 500",
-          "NIFTY COMMODITIES",
-          "NIFTY EV & NEW AGE AUTOMOTIVE",
-          "NIFTY ENERGY",
-          "NIFTY INDIA FPI 150",
-          "NIFTY INDIA MANUFACTURING",
-          "NIFTY INDIA SELECT 5 CORPORATE GROUPS (MAATR)",
-          "NIFTY INFRASTRUCTURE",
-          "NIFTY LOW VOLATILITY 50",
-          "NIFTY MOBILITY",
-          "NIFTY OIL & GAS",
-          "NIFTY TOP 10 EQUAL WEIGHT",
-          "NIFTY TOP 15 EQUAL WEIGHT",
-          "NIFTY TOP 20 EQUAL WEIGHT",
-          "NIFTY TOTAL MARKET",
-          "NIFTY100 ESG SECTOR LEADERS",
-          "NIFTY100 EQUAL WEIGHT",
-          "NIFTY100 LIQUID 15",
-          "NIFTY100 LOW VOLATILITY 30",
-          "NIFTY500 EQUAL WEIGHT",
-          "NIFTY500 LARGEMIDSMALL EQUAL-CAP WEIGHTED",
-          "NIFTY500 MULTICAP 50:25:25",
-          "NIFTY500 MULTICAP INDIA MANUFACTURING 50:30:20",
-          "NIFTY ALPHA LOW-VOLATILITY 30",
-          "NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30"
-        ],
-        "industryInfo": {
-          "macro": "Energy",
-          "sector": "Oil Gas & Consumable Fuels",
-          "industry": "Petroleum Products",
-          "basicIndustry": "Refineries & Marketing"
-        },
-        "industryInfo.macro": "Energy",
-        "industryInfo.sector": "Oil Gas & Consumable Fuels",
-        "industryInfo.industry": "Petroleum Products",
-        "industryInfo.basicIndustry": "Refineries & Marketing"
-      },
-      "notes": "top-level keys: info, metadata, securityInfo, sddDetails, currentMarketType, priceInfo, industryInfo, preOpenMarket; sector fields: info.industry, metadata.industry, metadata.pdSectorPe, metadata.pdSectorInd, metadata.pdSectorIndAll, industryInfo, industryInfo.macro, industryInfo.sector, industryInfo.industry, industryInfo.basicIndustry"
+      "sector_fields_found": [],
+      "sector_field_values": {},
+      "notes": "top-level keys: data, msg; sector fields: (none)"
     },
     {
       "source": "NSE IPO list",

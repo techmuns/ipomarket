@@ -1,12 +1,12 @@
 {
-  "captured_at_utc": "2026-05-22T22:42:25.654Z",
+  "captured_at_utc": "2026-05-23T09:29:07.587Z",
   "url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "final_url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "status": 200,
   "title": "Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotment | Upstox",
   "render_mode": "server-rendered",
   "raw_html_length": 224411,
-  "rendered_html_length": 264526,
+  "rendered_html_length": 266856,
   "challenge_detected": false,
   "challenge_reasons": [],
   "headings": [
@@ -57,7 +57,7 @@
           "5.28X"
         ],
         [
-          "22-May-26 (Today)",
+          "22-May-26",
           "26.46X",
           "192.76X",
           "27.41X",

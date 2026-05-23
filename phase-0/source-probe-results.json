@@ -30,8 +30,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable but 0 rows in current snapshot. category=ipo appears to be mainboard-only; if today's only IPOs are SME, P-05 should satisfy the IPO-list-source gate.",
     "fallback_source": "P-05 (SME), P-06 (BSE)",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 20327,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 20311,
     "notes": "source reachable but no rows in current snapshot."
   },
   {
@@ -62,8 +62,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable but 0 upcoming rows in current snapshot. category=ipo is mainboard-only; SME pipeline lives in P-05.",
     "fallback_source": "P-05 (SME), P-08b",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 371,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 81,
     "notes": "source reachable but no rows in current snapshot."
   },
   {
@@ -93,8 +93,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable but 0 rows in current snapshot. category=ipo is mainboard-only; recently-listed SMEs require P-05.",
     "fallback_source": "P-05 (SME), P-15",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 42,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 59,
     "notes": "source reachable but no rows in current snapshot."
   },
   {
@@ -127,8 +127,8 @@
     "status": "YELLOW",
     "recommended_action": "No currently open IPO discovered; re-run during an active issue window. Endpoint not validated this run.",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 35,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 45,
     "notes": "Active candidate symbol: (none currently open)"
   },
   {
@@ -156,8 +156,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 41248,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 41217,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -185,8 +185,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 2046,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 2188,
     "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46183 (pdfs=19)"
   },
   {
@@ -213,8 +213,8 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 339,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 327,
     "notes": "static ok: tbody_rows=2, bytes=25096"
   },
   {
@@ -242,8 +242,8 @@
     "status": "GREEN",
     "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 4111,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 3626,
     "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf; bytes=728221; page_count=13; pdf-parse=ok"
   },
   {
@@ -270,8 +270,8 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 11126,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 10993,
     "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
@@ -298,8 +298,8 @@
     "status": "GREEN",
     "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 80578,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 81564,
     "notes": "[nse:RELIANCE] NSE non-200 (status=0, err=This operation was aborted) ; [nse:TCS] NSE non-200 (status=0, err=This operation was aborted) ; [bse:RELIANCE] BSE rows=26454, fields=1"
   },
   {
@@ -316,17 +316,11 @@
     "status_code": 200,
     "response_type": "JSON",
     "fields_found": [
-      "info",
-      "metadata",
-      "securityInfo",
-      "sddDetails",
-      "currentMarketType",
-      "priceInfo",
-      "industryInfo",
-      "preOpenMarket"
+      "data",
+      "msg"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"info\": {\n    \"symbol\": \"RELIANCE\",\n    \"companyName\": \"Reliance Industries Limited\",\n    \"industry\": \"Refineries & Marketing\",\n    \"activeSeries\": [\n      \"EQ\",\n      \"T0\"\n    ],\n    \"debtSeries\": [],\n    \"isFNOSec\": true,\n    \"isCASec\": false,\n    \"isSLBSec\": true,\n    \"isDebtSec\": false,\n    \"isSuspended\": false,\n    \"tempSuspendedSeries\": [],\n    \"isETFSec\": false,\n    \"isDelisted\": false,\n    \"isin\": \"INE002A01018\",\n    \"slb_isin\": \"INE002A01018\",\n    \"listingDate\": \"1995-11-29\",\n    \"isMunicipalBond\": false,\n    \"isHybridSymbol\": false,\n    \"segment\": \"EQUITY\",\n    \"isTop10\": false,\n    \"identifier\": \"RELIANCEEQN\"\n  },\n  \"metadata\": {\n    \"series\": \"EQ\",\n    \"symbol\": \"RELIANCE\",\n    \"isin\": \"INE002A01018\",\n    \"status\": \"Listed\",\n    \"listingDate\": \"29-Nov-1995\",\n    \"industry\":…[truncated, total 4643 chars]",
+    "sample_record": "{\n  \"data\": [],\n  \"msg\": \"no data found\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -334,9 +328,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for current price.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 317,
-    "notes": "Top-level keys: info, metadata, securityInfo, sddDetails, currentMarketType, priceInfo, industryInfo, preOpenMarket"
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 352,
+    "notes": "Top-level keys: data, msg"
   },
   {
     "probe_id": "P-16",
@@ -362,8 +356,8 @@
     "status": "RED",
     "recommended_action": "Maintain a manual override file for IPOs whose symbol drifts post-listing.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 20387,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 20493,
     "notes": "total=0, validSymbolPattern=0, rate=0%"
   },
   {
@@ -389,8 +383,8 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 631,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 598,
     "notes": "<tr> count: 0, total bytes: 12565"
   },
   {
@@ -416,8 +410,8 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 10487,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 10485,
     "notes": "Network error: fetch failed"
   },
   {
@@ -443,8 +437,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 242,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 383,
     "notes": "Bid-link markers found: 0, bytes: 12565"
   },
   {
@@ -471,8 +465,8 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 305,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 391,
     "notes": "Issues=0, registrars resolved by name match=0"
   },
   {
@@ -497,8 +491,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 506,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 1190,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -523,8 +517,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 229,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 162,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -549,8 +543,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 4998,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 5466,
     "notes": "status=200"
   },
   {
@@ -575,8 +569,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 1150,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 1114,
     "notes": "status=200"
   },
   {
@@ -599,8 +593,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 863,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 638,
     "notes": "No PDF URL discovered."
   },
   {
@@ -623,8 +617,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 204,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 233,
     "notes": "No PDF URL discovered."
   },
   {
@@ -642,7 +636,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium plugin v27.6 (Yoast SEO v27.6) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n\t<title>IPO GMP Today, Live IPO Grey Market Premiu…[truncated, total 815276 chars]",
+    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium plugin v27.6 (Yoast SEO v27.6) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n\t<title>IPO GMP Today, Live IPO Grey Market Premiu…[truncated, total 815669 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -650,9 +644,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 1850,
-    "notes": "<tr> count: 289, bytes=815276"
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 1966,
+    "notes": "<tr> count: 289, bytes=815669"
   },
   {
     "probe_id": "P-20",
@@ -677,8 +671,8 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 1619,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 1109,
     "notes": "<tr> count: 0, bytes=123881"
   },
   {
@@ -696,7 +690,7 @@
     "fields_missing": [
       "discussion markers"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-I6w3XcLZa32mmuJMcREUwD&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5747 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-YV6COO707C96VYO3DXGlH9&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5726 chars]",
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -704,8 +698,8 @@
     "status": "RED",
     "recommended_action": "Skip.",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 55,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 94,
     "notes": "Non-200. status=403"
   },
   {
@@ -723,7 +717,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\" class=\"inter_a869fe2d-module__Nl2jCG__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/6b05e70c1049fdd7.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/fe81322e39413244.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/635245f93e41a18e.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next…[truncated, total 135698 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" class=\"inter_a869fe2d-module__Nl2jCG__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/6b05e70c1049fdd7.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/fe81322e39413244.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/635245f93e41a18e.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next…[truncated, total 136562 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -731,9 +725,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 308,
-    "notes": "<tr> count: 2, bytes=135698"
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 386,
+    "notes": "<tr> count: 2, bytes=136562"
   },
   {
     "probe_id": "P-23a",
@@ -774,8 +768,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 4089,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 5553,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37896 | rendered_len=39280 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -811,9 +805,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 4588,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=224411 | rendered_len=265638 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 4576,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=224411 | rendered_len=265723 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-24",
@@ -826,33 +820,22 @@
       "X-Requested-With (NSE)"
     ],
     "status_code": 200,
-    "response_type": "JSON",
-    "fields_found": [
-      "nse-equity:info.industry",
-      "nse-equity:metadata.industry",
-      "nse-equity:metadata.pdSectorPe",
-      "nse-equity:metadata.pdSectorInd",
-      "nse-equity:metadata.pdSectorIndAll",
-      "nse-equity:industryInfo",
-      "nse-equity:industryInfo.macro",
-      "nse-equity:industryInfo.sector",
-      "nse-equity:industryInfo.industry",
-      "nse-equity:industryInfo.basicIndustry"
-    ],
+    "response_type": "EMPTY",
+    "fields_found": [],
     "fields_missing": [
       "pre-IPO sector / industry per-IPO"
     ],
-    "sample_record": "{\n  \"sector_reachable\": {\n    \"listed_equity\": true,\n    \"pre_ipo\": false\n  },\n  \"manual_map_needed\": true,\n  \"nse_equity_sector_fields\": [\n    \"info.industry\",\n    \"metadata.industry\",\n    \"metadata.pdSectorPe\",\n    \"metadata.pdSectorInd\",\n    \"metadata.pdSectorIndAll\",\n    \"industryInfo\",\n    \"industryInfo.macro\",\n    \"industryInfo.sector\",\n    \"industryInfo.industry\",\n    \"industryInfo.basicIndustry\"\n  ],\n  \"nse_ipo_sector_fields\": [],\n  \"bse_ipo_sector_fields\": []\n}",
+    "sample_record": "{\n  \"sector_reachable\": {\n    \"listed_equity\": false,\n    \"pre_ipo\": false\n  },\n  \"manual_map_needed\": true,\n  \"nse_equity_sector_fields\": [],\n  \"nse_ipo_sector_fields\": [],\n  \"bse_ipo_sector_fields\": []\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
     "freshness_or_update_frequency": "Slow-changing (industry codes rarely change per company)",
-    "status": "YELLOW",
-    "recommended_action": "Sector reachable for listed equities via NSE equity quote, but not exposed per-IPO before listing. Use the equity-quote sector once an IPO lists; create a small manual sector-map.json for pre-listing IPOs.",
+    "status": "RED",
+    "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 15949,
-    "notes": "[NSE equity quote] top-level keys: info, metadata, securityInfo, sddDetails, currentMarketType, priceInfo, industryInfo, preOpenMarket; sector fields: info.industry, metadata.industry, metadata.pdSectorPe, metadata.pdSectorInd, metadata.pdSectorIndAll, industryInfo, industryInfo.macro, industryInfo.sector, industryInfo.industry, industryInfo.basicIndustry ; [NSE IPO list] NSE IPO list returned 0 items ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=12565"
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 21663,
+    "notes": "[NSE equity quote] top-level keys: data, msg; sector fields: (none) ; [NSE IPO list] NSE IPO list returned 0 items ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=12565"
   },
   {
     "probe_id": "P-25",
@@ -881,9 +864,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 1115,
-    "notes": "mainboard: static status=200 bytes=147030 | sme: static status=200 bytes=148486 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=309225 | detail-2: static status=200 bytes=343417 | challenges_detected=false"
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 1077,
+    "notes": "mainboard: static status=200 bytes=147030 | sme: static status=200 bytes=149195 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=309225 | detail-2: static status=200 bytes=343417 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -925,7 +908,7 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
     "latency_ms": 19,
     "notes": "details_extracted=2 | avg_precision=0.450 | official_pdf_links_on_allowlist=2 | official_pdf_links_off_allowlist=3 | d1: main=79604b tables=10 rows=53 | d2: main=95592b tables=13 rows=87"
   },
@@ -968,8 +951,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 3586,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 3491,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37896 | rendered_len=39280 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -1005,9 +988,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 4287,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=224411 | rendered_len=264526 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 4291,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=224411 | rendered_len=266856 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-25b",
@@ -1035,9 +1018,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 1070,
-    "notes": "third_ipo_status=current | third_ipo_slug=m-r-maniveni-ipo | third_ipo_reason=\"current-open: list \"sme\" row date range \"22 - 26 May\" covers today\" | detail-1: static status=200 bytes=343417 | detail-2: static status=200 bytes=309225 | detail-3: static status=200 bytes=280432 | challenges_detected=false"
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 1042,
+    "notes": "third_ipo_status=current | third_ipo_slug=m-r-maniveni-ipo | third_ipo_reason=\"current-open: list \"sme\" row date range \"22 - 26 May\" covers today\" | detail-1: static status=200 bytes=343417 | detail-2: static status=200 bytes=309225 | detail-3: static status=200 bytes=280440 | challenges_detected=false"
   },
   {
     "probe_id": "P-26b",
@@ -1089,8 +1072,8 @@
     "status": "RED",
     "recommended_action": "Precision below thresholds (full=0.57 narrow=0.40). HOLD Phase 6A; reconsider strategy.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-05-22T22:42:25.654Z",
-    "latency_ms": 29,
+    "ran_at_utc": "2026-05-23T09:29:07.587Z",
+    "latency_ms": 26,
     "notes": "details_extracted=3 | avg_full=0.567 | avg_narrow=0.400 | pdf_on_allowlist=2 | pdf_off_allowlist=4 | third_ipo=m-r-maniveni-ipo(current) | d1:onemi-technology-ipo full=0.60 narrow=0.40 | d2:bagmane-reit full=0.50 narrow=0.20 | d3:m-r-maniveni-ipo full=0.60 narrow=0.60"
   }
 ]
