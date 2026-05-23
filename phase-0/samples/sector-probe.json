@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-23T09:29:07.587Z",
+  "captured_at_utc": "2026-05-23T14:52:56.828Z",
   "sector_reachable": {
     "listed_equity": false,
     "pre_ipo": false
@@ -10,14 +10,11 @@
       "source": "NSE equity quote",
       "url": "https://www.nseindia.com/api/quote-equity?symbol=RELIANCE",
       "ok": false,
-      "status": 200,
-      "sample_keys": [
-        "data",
-        "msg"
-      ],
+      "status": 403,
+      "sample_keys": [],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "top-level keys: data, msg; sector fields: (none)"
+      "notes": "NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars]"
     },
     {
       "source": "NSE IPO list",
