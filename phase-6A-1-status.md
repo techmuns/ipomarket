@@ -1,10 +1,12 @@
-# Phase 6A.1 — Chittorgarh Probe Retune (authoritative CI result; verdict: HOLD on robots/ToS)
+# Phase 6A.1 — Chittorgarh Probe (COMPLETE; verdict: PROCEED to Phase 6A.2 planning)
 
-> **Status**: The post-retune `group=K` CI run (commit `a8ca150`, 2026-05-24T17:52Z) is in. **Extraction precision cleared the GREEN gate — full-10 0.833 (≥0.80), narrow-5 0.933 (≥0.90)** — matching the local validation exactly. **BUT P-25b's robots.txt posture check flagged `/ipo/` as Disallow'd for `User-agent: *`.** That is an access/ToS gate, and per the operator's criteria ("HOLD if source/layout/access risk is too high") + the master-plan ToS discipline, it **overrides the precision PROCEED**. **Verdict: HOLD pending robots.txt clarification.** The extraction work is done and PROCEED-ready; the blocker is purely the robots/ToS question, which must be definitively resolved before any Phase 6A.2 production polling. See §13.
+> **Status**: COMPLETE. The robots-clarification `group=K` CI run (commit `cbd9015`, 2026-05-24T19:02Z) **definitively resolved the §13 HOLD**: `robots_posture.classification = "allowed-prior-flag-was-over-match"`. Chittorgarh's robots.txt **allows** `/ipo/<slug>/<id>/` detail pages for `User-agent: *`; the §13 flag was a false positive from the old loose matcher hitting the unrelated `Disallow: /ipo/ipo_discussions.asp` (discussion-forum) rule. With precision GREEN (full-10 **0.833**, narrow-5 **0.933**), reachability GREEN (static 200 ×3, no anti-bot), zero OnEMI conflict, and BRLM honestly static-unavailable, **all gates pass. Verdict: PROCEED to Phase 6A.2 planning.** See §15.
 >
-> **Date**: 2026-05-24 (scaffold 2026-05-22; pre-retune CI + RETUNE 2026-05-24; retune shipped 2026-05-24; authoritative post-retune CI + HOLD 2026-05-24)
+> **Phase 6A.2 is NOT started here.** PROCEED authorizes *drafting a Phase 6A.2 planning doc* — which itself needs separate operator approval before any ingestion implementation.
 >
-> **Predecessor chain**: Gate 1 `45be7bb` → scaffold `17169de` → pre-retune CI status `7cbb13b` → retune `0568132` → post-retune CI `a8ca150`.
+> **Date**: 2026-05-24 (scaffold → pre-retune CI → retune → post-retune CI HOLD → robots clarification → PROCEED, all 2026-05-24)
+>
+> **Predecessor chain**: Gate 1 `45be7bb` → scaffold `17169de` → pre-retune CI `7cbb13b` → retune `0568132` → post-retune CI `a8ca150`/`8f193ce` → robots-clarification `2bfd0d9` → authoritative robots CI `cbd9015`.
 
 ---
 
@@ -409,4 +411,79 @@ The matcher is now correct, but the **authoritative classification requires Chit
 
 This turn ships only the matcher fix + this status update. **Phase 6A.2 is not started**, and won't begin until (a) the CI classification clears the robots question favorably AND (b) a separate Phase 6A.2 planning doc is approved.
 
-*End of Phase 6A.1 status — robots-clarification matcher fixed + unit-validated (10/10); verdict stays HOLD pending the authoritative `group=K` CI classification of Chittorgarh's real robots.txt.*
+*(§14 records the robots-matcher fix. §15 below records the authoritative robots CI classification and the final PROCEED verdict.)*
+
+---
+
+## 15. Authoritative robots classification (`group=K`, commit `cbd9015`) + final verdict: PROCEED
+
+### 15.1 robots.txt — definitively ALLOWED (the §13 HOLD was a false positive)
+
+```json
+"robots_posture": {
+  "fetched": true,
+  "status": 200,
+  "ipo_path_disallowed_for_star": false,
+  "crawl_delay_seconds": null,
+  "star_group_disallow_rules": ["/ipo/ipo_discussions.asp"],
+  "per_path": [
+    { "tested_path": "/ipo/onemi-technology-ipo/2576/", "decision": "allowed", "matched_rule": null },
+    { "tested_path": "/ipo/bagmane-reit/3090/",        "decision": "allowed", "matched_rule": null },
+    { "tested_path": "/ipo/m-r-maniveni-ipo/2627/",     "decision": "allowed", "matched_rule": null }
+  ],
+  "prior_loose_flag": true,
+  "classification": "allowed-prior-flag-was-over-match"
+}
+```
+
+- **The only `/ipo`-area Disallow for `User-agent: *` is `Disallow: /ipo/ipo_discussions.asp`** — the discussion-forum endpoint, NOT the IPO detail pages. We never scrape that path.
+- **Correct matcher**: none of the 3 real detail paths start with `/ipo/ipo_discussions.asp`, so all three resolve to `decision: "allowed"`, `matched_rule: null` (no applicable rule).
+- **`prior_loose_flag: true`** confirms the §13 flag fired from the old `p.startsWith('/ipo')` test matching `/ipo/ipo_discussions.asp`; **`classification: "allowed-prior-flag-was-over-match"`** confirms it was a false positive.
+- No `Crawl-delay` directive for `*`.
+
+The §13 robots/ToS HOLD is **lifted**: Chittorgarh's stated crawler policy permits the `/ipo/<slug>/<id>/` detail pages for generic user-agents.
+
+### 15.2 All other gates (re-confirmed this run)
+
+| Gate | Result |
+|---|---|
+| P-25b reachability | **GREEN** — OnEMI / Bagmane / M R Maniveni all static HTTP 200, `challenge_detected: false`. |
+| Anti-bot / captcha | **None.** |
+| robots.txt | **ALLOWED** for `/ipo/<slug>/<id/>` (§15.1). |
+| P-26b full-10 | **0.833** (≥ 0.80) — stable across all 3 CI runs. |
+| P-26b narrow-5 | **0.933** (≥ 0.90) — stable. |
+| P-25b / P-26b status | both **GREEN** in `source-probe-results.json`. |
+| OnEMI conflicts | **zero** — repo master fields all `null` ⇒ pure gap-fill; RHP URL cross-validates. |
+| BRLM | `static-unavailable` ×3 — **not faked** (JS-rendered; excluded from narrow-5). |
+| CI changed-file scope | `2bfd0d9..cbd9015` touched **only `phase-0/`**; no PDFs, no full-text dumps, no src/ingest/pdf/workflow/schema. |
+
+### 15.3 Final verdict — **PROCEED to Phase 6A.2 planning**
+
+Per the operator's verdict rules, `classification = allowed-prior-flag-was-over-match` ⇒ **PROCEED**. Every gate is now satisfied:
+
+- ✅ Reachable from CI, no anti-bot
+- ✅ robots.txt permits the detail pages (HOLD lifted)
+- ✅ Precision GREEN (full 0.833 / narrow 0.933), stable across 3 runs
+- ✅ Zero conflict against official OnEMI data; RHP URL cross-validates
+- ✅ BRLM honestly static-unavailable; no fake values
+- ✅ Auto third-IPO selection works (`m-r-maniveni-ipo`, current-open SME)
+
+### 15.4 What PROCEED authorizes — and what it does NOT
+
+**Authorizes**: drafting a **Phase 6A.2 planning doc** (the Chittorgarh fast-fill ingestion design — type extensions `SourceTag.Chittorgarh` + `DataState.aggregator`/`broker_reference`, `SourceMix.totals.chittorgarh`, UI source-pill/state-badge tones, the gap-fill merge into `ipo-master`/`ipo-documents`/`ipo-subscriptions`/`ipo-listing-performance`, conflict audit, per-field provenance).
+
+**Does NOT authorize**: any Phase 6A.2 implementation. Per the master-plan slice-gate model, Phase 6A.2 requires its own planning doc **and** a separate explicit operator approval before code lands.
+
+**Constraints the Phase 6A.2 plan must carry forward** (from this probe's findings + the standing guardrails):
+1. **Gap-fill only, never overwrite official** — Chittorgarh values fill `null` fields; official `live` (NSE/BSE/SEBI/RHP) is never replaced.
+2. **Per-field provenance + source-labeling** — every Chittorgarh value carries `source: 'Chittorgarh'`, `state: 'aggregator'`, `confidence`, `url`, `fetched_at_utc`; visibly labeled in the UI.
+3. **Promote only HIGH/MEDIUM** — the probe's confidence tiers gate promotion; LOW stays null.
+4. **BRLM stays PDF-cover / manual** — Chittorgarh's BRLM block is JS-rendered (static-unavailable); do NOT attempt JS/stealth recovery.
+5. **Honor robots.txt** — the `/ipo/ipo_discussions.asp` forum path stays off-limits; only `/ipo/<slug>/<id>/` detail pages are fetched; no `Crawl-delay` observed but keep low-frequency polling (single GET per page, no aggressive crawl).
+6. **No anti-bot circumvention, no broker scraping in this lane** (Zerodha/Upstox remain Phase 6A.4+ reference-only).
+
+### 15.5 Recommended next step
+
+Draft `phase-6A-2-chittorgarh-fastfill-plan.md` (Gate-1 planning doc) for operator review. No ingestion code, no snapshot mutation, no type/UI change until that plan is approved.
+
+*End of Phase 6A.1 — COMPLETE. robots clarified (detail pages ALLOWED; §13 flag was an over-match), precision GREEN, all gates pass. Verdict: PROCEED to Phase 6A.2 planning (separate planning doc + approval still required before any 6A.2 implementation).*
