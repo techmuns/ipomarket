@@ -1,10 +1,12 @@
-# Phase 6A.1 — Chittorgarh Probe Retune (CI run complete; verdict: RETUNE)
+# Phase 6A.1 — Chittorgarh Probe Retune (Phase 6A.1.1 retune shipped; awaiting CI re-run)
 
-> **Status**: CI run complete. The `phase-0-probes` workflow ran `group=K` and committed artifacts back to `main` (latest at `d7475da`, 2026-05-24T16:43Z). **P-25b reached Chittorgarh from GitHub Actions cleanly (GREEN, no anti-bot). P-26b extracted all 3 IPOs but precision landed below the §10.2 GREEN/YELLOW gate (full=0.567, narrow=0.40).** Root cause is a fixable date-validator + label mismatch, NOT data absence or access blocking. **Verdict: RETUNE.**
+> **Status**: The Phase 6A.1.1 retune is shipped (probe-code only). Validated **locally against the real CI-captured HTML** already on `main` (the 2026-05-24 `group=K` run): full-10 **0.833** (≥ 0.80 GREEN gate) and narrow-5 **0.933** (≥ 0.90 GREEN gate). **This is a local validation, not the authoritative result — PROCEED to Phase 6A.2 is NOT declared until the operator re-runs the `group=K` workflow and the fresh CI numbers are inspected.** See §12 for the retune detail.
 >
-> **Date**: 2026-05-24 (scaffold authored 2026-05-22; updated with real CI results 2026-05-24)
+> **Prior run (pre-retune)**: the `group=K` CI run committed at `d7475da` (2026-05-24T16:43Z) returned P-25b GREEN (Chittorgarh reachable from GitHub Actions, no anti-bot) and P-26b RED-on-gate (full=0.567, narrow=0.40), root-caused to a fixable date-validator + label mismatch (§6). §1–§11 below record that prior run unchanged.
 >
-> **Predecessor**: `phase-6A-aggregator-fastfill-plan.md` (Gate 1) committed at `45be7bb`; scaffold at `17169de`. Plan's §10.3 implementation prompt followed verbatim.
+> **Date**: 2026-05-24 (scaffold 2026-05-22; prior-CI results + RETUNE verdict 2026-05-24; Phase 6A.1.1 retune 2026-05-24)
+>
+> **Predecessor**: `phase-6A-aggregator-fastfill-plan.md` (Gate 1) at `45be7bb`; scaffold at `17169de`; prior-CI status at `7cbb13b`.
 
 ---
 
@@ -197,4 +199,75 @@ Phase 6A.1.1 (the retune) is itself a separate, separately-approved implementati
 
 **Phase 6A.2 (Chittorgarh fast-fill ingestion + type extensions + UI changes) does NOT begin** without (a) a successful retune lifting precision to the GREEN gate, and (b) a separate Phase 6A.2 planning doc + explicit operator approval.
 
-*End of Phase 6A.1 status — CI run complete, verdict RETUNE. Awaiting operator decision on the Phase 6A.1.1 retune pass.*
+*(§1–§11 above record the pre-retune CI run. §12 below records the shipped Phase 6A.1.1 retune.)*
+
+---
+
+## 12. Phase 6A.1.1 retune — shipped (probe-code only); local validation GREEN; awaiting CI re-run
+
+### 12.1 What changed (only the two probe files)
+
+| File | Change |
+|---|---|
+| `scripts/probes/P-26b-chittorgarh-extract-retune.ts` | (1) **Flexible date parser** `parseFlexibleDate()` — handles `5 May, 2026` (comma), `30 Apr` (no year, inherited), `Mon, Jun 1, 2026 T` (weekday prefix + truncated trailing text), US month-first, ISO; normalizes to ISO; start-of-^ anchored but tolerant of trailing junk (no `$`). (2) **Range handling** in `extractDate()` — splits `30 Apr to 5 May, 2026` / `5 to 7 May, 2026`, parses the end first to learn the year, inherits year (cross-month) **and month** (same-month bare-day start) into the start. (3) **`"Listed on"`** added to `listing_date` label patterns. (4) **`cleanRegistrarName()`** trims contact/address/email/phone/url tail (keeps `Pvt. Ltd.` suffixes). (5) **BRLM** marked `static-unavailable` with explicit reason — JS-rendered, not a parse failure, not a RED-forcer. |
+| `scripts/probes/P-25b-chittorgarh-retune.ts` | **`checkRobots()`** — one-shot `robots.txt` GET (60s, no retry), parses the `User-agent: *` block for `/ipo/` Disallow + Crawl-delay, records a posture note in the summary + `ProbeResult.notes`. Posture note only; never gates status. |
+
+No production snapshot, type, UI, ingest, PDF-pipeline, or workflow file touched (§12.4).
+
+### 12.2 Local validation (against the real CI HTML on `main`, P-26b is disk-read)
+
+`npm run probe -- --probe P-26b` against `phase-0/broker-pages/chittorgarh-detail-{1,2,3}-rendered-v2.html` (the 2026-05-24 CI capture):
+
+| Metric | Pre-retune | Post-retune | GREEN gate |
+|---|---|---|---|
+| full-10 avg | 0.567 | **0.833** | ≥ 0.80 ✅ |
+| narrow-5 avg | 0.40 | **0.933** | ≥ 0.90 ✅ |
+
+| IPO | full | narrow | open_date | close_date | listing_date | registrar | still missing |
+|---|---|---|---|---|---|---|---|
+| OnEMI | 0.9 | 1.0 | `2026-04-30` (M) | `2026-05-05` (M) | `2026-05-08` (H) | `Kfin Technologies Ltd.` (M) | brlms |
+| Bagmane REIT | 0.8 | 0.8 | `2026-05-05` (M) | `2026-05-07` (M) | `2026-05-14` (H) | `Kfin Technologies Ltd.` (M) | lot_size (REIT), brlms |
+| M R Maniveni | 0.8 | 1.0 | `2026-05-22` (M) | `2026-05-26` (M) | `2026-06-01` (H) | `Bigshare Services Pvt.Ltd.` (M) | brlms |
+
+The 4 retune targets all landed:
+- **Dates**: open/close now parse via range-split + ISO + year/month inheritance (cross-month `30 Apr to 5 May, 2026` and same-month `5 to 7 May, 2026` both work).
+- **`Listed on`**: listing_date now HIGH on all 3 (was 1/3).
+- **Registrar cleanup**: `"Bigshare Services Pvt.Ltd. +91-22-… <"` → `"Bigshare Services Pvt.Ltd."`.
+- **BRLM**: the only remaining miss across all 3 — correctly recorded as `static-unavailable` (JS-rendered), not a parse failure. brlms is excluded from narrow-5, so it doesn't block the gap-fill gate; it only caps full-10 at 0.9 max.
+
+### 12.3 Confidence + zero-conflict reminder
+
+All promoted date/registrar fields are MEDIUM (range-split / class-fallback) except `listing_date` which is HIGH (direct label). No LOW value is promoted. For OnEMI (the only repo-tracked IPO), every Chittorgarh value remains pure gap-fill against currently-null repo fields — **still zero conflict** vs official data; the RHP URL still cross-validates.
+
+### 12.4 Do-not-touch verification (this retune)
+
+```
+git status --short  →  only:
+  M scripts/probes/P-25b-chittorgarh-retune.ts
+  M scripts/probes/P-26b-chittorgarh-extract-retune.ts
+  M phase-6A-1-status.md
+```
+- `src/data/snapshots/*` untouched · `src/types/*` untouched · UI untouched · `scripts/ingest/*` untouched · `scripts/pdf/*` untouched · `.github/workflows/*` untouched.
+- The sandbox P-26b validation runs did a full-rewrite of `phase-0/source-probe-*` + regenerated the `*-v2` artifacts; those were **reverted** (`git checkout -- phase-0/`) so CI regenerates them authoritatively on the re-dispatch.
+- `npm run typecheck` + `npm run build` green. No PDF binaries / full-text dumps.
+
+### 12.5 robots / ToS posture
+
+`P-25b` now fetches `https://www.chittorgarh.com/robots.txt` once per run and records whether `/ipo/` is Disallow'd for `User-agent: *` + any Crawl-delay, into the summary + notes. This closes the §8 follow-up. (The actual posture string will appear in the CI re-run's `chittorgarh-fields-v2.json.robots_posture` + the `P-25b` notes — the sandbox can't reach Chittorgarh to populate it locally.)
+
+### 12.6 Verdict + next step
+
+The retune **locally clears the GREEN gate** (full 0.833 ≥ 0.80, narrow 0.933 ≥ 0.90) against the real CI HTML. But per the operator's binding instruction, **PROCEED to Phase 6A.2 is NOT declared from a local run.**
+
+**Next step (operator action)**: re-run the existing `phase-0-probes` workflow with `group=K`. The CI re-run will:
+- Re-fetch the 3 IPOs (the auto-selected third IPO may differ if Chittorgarh's lists changed since 2026-05-24).
+- Produce authoritative P-25b (incl. robots posture) + P-26b precision numbers.
+- Commit the refreshed `phase-0/broker-pages/*-v2` artifacts back to `main`.
+
+After that CI run, I will pull `main`, inspect the fresh numbers, and only then state the final verdict:
+- **PROCEED to Phase 6A.2 planning** if CI confirms full-10 ≥ 0.80 OR narrow-5 ≥ 0.90, OR
+- **RETUNE again / HOLD** if fresh HTML regresses the metrics.
+
+**Phase 6A.2 (Chittorgarh fast-fill ingestion + type extensions + UI changes) does NOT begin** without (a) CI-confirmed GREEN, and (b) a separate Phase 6A.2 planning doc + explicit operator approval.
+
+*End of Phase 6A.1 status — Phase 6A.1.1 retune shipped, local validation GREEN, awaiting operator's `group=K` CI re-run for the authoritative verdict.*

@@ -261,6 +261,77 @@ function extractTitle(html: string): string {
   return m ? m[1]!.trim().slice(0, 200) : '';
 }
 
+// Phase 6A.1.1 — lightweight robots.txt posture check. Fetches
+// https://www.chittorgarh.com/robots.txt once (60s, no retry) and reports
+// whether the /ipo/ path is Disallow'd for user-agent `*` and any
+// Crawl-delay. Posture note only — never gates the probe status.
+interface RobotsPosture {
+  fetched: boolean;
+  status: number;
+  ipo_path_disallowed_for_star: boolean | null;
+  crawl_delay_seconds: number | null;
+  note: string;
+}
+async function checkRobots(): Promise<RobotsPosture> {
+  try {
+    const r = await httpGet('https://www.chittorgarh.com/robots.txt', {
+      headers: { Accept: 'text/plain,*/*;q=0.8' },
+      timeoutMs: 60_000,
+    });
+    if (!r.ok || !r.body) {
+      return {
+        fetched: false,
+        status: r.status,
+        ipo_path_disallowed_for_star: null,
+        crawl_delay_seconds: null,
+        note: `robots.txt not fetched (status ${r.status}); posture unknown — default to conservative single-request-per-page polling`,
+      };
+    }
+    // Parse the `User-agent: *` block only (conservative — the policy that
+    // governs a generic client). Collect its Disallow + Crawl-delay lines.
+    const lines = r.body.split(/\r?\n/).map((l) => l.trim());
+    let inStar = false;
+    const starDisallows: string[] = [];
+    let crawlDelay: number | null = null;
+    for (const line of lines) {
+      if (/^#/.test(line) || line === '') continue;
+      const ua = line.match(/^user-agent:\s*(.+)$/i);
+      if (ua) {
+        inStar = ua[1]!.trim() === '*';
+        continue;
+      }
+      if (!inStar) continue;
+      const dis = line.match(/^disallow:\s*(.*)$/i);
+      if (dis) {
+        starDisallows.push(dis[1]!.trim());
+        continue;
+      }
+      const cd = line.match(/^crawl-delay:\s*([\d.]+)/i);
+      if (cd) crawlDelay = Number(cd[1]);
+    }
+    const ipoDisallowed = starDisallows.some(
+      (p) => p !== '' && ('/ipo/'.startsWith(p) || p === '/' || p.startsWith('/ipo')),
+    );
+    return {
+      fetched: true,
+      status: r.status,
+      ipo_path_disallowed_for_star: ipoDisallowed,
+      crawl_delay_seconds: crawlDelay,
+      note: ipoDisallowed
+        ? `robots.txt: /ipo/ appears Disallow'd for user-agent * — REVIEW before any production polling`
+        : `robots.txt: /ipo/ not Disallow'd for user-agent * (${starDisallows.length} disallow rule(s) parsed)${crawlDelay != null ? `; Crawl-delay=${crawlDelay}s` : '; no Crawl-delay directive'}`,
+    };
+  } catch (e) {
+    return {
+      fetched: false,
+      status: 0,
+      ipo_path_disallowed_for_star: null,
+      crawl_delay_seconds: null,
+      note: `robots.txt fetch errored: ${(e as Error).message ?? String(e)}; posture unknown`,
+    };
+  }
+}
+
 // ─── Probe entrypoint ───────────────────────────────────────────────────
 export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
   const started = Date.now();
@@ -302,9 +373,16 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     details.push({ index: s.index, outcome });
   }
 
+  // 2b. Phase 6A.1.1 — lightweight robots.txt posture check. One GET, 60s
+  //     timeout, no retry. Records whether the /ipo/ path appears
+  //     Disallow'd for `*` and any Crawl-delay directive. This is a
+  //     posture note only — it does NOT gate the probe status.
+  const robots = await checkRobots();
+
   // 3. Write the summary file consumed by P-26b.
   const summary = {
     captured_at_utc: ctx.nowIso,
+    robots_posture: robots,
     third_ipo_selection: {
       slug: third.slug,
       url: third.url,
@@ -384,6 +462,7 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     `third_ipo_reason="${third.reason}"`,
     ...details.map((d) => `detail-${d.index}: ${d.outcome.mode} status=${d.outcome.status} bytes=${d.outcome.bytes}` + (d.outcome.error ? ` err=${d.outcome.error}` : '')),
     `challenges_detected=${anyChallenge}`,
+    `robots: ${robots.note}`,
   ].join(' | ');
 
   return {

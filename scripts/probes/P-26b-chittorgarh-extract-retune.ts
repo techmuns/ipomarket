@@ -202,10 +202,90 @@ const DATE_RE_ISO = /\b\d{4}-\d{2}-\d{2}\b/;
 function looksLikeDate(v: string): boolean {
   return DATE_RE_FULL_MONTH.test(v) || DATE_RE_DAY_FIRST.test(v) || DATE_RE_ISO.test(v);
 }
+
+// Phase 6A.1.1 — flexible single-date parser. Handles Chittorgarh's
+// real cover-page formats observed in CI:
+//   "5 May, 2026"            (day-first, comma before year)
+//   "30 Apr"                 (day-first, NO year — year inherited from a range)
+//   "5 May 2026"             (day-first, no comma)
+//   "Mon, Jun 1, 2026"       (weekday prefix, US month-first)
+//   "Apr 29, 2026"           (US month-first)
+//   "Wed, Apr 29, 2026"      (weekday + US month-first)
+//   "2026-05-05"             (ISO)
+// Returns { iso, day, month, year, raw }. iso is null when the date
+// cannot be fully resolved (e.g. "30 Apr" with no inheritYear supplied).
+const MONTH_IDX: Record<string, number> = {
+  jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6,
+  jul: 7, aug: 8, sep: 9, sept: 9, oct: 10, nov: 11, dec: 12,
+};
+function monthNum(s: string): number | null {
+  const k = s.toLowerCase().replace(/\./g, '').slice(0, 4);
+  return MONTH_IDX[k] ?? MONTH_IDX[k.slice(0, 3)] ?? null;
+}
+function pad2(n: number): string { return n < 10 ? `0${n}` : `${n}`; }
+interface ParsedDate { iso: string | null; day: number; month: number; year: number | null; raw: string; }
+function parseFlexibleDate(input: string, inheritYear?: number): ParsedDate | null {
+  const raw = input.replace(/\s+/g, ' ').trim().replace(/[.,\s]+$/, '');
+  if (!raw) return null;
+  // ISO first.
+  let m = raw.match(/\b(\d{4})-(\d{2})-(\d{2})\b/);
+  if (m) {
+    return { iso: `${m[1]}-${m[2]}-${m[3]}`, day: +m[3]!, month: +m[2]!, year: +m[1]!, raw };
+  }
+  // Day-first: "30 Apr, 2026" / "30 Apr 2026" / "30 Apr"
+  // Optional weekday prefix requires a comma ("Mon, ") to avoid consuming
+  // a bare month token. Trailing text after the date (e.g. a truncated
+  // " Tentative" / " T") is tolerated — we anchor the start (^) and stop at
+  // a word boundary, not end-of-string ($).
+  m = raw.match(/^(?:[A-Za-z]{3,9},\s+)?(\d{1,2})\s+([A-Za-z]{3,9})\.?(?:,?\s+(\d{4}))?\b/);
+  if (m) {
+    const day = +m[1]!;
+    const mon = monthNum(m[2]!);
+    const yr = m[3] ? +m[3] : (inheritYear ?? null);
+    if (mon !== null && day >= 1 && day <= 31) {
+      return { iso: yr ? `${yr}-${pad2(mon)}-${pad2(day)}` : null, day, month: mon, year: yr, raw };
+    }
+  }
+  // Month-first: "Apr 29, 2026" / "Wed, Apr 29, 2026" / "Mon, Jun 1, 2026"
+  // (trailing text tolerated, same as above).
+  m = raw.match(/^(?:[A-Za-z]{3,9},\s+)?([A-Za-z]{3,9})\.?\s+(\d{1,2})(?:,?\s+(\d{4}))?\b/);
+  if (m) {
+    const mon = monthNum(m[1]!);
+    const day = +m[2]!;
+    const yr = m[3] ? +m[3] : (inheritYear ?? null);
+    if (mon !== null && day >= 1 && day <= 31) {
+      return { iso: yr ? `${yr}-${pad2(mon)}-${pad2(day)}` : null, day, month: mon, year: yr, raw };
+    }
+  }
+  return null;
+}
+// Split a range cell ("30 Apr to 5 May, 2026" / "30 Apr - 5 May, 2026")
+// into start + end raw strings. Returns null when no range separator.
+function splitDateRange(value: string): { startRaw: string; endRaw: string } | null {
+  const m = value.match(/^(.+?)\s*(?:\bto\b|[-–—])\s*(.+)$/i);
+  if (!m) return null;
+  const startRaw = m[1]!.trim();
+  const endRaw = m[2]!.trim();
+  if (!startRaw || !endRaw) return null;
+  return { startRaw, endRaw };
+}
+
 function looksLikeCompanyName(v: string): boolean {
   if (v.length < 6 || v.length > 150) return false;
   if (/\b(?:List\s+of\s+Issues|Lead\s+Manager|Performance|Allotment|Calculator|Comparison|Calendar|Discussions?)\b/i.test(v)) return false;
   return /[A-Z]/.test(v);
+}
+
+// Phase 6A.1.1 — registrar name cleanup. Trims contact/address/email/
+// phone/url tail. The registrar firm name is the prefix before the first
+// contact-info marker. Keeps firm suffixes like "Pvt. Ltd." intact (the
+// cut markers target phone/email/url/Tel/Fax, not periods).
+function cleanRegistrarName(raw: string): string {
+  let t = raw.replace(/\s+/g, ' ').trim();
+  const cutRe = /\s*(?:\+\d|\b\d{2,5}[-\s]?\d{3,}|[\w.+-]+@|\bTel\b|\bPhone\b|\bFax\b|\bE-?mail\b|https?:\/\/|www\.|<)/i;
+  const m = t.match(cutRe);
+  if (m && m.index !== undefined && m.index > 0) t = t.slice(0, m.index);
+  return t.replace(/[\s,;]+$/, '').trim();
 }
 
 // ─── Field extractors ──────────────────────────────────────────────────
@@ -279,37 +359,77 @@ function extractLotSize(tables: ParsedTable[]): ExtractedField<string> {
   return { value: lv.value.slice(0, 80), found: false, confidence: 'low', method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`, why_missing: `value '${lv.value.slice(0, 60)}' failed lot-size validation`, source_snippet: snippet(lv.value) };
 }
 
-// Dates — §10.3 patterns + Chittorgarh "IPO Date" / "Bid Date" range fallback.
+// Dates — §10.3 patterns + Chittorgarh "IPO Date" range fallback.
+// Phase 6A.1.1: value carries the ISO-normalized date when resolvable
+// (raw kept in source_snippet for audit). The range fallback inherits the
+// year from the end date into the start date (Chittorgarh writes the year
+// only once at the tail: "30 Apr to 5 May, 2026").
 function extractDate(
   tables: ParsedTable[],
   labelPatterns: RegExp[],
   kindLabel: string,
   rangePart: 'start' | 'end' | null,
 ): ExtractedField<string> {
-  // 1) Direct label match per §10.3 prompt.
+  // 1) Direct label match per §10.3 prompt. Single-date cell.
   const lv = findLabelValue(tables, labelPatterns);
-  if (lv && looksLikeDate(lv.value)) {
-    return { value: lv.value, found: true, confidence: 'high', method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`, why_missing: null, source_snippet: snippet(lv.value) };
+  if (lv) {
+    const pd = parseFlexibleDate(lv.value);
+    if (pd && pd.iso) {
+      return {
+        value: pd.iso,
+        found: true,
+        confidence: 'high',
+        method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}" iso-normalized`,
+        why_missing: null,
+        source_snippet: snippet(`raw="${pd.raw}" → ${pd.iso}`),
+      };
+    }
   }
-  // 2) Chittorgarh-specific fallback: parse the "IPO Date" / "Bid Date" cell
-  //    which often carries a combined range like "30 Apr, 2026 to 05 May, 2026"
-  //    OR "Wed, Apr 29, 2026" (single day). When `rangePart` is set, we try
-  //    to split a "X to Y" range and return the requested side.
+  // 2) Chittorgarh-specific fallback: parse the "IPO Date" / "Bid Date" /
+  //    "Issue Date" cell, which carries a combined range like
+  //    "30 Apr to 5 May, 2026" (year only at the tail). Split, parse the
+  //    end first to learn the year, then re-parse the start inheriting it.
   if (rangePart) {
-    const range = findLabelValue(tables, [/^\s*(?:IPO|Bid|Issue)\s+Date\s*$/i]);
+    const range = findLabelValue(tables, [
+      /^\s*(?:IPO|Bid|Issue)\s+Date\s*$/i,
+      /^\s*Bid\s*\/?\s*Offer\s+Date\s*$/i,
+    ]);
     if (range) {
-      const splitRe = /(.+?)(?:\s+to\s+|\s*[-–]\s*)(.+)/i;
-      const m = range.value.match(splitRe);
-      if (m && looksLikeDate(m[1]!) && looksLikeDate(m[2]!)) {
-        const v = rangePart === 'start' ? m[1]!.trim() : m[2]!.trim();
-        return {
-          value: v,
-          found: true,
-          confidence: 'medium',
-          method: `table[${range.table_index}].row[${range.row_index}] label="${range.matched_label}" (range-split, ${rangePart})`,
-          why_missing: null,
-          source_snippet: snippet(range.value),
-        };
+      const split = splitDateRange(range.value);
+      if (split) {
+        const endPd = parseFlexibleDate(split.endRaw);
+        const inheritYr = endPd?.year ?? undefined;
+        let startPd = parseFlexibleDate(split.startRaw, inheritYr);
+        // Same-month range like "5 to 7 May, 2026": the start side is a
+        // bare day number ("5") with no month — inherit BOTH the month and
+        // year from the end date. (Cross-month "30 Apr to 5 May, 2026" is
+        // handled above since the start "30 Apr" carries its own month.)
+        if ((!startPd || !startPd.iso) && endPd && endPd.year && endPd.month) {
+          const bareDay = split.startRaw.trim().match(/^(\d{1,2})$/);
+          if (bareDay) {
+            const day = +bareDay[1]!;
+            if (day >= 1 && day <= 31) {
+              startPd = {
+                iso: `${endPd.year}-${pad2(endPd.month)}-${pad2(day)}`,
+                day,
+                month: endPd.month,
+                year: endPd.year,
+                raw: split.startRaw,
+              };
+            }
+          }
+        }
+        const chosen = rangePart === 'start' ? startPd : endPd;
+        if (chosen && chosen.iso) {
+          return {
+            value: chosen.iso,
+            found: true,
+            confidence: 'medium',
+            method: `table[${range.table_index}].row[${range.row_index}] label="${range.matched_label}" (range-split ${rangePart}, year-inherited)`,
+            why_missing: null,
+            source_snippet: snippet(`raw="${range.value}" → ${rangePart}=${chosen.iso}`),
+          };
+        }
       }
     }
   }
@@ -319,8 +439,8 @@ function extractDate(
     confidence: lv ? 'low' : null,
     method: lv ? `table[${lv.table_index}].row[${lv.row_index}]-rejected` : null,
     why_missing: lv
-      ? `value '${lv.value.slice(0, 60)}' failed date validation`
-      : `no table row whose label matches ${kindLabel}; "IPO Date"/"Bid Date" range fallback also missed`,
+      ? `value '${lv.value.slice(0, 60)}' did not parse as a date`
+      : `no table row whose label matches ${kindLabel}; "IPO Date" range fallback also missed`,
     source_snippet: lv ? snippet(lv.value) : null,
   };
 }
@@ -336,24 +456,20 @@ function extractRegistrar(tables: ParsedTable[], html: string): ExtractedField<s
     return { value: lv.value, found: true, confidence: 'high', method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`, why_missing: null, source_snippet: snippet(lv.value) };
   }
   // 2) Chittorgarh-specific: look for class="registrar-name" anchor or near.
-  //    Captured text up to the next opening tag — strip + sanity-check.
+  //    Captured text up to the next opening tag — strip, then trim the
+  //    contact/address/email/phone/url tail via cleanRegistrarName.
   const classMatch = html.match(/class\s*=\s*["'][^"']*\bregistrar-name\b[^"']*["'][^>]*>([\s\S]{0,300})/i);
   if (classMatch) {
-    // Take the first ~120 chars and strip everything after first contact-info pattern.
-    let candidate = stripTags(classMatch[1]!);
-    // Trim trailing contact info ("Tel:", "Email:", phone numbers, "(IPO Registrar...")
-    candidate = candidate.split(/\s+(?:Tel\.?:|Phone:|Email:|E-mail:|\d{8,}|<a |IPO\s+Registrar)/i)[0]!.trim();
-    candidate = candidate.replace(/\s+/g, ' ').trim();
-    // Drop trailing comma / period
-    candidate = candidate.replace(/[,;.\s]+$/, '');
+    const rawText = stripTags(classMatch[1]!);
+    const candidate = cleanRegistrarName(rawText);
     if (looksLikeCompanyName(candidate)) {
       return {
         value: candidate.slice(0, 120),
         found: true,
         confidence: 'medium',
-        method: 'class="registrar-name" anchor (Chittorgarh-specific)',
+        method: 'class="registrar-name" anchor (Chittorgarh-specific, contact-tail trimmed)',
         why_missing: null,
-        source_snippet: snippet(candidate),
+        source_snippet: snippet(`raw="${rawText.slice(0, 120)}" → "${candidate}"`),
       };
     }
   }
@@ -369,9 +485,14 @@ function extractRegistrar(tables: ParsedTable[], html: string): ExtractedField<s
   };
 }
 
-// BRLMs — §10.3 label patterns. Chittorgarh's lead-manager section is
-// often JS-rendered; if it shows up in the cached HTML, the table label
-// match catches it.
+// BRLMs — §10.3 label patterns. Phase 6A.1.1: Chittorgarh's lead-manager
+// block is JS-rendered (loaded client-side) and absent from the static
+// HTML CI captures, so a static-only miss here is EXPECTED and is recorded
+// as `static-unavailable` — NOT a parser failure and NOT a reason to force
+// the overall probe RED. brlms is excluded from the narrow-5 gap-fill set;
+// it only counts against full-10. No JS/stealth render is used to recover
+// it (out of §Y.4 scope); the path for brlms remains PDF-cover extraction
+// or manual.
 function extractBrlms(tables: ParsedTable[]): ExtractedField<string[]> {
   const lv = findLabelValue(tables, [
     /^\s*(?:Book\s+Running\s+)?Lead\s+Manager(?:\(s\))?\s*$/i,
@@ -379,7 +500,7 @@ function extractBrlms(tables: ParsedTable[]): ExtractedField<string[]> {
     /^\s*IPO\s+Lead\s+Manager(?:s|\(s\))?\s*$/i,
     /^\s*Merchant\s+Banker(?:s|\(s\))?\s*$/i,
   ]);
-  if (!lv) return { value: null, found: false, confidence: null, method: null, why_missing: 'no table row whose label matches "Lead Manager(s)" / "BRLM" / "Merchant Banker(s)"', source_snippet: null };
+  if (!lv) return { value: null, found: false, confidence: null, method: 'static-unavailable', why_missing: 'BRLM block is JS-rendered on Chittorgarh and absent from static HTML — expected static-unavailable, not a parse failure. Path remains PDF-cover / manual; no JS/stealth recovery (out of §Y.4 scope).', source_snippet: null };
   const candidates = lv.value.split(/\s*(?:\||,|\s+and\s+|;)\s*/i).map((s) => s.trim()).filter((s) => s.length >= 6 && s.length <= 120);
   const accepted = candidates.filter(looksLikeCompanyName);
   if (accepted.length > 0) {
@@ -477,9 +598,11 @@ function extractOne(detailIndex: number, htmlPath: string, sourceUrl: string | n
     [
       /^\s*(?:IPO\s+)?Listing\s+Date\s*$/i,
       /^\s*Tentative\s+Listing(?:\s+Date)?\s*$/i,
+      // Phase 6A.1.1 — Chittorgarh uses "Listed on" for OnEMI/Bagmane.
+      /^\s*Listed\s+on\s*$/i,
     ],
-    '"Listing Date" / "Tentative Listing"',
-    null, // no range fallback for listing_date
+    '"Listing Date" / "Tentative Listing" / "Listed on"',
+    null, // no range fallback for listing_date (single date)
   );
   const registrar = extractRegistrar(tables, html);
   const brlms = extractBrlms(tables);
