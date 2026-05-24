@@ -1,12 +1,10 @@
-# Phase 6A.1 — Chittorgarh Probe Retune (Phase 6A.1.1 retune shipped; awaiting CI re-run)
+# Phase 6A.1 — Chittorgarh Probe Retune (authoritative CI result; verdict: HOLD on robots/ToS)
 
-> **Status**: The Phase 6A.1.1 retune is shipped (probe-code only). Validated **locally against the real CI-captured HTML** already on `main` (the 2026-05-24 `group=K` run): full-10 **0.833** (≥ 0.80 GREEN gate) and narrow-5 **0.933** (≥ 0.90 GREEN gate). **This is a local validation, not the authoritative result — PROCEED to Phase 6A.2 is NOT declared until the operator re-runs the `group=K` workflow and the fresh CI numbers are inspected.** See §12 for the retune detail.
+> **Status**: The post-retune `group=K` CI run (commit `a8ca150`, 2026-05-24T17:52Z) is in. **Extraction precision cleared the GREEN gate — full-10 0.833 (≥0.80), narrow-5 0.933 (≥0.90)** — matching the local validation exactly. **BUT P-25b's robots.txt posture check flagged `/ipo/` as Disallow'd for `User-agent: *`.** That is an access/ToS gate, and per the operator's criteria ("HOLD if source/layout/access risk is too high") + the master-plan ToS discipline, it **overrides the precision PROCEED**. **Verdict: HOLD pending robots.txt clarification.** The extraction work is done and PROCEED-ready; the blocker is purely the robots/ToS question, which must be definitively resolved before any Phase 6A.2 production polling. See §13.
 >
-> **Prior run (pre-retune)**: the `group=K` CI run committed at `d7475da` (2026-05-24T16:43Z) returned P-25b GREEN (Chittorgarh reachable from GitHub Actions, no anti-bot) and P-26b RED-on-gate (full=0.567, narrow=0.40), root-caused to a fixable date-validator + label mismatch (§6). §1–§11 below record that prior run unchanged.
+> **Date**: 2026-05-24 (scaffold 2026-05-22; pre-retune CI + RETUNE 2026-05-24; retune shipped 2026-05-24; authoritative post-retune CI + HOLD 2026-05-24)
 >
-> **Date**: 2026-05-24 (scaffold 2026-05-22; prior-CI results + RETUNE verdict 2026-05-24; Phase 6A.1.1 retune 2026-05-24)
->
-> **Predecessor**: `phase-6A-aggregator-fastfill-plan.md` (Gate 1) at `45be7bb`; scaffold at `17169de`; prior-CI status at `7cbb13b`.
+> **Predecessor chain**: Gate 1 `45be7bb` → scaffold `17169de` → pre-retune CI status `7cbb13b` → retune `0568132` → post-retune CI `a8ca150`.
 
 ---
 
@@ -270,4 +268,80 @@ After that CI run, I will pull `main`, inspect the fresh numbers, and only then 
 
 **Phase 6A.2 (Chittorgarh fast-fill ingestion + type extensions + UI changes) does NOT begin** without (a) CI-confirmed GREEN, and (b) a separate Phase 6A.2 planning doc + explicit operator approval.
 
-*End of Phase 6A.1 status — Phase 6A.1.1 retune shipped, local validation GREEN, awaiting operator's `group=K` CI re-run for the authoritative verdict.*
+*(§12 above records the retune as shipped + locally validated. §13 below records the authoritative post-retune CI run and the final verdict.)*
+
+---
+
+## 13. Authoritative post-retune CI result (`group=K`, commit `a8ca150`) + final verdict: HOLD
+
+### 13.1 P-25b — reachability + anti-bot + robots posture
+
+| Check | Result |
+|---|---|
+| Reachability | **GREEN.** All 3 detail pages static HTTP 200 from GitHub Actions (OnEMI 343 KB, Bagmane 309 KB, M R Maniveni 280 KB). No Playwright fallback needed. |
+| Anti-bot / captcha | **None.** `challenge_detected: false` on every fetch. |
+| Third-IPO auto-selection | `m-r-maniveni-ipo` (SME), `status: current`, reason: list "sme" row date range "22 - 26 May" covers today. §5.1 rule fired cleanly, no fallback. |
+| **robots.txt posture** | **`ipo_path_disallowed_for_star: true`** — `"robots.txt: /ipo/ appears Disallow'd for user-agent * — REVIEW before any production polling"`. robots.txt fetched cleanly (status 200); no Crawl-delay directive parsed. |
+
+### 13.2 P-26b — precision (authoritative; matches local validation exactly)
+
+| Metric | Value | GREEN gate | Result |
+|---|---|---|---|
+| full-10 avg | **0.833** | ≥ 0.80 | ✅ met |
+| narrow-5 avg | **0.933** | ≥ 0.90 | ✅ met |
+
+| IPO | full | narrow | HIGH | MEDIUM | missing |
+|---|---|---|---|---|---|
+| OnEMI | 0.9 | 1.0 | company_name, issue_size_cr, price_band, lot_size, listing_date, official_pdf_links | open_date, close_date, registrar | brlms |
+| Bagmane REIT | 0.8 | 0.8 | company_name, issue_size_cr, price_band, listing_date, official_pdf_links | open_date, close_date, registrar | lot_size (REIT), brlms |
+| M R Maniveni | 0.8 | 1.0 | company_name, issue_size_cr, price_band, lot_size, listing_date | open_date, close_date, registrar | brlms |
+
+OnEMI extracted values: open `2026-04-30` (M), close `2026-05-05` (M), listing `2026-05-08` (H), registrar `Kfin Technologies Ltd.` (M), price `₹162 to ₹171` (H), issue `₹926 Cr` (H), lot `87 Shares` (H). All ISO-normalized; registrar contact-tail trimmed; "Listed on" label resolved listing_date. The retune fully closed the date/listing/registrar gap.
+
+### 13.3 OnEMI conflicts vs repo truth
+
+**Zero conflicts.** OnEMI's repo master fields (`price_band`, `issue_size_cr`, `lot_size`, `open_date`, …) are all `null`; repo documents `registrar` is `null` — so every Chittorgarh value is pure gap-fill. Chittorgarh's `official_pdf_links` on-allowlist = `bseindia.com/corporates/download/378749/IPO%20Open/6RedHerring…pdf` = **the exact repo `documents.docs[0].url`** → positive cross-validation, no disagreement.
+
+### 13.4 BRLM — static-unavailable, not faked
+
+`brlms` is the only missing field on all 3 IPOs. Recorded as `method: "static-unavailable"`, `value: null`, with the explicit reason that Chittorgarh's lead-manager block is JS-rendered and absent from static HTML. **No BRLM value was fabricated**, and no JS/stealth render was used to force it (out of §Y.4 scope). brlms is excluded from narrow-5, so it doesn't block the gap-fill gate — it only caps full-10.
+
+### 13.5 CI scope — clean
+
+Commit range `0568132..a8ca150` touched **only `phase-0/`** (8 broker-page artifacts + 3 source-probe files). Verified: no `src/`, no `scripts/ingest/`, no `scripts/pdf/`, no `.github/workflows/`, no schema, no PDF binaries, no `*.full.txt` dumps.
+
+### 13.6 The robots.txt finding — why it forces HOLD (and the parser caveat)
+
+**On the precision axis alone, this is a PROCEED** (full 0.833 / narrow 0.933, CI-confirmed, stable). **But Phase 6A.2's entire purpose is to POLL Chittorgarh `/ipo/<slug>/<id>/` pages on a schedule in production.** If `robots.txt` disallows `/ipo/` for generic crawlers, that production polling would violate the site's stated crawler policy — exactly the "access risk too high" HOLD trigger, and inconsistent with the master-plan ToS discipline (and Phase 5C §Y.4 rule 7: "no anti-bot circumvention", "honour robots/ToS"). Extraction accuracy does not excuse crawling a disallowed path.
+
+**Parser caveat (disclosed, not hidden)**: P-25b's `checkRobots()` matcher (`scripts/probes/P-25b-chittorgarh-retune.ts:313`) is:
+```ts
+(p) => p !== '' && ('/ipo/'.startsWith(p) || p === '/' || p.startsWith('/ipo'))
+```
+The third clause `p.startsWith('/ipo')` is a **loose over-matcher**: a robots rule like `Disallow: /ipo_dashboard.asp` or `Disallow: /ipostatus` (legacy/dynamic endpoints) would set the flag `true` even though it does NOT actually cover the `/ipo/<slug>/<id>/` detail pages (correct robots semantics is *URL-path*-startsWith-*rule*, not *rule*-startsWith-`/ipo`). The probe did **not** record which Disallow line matched, so from the stored artifact alone I **cannot** definitively classify this as:
+- **(A) genuine** — a rule like `Disallow: /ipo`, `Disallow: /ipo/`, or `Disallow: /` that truly covers the detail pages, vs
+- **(B) over-match** — a `/ipo…`-prefixed sub-path rule that my matcher wrongly treated as covering `/ipo/`.
+
+Either way, an **unresolved** robots-disallow signal on the exact production-poll path is sufficient to HOLD. We do not proceed to ingestion on an unverified ToS posture.
+
+### 13.7 Final verdict — **HOLD** (Phase 6A.2 blocked pending robots clarification)
+
+| Axis | State |
+|---|---|
+| Reachability (CI) | GREEN — no anti-bot, static 200 ×3 |
+| Extraction precision | GREEN — full 0.833, narrow 0.933 (PROCEED-ready; **no further selector retune needed**) |
+| Field provenance / conflicts | Clean — zero OnEMI conflict, RHP URL cross-validates, BRLM honestly static-unavailable |
+| **Access / ToS (robots.txt)** | **RED-flag / unresolved** — `/ipo/` Disallow for `*` flagged; possibly genuine, possibly a parser over-match; **must be definitively verified** |
+| **Overall** | **HOLD** — the ToS/access gate overrides the precision PROCEED |
+
+### 13.8 Recommended next step (separate, separately-approved; NOT done in this turn)
+
+A tiny **robots-clarification follow-up** to definitively classify (A) vs (B):
+1. In `P-25b checkRobots()`, replace the loose `p.startsWith('/ipo')` clause with correct robots prefix-matching against a representative detail path (`'/ipo/onemi-technology-ipo/2576/'.startsWith(p)`), and **record the exact matching Disallow line(s)** + the full `User-agent: *` block (bounded) into `chittorgarh-fields-v2.json` so the posture is auditable, not just a boolean.
+2. Re-run `group=K`. Inspect the raw rule.
+   - If `/ipo/<slug>/<id>/` detail pages are **allowed** (the flag was an over-match) → flip to **PROCEED to Phase 6A.2 planning** (precision is already GREEN).
+   - If genuinely **disallowed** → Chittorgarh production ingestion is **off the table**; Chittorgarh stays reference-only/manual (Phase 5C closure stands), and the fast-fill strategy falls back to official sources + manual for the gap fields.
+
+**Phase 6A.2 does NOT begin** under any reading until (a) the robots posture is definitively cleared AND (b) a separate Phase 6A.2 planning doc is approved. This turn implements nothing — it records the authoritative CI result and the HOLD verdict only.
+
+*End of Phase 6A.1 status — authoritative post-retune CI: precision GREEN, but HOLD on an unresolved robots.txt `/ipo/` Disallow flag. Awaiting operator decision on the robots-clarification follow-up.*
