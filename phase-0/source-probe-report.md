@@ -1,6 +1,6 @@
 # Phase 0 — Source Probe Report
 
-Generated: 2026-05-24T17:51:59.893Z
+Generated: 2026-05-24T19:02:38.305Z
 
 ## Status Summary
 
@@ -10,7 +10,7 @@ Generated: 2026-05-24T17:51:59.893Z
 
 | Probe | Source | Status | Code | Type | Latency (ms) | Recommendation |
 |---|---|---|---|---|---|---|
-| P-25b | Chittorgarh — detail-page accessibility retune (Phase 6A.1) | GREEN | 200 | HTML | 308 | All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision. |
+| P-25b | Chittorgarh — detail-page accessibility retune (Phase 6A.1) | GREEN | 200 | HTML | 1197 | All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision. |
 | P-26b | Chittorgarh — detail field extraction retune (Phase 6A.1) | GREEN | - | JSON | 27 | Precision met (full=0.83 narrow=0.93). Ready for Phase 6A.2 planning approval. |
 
 ## Per-probe detail
@@ -30,10 +30,10 @@ Generated: 2026-05-24T17:51:59.893Z
 - Update frequency: Daily (manual editor maintained)
 - Recommended action: All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.
 - Fallback: P-26b (field extraction off captured HTML)
-- Latency: 308 ms
-- Ran at (UTC): 2026-05-24T17:51:59.513Z
+- Latency: 1197 ms
+- Ran at (UTC): 2026-05-24T19:02:37.030Z
 
-> third_ipo_status=current | third_ipo_slug=m-r-maniveni-ipo | third_ipo_reason="current-open: list "sme" row date range "22 - 26 May" covers today" | detail-1: static status=200 bytes=343417 | detail-2: static status=200 bytes=309225 | detail-3: static status=200 bytes=280440 | challenges_detected=false | robots: robots.txt: /ipo/ appears Disallow'd for user-agent * — REVIEW before any production polling
+> third_ipo_status=current | third_ipo_slug=m-r-maniveni-ipo | third_ipo_reason="current-open: list "sme" row date range "22 - 26 May" covers today" | detail-1: static status=200 bytes=343417 | detail-2: static status=200 bytes=309225 | detail-3: static status=200 bytes=280440 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)
 
 ```
 {
@@ -79,7 +79,7 @@ Generated: 2026-05-24T17:51:59.893Z
 - Recommended action: Precision met (full=0.83 narrow=0.93). Ready for Phase 6A.2 planning approval.
 - Fallback: P-25b (re-run to refresh HTML)
 - Latency: 27 ms
-- Ran at (UTC): 2026-05-24T17:51:59.513Z
+- Ran at (UTC): 2026-05-24T19:02:37.030Z
 
 > details_extracted=3 | avg_full=0.833 | avg_narrow=0.933 | pdf_on_allowlist=2 | pdf_off_allowlist=4 | third_ipo=m-r-maniveni-ipo(current) | d1:onemi-technology-ipo full=0.90 narrow=1.00 | d2:bagmane-reit full=0.80 narrow=0.80 | d3:m-r-maniveni-ipo full=0.80 narrow=1.00
 

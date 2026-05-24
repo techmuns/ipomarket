@@ -1,11 +1,33 @@
 {
-  "captured_at_utc": "2026-05-24T17:51:59.513Z",
+  "captured_at_utc": "2026-05-24T19:02:37.030Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
-    "ipo_path_disallowed_for_star": true,
+    "ipo_path_disallowed_for_star": false,
     "crawl_delay_seconds": null,
-    "note": "robots.txt: /ipo/ appears Disallow'd for user-agent * — REVIEW before any production polling"
+    "star_group_disallow_rules": [
+      "/ipo/ipo_discussions.asp"
+    ],
+    "per_path": [
+      {
+        "tested_path": "/ipo/onemi-technology-ipo/2576/",
+        "decision": "allowed",
+        "matched_rule": null
+      },
+      {
+        "tested_path": "/ipo/bagmane-reit/3090/",
+        "decision": "allowed",
+        "matched_rule": null
+      },
+      {
+        "tested_path": "/ipo/m-r-maniveni-ipo/2627/",
+        "decision": "allowed",
+        "matched_rule": null
+      }
+    ],
+    "prior_loose_flag": true,
+    "classification": "allowed-prior-flag-was-over-match",
+    "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
     "slug": "m-r-maniveni-ipo",
