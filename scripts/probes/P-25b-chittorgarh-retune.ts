@@ -261,74 +261,176 @@ function extractTitle(html: string): string {
   return m ? m[1]!.trim().slice(0, 200) : '';
 }
 
-// Phase 6A.1.1 — lightweight robots.txt posture check. Fetches
-// https://www.chittorgarh.com/robots.txt once (60s, no retry) and reports
-// whether the /ipo/ path is Disallow'd for user-agent `*` and any
-// Crawl-delay. Posture note only — never gates the probe status.
+// Phase 6A.1.2 — robots.txt posture check with CORRECT robots
+// prefix-matching semantics. Fetches https://www.chittorgarh.com/robots.txt
+// once (60s, no retry) and evaluates whether a representative
+// `/ipo/<slug>/<id>/` detail path is Disallow'd for `User-agent: *`.
+//
+// Phase 6A.1.1 used a loose `p.startsWith('/ipo')` test that could
+// over-match an unrelated rule like `Disallow: /ipo_dashboard.asp`. This
+// version implements the de-facto robots matching algorithm (Google spec):
+//   - a rule path matches a URL path when the URL path starts with the
+//     rule path (with `*` = any-sequence and trailing `$` = end-anchor)
+//   - the longest matching rule wins; an Allow ties-break over a Disallow
+//     of equal specificity
+// and records the exact matching directive line for audit. Posture note
+// only — never gates the probe status.
+const ROBOTS_TEST_PATHS = [
+  '/ipo/onemi-technology-ipo/2576/',   // real OnEMI detail path (IPO #1)
+  '/ipo/bagmane-reit/3090/',           // Bagmane (IPO #2)
+  '/ipo/m-r-maniveni-ipo/2627/',       // M R Maniveni (IPO #3, auto-selected)
+];
+
+interface RobotsRule { type: 'allow' | 'disallow'; path: string; raw: string; }
+interface RobotsGroup { agents: string[]; rules: RobotsRule[]; crawlDelay: number | null; }
+interface RobotsMatch {
+  tested_path: string;
+  decision: 'allowed' | 'disallowed';
+  matched_rule: { user_agent_block: string[]; directive: 'allow' | 'disallow'; path: string; raw: string } | null;
+}
 interface RobotsPosture {
   fetched: boolean;
   status: number;
+  // True iff the CORRECT matcher disallows the OnEMI detail path for `*`.
   ipo_path_disallowed_for_star: boolean | null;
   crawl_delay_seconds: number | null;
+  // Phase 6A.1.2 audit fields:
+  star_group_disallow_rules: string[];      // the `*` group's raw Disallow lines (bounded)
+  per_path: RobotsMatch[];                   // correct-matcher result per tested detail path
+  prior_loose_flag: boolean | null;          // what the old p.startsWith('/ipo') test would have said
+  classification:
+    | 'genuine-ipo-detail-disallow'          // a Disallow truly covers /ipo/<slug>/<id>/
+    | 'allowed-no-applicable-disallow'        // no Disallow matches; prior flag (if any) was an over-match
+    | 'allowed-prior-flag-was-over-match'     // prior loose flag = true but correct matcher = allowed
+    | 'unknown';
   note: string;
 }
+
+// Robots path pattern → regex test (supports * and trailing $).
+function robotsPathMatches(pattern: string, urlPath: string): boolean {
+  if (pattern === '') return false; // empty Disallow ⇒ no restriction
+  let pat = pattern;
+  let anchored = false;
+  if (pat.endsWith('$')) { anchored = true; pat = pat.slice(0, -1); }
+  const escaped = pat.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*');
+  return new RegExp('^' + escaped + (anchored ? '$' : '')).test(urlPath);
+}
+// Specificity = literal length of the pattern (wildcards count as their
+// literal chars; adequate for tie-breaking per the de-facto spec).
+function ruleSpecificity(path: string): number {
+  return path.replace(/\$$/, '').length;
+}
+function parseRobots(body: string): RobotsGroup[] {
+  const groups: RobotsGroup[] = [];
+  let cur: RobotsGroup | null = null;
+  let lastWasRule = false;
+  for (const rawLine of body.split(/\r?\n/)) {
+    const line = rawLine.replace(/#.*$/, '').trim(); // strip inline comments
+    if (!line) continue;
+    const m = line.match(/^([a-z-]+)\s*:\s*(.*)$/i);
+    if (!m) continue;
+    const field = m[1]!.toLowerCase();
+    const value = m[2]!.trim();
+    if (field === 'user-agent') {
+      if (!cur || lastWasRule) {
+        cur = { agents: [], rules: [], crawlDelay: null };
+        groups.push(cur);
+        lastWasRule = false;
+      }
+      cur.agents.push(value);
+    } else if (field === 'disallow' || field === 'allow') {
+      if (!cur) { cur = { agents: ['*'], rules: [], crawlDelay: null }; groups.push(cur); }
+      cur.rules.push({ type: field === 'allow' ? 'allow' : 'disallow', path: value, raw: line });
+      lastWasRule = true;
+    } else if (field === 'crawl-delay') {
+      if (cur) cur.crawlDelay = Number(value);
+      lastWasRule = true;
+    }
+  }
+  return groups;
+}
+function evaluatePath(group: RobotsGroup, urlPath: string): RobotsMatch {
+  let bestDisallow: RobotsRule | null = null;
+  let bestAllow: RobotsRule | null = null;
+  for (const rule of group.rules) {
+    if (rule.path === '') continue;
+    if (!robotsPathMatches(rule.path, urlPath)) continue;
+    if (rule.type === 'disallow') {
+      if (!bestDisallow || ruleSpecificity(rule.path) > ruleSpecificity(bestDisallow.path)) bestDisallow = rule;
+    } else {
+      if (!bestAllow || ruleSpecificity(rule.path) > ruleSpecificity(bestAllow.path)) bestAllow = rule;
+    }
+  }
+  const toMatch = (r: RobotsRule | null): RobotsMatch['matched_rule'] =>
+    r ? { user_agent_block: group.agents, directive: r.type, path: r.path, raw: r.raw } : null;
+  if (!bestDisallow) return { tested_path: urlPath, decision: 'allowed', matched_rule: toMatch(bestAllow) };
+  // Allow wins ties (Google spec: equal specificity → least-restrictive).
+  if (bestAllow && ruleSpecificity(bestAllow.path) >= ruleSpecificity(bestDisallow.path)) {
+    return { tested_path: urlPath, decision: 'allowed', matched_rule: toMatch(bestAllow) };
+  }
+  return { tested_path: urlPath, decision: 'disallowed', matched_rule: toMatch(bestDisallow) };
+}
+
 async function checkRobots(): Promise<RobotsPosture> {
+  const base: Omit<RobotsPosture, 'note'> = {
+    fetched: false,
+    status: 0,
+    ipo_path_disallowed_for_star: null,
+    crawl_delay_seconds: null,
+    star_group_disallow_rules: [],
+    per_path: [],
+    prior_loose_flag: null,
+    classification: 'unknown',
+  };
   try {
     const r = await httpGet('https://www.chittorgarh.com/robots.txt', {
       headers: { Accept: 'text/plain,*/*;q=0.8' },
       timeoutMs: 60_000,
     });
     if (!r.ok || !r.body) {
-      return {
-        fetched: false,
-        status: r.status,
-        ipo_path_disallowed_for_star: null,
-        crawl_delay_seconds: null,
-        note: `robots.txt not fetched (status ${r.status}); posture unknown — default to conservative single-request-per-page polling`,
-      };
+      return { ...base, status: r.status, note: `robots.txt not fetched (status ${r.status}); posture unknown — default to conservative single-request-per-page polling` };
     }
-    // Parse the `User-agent: *` block only (conservative — the policy that
-    // governs a generic client). Collect its Disallow + Crawl-delay lines.
-    const lines = r.body.split(/\r?\n/).map((l) => l.trim());
-    let inStar = false;
-    const starDisallows: string[] = [];
-    let crawlDelay: number | null = null;
-    for (const line of lines) {
-      if (/^#/.test(line) || line === '') continue;
-      const ua = line.match(/^user-agent:\s*(.+)$/i);
-      if (ua) {
-        inStar = ua[1]!.trim() === '*';
-        continue;
-      }
-      if (!inStar) continue;
-      const dis = line.match(/^disallow:\s*(.*)$/i);
-      if (dis) {
-        starDisallows.push(dis[1]!.trim());
-        continue;
-      }
-      const cd = line.match(/^crawl-delay:\s*([\d.]+)/i);
-      if (cd) crawlDelay = Number(cd[1]);
-    }
-    const ipoDisallowed = starDisallows.some(
+    const groups = parseRobots(r.body);
+    const starGroup = groups.find((g) => g.agents.some((a) => a.trim() === '*'))
+      ?? { agents: ['*'], rules: [], crawlDelay: null };
+    const starDisallows = starGroup.rules.filter((x) => x.type === 'disallow').map((x) => x.path);
+
+    // Correct-matcher evaluation across the real detail paths.
+    const perPath = ROBOTS_TEST_PATHS.map((p) => evaluatePath(starGroup, p));
+    const anyDisallowed = perPath.some((m) => m.decision === 'disallowed');
+
+    // Reproduce the OLD loose flag to confirm whether it was an over-match.
+    const priorLoose = starDisallows.some(
       (p) => p !== '' && ('/ipo/'.startsWith(p) || p === '/' || p.startsWith('/ipo')),
     );
+
+    let classification: RobotsPosture['classification'];
+    if (anyDisallowed) classification = 'genuine-ipo-detail-disallow';
+    else if (priorLoose) classification = 'allowed-prior-flag-was-over-match';
+    else classification = 'allowed-no-applicable-disallow';
+
+    const matchedNote = perPath
+      .map((m) => `${m.tested_path}→${m.decision}${m.matched_rule ? ` (${m.matched_rule.directive}: ${m.matched_rule.path})` : ' (no matching rule)'}`)
+      .join('; ');
+
     return {
       fetched: true,
       status: r.status,
-      ipo_path_disallowed_for_star: ipoDisallowed,
-      crawl_delay_seconds: crawlDelay,
-      note: ipoDisallowed
-        ? `robots.txt: /ipo/ appears Disallow'd for user-agent * — REVIEW before any production polling`
-        : `robots.txt: /ipo/ not Disallow'd for user-agent * (${starDisallows.length} disallow rule(s) parsed)${crawlDelay != null ? `; Crawl-delay=${crawlDelay}s` : '; no Crawl-delay directive'}`,
+      ipo_path_disallowed_for_star: anyDisallowed,
+      crawl_delay_seconds: starGroup.crawlDelay,
+      star_group_disallow_rules: starDisallows.slice(0, 50),
+      per_path: perPath,
+      prior_loose_flag: priorLoose,
+      classification,
+      note:
+        classification === 'genuine-ipo-detail-disallow'
+          ? `robots.txt: /ipo/<slug>/<id/> GENUINELY Disallow'd for * — ${matchedNote}. Chittorgarh production polling would violate robots; keep reference/manual-only.`
+          : classification === 'allowed-prior-flag-was-over-match'
+          ? `robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). ${matchedNote}`
+          : `robots.txt: detail paths ALLOWED for * (no applicable Disallow). ${matchedNote}`,
     };
   } catch (e) {
-    return {
-      fetched: false,
-      status: 0,
-      ipo_path_disallowed_for_star: null,
-      crawl_delay_seconds: null,
-      note: `robots.txt fetch errored: ${(e as Error).message ?? String(e)}; posture unknown`,
-    };
+    return { ...base, note: `robots.txt fetch errored: ${(e as Error).message ?? String(e)}; posture unknown` };
   }
 }
 
@@ -462,6 +564,8 @@ export const probe: ProbeFn = async (ctx): Promise<ProbeResult> => {
     `third_ipo_reason="${third.reason}"`,
     ...details.map((d) => `detail-${d.index}: ${d.outcome.mode} status=${d.outcome.status} bytes=${d.outcome.bytes}` + (d.outcome.error ? ` err=${d.outcome.error}` : '')),
     `challenges_detected=${anyChallenge}`,
+    `robots_classification=${robots.classification}`,
+    `robots_ipo_disallowed=${robots.ipo_path_disallowed_for_star}`,
     `robots: ${robots.note}`,
   ].join(' | ');
 

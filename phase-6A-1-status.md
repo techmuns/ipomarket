@@ -344,4 +344,69 @@ A tiny **robots-clarification follow-up** to definitively classify (A) vs (B):
 
 **Phase 6A.2 does NOT begin** under any reading until (a) the robots posture is definitively cleared AND (b) a separate Phase 6A.2 planning doc is approved. This turn implements nothing — it records the authoritative CI result and the HOLD verdict only.
 
-*End of Phase 6A.1 status — authoritative post-retune CI: precision GREEN, but HOLD on an unresolved robots.txt `/ipo/` Disallow flag. Awaiting operator decision on the robots-clarification follow-up.*
+*(§13 records the authoritative post-retune CI + the HOLD verdict. §14 below records the Phase 6A.1.2 robots-clarification pass — the matcher fix is shipped; the verdict stays HOLD pending the CI re-run that will classify the real robots.txt.)*
+
+---
+
+## 14. Phase 6A.1.2 — robots-clarification pass (matcher fixed; verdict stays HOLD pending CI)
+
+### 14.1 What changed (P-25b only)
+
+`scripts/probes/P-25b-chittorgarh-retune.ts` — `checkRobots()` rewritten to use **correct robots prefix-matching semantics** (the de-facto Google spec) instead of the loose `p.startsWith('/ipo')` test that produced the §13 ambiguity:
+
+- **`robotsPathMatches(pattern, urlPath)`** — a rule matches when the URL path starts with the rule path; supports `*` (any-sequence) and trailing `$` (end-anchor).
+- **`parseRobots(body)`** — groups directives by `User-agent`, collecting both Allow and Disallow rules + Crawl-delay; isolates the `*` group (named-bot blocks are correctly ignored for a generic UA).
+- **`evaluatePath(group, urlPath)`** — longest-match wins; an Allow ties-break over an equally-specific Disallow (least-restrictive).
+- **Tested against the 3 real detail paths** (`/ipo/onemi-technology-ipo/2576/`, `/ipo/bagmane-reit/3090/`, `/ipo/m-r-maniveni-ipo/2627/`).
+- **Records the exact matching directive line** per path (user-agent block, directive type, directive path, raw line) + the `*` group's full Disallow list (bounded to 50) into `chittorgarh-fields-v2.json.robots_posture`.
+- **Reproduces the old loose flag** alongside the correct result, so the artifact states definitively whether the §13 flag was a genuine disallow or an over-match.
+- **`classification`** field, one of:
+  - `genuine-ipo-detail-disallow` — a Disallow truly covers `/ipo/<slug>/<id>/`
+  - `allowed-prior-flag-was-over-match` — correct matcher = allowed, but the old loose flag fired (confirms §13 was a false positive)
+  - `allowed-no-applicable-disallow` — allowed, no `/ipo`-ish rule at all
+  - `unknown` — robots.txt not fetched (e.g. sandbox 403)
+
+`ProbeResult.notes` now carries `robots_classification` + `robots_ipo_disallowed` + the descriptive note. **No change to reachability or extraction logic. P-26b untouched.**
+
+### 14.2 Local validation
+
+- `npm run typecheck` + `npm run build` — green.
+- **Matcher unit-test (10 scenarios)** — the algorithm was copied to a throwaway harness and asserted against synthetic robots.txt inputs. **10/10 passed**, including the cases that decide the §13 question:
+
+| Scenario | Correct matcher | Old loose matcher would say |
+|---|---|---|
+| `Disallow: /ipo_dashboard.asp` | **allowed** ✅ | disallowed (over-match) |
+| `Disallow: /ipostatus` | **allowed** ✅ | disallowed (over-match) |
+| `Disallow: /ipo/` | disallowed ✅ | disallowed |
+| `Disallow: /ipo` | disallowed ✅ | disallowed |
+| `Disallow: /` (blanket) | disallowed ✅ | disallowed |
+| `Disallow: /ipo/` + `Allow: /ipo/onemi…/` | **allowed** (tie-break) ✅ | disallowed |
+| `Disallow: /*?` (wildcard, no `?` in path) | allowed ✅ | n/a |
+| named-bot block, `*` clean | allowed ✅ | n/a |
+
+  The two over-match rows confirm the fix: a `/ipo_dashboard.asp`-style rule no longer falsely flags the detail pages.
+- **Sandbox P-25b run** — sandbox 403's Chittorgarh (host-allowlist), so robots.txt can't be fetched here; `checkRobots()` degrades gracefully to `fetched:false, status:403, classification:'unknown'` with a clear note. No crash; valid `ProbeResult` emitted. The authoritative classification can only come from CI.
+
+### 14.3 Do-not-touch verification
+
+```
+git status --short → only:
+  M scripts/probes/P-25b-chittorgarh-retune.ts
+  M phase-6A-1-status.md
+```
+`src/data/snapshots/*` untouched · `src/types/*` untouched · UI untouched · `scripts/ingest/*` untouched · `scripts/pdf/*` untouched · `.github/workflows/*` untouched · `P-26b` untouched · no PDF binaries / full-text dumps. The sandbox P-25b run full-rewrote `phase-0/source-probe-*`; that was reverted (`git checkout -- phase-0/`) so CI regenerates authoritatively.
+
+### 14.4 Verdict — stays **HOLD** pending the CI re-run
+
+The matcher is now correct, but the **authoritative classification requires Chittorgarh's real robots.txt**, which only CI can fetch. The verdict therefore stays **HOLD** until the `group=K` re-run produces `chittorgarh-fields-v2.json.robots_posture.classification`.
+
+**Operator action**: re-run the existing `phase-0-probes` workflow with `group=K`. Then I pull `main` and read the classification:
+
+| CI `classification` | Final verdict |
+|---|---|
+| `allowed-prior-flag-was-over-match` OR `allowed-no-applicable-disallow` | **PROCEED to Phase 6A.2 planning** — robots permits the `/ipo/<slug>/<id>/` detail pages; the §13 flag was an over-match; precision already GREEN (full 0.833 / narrow 0.933). Phase 6A.2 still needs its own planning doc + approval. |
+| `genuine-ipo-detail-disallow` | **Keep HOLD** — Chittorgarh genuinely disallows the detail pages for `*`. Chittorgarh stays **reference/manual-only** (Phase 5C closure stands); the fast-fill strategy falls back to official sources + manual for the gap fields. No scheduled Chittorgarh polling. |
+
+This turn ships only the matcher fix + this status update. **Phase 6A.2 is not started**, and won't begin until (a) the CI classification clears the robots question favorably AND (b) a separate Phase 6A.2 planning doc is approved.
+
+*End of Phase 6A.1 status — robots-clarification matcher fixed + unit-validated (10/10); verdict stays HOLD pending the authoritative `group=K` CI classification of Chittorgarh's real robots.txt.*
