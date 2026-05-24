@@ -1,5 +1,997 @@
 [
   {
+    "probe_id": "P-01",
+    "source": "NSE — Current/Open IPOs",
+    "url_or_endpoint": "https://www.nseindia.com/api/all-upcoming-issues?category=ipo",
+    "fetch_method": "GET (after cookie warm-up)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "X-Requested-With",
+      "warmed cookies"
+    ],
+    "status_code": 200,
+    "response_type": "JSON",
+    "fields_found": [],
+    "fields_missing": [
+      "symbol",
+      "companyName",
+      "issueStartDate",
+      "issueEndDate",
+      "issuePrice",
+      "issueSize",
+      "status"
+    ],
+    "sample_record": "[]",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updated when an IPO opens/closes",
+    "status": "YELLOW",
+    "recommended_action": "Source reachable but 0 rows in current snapshot. category=ipo appears to be mainboard-only; if today's only IPOs are SME, P-05 should satisfy the IPO-list-source gate.",
+    "fallback_source": "P-05 (SME), P-06 (BSE)",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 364,
+    "notes": "source reachable but no rows in current snapshot."
+  },
+  {
+    "probe_id": "P-02",
+    "source": "NSE — Upcoming IPOs",
+    "url_or_endpoint": "https://www.nseindia.com/api/all-upcoming-issues?category=ipo",
+    "fetch_method": "GET (after cookie warm-up)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "X-Requested-With",
+      "warmed cookies"
+    ],
+    "status_code": 200,
+    "response_type": "JSON",
+    "fields_found": [],
+    "fields_missing": [
+      "symbol",
+      "companyName",
+      "issueStartDate",
+      "issueEndDate"
+    ],
+    "sample_record": "[]",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updated when issues are announced",
+    "status": "YELLOW",
+    "recommended_action": "Source reachable but 0 upcoming rows in current snapshot. category=ipo is mainboard-only; SME pipeline lives in P-05.",
+    "fallback_source": "P-05 (SME), P-08b",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 321,
+    "notes": "source reachable but no rows in current snapshot."
+  },
+  {
+    "probe_id": "P-03",
+    "source": "NSE — Past/Recent IPOs",
+    "url_or_endpoint": "https://www.nseindia.com/api/all-upcoming-issues?category=ipo",
+    "fetch_method": "GET (after cookie warm-up)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "X-Requested-With",
+      "warmed cookies"
+    ],
+    "status_code": 200,
+    "response_type": "JSON",
+    "fields_found": [],
+    "fields_missing": [
+      "symbol",
+      "companyName",
+      "listingDate"
+    ],
+    "sample_record": "[]",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updated on listing",
+    "status": "YELLOW",
+    "recommended_action": "Source reachable but 0 rows in current snapshot. category=ipo is mainboard-only; recently-listed SMEs require P-05.",
+    "fallback_source": "P-05 (SME), P-15",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 40,
+    "notes": "source reachable but no rows in current snapshot."
+  },
+  {
+    "probe_id": "P-04",
+    "source": "NSE — Live Subscription",
+    "url_or_endpoint": "https://www.nseindia.com/api/ipo-current-issue?symbol=<no-active-ipo>",
+    "fetch_method": "GET (after cookie warm-up + active-symbol discovery)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "X-Requested-With",
+      "warmed cookies"
+    ],
+    "status_code": null,
+    "response_type": "EMPTY",
+    "fields_found": [],
+    "fields_missing": [
+      "qib",
+      "nii_big",
+      "nii_small",
+      "retail",
+      "employee",
+      "anchor"
+    ],
+    "sample_record": "",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updates every ~10 minutes during bidding window",
+    "status": "YELLOW",
+    "recommended_action": "No currently open IPO discovered; re-run during an active issue window. Endpoint not validated this run.",
+    "fallback_source": "P-07",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 47,
+    "notes": "Active candidate symbol: (none currently open)"
+  },
+  {
+    "probe_id": "P-05",
+    "source": "NSE Emerge — SME IPOs",
+    "url_or_endpoint": "https://www.nseindia.com/api/all-upcoming-issues?category=sme",
+    "fetch_method": "GET (after cookie warm-up) — multi-candidate",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "warmed cookies",
+      "X-Requested-With (for JSON endpoints)"
+    ],
+    "status_code": 200,
+    "response_type": "JSON",
+    "fields_found": [],
+    "fields_missing": [
+      "(empty array)"
+    ],
+    "sample_record": "{}",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Daily",
+    "status": "YELLOW",
+    "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
+    "fallback_source": "P-06b",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 1214,
+    "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
+  },
+  {
+    "probe_id": "P-08",
+    "source": "SEBI — Public Issues Filings",
+    "url_or_endpoint": "https://www.sebi.gov.in/filings/public-issues.html",
+    "fetch_method": "GET (static) → GET (alt) → GET (detail pages) → Playwright",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "Chromium for JS render"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "pdf urls",
+      "rows"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 19\n    }\n  ],\n  \"unique_pdf_count\": 19,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf\",\n      \"link_text\": \"Incred Holdings Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf\",\n      \"link_text\": \"Online Instruments(India) Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf\",\n      \"link_text\": \"Jindal Supreme (India) Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updated whenever a DRHP/RHP/observation is filed",
+    "status": "GREEN",
+    "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
+    "fallback_source": "P-10",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 2449,
+    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46183 (pdfs=19)"
+  },
+  {
+    "probe_id": "P-08b",
+    "source": "SEBI — Processing Status",
+    "url_or_endpoint": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=14&smid=8",
+    "fetch_method": "GET → Playwright/Chromium",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "Chromium for JS render"
+    ],
+    "status_code": 200,
+    "response_type": "EMPTY",
+    "fields_found": [
+      "tbody data rows"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"winning_attempt\": \"static\",\n  \"tbody_row_count\": 2,\n  \"notes\": \"static ok: tbody_rows=2, bytes=25096\"\n}",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updated on filing/observation status changes",
+    "status": "YELLOW",
+    "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
+    "fallback_source": "P-08",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 297,
+    "notes": "static ok: tbody_rows=2, bytes=25096"
+  },
+  {
+    "probe_id": "P-09",
+    "source": "SEBI — DRHP PDF Download",
+    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+    "fetch_method": "GET (binary) + pdf-parse.py (page-count)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 200,
+    "response_type": "PDF",
+    "fields_found": [
+      "%PDF magic",
+      "bytes",
+      "page_count"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf\",\n  \"link_text\": \"Incred Holdings Limited - Draft Abridged Prospectus\",\n  \"bytes\": 728221,\n  \"sha256\": \"57ed9f25485f5467…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 13,\n  \"cover_text_first_200\": \"(Please scan this QR code to view\\nthe UDRHP-I and the Draft\\nAbridged Prospectus)\\nINCRED HOLDINGS LIMITED\\nCORPORATE IDENTITY NUMBER: U67190MH2011PLC211738\\nREGISTERED AND CONTACT PERSON EMAIL TELEPHONE \"\n}",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Immutable once published",
+    "status": "GREEN",
+    "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
+    "fallback_source": "P-10",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 3427,
+    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf; bytes=728221; page_count=13; pdf-parse=ok"
+  },
+  {
+    "probe_id": "P-10",
+    "source": "NSE/BSE — DRHP Archive",
+    "url_or_endpoint": "https://www.bseindia.com/markets/PublicIssues/DRHP.aspx",
+    "fetch_method": "GET (primary, then secondary)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [],
+    "fields_missing": [
+      "rows",
+      "pdf links"
+    ],
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" data-critters-container=\"\"><head>\n    <meta charset=\"utf-8\">\n    <title>\n      LIVE Stock/Share Market | Indian Stock/Share Market LIVE | BSE SENSEX | BSE (formerly Bombay Stock\n      Exchange)\n    </title>\n    <meta name=\"description\" content=\"BSE SENSEX - India's Index the World Tracks. Get live BSE SENSEX quotes. BSE Sensex Heat Map a great tool to track BSE SENSEX stocks. Gainers, losers, volume toppers in BSE SENSEX Stocks. Corporate announcements of BSE SENSEX stocks, Share Market Today | Share Market Live updates. Share Market Live Charts, News, Analysis, IPO News and more. Click here to stay updated and invest wisely!Get all the latest share market and India stock market news and updates on bseindia.com\">\n    <meta name=\"keywords\" content=\"BSE SENSEX,…[truncated, total 12565 chars]",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updated with DRHP filings",
+    "status": "RED",
+    "recommended_action": "Skip if SEBI (P-08) is GREEN.",
+    "fallback_source": "P-08",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 10996,
+    "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
+  },
+  {
+    "probe_id": "P-15",
+    "source": "BSE — Historical OHLC (fallback)",
+    "url_or_endpoint": "https://api.bseindia.com/BseIndiaAPI/api/StockReachGraph/w?scripcode=500325&flag=W&fromdate=&todate=&seriesid=",
+    "fetch_method": "GET (BSE official endpoint)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "Origin"
+    ],
+    "status_code": 200,
+    "response_type": "JSON",
+    "fields_found": [
+      "f1"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"CurrDate\": \"Fri May 22 2026 16:01:33\",\n  \"PrevClose\": \"1349.7\",\n  \"LowVal\": \"1345\",\n  \"HighVal\": \"1370\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1354.60\",\n  \"CurrTime\": \"16:01\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"40000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Fri May 22 2026 16:01:33\\\",\\\"vale1\\\":\\\"1354.60\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Fri May 22 2026 16:00:05\\\",\\\"vale1\\\":\\\"1354.60\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Fri May 22 2026 15:59:23\\\",\\\"vale1\\\":\\\"1354.60\\\",\\\"vole\\\":\\\"18\\\"},{\\\"dttm\\\":\\\"Fri May 22 2026 15:57:04\\\",\\\"vale1\\\":\\\"1354.60\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Fri May 22 2026 15:54:13\\\",\\\"vale1\\\":\\\"1354.60\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Fri May 22 2026 15:52:11\\\",\\\"vale1\\\":\\\"1354.60\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Fri May 22 2026 15:51:53\\\",\\\"vale1\\\":\\\"1354.60\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Fri May 22 20…[truncated, total 31407 chars]",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "EOD daily",
+    "status": "GREEN",
+    "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
+    "fallback_source": "P-15b (current quote only)",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 4048,
+    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [bse:RELIANCE] BSE rows=26454, fields=1"
+  },
+  {
+    "probe_id": "P-15b",
+    "source": "NSE — Equity Quote",
+    "url_or_endpoint": "https://www.nseindia.com/api/quote-equity?symbol=RELIANCE",
+    "fetch_method": "GET (after cookie warm-up)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "X-Requested-With",
+      "warmed cookies"
+    ],
+    "status_code": 403,
+    "response_type": "BLOCKED",
+    "fields_found": [],
+    "fields_missing": [
+      "priceInfo"
+    ],
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;b5c83017&#46;1779653766&#46;d406408d\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;b5c83017&#46;1779653766&#46;d406408d</P>\n</BODY>\n</HTML>\n",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Near real-time during market hours",
+    "status": "RED",
+    "recommended_action": "Fall back to BSE quote.",
+    "fallback_source": "none",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 29,
+    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
+  },
+  {
+    "probe_id": "P-16",
+    "source": "Ticker mapping (NSE list symbol field)",
+    "url_or_endpoint": "https://www.nseindia.com/api/all-upcoming-issues?category=ipo",
+    "fetch_method": "GET (reuses P-01) + regex",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "warmed cookies"
+    ],
+    "status_code": 200,
+    "response_type": "JSON",
+    "fields_found": [],
+    "fields_missing": [
+      "symbol"
+    ],
+    "sample_record": "{}",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Matches NSE list",
+    "status": "RED",
+    "recommended_action": "Maintain a manual override file for IPOs whose symbol drifts post-listing.",
+    "fallback_source": "none",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 22,
+    "notes": "total=0, validSymbolPattern=0, rate=0%"
+  },
+  {
+    "probe_id": "P-06",
+    "source": "BSE — Mainboard Public Issues",
+    "url_or_endpoint": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?id=1&Type=p",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [],
+    "fields_missing": [
+      "issue rows"
+    ],
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" data-critters-container=\"\"><head>\n    <meta charset=\"utf-8\">\n    <title>\n      LIVE Stock/Share Market | Indian Stock/Share Market LIVE | BSE SENSEX | BSE (formerly Bombay Stock\n      Exchange)\n    </title>\n    <meta name=\"description\" content=\"BSE SENSEX - India's Index the World Tracks. Get live BSE SENSEX quotes. BSE Sensex Heat Map a great tool to track BSE SENSEX stocks. Gainers, losers, volume toppers in BSE SENSEX Stocks. Corporate announcements of BSE SENSEX stocks, Share Market Today | Share Market Live updates. Share Market Live Charts, News, Analysis, …[truncated, total 12565 chars]",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updated with public issue lifecycle",
+    "status": "RED",
+    "recommended_action": "Skip; NSE primary covers this.",
+    "fallback_source": "P-01",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 504,
+    "notes": "<tr> count: 0, total bytes: 12565"
+  },
+  {
+    "probe_id": "P-06b",
+    "source": "BSE SME — Public Issues",
+    "url_or_endpoint": "https://www.bsesme.com/PublicIssues/PublicIssues.aspx?id=1",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 0,
+    "response_type": "ERROR",
+    "fields_found": [],
+    "fields_missing": [
+      "issue rows"
+    ],
+    "sample_record": "",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Updated with SME public issue lifecycle",
+    "status": "RED",
+    "recommended_action": "Skip if NSE Emerge is GREEN.",
+    "fallback_source": "P-05",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 10489,
+    "notes": "Network error: fetch failed"
+  },
+  {
+    "probe_id": "P-07",
+    "source": "BSE — Subscription / Cumulative Bid Details",
+    "url_or_endpoint": "https://www.bseindia.com/publicissue",
+    "fetch_method": "GET landing; per-issue bid URL requires drill-down",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [],
+    "fields_missing": [
+      "bid-detail markers"
+    ],
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" data-critters-container=\"\"><head>\n    <meta charset=\"utf-8\">\n    <title>\n      LIVE Stock/Share Market | Indian Stock/Share Market LIVE | BSE SENSEX | BSE (formerly Bombay Stock\n      Exchange)\n    </title>\n    <meta name=\"description\" content=\"BSE SENSEX - India's Index the World Tracks. Get live BSE SENSEX quotes. BSE Sensex Heat Map a great tool to track BSE SENSEX stocks. Gainers, losers, volume toppers in BSE SENSEX Stocks. Corporate announcements of BSE SENSEX stocks, Share Market Today | Share Market Live updates. Share Market Live Charts, News, Analysis, …[truncated, total 12565 chars]",
+    "parsing_difficulty": "Hard",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Intra-day during bidding window",
+    "status": "RED",
+    "recommended_action": "Rely on NSE only (P-04).",
+    "fallback_source": "P-04",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 356,
+    "notes": "Bid-link markers found: 0, bytes: 12565"
+  },
+  {
+    "probe_id": "P-11",
+    "source": "Registrar resolution (from NSE list)",
+    "url_or_endpoint": "derived from P-01 endpoint",
+    "fetch_method": "GET (reuses P-01 data) + name-substring match",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "warmed cookies"
+    ],
+    "status_code": 200,
+    "response_type": "JSON",
+    "fields_found": [],
+    "fields_missing": [
+      "registrar field"
+    ],
+    "sample_record": "{}",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Matches NSE list cadence",
+    "status": "RED",
+    "recommended_action": "Fall back to per-issue page scrape or manual seed.",
+    "fallback_source": "P-12",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 26,
+    "notes": "Issues=0, registrars resolved by name match=0"
+  },
+  {
+    "probe_id": "P-12",
+    "source": "MUFG Intime (Link Intime) — landing",
+    "url_or_endpoint": "https://in.mpms.mufg.com/Initial_Offer/public-issues.html",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "landing page reachable"
+    ],
+    "fields_missing": [],
+    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37481 chars]",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Static landing; per-issue lookup is form-based (do not scrape)",
+    "status": "GREEN",
+    "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
+    "fallback_source": "none",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 850,
+    "notes": "primary=200, legacy=(skipped)"
+  },
+  {
+    "probe_id": "P-13",
+    "source": "KFintech — landing",
+    "url_or_endpoint": "https://ipostatus.kfintech.com/",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "landing page reachable"
+    ],
+    "fields_missing": [],
+    "sample_record": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"./licIPO.svg\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"The IPO Allottment Status Page\"/><meta name=\"content-type\" content=\"text/html\"/><link rel=\"apple-touch-icon\" href=\"./licIPO.svg\"/><link rel=\"manifest\" href=\"./manifest.json\"/><title>IPO Allotment Status</title><script>document.onreadystatechange=function()…[truncated, total 1003 chars]",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Static landing",
+    "status": "GREEN",
+    "recommended_action": "Store URL as link-out only.",
+    "fallback_source": "none",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 143,
+    "notes": "primary=200, secondary=(skipped)"
+  },
+  {
+    "probe_id": "P-14",
+    "source": "Bigshare — landing",
+    "url_or_endpoint": "https://www.bigshareonline.com/ipo_allotment.html",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "landing page reachable"
+    ],
+    "fields_missing": [],
+    "sample_record": "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Big Share Online</title>\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,40…[truncated, total 12217 chars]",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Static landing",
+    "status": "GREEN",
+    "recommended_action": "Store URL as link-out only.",
+    "fallback_source": "none",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 4513,
+    "notes": "status=200"
+  },
+  {
+    "probe_id": "P-14b",
+    "source": "Maashitla — landing",
+    "url_or_endpoint": "https://maashitla.com/allotment-status/public-issues",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "landing page reachable"
+    ],
+    "fields_missing": [],
+    "sample_record": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\n    <title>Public Issues -  Maashitla Securities Pvt. Limited</title>\n\n    <meta name=\"keywords\" content=\"HTML5 Template\" />\n    <meta name=\"description\" content=\"Maashitla Securities Pvt. Limited\">\n    <meta name=\"author\" content=\"maashitla.com\">\n\n    <!-- Favicon -->\n    <link rel=\"shortcut icon\" href=\"https://cdn.maashitla.com/img/favicon.ico\" type=\"image/x-icon\" />…[truncated, total 55920 chars]",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Static landing",
+    "status": "GREEN",
+    "recommended_action": "Store URL as link-out only.",
+    "fallback_source": "none",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 1111,
+    "notes": "status=200"
+  },
+  {
+    "probe_id": "P-17",
+    "source": "RHP PDF parsing — sample",
+    "url_or_endpoint": "https://www.sebi.gov.in/filings/public-issues.html",
+    "fetch_method": "GET (discovery)",
+    "headers_or_cookies_required": [],
+    "status_code": 200,
+    "response_type": "EMPTY",
+    "fields_found": [],
+    "fields_missing": [
+      "pdf url"
+    ],
+    "sample_record": "",
+    "parsing_difficulty": "Hard",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Immutable",
+    "status": "YELLOW",
+    "recommended_action": "PDF discovery selector may have drifted.",
+    "fallback_source": "manual",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 1326,
+    "notes": "No PDF URL discovered."
+  },
+  {
+    "probe_id": "P-18",
+    "source": "Anchor circular PDF parsing — sample",
+    "url_or_endpoint": "https://www.sebi.gov.in/filings/public-issues.html",
+    "fetch_method": "GET (discovery)",
+    "headers_or_cookies_required": [],
+    "status_code": 200,
+    "response_type": "EMPTY",
+    "fields_found": [],
+    "fields_missing": [
+      "pdf url"
+    ],
+    "sample_record": "",
+    "parsing_difficulty": "Hard",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Immutable",
+    "status": "YELLOW",
+    "recommended_action": "PDF discovery selector may have drifted.",
+    "fallback_source": "manual",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 214,
+    "notes": "No PDF URL discovered."
+  },
+  {
+    "probe_id": "P-19",
+    "source": "GMP — IPOWatch",
+    "url_or_endpoint": "https://ipowatch.in/ipo-grey-market-premium-latest-ipo-gmp/",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "gmp table rows"
+    ],
+    "fields_missing": [],
+    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium plugin v27.6 (Yoast SEO v27.6) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n\t<title>IPO GMP Today, Live IPO Grey Market Premiu…[truncated, total 815617 chars]",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "High",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Daily, updates intra-day",
+    "status": "YELLOW",
+    "recommended_action": "Include in Phase 6 GMP averager.",
+    "fallback_source": "P-20",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 1726,
+    "notes": "<tr> count: 289, bytes=815617"
+  },
+  {
+    "probe_id": "P-20",
+    "source": "GMP — Chittorgarh",
+    "url_or_endpoint": "https://www.chittorgarh.com/report/ipo-grey-market-premium-kostak-rates/24/",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [],
+    "fields_missing": [
+      "gmp table"
+    ],
+    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/home.png\"/><link …[truncated, total 123097 chars]",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "High",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Daily",
+    "status": "RED",
+    "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
+    "fallback_source": "P-21",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 650,
+    "notes": "<tr> count: 0, bytes=123097"
+  },
+  {
+    "probe_id": "P-21",
+    "source": "GMP — IPO Central",
+    "url_or_endpoint": "https://ipocentral.in/ipo-discussion/",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 403,
+    "response_type": "BLOCKED",
+    "fields_found": [],
+    "fields_missing": [
+      "discussion markers"
+    ],
+    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-QpjdPal2oOAw0tfrSDaDLi&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5747 chars]",
+    "parsing_difficulty": "Hard",
+    "anti_bot_risk": "High",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Daily",
+    "status": "RED",
+    "recommended_action": "Skip.",
+    "fallback_source": "P-22",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 76,
+    "notes": "Non-200. status=403"
+  },
+  {
+    "probe_id": "P-22",
+    "source": "GMP — InvestorGain",
+    "url_or_endpoint": "https://www.investorgain.com/report/live-ipo-gmp/331/ipo/",
+    "fetch_method": "GET",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "gmp table rows"
+    ],
+    "fields_missing": [],
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" class=\"inter_a869fe2d-module__Nl2jCG__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/6b05e70c1049fdd7.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/fe81322e39413244.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/635245f93e41a18e.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next…[truncated, total 135698 chars]",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "High",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Daily, intra-day",
+    "status": "YELLOW",
+    "recommended_action": "Include in Phase 6 GMP averager.",
+    "fallback_source": "none",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 360,
+    "notes": "<tr> count: 2, bytes=135698"
+  },
+  {
+    "probe_id": "P-23a",
+    "source": "Broker IPO page — Zerodha (reference only)",
+    "url_or_endpoint": "https://zerodha.com/ipo/440359/nfp-sampoorna-foods/",
+    "fetch_method": "Playwright/Chromium (headless, no stealth)",
+    "headers_or_cookies_required": [
+      "User-Agent (desktop Chrome)",
+      "Locale en-IN"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "Open Date",
+      "Close Date",
+      "Issue Open",
+      "Issue Close",
+      "Lot Size",
+      "Issue Size",
+      "Registrar",
+      "Fresh Issue",
+      "Allotment Date",
+      "Listing Date",
+      "NII",
+      "Retail",
+      "Anchor",
+      "Revenue",
+      "GMP",
+      "Grey Market",
+      "Subscription"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"title\": \"NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size\",\n  \"headings_top10\": [\n    \"NFP Sampoorna Foods IPO\",\n    \"NFP Sampoorna Foods IPO details\",\n    \"Schedule of NFP Sampoorna Foods\",\n    \"About NFP Sampoorna Foods\",\n    \"Financials of NFP Sampoorna Foods\",\n    \"Issue size\",\n    \"Utilisation of proceeds\",\n    \"Strengths\",\n    \"Risks\",\n    \"Allotment Status for NFP Sampoorna Foods\"\n  ],\n  \"tables_count\": 4,\n  \"labels_detected\": [\n    \"Open Date\",\n    \"Close Date\",\n    \"Issue Open\",\n    \"Issue Close\",\n    \"Lot Size\",\n    \"Issue Size\",\n    \"Registrar\",\n    \"Fresh Issue\",\n    \"Allotment Date\",\n    \"Listing Date\",\n    \"NII\",\n    \"Retail\",\n    \"Anchor\",\n    \"Revenue\",\n    \"GMP\",\n    \"Grey Market\",\n    \"Subscription\"\n  ],\n  \"doc_links_count\": 2,\n  \"first_doc_links\": [\n    {\n      \"text\": \"Download prospectus (PDF)\",\n      \"href\": \"https://www.sampoornanuts.com/_files/ugd/6fcc6d_c8c3f3a226754a24939a595f8242c6f4.pdf\"\n    },\n    {\n      \"text\": \"Grievances Redressal Mechanism\",\n      \"href\": \"https://zerodha-common.s3.ap-south-1.amazonaws.com/Downloads-and-resources/Smart%20ODR%20info.pdf\"\n    }\n  ]\n}",
+    "parsing_difficulty": "Hard",
+    "anti_bot_risk": "High",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Per IPO lifecycle (open/close/listing)",
+    "status": "GREEN",
+    "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
+    "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 4738,
+    "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37896 | rendered_len=39280 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
+  },
+  {
+    "probe_id": "P-23b",
+    "source": "Broker IPO page — Upstox (reference only)",
+    "url_or_endpoint": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
+    "fetch_method": "Playwright/Chromium (headless, no stealth)",
+    "headers_or_cookies_required": [
+      "User-Agent (desktop Chrome)",
+      "Locale en-IN"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "Lot Size",
+      "Issue Size",
+      "QIB",
+      "NII",
+      "Retail",
+      "P/E",
+      "Revenue",
+      "PAT",
+      "Debt to Equity",
+      "Subscription",
+      "Subscribed"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"title\": \"Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotment | Upstox\",\n  \"headings_top10\": [\n    \"Vegorama Punjabi Angithi IPO\",\n    \"Vegorama Punjabi Angithi Limited IPO Details\",\n    \"Checklist\",\n    \"Performance\",\n    \"Compare\",\n    \"Objectives\",\n    \"About Vegorama Punjabi Angithi Limited\",\n    \"Vegorama Punjabi Angithi IPO Subscription Status\",\n    \"Frequently asked questions\",\n    \"How to invest in the Vegorama Punjabi Angithi IPO ?\"\n  ],\n  \"tables_count\": 1,\n  \"labels_detected\": [\n    \"Lot Size\",\n    \"Issue Size\",\n    \"QIB\",\n    \"NII\",\n    \"Retail\",\n    \"P/E\",\n    \"Revenue\",\n    \"PAT\",\n    \"Debt to Equity\",\n    \"Subscription\",\n    \"Subscribed\"\n  ],\n  \"doc_links_count\": 8,\n  \"first_doc_links\": [\n    {\n      \"text\": \"Derivatives\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/derivatives.pdf\"\n    },\n    {\n      \"text\": \"Mutual Funds\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/mutual-funds.pdf\"\n    },\n    {\n      \"text\": \"Pledge of Securities\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/pledge-of-securities.pdf\"\n    },\n    {\n      \"text\": \"Unauthorized Trading\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/unauthorized-trading.pdf\"\n    },\n    {\n      \"text\": \"Third Party Products\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/third-party-products.pdf\"\n    }\n  ]\n}",
+    "parsing_difficulty": "Hard",
+    "anti_bot_risk": "High",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Per IPO lifecycle (open/close/listing)",
+    "status": "GREEN",
+    "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
+    "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 4404,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=224411 | rendered_len=264768 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+  },
+  {
+    "probe_id": "P-24",
+    "source": "Sector / industry classification (NSE + BSE)",
+    "url_or_endpoint": "https://www.nseindia.com/api/quote-equity?symbol=RELIANCE ; https://www.nseindia.com/api/all-upcoming-issues?category=ipo ; https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?id=1&Type=p",
+    "fetch_method": "GET (3 endpoints)",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer",
+      "X-Requested-With (NSE)"
+    ],
+    "status_code": 403,
+    "response_type": "EMPTY",
+    "fields_found": [],
+    "fields_missing": [
+      "pre-IPO sector / industry per-IPO"
+    ],
+    "sample_record": "{\n  \"sector_reachable\": {\n    \"listed_equity\": false,\n    \"pre_ipo\": false\n  },\n  \"manual_map_needed\": true,\n  \"nse_equity_sector_fields\": [],\n  \"nse_ipo_sector_fields\": [],\n  \"bse_ipo_sector_fields\": []\n}",
+    "parsing_difficulty": "Easy",
+    "anti_bot_risk": "Medium",
+    "legal_tos_risk": "Low",
+    "freshness_or_update_frequency": "Slow-changing (industry codes rarely change per company)",
+    "status": "RED",
+    "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
+    "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 2120,
+    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] NSE IPO list returned 0 items ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=12565"
+  },
+  {
+    "probe_id": "P-25",
+    "source": "Chittorgarh — IPO list + detail accessibility (Phase 5C)",
+    "url_or_endpoint": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp + https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
+    "fetch_method": "GET static → Playwright fallback (no retry within pass); two dashboards probed per pass",
+    "headers_or_cookies_required": [
+      "User-Agent (desktop Chrome)",
+      "Referer"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "mainboard dashboard reachable",
+      "sme dashboard reachable",
+      "40 detail URL(s) discovered",
+      "detail-1 reachable",
+      "detail-2 reachable"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"dashboard_titles\": [\n    {\n      \"kind\": \"mainboard\",\n      \"title\": \"Mainboard IPO Dashboard (Main board IPO at BSE and NSE)\"\n    },\n    {\n      \"kind\": \"sme\",\n      \"title\": \"SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)\"\n    }\n  ],\n  \"discovered_detail_count\": 40,\n  \"picked_detail_urls\": [\n    \"https://www.chittorgarh.com/ipo/bagmane-reit/3090/\",\n    \"https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/\"\n  ],\n  \"detail_titles\": [\n    \"Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details\",\n    \"OnEMI Technology IPO Date, Price, GMP, Review, Details\"\n  ],\n  \"challenges_detected\": false,\n  \"diagnostics_first_hrefs_per_dashboard\": null\n}",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Daily (manual editor maintained)",
+    "status": "GREEN",
+    "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
+    "fallback_source": "P-26 (field extraction off captured HTML)",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 98,
+    "notes": "mainboard: static status=200 bytes=147030 | sme: static status=200 bytes=147731 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=309225 | detail-2: static status=200 bytes=343417 | challenges_detected=false"
+  },
+  {
+    "probe_id": "P-26",
+    "source": "Chittorgarh — detail field extraction (Phase 5C.3 calibration)",
+    "url_or_endpoint": "phase-0/broker-pages/chittorgarh-detail-*-rendered.html (on disk)",
+    "fetch_method": "disk read (no network) — extracts from P-25 captured HTML via table-aware parser",
+    "headers_or_cookies_required": [],
+    "status_code": null,
+    "response_type": "JSON",
+    "fields_found": [
+      "d1.company_name[high]",
+      "d1.issue_size_cr[high]",
+      "d1.price_band[high]",
+      "d1.official_pdf_links[high]",
+      "d2.company_name[high]",
+      "d2.issue_size_cr[high]",
+      "d2.price_band[high]",
+      "d2.lot_size[high]",
+      "d2.official_pdf_links[high]"
+    ],
+    "fields_missing": [
+      "d1.lot_size[missing]",
+      "d1.open_date[missing]",
+      "d1.close_date[missing]",
+      "d1.listing_date[missing]",
+      "d1.registrar[missing]",
+      "d1.brlms[missing]",
+      "d2.open_date[missing]",
+      "d2.close_date[missing]",
+      "d2.listing_date[missing]",
+      "d2.registrar[missing]",
+      "d2.brlms[missing]"
+    ],
+    "sample_record": "{\n  \"avg_precision_ratio\": 0.45,\n  \"details\": [\n    {\n      \"index\": 1,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/bagmane-reit/3090/\",\n      \"found_count\": 4,\n      \"precision_ratio\": 0.4,\n      \"tables_parsed\": 10,\n      \"table_rows_parsed\": 53\n    },\n    {\n      \"index\": 2,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 13,\n      \"table_rows_parsed\": 87\n    }\n  ]\n}",
+    "parsing_difficulty": "Medium",
+    "anti_bot_risk": "Low",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "N/A — operates on disk",
+    "status": "RED",
+    "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
+    "fallback_source": "P-25 (re-run to refresh HTML)",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 19,
+    "notes": "details_extracted=2 | avg_precision=0.450 | official_pdf_links_on_allowlist=2 | official_pdf_links_off_allowlist=3 | d1: main=79604b tables=10 rows=53 | d2: main=95592b tables=13 rows=87"
+  },
+  {
+    "probe_id": "P-27",
+    "source": "Zerodha — IPO detail refresh (Phase 5C, reference only)",
+    "url_or_endpoint": "https://zerodha.com/ipo/440359/nfp-sampoorna-foods/",
+    "fetch_method": "Playwright/Chromium (headless, no stealth)",
+    "headers_or_cookies_required": [
+      "User-Agent (desktop Chrome)",
+      "Locale en-IN"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "Open Date",
+      "Close Date",
+      "Issue Open",
+      "Issue Close",
+      "Lot Size",
+      "Issue Size",
+      "Registrar",
+      "Fresh Issue",
+      "Allotment Date",
+      "Listing Date",
+      "NII",
+      "Retail",
+      "Anchor",
+      "Revenue",
+      "GMP",
+      "Grey Market",
+      "Subscription"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"title\": \"NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size\",\n  \"headings_top10\": [\n    \"NFP Sampoorna Foods IPO\",\n    \"NFP Sampoorna Foods IPO details\",\n    \"Schedule of NFP Sampoorna Foods\",\n    \"About NFP Sampoorna Foods\",\n    \"Financials of NFP Sampoorna Foods\",\n    \"Issue size\",\n    \"Utilisation of proceeds\",\n    \"Strengths\",\n    \"Risks\",\n    \"Allotment Status for NFP Sampoorna Foods\"\n  ],\n  \"tables_count\": 4,\n  \"labels_detected\": [\n    \"Open Date\",\n    \"Close Date\",\n    \"Issue Open\",\n    \"Issue Close\",\n    \"Lot Size\",\n    \"Issue Size\",\n    \"Registrar\",\n    \"Fresh Issue\",\n    \"Allotment Date\",\n    \"Listing Date\",\n    \"NII\",\n    \"Retail\",\n    \"Anchor\",\n    \"Revenue\",\n    \"GMP\",\n    \"Grey Market\",\n    \"Subscription\"\n  ],\n  \"doc_links_count\": 2,\n  \"first_doc_links\": [\n    {\n      \"text\": \"Download prospectus (PDF)\",\n      \"href\": \"https://www.sampoornanuts.com/_files/ugd/6fcc6d_c8c3f3a226754a24939a595f8242c6f4.pdf\"\n    },\n    {\n      \"text\": \"Grievances Redressal Mechanism\",\n      \"href\": \"https://zerodha-common.s3.ap-south-1.amazonaws.com/Downloads-and-resources/Smart%20ODR%20info.pdf\"\n    }\n  ]\n}",
+    "parsing_difficulty": "Hard",
+    "anti_bot_risk": "High",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Per IPO lifecycle (open/close/listing)",
+    "status": "GREEN",
+    "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
+    "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 3867,
+    "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37896 | rendered_len=39280 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
+  },
+  {
+    "probe_id": "P-28",
+    "source": "Upstox — IPO detail refresh (Phase 5C, reference only)",
+    "url_or_endpoint": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
+    "fetch_method": "Playwright/Chromium (headless, no stealth)",
+    "headers_or_cookies_required": [
+      "User-Agent (desktop Chrome)",
+      "Locale en-IN"
+    ],
+    "status_code": 200,
+    "response_type": "HTML",
+    "fields_found": [
+      "Lot Size",
+      "Issue Size",
+      "QIB",
+      "NII",
+      "Retail",
+      "P/E",
+      "Revenue",
+      "PAT",
+      "Debt to Equity",
+      "Subscription",
+      "Subscribed"
+    ],
+    "fields_missing": [],
+    "sample_record": "{\n  \"title\": \"Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotment | Upstox\",\n  \"headings_top10\": [\n    \"Vegorama Punjabi Angithi IPO\",\n    \"Vegorama Punjabi Angithi Limited IPO Details\",\n    \"Checklist\",\n    \"Performance\",\n    \"Compare\",\n    \"Objectives\",\n    \"About Vegorama Punjabi Angithi Limited\",\n    \"Vegorama Punjabi Angithi IPO Subscription Status\",\n    \"Frequently asked questions\",\n    \"How to invest in the Vegorama Punjabi Angithi IPO ?\"\n  ],\n  \"tables_count\": 1,\n  \"labels_detected\": [\n    \"Lot Size\",\n    \"Issue Size\",\n    \"QIB\",\n    \"NII\",\n    \"Retail\",\n    \"P/E\",\n    \"Revenue\",\n    \"PAT\",\n    \"Debt to Equity\",\n    \"Subscription\",\n    \"Subscribed\"\n  ],\n  \"doc_links_count\": 8,\n  \"first_doc_links\": [\n    {\n      \"text\": \"Derivatives\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/derivatives.pdf\"\n    },\n    {\n      \"text\": \"Mutual Funds\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/mutual-funds.pdf\"\n    },\n    {\n      \"text\": \"Pledge of Securities\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/pledge-of-securities.pdf\"\n    },\n    {\n      \"text\": \"Unauthorized Trading\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/unauthorized-trading.pdf\"\n    },\n    {\n      \"text\": \"Third Party Products\",\n      \"href\": \"https://assets.upstox.com/website/risk-disclosures/third-party-products.pdf\"\n    }\n  ]\n}",
+    "parsing_difficulty": "Hard",
+    "anti_bot_risk": "High",
+    "legal_tos_risk": "Medium",
+    "freshness_or_update_frequency": "Per IPO lifecycle (open/close/listing)",
+    "status": "GREEN",
+    "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
+    "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 4163,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=224623 | rendered_len=265458 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+  },
+  {
     "probe_id": "P-25b",
     "source": "Chittorgarh — detail-page accessibility retune (Phase 6A.1)",
     "url_or_endpoint": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/ + https://www.chittorgarh.com/ipo/bagmane-reit/3090/ + auto-selected third IPO",
@@ -25,8 +1017,8 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-05-24T19:02:37.030Z",
-    "latency_ms": 1197,
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 115,
     "notes": "third_ipo_status=current | third_ipo_slug=m-r-maniveni-ipo | third_ipo_reason=\"current-open: list \"sme\" row date range \"22 - 26 May\" covers today\" | detail-1: static status=200 bytes=343417 | detail-2: static status=200 bytes=309225 | detail-3: static status=200 bytes=280440 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
@@ -79,8 +1071,8 @@
     "status": "GREEN",
     "recommended_action": "Precision met (full=0.83 narrow=0.93). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-05-24T19:02:37.030Z",
-    "latency_ms": 27,
+    "ran_at_utc": "2026-05-24T20:15:41.590Z",
+    "latency_ms": 26,
     "notes": "details_extracted=3 | avg_full=0.833 | avg_narrow=0.933 | pdf_on_allowlist=2 | pdf_off_allowlist=4 | third_ipo=m-r-maniveni-ipo(current) | d1:onemi-technology-ipo full=0.90 narrow=1.00 | d2:bagmane-reit full=0.80 narrow=0.80 | d3:m-r-maniveni-ipo full=0.80 narrow=1.00"
   }
 ]
