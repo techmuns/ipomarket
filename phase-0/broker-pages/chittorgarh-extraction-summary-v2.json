@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-05-24T16:43:29.829Z",
+  "generated_at_utc": "2026-05-24T17:51:59.513Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.567,
-  "average_precision_ratio_narrow": 0.4,
+  "average_precision_ratio_full": 0.833,
+  "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
     "slug": "m-r-maniveni-ipo",
     "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
@@ -16,10 +16,10 @@
       "index": 1,
       "slug": "onemi-technology-ipo",
       "source_url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
-      "found_count_full": 6,
-      "found_count_narrow": 2,
-      "precision_ratio_full": 0.6,
-      "precision_ratio_narrow": 0.4,
+      "found_count_full": 9,
+      "found_count_narrow": 5,
+      "precision_ratio_full": 0.9,
+      "precision_ratio_narrow": 1,
       "main_content_bytes": 95592,
       "tables_parsed": 13,
       "table_rows_parsed": 87,
@@ -28,16 +28,16 @@
         "issue_size_cr",
         "price_band",
         "lot_size",
+        "listing_date",
         "official_pdf_links"
       ],
       "fields_medium_confidence": [
+        "open_date",
+        "close_date",
         "registrar"
       ],
       "fields_rejected_low_confidence": [],
       "fields_missing": [
-        "open_date",
-        "close_date",
-        "listing_date",
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [
@@ -49,10 +49,10 @@
       "index": 2,
       "slug": "bagmane-reit",
       "source_url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
-      "found_count_full": 5,
-      "found_count_narrow": 1,
-      "precision_ratio_full": 0.5,
-      "precision_ratio_narrow": 0.2,
+      "found_count_full": 8,
+      "found_count_narrow": 4,
+      "precision_ratio_full": 0.8,
+      "precision_ratio_narrow": 0.8,
       "main_content_bytes": 79604,
       "tables_parsed": 10,
       "table_rows_parsed": 53,
@@ -60,17 +60,17 @@
         "company_name",
         "issue_size_cr",
         "price_band",
+        "listing_date",
         "official_pdf_links"
       ],
       "fields_medium_confidence": [
+        "open_date",
+        "close_date",
         "registrar"
       ],
       "fields_rejected_low_confidence": [],
       "fields_missing": [
         "lot_size",
-        "open_date",
-        "close_date",
-        "listing_date",
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [
@@ -82,10 +82,10 @@
       "index": 3,
       "slug": "m-r-maniveni-ipo",
       "source_url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
-      "found_count_full": 6,
-      "found_count_narrow": 3,
-      "precision_ratio_full": 0.6,
-      "precision_ratio_narrow": 0.6,
+      "found_count_full": 8,
+      "found_count_narrow": 5,
+      "precision_ratio_full": 0.8,
+      "precision_ratio_narrow": 1,
       "main_content_bytes": 84560,
       "tables_parsed": 10,
       "table_rows_parsed": 66,
@@ -97,14 +97,14 @@
         "listing_date"
       ],
       "fields_medium_confidence": [
+        "open_date",
+        "close_date",
         "registrar"
       ],
       "fields_rejected_low_confidence": [
         "official_pdf_links"
       ],
       "fields_missing": [
-        "open_date",
-        "close_date",
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],

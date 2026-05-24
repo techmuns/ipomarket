@@ -1,5 +1,12 @@
 {
-  "captured_at_utc": "2026-05-24T16:43:29.829Z",
+  "captured_at_utc": "2026-05-24T17:51:59.513Z",
+  "robots_posture": {
+    "fetched": true,
+    "status": 200,
+    "ipo_path_disallowed_for_star": true,
+    "crawl_delay_seconds": null,
+    "note": "robots.txt: /ipo/ appears Disallow'd for user-agent * — REVIEW before any production polling"
+  },
   "third_ipo_selection": {
     "slug": "m-r-maniveni-ipo",
     "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
