@@ -377,3 +377,31 @@ Ladder notes:
 - BROKER: no URL (set BROKER_URL) — skipped.
 
 Files changed by this script: none (perf snapshot untouched).
+
+### Gate 2b run — bajaj-housing-finance — 2026-05-25T17:20:34.989Z (GitHub Actions)
+
+**Outcome:** HALT — no listing-performance row written. No single rung yielded BOTH listing-day AND current. The target stays a listed row with "listing data pending" (valid; no fake / partial / null-gain / mixed-rung row).
+
+Issue price ₹70 · listing_date 2024-09-16.
+
+Ladder notes:
+- OFFICIAL/BSE historical: nearest date 2026-05-25 is >14d from listing_date 2024-09-16 — no listing_close. 391 pts (391 dated, span 2026-05-25…2026-05-25); rawLast={"dttm":"Mon May 25 2026 09:15:59","vale1":"83.90","vole":"16638"}
+- OFFICIAL/NSE quote: NSE HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ …[truncated, total 399 chars]
+- OFFICIAL: incomplete (identityOk=true, listing_close=null, current=83.31) — falling through.
+- CHITTORGARH resolve: slug https://www.chittorgarh.com/ipo/bajaj-housing-finance-ipo/: HTTP 404, 10925B [NOT reachable]
+- CHITTORGARH resolve: slug https://www.chittorgarh.com/ipo/bajaj-housing-finance-ltd-ipo/: HTTP 404, 10925B [NOT reachable]
+- CHITTORGARH resolve: index https://www.chittorgarh.com/ipo/ipo_dashboard.asp: HTTP 200, 145883B, /ipo/ detail links=20
+- CHITTORGARH resolve:    sample hrefs: https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg | https://www.chittorgarh.net/images/ipo/fyers-logo-small.png | /ipo/ipo_dashboard.asp | /ipo/ipo_perf_tracker.asp | https://www.investorgain.com/report/live-ipo-gmp/331/ipo/ | /ipo/ipo_discussions.asp | /ipo/ipo_perf_tracker.asp | /ipo/ipo_dashboard.asp?a=sme | /ipo/ipo_perf_tracker.asp?exchange=sme | /ipo/ipo_discussions.asp
+- CHITTORGARH resolve: index https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme: HTTP 200, 149738B, /ipo/ detail links=20
+- CHITTORGARH resolve:    sample hrefs: https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg | https://www.chittorgarh.net/images/ipo/fyers-logo-small.png | /ipo/ipo_dashboard.asp | /ipo/ipo_perf_tracker.asp | https://www.investorgain.com/report/live-ipo-gmp/331/ipo/ | /ipo/ipo_discussions.asp | /ipo/ipo_perf_tracker.asp | /ipo/ipo_dashboard.asp?a=sme | /ipo/ipo_perf_tracker.asp?exchange=sme | /ipo/ipo_discussions.asp
+- CHITTORGARH resolve: index https://www.chittorgarh.com/report/mainboard-ipo-list-in-india-bse-nse/82/: HTTP 200, 156173B, /ipo/ detail links=10
+- CHITTORGARH resolve:    sample hrefs: https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg | https://www.chittorgarh.net/images/ipo/fyers-logo-small.png | https://www.chittorgarh.net/images/ipo/ipo-in-india.jpg | /ipo/ipo_dashboard.asp | /ipo/ipo_perf_tracker.asp | https://www.investorgain.com/report/live-ipo-gmp/331/ipo/ | /ipo/ipo_discussions.asp | /ipo/ipo_perf_tracker.asp | /ipo/ipo_dashboard.asp?a=sme | /ipo/ipo_perf_tracker.asp?exchange=sme
+- CHITTORGARH resolve: UNRESOLVED but Chittorgarh was REACHABLE — no slug redirect and no /ipo/<slug>/<id>/ link matched [bajaj,housing,finance]. Most likely the list pages render their IPO table client-side (XHR), or Bajaj is not on the scanned pages. Next: provide the exact chittorgarh_url, or move to the broker rung.
+- CHITTORGARH: no usable URL (provide chittorgarh_url) — skipped.
+- BROKER: no URL (set BROKER_URL) — skipped.
+
+Files changed by this script: none (perf snapshot untouched).
