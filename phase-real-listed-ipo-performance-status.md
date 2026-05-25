@@ -211,3 +211,55 @@ Ladder notes:
 - BROKER GET https://groww.in/ipo/bajaj-housing-finance: HTTP 404
 
 Files changed by this script: none (perf snapshot untouched).
+
+## Gate 2b — post-run verification (2026-05-25, pulled `main` @ b39f33c)
+
+**Final acceptance: NOT MET — the listing-performance proof is INCOMPLETE.** The
+CI Action exited green and committed, but the perf script **HALTed**: no
+`ipo-listing-performance.json` row was written. The committed change is only the
+master row (Bajaj as `status:listed`, "listing data pending") plus this status
+doc. This is the documented *acceptable HALT* state (nothing fake written), but
+it is **not** the end-to-end proof.
+
+### Diff scope (verified by deep `sort_keys` compare vs the pre-run commit 78e4ba6)
+
+- `ipo-master.json`: **+1 row** `bajaj-housing-finance`; all **11 pre-existing rows byte-identical**; `timelines` + `source_meta` identical. Row is correct: `status: listed`, `price_band.high = 70` (issue ₹70, band 66–70), `listing_date 2024-09-16`, `listing_exchange ["NSE","BSE"]`, `nse_symbol BAJAJHFL`.
+- `ipo-listing-performance.json`: **byte-identical / unchanged — NO bajaj row** (this is the gap). `by_ipo` still = `{greendale-cement, lumino-hyperscale}`.
+- **Untouched (confirmed identical):** `ipo-source-audit.json`, `ipo-financials.json`, `ipo-documents.json`, `ipo-narrative.json`, `ipo-subscriptions.json`, `sebi-pipeline.json`, `sector-map.json`, `source-health.json`; the OnEMI row; all non-target master rows. CI commit touched **0** workflow files (only the one manual `bajaj-listing-performance.yml` added earlier remains).
+
+### Why it HALTed (CI ladder notes)
+
+- **Official / BSE (scripcode 544252):** endpoint responded (BSE header LTP parsed → `current=83.26`), but my `fetchBseHeader` company-name field guesses returned `"?"` → **identity not verified** → rung correctly refused to trust the price. Separately `fetchBseHistorical` returned without a logged error yet `listing_close` parsed to `null` → its OHLC **field names don't match the real StockReachGraph weekly response** (these guesses were never validated against live BSE before — OnEMI always HALTed earlier).
+- **Official / NSE (BAJAJHFL):** **HTTP 403 Access Denied** — NSE blocks GitHub Actions datacenter IPs.
+- **Chittorgarh:** skipped — no `chittorgarh_url` input supplied (default is empty).
+- **Broker:** `https://groww.in/ipo/bajaj-housing-finance` → **HTTP 404** (guessed path wrong).
+
+So no single rung produced BOTH listing-day AND current with verified provenance → strict gate → no write. **No partial / fake / manual / null-gain / mixed-rung row was written** (confirmed: perf snapshot byte-identical).
+
+### Gates + render (local, at b39f33c)
+
+- `npm run typecheck` — **pass**; `npm run build` — **pass**.
+- Headless chromium (chromium-1194) on `vite preview`:
+  - `/recently-listed`: Bajaj Housing Finance **present** (listed 16 Sep 2024) but shows **"listing data pending"** with listing-close / current / listing-gain / current-gain all `—`. It is **NOT plotted** in the charts (no perf row). 0 console/page errors.
+  - `/ipo/bajaj-housing-finance`: renders (`h1 = "Bajaj Housing Finance Limited"`, not-found absent). 0 console/page errors.
+
+### Acceptance checklist
+
+| Check | Status |
+|---|---|
+| master: one new `bajaj-housing-finance` row, pre-existing byte-identical, `status:listed`, issue/date/exchanges correct | ✅ |
+| perf: one new row, both gains non-null, correct source/state, no partial/fake/null | ❌ **no perf row written** |
+| status doc records attempts/fallbacks/values/gains/no-fake | ✅ (records HALT + reasons; no values because nothing fetched cleanly) |
+| untouched: non-target rows, source-audit, OnEMI, UI, workflows | ✅ |
+| typecheck + build | ✅ |
+| Recently Listed shows Bajaj with **real** gains + charts plot it | ❌ shows "pending"; not plotted |
+| no console/page errors | ✅ |
+
+### Recommended next step (needs approval — not done in this verification pass)
+
+The official BSE rung is **close** (544252 returned a live LTP). To complete the proof, fix the BSE response parsing then re-run the Action:
+1. **Identity (robust):** verify ownership by scanning the **raw** BSE header response text for the company-name tokens (don't guess a single key), so 544252 → "Bajaj Housing Finance" verifies.
+2. **Listing-day close:** correct `fetchBseHistorical`'s field extraction to the real StockReachGraph weekly shape (add a one-time CI debug dump of the first element's keys if needed).
+3. Alternatively / additionally, re-run with a real **`chittorgarh_url`** input (rung 2) as the proven-reachable fallback.
+
+Until then, Bajaj remains a real **listed** row in `master` with listing performance **pending** — honest, reversible, and consistent with OnEMI.
