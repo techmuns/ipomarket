@@ -1,0 +1,128 @@
+name: bajaj-listing-performance
+
+# Gate 2b — Bajaj Housing Finance listing-performance proof.
+#
+# Runs the bounded source ladder (official BSE/NSE → Chittorgarh → broker) from
+# GitHub Actions, where api.bseindia.com / nseindia.com are reachable (the
+# authoring sandbox is network-blocked). Adds ONE listed master row + writes ONE
+# listing-performance row IFF a single rung yields BOTH listing-day AND current.
+# Never writes a partial/fake/null/mixed-rung row.
+#
+# MANUAL ONLY — workflow_dispatch, no cron. One IPO (bajaj-housing-finance).
+# No broad backfill. Commits back to main only if typecheck + build pass.
+
+on:
+  workflow_dispatch:
+    inputs:
+      chittorgarh_url:
+        description: "Optional Chittorgarh /ipo/ detail URL (fallback rung 2; used only if the official rung is incomplete)"
+        required: false
+        default: ""
+      broker_url:
+        description: "Optional public broker IPO-page URL (fallback rung 3; used only if Chittorgarh is incomplete)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  bajaj-listing-performance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0 # full history for rebase-then-push
+
+      - name: Print environment
+        run: |
+          echo "Node: $(node --version)"
+          echo "npm:  $(npm --version)"
+          echo "OS:   $(uname -a)"
+          echo "Run ID: ${{ github.run_id }}"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install node deps
+        run: npm install --no-audit --no-fund
+
+      # Pin the verified spec — fail fast if any identifier/figure drifted.
+      - name: Verify pinned Bajaj spec
+        run: |
+          set -e
+          echo "Asserting pinned identifiers + figures…"
+          grep -q "'bajaj-housing-finance': '544252'" scripts/ingest/lib/symbol-map.ts \
+            || { echo "::error::BSE scripcode 544252 not pinned in symbol-map.ts"; exit 1; }
+          grep -q "'bajaj-housing-finance': 'BAJAJHFL'" scripts/ingest/lib/symbol-map.ts \
+            || { echo "::error::NSE symbol BAJAJHFL not pinned in symbol-map.ts"; exit 1; }
+          grep -q "id: 'bajaj-housing-finance'" scripts/pdf/promote/add-listed-ipo.ts \
+            || { echo "::error::target id not pinned in add-listed-ipo.ts"; exit 1; }
+          grep -q "listing_date: '2024-09-16'" scripts/pdf/promote/add-listed-ipo.ts \
+            || { echo "::error::listing_date 2024-09-16 not pinned in add-listed-ipo.ts"; exit 1; }
+          grep -q "high: 70" scripts/pdf/promote/add-listed-ipo.ts \
+            || { echo "::error::issue price 70 (price_band.high) not pinned in add-listed-ipo.ts"; exit 1; }
+          echo "Pinned spec OK: bajaj-housing-finance · issue ₹70 · listing 2024-09-16 · NSE BAJAJHFL · BSE 544252"
+
+      - name: Add listed master row (guarded, idempotent)
+        run: npx tsx scripts/pdf/promote/add-listed-ipo.ts
+
+      - name: Bounded source ladder — write listing-performance row
+        env:
+          CHITTORGARH_URL: ${{ inputs.chittorgarh_url }}
+          BROKER_URL: ${{ inputs.broker_url }}
+        run: npx tsx scripts/pdf/promote/listed-ipo-performance.ts bajaj-housing-finance
+
+      - name: TypeScript typecheck (blocks bad snapshots from main)
+        run: npm run typecheck
+
+      - name: Vite build (proves snapshots still satisfy the UI types)
+        run: npm run build
+
+      - name: Show changed files
+        if: always()
+        run: |
+          echo "=== git status ==="
+          git status --short
+          echo ""
+          echo "=== diff stat ==="
+          git diff --stat src/data/snapshots/ phase-real-listed-ipo-performance-status.md || true
+
+      - name: Commit results back to main
+        if: success()
+        run: |
+          set -e
+          git config user.name "bajaj-listing-performance"
+          git config user.email "bajaj-listing-performance@users.noreply.github.com"
+          git add \
+            src/data/snapshots/ipo-master.json \
+            src/data/snapshots/ipo-listing-performance.json \
+            phase-real-listed-ipo-performance-status.md 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "[commit] no changes to commit (idempotent re-run)."
+            exit 0
+          fi
+
+          git commit -m "phase: add Bajaj Housing listing performance proof"
+
+          echo "[commit] rebasing on origin/main before push"
+          git pull --rebase --autostash origin main || true
+
+          for attempt in 1 2 3 4; do
+            if git push origin HEAD:main; then
+              echo "[commit] pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "[commit] push attempt $attempt failed; fetching + rebasing"
+            git fetch origin main || true
+            git pull --rebase --autostash origin main || true
+          done
+          echo "[commit] push failed after 4 attempts"
+          exit 1

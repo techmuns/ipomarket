@@ -156,8 +156,11 @@ export interface ListingPerformance {
   listing_gain_pct: number | null;
   current_gain_pct: number | null;
   listing_date: string | null;
-  // Source for the listing data (NSE vs BSE fallback).
-  source: 'NSE' | 'BSE' | 'manual';
+  // Source for the listing data. Official exchange (NSE/BSE), human seed
+  // ('manual'), or — when the bounded source ladder falls through to a vetted
+  // public fallback — 'Chittorgarh' / 'Broker-ref' (state then carries
+  // 'aggregator'). Additive widening only; no consumer switches on this value.
+  source: 'NSE' | 'BSE' | 'manual' | 'Chittorgarh' | 'Broker-ref';
 }
 
 export interface IpoSourceAudit {

@@ -177,3 +177,18 @@ VERIFY: (a) identifier-ownership proof captured; (b) add master row + symbol-map
 
 After push: STOP and report. Do not add more IPOs, append source-audit, extend DataState, or change workflows.
 ```
+
+### Gate 2b — GitHub Actions execution (setup committed, 2026-05-25)
+
+Per operator decision, Gate 2b runs **inside GitHub Actions** (a network-permitted environment) rather than the blocked sandbox. The tooling + a manual workflow are committed; the actual fetch + snapshot writes happen **only when the operator runs the Action**. The run result (official attempts, fallback used, raw values, computed gains, source/state, files changed, no-partial/fake confirmation) is **appended to this doc automatically by the script in CI**.
+
+**Committed in this pass (no snapshot mutated here):**
+- `scripts/pdf/promote/add-listed-ipo.ts` — guarded, idempotent add of ONE `status:"listed"` master row for `bajaj-housing-finance` (count guard 11 → 12; refuses double-insert; existing rows byte-identical; atomic write).
+- `scripts/pdf/promote/listed-ipo-performance.ts` — generalized from `onemi-listing-performance.ts`; takes `ipo_id` argv; runs the **bounded ladder** (official BSE/NSE → Chittorgarh → broker); writes ONE perf row **iff a single rung yields BOTH listing-day AND current**; official identifiers **verified at fetch time against the official company name** (HALTs the official rung on mismatch); byte-identity insert; appends the run result here.
+- `scripts/ingest/lib/symbol-map.ts` — pinned `BSE_SCRIPCODES['bajaj-housing-finance']='544252'` + `NSE_SYMBOLS['bajaj-housing-finance']='BAJAJHFL'` (equity scripcode/symbol, NOT a document id; re-verified at fetch time).
+- `src/types/ipo.ts` — minimal additive widening of `ListingPerformance.source` to include `'Chittorgarh' | 'Broker-ref'` (no UI consumer switches on this; `state` already supports `'aggregator'`).
+- `.github/workflows/bajaj-listing-performance.yml` — **manual `workflow_dispatch` only, no cron**; pins the spec (₹70 / 2024-09-16 / BAJAJHFL / 544252); runs both scripts, then `typecheck` + `build`; commits master + perf + this status doc back to `main` only if those gates pass. Optional inputs `chittorgarh_url` / `broker_url` feed the fallback rungs if the official rung is incomplete.
+
+**Verification at the setup commit:** `npm run typecheck` + `npm run build` green; no snapshot/master/perf mutation in this commit.
+
+**Next action (operator):** run the GitHub Action **`bajaj-listing-performance`** (Actions tab → Run workflow on `main`). For Bajaj Housing Finance the official BSE rung (544252) should resolve identity + both prices directly; supply `chittorgarh_url` only if the official rung is unreachable from CI.

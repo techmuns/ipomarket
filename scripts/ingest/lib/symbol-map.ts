@@ -11,10 +11,18 @@
 
 export const BSE_SCRIPCODES: Record<string, string> = {
   // e.g. "incred-holdings": "543930",
+  // Bajaj Housing Finance Ltd — BSE equity scripcode (NOT a document/download
+  // id). Verified at fetch time against the official BSE company name by
+  // scripts/pdf/promote/listed-ipo-performance.ts, which HALTs the official
+  // rung unless 544252's official name matches "Bajaj Housing Finance".
+  'bajaj-housing-finance': '544252',
 };
 
 export const NSE_SYMBOLS: Record<string, string> = {
   // e.g. "incred-holdings": "INCRED",
+  // Bajaj Housing Finance Ltd — NSE symbol; verified at fetch time against the
+  // official NSE companyName by listed-ipo-performance.ts (same HALT guard).
+  'bajaj-housing-finance': 'BAJAJHFL',
 };
 
 export function bseScripcodeFor(ipo_id: string): string | null {
