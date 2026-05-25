@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-24T20:15:41.590Z",
+  "captured_at_utc": "2026-05-25T07:23:06.985Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147731,
+      "bytes": 148579,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 309225,
+      "bytes": 312432,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],

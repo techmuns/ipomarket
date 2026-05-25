@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-25T03:27:10.550Z",
+  "captured_at_utc": "2026-05-25T07:23:06.985Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 309225,
+      "bytes": 312432,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
       "mode": "static",
       "status": 200,
-      "bytes": 272099,
+      "bytes": 273009,
       "title": "Yaashvi Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

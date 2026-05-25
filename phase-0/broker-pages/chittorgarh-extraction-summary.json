@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-24T20:15:41.590Z",
+  "generated_at_utc": "2026-05-25T07:23:06.985Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.45,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "found_count": 4,
       "precision_ratio": 0.4,
-      "main_content_bytes": 79604,
+      "main_content_bytes": 79606,
       "tables_parsed": 10,
       "table_rows_parsed": 53,
       "fields_high_confidence": [
