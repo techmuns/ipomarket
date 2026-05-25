@@ -41,6 +41,8 @@ No PDF binaries / full-text dumps. No `.github/workflows/*` change. No other `sc
 | P-26b precision — OnEMI per-detail | full **0.9** · narrow **1.0** |
 | OnEMI mapping match | `production_ipo_id=onemi-technology-solutions` · `chittorgarh_slug=onemi-technology-ipo` · `chittorgarh_id=2576` · `detail_url=https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/` — all verified against `picked_detail_urls[]` + the per-detail artifact `source_url`/`slug`. |
 
+**Rebase note:** during the push, a later CI probe refresh landed on `main` (`4b5adc7`, "phase-0: refresh probe artifacts (2026-05-24T20:16Z)"). It re-rendered the Chittorgarh pages and regenerated `chittorgarh-fields-v2.json` / `chittorgarh-extraction-summary-v2.json` (new timestamp `2026-05-24T20:15:41.590Z`), but left `chittorgarh-detail-1-extracted-retuned.json` **byte-identical** — so OnEMI's extracted values are unchanged. After rebasing onto `4b5adc7`, the §6.1 preflight was re-run against the refreshed artifacts and **passed identically** (robots `allowed-prior-flag-was-over-match`; precision full 0.833 / narrow 0.933), then no-op'd (OnEMI already promoted). The audit rows record `fetched_at_utc = 2026-05-24T19:02:37.030Z` — the timestamp of the extraction snapshot (`cbd9015`) the promoter actually bridged from; the later refresh is value-identical, so the recorded provenance remains accurate.
+
 ## 3. Fields promoted (7) — per-field provenance
 
 URL for every row: `https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/` · `fetched_at_utc`: `2026-05-24T19:02:37.030Z` · `state`: `aggregator` · `source`: `Chittorgarh`.
