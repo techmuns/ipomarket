@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T10:04:10.133Z",
+  "generated_at_utc": "2026-05-25T02:31:38.128Z",
   "by_ipo": {
     "nfp-sampoorna-foods": {
       "ipo_id": "nfp-sampoorna-foods",
@@ -190,7 +190,10 @@
           "fetched_at_utc": "2026-05-22T09:13:44Z"
         }
       ],
-      "registrar": null,
+      "registrar": {
+        "name": "Kfin Technologies Ltd.",
+        "portal_url": null
+      },
       "brlms": []
     }
   }

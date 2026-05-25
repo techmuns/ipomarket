@@ -9,6 +9,7 @@ const STYLES: Record<SourceTag, string> = {
   Registrar: 'bg-teal-500/15 text-teal-300 border-teal-500/30',
   Manual: 'bg-violet-500/15 text-violet-300 border-violet-500/30',
   'Broker-ref': 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+  Chittorgarh: 'bg-orange-500/15 text-orange-300 border-orange-500/30',
   Derived: 'bg-slate-500/15 text-slate-300 border-slate-500/40',
 };
 

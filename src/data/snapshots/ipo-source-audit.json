@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T11:11:34.596Z",
+  "generated_at_utc": "2026-05-25T02:31:38.128Z",
   "by_ipo": {
     "nfp-sampoorna-foods": {
       "ipo_id": "nfp-sampoorna-foods",
@@ -338,6 +338,70 @@
           "state": "live",
           "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
           "fetched_at_utc": "2026-05-21T11:11:34.595Z"
+        }
+      ]
+    },
+    "onemi-technology-solutions": {
+      "ipo_id": "onemi-technology-solutions",
+      "source_mix": {
+        "nse": 0,
+        "bse": 0,
+        "sebi": 0,
+        "rhp": 0,
+        "manual": 0,
+        "derived": 0,
+        "broker_ref": 0,
+        "chittorgarh": 100
+      },
+      "fields": [
+        {
+          "field": "price_band",
+          "source": "Chittorgarh",
+          "state": "aggregator",
+          "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+          "fetched_at_utc": "2026-05-24T19:02:37.030Z"
+        },
+        {
+          "field": "issue_size_cr",
+          "source": "Chittorgarh",
+          "state": "aggregator",
+          "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+          "fetched_at_utc": "2026-05-24T19:02:37.030Z"
+        },
+        {
+          "field": "lot_size",
+          "source": "Chittorgarh",
+          "state": "aggregator",
+          "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+          "fetched_at_utc": "2026-05-24T19:02:37.030Z"
+        },
+        {
+          "field": "open_date",
+          "source": "Chittorgarh",
+          "state": "aggregator",
+          "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+          "fetched_at_utc": "2026-05-24T19:02:37.030Z"
+        },
+        {
+          "field": "close_date",
+          "source": "Chittorgarh",
+          "state": "aggregator",
+          "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+          "fetched_at_utc": "2026-05-24T19:02:37.030Z"
+        },
+        {
+          "field": "listing_date",
+          "source": "Chittorgarh",
+          "state": "aggregator",
+          "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+          "fetched_at_utc": "2026-05-24T19:02:37.030Z"
+        },
+        {
+          "field": "registrar",
+          "source": "Chittorgarh",
+          "state": "aggregator",
+          "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+          "fetched_at_utc": "2026-05-24T19:02:37.030Z"
         }
       ]
     }

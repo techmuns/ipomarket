@@ -37,7 +37,7 @@ interface AuditField {
 
 interface AuditPerIpo {
   ipo_id: string;
-  source_mix: { nse: number; bse: number; sebi: number; rhp: number; manual: number; derived: number; broker_ref: number };
+  source_mix: { nse: number; bse: number; sebi: number; rhp: number; manual: number; derived: number; broker_ref: number; chittorgarh: number };
   fields: AuditField[];
 }
 
@@ -68,17 +68,17 @@ interface HealthSnapshot {
 
 // ---- Source-mix recompute ----
 
-const MIX_KEYS = ['nse', 'bse', 'sebi', 'rhp', 'manual', 'derived', 'broker_ref'] as const;
+const MIX_KEYS = ['nse', 'bse', 'sebi', 'rhp', 'manual', 'derived', 'broker_ref', 'chittorgarh'] as const;
 
 function recomputeSourceMix(fields: AuditField[]): AuditPerIpo['source_mix'] {
-  const mix: AuditPerIpo['source_mix'] = { nse: 0, bse: 0, sebi: 0, rhp: 0, manual: 0, derived: 0, broker_ref: 0 };
+  const mix: AuditPerIpo['source_mix'] = { nse: 0, bse: 0, sebi: 0, rhp: 0, manual: 0, derived: 0, broker_ref: 0, chittorgarh: 0 };
   if (fields.length === 0) {
     // No fields → call it 100% manual to preserve the visual semantic from
     // Phase 1 (synthetic IPOs render as 100% manual).
     mix.manual = 100;
     return mix;
   }
-  const counts: Record<string, number> = { nse: 0, bse: 0, sebi: 0, rhp: 0, manual: 0, derived: 0, broker_ref: 0 };
+  const counts: Record<string, number> = { nse: 0, bse: 0, sebi: 0, rhp: 0, manual: 0, derived: 0, broker_ref: 0, chittorgarh: 0 };
   for (const f of fields) {
     const s = String(f.source ?? '').toLowerCase();
     if (s === 'nse' || s.includes('nse')) counts.nse++;
@@ -88,6 +88,7 @@ function recomputeSourceMix(fields: AuditField[]): AuditPerIpo['source_mix'] {
     else if (s === 'manual') counts.manual++;
     else if (s === 'derived') counts.derived++;
     else if (s === 'broker-ref' || s.includes('broker')) counts.broker_ref++;
+    else if (s === 'chittorgarh' || s.includes('chittorgarh')) counts.chittorgarh++;
     else counts.manual++; // unknown → manual fallback
   }
   const total = fields.length || 1;

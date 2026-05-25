@@ -162,7 +162,7 @@ export interface ListingPerformance {
 
 export interface IpoSourceAudit {
   ipo_id: string;
-  source_mix: { nse: number; bse: number; sebi: number; rhp: number; manual: number; derived: number; broker_ref: number };
+  source_mix: { nse: number; bse: number; sebi: number; rhp: number; manual: number; derived: number; broker_ref: number; chittorgarh?: number };
   fields: Array<{ field: string; source: import('./source.ts').SourceTag; state: DataState; url: string | null; fetched_at_utc: string | null }>;
 }
 

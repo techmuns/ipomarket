@@ -10,6 +10,7 @@ const MIX_COLORS = {
   manual: 'bg-violet-500',
   derived: 'bg-slate-500',
   broker_ref: 'bg-amber-500',
+  chittorgarh: 'bg-orange-500',
 } as const;
 
 const MIX_LABELS = {
@@ -20,6 +21,7 @@ const MIX_LABELS = {
   manual: 'Manual',
   derived: 'Derived',
   broker_ref: 'Broker-ref',
+  chittorgarh: 'Chittorgarh',
 } as const;
 
 export function SourceAuditPanel({ audit }: { audit: IpoSourceAudit | undefined }) {
@@ -53,22 +55,24 @@ export function SourceAuditPanel({ audit }: { audit: IpoSourceAudit | undefined 
       </CardHeader>
       <CardContent>
         <div className="flex h-3 overflow-hidden rounded-full">
-          {(Object.keys(MIX_LABELS) as Array<keyof typeof MIX_LABELS>).map((k) =>
-            mix[k] > 0 ? <div key={k} className={MIX_COLORS[k]} style={{ width: `${(mix[k] / total) * 100}%` }} title={`${MIX_LABELS[k]} ${mix[k]}%`} /> : null
-          )}
+          {(Object.keys(MIX_LABELS) as Array<keyof typeof MIX_LABELS>).map((k) => {
+            const v = mix[k] ?? 0;
+            return v > 0 ? <div key={k} className={MIX_COLORS[k]} style={{ width: `${(v / total) * 100}%` }} title={`${MIX_LABELS[k]} ${v}%`} /> : null;
+          })}
         </div>
-        <div className="mt-3 grid grid-cols-3 gap-2 text-[11px] md:grid-cols-7">
-          {(Object.keys(MIX_LABELS) as Array<keyof typeof MIX_LABELS>).map((k) => (
-            mix[k] > 0 && (
+        <div className="mt-3 grid grid-cols-3 gap-2 text-[11px] md:grid-cols-8">
+          {(Object.keys(MIX_LABELS) as Array<keyof typeof MIX_LABELS>).map((k) => {
+            const v = mix[k] ?? 0;
+            return v > 0 ? (
               <div key={k} className="flex items-center gap-1.5">
                 <span className={`h-1.5 w-1.5 rounded-full ${MIX_COLORS[k]}`} />
-                <span className="text-slate-400">{MIX_LABELS[k]} <span className="num text-slate-300">{mix[k]}%</span></span>
+                <span className="text-slate-400">{MIX_LABELS[k]} <span className="num text-slate-300">{v}%</span></span>
               </div>
-            )
-          ))}
+            ) : null;
+          })}
         </div>
         <p className="mt-4 text-[11px] leading-relaxed text-slate-500">
-          Every datum on this page carries a source pill and freshness chip. Source mix above shows how the IPO is constructed — official NSE / BSE / SEBI / RHP data versus manual seeding versus derived metrics.
+          Every datum on this page carries a source pill and freshness chip. Source mix above shows how the IPO is constructed — official NSE / BSE / SEBI / RHP data versus vetted-aggregator gap-fill (Chittorgarh) versus manual seeding versus derived metrics.
         </p>
       </CardContent>
     </Card>

@@ -1,10 +1,46 @@
-import type { Ipo } from '@/types/ipo';
+import type { Ipo, IpoSourceAudit } from '@/types/ipo';
+import type { DataState, SourceTag } from '@/types/source';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { SourceAuditChip } from '@/components/chrome/SourceAuditChip';
 import { formatCr, formatPriceBand, formatRupee } from '@/lib/format';
 import { minInvestment } from '@/lib/derive';
 
-export function IssueTermsGrid({ ipo }: { ipo: Ipo }) {
+// Fields that make up the "Issue terms" card — used to pick the dominant
+// source for the header chip from the IPO's source-audit entry.
+const ISSUE_TERM_FIELDS = ['price_band', 'lot_size', 'issue_size_cr', 'open_date', 'close_date', 'listing_date', 'face_value'];
+
+interface ChipSource {
+  source: SourceTag;
+  state: DataState;
+  fetchedAt: string | null;
+  url: string | null;
+}
+
+// Derive the dominant issue-terms source from the audit entry. Falls back to
+// the segment heuristic (NSE for mainboard, BSE for SME) only when no audit
+// entry carries an issue-term field — so an aggregator/RHP-sourced row is no
+// longer mislabeled as "NSE".
+function deriveChipSource(ipo: Ipo, audit: IpoSourceAudit | undefined): ChipSource {
+  const rows = (audit?.fields ?? []).filter((f) => ISSUE_TERM_FIELDS.includes(f.field));
+  if (rows.length > 0) {
+    const counts = new Map<SourceTag, number>();
+    for (const r of rows) counts.set(r.source, (counts.get(r.source) ?? 0) + 1);
+    let dominant: SourceTag = rows[0].source;
+    let best = -1;
+    for (const [src, n] of counts) if (n > best) { best = n; dominant = src; }
+    const rep = rows.find((r) => r.source === dominant) ?? rows[0];
+    return { source: rep.source, state: rep.state, fetchedAt: rep.fetched_at_utc, url: rep.url };
+  }
+  return {
+    source: ipo.segment === 'sme' ? 'BSE' : 'NSE',
+    state: ipo.state,
+    fetchedAt: '2026-05-20T11:30:00Z',
+    url: null,
+  };
+}
+
+export function IssueTermsGrid({ ipo, audit }: { ipo: Ipo; audit?: IpoSourceAudit }) {
+  const chip = deriveChipSource(ipo, audit);
   const rows: Array<{ label: string; value: string; mono?: boolean }> = [
     { label: 'Price band', value: formatPriceBand(ipo.price_band?.low ?? null, ipo.price_band?.high ?? null), mono: true },
     { label: 'Lot size', value: ipo.lot_size != null ? `${ipo.lot_size} shares` : '—', mono: true },
@@ -21,10 +57,10 @@ export function IssueTermsGrid({ ipo }: { ipo: Ipo }) {
       <CardHeader className="flex items-center justify-between">
         <CardTitle>Issue terms</CardTitle>
         <SourceAuditChip
-          source={ipo.segment === 'sme' ? 'BSE' : 'NSE'}
-          fetchedAt={'2026-05-20T11:30:00Z'}
-          state={ipo.state}
-          url={null}
+          source={chip.source}
+          fetchedAt={chip.fetchedAt}
+          state={chip.state}
+          url={chip.url}
         />
       </CardHeader>
       <CardContent>

@@ -57,7 +57,7 @@ export function IpoDetail() {
         <TabsContent value="about">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
             <div className="space-y-4 lg:col-span-2">
-              <IssueTermsGrid ipo={ipo} />
+              <IssueTermsGrid ipo={ipo} audit={audit} />
               {tl ? <TimelineRail tl={tl} /> : null}
               <CompanyOverviewCard nar={nar} />
             </div>

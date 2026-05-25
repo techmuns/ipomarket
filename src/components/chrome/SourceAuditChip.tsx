@@ -17,6 +17,7 @@ const STATE_BORDER: Record<DataState, string> = {
   live: 'border-emerald-500/20',
   awaiting: 'border-amber-500/30',
   manual: 'border-violet-500/30',
+  aggregator: 'border-orange-500/30',
   unavailable: 'border-rose-500/30',
 };
 

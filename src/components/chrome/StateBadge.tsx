@@ -10,6 +10,7 @@ const LABEL: Record<DataState, string> = {
   live: 'Source live',
   awaiting: 'Awaiting live data',
   manual: 'Manual seed',
+  aggregator: 'Aggregator · Chittorgarh',
   unavailable: 'Source unavailable',
 };
 
@@ -17,13 +18,15 @@ const COMPACT_LABEL: Record<DataState, string> = {
   live: 'auto',
   awaiting: 'awaiting',
   manual: 'manual',
+  aggregator: 'aggregator',
   unavailable: 'unavail',
 };
 
-const TONE: Record<DataState, 'live' | 'awaiting' | 'manual' | 'unavailable'> = {
+const TONE: Record<DataState, 'live' | 'awaiting' | 'manual' | 'aggregator' | 'unavailable'> = {
   live: 'live',
   awaiting: 'awaiting',
   manual: 'manual',
+  aggregator: 'aggregator',
   unavailable: 'unavailable',
 };
 
