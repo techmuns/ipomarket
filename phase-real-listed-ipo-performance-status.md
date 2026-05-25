@@ -1,6 +1,6 @@
 # Real Listed IPO → Listing Performance — Status
 
-> Implementation status for `phase-real-listed-ipo-performance-plan.md`. **This file currently records Gate 2a (target selection) only.** Gate 2b (master row + symbol-map + the bounded-ladder fetch + the written perf row) is **not** started and requires separate operator approval of the target below.
+> Implementation status for `phase-real-listed-ipo-performance-plan.md`. Records **Gate 2a (target selection, approved: Bajaj Housing Finance)** plus a **Gate 2b reachability check that found every ladder source blocked by this environment's network allowlist → no data written.** No master row, no symbol-map entry, no perf row. Completing the proof requires a network-permitted environment (see the Gate 2b section).
 
 ## Gate 2a — Target selection (2026-05-25)
 
@@ -70,4 +70,28 @@ A public, non-login broker/aggregator IPO page, e.g. `https://groww.in/ipo/bajaj
 
 ### Gate 2a exit
 
-Awaiting operator approval of the **exact target** (Bajaj Housing Finance, or an alternative) before any `ipo-master.json` / `ipo-listing-performance.json` / `symbol-map.ts` mutation. Gate 2b will not start until the target is approved.
+Operator **approved Bajaj Housing Finance** as the Gate 2b target (subject to official/fallback verification; bounded ladder; write only if both sides from one rung with provenance; no fake/manual values).
+
+## Gate 2b — official/fallback verification attempt (2026-05-25): BLOCKED, no write
+
+Before any mutation, a **read-only reachability probe** (plain GET, no login/captcha/stealth/proxy/bypass) was run against all three ladder rungs from this environment:
+
+| Rung | Host | Result |
+|---|---|---|
+| 1 — Official BSE | `api.bseindia.com` (StockReachGraph, scripcode 544252) | **HTTP 403** `x-deny-reason: host_not_allowed` |
+| 1 — Official NSE | `nseindia.com` (quote-equity BAJAJHFL) | **HTTP 403** `host_not_allowed` |
+| 2 — Chittorgarh | `chittorgarh.com` | **HTTP 403** `host_not_allowed` |
+| 3 — Broker/public | `groww.in` (bajaj-housing-finance) | **HTTP 403** `host_not_allowed` |
+| (contrast) | `registry.npmjs.org`, `github.com` | 200 / reachable |
+
+**Finding:** this environment's egress allowlist blocks **every** ladder source (the 403s come from the network proxy — `x-deny-reason: host_not_allowed`, body "Host not in allowlist" — not from the sites' own servers). No rung can fetch listing-day or current data here.
+
+**Outcome — HALT, no write (correct per the strict threshold):** since no rung is reachable, no rung can yield both listing-day + current values with provenance. Therefore:
+- **No** `ipo-master.json` row added (Bajaj Housing Finance not inserted).
+- **No** `symbol-map.ts` entry added (scripcode/symbol unverified — not fetched).
+- **No** `ipo-listing-performance.json` row written.
+- **No** fake/manual/guessed values substituted for the unreachable data.
+
+**To complete the proof**, Gate 2b must run from a **network-permitted environment** where `api.bseindia.com` / `nseindia.com` / `chittorgarh.com` (and a broker page) are reachable — e.g. the operator's machine, or a CI job / Claude Code environment whose network policy allowlists those hosts. The §15 prompt in the plan doc is ready to paste there; the official rung should succeed for this dual-listed target, with Chittorgarh as the proven-reachable fallback.
+
+**No snapshot rows, master rows, or symbol-map entries were written in this Gate 2b attempt.**
