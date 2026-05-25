@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-25T07:06:56.201Z",
+  "generated_at_utc": "2026-05-25T09:56:07.582Z",
   "ipos": [
     {
       "id": "greendale-cement",
@@ -342,6 +342,35 @@
       "state": "manual",
       "tagline": null,
       "nse_symbol": null
+    },
+    {
+      "id": "bajaj-housing-finance",
+      "slug": "bajaj-housing-finance",
+      "name": "Bajaj Housing Finance Limited",
+      "short_name": "Bajaj Housing Finance",
+      "segment": "mainboard",
+      "status": "listed",
+      "sector": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2024-09-16",
+      "price_band": {
+        "low": 66,
+        "high": 70
+      },
+      "lot_size": null,
+      "issue_size_cr": null,
+      "fresh_cr": null,
+      "ofs_cr": null,
+      "face_value": null,
+      "listing_exchange": [
+        "NSE",
+        "BSE"
+      ],
+      "reservation": null,
+      "state": "manual",
+      "tagline": null,
+      "nse_symbol": "BAJAJHFL"
     }
   ],
   "timelines": [

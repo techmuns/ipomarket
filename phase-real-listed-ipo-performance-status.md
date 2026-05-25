@@ -192,3 +192,22 @@ Per operator decision, Gate 2b runs **inside GitHub Actions** (a network-permitt
 **Verification at the setup commit:** `npm run typecheck` + `npm run build` green; no snapshot/master/perf mutation in this commit.
 
 **Next action (operator):** run the GitHub Action **`bajaj-listing-performance`** (Actions tab → Run workflow on `main`). For Bajaj Housing Finance the official BSE rung (544252) should resolve identity + both prices directly; supply `chittorgarh_url` only if the official rung is unreachable from CI.
+
+### Gate 2b run — bajaj-housing-finance — 2026-05-25T09:56:08.144Z (GitHub Actions)
+
+**Outcome:** HALT — no listing-performance row written. No single rung yielded BOTH listing-day AND current. The target stays a listed row with "listing data pending" (valid; no fake / partial / null-gain / mixed-rung row).
+
+Issue price ₹70 · listing_date 2024-09-16.
+
+Ladder notes:
+- OFFICIAL/BSE: scripcode 544252 name "?" did not match [bajaj,housing,finance]
+- OFFICIAL/NSE quote: NSE HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ …[truncated, total 399 chars]
+- OFFICIAL: incomplete (identityOk=false, listing_close=null, current=83.26) — falling through.
+- CHITTORGARH: no URL (set CHITTORGARH_URL) — skipped.
+- BROKER GET https://groww.in/ipo/bajaj-housing-finance: HTTP 404
+
+Files changed by this script: none (perf snapshot untouched).
