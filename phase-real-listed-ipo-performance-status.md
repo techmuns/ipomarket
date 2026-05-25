@@ -357,3 +357,23 @@ Bounded official BSE/NSE attempts are **closed as incomplete** and recorded abov
 - **NSE** ✗ — HTTP 403 (IP-blocked in CI).
 
 Per operator decision, stop spending reruns on undocumented BSE date-range behavior and proceed down the approved ladder to **rung 2 (Chittorgarh)**: resolve the public Bajaj Housing Finance IPO page inside the Action, extract **both** listing-day and current sides from that **single** rung, and write `source: Chittorgarh`, `state: aggregator` (explicitly NOT official/live) only if both sides parse. If Chittorgarh lacks either side, fall through to the broker/public rung under the same rules. No partial/fake/manual/null/mixed-rung row is ever written.
+
+### Gate 2b run — bajaj-housing-finance — 2026-05-25T14:04:02.215Z (GitHub Actions)
+
+**Outcome:** HALT — no listing-performance row written. No single rung yielded BOTH listing-day AND current. The target stays a listed row with "listing data pending" (valid; no fake / partial / null-gain / mixed-rung row).
+
+Issue price ₹70 · listing_date 2024-09-16.
+
+Ladder notes:
+- OFFICIAL/BSE historical: nearest date 2026-05-25 is >14d from listing_date 2024-09-16 — no listing_close. 391 pts (391 dated, span 2026-05-25…2026-05-25); rawLast={"dttm":"Mon May 25 2026 09:15:59","vale1":"83.90","vole":"16638"}
+- OFFICIAL/NSE quote: NSE HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ …[truncated, total 395 chars]
+- OFFICIAL: incomplete (identityOk=true, listing_close=null, current=83.31) — falling through.
+- CHITTORGARH resolve: unresolved: slug + 2 index page(s) yielded no /ipo/ link matching [bajaj,housing,finance]
+- CHITTORGARH: no usable URL (provide chittorgarh_url) — skipped.
+- BROKER: no URL (set BROKER_URL) — skipped.
+
+Files changed by this script: none (perf snapshot untouched).
