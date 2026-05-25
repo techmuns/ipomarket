@@ -110,11 +110,44 @@ function pickNum(obj: any, ...substrs: string[]): number | null {
   }
   return null;
 }
+// Coerce a value to epoch-ms: epoch-ms passthrough, epoch-seconds ×1000, or a
+// parseable date string. Returns null if it isn't plausibly a date.
+function toEpoch(v: any): number | null {
+  if (v == null) return null;
+  if (typeof v === 'number') return v > 1e12 ? v : v > 1e9 ? v * 1000 : null;
+  const s = String(v).trim();
+  const asNum = Number(s);
+  if (Number.isFinite(asNum) && asNum > 1e9) return asNum > 1e12 ? asNum : asNum * 1000;
+  const p = Date.parse(s);
+  return Number.isNaN(p) ? null : p;
+}
+// Parse one StockReachGraph element regardless of shape: [epoch, price] arrays,
+// {x,y} chart points, or {Date, Close/...} OHLC objects. Keeps the raw element
+// so OHLC sub-fields can be read when present.
+function parsePoint(raw: any): { t: number | null; price: number | null; raw: any } {
+  if (raw == null) return { t: null, price: null, raw };
+  if (Array.isArray(raw)) {
+    return { t: toEpoch(raw[0]), price: num(raw[1]) ?? num(raw[raw.length - 1]), raw };
+  }
+  if (typeof raw === 'object') {
+    let t: number | null = null;
+    for (const k of Object.keys(raw)) {
+      const kl = k.toLowerCase();
+      if (kl.includes('date') || kl.includes('time') || kl === 'dt' || kl === 'x') {
+        t = toEpoch(raw[k]);
+        if (t != null) break;
+      }
+    }
+    const price = pickNum(raw, 'close') ?? num(raw.y ?? raw.Y) ?? pickNum(raw, 'value', 'price', 'rate', 'last', 'ltp');
+    return { t, price, raw };
+  }
+  return { t: null, price: num(raw), raw };
+}
 
 // ── Official fetch helpers (mirror scripts/ingest/listing-performance.ts) ──
 
 async function fetchBseHistorical(scripcode: string): Promise<
-  { ok: true; first: any; last: any } | { ok: false; error: string }
+  { ok: true; points: any[] } | { ok: false; error: string }
 > {
   const url = `https://api.bseindia.com/BseIndiaAPI/api/StockReachGraph/w?scripcode=${scripcode}&flag=W&fromdate=&todate=&seriesid=`;
   const res = await httpGet(url, {
@@ -131,8 +164,7 @@ async function fetchBseHistorical(scripcode: string): Promise<
     // BSE frequently returns Data as a JSON-ENCODED STRING — parse again.
     if (typeof data === 'string') data = JSON.parse(data);
     if (!Array.isArray(data) || data.length === 0) return { ok: false, error: 'BSE historical empty/non-array' };
-    // first = listing week (listing-day proxy at weekly granularity); last = latest close.
-    return { ok: true, first: data[0], last: data[data.length - 1] };
+    return { ok: true, points: data };
   } catch (e: any) {
     return { ok: false, error: `BSE historical parse: ${e?.message ?? e}` };
   }
@@ -387,15 +419,27 @@ async function main(): Promise<void> {
 
       const hist = await fetchBseHistorical(scripcode);
       if (hist.ok) {
-        listing_open = pickNum(hist.first, 'open');
-        listing_high = pickNum(hist.first, 'high');
-        listing_low = pickNum(hist.first, 'low');
-        listing_close = pickNum(hist.first, 'close', 'value', 'price', 'rate', 'last');
-        if (current_price == null) current_price = pickNum(hist.last, 'close', 'value', 'price', 'rate', 'last');
-        if (listing_close == null) {
-          console.log(`[diag] BSE historical first element: ${truncate(JSON.stringify(hist.first), 300)}`);
-          console.log(`[diag] BSE historical last element: ${truncate(JSON.stringify(hist.last), 300)}`);
+        const pts = hist.points.map(parsePoint).filter((p) => p.price != null);
+        const withT = pts.filter((p) => p.t != null);
+        const target = listing_date ? Date.parse(listing_date) : NaN;
+        // Listing-week point = closest date to listing_date (robust to series
+        // ordering and to a leading metadata row); else fall back to position 0.
+        let listingPt = pts[0];
+        let latestPt = pts[pts.length - 1];
+        if (withT.length && !Number.isNaN(target)) {
+          listingPt = withT.reduce((a, b) => (Math.abs(a.t! - target) <= Math.abs(b.t! - target) ? a : b));
+          latestPt = withT.reduce((a, b) => (a.t! >= b.t! ? a : b));
         }
+        listing_close = listingPt?.price ?? null;
+        listing_open = pickNum(listingPt?.raw, 'open');
+        listing_high = pickNum(listingPt?.raw, 'high');
+        listing_low = pickNum(listingPt?.raw, 'low');
+        if (current_price == null) current_price = latestPt?.price ?? null;
+        const iso = (t: number | null) => (t != null ? new Date(t).toISOString().slice(0, 10) : 'no-date');
+        rungNotes.push(
+          `OFFICIAL/BSE historical: ${pts.length} pts; listing-week → date=${iso(listingPt?.t ?? null)} close=${listing_close ?? 'null'}; ` +
+            `latest → date=${iso(latestPt?.t ?? null)} price=${latestPt?.price ?? 'null'}; rawFirst=${truncate(JSON.stringify(hist.points[0]), 140)}`,
+        );
       } else {
         rungNotes.push(`OFFICIAL/BSE historical: ${hist.error}`);
       }
