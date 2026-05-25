@@ -42,13 +42,12 @@ const NOW = new Date().toISOString();
 
 // Public fallback URLs per ipo (overridable by env CHITTORGARH_URL / BROKER_URL,
 // which the workflow exposes as optional workflow_dispatch inputs).
+// Fallback rungs are operator-supplied via env (CHITTORGARH_URL / BROKER_URL,
+// exposed as optional workflow_dispatch inputs). No guessed defaults — a wrong
+// guessed URL just 404s and adds noise. Both empty ⇒ rungs 2/3 are skipped
+// cleanly unless a real URL is provided.
 const FALLBACK_SOURCES: Record<string, { chittorgarh?: string; broker?: string }> = {
-  'bajaj-housing-finance': {
-    // Chittorgarh detail URL needs the numeric id; supply CHITTORGARH_URL at
-    // run time if the official rung is unavailable.
-    chittorgarh: '',
-    broker: 'https://groww.in/ipo/bajaj-housing-finance',
-  },
+  'bajaj-housing-finance': { chittorgarh: '', broker: '' },
 };
 
 interface MasterRow {
@@ -89,6 +88,28 @@ function nameMatches(candidate: string | null, tokens: string[]): boolean {
   const c = candidate.toLowerCase();
   return tokens.every((t) => c.includes(t));
 }
+// Robust identity fallback: do ALL name tokens appear anywhere in a raw response
+// body? Avoids guessing the exact company-name JSON key.
+function textHasTokens(text: string | null, tokens: string[]): boolean {
+  if (!text || tokens.length === 0) return false;
+  const t = text.toLowerCase();
+  return tokens.every((tok) => t.includes(tok));
+}
+// Pull the first positive number whose KEY contains one of the substrings
+// (case-insensitive), tried in order — robust to OHLC field-name variants
+// (Close / vClose / CLOSE / ...).
+function pickNum(obj: any, ...substrs: string[]): number | null {
+  if (!obj || typeof obj !== 'object') return null;
+  for (const s of substrs) {
+    for (const k of Object.keys(obj)) {
+      if (k.toLowerCase().includes(s)) {
+        const v = num(obj[k]);
+        if (v != null) return v;
+      }
+    }
+  }
+  return null;
+}
 
 // ── Official fetch helpers (mirror scripts/ingest/listing-performance.ts) ──
 
@@ -106,8 +127,10 @@ async function fetchBseHistorical(scripcode: string): Promise<
   if (!res.ok) return { ok: false, error: `BSE historical HTTP ${res.status}` };
   try {
     const parsed = JSON.parse(res.body);
-    const data: any[] = parsed?.Data ?? parsed?.data ?? (Array.isArray(parsed) ? parsed : []);
-    if (data.length === 0) return { ok: false, error: 'BSE historical empty' };
+    let data: any = parsed?.Data ?? parsed?.data ?? parsed;
+    // BSE frequently returns Data as a JSON-ENCODED STRING — parse again.
+    if (typeof data === 'string') data = JSON.parse(data);
+    if (!Array.isArray(data) || data.length === 0) return { ok: false, error: 'BSE historical empty/non-array' };
     // first = listing week (listing-day proxy at weekly granularity); last = latest close.
     return { ok: true, first: data[0], last: data[data.length - 1] };
   } catch (e: any) {
@@ -116,7 +139,7 @@ async function fetchBseHistorical(scripcode: string): Promise<
 }
 
 async function fetchBseHeader(scripcode: string): Promise<
-  { ok: true; companyName: string | null; ltp: number | null } | { ok: false; error: string }
+  { ok: true; companyName: string | null; ltp: number | null; raw: string } | { ok: false; error: string }
 > {
   const url = `https://api.bseindia.com/BseIndiaAPI/api/getScripHeaderData/w?Debtflag=&scripcode=${scripcode}&seriesid=`;
   const res = await httpGet(url, {
@@ -131,9 +154,9 @@ async function fetchBseHeader(scripcode: string): Promise<
     const p: any = JSON.parse(res.body);
     const h: any = p?.Header ?? p?.header ?? p ?? {};
     const nameRaw =
-      h?.SecurityName ?? h?.Security_Name ?? h?.ScripName ?? h?.scrip_name ?? p?.SecurityName ?? p?.ScripName ?? null;
+      h?.SecurityName ?? h?.Security_Name ?? h?.ScripName ?? h?.scrip_name ?? h?.Comp_Name ?? h?.CompName ?? p?.SecurityName ?? p?.ScripName ?? null;
     const ltpRaw = p?.CurrRate?.LTP ?? p?.CurrentRate?.LTP ?? p?.LTP ?? h?.LTP ?? null;
-    return { ok: true, companyName: nameRaw ? String(nameRaw).trim() : null, ltp: num(ltpRaw) };
+    return { ok: true, companyName: nameRaw ? String(nameRaw).trim() : null, ltp: num(ltpRaw), raw: res.body };
   } catch (e: any) {
     return { ok: false, error: `BSE header parse: ${e?.message ?? e}` };
   }
@@ -350,11 +373,12 @@ async function main(): Promise<void> {
     if (scripcode) {
       const header = await fetchBseHeader(scripcode);
       if (header.ok) {
-        if (nameMatches(header.companyName, tokens)) {
+        if (nameMatches(header.companyName, tokens) || textHasTokens(header.raw, tokens)) {
           identityOk = true;
-          identitySources.push(`BSE name "${header.companyName}"`);
+          identitySources.push(`BSE ${header.companyName ? `name "${header.companyName}"` : 'header (raw name-token match)'}`);
         } else {
-          rungNotes.push(`OFFICIAL/BSE: scripcode ${scripcode} name "${header.companyName ?? '?'}" did not match [${tokens.join(',')}]`);
+          rungNotes.push(`OFFICIAL/BSE: scripcode ${scripcode} header did not confirm [${tokens.join(',')}] (name="${header.companyName ?? '?'}")`);
+          console.log(`[diag] BSE header raw (truncated): ${truncate(header.raw, 300)}`);
         }
         if (header.ltp != null) current_price = header.ltp;
       } else {
@@ -363,11 +387,15 @@ async function main(): Promise<void> {
 
       const hist = await fetchBseHistorical(scripcode);
       if (hist.ok) {
-        listing_open = num(hist.first?.open ?? hist.first?.Open ?? hist.first?.o);
-        listing_high = num(hist.first?.high ?? hist.first?.High ?? hist.first?.h);
-        listing_low = num(hist.first?.low ?? hist.first?.Low ?? hist.first?.l);
-        listing_close = num(hist.first?.close ?? hist.first?.Close ?? hist.first?.c);
-        if (current_price == null) current_price = num(hist.last?.close ?? hist.last?.Close ?? hist.last?.c);
+        listing_open = pickNum(hist.first, 'open');
+        listing_high = pickNum(hist.first, 'high');
+        listing_low = pickNum(hist.first, 'low');
+        listing_close = pickNum(hist.first, 'close', 'value', 'price', 'rate', 'last');
+        if (current_price == null) current_price = pickNum(hist.last, 'close', 'value', 'price', 'rate', 'last');
+        if (listing_close == null) {
+          console.log(`[diag] BSE historical first element: ${truncate(JSON.stringify(hist.first), 300)}`);
+          console.log(`[diag] BSE historical last element: ${truncate(JSON.stringify(hist.last), 300)}`);
+        }
       } else {
         rungNotes.push(`OFFICIAL/BSE historical: ${hist.error}`);
       }

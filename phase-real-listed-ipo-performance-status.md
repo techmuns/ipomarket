@@ -263,3 +263,13 @@ The official BSE rung is **close** (544252 returned a live LTP). To complete the
 3. Alternatively / additionally, re-run with a real **`chittorgarh_url`** input (rung 2) as the proven-reachable fallback.
 
 Until then, Bajaj remains a real **listed** row in `master` with listing performance **pending** — honest, reversible, and consistent with OnEMI.
+
+### Gate 2b — official BSE parsing fix (committed; awaiting re-run)
+
+Root-caused the HALT and hardened `listed-ipo-performance.ts` (no fabricated data; official rung only):
+- **Historical parse:** `StockReachGraph` returns `Data` as a JSON-encoded **string** — now double-parsed before indexing (this is why `listing_close` was `null` with no error). OHLC now read via a key-substring scan (`Close`/`vClose`/… robustly).
+- **Identity:** verify ownership by scanning the **raw** BSE header body for the name tokens (`bajaj`+`housing`+`finance`) instead of guessing one key. Header LTP already returned a live price, so identity was the only blocker on that side.
+- **Self-diagnostic:** if `listing_close` is still null (or identity still fails), the run now logs the raw header + first/last historical element shapes to the CI log, so any remaining mismatch is fixed exactly rather than guessed.
+- Removed the guessed Groww default (404 noise); fallback rungs are operator-supplied via `chittorgarh_url` / `broker_url` inputs.
+
+`typecheck` + `build` green at the fix commit; no snapshot mutated locally. **Next:** re-run the `bajaj-listing-performance` Action (official BSE should now verify identity + yield listing-day + current). If BSE historical still won't parse, the CI `[diag]` lines will reveal the exact shape; alternatively supply a real `chittorgarh_url`.
