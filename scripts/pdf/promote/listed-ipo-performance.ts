@@ -31,6 +31,7 @@ import { appendFileSync, readFileSync, renameSync, writeFileSync } from 'node:fs
 import { join } from 'node:path';
 import { readJsonOrNull } from '../../ingest/lib/safeWrite.ts';
 import { httpGet, warmNseCookies, warmNseEquityPage, truncate } from '../../ingest/lib/http.ts';
+import type { FetchResult } from '../../ingest/lib/http.ts';
 import { bseScripcodeFor, nseSymbolFor } from '../../ingest/lib/symbol-map.ts';
 
 const IPO_ID = process.argv[2];
@@ -44,8 +45,12 @@ const NOW = new Date().toISOString();
 // optional workflow_dispatch inputs) override everything. If no Chittorgarh URL
 // is given, the Action resolves the detail page from `chittorgarhSlug` / the
 // company name tokens. No guessed broker default (a wrong URL just 404s).
-const FALLBACK_SOURCES: Record<string, { chittorgarh?: string; chittorgarhSlug?: string; broker?: string }> = {
-  'bajaj-housing-finance': { chittorgarh: '', chittorgarhSlug: 'bajaj-housing-finance-ltd-ipo', broker: '' },
+const FALLBACK_SOURCES: Record<string, { chittorgarh?: string; chittorgarhSlugs?: string[]; broker?: string }> = {
+  'bajaj-housing-finance': {
+    chittorgarh: '',
+    chittorgarhSlugs: ['bajaj-housing-finance-ipo', 'bajaj-housing-finance-ltd-ipo'],
+    broker: '',
+  },
 };
 
 interface MasterRow {
@@ -241,32 +246,124 @@ async function fetchPublic(url: string): Promise<{ ok: true; body: string } | { 
 }
 
 // Resolve the public Chittorgarh /ipo/ detail URL for the target inside the
-// Action (public, browser-UA, redirect-following GET — no login/captcha/stealth).
-// 1) try the slug-only detail URL (Chittorgarh 301s to the id'd URL); else
-// 2) scan index/report pages for the /ipo/<slug>/<id>/ href matching all tokens.
+// Action (public, desktop-UA, redirect-following GET — no login/captcha/stealth
+// /proxy; a 403/Cloudflare/Datadome challenge is a hard stop, never bypassed).
+//
+// Index/list pages mirror the repo's P-25 probe (the dashboards are commonly
+// JS-rendered, so a static GET may legitimately yield 0 detail links — the
+// diagnostics below make that explicit rather than silently "unresolved").
+// Detail-URL discovery + challenge detection mirror P-25 exactly so behaviour
+// is consistent with the proven probe.
 const CHITTORGARH_INDEX_CANDIDATES = [
-  'https://www.chittorgarh.com/report/mainboard-ipo-list-in-india-bse-nse/82/',
   'https://www.chittorgarh.com/ipo/ipo_dashboard.asp',
+  'https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme',
+  'https://www.chittorgarh.com/report/mainboard-ipo-list-in-india-bse-nse/82/',
 ];
+// Matches absolute or relative /ipo/<slug>/<numeric-id>/ at a quote/space/>
+// boundary (identical to P-25 discoverDetailUrls).
+const CHITTORGARH_DETAIL_RE = /(?<=["'\s>])(?:https?:\/\/(?:www\.)?chittorgarh\.com)?\/ipo\/([a-z0-9-]+)\/(\d+)\/?/gi;
+
+function chittorgarhChallenge(res: FetchResult): string | null {
+  if (res.status === 403 || res.status === 503 || res.status === 429) return `HTTP ${res.status}`;
+  const body = res.body || '';
+  const title = (body.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] ?? '').trim().slice(0, 100);
+  if (/cf-challenge|just a moment|attention required|cf-mitigated|cf-browser-verification|datadome/i.test(body)) {
+    return 'cloudflare/datadome markers in body';
+  }
+  if (/just a moment|attention required|cloudflare/i.test(title)) return `challenge title "${title}"`;
+  return null;
+}
+function chittorgarhDetailLinks(body: string): Array<{ url: string; slug: string }> {
+  const seen = new Set<string>();
+  const out: Array<{ url: string; slug: string }> = [];
+  CHITTORGARH_DETAIL_RE.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = CHITTORGARH_DETAIL_RE.exec(body))) {
+    const url = `https://www.chittorgarh.com/ipo/${m[1]!}/${m[2]!}/`;
+    if (seen.has(url)) continue;
+    seen.add(url);
+    out.push({ url, slug: m[1]!.toLowerCase() });
+  }
+  return out;
+}
+function chittorgarhSampleHrefs(body: string, tokens: string[]): string[] {
+  const want = new RegExp(`${tokens.join('|')}|/ipo/`, 'i');
+  const out: string[] = [];
+  const re = /href\s*=\s*["']([^"']{1,200})["']/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(body)) && out.length < 10) {
+    if (want.test(m[1]!)) out.push(m[1]!.slice(0, 120));
+  }
+  return out;
+}
 async function resolveChittorgarhUrl(
-  slug: string | undefined,
+  slugs: string[],
   tokens: string[],
-): Promise<{ url: string | null; note: string }> {
-  if (slug) {
-    const slugUrl = `https://www.chittorgarh.com/ipo/${slug}/`;
-    const direct = await fetchPublic(slugUrl);
-    if (direct.ok && tokens.every((t) => direct.body.toLowerCase().includes(t))) {
-      return { url: slugUrl, note: `slug URL resolved (${direct.body.length} bytes, name tokens present)` };
+): Promise<{ url: string | null; notes: string[] }> {
+  const notes: string[] = [];
+  let reachableAny = false;
+  const get = async (url: string) => {
+    const res = await httpGet(url, {
+      headers: {
+        Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        Referer: 'https://www.chittorgarh.com/',
+      },
+      timeoutMs: 30_000,
+    });
+    const challenge = chittorgarhChallenge(res);
+    const reachable = res.ok && !challenge && (res.body?.length ?? 0) > 500;
+    if (reachable) reachableAny = true;
+    return { res, challenge, reachable };
+  };
+
+  // 1) Direct detail slug URLs — Chittorgarh 301s /ipo/<slug>/ → /ipo/<slug>/<id>/.
+  for (const slug of slugs) {
+    const url = `https://www.chittorgarh.com/ipo/${slug}/`;
+    const { res, challenge, reachable } = await get(url);
+    const fin = res.finalUrl && res.finalUrl !== url ? ` → ${res.finalUrl}` : '';
+    notes.push(
+      `slug ${url}: HTTP ${res.status}${fin}, ${res.body?.length ?? 0}B${challenge ? `, CHALLENGE(${challenge})` : ''}${res.error ? `, err=${res.error}` : ''}${reachable ? '' : ' [NOT reachable]'}`,
+    );
+    if (!reachable) continue;
+    const body = res.body!;
+    const tokensPresent = tokens.every((t) => body.toLowerCase().includes(t));
+    const canon = res.finalUrl ?? url;
+    const isIdUrl = /^https?:\/\/(?:www\.)?chittorgarh\.com\/ipo\/[a-z0-9-]+\/\d+\/?$/i.test(canon);
+    if (tokensPresent && isIdUrl) {
+      notes.push(`→ resolved by slug redirect → ${canon} (name tokens present).`);
+      return { url: canon, notes };
+    }
+    if (tokensPresent && /listing\s*(?:day|price|gain)|issue\s*price|ipo\s*details/i.test(body)) {
+      notes.push(`→ using reachable detail page ${url} (name tokens present; no numeric id in final URL).`);
+      return { url, notes };
+    }
+    notes.push(`   slug page reachable but ${tokensPresent ? 'final URL not an /ipo/<slug>/<id>/ detail' : 'name tokens absent'} — not used.`);
+  }
+
+  // 2) Index/list pages → discover an /ipo/<slug>/<id>/ link whose slug matches all tokens.
+  for (const idx of CHITTORGARH_INDEX_CANDIDATES) {
+    const { res, challenge, reachable } = await get(idx);
+    const body = res.body ?? '';
+    const links = reachable ? chittorgarhDetailLinks(body) : [];
+    const fin = res.finalUrl && res.finalUrl !== idx ? ` → ${res.finalUrl}` : '';
+    notes.push(
+      `index ${idx}: HTTP ${res.status}${fin}, ${body.length}B${challenge ? `, CHALLENGE(${challenge})` : ''}${res.error ? `, err=${res.error}` : ''}, /ipo/ detail links=${links.length}${reachable ? '' : ' [NOT reachable]'}`,
+    );
+    const hrefs = chittorgarhSampleHrefs(body, tokens);
+    if (hrefs.length) notes.push(`   sample hrefs: ${hrefs.join(' | ')}`);
+    const match = links.find((l) => tokens.every((t) => l.slug.includes(t)));
+    if (match) {
+      notes.push(`→ resolved via ${idx} → ${match.url}`);
+      return { url: match.url, notes };
     }
   }
-  for (const idx of CHITTORGARH_INDEX_CANDIDATES) {
-    const got = await fetchPublic(idx);
-    if (!got.ok) continue;
-    const hrefs = Array.from(got.body.matchAll(/href="(\/ipo\/[a-z0-9-]+\/\d+\/?)"/gi)).map((m) => m[1]!);
-    const match = hrefs.find((h) => tokens.every((t) => h.toLowerCase().includes(t)));
-    if (match) return { url: `https://www.chittorgarh.com${match}`, note: `resolved via ${idx} (${hrefs.length} /ipo/ links scanned) → ${match}` };
-  }
-  return { url: null, note: `unresolved: slug + ${CHITTORGARH_INDEX_CANDIDATES.length} index page(s) yielded no /ipo/ link matching [${tokens.join(',')}]` };
+
+  notes.push(
+    reachableAny
+      ? `UNRESOLVED but Chittorgarh was REACHABLE — no slug redirect and no /ipo/<slug>/<id>/ link matched [${tokens.join(',')}]. Most likely the list pages render their IPO table client-side (XHR), or Bajaj is not on the scanned pages. Next: provide the exact chittorgarh_url, or move to the broker rung.`
+      : `UNRESOLVED and Chittorgarh was NOT reachable on any attempt (all blocked/challenge/error above) — Chittorgarh is not fetchable from CI; move to the broker rung.`,
+  );
+  return { url: null, notes };
 }
 
 // ── Conservative labelled extraction for the public fallback rungs ──
@@ -563,8 +660,8 @@ async function main(): Promise<void> {
   if (!result) {
     let url = (process.env.CHITTORGARH_URL || FALLBACK_SOURCES[ipoId]?.chittorgarh || '').trim();
     if (!url) {
-      const r = await resolveChittorgarhUrl(FALLBACK_SOURCES[ipoId]?.chittorgarhSlug, tokens);
-      rungNotes.push(`CHITTORGARH resolve: ${r.note}`);
+      const r = await resolveChittorgarhUrl(FALLBACK_SOURCES[ipoId]?.chittorgarhSlugs ?? [], tokens);
+      r.notes.forEach((n) => rungNotes.push(`CHITTORGARH resolve: ${n}`));
       if (r.url) url = r.url;
     }
     if (!url) {

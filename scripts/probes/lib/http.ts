@@ -11,6 +11,7 @@ export interface FetchResult {
   body: string;
   bytes: number;
   latency_ms: number;
+  finalUrl?: string;
   error?: string;
 }
 
@@ -91,6 +92,7 @@ export async function httpGet(
       body,
       bytes: body.length,
       latency_ms: Date.now() - started,
+      finalUrl: res.url || url,
     };
   } catch (e: any) {
     return {
@@ -100,6 +102,7 @@ export async function httpGet(
       body: '',
       bytes: 0,
       latency_ms: Date.now() - started,
+      finalUrl: url,
       error: e?.message ?? String(e),
     };
   } finally {
