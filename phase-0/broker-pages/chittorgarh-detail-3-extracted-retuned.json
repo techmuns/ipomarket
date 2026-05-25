@@ -1,64 +1,72 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
-  "slug": "m-r-maniveni-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
+  "slug": "yaashvi-jewellers-ipo",
   "fields": {
     "company_name": {
-      "value": "M R Maniveni Foods IPO",
+      "value": "Yaashvi Jewellers IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "M R Maniveni Foods IPO"
+      "source_snippet": "Yaashvi Jewellers IPO"
     },
     "issue_size_cr": {
-      "value": "52,00,000 shares (agg. up to ₹ 27 Cr)",
+      "value": "52,86,400 shares (agg. up to ₹ 44 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "52,00,000 shares (agg. up to ₹ 27 Cr)"
+      "source_snippet": "52,86,400 shares (agg. up to ₹ 44 Cr)"
     },
     "price_band": {
-      "value": "₹51 to ₹52",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[3] label=\"Price Band\"",
-      "why_missing": null,
-      "source_snippet": "₹51 to ₹52"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
+      "source_snippet": null
     },
     "lot_size": {
-      "value": "2,000 Shares",
+      "value": "1,600 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "2,000 Shares"
+      "source_snippet": "1,600 Shares"
+    },
+    "face_value": {
+      "value": "₹ 10 per share",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[2] label=\"Face Value\"",
+      "why_missing": null,
+      "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-05-22",
+      "value": "2026-05-25",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"22 to 26 May, 2026\" → start=2026-05-22"
+      "source_snippet": "raw=\"25 to 27 May, 2026\" → start=2026-05-25"
     },
     "close_date": {
-      "value": "2026-05-26",
+      "value": "2026-05-27",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"22 to 26 May, 2026\" → end=2026-05-26"
+      "source_snippet": "raw=\"25 to 27 May, 2026\" → end=2026-05-27"
     },
     "listing_date": {
-      "value": "2026-06-01",
+      "value": "2026-06-02",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Mon, Jun 1, 2026 T\" → 2026-06-01"
+      "source_snippet": "raw=\"Tue, Jun 2, 2026 T\" → 2026-06-02"
     },
     "registrar": {
       "value": "Bigshare Services Pvt.Ltd.",
@@ -66,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. +91-22-6263 8200 ipo@bigshareonline.com <\" → \"Bigshare Services Pvt.Ltd.\""
+      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. +91-22-6263 8200 investor@bigshareonline.com <i class=\"fa fa-glo\" → \"Bigshare Services Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -77,24 +85,28 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": null,
-      "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/anchor_allotment_maniveni1ee80910-6601-4482-8fe2-e593b8a49df4.pdf"
+      "value": [
+        "https://www.bsesme.com/download/331108/SME_IPO%20InPrinciple/DraftProspectusYaashviJewellersLimited_20251226122404.pdf"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.bsesme.com/download/331108/SME_IPO%20InPrinciple/DraftProspectusYaashviJewellersLimited_20251226122404.pdf"
     }
   },
-  "found_count_full": 8,
-  "found_count_narrow": 5,
-  "precision_ratio_full": 0.8,
-  "precision_ratio_narrow": 1,
-  "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/anchor_allotment_maniveni1ee80910-6601-4482-8fe2-e593b8a49df4.pdf"
+  "found_count_full": 9,
+  "found_count_narrow": 4,
+  "precision_ratio_full": 0.8181818181818182,
+  "precision_ratio_narrow": 0.8,
+  "official_pdf_links_on_allowlist": [
+    "https://www.bsesme.com/download/331108/SME_IPO%20InPrinciple/DraftProspectusYaashviJewellersLimited_20251226122404.pdf"
   ],
-  "noise_stripped_bytes": 84560,
-  "main_content_bytes": 84560,
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/yaashvi-jewellers-prospectus.pdf"
+  ],
+  "noise_stripped_bytes": 83163,
+  "main_content_bytes": 83163,
   "tables_parsed": 10,
-  "table_rows_parsed": 66
+  "table_rows_parsed": 64
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-05-24T20:15:41.590Z",
+  "generated_at_utc": "2026-05-25T03:27:10.550Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.833,
-  "average_precision_ratio_narrow": 0.933,
+  "average_precision_ratio_full": 0.818,
+  "average_precision_ratio_narrow": 0.867,
   "third_ipo_selection": {
-    "slug": "m-r-maniveni-ipo",
-    "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
+    "slug": "yaashvi-jewellers-ipo",
+    "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"22 - 26 May\" covers today",
-    "date_text": "22 - 26 May",
+    "reason": "current-open: list \"sme\" row date range \"25 - 27 May\" covers today",
+    "date_text": "25 - 27 May",
     "source_list": "sme"
   },
   "per_detail": [
@@ -16,9 +16,9 @@
       "index": 1,
       "slug": "onemi-technology-ipo",
       "source_url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
-      "found_count_full": 9,
+      "found_count_full": 10,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.9,
+      "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
       "main_content_bytes": 95592,
       "tables_parsed": 13,
@@ -28,6 +28,7 @@
         "issue_size_cr",
         "price_band",
         "lot_size",
+        "face_value",
         "listing_date",
         "official_pdf_links"
       ],
@@ -51,7 +52,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "found_count_full": 8,
       "found_count_narrow": 4,
-      "precision_ratio_full": 0.8,
+      "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
       "main_content_bytes": 79604,
       "tables_parsed": 10,
@@ -71,6 +72,7 @@
       "fields_rejected_low_confidence": [],
       "fields_missing": [
         "lot_size",
+        "face_value",
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [
@@ -80,34 +82,36 @@
     },
     {
       "index": 3,
-      "slug": "m-r-maniveni-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
-      "found_count_full": 8,
-      "found_count_narrow": 5,
-      "precision_ratio_full": 0.8,
-      "precision_ratio_narrow": 1,
-      "main_content_bytes": 84560,
+      "slug": "yaashvi-jewellers-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
+      "found_count_full": 9,
+      "found_count_narrow": 4,
+      "precision_ratio_full": 0.818,
+      "precision_ratio_narrow": 0.8,
+      "main_content_bytes": 83163,
       "tables_parsed": 10,
-      "table_rows_parsed": 66,
+      "table_rows_parsed": 64,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
-        "price_band",
         "lot_size",
-        "listing_date"
+        "face_value",
+        "listing_date",
+        "official_pdf_links"
       ],
       "fields_medium_confidence": [
         "open_date",
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
-        "official_pdf_links"
-      ],
+      "fields_rejected_low_confidence": [],
       "fields_missing": [
+        "price_band",
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_on_allowlist": [
+        "https://www.bsesme.com/download/331108/SME_IPO%20InPrinciple/DraftProspectusYaashviJewellersLimited_20251226122404.pdf"
+      ],
       "official_pdf_links_off_allowlist_count": 1
     }
   ]

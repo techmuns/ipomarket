@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-24T20:15:41.590Z",
+  "captured_at_utc": "2026-05-25T03:27:10.550Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "m-r-maniveni-ipo",
-    "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
+    "slug": "yaashvi-jewellers-ipo",
+    "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"22 - 26 May\" covers today",
-    "date_text": "22 - 26 May",
+    "reason": "current-open: list \"sme\" row date range \"25 - 27 May\" covers today",
+    "date_text": "25 - 27 May",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
-      "slug": "m-r-maniveni-ipo"
+      "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
+      "slug": "yaashvi-jewellers-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/m-r-maniveni-ipo/2627/",
+      "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
       "mode": "static",
       "status": 200,
-      "bytes": 280440,
-      "title": "M R Maniveni IPO Date, Price, GMP, Review, Details",
+      "bytes": 272099,
+      "title": "Yaashvi Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

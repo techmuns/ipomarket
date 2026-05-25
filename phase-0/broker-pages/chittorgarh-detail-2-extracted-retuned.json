@@ -36,6 +36,14 @@
       "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
       "source_snippet": null
     },
+    "face_value": {
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Face Value\" / \"Face Value Per Share\" / \"FV\"",
+      "source_snippet": null
+    },
     "open_date": {
       "value": "2026-05-05",
       "found": true,
@@ -89,7 +97,7 @@
   },
   "found_count_full": 8,
   "found_count_narrow": 4,
-  "precision_ratio_full": 0.8,
+  "precision_ratio_full": 0.7272727272727273,
   "precision_ratio_narrow": 0.8,
   "official_pdf_links_on_allowlist": [
     "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"

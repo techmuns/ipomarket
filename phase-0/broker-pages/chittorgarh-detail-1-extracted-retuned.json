@@ -36,6 +36,14 @@
       "why_missing": null,
       "source_snippet": "87 Shares"
     },
+    "face_value": {
+      "value": "₹ 1 per share",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[2] label=\"Face Value\"",
+      "why_missing": null,
+      "source_snippet": "₹ 1 per share"
+    },
     "open_date": {
       "value": "2026-04-30",
       "found": true,
@@ -87,9 +95,9 @@
       "source_snippet": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf"
     }
   },
-  "found_count_full": 9,
+  "found_count_full": 10,
   "found_count_narrow": 5,
-  "precision_ratio_full": 0.9,
+  "precision_ratio_full": 0.9090909090909091,
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [
     "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf"
