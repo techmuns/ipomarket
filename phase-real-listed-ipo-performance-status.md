@@ -95,3 +95,85 @@ Before any mutation, a **read-only reachability probe** (plain GET, no login/cap
 **To complete the proof**, Gate 2b must run from a **network-permitted environment** where `api.bseindia.com` / `nseindia.com` / `chittorgarh.com` (and a broker page) are reachable — e.g. the operator's machine, or a CI job / Claude Code environment whose network policy allowlists those hosts. The §15 prompt in the plan doc is ready to paste there; the official rung should succeed for this dual-listed target, with Chittorgarh as the proven-reachable fallback.
 
 **No snapshot rows, master rows, or symbol-map entries were written in this Gate 2b attempt.**
+
+### Decision (operator, 2026-05-25)
+
+Run Gate 2b in a **network-permitted environment**; **do not build partial tooling in this blocked sandbox** (it would still end in a no-write state, and the Chittorgarh/broker parsers can't be validated without reachable pages). No `ipo-master.json` / `ipo-listing-performance.json` / `symbol-map.ts` mutation here. Next action: run the ready-to-paste prompt below where the ladder sources are reachable.
+
+### Ready-to-paste Gate 2b prompt (Bajaj Housing Finance — run in a network-permitted environment)
+
+```
+Gate 2b — Bajaj Housing Finance listing-performance proof (bounded source ladder). RUN ONLY in a
+network-permitted environment where api.bseindia.com / nseindia.com / chittorgarh.com (and a public
+broker IPO page) are reachable. Follows phase-real-listed-ipo-performance-plan.md §15. Stay on main.
+
+TARGET (verify every [v] value against the cited official source BEFORE writing):
+  company_name    : Bajaj Housing Finance Limited
+  ipo_id / slug   : bajaj-housing-finance
+  segment         : mainboard
+  listing_exchange: ["NSE","BSE"]
+  listing_date    : 2024-09-16          [v: BSE/NSE listing notice]
+  issue_price     : 70  (band 66-70)    [v: RHP/exchange final issue price]
+  face_value      : 10                  [v]
+  NSE symbol      : BAJAJHFL            [v: NSE symbol master shows "Bajaj Housing Finance"]
+  BSE scripcode   : 544252              [v: BSE quote page for 544252 shows "Bajaj Housing Finance" — NOT a doc/download id]
+  Chittorgarh URL : https://www.chittorgarh.com/ipo/bajaj-housing-finance-ltd-ipo/<id>/   [v: resolve <id>]
+  Broker URL      : https://groww.in/ipo/bajaj-housing-finance                            [v]
+
+PREFLIGHT (HALT if it fails):
+  - Confirm BSE scripcode 544252 AND/OR NSE symbol BAJAJHFL belong to Bajaj Housing Finance via the
+    official BSE quote page / NSE symbol master (capture the URL). Never use an RHP/document/download id.
+  - If neither official identifier verifies AND no public Chittorgarh/broker page is reachable → HALT, write nothing.
+
+BOUNDED SOURCE LADDER (stop at the first rung that yields BOTH listing-day AND current):
+  1. OFFICIAL (bounded — one pass, no indefinite retry):
+       BSE: fetchBseHistorical(544252) — first element = listing-day (Sep 2024), last = current.
+       NSE: fetchNseQuote(BAJAJHFL) — current.
+       both fail / no verified id → record the reason, fall through.  label: source=BSE|NSE, state=live.
+  2. CHITTORGARH (only if official incomplete): GET the public robots-allowed /ipo/<slug>/<id>/ page
+       (single GET / one bounded render; no login/captcha/stealth/proxy). Extract clearly-visible
+       listing-day + current price/gain.  label: source=Chittorgarh, state=aggregator.
+  3. BROKER/PUBLIC (only if Chittorgarh incomplete): GET the public broker page (no bypass). Extract
+       clearly-visible listing-day + current price/gain.  label: source=Broker-ref, state=aggregator.
+
+WRITE THRESHOLD (strict, same at every rung):
+  - Need BOTH listing-day (price→compute gain from issue 70, or direct gain) AND current (price→compute
+    gain, or direct gain) from the SAME rung. Only one side → do NOT write; fall through / pending.
+  - Source gives prices → gain = ((price-70)/70)*100. Source gives gains directly → store the raw value in
+    the status doc + the normalized numeric *_gain_pct in the row.
+  - NEVER write a partial / fake / manual / null-gain / mixed-rung row.
+
+IMPLEMENT (in-scope only):
+  - scripts/pdf/promote/listed-ipo-performance.ts (NEW; generalize onemi-listing-performance.ts — ipo_id
+    from argv; read issue_price/listing_date/listing_exchange from the master row; bounded ladder above;
+    strict gate; byte-identity string-surgery insert keyed by ipo_id; source/state per rung).
+  - scripts/pdf/promote/add-listed-ipo.ts (NEW; guarded add of ONE status:listed master row for
+    bajaj-housing-finance — mirror onemi-master.ts splice; count guard expects 11 existing rows → 12;
+    refuse if id exists; bump generated_at_utc; all existing rows byte-identical) OR a reviewed master edit.
+  - scripts/ingest/lib/symbol-map.ts (add BSE_SCRIPCODES['bajaj-housing-finance']='544252' and/or
+    NSE_SYMBOLS['bajaj-housing-finance']='BAJAJHFL' — ONLY if the official rung is used + verified, with a
+    comment citing the official source + date).
+  - src/data/snapshots/ipo-master.json (ONE new listed row; nothing else).
+  - src/data/snapshots/ipo-listing-performance.json (ONE new perf row IFF both sides from one rung; else untouched).
+  - phase-real-listed-ipo-performance-status.md (append the Gate 2b result).
+
+OUT OF SCOPE (HARD): ipo-source-audit.json (defer) ; other snapshots ; non-target rows + pre-existing master
+  rows (byte-identical) ; OnEMI fallback ; Trendlyne ; GMP ; manual/fabricated prices ; broad backfill ;
+  login/captcha/stealth/proxy bypass ; DataState 'broker_reference' (use 'aggregator') ; any type change beyond
+  a minimal additive ListingPerformance source/state widening if strictly required ; src/components/** ;
+  src/pages/** ; .github/workflows/* ; cron ; database ; UI redesign ; PDF parser ; any IPO beyond Bajaj Housing.
+
+VERIFY: (a) identifier-ownership proof captured; (b) add master row + symbol-map (official only);
+  (c) npx tsx scripts/pdf/promote/listed-ipo-performance.ts bajaj-housing-finance;
+  (d) git + json.dumps(sort_keys=True): exactly one new master row + one new perf row + <=1 symbol-map entry;
+      all other master + listing-perf rows byte-identical; ipo-source-audit.json + other snapshots untouched;
+  (e) npm run typecheck ; npm run build;
+  (f) headless render (chromium): /recently-listed shows Bajaj Housing Finance with real listing AND current
+      gains (correctly source-labeled) + plotted in both charts (valid values); /ipo/bajaj-housing-finance renders; 0 errors;
+  (g) append phase-real-listed-ipo-performance-status.md (official attempts + failure reason; fallback used + URL;
+      raw values; computed gains + raw->normalized; source label/state; files changed; no-partial/fake/null
+      confirmation; byte-identity);
+  (h) commit + push to main (only if hard gates pass, or a clean safe no-write status commit).
+
+After push: STOP and report. Do not add more IPOs, append source-audit, extend DataState, or change workflows.
+```
