@@ -110,14 +110,26 @@ function pickNum(obj: any, ...substrs: string[]): number | null {
   }
   return null;
 }
-// Coerce a value to epoch-ms: epoch-ms passthrough, epoch-seconds ×1000, or a
-// parseable date string. Returns null if it isn't plausibly a date.
+// Coerce a value to epoch-ms across the formats BSE/Indian feeds use: numeric
+// epoch (s or ms), YYYYMMDD, DD-MM-YYYY / DD/MM/YYYY (day-first), or any
+// JS-parseable string ("Mon May 25 2026 …", "16 Sep 2024", ISO). null if not a date.
 function toEpoch(v: any): number | null {
   if (v == null) return null;
   if (typeof v === 'number') return v > 1e12 ? v : v > 1e9 ? v * 1000 : null;
   const s = String(v).trim();
-  const asNum = Number(s);
-  if (Number.isFinite(asNum) && asNum > 1e9) return asNum > 1e12 ? asNum : asNum * 1000;
+  if (!s) return null;
+  if (/^\d{10,13}$/.test(s)) {
+    const n = Number(s);
+    return n > 1e12 ? n : n * 1000;
+  }
+  let m = s.match(/^(\d{4})(\d{2})(\d{2})$/); // YYYYMMDD
+  if (m) return Date.UTC(+m[1], +m[2] - 1, +m[3]);
+  m = s.match(/^(\d{1,2})[-/](\d{1,2})[-/](\d{4})/); // DD-MM-YYYY (day-first)
+  if (m) {
+    const d = +m[1];
+    const mo = +m[2];
+    if (mo >= 1 && mo <= 12 && d >= 1 && d <= 31) return Date.UTC(+m[3], mo - 1, d);
+  }
   const p = Date.parse(s);
   return Number.isNaN(p) ? null : p;
 }
@@ -426,7 +438,12 @@ async function main(): Promise<void> {
         const withT = pts.filter((p) => p.t != null);
         const target = listing_date ? Date.parse(listing_date) : NaN;
         const iso = (t: number | null) => (t != null ? new Date(t).toISOString().slice(0, 10) : 'no-date');
-        const TOL_MS = 14 * 24 * 60 * 60 * 1000; // weekly bars may sit a few days off listing_date
+        const TOL_MS = 14 * 24 * 60 * 60 * 1000; // bars may sit a few days off listing_date
+        const sortedT = withT.map((p) => p.t!).sort((a, b) => a - b);
+        const span = sortedT.length ? `${iso(sortedT[0])}…${iso(sortedT[sortedT.length - 1])}` : 'none';
+        // Diagnostic for the non-success branches: dated-count, span, and the
+        // OLDEST raw element (reveals the historical date format if unparsed).
+        const diag = `${pts.length} pts (${withT.length} dated, span ${span}); rawLast=${truncate(JSON.stringify(hist.points[hist.points.length - 1]), 120)}`;
         if (withT.length && !Number.isNaN(target)) {
           // Listing-week point = closest date to listing_date (robust to series
           // ordering); latest = max date. Guard: never accept an out-of-window
@@ -440,17 +457,15 @@ async function main(): Promise<void> {
             listing_high = pickNum(listingPt.raw, 'high');
             listing_low = pickNum(listingPt.raw, 'low');
             rungNotes.push(
-              `OFFICIAL/BSE historical: ${pts.length} pts; listing-week → date=${iso(listingPt.t)} close=${listing_close}; latest → date=${iso(latestPt.t)} price=${latestPt.price}.`,
+              `OFFICIAL/BSE historical: ${pts.length} pts (span ${span}); listing-week → date=${iso(listingPt.t)} close=${listing_close}; latest → date=${iso(latestPt.t)} price=${latestPt.price}.`,
             );
           } else {
             rungNotes.push(
-              `OFFICIAL/BSE historical: ${pts.length} pts but nearest date ${iso(listingPt.t)} is >14d from listing_date ${listing_date} — not used (no listing_close).`,
+              `OFFICIAL/BSE historical: nearest date ${iso(listingPt.t)} is >14d from listing_date ${listing_date} — no listing_close. ${diag}`,
             );
           }
         } else {
-          rungNotes.push(
-            `OFFICIAL/BSE historical: ${pts.length} pts, no parseable dates — cannot locate listing week; rawFirst=${truncate(JSON.stringify(hist.points[0]), 160)}`,
-          );
+          rungNotes.push(`OFFICIAL/BSE historical: no usable dated points. ${diag}`);
         }
       } else {
         rungNotes.push(`OFFICIAL/BSE historical: ${hist.error}`);
