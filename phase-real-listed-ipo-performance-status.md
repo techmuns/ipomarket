@@ -329,3 +329,22 @@ Ladder notes:
 - BROKER: no URL (set BROKER_URL) — skipped.
 
 Files changed by this script: none (perf snapshot untouched).
+
+### Gate 2b run — bajaj-housing-finance — 2026-05-25T13:04:34.746Z (GitHub Actions)
+
+**Outcome:** HALT — no listing-performance row written. No single rung yielded BOTH listing-day AND current. The target stays a listed row with "listing data pending" (valid; no fake / partial / null-gain / mixed-rung row).
+
+Issue price ₹70 · listing_date 2024-09-16.
+
+Ladder notes:
+- OFFICIAL/BSE historical: nearest date 2026-05-25 is >14d from listing_date 2024-09-16 — no listing_close. 391 pts (391 dated, span 2026-05-25…2026-05-25); rawLast={"dttm":"Mon May 25 2026 09:15:59","vale1":"83.90","vole":"16638"}
+- OFFICIAL/NSE quote: NSE HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ …[truncated, total 399 chars]
+- OFFICIAL: incomplete (identityOk=true, listing_close=null, current=83.31) — falling through.
+- CHITTORGARH: no URL (set CHITTORGARH_URL) — skipped.
+- BROKER: no URL (set BROKER_URL) — skipped.
+
+Files changed by this script: none (perf snapshot untouched).
