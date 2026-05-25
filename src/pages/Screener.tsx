@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { formatDate, formatCr, formatTimes } from '@/lib/format';
 import { totalSubscriptionTimes } from '@/lib/derive';
+import { CompletenessChip } from '@/components/ipo/CompletenessChip';
 import { Search, ChevronUp, ChevronDown } from 'lucide-react';
 import type { Ipo } from '@/types/ipo';
 
@@ -100,6 +101,9 @@ export function Screener() {
                     <tr key={ipo.id} className="hover:bg-slate-900/40">
                       <td className="px-3 py-2 text-slate-200">
                         <Link to={`/ipo/${ipo.slug}`} className="hover:underline">{ipo.short_name ?? ipo.name}</Link>
+                        <div className="mt-1">
+                          <CompletenessChip ipo={ipo} audit={Snapshots.sourceAudit.by_ipo[ipo.id]} />
+                        </div>
                       </td>
                       <td className="px-3 py-2">
                         <Badge tone={ipo.segment === 'mainboard' ? 'info' : 'accent'}>{ipo.segment}</Badge>

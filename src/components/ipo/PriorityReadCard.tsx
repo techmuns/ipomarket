@@ -1,7 +1,8 @@
 import type { Ipo, IpoSourceAudit, IpoSubscription, IpoTimeline } from '@/types/ipo';
 import { Card, CardContent } from '@/components/ui/card';
 import { Activity, CalendarClock, Lightbulb, ShieldCheck } from 'lucide-react';
-import { subscriptionQualityScore, totalSubscriptionTimes } from '@/lib/derive';
+import { subscriptionQualityScore, totalSubscriptionTimes, minInvestment } from '@/lib/derive';
+import { formatRupee } from '@/lib/format';
 import { cn } from '@/lib/cn';
 
 const MIX_COLORS = {
@@ -45,7 +46,7 @@ export function PriorityReadCard({ ipo, sub, timeline, audit }: Props) {
   const demand = demandRead(score);
   const nextDate = nextKeyDate(ipo, timeline);
   const mixSummary = sourceMixSummary(audit);
-  const analystSentence = composeAnalystSentence({ demand, nextDate, subTimes, mixSummary });
+  const analystSentence = composeAnalystSentence({ ipo, demand, nextDate, subTimes, mixSummary });
 
   return (
     <Card className="border-indigo-500/20 bg-gradient-to-br from-indigo-500/[0.04] to-transparent">
@@ -226,12 +227,32 @@ function sourceMixSummary(audit: IpoSourceAudit | undefined): { top: string | nu
   return { top: `${MIX_LABELS[top.key]} ${top.pct}%`, line };
 }
 
+// Mechanical issue-terms clause from the source-backed economic fields. Pure
+// summary, no judgment. Returns null when no issue terms are filled.
+function issueTermsClause(ipo: Ipo): string | null {
+  const seg = ipo.segment === 'sme' ? 'SME' : 'mainboard';
+  const size = ipo.issue_size_cr != null ? `₹${ipo.issue_size_cr} Cr ${seg}` : null;
+  const band = ipo.price_band ? `₹${ipo.price_band.low}–${ipo.price_band.high}` : null;
+  const minInv = minInvestment(ipo);
+  const lot =
+    ipo.lot_size != null
+      ? `lot ${ipo.lot_size}${minInv != null ? ` (${formatRupee(minInv)})` : ''}`
+      : null;
+  if (!size && !band && !lot) return null;
+  let s = size ?? (band ? seg : '');
+  if (band) s += `${s ? ' at ' : ''}${band}`;
+  if (lot) s += `${s ? ', ' : ''}${lot}`;
+  return s || null;
+}
+
 function composeAnalystSentence({
+  ipo,
   demand,
   nextDate,
   subTimes,
   mixSummary,
 }: {
+  ipo: Ipo;
   demand: { value: string; tone: CellTone };
   nextDate: { value: string };
   subTimes: number | null;
@@ -248,5 +269,12 @@ function composeAnalystSentence({
   const subPart = subTimes != null ? ` at ${subTimes.toFixed(2)}× total` : '';
   const datePart = `; ${nextDate.value.toLowerCase()}`;
   const mixPart = mixSummary.line ? `; ${mixSummary.line}.` : '.';
+
+  const terms = issueTermsClause(ipo);
+  if (terms) {
+    // Lead with the issue terms; lowercase the demand head so it reads as a clause.
+    const demandText = demandPart.charAt(0).toLowerCase() + demandPart.slice(1);
+    return `${terms}; ${demandText}${subPart}${datePart}${mixPart}`;
+  }
   return `${demandPart}${subPart}${datePart}${mixPart}`;
 }

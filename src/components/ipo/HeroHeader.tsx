@@ -1,7 +1,7 @@
 import type { Ipo } from '@/types/ipo';
 import { Badge } from '@/components/ui/badge';
 import { StateBadge } from '@/components/chrome/StateBadge';
-import { formatRupee, daysUntil, formatDate } from '@/lib/format';
+import { formatRupee, daysUntil, formatDate, formatPriceBand, formatCr } from '@/lib/format';
 import { Snapshots } from '@/lib/loadSnapshots';
 import { totalSubscriptionTimes, minInvestment } from '@/lib/derive';
 import { Activity, CalendarClock, Layers, MapPin } from 'lucide-react';
@@ -75,11 +75,12 @@ export function HeroHeader({ ipo }: { ipo: Ipo }) {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
+        <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
+          <Stat label="Price band" value={formatPriceBand(ipo.price_band?.low ?? null, ipo.price_band?.high ?? null)} />
+          <Stat label="Issue size" value={formatCr(ipo.issue_size_cr)} />
           <Stat label="Open" value={ipo.open_date ? formatDate(ipo.open_date) : '—'} />
           <Stat label="Close" value={ipo.close_date ? formatDate(ipo.close_date) : '—'} hint={closeIn != null && closeIn >= 0 ? `in ${closeIn}d` : undefined} />
           <Stat label="Listing" value={ipo.listing_date ? formatDate(ipo.listing_date) : '—'} hint={listIn != null && listIn >= 0 ? `in ${listIn}d` : undefined} />
-          <Stat label="Listing exchange" value={ipo.listing_exchange.join(' + ') || '—'} />
         </div>
       </div>
     </section>

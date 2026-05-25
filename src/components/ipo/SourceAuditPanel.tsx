@@ -72,7 +72,7 @@ export function SourceAuditPanel({ audit }: { audit: IpoSourceAudit | undefined 
           })}
         </div>
         <p className="mt-4 text-[11px] leading-relaxed text-slate-500">
-          Every datum on this page carries a source pill and freshness chip. Source mix above shows how the IPO is constructed — official NSE / BSE / SEBI / RHP data versus vetted-aggregator gap-fill (Chittorgarh) versus manual seeding versus derived metrics.
+          Every datum on this page carries a source pill and freshness chip. The mix above covers <span className="text-slate-400">issue-term provenance</span> — for this IPO the issue terms (price band, dates, lot, registrar) are gap-filled from the Chittorgarh aggregator, below official sources and never overwriting them. The <span className="text-slate-400">financials</span> shown on the Analysis tab are official RHP-derived and carry their own RHP source label, so a high Chittorgarh share here does not understate the official financial data.
         </p>
       </CardContent>
     </Card>

@@ -6,6 +6,7 @@ import { StateBadge } from '@/components/chrome/StateBadge';
 import { formatDateRange, formatCr, formatPriceBand, formatRupee, daysUntil } from '@/lib/format';
 import { Snapshots } from '@/lib/loadSnapshots';
 import { totalSubscriptionTimes, minInvestment } from '@/lib/derive';
+import { CompletenessChip } from '@/components/ipo/CompletenessChip';
 import { ChevronRight, Activity, FileText } from 'lucide-react';
 
 export function IpoCard({ ipo }: { ipo: Ipo }) {
@@ -34,7 +35,7 @@ export function IpoCard({ ipo }: { ipo: Ipo }) {
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
         <div className="flex items-start justify-between gap-3 px-5 pt-4">
           <div className="min-w-0">
-            <div className="flex items-center gap-2 mb-1">
+            <div className="mb-1 flex flex-wrap items-center gap-2">
               <Badge tone={ipo.segment === 'mainboard' ? 'info' : 'accent'}>{ipo.segment === 'mainboard' ? 'Mainboard' : 'SME'}</Badge>
               <Badge
                 tone={
@@ -52,6 +53,7 @@ export function IpoCard({ ipo }: { ipo: Ipo }) {
                 {ipo.status}
               </Badge>
               {ipo.sector && <Badge>{ipo.sector.industry}</Badge>}
+              <CompletenessChip ipo={ipo} audit={Snapshots.sourceAudit.by_ipo[ipo.id]} />
             </div>
             <h3 className="truncate text-base font-semibold text-slate-100">{ipo.short_name ?? ipo.name}</h3>
             {ipo.tagline && <p className="mt-1 line-clamp-2 text-xs text-slate-400">{ipo.tagline}</p>}
