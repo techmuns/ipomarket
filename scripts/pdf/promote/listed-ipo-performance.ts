@@ -133,12 +133,15 @@ function parsePoint(raw: any): { t: number | null; price: number | null; raw: an
     let t: number | null = null;
     for (const k of Object.keys(raw)) {
       const kl = k.toLowerCase();
-      if (kl.includes('date') || kl.includes('time') || kl === 'dt' || kl === 'x') {
+      // BSE StockReachGraph uses misspelled keys, e.g. `dttm` (datetime).
+      if (kl.includes('date') || kl.includes('time') || kl.includes('dt') || kl.includes('tm') || kl === 'x') {
         t = toEpoch(raw[k]);
         if (t != null) break;
       }
     }
-    const price = pickNum(raw, 'close') ?? num(raw.y ?? raw.Y) ?? pickNum(raw, 'value', 'price', 'rate', 'last', 'ltp');
+    // …and `vale1` (a misspelling of "value1") for the price/close.
+    const price =
+      pickNum(raw, 'close') ?? num(raw.y ?? raw.Y) ?? pickNum(raw, 'value', 'vale', 'price', 'rate', 'last', 'ltp');
     return { t, price, raw };
   }
   return { t: null, price: num(raw), raw };
@@ -422,24 +425,33 @@ async function main(): Promise<void> {
         const pts = hist.points.map(parsePoint).filter((p) => p.price != null);
         const withT = pts.filter((p) => p.t != null);
         const target = listing_date ? Date.parse(listing_date) : NaN;
-        // Listing-week point = closest date to listing_date (robust to series
-        // ordering and to a leading metadata row); else fall back to position 0.
-        let listingPt = pts[0];
-        let latestPt = pts[pts.length - 1];
-        if (withT.length && !Number.isNaN(target)) {
-          listingPt = withT.reduce((a, b) => (Math.abs(a.t! - target) <= Math.abs(b.t! - target) ? a : b));
-          latestPt = withT.reduce((a, b) => (a.t! >= b.t! ? a : b));
-        }
-        listing_close = listingPt?.price ?? null;
-        listing_open = pickNum(listingPt?.raw, 'open');
-        listing_high = pickNum(listingPt?.raw, 'high');
-        listing_low = pickNum(listingPt?.raw, 'low');
-        if (current_price == null) current_price = latestPt?.price ?? null;
         const iso = (t: number | null) => (t != null ? new Date(t).toISOString().slice(0, 10) : 'no-date');
-        rungNotes.push(
-          `OFFICIAL/BSE historical: ${pts.length} pts; listing-week → date=${iso(listingPt?.t ?? null)} close=${listing_close ?? 'null'}; ` +
-            `latest → date=${iso(latestPt?.t ?? null)} price=${latestPt?.price ?? 'null'}; rawFirst=${truncate(JSON.stringify(hist.points[0]), 140)}`,
-        );
+        const TOL_MS = 14 * 24 * 60 * 60 * 1000; // weekly bars may sit a few days off listing_date
+        if (withT.length && !Number.isNaN(target)) {
+          // Listing-week point = closest date to listing_date (robust to series
+          // ordering); latest = max date. Guard: never accept an out-of-window
+          // point as the listing close (prevents a plausible-but-wrong value).
+          const listingPt = withT.reduce((a, b) => (Math.abs(a.t! - target) <= Math.abs(b.t! - target) ? a : b));
+          const latestPt = withT.reduce((a, b) => (a.t! >= b.t! ? a : b));
+          if (current_price == null) current_price = latestPt.price;
+          if (Math.abs(listingPt.t! - target) <= TOL_MS) {
+            listing_close = listingPt.price;
+            listing_open = pickNum(listingPt.raw, 'open');
+            listing_high = pickNum(listingPt.raw, 'high');
+            listing_low = pickNum(listingPt.raw, 'low');
+            rungNotes.push(
+              `OFFICIAL/BSE historical: ${pts.length} pts; listing-week → date=${iso(listingPt.t)} close=${listing_close}; latest → date=${iso(latestPt.t)} price=${latestPt.price}.`,
+            );
+          } else {
+            rungNotes.push(
+              `OFFICIAL/BSE historical: ${pts.length} pts but nearest date ${iso(listingPt.t)} is >14d from listing_date ${listing_date} — not used (no listing_close).`,
+            );
+          }
+        } else {
+          rungNotes.push(
+            `OFFICIAL/BSE historical: ${pts.length} pts, no parseable dates — cannot locate listing week; rawFirst=${truncate(JSON.stringify(hist.points[0]), 160)}`,
+          );
+        }
       } else {
         rungNotes.push(`OFFICIAL/BSE historical: ${hist.error}`);
       }
