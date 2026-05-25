@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-25T02:31:38.128Z",
+  "generated_at_utc": "2026-05-25T03:36:31.089Z",
   "by_ipo": {
     "nfp-sampoorna-foods": {
       "ipo_id": "nfp-sampoorna-foods",
@@ -402,6 +402,13 @@
           "state": "aggregator",
           "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
           "fetched_at_utc": "2026-05-24T19:02:37.030Z"
+        },
+        {
+          "field": "face_value",
+          "source": "Chittorgarh",
+          "state": "aggregator",
+          "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+          "fetched_at_utc": "2026-05-25T03:27:10.550Z"
         }
       ]
     }

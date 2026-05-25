@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-25T02:31:38.128Z",
+  "generated_at_utc": "2026-05-25T03:36:31.089Z",
   "ipos": [
     {
       "id": "greendale-cement",
@@ -334,7 +334,7 @@
       "issue_size_cr": 926,
       "fresh_cr": null,
       "ofs_cr": null,
-      "face_value": null,
+      "face_value": 1,
       "listing_exchange": [
         "BSE"
       ],
