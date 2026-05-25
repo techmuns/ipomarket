@@ -348,3 +348,12 @@ Ladder notes:
 - BROKER: no URL (set BROKER_URL) — skipped.
 
 Files changed by this script: none (perf snapshot untouched).
+
+### Gate 2b — pivot to Chittorgarh fallback (operator-approved 2026-05-25)
+
+Bounded official BSE/NSE attempts are **closed as incomplete** and recorded above:
+- **BSE identity** ✓ (raw name-token match on `getScripHeaderData`) and **BSE current price** ✓ (LTP ₹83.31).
+- **BSE listing-week close** ✗ — `StockReachGraph?flag=W` returns only **today's intraday minute bars** (run 89cc63d: 391 pts, span 2026-05-25…2026-05-25, oldest bar `09:15:59` vale1=83.90 vole=16638). It never reaches the 2024-09-16 listing week, so no official listing_close is obtainable from that endpoint. The ±14-day guard correctly blocked any write.
+- **NSE** ✗ — HTTP 403 (IP-blocked in CI).
+
+Per operator decision, stop spending reruns on undocumented BSE date-range behavior and proceed down the approved ladder to **rung 2 (Chittorgarh)**: resolve the public Bajaj Housing Finance IPO page inside the Action, extract **both** listing-day and current sides from that **single** rung, and write `source: Chittorgarh`, `state: aggregator` (explicitly NOT official/live) only if both sides parse. If Chittorgarh lacks either side, fall through to the broker/public rung under the same rules. No partial/fake/manual/null/mixed-rung row is ever written.

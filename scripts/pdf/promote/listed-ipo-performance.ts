@@ -40,14 +40,12 @@ const PERF_PATH = join(SNAP_DIR, 'ipo-listing-performance.json');
 const STATUS_DOC = join(process.cwd(), 'phase-real-listed-ipo-performance-status.md');
 const NOW = new Date().toISOString();
 
-// Public fallback URLs per ipo (overridable by env CHITTORGARH_URL / BROKER_URL,
-// which the workflow exposes as optional workflow_dispatch inputs).
-// Fallback rungs are operator-supplied via env (CHITTORGARH_URL / BROKER_URL,
-// exposed as optional workflow_dispatch inputs). No guessed defaults — a wrong
-// guessed URL just 404s and adds noise. Both empty ⇒ rungs 2/3 are skipped
-// cleanly unless a real URL is provided.
-const FALLBACK_SOURCES: Record<string, { chittorgarh?: string; broker?: string }> = {
-  'bajaj-housing-finance': { chittorgarh: '', broker: '' },
+// Public fallback config per ipo. CHITTORGARH_URL / BROKER_URL env (exposed as
+// optional workflow_dispatch inputs) override everything. If no Chittorgarh URL
+// is given, the Action resolves the detail page from `chittorgarhSlug` / the
+// company name tokens. No guessed broker default (a wrong URL just 404s).
+const FALLBACK_SOURCES: Record<string, { chittorgarh?: string; chittorgarhSlug?: string; broker?: string }> = {
+  'bajaj-housing-finance': { chittorgarh: '', chittorgarhSlug: 'bajaj-housing-finance-ltd-ipo', broker: '' },
 };
 
 interface MasterRow {
@@ -242,6 +240,35 @@ async function fetchPublic(url: string): Promise<{ ok: true; body: string } | { 
   return { ok: true, body: res.body };
 }
 
+// Resolve the public Chittorgarh /ipo/ detail URL for the target inside the
+// Action (public, browser-UA, redirect-following GET — no login/captcha/stealth).
+// 1) try the slug-only detail URL (Chittorgarh 301s to the id'd URL); else
+// 2) scan index/report pages for the /ipo/<slug>/<id>/ href matching all tokens.
+const CHITTORGARH_INDEX_CANDIDATES = [
+  'https://www.chittorgarh.com/report/mainboard-ipo-list-in-india-bse-nse/82/',
+  'https://www.chittorgarh.com/ipo/ipo_dashboard.asp',
+];
+async function resolveChittorgarhUrl(
+  slug: string | undefined,
+  tokens: string[],
+): Promise<{ url: string | null; note: string }> {
+  if (slug) {
+    const slugUrl = `https://www.chittorgarh.com/ipo/${slug}/`;
+    const direct = await fetchPublic(slugUrl);
+    if (direct.ok && tokens.every((t) => direct.body.toLowerCase().includes(t))) {
+      return { url: slugUrl, note: `slug URL resolved (${direct.body.length} bytes, name tokens present)` };
+    }
+  }
+  for (const idx of CHITTORGARH_INDEX_CANDIDATES) {
+    const got = await fetchPublic(idx);
+    if (!got.ok) continue;
+    const hrefs = Array.from(got.body.matchAll(/href="(\/ipo\/[a-z0-9-]+\/\d+\/?)"/gi)).map((m) => m[1]!);
+    const match = hrefs.find((h) => tokens.every((t) => h.toLowerCase().includes(t)));
+    if (match) return { url: `https://www.chittorgarh.com${match}`, note: `resolved via ${idx} (${hrefs.length} /ipo/ links scanned) → ${match}` };
+  }
+  return { url: null, note: `unresolved: slug + ${CHITTORGARH_INDEX_CANDIDATES.length} index page(s) yielded no /ipo/ link matching [${tokens.join(',')}]` };
+}
+
 // ── Conservative labelled extraction for the public fallback rungs ──
 // Only clearly-labelled, internally-consistent values are accepted; anything
 // ambiguous is rejected (→ fall through). Never guesses unlabelled numbers.
@@ -252,12 +279,33 @@ interface Extracted {
   listingClose: number | null;
   currentPrice: number | null;
   notes: string[];
+  diag: string;
 }
 function firstNum(text: string, re: RegExp): number | null {
   const m = text.match(re);
   if (!m || m[1] == null) return null;
   const n = Number(String(m[1]).replace(/,/g, ''));
   return Number.isFinite(n) ? n : null;
+}
+// Compact, committed view of the page's labelled numbers (preceding label →
+// value) so the real Chittorgarh/broker wording is visible from the status doc
+// without another blind round-trip. Bounded.
+function diagSnippets(text: string): string {
+  const out: string[] = [];
+  const pctRe = /([A-Za-z][A-Za-z '/&-]{2,28}?)\s*[:\-]?\s*(-?[\d,]+(?:\.\d+)?)\s*%/g;
+  let m: RegExpExecArray | null;
+  let i = 0;
+  while ((m = pctRe.exec(text)) && i < 10) {
+    out.push(`"${m[1].trim()}"=${m[2]}%`);
+    i++;
+  }
+  const priceRe = /([A-Za-z][A-Za-z '/&-]{2,28}?)\s*[:\-]?\s*(?:₹|rs\.?|inr)\s*([\d,]+(?:\.\d+)?)/gi;
+  i = 0;
+  while ((m = priceRe.exec(text)) && i < 10) {
+    out.push(`"${m[1].trim()}"=₹${m[2]}`);
+    i++;
+  }
+  return out.length ? out.join(' | ') : '(no labelled %/₹ candidates found)';
 }
 function extract(html: string, issuePrice: number): Extracted {
   const text = html
@@ -303,7 +351,7 @@ function extract(html: string, issuePrice: number): Extracted {
     currentGainPct = round2(currentGainRaw!);
   }
 
-  return { listingGainPct, currentGainPct, listingClose, currentPrice: currentPx, notes };
+  return { listingGainPct, currentGainPct, listingClose, currentPrice: currentPx, notes, diag: diagSnippets(text) };
 }
 
 // ── Byte-identity-preserving insert into by_ipo ──
@@ -513,9 +561,14 @@ async function main(): Promise<void> {
 
   // ── Rung 2: CHITTORGARH ──
   if (!result) {
-    const url = (process.env.CHITTORGARH_URL || FALLBACK_SOURCES[ipoId]?.chittorgarh || '').trim();
+    let url = (process.env.CHITTORGARH_URL || FALLBACK_SOURCES[ipoId]?.chittorgarh || '').trim();
     if (!url) {
-      rungNotes.push('CHITTORGARH: no URL (set CHITTORGARH_URL) — skipped.');
+      const r = await resolveChittorgarhUrl(FALLBACK_SOURCES[ipoId]?.chittorgarhSlug, tokens);
+      rungNotes.push(`CHITTORGARH resolve: ${r.note}`);
+      if (r.url) url = r.url;
+    }
+    if (!url) {
+      rungNotes.push('CHITTORGARH: no usable URL (provide chittorgarh_url) — skipped.');
     } else if (!/^https?:\/\/(www\.)?chittorgarh\.com\/ipo\//i.test(url)) {
       rungNotes.push(`CHITTORGARH: url "${url}" is not a chittorgarh.com /ipo/ detail URL — skipped.`);
     } else {
@@ -540,9 +593,13 @@ async function main(): Promise<void> {
             listing_date,
             source: 'Chittorgarh',
           };
-          rungNotes.push(`CHITTORGARH: both sides extracted (listing ${ex.listingGainPct}%, current ${ex.currentGainPct}%) from ${url}.`);
+          rungNotes.push(
+            `CHITTORGARH: both sides from ${url} — listing_close=${ex.listingClose ?? 'n/a'} (${ex.listingGainPct}%), current=${ex.currentPrice ?? 'n/a'} (${ex.currentGainPct}%).`,
+          );
         } else {
-          rungNotes.push(`CHITTORGARH: incomplete (listingGain=${ex.listingGainPct ?? 'null'}, currentGain=${ex.currentGainPct ?? 'null'}) — falling through.`);
+          rungNotes.push(
+            `CHITTORGARH: incomplete from ${url} (listingGain=${ex.listingGainPct ?? 'null'}, currentGain=${ex.currentGainPct ?? 'null'}) — falling through. candidates: ${ex.diag}`,
+          );
         }
       }
     }
@@ -577,9 +634,13 @@ async function main(): Promise<void> {
             listing_date,
             source: 'Broker-ref',
           };
-          rungNotes.push(`BROKER: both sides extracted (listing ${ex.listingGainPct}%, current ${ex.currentGainPct}%) from ${url}.`);
+          rungNotes.push(
+            `BROKER: both sides from ${url} — listing_close=${ex.listingClose ?? 'n/a'} (${ex.listingGainPct}%), current=${ex.currentPrice ?? 'n/a'} (${ex.currentGainPct}%).`,
+          );
         } else {
-          rungNotes.push(`BROKER: incomplete (listingGain=${ex.listingGainPct ?? 'null'}, currentGain=${ex.currentGainPct ?? 'null'}) — falling through.`);
+          rungNotes.push(
+            `BROKER: incomplete from ${url} (listingGain=${ex.listingGainPct ?? 'null'}, currentGain=${ex.currentGainPct ?? 'null'}) — no row. candidates: ${ex.diag}`,
+          );
         }
       }
     }
