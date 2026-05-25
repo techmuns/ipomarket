@@ -12,6 +12,7 @@ const MIX_COLORS = {
   manual: 'bg-violet-500',
   derived: 'bg-slate-500',
   broker_ref: 'bg-amber-500',
+  chittorgarh: 'bg-orange-500',
 } as const;
 
 const MIX_LABELS = {
@@ -22,6 +23,7 @@ const MIX_LABELS = {
   manual: 'Manual',
   derived: 'Derived',
   broker_ref: 'Broker-ref',
+  chittorgarh: 'Chittorgarh',
 } as const;
 
 interface Props {
@@ -140,16 +142,17 @@ function MixBar({ audit }: { audit: IpoSourceAudit | undefined }) {
   if (total === 0) return null;
   return (
     <div className="mt-1.5 flex h-1.5 overflow-hidden rounded-full">
-      {(Object.keys(MIX_LABELS) as Array<keyof typeof MIX_LABELS>).map((k) =>
-        mix[k] > 0 ? (
+      {(Object.keys(MIX_LABELS) as Array<keyof typeof MIX_LABELS>).map((k) => {
+        const v = mix[k] ?? 0;
+        return v > 0 ? (
           <div
             key={k}
             className={MIX_COLORS[k]}
-            style={{ width: `${(mix[k] / total) * 100}%` }}
-            title={`${MIX_LABELS[k]} ${mix[k]}%`}
+            style={{ width: `${(v / total) * 100}%` }}
+            title={`${MIX_LABELS[k]} ${v}%`}
           />
-        ) : null
-      )}
+        ) : null;
+      })}
     </div>
   );
 }
@@ -211,7 +214,7 @@ function sourceMixSummary(audit: IpoSourceAudit | undefined): { top: string | nu
   if (!audit) return { top: null, line: null };
   const mix = audit.source_mix;
   const entries = (Object.keys(MIX_LABELS) as Array<keyof typeof MIX_LABELS>)
-    .map((k) => ({ key: k, pct: mix[k] }))
+    .map((k) => ({ key: k, pct: mix[k] ?? 0 }))
     .filter((e) => e.pct > 0)
     .sort((a, b) => b.pct - a.pct);
   if (entries.length === 0) return { top: null, line: null };

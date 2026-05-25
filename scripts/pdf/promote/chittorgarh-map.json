@@ -1,0 +1,24 @@
+{
+  "version": "6A.2.1",
+  "rows": [
+    {
+      "production_ipo_id": "onemi-technology-solutions",
+      "production_slug": "onemi-technology-solutions",
+      "chittorgarh_slug": "onemi-technology-ipo",
+      "chittorgarh_id": "2576",
+      "chittorgarh_detail_url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+      "allowed_fields": [
+        "price_band",
+        "issue_size_cr",
+        "lot_size",
+        "open_date",
+        "close_date",
+        "listing_date",
+        "registrar",
+        "face_value"
+      ],
+      "status": "active",
+      "notes": "Phase 6A.2 known-good control. 7 fields filled in 6A.2; face_value pending a post-code-change group=K re-probe (per phase-6A-2-1 §5.1 guard)."
+    }
+  ]
+}

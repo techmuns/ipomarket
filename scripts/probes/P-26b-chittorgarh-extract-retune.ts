@@ -43,6 +43,7 @@ const EXPECTED_FIELDS = [
   'issue_size_cr',
   'price_band',
   'lot_size',
+  'face_value',
   'open_date',
   'close_date',
   'listing_date',
@@ -195,6 +196,15 @@ function looksLikePriceBand(v: string): boolean {
 function looksLikeLotSize(v: string): boolean {
   return /^\d{1,7}(?:\s*Shares)?$/i.test(v.trim().replace(/,/g, ''))
     || /\b\d{2,7}\s*Shares?\b/i.test(v);
+}
+// Phase 6A.2.1 — face value is a small per-share rupee figure (₹1 / ₹2 / ₹5 /
+// ₹10 typically). Reject Cr-money / percentages / ranges.
+function looksLikeFaceValue(v: string): boolean {
+  if (/\b(?:Cr|Crore|crores?)\b|%/i.test(v)) return false;
+  const m = v.match(/(?:₹\s*)?([\d,]+(?:\.\d+)?)/);
+  if (!m) return false;
+  const n = Number(m[1]!.replace(/,/g, ''));
+  return Number.isFinite(n) && n > 0 && n <= 1000;
 }
 const DATE_RE_FULL_MONTH = /\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+\d{4}/i;
 const DATE_RE_DAY_FIRST = /\b\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}/i;
@@ -357,6 +367,25 @@ function extractLotSize(tables: ParsedTable[]): ExtractedField<string> {
     return { value: lv.value, found: true, confidence: 'high', method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`, why_missing: null, source_snippet: snippet(lv.value) };
   }
   return { value: lv.value.slice(0, 80), found: false, confidence: 'low', method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`, why_missing: `value '${lv.value.slice(0, 60)}' failed lot-size validation`, source_snippet: snippet(lv.value) };
+}
+
+// Phase 6A.2.1 — Face value extractor. Table-label match mirroring
+// extractLotSize. HIGH on a clean small-rupee numeric cell; LOW/absent
+// otherwise. The post-change `face_value` key (this extractor's output) is
+// the structural signal that an artifact was produced AFTER the 6A.2.1 code
+// change — the fast-fill promoter only promotes face_value when this key is
+// present at HIGH/MEDIUM (see phase-6A-2-1 §5.1 guard).
+function extractFaceValue(tables: ParsedTable[]): ExtractedField<string> {
+  const lv = findLabelValue(tables, [
+    /^\s*Face\s+Value(?:\s+Per\s+Share)?\s*$/i,
+    /^\s*Face\s+Value\b/i,
+    /^\s*FV\s*$/i,
+  ]);
+  if (!lv) return { value: null, found: false, confidence: null, method: null, why_missing: 'no table row whose label matches "Face Value" / "Face Value Per Share" / "FV"', source_snippet: null };
+  if (looksLikeFaceValue(lv.value) && lv.value.length < 40) {
+    return { value: lv.value, found: true, confidence: 'high', method: `table[${lv.table_index}].row[${lv.row_index}] label="${lv.matched_label}"`, why_missing: null, source_snippet: snippet(lv.value) };
+  }
+  return { value: lv.value.slice(0, 60), found: false, confidence: 'low', method: `table[${lv.table_index}].row[${lv.row_index}]-rejected`, why_missing: `value '${lv.value.slice(0, 40)}' failed face-value validation`, source_snippet: snippet(lv.value) };
 }
 
 // Dates — §10.3 patterns + Chittorgarh "IPO Date" range fallback.
@@ -568,6 +597,7 @@ function extractOne(detailIndex: number, htmlPath: string, sourceUrl: string | n
   const issueSize = extractIssueSize(tables);
   const priceBand = extractPriceBand(tables);
   const lotSize = extractLotSize(tables);
+  const faceValue = extractFaceValue(tables);
   // §10.3 prompt patterns + Chittorgarh-specific range fallback.
   const openDate = extractDate(
     tables,
@@ -613,6 +643,7 @@ function extractOne(detailIndex: number, htmlPath: string, sourceUrl: string | n
     issue_size_cr: issueSize,
     price_band: priceBand,
     lot_size: lotSize,
+    face_value: faceValue,
     open_date: openDate,
     close_date: closeDate,
     listing_date: listingDate,
