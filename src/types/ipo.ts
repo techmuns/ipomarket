@@ -159,8 +159,12 @@ export interface ListingPerformance {
   // Source for the listing data. Official exchange (NSE/BSE), human seed
   // ('manual'), or — when the bounded source ladder falls through to a vetted
   // public fallback — 'Chittorgarh' / 'Broker-ref' (state then carries
-  // 'aggregator'). Additive widening only; no consumer switches on this value.
-  source: 'NSE' | 'BSE' | 'manual' | 'Chittorgarh' | 'Broker-ref';
+  // 'aggregator'). 'BSE+Chittorgarh' marks a documented two-source row (current
+  // from official BSE LTP, listing from Chittorgarh) — each field's provenance
+  // is in ipo-source-audit / the phase status doc; state carries 'aggregator'
+  // (only as authoritative as its aggregator listing side). Additive widening
+  // only; no consumer switches on this value.
+  source: 'NSE' | 'BSE' | 'manual' | 'Chittorgarh' | 'Broker-ref' | 'BSE+Chittorgarh';
 }
 
 export interface IpoSourceAudit {

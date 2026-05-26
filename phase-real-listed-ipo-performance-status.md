@@ -443,3 +443,15 @@ Ladder notes:
 - BROKER: no URL (set BROKER_URL) — skipped.
 
 Files changed by this script: none (perf snapshot untouched).
+
+### Gate 2b — controlled two-source exception for bajaj-housing-finance (operator-approved 2026-05-26)
+
+We established that **no single free source carries both sides** for this Sep-2024 IPO:
+- Official **BSE** → live LTP (current) ✓, but `StockReachGraph` is intraday-only so it never reaches the listing week (no listing_close).
+- **Chittorgarh** detail page (id 1822) → listing-day side ✓ ("Listing Day Trading Information → Open/Low/High/Last Trade"), but **no current/live price** (confirmed against committed detail HTML; live data sits behind the JS-paginated perf tracker).
+- Broker single-rung path unproven and would need more tuning.
+
+Per operator decision, the "both sides from one rung" rule is **relaxed for `bajaj-housing-finance` only** (`TWO_SOURCE_ALLOWED` allow-list) to write a **documented two-source row**:
+- `listing_close` (+ open/high/low) and `listing_gain_pct` ← **Chittorgarh** (section-scoped `Listing Day Trading Information`, guarded by the section's "Final Issue Price" matching the pinned ₹70).
+- `current_price` and `current_gain_pct` ← **official BSE LTP**.
+- Row `source: "BSE+Chittorgarh"`, `state: "aggregator"`; both gains computed from real prices vs issue ₹70. Every value is real and source-labelled — nothing faked/inferred/hand-entered. Per-field provenance + gain math are appended by the run on success. The section extractor was validated locally against committed Chittorgarh listed-IPO HTML (issue/open/low/high/Last-Trade all parsed correctly).

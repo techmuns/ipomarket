@@ -53,6 +53,15 @@ const FALLBACK_SOURCES: Record<string, { chittorgarh?: string; chittorgarhSlugs?
   },
 };
 
+// Controlled, per-IPO exception to the "both sides from one rung" rule. For an
+// IPO listed enough quarters ago, no single free source carries BOTH the
+// listing-day price AND a live/current price (official BSE = current only via
+// the intraday endpoint; Chittorgarh detail = listing only). For these IPOs we
+// MAY assemble a documented two-source row: listing from Chittorgarh + current
+// from official BSE LTP, each value REAL and source-labelled (never faked,
+// inferred, or hand-entered). Empty for every other IPO → no mixing elsewhere.
+const TWO_SOURCE_ALLOWED = new Set<string>(['bajaj-housing-finance']);
+
 interface MasterRow {
   id: string;
   name?: string;
@@ -462,6 +471,56 @@ function extract(html: string, issuePrice: number): Extracted {
   return { listingGainPct, currentGainPct, listingClose, currentPrice: currentPx, notes, diag: diagSnippets(text) };
 }
 
+// Section-scoped LISTING-DAY extraction for a Chittorgarh detail page. The
+// listed-IPO block is "Listing Day Trading Information → Price Details →
+// <exchange> Final Issue Price ₹X Open ₹X Low ₹X High ₹X Last Trade ₹X". We
+// scope to that section (so unrelated page numbers can't leak in) and read the
+// first exchange block. `sectionIssuePrice` is returned so the caller can
+// confirm we parsed the right IPO's section (it must match the pinned issue
+// price). Current/live price is intentionally NOT read here — Chittorgarh's
+// detail page does not carry it.
+interface ListingSection {
+  listingClose: number | null;
+  listingOpen: number | null;
+  listingHigh: number | null;
+  listingLow: number | null;
+  sectionIssuePrice: number | null;
+  note: string;
+}
+function extractChittorgarhListing(html: string, issuePrice: number): ListingSection {
+  const flat = html
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;|&#160;/gi, ' ')
+    .replace(/&#8377;|&#x20b9;/gi, '₹')
+    .replace(/&amp;/gi, '&')
+    .replace(/\s+/g, ' ');
+  const idx = flat.search(/Listing Day Trading Information/i);
+  if (idx < 0) {
+    return { listingClose: null, listingOpen: null, listingHigh: null, listingLow: null, sectionIssuePrice: null, note: 'no "Listing Day Trading Information" section on page' };
+  }
+  const sec = flat.slice(idx, idx + 600);
+  const cur = '(?:₹|rs\\.?|inr)?\\s*';
+  const num = (re: RegExp): number | null => {
+    const m = sec.match(re);
+    if (!m || m[1] == null) return null;
+    const n = Number(m[1].replace(/,/g, ''));
+    return Number.isFinite(n) ? n : null;
+  };
+  const sectionIssuePrice = num(new RegExp(`Final\\s*Issue\\s*Price\\s*[:\\-]?\\s*${cur}([\\d,]+(?:\\.\\d+)?)`, 'i'));
+  const listingOpen = num(new RegExp(`\\bOpen\\s*[:\\-]?\\s*${cur}([\\d,]+(?:\\.\\d+)?)`, 'i'));
+  const listingLow = num(new RegExp(`\\bLow\\s*[:\\-]?\\s*${cur}([\\d,]+(?:\\.\\d+)?)`, 'i'));
+  const listingHigh = num(new RegExp(`\\bHigh\\s*[:\\-]?\\s*${cur}([\\d,]+(?:\\.\\d+)?)`, 'i'));
+  const listingClose = num(new RegExp(`(?:Last\\s*Trade|Close)\\s*[:\\-]?\\s*${cur}([\\d,]+(?:\\.\\d+)?)`, 'i'));
+  return {
+    listingClose,
+    listingOpen,
+    listingHigh,
+    listingLow,
+    sectionIssuePrice,
+    note: `section issue=${sectionIssuePrice ?? 'null'} open=${listingOpen ?? 'null'} low=${listingLow ?? 'null'} high=${listingHigh ?? 'null'} lastTrade/close=${listingClose ?? 'null'} (issue-price match vs ₹${issuePrice}: ${sectionIssuePrice != null && Math.abs(sectionIssuePrice - issuePrice) <= 0.5 ? 'OK' : 'MISMATCH'})`,
+  };
+}
+
 // ── Byte-identity-preserving insert into by_ipo ──
 
 interface PerfRow {
@@ -476,7 +535,7 @@ interface PerfRow {
   listing_gain_pct: number;
   current_gain_pct: number;
   listing_date: string | null;
-  source: 'BSE' | 'NSE' | 'Chittorgarh' | 'Broker-ref';
+  source: 'BSE' | 'NSE' | 'Chittorgarh' | 'Broker-ref' | 'BSE+Chittorgarh';
 }
 
 function serializeBlock(r: PerfRow): string {
@@ -557,6 +616,11 @@ async function main(): Promise<void> {
 
   const rungNotes: string[] = [];
   let result: PerfRow | null = null;
+  // Official BSE outputs hoisted for the documented two-source assembly (rung 2).
+  let officialIdentityOk = false;
+  let bseLtp: number | null = null; // live LTP from BSE header → current side
+  let bseStockUrl: string | null = null; // provenance URL for the BSE current price
+  const provenanceLines: string[] = []; // per-field provenance lines for a mixed row
 
   // ── Rung 1: OFFICIAL ──
   const scripcode = bseScripcodeFor(ipoId);
@@ -583,7 +647,11 @@ async function main(): Promise<void> {
           rungNotes.push(`OFFICIAL/BSE: scripcode ${scripcode} header did not confirm [${tokens.join(',')}] (name="${header.companyName ?? '?'}")`);
           console.log(`[diag] BSE header raw (truncated): ${truncate(header.raw, 300)}`);
         }
-        if (header.ltp != null) current_price = header.ltp;
+        if (header.ltp != null) {
+          current_price = header.ltp;
+          bseLtp = header.ltp;
+          bseStockUrl = `https://www.bseindia.com/stock-share-price/x/x/${scripcode}/`;
+        }
       } else {
         rungNotes.push(`OFFICIAL/BSE header: ${header.error}`);
       }
@@ -643,6 +711,7 @@ async function main(): Promise<void> {
       }
     }
 
+    officialIdentityOk = identityOk;
     const officialSource: 'BSE' | 'NSE' = scripcode ? 'BSE' : 'NSE';
     if (identityOk && listing_close != null && current_price != null) {
       result = {
@@ -709,9 +778,55 @@ async function main(): Promise<void> {
             `CHITTORGARH: both sides from ${url} — listing_close=${ex.listingClose ?? 'n/a'} (${ex.listingGainPct}%), current=${ex.currentPrice ?? 'n/a'} (${ex.currentGainPct}%).`,
           );
         } else {
-          rungNotes.push(
-            `CHITTORGARH: incomplete from ${url} (listingGain=${ex.listingGainPct ?? 'null'}, currentGain=${ex.currentGainPct ?? 'null'}) — falling through. candidates: ${ex.diag}`,
-          );
+          // Chittorgarh did not yield BOTH sides (its detail page has no
+          // current/live price). Documented two-source assembly (allow-listed
+          // IPOs only): listing-day side from Chittorgarh + current side from
+          // official BSE LTP. Every value is real and source-labelled.
+          const lst = extractChittorgarhListing(got.body, issue_price);
+          rungNotes.push(`CHITTORGARH listing-section: ${lst.note}`);
+          const issueMatches = lst.sectionIssuePrice != null && Math.abs(lst.sectionIssuePrice - issue_price) <= 0.5;
+          const listingOk =
+            lst.listingClose != null &&
+            issueMatches &&
+            lst.listingClose >= issue_price * 0.2 &&
+            lst.listingClose <= issue_price * 25;
+          if (TWO_SOURCE_ALLOWED.has(ipoId) && listingOk && officialIdentityOk && bseLtp != null) {
+            const lg = round2(((lst.listingClose! - issue_price) / issue_price) * 100);
+            const cg = round2(((bseLtp - issue_price) / issue_price) * 100);
+            if (Number.isFinite(lg) && Number.isFinite(cg) && lg >= -95 && lg <= 2000 && cg >= -95 && cg <= 2000) {
+              result = {
+                ipo_id: ipoId,
+                state: 'aggregator',
+                issue_price,
+                listing_open: lst.listingOpen,
+                listing_high: lst.listingHigh,
+                listing_low: lst.listingLow,
+                listing_close: lst.listingClose,
+                current_price: bseLtp,
+                listing_gain_pct: lg,
+                current_gain_pct: cg,
+                listing_date,
+                source: 'BSE+Chittorgarh',
+              };
+              provenanceLines.push(
+                `- listing side — source **Chittorgarh** (aggregator): listing_close=₹${lst.listingClose} from ${url} → listing_gain_pct = round2((${lst.listingClose} − ${issue_price}) / ${issue_price} × 100) = **${lg}%**` +
+                  (lst.listingOpen != null ? ` · listing_open=₹${lst.listingOpen}` : '') +
+                  (lst.listingHigh != null ? ` · listing_high=₹${lst.listingHigh}` : '') +
+                  (lst.listingLow != null ? ` · listing_low=₹${lst.listingLow}` : ''),
+                `- current side — source **BSE** (official, live LTP): current_price=₹${bseLtp} from ${bseStockUrl} → current_gain_pct = round2((${bseLtp} − ${issue_price}) / ${issue_price} × 100) = **${cg}%**`,
+                `- controlled exception: same-rung rule relaxed for \`${ipoId}\` only (operator-approved). No single free source carries both sides for this 2024 IPO; both values above are real and source-backed — nothing faked/inferred/hand-entered.`,
+              );
+              rungNotes.push(
+                `TWO-SOURCE (${ipoId} exception): listing from Chittorgarh (close ₹${lst.listingClose} → ${lg}%) + current from official BSE LTP (₹${bseLtp} → ${cg}%); issue ₹${issue_price}. source=BSE+Chittorgarh, state=aggregator.`,
+              );
+            } else {
+              rungNotes.push(`TWO-SOURCE: computed gains out of range (listing=${lg}, current=${cg}) — not writing.`);
+            }
+          } else {
+            rungNotes.push(
+              `CHITTORGARH: incomplete from ${url} (both-sides listingGain=${ex.listingGainPct ?? 'null'}, currentGain=${ex.currentGainPct ?? 'null'}); two-source not assembled (allowed=${TWO_SOURCE_ALLOWED.has(ipoId)}, listingOk=${listingOk}, issueMatch=${issueMatches}, officialIdentityOk=${officialIdentityOk}, bseLtp=${bseLtp ?? 'null'}) — falling through. candidates: ${ex.diag}`,
+            );
+          }
         }
       }
     }
@@ -812,6 +927,14 @@ async function main(): Promise<void> {
       `- note: BSE StockReachGraph is weekly granularity — listing_close is the listing-week close (listing-day proxy), per the established OnEMI helper.`,
     );
   }
+  const isTwoSource = result.source === 'BSE+Chittorgarh';
+  if (isTwoSource) {
+    statusLines.push(
+      ``,
+      `**Per-field provenance (documented two-source row):**`,
+      ...provenanceLines,
+    );
+  }
   statusLines.push(
     ``,
     `Ladder notes:`,
@@ -819,7 +942,9 @@ async function main(): Promise<void> {
     ``,
     `Files changed: src/data/snapshots/ipo-listing-performance.json (+1 row; existing rows byte-identical) plus src/data/snapshots/ipo-master.json (+1 listed row via add-listed-ipo).`,
     ``,
-    `Confirmation: both gains came from a SINGLE rung (${result.source}); no partial / fake / manual / null-gain / mixed-rung row was written.`,
+    isTwoSource
+      ? `Confirmation: documented two-source row (source=\`BSE+Chittorgarh\`, state=\`aggregator\`) — listing side from Chittorgarh, current side from official BSE LTP, each a REAL source-backed value (see per-field provenance). No partial / fake / manual / inferred / null-gain value was written. Same-rung rule relaxed for \`${ipoId}\` only.`
+      : `Confirmation: both gains came from a SINGLE rung (${result.source}); no partial / fake / manual / null-gain / mixed-rung row was written.`,
   );
   appendStatus(statusLines);
   console.log('PERF_WRITTEN=true');
