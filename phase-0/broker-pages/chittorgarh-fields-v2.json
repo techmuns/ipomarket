@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-25T20:43:37.773Z",
+  "captured_at_utc": "2026-05-26T06:55:24.259Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "yaashvi-jewellers-ipo",
-    "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
+    "slug": "rajnandini-fashion-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/rajnandini-fashion-india-ipo/2729/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"25 - 27 May\" covers today",
-    "date_text": "25 - 27 May",
+    "reason": "current-open: list \"sme\" row date range \"26 - 29 May\" covers today",
+    "date_text": "26 - 29 May",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
-      "slug": "yaashvi-jewellers-ipo"
+      "url": "https://www.chittorgarh.com/ipo/rajnandini-fashion-india-ipo/2729/",
+      "slug": "rajnandini-fashion-india-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 318465,
+      "bytes": 318422,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
+      "url": "https://www.chittorgarh.com/ipo/rajnandini-fashion-india-ipo/2729/",
       "mode": "static",
       "status": 200,
-      "bytes": 291910,
-      "title": "Yaashvi Jewellers IPO Date, Price, GMP, Review, Details",
+      "bytes": 301387,
+      "title": "Rajnandini Fashion India IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

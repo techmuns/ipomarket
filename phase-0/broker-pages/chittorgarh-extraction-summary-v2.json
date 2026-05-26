@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-05-25T20:43:37.773Z",
+  "generated_at_utc": "2026-05-26T06:55:24.259Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
-  "average_precision_ratio_narrow": 0.867,
+  "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "yaashvi-jewellers-ipo",
-    "url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
+    "slug": "rajnandini-fashion-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/rajnandini-fashion-india-ipo/2729/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"25 - 27 May\" covers today",
-    "date_text": "25 - 27 May",
+    "reason": "current-open: list \"sme\" row date range \"26 - 29 May\" covers today",
+    "date_text": "26 - 29 May",
     "source_list": "sme"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 82038,
+      "main_content_bytes": 82037,
       "tables_parsed": 11,
       "table_rows_parsed": 57,
       "fields_high_confidence": [
@@ -82,37 +82,36 @@
     },
     {
       "index": 3,
-      "slug": "yaashvi-jewellers-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/yaashvi-jewellers-ipo/2820/",
+      "slug": "rajnandini-fashion-india-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/rajnandini-fashion-india-ipo/2729/",
       "found_count_full": 9,
-      "found_count_narrow": 4,
+      "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
-      "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 88238,
+      "precision_ratio_narrow": 1,
+      "main_content_bytes": 89878,
       "tables_parsed": 11,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
+        "price_band",
         "lot_size",
         "face_value",
-        "listing_date",
-        "official_pdf_links"
+        "listing_date"
       ],
       "fields_medium_confidence": [
         "open_date",
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [],
+      "fields_rejected_low_confidence": [
+        "official_pdf_links"
+      ],
       "fields_missing": [
-        "price_band",
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [
-        "https://www.bsesme.com/download/331108/SME_IPO%20InPrinciple/DraftProspectusYaashviJewellersLimited_20251226122404.pdf"
-      ],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 2
     }
   ]
 }

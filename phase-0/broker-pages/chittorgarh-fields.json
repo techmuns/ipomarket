@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-25T20:43:37.773Z",
+  "captured_at_utc": "2026-05-26T06:55:24.259Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147545,
+      "bytes": 150020,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
     "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
     "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
     "https://www.chittorgarh.com/ipo/citius-transnet-invit-ipo/2862/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/pngs-reva-ipo/2475/",
     "https://www.chittorgarh.com/ipo/clean-max-enviro-energy-solutions-ipo/2573/",
     "https://www.chittorgarh.com/ipo/shree-ram-twistex-ipo/2502/",
-    "https://www.chittorgarh.com/ipo/gaudium-ivf-ipo/2019/",
-    "https://www.chittorgarh.com/ipo/fractal-analytics-ipo/2569/"
+    "https://www.chittorgarh.com/ipo/gaudium-ivf-ipo/2019/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+      "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "mode": "static",
       "status": 200,
-      "bytes": 318465,
-      "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 282025,
+      "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
+      "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 343476,
-      "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
+      "bytes": 318422,
+      "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
