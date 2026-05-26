@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T11:11:34.596Z",
+  "generated_at_utc": "2026-05-26T14:03:46.819Z",
   "by_ipo": {
     "greendale-cement": {
       "ipo_id": "greendale-cement",
@@ -28,10 +28,25 @@
       "current_gain_pct": 46.1,
       "listing_date": "2026-04-22",
       "source": "BSE"
+    },
+    "bajaj-housing-finance": {
+      "ipo_id": "bajaj-housing-finance",
+      "state": "aggregator",
+      "issue_price": 70,
+      "listing_open": 150,
+      "listing_high": 164.99,
+      "listing_low": 147,
+      "listing_close": 164.99,
+      "current_price": 85.14,
+      "listing_gain_pct": 135.7,
+      "current_gain_pct": 21.63,
+      "listing_date": "2024-09-16",
+      "source": "BSE+Chittorgarh",
+      "fetched_at_utc": "2026-05-26T14:03:46.819Z"
     }
   },
   "source_meta": {
-    "source_state": "skipped",
-    "last_attempted_utc": "2026-05-21T11:11:34.596Z"
+    "source_state": "aggregator",
+    "last_attempted_utc": "2026-05-26T14:03:46.819Z"
   }
 }

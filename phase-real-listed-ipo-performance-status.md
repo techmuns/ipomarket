@@ -455,3 +455,33 @@ Per operator decision, the "both sides from one rung" rule is **relaxed for `baj
 - `listing_close` (+ open/high/low) and `listing_gain_pct` ← **Chittorgarh** (section-scoped `Listing Day Trading Information`, guarded by the section's "Final Issue Price" matching the pinned ₹70).
 - `current_price` and `current_gain_pct` ← **official BSE LTP**.
 - Row `source: "BSE+Chittorgarh"`, `state: "aggregator"`; both gains computed from real prices vs issue ₹70. Every value is real and source-labelled — nothing faked/inferred/hand-entered. Per-field provenance + gain math are appended by the run on success. The section extractor was validated locally against committed Chittorgarh listed-IPO HTML (issue/open/low/high/Last-Trade all parsed correctly).
+
+### Gate 2b run — bajaj-housing-finance — 2026-05-26T14:03:46.819Z (GitHub Actions)
+
+**Outcome:** SUCCESS — wrote ONE listing-performance row.
+
+- source: `BSE+Chittorgarh` · state: `aggregator`
+- issue_price: ₹70
+- listing_close: 164.99 · current_price: 85.14
+- listing_gain_pct: 135.7 · current_gain_pct: 21.63
+- listing_date: 2024-09-16
+
+**Per-field provenance (documented two-source row):**
+- listing side — source **Chittorgarh** (aggregator): listing_close=₹164.99 from https://www.chittorgarh.com/ipo/bajaj-housing-finance-ipo/1822/ → listing_gain_pct = round2((164.99 − 70) / 70 × 100) = **135.7%** · listing_open=₹150 · listing_high=₹164.99 · listing_low=₹147
+- current side — source **BSE** (official, live LTP): current_price=₹85.14 from https://www.bseindia.com/stock-share-price/x/x/544252/ → current_gain_pct = round2((85.14 − 70) / 70 × 100) = **21.63%**
+- controlled exception: same-rung rule relaxed for `bajaj-housing-finance` only (operator-approved). No single free source carries both sides for this 2024 IPO; both values above are real and source-backed — nothing faked/inferred/hand-entered.
+
+Ladder notes:
+- OFFICIAL/BSE historical: nearest date 2026-05-26 is >14d from listing_date 2024-09-16 — no listing_close. 391 pts (391 dated, span 2026-05-26…2026-05-26); rawLast={"dttm":"Tue May 26 2026 09:15:59","vale1":"83.23","vole":"7040"}
+- OFFICIAL/NSE quote: NSE HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ …[truncated, total 397 chars]
+- OFFICIAL: incomplete (identityOk=true, listing_close=null, current=85.14) — falling through.
+- CHITTORGARH listing-section: section issue=70 open=150 low=147 high=164.99 lastTrade/close=164.99 (issue-price match vs ₹70: OK)
+- TWO-SOURCE (bajaj-housing-finance exception): listing from Chittorgarh (close ₹164.99 → 135.7%) + current from official BSE LTP (₹85.14 → 21.63%); issue ₹70. source=BSE+Chittorgarh, state=aggregator.
+
+Files changed: src/data/snapshots/ipo-listing-performance.json (+1 row; existing rows byte-identical) plus src/data/snapshots/ipo-master.json (+1 listed row via add-listed-ipo).
+
+Confirmation: documented two-source row (source=`BSE+Chittorgarh`, state=`aggregator`) — listing side from Chittorgarh, current side from official BSE LTP, each a REAL source-backed value (see per-field provenance). No partial / fake / manual / inferred / null-gain value was written. Same-rung rule relaxed for `bajaj-housing-finance` only.
