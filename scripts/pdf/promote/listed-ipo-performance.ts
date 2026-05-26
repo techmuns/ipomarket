@@ -235,6 +235,17 @@ async function fetchNseQuote(symbol: string): Promise<
   }
 }
 
+// Normalize an operator-supplied URL input. workflow_dispatch text fields
+// sometimes capture the label too (e.g. "chittorgarh_url = https://…") or wrap
+// the value in quotes/backticks; extract the first real http(s) URL token so a
+// pasted label/quote doesn't burn a run on a "not a detail URL" rejection.
+function cleanUrlInput(raw: string | undefined): string {
+  const s = (raw ?? '').trim();
+  if (!s) return '';
+  const m = s.match(/https?:\/\/[^\s'"`<>]+/i);
+  return m ? m[0] : s;
+}
+
 // Single bounded public GET (no login/captcha/stealth/proxy).
 async function fetchPublic(url: string): Promise<{ ok: true; body: string } | { ok: false; error: string }> {
   const res = await httpGet(url, {
@@ -658,7 +669,11 @@ async function main(): Promise<void> {
 
   // ── Rung 2: CHITTORGARH ──
   if (!result) {
-    let url = (process.env.CHITTORGARH_URL || FALLBACK_SOURCES[ipoId]?.chittorgarh || '').trim();
+    const rawCh = process.env.CHITTORGARH_URL ?? '';
+    let url = cleanUrlInput(rawCh) || (FALLBACK_SOURCES[ipoId]?.chittorgarh || '').trim();
+    if (rawCh.trim() && url && url !== rawCh.trim()) {
+      rungNotes.push(`CHITTORGARH: normalized operator input "${truncate(rawCh, 70)}" → ${url}`);
+    }
     if (!url) {
       const r = await resolveChittorgarhUrl(FALLBACK_SOURCES[ipoId]?.chittorgarhSlugs ?? [], tokens);
       r.notes.forEach((n) => rungNotes.push(`CHITTORGARH resolve: ${n}`));
@@ -704,7 +719,7 @@ async function main(): Promise<void> {
 
   // ── Rung 3: BROKER / PUBLIC ──
   if (!result) {
-    const url = (process.env.BROKER_URL || FALLBACK_SOURCES[ipoId]?.broker || '').trim();
+    const url = cleanUrlInput(process.env.BROKER_URL) || (FALLBACK_SOURCES[ipoId]?.broker || '').trim();
     if (!url) {
       rungNotes.push('BROKER: no URL (set BROKER_URL) — skipped.');
     } else if (!/^https?:\/\//i.test(url)) {
