@@ -424,3 +424,22 @@ Ladder notes:
 - BROKER: no URL (set BROKER_URL) — skipped.
 
 Files changed by this script: none (perf snapshot untouched).
+
+### Gate 2b run — bajaj-housing-finance — 2026-05-26T07:38:32.852Z (GitHub Actions)
+
+**Outcome:** HALT — no listing-performance row written. No single rung yielded BOTH listing-day AND current. The target stays a listed row with "listing data pending" (valid; no fake / partial / null-gain / mixed-rung row).
+
+Issue price ₹70 · listing_date 2024-09-16.
+
+Ladder notes:
+- OFFICIAL/BSE historical: nearest date 2026-05-26 is >14d from listing_date 2024-09-16 — no listing_close. 233 pts (233 dated, span 2026-05-26…2026-05-26); rawLast={"dttm":"Tue May 26 2026 09:15:59","vale1":"83.23","vole":"7040"}
+- OFFICIAL/NSE quote: NSE HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ …[truncated, total 399 chars]
+- OFFICIAL: incomplete (identityOk=true, listing_close=null, current=85.2) — falling through.
+- CHITTORGARH: incomplete from https://www.chittorgarh.com/ipo/bajaj-housing-finance-ipo/1822/ (listingGain=null, currentGain=null) — falling through. candidates: "r lock-in period end date for"=50% | "of which"=81.7% | "RoNW"=3.6% | "Promoter Holding"=100% | "lder portion shall not exceed"=10% | "width"=100% | "width"=100% | "width"=100% | "width"=100% | "width"=100% | "Unlimited Trades"=₹899 | "Options"=₹20 | "ks for quick accounts Zerodha"=₹20 | "Trade Angel One"=₹20 | "Trade Kotak Securities"=₹10 | "Trade Popular Brokers Upstox"=₹20 | "Trade ProStocks"=₹899 | "Unlimited Paytm Money"=₹20 | "Trade Fyers"=₹20 | "IPO is a book build issue of"=₹6,560.00
+- BROKER: no URL (set BROKER_URL) — skipped.
+
+Files changed by this script: none (perf snapshot untouched).
