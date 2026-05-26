@@ -1,43 +1,42 @@
 {
-  "generated_at_utc": "2026-05-26T06:55:24.259Z",
+  "generated_at_utc": "2026-05-26T14:11:05.172Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.5,
+  "average_precision_ratio": 0.45,
   "per_detail": [
     {
       "index": 1,
       "source_url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
-      "found_count": 6,
-      "precision_ratio": 0.6,
-      "main_content_bytes": 85203,
+      "found_count": 5,
+      "precision_ratio": 0.5,
+      "main_content_bytes": 86579,
       "tables_parsed": 9,
-      "table_rows_parsed": 66,
+      "table_rows_parsed": 69,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
-        "listing_date",
-        "official_pdf_links"
+        "listing_date"
       ],
       "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [],
+      "fields_rejected_low_confidence": [
+        "official_pdf_links"
+      ],
       "fields_missing": [
         "open_date",
         "close_date",
         "registrar",
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [
-        "https://www.bseindia.com/corporates/download/349506/IPO%20Prior/Hexagon_Nutrition_Limited_20250923201507.pdf"
-      ],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 1
     },
     {
       "index": 2,
       "source_url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "found_count": 4,
       "precision_ratio": 0.4,
-      "main_content_bytes": 82037,
+      "main_content_bytes": 81970,
       "tables_parsed": 11,
       "table_rows_parsed": 57,
       "fields_high_confidence": [

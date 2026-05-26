@@ -76,24 +76,22 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": [
-        "https://www.bseindia.com/corporates/download/349506/IPO%20Prior/Hexagon_Nutrition_Limited_20250923201507.pdf"
-      ],
-      "found": true,
-      "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
-      "why_missing": null,
-      "source_snippet": "https://www.bseindia.com/corporates/download/349506/IPO%20Prior/Hexagon_Nutrition_Limited_20250923201507.pdf"
+      "value": null,
+      "found": false,
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/hexagon-nutrition-rhp.pdf"
     }
   },
-  "found_count": 6,
-  "precision_ratio": 0.6,
-  "official_pdf_links_on_allowlist": [
-    "https://www.bseindia.com/corporates/download/349506/IPO%20Prior/Hexagon_Nutrition_Limited_20250923201507.pdf"
+  "found_count": 5,
+  "precision_ratio": 0.5,
+  "official_pdf_links_on_allowlist": [],
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/hexagon-nutrition-rhp.pdf"
   ],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 85203,
-  "main_content_bytes": 85203,
+  "noise_stripped_bytes": 86579,
+  "main_content_bytes": 86579,
   "tables_parsed": 9,
-  "table_rows_parsed": 66
+  "table_rows_parsed": 69
 }

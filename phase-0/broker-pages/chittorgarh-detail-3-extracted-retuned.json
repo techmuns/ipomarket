@@ -85,25 +85,28 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": null,
-      "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
-      "why_missing": "2 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/rajnandini-fashion-india-rhp.pdf | https://www.chittorgarh.net/reports/anchor-investor/rajnandini-fashion-anchor-list.pdf"
+      "value": [
+        "https://www.bsesme.com/download/361142/SME_IPO%20Open/RFIL_RHP_20260521131040.pdf"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.bsesme.com/download/361142/SME_IPO%20Open/RFIL_RHP_20260521131040.pdf"
     }
   },
-  "found_count_full": 9,
+  "found_count_full": 10,
   "found_count_narrow": 5,
-  "precision_ratio_full": 0.8181818181818182,
+  "precision_ratio_full": 0.9090909090909091,
   "precision_ratio_narrow": 1,
-  "official_pdf_links_on_allowlist": [],
+  "official_pdf_links_on_allowlist": [
+    "https://www.bsesme.com/download/361142/SME_IPO%20Open/RFIL_RHP_20260521131040.pdf"
+  ],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/rajnandini-fashion-india-rhp.pdf",
     "https://www.chittorgarh.net/reports/anchor-investor/rajnandini-fashion-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 89878,
-  "main_content_bytes": 89878,
+  "noise_stripped_bytes": 89798,
+  "main_content_bytes": 89798,
   "tables_parsed": 11,
   "table_rows_parsed": 73
 }
