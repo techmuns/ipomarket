@@ -105,8 +105,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/onemi-technology-anvhor-investor-list.pdf"
   ],
-  "noise_stripped_bytes": 95544,
-  "main_content_bytes": 95544,
+  "noise_stripped_bytes": 95489,
+  "main_content_bytes": 95489,
   "tables_parsed": 13,
   "table_rows_parsed": 87
 }
