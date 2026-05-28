@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-28T07:02:28.733Z",
+  "captured_at_utc": "2026-05-28T14:46:01.108Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 146961,
+      "bytes": 146949,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+    "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
     "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
     "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
     "https://www.chittorgarh.com/ipo/citius-transnet-invit-ipo/2862/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/omnitech-engineering-ipo/2479/",
     "https://www.chittorgarh.com/ipo/pngs-reva-ipo/2475/",
     "https://www.chittorgarh.com/ipo/clean-max-enviro-energy-solutions-ipo/2573/",
-    "https://www.chittorgarh.com/ipo/shree-ram-twistex-ipo/2502/",
-    "https://www.chittorgarh.com/ipo/gaudium-ivf-ipo/2019/"
+    "https://www.chittorgarh.com/ipo/shree-ram-twistex-ipo/2502/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+      "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
+      "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
       "mode": "static",
       "status": 200,
-      "bytes": 318296,
-      "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 253877,
+      "title": "CMR Green Technologies IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

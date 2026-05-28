@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-28T07:02:28.733Z",
+  "generated_at_utc": "2026-05-28T14:46:01.108Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.45,
+  "average_precision_ratio": 0.35,
   "per_detail": [
     {
       "index": 1,
@@ -33,32 +33,31 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
-      "found_count": 4,
-      "precision_ratio": 0.4,
-      "main_content_bytes": 81970,
-      "tables_parsed": 11,
-      "table_rows_parsed": 57,
+      "source_url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
+      "found_count": 2,
+      "precision_ratio": 0.2,
+      "main_content_bytes": 76968,
+      "tables_parsed": 8,
+      "table_rows_parsed": 50,
       "fields_high_confidence": [
         "company_name",
-        "issue_size_cr",
-        "price_band",
-        "official_pdf_links"
+        "listing_date"
       ],
       "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [],
+      "fields_rejected_low_confidence": [
+        "issue_size_cr",
+        "official_pdf_links"
+      ],
       "fields_missing": [
+        "price_band",
         "lot_size",
         "open_date",
         "close_date",
-        "listing_date",
         "registrar",
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [
-        "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"
-      ],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }
