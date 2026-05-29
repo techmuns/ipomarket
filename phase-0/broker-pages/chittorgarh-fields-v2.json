@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-28T21:18:56.305Z",
+  "captured_at_utc": "2026-05-29T07:02:27.735Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "rajnandini-fashion-india-ipo",
-    "url": "https://www.chittorgarh.com/ipo/rajnandini-fashion-india-ipo/2729/",
+    "slug": "aureate-tradde-ipo",
+    "url": "https://www.chittorgarh.com/ipo/aureate-tradde-ipo/2817/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"26 - 29 May\" covers today",
-    "date_text": "26 - 29 May",
+    "reason": "current-open: list \"sme\" row date range \"29 May - 02 Jun\" covers today",
+    "date_text": "29 May - 02 Jun",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/rajnandini-fashion-india-ipo/2729/",
-      "slug": "rajnandini-fashion-india-ipo"
+      "url": "https://www.chittorgarh.com/ipo/aureate-tradde-ipo/2817/",
+      "slug": "aureate-tradde-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/rajnandini-fashion-india-ipo/2729/",
+      "url": "https://www.chittorgarh.com/ipo/aureate-tradde-ipo/2817/",
       "mode": "static",
       "status": 200,
-      "bytes": 301987,
-      "title": "Rajnandini Fashion India IPO Date, Price, GMP, Details",
+      "bytes": 308049,
+      "title": "Aureate Tradde IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
