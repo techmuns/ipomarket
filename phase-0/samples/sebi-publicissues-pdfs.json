@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-29T07:02:27.735Z",
+  "captured_at_utc": "2026-05-29T14:17:01.176Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46183,
+      "bytes": 46204,
       "tr_count": 26,
       "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=46183"
+      "notes": "static ok: tr=26, bytes=46204"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited%20-%20Abridged%20prospectus_p.pdf",
+      "link_text": "Dhoot Transmission Limited Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
       "link_text": "Incred Holdings Limited - Draft Abridged Prospectus",
@@ -110,11 +115,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Pioneer%20Fil-Med%20Limited-Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "Pioneer Fil-Med Limited-Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/RKB%20Global%20Limited%20-%20Abridged%20prospectus_p.pdf",
-      "link_text": "RKB Global Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
