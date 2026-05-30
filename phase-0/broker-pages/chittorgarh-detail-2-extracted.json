@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Wed, Jun 10, 2026 T",
+      "value": "Mon, Jun 1, 2026",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Wed, Jun 10, 2026 T"
+      "source_snippet": "Mon, Jun 1, 2026"
     },
     "registrar": {
       "value": null,
@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/cmr-green-technologies-rhp.pdf"
   ],
-  "noise_stripped_bytes": 83240,
-  "main_content_bytes": 83240,
-  "tables_parsed": 10,
-  "table_rows_parsed": 66
+  "noise_stripped_bytes": 85601,
+  "main_content_bytes": 85601,
+  "tables_parsed": 11,
+  "table_rows_parsed": 71
 }
