@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/hexagon-nutrition-rhp.pdf"
   ],
-  "noise_stripped_bytes": 86579,
-  "main_content_bytes": 86579,
-  "tables_parsed": 9,
-  "table_rows_parsed": 69
+  "noise_stripped_bytes": 89477,
+  "main_content_bytes": 89477,
+  "tables_parsed": 10,
+  "table_rows_parsed": 73
 }
