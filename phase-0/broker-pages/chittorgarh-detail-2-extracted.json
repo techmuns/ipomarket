@@ -31,7 +31,7 @@
       "value": "78 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "78 Shares"
     },
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Mon, Jun 1, 2026",
+      "value": "Wed, Jun 10, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Mon, Jun 1, 2026"
+      "source_snippet": "Wed, Jun 10, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/cmr-green-technologies-rhp.pdf"
   ],
-  "noise_stripped_bytes": 85601,
-  "main_content_bytes": 85601,
+  "noise_stripped_bytes": 85351,
+  "main_content_bytes": 85351,
   "tables_parsed": 11,
-  "table_rows_parsed": 71
+  "table_rows_parsed": 70
 }

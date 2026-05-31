@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-30T20:16:58.777Z",
+  "captured_at_utc": "2026-05-31T07:05:40.691Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
       "mode": "static",
       "status": 200,
-      "bytes": 284483,
+      "bytes": 282964,
       "title": "CMR Green Technologies IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
