@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-31T07:05:40.691Z",
+  "captured_at_utc": "2026-05-31T12:19:52.274Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148134,
+      "bytes": 148048,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
       "mode": "static",
       "status": 200,
-      "bytes": 282964,
+      "bytes": 283227,
       "title": "CMR Green Technologies IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

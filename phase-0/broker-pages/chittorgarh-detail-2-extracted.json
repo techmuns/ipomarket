@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/cmr-green-technologies-rhp.pdf"
   ],
-  "noise_stripped_bytes": 85351,
-  "main_content_bytes": 85351,
+  "noise_stripped_bytes": 85406,
+  "main_content_bytes": 85406,
   "tables_parsed": 11,
   "table_rows_parsed": 70
 }
