@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-31T20:20:29.555Z",
+  "captured_at_utc": "2026-06-01T08:44:11.197Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "aureate-tradde-ipo",
-    "url": "https://www.chittorgarh.com/ipo/aureate-tradde-ipo/2817/",
+    "slug": "merritronix-ipo",
+    "url": "https://www.chittorgarh.com/ipo/merritronix-ipo/2961/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"29 May - 02 Jun\" covers today",
-    "date_text": "29 May - 02 Jun",
+    "reason": "current-open: list \"sme\" row date range \"01 - 03 Jun\" covers today",
+    "date_text": "01 - 03 Jun",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/aureate-tradde-ipo/2817/",
-      "slug": "aureate-tradde-ipo"
+      "url": "https://www.chittorgarh.com/ipo/merritronix-ipo/2961/",
+      "slug": "merritronix-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 318820,
+      "bytes": 319083,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/aureate-tradde-ipo/2817/",
+      "url": "https://www.chittorgarh.com/ipo/merritronix-ipo/2961/",
       "mode": "static",
       "status": 200,
-      "bytes": 311637,
-      "title": "Aureate Tradde IPO Date, Price, GMP, Review, Details",
+      "bytes": 305219,
+      "title": "Merritronix IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

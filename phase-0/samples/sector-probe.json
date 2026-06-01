@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-31T20:20:29.555Z",
+  "captured_at_utc": "2026-06-01T08:44:11.197Z",
   "sector_reachable": {
     "listed_equity": false,
     "pre_ipo": false
@@ -21,10 +21,19 @@
       "url": "https://www.nseindia.com/api/all-upcoming-issues?category=ipo",
       "ok": false,
       "status": 200,
-      "sample_keys": [],
+      "sample_keys": [
+        "companyName",
+        "issueEndDate",
+        "issuePrice",
+        "issueSize",
+        "issueStartDate",
+        "series",
+        "status",
+        "symbol"
+      ],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "NSE IPO list returned 0 items"
+      "notes": "1 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none)"
     },
     {
       "source": "BSE IPO list",

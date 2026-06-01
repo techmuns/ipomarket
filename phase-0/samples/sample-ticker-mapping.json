@@ -1,5 +1,7 @@
 {
-  "total": 0,
-  "valid": 0,
-  "examples": {}
+  "total": 1,
+  "valid": 1,
+  "examples": {
+    "CMR Green Technologies Limited": "CMRGREEN"
+  }
 }

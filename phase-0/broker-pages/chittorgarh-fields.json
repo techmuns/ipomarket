@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-31T20:20:29.555Z",
+  "captured_at_utc": "2026-06-01T08:44:11.197Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148048,
+      "bytes": 148414,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],

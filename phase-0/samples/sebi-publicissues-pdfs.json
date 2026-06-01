@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-05-31T20:20:29.555Z",
+  "captured_at_utc": "2026-06-01T08:44:11.197Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46204,
+      "bytes": 45810,
       "tr_count": 26,
-      "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=46204"
+      "pdfs_found": 18,
+      "notes": "static ok: tr=26, bytes=45810"
     }
   ],
   "detail_urls_found": 31,
@@ -110,11 +110,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/COSMIC%20PV%20POWER%20LIMITED-Abridged%20prospectus_p.pdf",
       "link_text": "Cosmic PV Power Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Pioneer%20Fil-Med%20Limited-Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "Pioneer Fil-Med Limited-Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

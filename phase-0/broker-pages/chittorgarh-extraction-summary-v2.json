@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-05-31T20:20:29.555Z",
+  "generated_at_utc": "2026-06-01T08:44:11.197Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
-  "average_precision_ratio_narrow": 0.867,
+  "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "aureate-tradde-ipo",
-    "url": "https://www.chittorgarh.com/ipo/aureate-tradde-ipo/2817/",
+    "slug": "merritronix-ipo",
+    "url": "https://www.chittorgarh.com/ipo/merritronix-ipo/2961/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"29 May - 02 Jun\" covers today",
-    "date_text": "29 May - 02 Jun",
+    "reason": "current-open: list \"sme\" row date range \"01 - 03 Jun\" covers today",
+    "date_text": "01 - 03 Jun",
     "source_list": "sme"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 82106,
+      "main_content_bytes": 82161,
       "tables_parsed": 11,
       "table_rows_parsed": 57,
       "fields_high_confidence": [
@@ -82,37 +82,36 @@
     },
     {
       "index": 3,
-      "slug": "aureate-tradde-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/aureate-tradde-ipo/2817/",
+      "slug": "merritronix-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/merritronix-ipo/2961/",
       "found_count_full": 9,
-      "found_count_narrow": 4,
+      "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
-      "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 93778,
+      "precision_ratio_narrow": 1,
+      "main_content_bytes": 88342,
       "tables_parsed": 11,
-      "table_rows_parsed": 80,
+      "table_rows_parsed": 72,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
+        "price_band",
         "lot_size",
         "face_value",
-        "listing_date",
-        "official_pdf_links"
+        "listing_date"
       ],
       "fields_medium_confidence": [
         "open_date",
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [],
+      "fields_rejected_low_confidence": [
+        "official_pdf_links"
+      ],
       "fields_missing": [
-        "price_band",
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [
-        "https://www.bsesme.com/download/364173/SME_IPO%20InPrinciple/DPAureate_20251223135835.pdf"
-      ],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }
