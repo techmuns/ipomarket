@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-01T22:16:45.728Z",
+  "captured_at_utc": "2026-06-02T08:04:54.855Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45810,
+      "bytes": 45820,
       "tr_count": 26,
       "pdfs_found": 18,
-      "notes": "static ok: tr=26, bytes=45810"
+      "notes": "static ok: tr=26, bytes=45820"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Arohan%20Financial%20Services%20Limited%20-%20DRHP_p.pdf",
+      "link_text": "Arohan Financial Services Limited Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited%20-%20Abridged%20prospectus_p.pdf",
       "link_text": "Dhoot Transmission Limited Draft Abridged Prospectus",
@@ -105,11 +110,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Rentomojo%20Limited-Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "Rentomojo Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/COSMIC%20PV%20POWER%20LIMITED-Abridged%20prospectus_p.pdf",
-      "link_text": "Cosmic PV Power Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

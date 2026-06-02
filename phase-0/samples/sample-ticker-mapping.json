@@ -1,7 +1,8 @@
 {
-  "total": 1,
-  "valid": 1,
+  "total": 2,
+  "valid": 2,
   "examples": {
+    "Hexagon Nutrition Limited": "HEXAGON",
     "CMR Green Technologies Limited": "CMRGREEN"
   }
 }
