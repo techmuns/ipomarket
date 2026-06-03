@@ -18,5 +18,17 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "HEXAGON"
+  },
+  {
+    "companyName": "Genxai Analytics Limited",
+    "issueEndDate": "09-Jun-2026",
+    "issuePrice": "Rs.110 to Rs.116",
+    "issueSize": "4728000",
+    "issueStartDate": "05-Jun-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.110 to Rs.116",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "GENXAI"
   }
 ]
