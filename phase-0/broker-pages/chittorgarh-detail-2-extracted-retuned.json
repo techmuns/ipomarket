@@ -90,7 +90,7 @@
       ],
       "found": true,
       "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 2 off-allowlist",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
       "why_missing": null,
       "source_snippet": "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"
     }
@@ -103,11 +103,10 @@
     "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"
   ],
   "official_pdf_links_off_allowlist": [
-    "https://www.bagmanereit.com/media/investor_reports/Final_Offer_Document.pdf",
     "https://www.chittorgarh.net/reports/anchor-investor/bagmane-reit-ipo-anchor-allocation-report.pdf"
   ],
-  "noise_stripped_bytes": 82161,
-  "main_content_bytes": 82161,
+  "noise_stripped_bytes": 81284,
+  "main_content_bytes": 81284,
   "tables_parsed": 11,
   "table_rows_parsed": 57
 }

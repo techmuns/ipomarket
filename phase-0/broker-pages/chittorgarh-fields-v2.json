@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-03T08:27:25.997Z",
+  "captured_at_utc": "2026-06-03T15:54:03.229Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 343407,
+      "bytes": 342738,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 319083,
+      "bytes": 318511,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
       "mode": "static",
       "status": 200,
-      "bytes": 322421,
+      "bytes": 321753,
       "title": "CMR Green Technologies IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
