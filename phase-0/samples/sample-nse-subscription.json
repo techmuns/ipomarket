@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Hexagon Nutrition Limited",
+    "issueEndDate": "09-Jun-2026",
+    "issuePrice": "Rs.42 to Rs.45",
+    "issueSize": "21602008",
+    "issueStartDate": "05-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "HEXAGON",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "CMR Green Technologies Limited",
     "issueEndDate": "05-Jun-2026",
     "issuePrice": "Rs.182 to Rs.192",
@@ -13,5 +28,17 @@
     "noOfTime": "6.45965102306768",
     "noOfsharesBid": "1.48855746E8",
     "srNo": null
+  },
+  {
+    "companyName": "GenXAI Analytics Limited",
+    "isBse": "1",
+    "issueEndDate": "09-Jun-2026",
+    "issueStartDate": "05-Jun-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "GENXAI",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "3435600",
+    "noOfTime": ""
   }
 ]
