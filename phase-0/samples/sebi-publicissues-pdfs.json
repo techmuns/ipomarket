@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-04T21:03:14.281Z",
+  "captured_at_utc": "2026-06-05T07:17:06.253Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45851,
+      "bytes": 46239,
       "tr_count": 26,
-      "pdfs_found": 18,
-      "notes": "static ok: tr=26, bytes=45851"
+      "pdfs_found": 19,
+      "notes": "static ok: tr=26, bytes=46239"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Pushp%20Brand%20India%20Limited%20-%20DAP_p.pdf",
+      "link_text": "Pushp Brand India Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Matangi%20Rubber%20Limited%20-%20Abridged_p.pdf",
       "link_text": "Matangi Rubber Limited- Draft Abridged Prospectus",

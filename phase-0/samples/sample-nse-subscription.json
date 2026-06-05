@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "HEXAGON",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "2.1602008E7",
+    "noOfTime": "0.5405351669159645",
+    "noOfsharesBid": "1.1676645E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "CMRGREEN",
     "category": "Total",
     "noOfSharesOffered": "2.304393E7",
-    "noOfTime": "6.45965102306768",
-    "noOfsharesBid": "1.48855746E8",
+    "noOfTime": "25.283135038164062",
+    "noOfsharesBid": "5.82622794E8",
     "srNo": null
   },
   {
@@ -37,8 +37,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GENXAI",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "614400",
     "noOfSharesOffered": "3435600",
-    "noOfTime": ""
+    "noOfTime": "0.18"
   }
 ]

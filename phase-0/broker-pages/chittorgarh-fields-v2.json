@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-04T21:03:14.281Z",
+  "captured_at_utc": "2026-06-05T07:17:06.253Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "cmr-green-technologies-ipo",
-    "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
+    "slug": "hexagon-nutrition-ipo",
+    "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"03 - 05 Jun\" covers today",
-    "date_text": "03 - 05 Jun",
+    "reason": "current-open: list \"mainboard\" row date range \"05 - 09 Jun\" covers today",
+    "date_text": "05 - 09 Jun",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
-      "slug": "cmr-green-technologies-ipo"
+      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+      "slug": "hexagon-nutrition-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
+      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "mode": "static",
       "status": 200,
-      "bytes": 321725,
-      "title": "CMR Green Technologies IPO Date, Price, GMP, Details",
+      "bytes": 318874,
+      "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

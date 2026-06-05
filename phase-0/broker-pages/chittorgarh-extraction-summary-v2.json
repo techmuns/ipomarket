@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-06-04T21:03:14.281Z",
+  "generated_at_utc": "2026-06-05T07:17:06.253Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "cmr-green-technologies-ipo",
-    "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
+    "slug": "hexagon-nutrition-ipo",
+    "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"03 - 05 Jun\" covers today",
-    "date_text": "03 - 05 Jun",
+    "reason": "current-open: list \"mainboard\" row date range \"05 - 09 Jun\" covers today",
+    "date_text": "05 - 09 Jun",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "cmr-green-technologies-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
+      "slug": "hexagon-nutrition-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 90132,
-      "tables_parsed": 12,
-      "table_rows_parsed": 82,
+      "main_content_bytes": 93248,
+      "tables_parsed": 11,
+      "table_rows_parsed": 83,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

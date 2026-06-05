@@ -1,72 +1,72 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
-  "slug": "cmr-green-technologies-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+  "slug": "hexagon-nutrition-ipo",
   "fields": {
     "company_name": {
-      "value": "CMR Green Technologies IPO",
+      "value": "Hexagon Nutrition IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "CMR Green Technologies IPO"
+      "source_snippet": "Hexagon Nutrition IPO"
     },
     "issue_size_cr": {
-      "value": "3,28,58,323 shares (agg. up to ₹ 631 Cr)",
+      "value": "3,08,59,704 shares (agg. up to ₹ 139 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "3,28,58,323 shares (agg. up to ₹ 631 Cr)"
+      "source_snippet": "3,08,59,704 shares (agg. up to ₹ 139 Cr)"
     },
     "price_band": {
-      "value": "₹182 to ₹192",
+      "value": "₹42 to ₹45",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹182 to ₹192"
+      "source_snippet": "₹42 to ₹45"
     },
     "lot_size": {
-      "value": "78 Shares",
+      "value": "333 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[5] label=\"Lot Size\"",
+      "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "78 Shares"
+      "source_snippet": "333 Shares"
     },
     "face_value": {
-      "value": "₹ 2 per share",
+      "value": "₹ 1 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 2 per share"
+      "source_snippet": "₹ 1 per share"
     },
     "open_date": {
-      "value": "2026-06-03",
+      "value": "2026-06-05",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"3 to 5 Jun, 2026\" → start=2026-06-03"
+      "source_snippet": "raw=\"5 to 9 Jun, 2026\" → start=2026-06-05"
     },
     "close_date": {
-      "value": "2026-06-05",
+      "value": "2026-06-09",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"3 to 5 Jun, 2026\" → end=2026-06-05"
+      "source_snippet": "raw=\"5 to 9 Jun, 2026\" → end=2026-06-09"
     },
     "listing_date": {
-      "value": "2026-06-10",
+      "value": "2026-06-12",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Wed, Jun 10, 2026 T\" → 2026-06-10"
+      "source_snippet": "raw=\"Fri, Jun 12, 2026 T\" → 2026-06-12"
     },
     "registrar": {
       "value": "Kfin Technologies Ltd.",
@@ -74,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 04067162222, 04079611000 cmr.ipo@kfintech.com <i class=\"fa fa-globe\"\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 04067162222, 04079611000 hexagon.ipo@kfintech.com <i class=\"fa fa-gl\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/cmr-green-technologies-ipo-anchor-allocation.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/hexagon-nutrition-ipo-anchor-allocation-letter.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/cmr-green-technologies-ipo-anchor-allocation.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/hexagon-nutrition-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 90132,
-  "main_content_bytes": 90132,
-  "tables_parsed": 12,
-  "table_rows_parsed": 82
+  "noise_stripped_bytes": 93248,
+  "main_content_bytes": 93248,
+  "tables_parsed": 11,
+  "table_rows_parsed": 83
 }

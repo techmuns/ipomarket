@@ -31,8 +31,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary source for Live & Upcoming tab.",
     "fallback_source": "P-06",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 546,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 517,
     "notes": "Total rows: 2, Active rows: 2"
   },
   {
@@ -67,8 +67,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Upcoming/Pipeline tab.",
     "fallback_source": "P-08b",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 237,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 55,
     "notes": "Total rows: 2, Forthcoming/upcoming rows: 0"
   },
   {
@@ -105,8 +105,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Recently Listed.",
     "fallback_source": "P-15",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 43,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 30,
     "notes": "Total rows: 2, Past/closed/listed rows: 0"
   },
   {
@@ -131,7 +131,7 @@
       "anchor",
       "subscription"
     ],
-    "sample_record": "[\n  {\n    \"companyName\": \"Hexagon Nutrition Limited\",\n    \"issueEndDate\": \"09-Jun-2026\",\n    \"issuePrice\": \"Rs.42 to Rs.45\",\n    \"issueSize\": \"21602008\",\n    \"issueStartDate\": \"05-Jun-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"HEXAGON\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"0.0\",\n    \"noOfTime\": \"0.00\",\n    \"noOfsharesBid\": \"0.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"CMR Green Technologies Limited\",\n    \"issueEndDate\": \"05-Jun-2026\",\n    \"issuePrice\": \"Rs.182 to Rs.192\",\n    \"issueSize\": \"32858323\",\n    \"issueStartDate\": \"03-Jun-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"CMRGREEN\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"2.304393E7\",\n    \"noOfTime\": \"6.45965102306768\",\n    \"noOfsharesBid\": \"1.48855746E8\",\n    \"s…[truncated, total 1111 chars]",
+    "sample_record": "[\n  {\n    \"companyName\": \"Hexagon Nutrition Limited\",\n    \"issueEndDate\": \"09-Jun-2026\",\n    \"issuePrice\": \"Rs.42 to Rs.45\",\n    \"issueSize\": \"21602008\",\n    \"issueStartDate\": \"05-Jun-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"HEXAGON\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"2.1602008E7\",\n    \"noOfTime\": \"0.5405351669159645\",\n    \"noOfsharesBid\": \"1.1676645E7\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"CMR Green Technologies Limited\",\n    \"issueEndDate\": \"05-Jun-2026\",\n    \"issuePrice\": \"Rs.182 to Rs.192\",\n    \"issueSize\": \"32858323\",\n    \"issueStartDate\": \"03-Jun-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"CMRGREEN\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"2.304393E7\",\n    \"noOfTime\": \"25.283135038164062\",\n    \"noOfsh…[truncated, total 1153 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -139,8 +139,8 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE bidding (P-07).",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 396,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 324,
     "notes": "Active candidate symbol: HEXAGON · Top-level keys: 0, 1, 2"
   },
   {
@@ -168,8 +168,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 1171,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 1040,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -189,7 +189,7 @@
       "rows"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 18\n    }\n  ],\n  \"unique_pdf_count\": 18,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Matangi%20Rubber%20Limited%20-%20Abridged_p.pdf\",\n      \"link_text\": \"Matangi Rubber Limited- Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Arohan%20Financial%20Services%20Limited%20-%20DRHP_p.pdf\",\n      \"link_text\": \"Arohan Financial Services Limited Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited%20-%20Abridged%20prospectus_p.pdf\",\n      \"link_text\": \"Dhoot Transmission Limited Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
+    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 19\n    }\n  ],\n  \"unique_pdf_count\": 19,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Pushp%20Brand%20India%20Limited%20-%20DAP_p.pdf\",\n      \"link_text\": \"Pushp Brand India Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Matangi%20Rubber%20Limited%20-%20Abridged_p.pdf\",\n      \"link_text\": \"Matangi Rubber Limited- Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Arohan%20Financial%20Services%20Limited%20-%20DRHP_p.pdf\",\n      \"link_text\": \"Arohan Financial Services Limited Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -197,9 +197,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 2167,
-    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=45851 (pdfs=18)"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 2919,
+    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46239 (pdfs=19)"
   },
   {
     "probe_id": "P-08b",
@@ -225,14 +225,14 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 413,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 446,
     "notes": "static ok: tbody_rows=2, bytes=25169"
   },
   {
     "probe_id": "P-09",
     "source": "SEBI — DRHP PDF Download",
-    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Matangi%20Rubber%20Limited%20-%20Abridged_p.pdf",
+    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Pushp%20Brand%20India%20Limited%20-%20DAP_p.pdf",
     "fetch_method": "GET (binary) + pdf-parse.py (page-count)",
     "headers_or_cookies_required": [
       "User-Agent",
@@ -246,7 +246,7 @@
       "page_count"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Matangi%20Rubber%20Limited%20-%20Abridged_p.pdf\",\n  \"link_text\": \"Matangi Rubber Limited- Draft Abridged Prospectus\",\n  \"bytes\": 1457510,\n  \"sha256\": \"34d08d30b171367d…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 11,\n  \"cover_text_first_200\": \"MATANGI RUBBER LIMITED\\nCORPORATE IDENTITY NUMBER: U74999DL2004PLC127108\\nREGISTERED OFFICE CONTACT PERSON TELEPHONE AND EMAIL WEBSITE\\nUnit No. 401, 4th Floor, Southern\\nVijay Kumar Sharma\\nPark, Saket Di\"\n}",
+    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Pushp%20Brand%20India%20Limited%20-%20DAP_p.pdf\",\n  \"link_text\": \"Pushp Brand India Limited - Draft Abridged Prospectus\",\n  \"bytes\": 475060,\n  \"sha256\": \"c9a18ef4941841d7…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 11,\n  \"cover_text_first_200\": \"PUSHP BRAND (INDIA) LIMITED\\n(Formerly known as Pushp Brand (India) Private Limited)\\nCorporate Identity Number: U15100MP2020PLC051347\\nREGISTERED OFFICE AND CONTACT PERSON EMAIL AND TELEPHONE WEBSITE\\nCO\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -254,9 +254,9 @@
     "status": "GREEN",
     "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 6200,
-    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=ocs/jun-2026/Matangi%20Rubber%20Limited%20-%20Abridged_p.pdf; bytes=1457510; page_count=11; pdf-parse=ok"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 2614,
+    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=ocs/jun-2026/Pushp%20Brand%20India%20Limited%20-%20DAP_p.pdf; bytes=475060; page_count=11; pdf-parse=ok"
   },
   {
     "probe_id": "P-10",
@@ -282,8 +282,8 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 11204,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 11242,
     "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
@@ -302,7 +302,7 @@
       "f1"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"CurrDate\": \"Thu Jun 04 2026 16:01:33\",\n  \"PrevClose\": \"1313.05\",\n  \"LowVal\": \"1290\",\n  \"HighVal\": \"1315\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1304.20\",\n  \"CurrTime\": \"16:01\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"1500000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Thu Jun 04 2026 16:01:33\\\",\\\"vale1\\\":\\\"1304.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Jun 04 2026 16:00:04\\\",\\\"vale1\\\":\\\"1304.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Jun 04 2026 15:56:34\\\",\\\"vale1\\\":\\\"1304.20\\\",\\\"vole\\\":\\\"3\\\"},{\\\"dttm\\\":\\\"Thu Jun 04 2026 15:52:46\\\",\\\"vale1\\\":\\\"1304.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Jun 04 2026 15:51:42\\\",\\\"vale1\\\":\\\"1304.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Jun 04 2026 15:49:00\\\",\\\"vale1\\\":\\\"1304.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Jun 04 2026 15:46:32\\\",\\\"vale1\\\":\\\"1304.20\\\",\\\"vole\\\":\\\"1\\\"},{\\\"dttm\\\":\\\"Thu Jun 04 …[truncated, total 31409 chars]",
+    "sample_record": "{\n  \"CurrDate\": \"Fri Jun 05 2026 12:46:59\",\n  \"PrevClose\": \"1304.2\",\n  \"LowVal\": \"1290\",\n  \"HighVal\": \"1305\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1295.95\",\n  \"CurrTime\": \"12:46\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"800000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Fri Jun 05 2026 12:46:59\\\",\\\"vale1\\\":\\\"1295.95\\\",\\\"vole\\\":\\\"1095\\\"},{\\\"dttm\\\":\\\"Fri Jun 05 2026 12:45:59\\\",\\\"vale1\\\":\\\"1295.65\\\",\\\"vole\\\":\\\"1117\\\"},{\\\"dttm\\\":\\\"Fri Jun 05 2026 12:44:59\\\",\\\"vale1\\\":\\\"1295.90\\\",\\\"vole\\\":\\\"2358\\\"},{\\\"dttm\\\":\\\"Fri Jun 05 2026 12:43:59\\\",\\\"vale1\\\":\\\"1295.95\\\",\\\"vole\\\":\\\"5088\\\"},{\\\"dttm\\\":\\\"Fri Jun 05 2026 12:42:59\\\",\\\"vale1\\\":\\\"1295.00\\\",\\\"vole\\\":\\\"27441\\\"},{\\\"dttm\\\":\\\"Fri Jun 05 2026 12:41:59\\\",\\\"vale1\\\":\\\"1296.10\\\",\\\"vole\\\":\\\"15972\\\"},{\\\"dttm\\\":\\\"Fri Jun 05 2026 12:40:59\\\",\\\"vale1\\\":\\\"1299.30\\\",\\\"vole\\\":\\\"1919\\\"},{\\…[truncated, total 17145 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -310,9 +310,9 @@
     "status": "GREEN",
     "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 5818,
-    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22097 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22097 chars] ; [bse:RELIANCE] BSE rows=26465, fields=1"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 3567,
+    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22095 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [bse:RELIANCE] BSE rows=14363, fields=1"
   },
   {
     "probe_id": "P-15b",
@@ -331,7 +331,7 @@
     "fields_missing": [
       "priceInfo"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;73cfdb17&#46;1780607024&#46;4cc69806\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;73cfdb17&#46;1780607024&#46;4cc69806</P>\n</BODY>\n</HTML>\n",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;476adc17&#46;1780643850&#46;181b3d4a\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;476adc17&#46;1780643850&#46;181b3d4a</P>\n</BODY>\n</HTML>\n",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -339,8 +339,8 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE quote.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 33,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 26,
     "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
   },
   {
@@ -367,8 +367,8 @@
     "status": "GREEN",
     "recommended_action": "Deterministic mapping; no manual override file needed for v1.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 41,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 28,
     "notes": "total=2, validSymbolPattern=2, rate=100%"
   },
   {
@@ -394,8 +394,8 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 989,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 838,
     "notes": "<tr> count: 0, total bytes: 12565"
   },
   {
@@ -421,8 +421,8 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 10488,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 10070,
     "notes": "Network error: fetch failed"
   },
   {
@@ -448,8 +448,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 325,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 354,
     "notes": "Bid-link markers found: 0, bytes: 12565"
   },
   {
@@ -476,8 +476,8 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 38,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 268,
     "notes": "Issues=2, registrars resolved by name match=0"
   },
   {
@@ -502,8 +502,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 1260,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 612,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -528,8 +528,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 107,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 208,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -554,8 +554,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 5650,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 4969,
     "notes": "status=200"
   },
   {
@@ -580,8 +580,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 1226,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 1212,
     "notes": "status=200"
   },
   {
@@ -604,8 +604,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 948,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 867,
     "notes": "No PDF URL discovered."
   },
   {
@@ -628,8 +628,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 237,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 212,
     "notes": "No PDF URL discovered."
   },
   {
@@ -647,7 +647,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium plugin v27.7 (Yoast SEO v27.7) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n\t<title>IPO GMP Today, Live IPO Grey Market Premiu…[truncated, total 812934 chars]",
+    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium plugin v27.7 (Yoast SEO v27.7) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n\t<title>IPO GMP Today, Live IPO Grey Market Premiu…[truncated, total 812004 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -655,9 +655,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 1888,
-    "notes": "<tr> count: 285, bytes=812934"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 1407,
+    "notes": "<tr> count: 285, bytes=812004"
   },
   {
     "probe_id": "P-20",
@@ -674,7 +674,7 @@
     "fields_missing": [
       "gmp table"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/home.png\"/><link …[truncated, total 124867 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/home.png\"/><link …[truncated, total 123371 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -682,9 +682,9 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 1331,
-    "notes": "<tr> count: 0, bytes=124867"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 679,
+    "notes": "<tr> count: 0, bytes=123371"
   },
   {
     "probe_id": "P-21",
@@ -701,7 +701,7 @@
     "fields_missing": [
       "discussion markers"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-KAIWqIgpW06unauYHifZmx&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5726 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-CMnRlT2QxLF9mAuM8OwMLg&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5747 chars]",
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -709,8 +709,8 @@
     "status": "RED",
     "recommended_action": "Skip.",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 71,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 30,
     "notes": "Non-200. status=403"
   },
   {
@@ -728,7 +728,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\" class=\"inter_a869fe2d-module__Nl2jCG__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/21cec3cf596e743c.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/fe81322e39413244.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/635245f93e41a18e.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next…[truncated, total 139044 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" class=\"inter_a869fe2d-module__Nl2jCG__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/21cec3cf596e743c.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/fe81322e39413244.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/635245f93e41a18e.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next…[truncated, total 139841 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -736,9 +736,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 360,
-    "notes": "<tr> count: 2, bytes=139044"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 120,
+    "notes": "<tr> count: 2, bytes=139841"
   },
   {
     "probe_id": "P-23a",
@@ -779,8 +779,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 4610,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 4318,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37971 | rendered_len=38793 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -816,9 +816,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 5460,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=225612 | rendered_len=267635 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 4904,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=225612 | rendered_len=266581 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-24",
@@ -844,8 +844,8 @@
     "status": "RED",
     "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 1452,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 1159,
     "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 2 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=12565"
   },
   {
@@ -875,9 +875,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 1953,
-    "notes": "mainboard: static status=200 bytes=147746 | sme: static status=200 bytes=147885 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=304948 | detail-2: static status=200 bytes=321725 | challenges_detected=false"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 1510,
+    "notes": "mainboard: static status=200 bytes=148154 | sme: static status=200 bytes=148333 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=318874 | detail-2: static status=200 bytes=321835 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -904,14 +904,14 @@
       "d1.close_date[missing]",
       "d1.registrar[missing]",
       "d1.brlms[missing]",
-      "d1.official_pdf_links[missing]",
+      "d1.official_pdf_links[rejected-low]",
       "d2.open_date[missing]",
       "d2.close_date[missing]",
       "d2.registrar[missing]",
       "d2.brlms[missing]",
       "d2.official_pdf_links[rejected-low]"
     ],
-    "sample_record": "{\n  \"avg_precision_ratio\": 0.5,\n  \"details\": [\n    {\n      \"index\": 1,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 10,\n      \"table_rows_parsed\": 73\n    },\n    {\n      \"index\": 2,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 12,\n      \"table_rows_parsed\": 82\n    }\n  ]\n}",
+    "sample_record": "{\n  \"avg_precision_ratio\": 0.5,\n  \"details\": [\n    {\n      \"index\": 1,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 11,\n      \"table_rows_parsed\": 83\n    },\n    {\n      \"index\": 2,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 12,\n      \"table_rows_parsed\": 82\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
@@ -919,9 +919,9 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 17,
-    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=1 | d1: main=89711b tables=10 rows=73 | d2: main=90132b tables=12 rows=82"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 20,
+    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=93248b tables=11 rows=83 | d2: main=90134b tables=12 rows=82"
   },
   {
     "probe_id": "P-27",
@@ -962,8 +962,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 3572,
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 3407,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37971 | rendered_len=38793 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -999,9 +999,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 4855,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=225612 | rendered_len=267106 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 4257,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=225612 | rendered_len=265876 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-25b",
@@ -1018,10 +1018,10 @@
       "detail-1 reachable (static)",
       "detail-2 reachable (static)",
       "detail-3 reachable (static)",
-      "third IPO selection: current (cmr-green-technologies-ipo)"
+      "third IPO selection: current (hexagon-nutrition-ipo)"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"third_ipo\": {\n    \"slug\": \"cmr-green-technologies-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"03 - 05 Jun\\\" covers today\",\n    \"date_text\": \"03 - 05 Jun\",\n    \"source_list\": \"mainboard\"\n  },\n  \"detail_titles\": [\n    {\n      \"index\": 1,\n      \"title\": \"OnEMI Technology IPO Date, Price, GMP, Review, Details\"\n    },\n    {\n      \"index\": 2,\n      \"title\": \"Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details\"\n    },\n    {\n      \"index\": 3,\n      \"title\": \"CMR Green Technologies IPO Date, Price, GMP, Details\"\n    }\n  ],\n  \"challenges_detected\": false\n}",
+    "sample_record": "{\n  \"third_ipo\": {\n    \"slug\": \"hexagon-nutrition-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"05 - 09 Jun\\\" covers today\",\n    \"date_text\": \"05 - 09 Jun\",\n    \"source_list\": \"mainboard\"\n  },\n  \"detail_titles\": [\n    {\n      \"index\": 1,\n      \"title\": \"OnEMI Technology IPO Date, Price, GMP, Review, Details\"\n    },\n    {\n      \"index\": 2,\n      \"title\": \"Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details\"\n    },\n    {\n      \"index\": 3,\n      \"title\": \"Hexagon Nutrition IPO Date, Price, GMP, Review, Details\"\n    }\n  ],\n  \"challenges_detected\": false\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
@@ -1029,9 +1029,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
-    "latency_ms": 1942,
-    "notes": "third_ipo_status=current | third_ipo_slug=cmr-green-technologies-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"03 - 05 Jun\" covers today\" | detail-1: static status=200 bytes=342738 | detail-2: static status=200 bytes=318425 | detail-3: static status=200 bytes=321725 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
+    "latency_ms": 99,
+    "notes": "third_ipo_status=current | third_ipo_slug=hexagon-nutrition-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"05 - 09 Jun\" covers today\" | detail-1: static status=200 bytes=342738 | detail-2: static status=200 bytes=318425 | detail-3: static status=200 bytes=318874 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
     "probe_id": "P-26b",
@@ -1078,7 +1078,7 @@
       "d3.brlms[missing]",
       "d3.official_pdf_links[low]"
     ],
-    "sample_record": "{\n  \"avg_full\": 0.818,\n  \"avg_narrow\": 0.933,\n  \"third_ipo_selection\": {\n    \"slug\": \"cmr-green-technologies-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"03 - 05 Jun\\\" covers today\",\n    \"date_text\": \"03 - 05 Jun\",\n    \"source_list\": \"mainboard\"\n  },\n  \"per_detail\": [\n    {\n      \"index\": 1,\n      \"slug\": \"onemi-technology-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 2,\n      \"slug\": \"bagmane-reit\",\n      \"found_full\": 8,\n      \"found_narrow\": 4,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 3,\n      \"slug\": \"cmr-green-technologies-ipo\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": [\n        \"official_pdf_links\"\n      ]\n    }\n  ]\n}",
+    "sample_record": "{\n  \"avg_full\": 0.818,\n  \"avg_narrow\": 0.933,\n  \"third_ipo_selection\": {\n    \"slug\": \"hexagon-nutrition-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"05 - 09 Jun\\\" covers today\",\n    \"date_text\": \"05 - 09 Jun\",\n    \"source_list\": \"mainboard\"\n  },\n  \"per_detail\": [\n    {\n      \"index\": 1,\n      \"slug\": \"onemi-technology-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 2,\n      \"slug\": \"bagmane-reit\",\n      \"found_full\": 8,\n      \"found_narrow\": 4,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 3,\n      \"slug\": \"hexagon-nutrition-ipo\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": [\n        \"official_pdf_links\"\n      ]\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
@@ -1086,8 +1086,8 @@
     "status": "GREEN",
     "recommended_action": "Precision met (full=0.82 narrow=0.93). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-06-04T21:03:14.281Z",
+    "ran_at_utc": "2026-06-05T07:17:06.253Z",
     "latency_ms": 26,
-    "notes": "details_extracted=3 | avg_full=0.818 | avg_narrow=0.933 | pdf_on_allowlist=2 | pdf_off_allowlist=3 | third_ipo=cmr-green-technologies-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.73 narrow=0.80 | d3:cmr-green-technologies-ipo full=0.82 narrow=1.00"
+    "notes": "details_extracted=3 | avg_full=0.818 | avg_narrow=0.933 | pdf_on_allowlist=2 | pdf_off_allowlist=3 | third_ipo=hexagon-nutrition-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.73 narrow=0.80 | d3:hexagon-nutrition-ipo full=0.82 narrow=1.00"
   }
 ]
