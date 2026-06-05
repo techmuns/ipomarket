@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/cmr-green-technologies-ipo-anchor-allocation.pdf"
   ],
-  "noise_stripped_bytes": 90134,
-  "main_content_bytes": 90134,
-  "tables_parsed": 12,
-  "table_rows_parsed": 82
+  "noise_stripped_bytes": 85764,
+  "main_content_bytes": 85764,
+  "tables_parsed": 11,
+  "table_rows_parsed": 69
 }
