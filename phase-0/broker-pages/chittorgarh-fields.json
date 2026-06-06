@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-05T20:55:11.992Z",
+  "captured_at_utc": "2026-06-06T06:37:00.274Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148154,
+      "bytes": 148106,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148353,
+      "bytes": 147975,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "mode": "static",
       "status": 200,
-      "bytes": 318882,
+      "bytes": 318606,
       "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
