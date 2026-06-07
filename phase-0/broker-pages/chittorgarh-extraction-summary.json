@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-07T07:13:07.597Z",
+  "generated_at_utc": "2026-06-07T12:49:31.835Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.5,
   "per_detail": [
@@ -36,7 +36,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 89974,
+      "main_content_bytes": 89919,
       "tables_parsed": 12,
       "table_rows_parsed": 77,
       "fields_high_confidence": [
