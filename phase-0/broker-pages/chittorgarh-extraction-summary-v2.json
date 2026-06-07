@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-06T20:21:21.537Z",
+  "generated_at_utc": "2026-06-07T07:13:07.597Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 94654,
+      "main_content_bytes": 93565,
       "tables_parsed": 13,
       "table_rows_parsed": 87,
       "fields_high_confidence": [
@@ -44,7 +44,7 @@
       "official_pdf_links_on_allowlist": [
         "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf"
       ],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     },
     {
       "index": 2,

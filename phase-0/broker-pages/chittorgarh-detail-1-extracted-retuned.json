@@ -90,7 +90,7 @@
       ],
       "found": true,
       "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
       "why_missing": null,
       "source_snippet": "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf"
     }
@@ -102,11 +102,9 @@
   "official_pdf_links_on_allowlist": [
     "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf"
   ],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/onemi-technology-anvhor-investor-list.pdf"
-  ],
-  "noise_stripped_bytes": 94654,
-  "main_content_bytes": 94654,
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 93565,
+  "main_content_bytes": 93565,
   "tables_parsed": 13,
   "table_rows_parsed": 87
 }
