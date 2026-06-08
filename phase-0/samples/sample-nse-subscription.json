@@ -10,8 +10,8 @@
     "symbol": "HEXAGON",
     "category": "Total",
     "noOfSharesOffered": "2.1602008E7",
-    "noOfTime": "2.5524081372435377",
-    "noOfsharesBid": "5.5137141E7",
+    "noOfTime": "3.329536309772684",
+    "noOfsharesBid": "7.192467E7",
     "srNo": null
   },
   {
@@ -22,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GENXAI",
-    "noOfsharesBid": "2781600",
+    "noOfsharesBid": "3464400",
     "noOfSharesOffered": "3435600",
-    "noOfTime": "0.81"
+    "noOfTime": "1.01"
   }
 ]
