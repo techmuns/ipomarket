@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-07T20:23:47.278Z",
+  "captured_at_utc": "2026-06-08T08:21:07.354Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352302,
+      "bytes": 351940,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "mode": "static",
       "status": 200,
-      "bytes": 325237,
+      "bytes": 325388,
       "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

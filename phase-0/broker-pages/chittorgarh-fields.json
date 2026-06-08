@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-07T20:23:47.278Z",
+  "captured_at_utc": "2026-06-08T08:21:07.354Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 146610,
+      "bytes": 148106,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147975,
+      "bytes": 148150,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "mode": "static",
       "status": 200,
-      "bytes": 325237,
+      "bytes": 325388,
       "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
       "mode": "static",
       "status": 200,
-      "bytes": 326749,
+      "bytes": 342567,
       "title": "CMR Green Technologies IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
