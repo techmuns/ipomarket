@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-09T13:48:15.711Z",
+  "generated_at_utc": "2026-06-09T21:07:55.299Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
@@ -54,9 +54,9 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 81639,
+      "main_content_bytes": 81683,
       "tables_parsed": 11,
-      "table_rows_parsed": 57,
+      "table_rows_parsed": 60,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -78,7 +78,7 @@
       "official_pdf_links_on_allowlist": [
         "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"
       ],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     },
     {
       "index": 3,

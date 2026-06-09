@@ -1,8 +1,7 @@
 {
-  "total": 2,
-  "valid": 2,
+  "total": 1,
+  "valid": 1,
   "examples": {
-    "Hexagon Nutrition Limited": "HEXAGON",
-    "Utkal Speciality Industries India Limited": "UTKAL"
+    "Hexagon Nutrition Limited": "HEXAGON"
   }
 }

@@ -6,19 +6,7 @@
     "issueSize": "21602008",
     "issueStartDate": "05-Jun-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "HEXAGON"
-  },
-  {
-    "companyName": "Utkal Speciality Industries India Limited",
-    "issueEndDate": "12-Jun-2026",
-    "issuePrice": "Rs.62 to Rs.66",
-    "issueSize": "5234000",
-    "issueStartDate": "10-Jun-2026",
-    "lotSize": "2000",
-    "priceBand": "Rs.62 to Rs.66",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "UTKAL"
   }
 ]
