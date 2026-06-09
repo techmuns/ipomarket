@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-08T21:17:42.467Z",
+  "captured_at_utc": "2026-06-09T06:57:54.213Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -32,8 +32,8 @@
   "third_ipo_selection": {
     "slug": "hexagon-nutrition-ipo",
     "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
-    "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"05 - 09 Jun\" covers today",
+    "status": "fallback",
+    "reason": "fallback (no current-open found): most-recently-listed end date \"05 - 09 Jun\" from list \"mainboard\"",
     "date_text": "05 - 09 Jun",
     "source_list": "mainboard"
   },
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352216,
+      "bytes": 351940,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 319995,
+      "bytes": 319719,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "mode": "static",
       "status": 200,
-      "bytes": 325397,
+      "bytes": 325421,
       "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

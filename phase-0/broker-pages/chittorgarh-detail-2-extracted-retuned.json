@@ -105,8 +105,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/bagmane-reit-ipo-anchor-allocation-report.pdf"
   ],
-  "noise_stripped_bytes": 81694,
-  "main_content_bytes": 81694,
+  "noise_stripped_bytes": 81639,
+  "main_content_bytes": 81639,
   "tables_parsed": 11,
   "table_rows_parsed": 57
 }
