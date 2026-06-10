@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-06-09T21:07:55.299Z",
+  "generated_at_utc": "2026-06-10T07:16:56.528Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "hexagon-nutrition-ipo",
-    "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"05 - 09 Jun\" from list \"mainboard\"",
-    "date_text": "05 - 09 Jun",
-    "source_list": "mainboard"
+    "slug": "utkal-speciality-ipo",
+    "url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
+    "status": "current",
+    "reason": "current-open: list \"sme\" row date range \"10 - 12 Jun\" covers today",
+    "date_text": "10 - 12 Jun",
+    "source_list": "sme"
   },
   "per_detail": [
     {
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93565,
+      "main_content_bytes": 93510,
       "tables_parsed": 13,
       "table_rows_parsed": 87,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "hexagon-nutrition-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+      "slug": "utkal-speciality-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 94939,
-      "tables_parsed": 11,
-      "table_rows_parsed": 83,
+      "main_content_bytes": 85298,
+      "tables_parsed": 10,
+      "table_rows_parsed": 65,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -104,14 +104,13 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
+        "brlms",
         "official_pdf_links"
       ],
-      "fields_missing": [
-        "brlms"
-      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }

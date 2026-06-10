@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-09T21:07:55.299Z",
+  "captured_at_utc": "2026-06-10T07:16:56.528Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "hexagon-nutrition-ipo",
-    "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"05 - 09 Jun\" from list \"mainboard\"",
-    "date_text": "05 - 09 Jun",
-    "source_list": "mainboard"
+    "slug": "utkal-speciality-ipo",
+    "url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
+    "status": "current",
+    "reason": "current-open: list \"sme\" row date range \"10 - 12 Jun\" covers today",
+    "date_text": "10 - 12 Jun",
+    "source_list": "sme"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
-      "slug": "hexagon-nutrition-ipo"
+      "url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
+      "slug": "utkal-speciality-ipo"
     }
   ],
   "details": [
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352216,
+      "bytes": 351940,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 327322,
+      "bytes": 327325,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+      "url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
       "mode": "static",
       "status": 200,
-      "bytes": 325443,
-      "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
+      "bytes": 281020,
+      "title": "Utkal Speciality IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

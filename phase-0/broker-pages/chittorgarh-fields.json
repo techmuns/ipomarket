@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-09T21:07:55.299Z",
+  "captured_at_utc": "2026-06-10T07:16:56.528Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148118,
+      "bytes": 148078,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147654,
+      "bytes": 146195,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
     "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
     "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
     "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/sedemac-mechatronics-ipo/2794/",
     "https://www.chittorgarh.com/ipo/omnitech-engineering-ipo/2479/",
     "https://www.chittorgarh.com/ipo/pngs-reva-ipo/2475/",
-    "https://www.chittorgarh.com/ipo/clean-max-enviro-energy-solutions-ipo/2573/",
-    "https://www.chittorgarh.com/ipo/shree-ram-twistex-ipo/2502/"
+    "https://www.chittorgarh.com/ipo/clean-max-enviro-energy-solutions-ipo/2573/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+      "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
+      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+      "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "mode": "static",
       "status": 200,
-      "bytes": 325443,
-      "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
+      "bytes": 249900,
+      "title": "Aastha Spintex IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
+      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
       "mode": "static",
       "status": 200,
-      "bytes": 344979,
-      "title": "CMR Green Technologies IPO Date, Price, GMP, Details",
+      "bytes": 344329,
+      "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
