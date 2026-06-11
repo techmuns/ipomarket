@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-11T08:14:39.900Z",
+  "captured_at_utc": "2026-06-11T14:53:56.206Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 146559,
+      "bytes": 147537,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
+    "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
     "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
     "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
     "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/rajputana-stainless-ipo/2067/",
     "https://www.chittorgarh.com/ipo/sedemac-mechatronics-ipo/2794/",
     "https://www.chittorgarh.com/ipo/omnitech-engineering-ipo/2479/",
-    "https://www.chittorgarh.com/ipo/pngs-reva-ipo/2475/",
-    "https://www.chittorgarh.com/ipo/clean-max-enviro-energy-solutions-ipo/2573/"
+    "https://www.chittorgarh.com/ipo/pngs-reva-ipo/2475/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+      "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
+      "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
       "mode": "static",
       "status": 200,
-      "bytes": 343072,
-      "title": "Hexagon Nutrition IPO Date, Price, GMP, Review, Details",
+      "bytes": 270585,
+      "title": "Advit Jewels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
