@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-10T21:28:22.350Z",
+  "captured_at_utc": "2026-06-11T08:14:39.900Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "utkal-speciality-ipo",
-    "url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
+    "slug": "susan-electricals-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"10 - 12 Jun\" covers today",
-    "date_text": "10 - 12 Jun",
+    "reason": "current-open: list \"sme\" row date range \"11 - 15 Jun\" covers today",
+    "date_text": "11 - 15 Jun",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
-      "slug": "utkal-speciality-ipo"
+      "url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
+      "slug": "susan-electricals-india-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 327368,
+      "bytes": 327325,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
+      "url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
       "mode": "static",
       "status": 200,
-      "bytes": 281033,
-      "title": "Utkal Speciality IPO Date, Price, GMP, Review, Details",
+      "bytes": 302160,
+      "title": "Susan Electricals India IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

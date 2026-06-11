@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-06-10T21:28:22.350Z",
+  "generated_at_utc": "2026-06-11T08:14:39.900Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.818,
+  "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "utkal-speciality-ipo",
-    "url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
+    "slug": "susan-electricals-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"10 - 12 Jun\" covers today",
-    "date_text": "10 - 12 Jun",
+    "reason": "current-open: list \"sme\" row date range \"11 - 15 Jun\" covers today",
+    "date_text": "11 - 15 Jun",
     "source_list": "sme"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 81684,
+      "main_content_bytes": 81683,
       "tables_parsed": 11,
       "table_rows_parsed": 60,
       "fields_high_confidence": [
@@ -82,22 +82,23 @@
     },
     {
       "index": 3,
-      "slug": "utkal-speciality-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/utkal-speciality-ipo/2638/",
-      "found_count_full": 9,
+      "slug": "susan-electricals-india-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
+      "found_count_full": 10,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.818,
+      "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85298,
-      "tables_parsed": 10,
-      "table_rows_parsed": 65,
+      "main_content_bytes": 88777,
+      "tables_parsed": 11,
+      "table_rows_parsed": 71,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
-        "listing_date"
+        "listing_date",
+        "official_pdf_links"
       ],
       "fields_medium_confidence": [
         "open_date",
@@ -106,11 +107,12 @@
       ],
       "fields_rejected_low_confidence": [],
       "fields_missing": [
-        "brlms",
-        "official_pdf_links"
+        "brlms"
       ],
-      "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_on_allowlist": [
+        "https://www.bsesme.com/download/338840/SME_IPO%20Open/SUSAN%20ELECTRICALS%20RHP%20FINAL%20(1)_20260608190850.pdf"
+      ],
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

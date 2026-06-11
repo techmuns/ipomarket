@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-10T21:28:22.350Z",
+  "captured_at_utc": "2026-06-11T08:14:39.900Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45659,
+      "bytes": 45328,
       "tr_count": 26,
-      "pdfs_found": 18,
-      "notes": "static ok: tr=26, bytes=45659"
+      "pdfs_found": 17,
+      "notes": "static ok: tr=26, bytes=45328"
     }
   ],
   "detail_urls_found": 31,
@@ -105,11 +105,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Sathya%20Agencies%20Limited-Abridged%20Prospectus_p.pdf",
       "link_text": "Sathya Agencies Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Kay%20Jay%20Forgings%20Limited-Abridged%20Prospectus_p.pdf",
-      "link_text": "Kay Jay Forgings Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
