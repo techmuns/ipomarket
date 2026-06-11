@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-11T14:53:56.206Z",
+  "generated_at_utc": "2026-06-11T21:29:28.462Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.25,
   "per_detail": [
@@ -38,7 +38,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 81049,
+      "main_content_bytes": 80994,
       "tables_parsed": 8,
       "table_rows_parsed": 55,
       "fields_high_confidence": [
