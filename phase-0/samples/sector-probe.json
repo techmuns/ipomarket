@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-12T08:00:45.997Z",
+  "captured_at_utc": "2026-06-12T14:15:39.543Z",
   "sector_reachable": {
     "listed_equity": false,
     "pre_ipo": false
@@ -14,17 +14,28 @@
       "sample_keys": [],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 397 chars]"
+      "notes": "NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars]"
     },
     {
       "source": "NSE IPO list",
       "url": "https://www.nseindia.com/api/all-upcoming-issues?category=ipo",
       "ok": false,
       "status": 200,
-      "sample_keys": [],
+      "sample_keys": [
+        "companyName",
+        "issueEndDate",
+        "issuePrice",
+        "issueSize",
+        "issueStartDate",
+        "lotSize",
+        "priceBand",
+        "series",
+        "status",
+        "symbol"
+      ],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "NSE IPO list returned 0 items"
+      "notes": "1 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, lotSize, priceBand, series, status, symbol; sector fields: (none)"
     },
     {
       "source": "BSE IPO list",
