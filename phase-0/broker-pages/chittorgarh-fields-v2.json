@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-11T21:29:28.462Z",
+  "captured_at_utc": "2026-06-12T08:00:45.997Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "susan-electricals-india-ipo",
-    "url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
+    "slug": "horizon-reclaim-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"11 - 15 Jun\" covers today",
-    "date_text": "11 - 15 Jun",
+    "reason": "current-open: list \"sme\" row date range \"12 - 16 Jun\" covers today",
+    "date_text": "12 - 16 Jun",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
-      "slug": "susan-electricals-india-ipo"
+      "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
+      "slug": "horizon-reclaim-india-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 327411,
+      "bytes": 327325,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
+      "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
       "mode": "static",
       "status": 200,
-      "bytes": 302165,
-      "title": "Susan Electricals India IPO Date, Price, GMP, Details",
+      "bytes": 289607,
+      "title": "Horizon Reclaim (India) IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

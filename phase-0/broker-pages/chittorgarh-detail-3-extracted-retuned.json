@@ -1,40 +1,40 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
-  "slug": "susan-electricals-india-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
+  "slug": "horizon-reclaim-india-ipo",
   "fields": {
     "company_name": {
-      "value": "Susan Electricals India IPO",
+      "value": "Horizon Reclaim (India) IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Susan Electricals India IPO"
+      "source_snippet": "Horizon Reclaim (India) IPO"
     },
     "issue_size_cr": {
-      "value": "55,42,000 shares (agg. up to ₹ 70 Cr)",
+      "value": "52,69,200 shares (agg. up to ₹ 54 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "55,42,000 shares (agg. up to ₹ 70 Cr)"
+      "source_snippet": "52,69,200 shares (agg. up to ₹ 54 Cr)"
     },
     "price_band": {
-      "value": "₹120 to ₹127",
+      "value": "₹98 to ₹103",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹120 to ₹127"
+      "source_snippet": "₹98 to ₹103"
     },
     "lot_size": {
-      "value": "1,000 Shares",
+      "value": "1,200 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "1,000 Shares"
+      "source_snippet": "1,200 Shares"
     },
     "face_value": {
       "value": "₹ 10 per share",
@@ -45,36 +45,36 @@
       "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-06-11",
+      "value": "2026-06-12",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"11 to 15 Jun, 2026\" → start=2026-06-11"
+      "source_snippet": "raw=\"12 to 16 Jun, 2026\" → start=2026-06-12"
     },
     "close_date": {
-      "value": "2026-06-15",
+      "value": "2026-06-16",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"11 to 15 Jun, 2026\" → end=2026-06-15"
+      "source_snippet": "raw=\"12 to 16 Jun, 2026\" → end=2026-06-16"
     },
     "listing_date": {
-      "value": "2026-06-18",
+      "value": "2026-06-19",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Thu, Jun 18, 2026 T\" → 2026-06-18"
+      "source_snippet": "raw=\"Fri, Jun 19, 2026 T\" → 2026-06-19"
     },
     "registrar": {
-      "value": "Mudra RTA Ventures Private Limited",
+      "value": "Kfin Technologies Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Mudra RTA Ventures Private Limited +919870297591 ipo@mudrarta.com </\" → \"Mudra RTA Ventures Private Limited\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 04067162222, 04079611000 horizonrec.ipo@kfintech.com <i class=\"fa fa\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -86,13 +86,13 @@
     },
     "official_pdf_links": {
       "value": [
-        "https://www.bsesme.com/download/338840/SME_IPO%20Open/SUSAN%20ELECTRICALS%20RHP%20FINAL%20(1)_20260608190850.pdf"
+        "https://www.bsesme.com/download/362363/SME_IPO%20Open/RHP_Horizon%20Reclaim%20(India)%20Limited_20260607173839.pdf"
       ],
       "found": true,
       "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
       "why_missing": null,
-      "source_snippet": "https://www.bsesme.com/download/338840/SME_IPO%20Open/SUSAN%20ELECTRICALS%20RHP%20FINAL%20(1)_20260608190850.pdf"
+      "source_snippet": "https://www.bsesme.com/download/362363/SME_IPO%20Open/RHP_Horizon%20Reclaim%20(India)%20Limited_20260607173839.pdf"
     }
   },
   "found_count_full": 10,
@@ -100,13 +100,11 @@
   "precision_ratio_full": 0.9090909090909091,
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [
-    "https://www.bsesme.com/download/338840/SME_IPO%20Open/SUSAN%20ELECTRICALS%20RHP%20FINAL%20(1)_20260608190850.pdf"
+    "https://www.bsesme.com/download/362363/SME_IPO%20Open/RHP_Horizon%20Reclaim%20(India)%20Limited_20260607173839.pdf"
   ],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/susanelectricals_anchorallocationreport.pdf"
-  ],
-  "noise_stripped_bytes": 88777,
-  "main_content_bytes": 88777,
-  "tables_parsed": 11,
-  "table_rows_parsed": 71
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 85211,
+  "main_content_bytes": 85211,
+  "tables_parsed": 10,
+  "table_rows_parsed": 65
 }

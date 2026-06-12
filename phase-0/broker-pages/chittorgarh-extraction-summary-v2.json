@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-06-11T21:29:28.462Z",
+  "generated_at_utc": "2026-06-12T08:00:45.997Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "susan-electricals-india-ipo",
-    "url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
+    "slug": "horizon-reclaim-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"11 - 15 Jun\" covers today",
-    "date_text": "11 - 15 Jun",
+    "reason": "current-open: list \"sme\" row date range \"12 - 16 Jun\" covers today",
+    "date_text": "12 - 16 Jun",
     "source_list": "sme"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 81685,
+      "main_content_bytes": 81683,
       "tables_parsed": 11,
       "table_rows_parsed": 60,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "susan-electricals-india-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/susan-electricals-india-ipo/2872/",
+      "slug": "horizon-reclaim-india-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
       "found_count_full": 10,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 88777,
-      "tables_parsed": 11,
-      "table_rows_parsed": 71,
+      "main_content_bytes": 85211,
+      "tables_parsed": 10,
+      "table_rows_parsed": 65,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -110,9 +110,9 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [
-        "https://www.bsesme.com/download/338840/SME_IPO%20Open/SUSAN%20ELECTRICALS%20RHP%20FINAL%20(1)_20260608190850.pdf"
+        "https://www.bsesme.com/download/362363/SME_IPO%20Open/RHP_Horizon%20Reclaim%20(India)%20Limited_20260607173839.pdf"
       ],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }
