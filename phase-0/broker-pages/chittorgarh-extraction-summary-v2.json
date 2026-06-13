@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-13T07:05:17.999Z",
+  "generated_at_utc": "2026-06-13T12:57:42.260Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 0.933,
@@ -88,9 +88,9 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85217,
+      "main_content_bytes": 85453,
       "tables_parsed": 10,
-      "table_rows_parsed": 65,
+      "table_rows_parsed": 66,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

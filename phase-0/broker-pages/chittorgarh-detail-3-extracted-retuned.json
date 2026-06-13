@@ -32,7 +32,7 @@
       "value": "1,200 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "1,200 Shares"
     },
@@ -103,8 +103,8 @@
     "https://www.bsesme.com/download/362363/SME_IPO%20Open/RHP_Horizon%20Reclaim%20(India)%20Limited_20260607173839.pdf"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 85217,
-  "main_content_bytes": 85217,
+  "noise_stripped_bytes": 85453,
+  "main_content_bytes": 85453,
   "tables_parsed": 10,
-  "table_rows_parsed": 65
+  "table_rows_parsed": 66
 }
