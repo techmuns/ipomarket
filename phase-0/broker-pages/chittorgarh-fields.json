@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-14T07:56:09.244Z",
+  "captured_at_utc": "2026-06-14T13:03:30.367Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "mode": "static",
       "status": 200,
-      "bytes": 249897,
+      "bytes": 249621,
       "title": "Aastha Spintex IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
