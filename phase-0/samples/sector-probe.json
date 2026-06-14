@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-13T20:39:31.885Z",
+  "captured_at_utc": "2026-06-14T07:56:09.244Z",
   "sector_reachable": {
     "listed_equity": false,
     "pre_ipo": false
@@ -45,7 +45,7 @@
       "sample_keys": [],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "BSE HTML; sector-related words found: (none); bytes=12615"
+      "notes": "BSE HTML; sector-related words found: (none); bytes=12565"
     }
   ]
 }
