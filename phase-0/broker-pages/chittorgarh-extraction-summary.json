@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-14T20:40:03.736Z",
+  "generated_at_utc": "2026-06-15T09:33:09.797Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.25,
   "per_detail": [
@@ -35,30 +35,32 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+      "source_url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 81056,
-      "tables_parsed": 8,
-      "table_rows_parsed": 55,
+      "main_content_bytes": 65434,
+      "tables_parsed": 6,
+      "table_rows_parsed": 25,
       "fields_high_confidence": [
         "company_name",
-        "listing_date"
+        "official_pdf_links"
       ],
       "fields_medium_confidence": [],
       "fields_rejected_low_confidence": [
-        "issue_size_cr"
+        "listing_date"
       ],
       "fields_missing": [
+        "issue_size_cr",
         "price_band",
         "lot_size",
         "open_date",
         "close_date",
         "registrar",
-        "brlms",
-        "official_pdf_links"
+        "brlms"
       ],
-      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_on_allowlist": [
+        "https://nsearchives.nseindia.com/corporate/Turtlemint_UDRHP_I.pdf"
+      ],
       "official_pdf_links_off_allowlist_count": 0
     }
   ]
