@@ -1,8 +1,7 @@
 {
-  "total": 2,
-  "valid": 2,
+  "total": 1,
+  "valid": 1,
   "examples": {
-    "Avience Biomedicals Limited": "AVIENCE",
-    "Clay Craft India Limited": "CLAYCRAFT"
+    "Avience Biomedicals Limited": "AVIENCE"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-16T16:03:09.970Z",
+  "generated_at_utc": "2026-06-16T21:48:10.843Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 0.933,
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93676,
+      "main_content_bytes": 93677,
       "tables_parsed": 13,
       "table_rows_parsed": 87,
       "fields_high_confidence": [
@@ -54,9 +54,9 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 80870,
+      "main_content_bytes": 81690,
       "tables_parsed": 11,
-      "table_rows_parsed": 57,
+      "table_rows_parsed": 60,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -88,9 +88,9 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85453,
-      "tables_parsed": 10,
-      "table_rows_parsed": 66,
+      "main_content_bytes": 87234,
+      "tables_parsed": 11,
+      "table_rows_parsed": 71,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -112,7 +112,7 @@
       "official_pdf_links_on_allowlist": [
         "https://www.bsesme.com/download/362363/SME_IPO%20Open/RHP_Horizon%20Reclaim%20(India)%20Limited_20260607173839.pdf"
       ],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

@@ -90,7 +90,7 @@
       ],
       "found": true,
       "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
       "why_missing": null,
       "source_snippet": "https://www.bsesme.com/download/362363/SME_IPO%20Open/RHP_Horizon%20Reclaim%20(India)%20Limited_20260607173839.pdf"
     }
@@ -102,9 +102,11 @@
   "official_pdf_links_on_allowlist": [
     "https://www.bsesme.com/download/362363/SME_IPO%20Open/RHP_Horizon%20Reclaim%20(India)%20Limited_20260607173839.pdf"
   ],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 85453,
-  "main_content_bytes": 85453,
-  "tables_parsed": 10,
-  "table_rows_parsed": 66
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/anchor-investor/horizonreclaimanchor_allocationreport.pdf"
+  ],
+  "noise_stripped_bytes": 87234,
+  "main_content_bytes": 87234,
+  "tables_parsed": 11,
+  "table_rows_parsed": 71
 }
