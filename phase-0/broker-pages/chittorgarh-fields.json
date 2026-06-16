@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-15T21:49:34.047Z",
+  "captured_at_utc": "2026-06-16T08:53:53.502Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147206,
+      "bytes": 147228,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147160,
+      "bytes": 147099,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,8 +29,8 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
-    "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
     "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+    "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
     "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
     "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
     "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
+      "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
+      "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
       "mode": "static",
       "status": 200,
-      "bytes": 209922,
-      "title": "Turtlemint Fintech Solutions IPO Date, Price, GMP, Details",
+      "bytes": 291432,
+      "title": "Advit Jewels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

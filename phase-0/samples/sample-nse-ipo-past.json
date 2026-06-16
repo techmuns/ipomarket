@@ -1,5 +1,17 @@
 [
   {
+    "companyName": "Avience Biomedicals Limited",
+    "issueEndDate": "22-Jun-2026",
+    "issuePrice": "Rs.196 to Rs.208",
+    "issueSize": "1453800",
+    "issueStartDate": "18-Jun-2026",
+    "lotSize": "600",
+    "priceBand": "Rs.196 to Rs.208",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "AVIENCE"
+  },
+  {
     "companyName": "Clay Craft India Limited",
     "issueEndDate": "19-Jun-2026",
     "issuePrice": "Rs.193 to Rs.203",

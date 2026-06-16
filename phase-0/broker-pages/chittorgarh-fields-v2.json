@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-15T21:49:34.047Z",
+  "captured_at_utc": "2026-06-16T08:53:53.502Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -32,8 +32,8 @@
   "third_ipo_selection": {
     "slug": "horizon-reclaim-india-ipo",
     "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
-    "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"12 - 16 Jun\" covers today",
+    "status": "fallback",
+    "reason": "fallback (no current-open found): most-recently-listed end date \"12 - 16 Jun\" from list \"sme\"",
     "date_text": "12 - 16 Jun",
     "source_list": "sme"
   },
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352308,
+      "bytes": 341543,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 327417,
+      "bytes": 318985,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
       "mode": "static",
       "status": 200,
-      "bytes": 290079,
+      "bytes": 290390,
       "title": "Horizon Reclaim (India) IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

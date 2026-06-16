@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
+  "source_url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
   "fields": {
     "company_name": {
-      "value": "Turtlemint Fintech Solutions IPO",
+      "value": "Advit Jewels IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Turtlemint Fintech Solutions IPO"
+      "source_snippet": "Advit Jewels IPO"
     },
     "issue_size_cr": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
-      "source_snippet": null
+      "value": "1,19,68,000 shares (agg. up to ₹ 165 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "1,19,68,000 shares (agg. up to ₹ 165 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹130 to ₹138",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹130 to ₹138"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "100 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "100 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "[.]",
-      "found": false,
-      "confidence": "low",
-      "method": "table[0].row[1]-rejected",
-      "why_missing": "value '[.]' failed date validation (expected \"Mon DD, YYYY\" or similar)",
-      "source_snippet": "[.]"
+      "value": "Wed, Jul 1, 2026 T",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[1] label=\"Listing Date\"",
+      "why_missing": null,
+      "source_snippet": "Wed, Jul 1, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -76,24 +76,20 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": [
-        "https://nsearchives.nseindia.com/corporate/Turtlemint_UDRHP_I.pdf"
-      ],
-      "found": true,
-      "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
-      "why_missing": null,
-      "source_snippet": "https://nsearchives.nseindia.com/corporate/Turtlemint_UDRHP_I.pdf"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
-  "found_count": 2,
-  "precision_ratio": 0.2,
-  "official_pdf_links_on_allowlist": [
-    "https://nsearchives.nseindia.com/corporate/Turtlemint_UDRHP_I.pdf"
-  ],
+  "found_count": 5,
+  "precision_ratio": 0.5,
+  "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 65434,
-  "main_content_bytes": 65434,
-  "tables_parsed": 6,
-  "table_rows_parsed": 25
+  "noise_stripped_bytes": 86815,
+  "main_content_bytes": 86815,
+  "tables_parsed": 9,
+  "table_rows_parsed": 64
 }
