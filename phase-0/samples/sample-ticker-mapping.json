@@ -1,9 +1,8 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 2,
+  "valid": 2,
   "examples": {
     "Advit Jewels Limited": "RAMBHAJO",
-    "Turtlemint Fintech Solutions Limited": "TURTLEMINT",
-    "Avience Biomedicals Limited": "AVIENCE"
+    "Turtlemint Fintech Solutions Limited": "TURTLEMINT"
   }
 }
