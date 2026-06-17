@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-16T21:48:10.843Z",
+  "captured_at_utc": "2026-06-17T08:36:06.572Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "horizon-reclaim-india-ipo",
-    "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"12 - 16 Jun\" from list \"sme\"",
-    "date_text": "12 - 16 Jun",
+    "slug": "clay-craft-ipo",
+    "url": "https://www.chittorgarh.com/ipo/clay-craft-ipo/2585/",
+    "status": "current",
+    "reason": "current-open: list \"sme\" row date range \"17 - 19 Jun\" covers today",
+    "date_text": "17 - 19 Jun",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
-      "slug": "horizon-reclaim-india-ipo"
+      "url": "https://www.chittorgarh.com/ipo/clay-craft-ipo/2585/",
+      "slug": "clay-craft-ipo"
     }
   ],
   "details": [
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 341586,
+      "bytes": 352308,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 327374,
+      "bytes": 327331,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/horizon-reclaim-india-ipo/2937/",
+      "url": "https://www.chittorgarh.com/ipo/clay-craft-ipo/2585/",
       "mode": "static",
       "status": 200,
-      "bytes": 295374,
-      "title": "Horizon Reclaim (India) IPO Date, Price, GMP, Details",
+      "bytes": 300353,
+      "title": "Clay Craft IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
