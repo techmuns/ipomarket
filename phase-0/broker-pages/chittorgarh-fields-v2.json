@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-17T21:20:51.499Z",
+  "captured_at_utc": "2026-06-18T08:20:04.995Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "clay-craft-ipo",
-    "url": "https://www.chittorgarh.com/ipo/clay-craft-ipo/2585/",
+    "slug": "riyaasat-lifestyle-ipo",
+    "url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"17 - 19 Jun\" covers today",
-    "date_text": "17 - 19 Jun",
+    "reason": "current-open: list \"sme\" row date range \"18 - 22 Jun\" covers today",
+    "date_text": "18 - 22 Jun",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/clay-craft-ipo/2585/",
-      "slug": "clay-craft-ipo"
+      "url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
+      "slug": "riyaasat-lifestyle-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 327331,
+      "bytes": 327417,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/clay-craft-ipo/2585/",
+      "url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
       "mode": "static",
       "status": 200,
-      "bytes": 300373,
-      "title": "Clay Craft IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 277294,
+      "title": "Riyaasat Lifestyle IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

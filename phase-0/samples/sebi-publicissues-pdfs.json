@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-17T21:20:51.499Z",
+  "captured_at_utc": "2026-06-18T08:20:04.995Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,24 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44971,
+      "bytes": 44479,
       "tr_count": 26,
-      "pdfs_found": 16,
-      "notes": "static ok: tr=26, bytes=44971"
+      "pdfs_found": 15,
+      "notes": "static ok: tr=26, bytes=44479"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/National%20Stock%20Exchange%20of%20India%20Ltd%20-%20Abridged_p.pdf",
+      "link_text": "National Stock Exchange of India Ltd - Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Paras%20Healthcare%20Limited%20-%20Abridged_p.pdf",
+      "link_text": "Paras Healthcare Limited - Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Zepto%20Limited%20-%20abridged_p.pdf",
       "link_text": "Zepto Limited - Abridged Prospectus",
@@ -85,21 +95,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/TC%20TERRYTEX%20LIMITED-Abridged%20Prospectus_p.pdf",
       "link_text": "T.C. TERRYTEX LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/GUJARAT%20VICTORY%20FORGINGS%20LIMITED-Abridged%20Prospectus_p.pdf",
-      "link_text": "Gujarat Victory Forgings Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Nityas%20Gems%20and%20Jewellery%20Limited-Abridged%20Prospectus_p.pdf",
-      "link_text": "Nityas Gems and Jewellery Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Bvishal%20Oil%20and%20Energy%20Limited-Abridged%20Prospectus_p.pdf",
-      "link_text": "Bvishal Oil and Energy Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

@@ -1,40 +1,40 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/clay-craft-ipo/2585/",
-  "slug": "clay-craft-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
+  "slug": "riyaasat-lifestyle-ipo",
   "fields": {
     "company_name": {
-      "value": "Clay Craft India IPO",
+      "value": "Riyaasat Lifestyle IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Clay Craft India IPO"
+      "source_snippet": "Riyaasat Lifestyle IPO"
     },
     "issue_size_cr": {
-      "value": "54,24,000 shares (agg. up to ₹ 110 Cr)",
+      "value": "28,48,800 shares (agg. up to ₹ 31 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "54,24,000 shares (agg. up to ₹ 110 Cr)"
+      "source_snippet": "28,48,800 shares (agg. up to ₹ 31 Cr)"
     },
     "price_band": {
-      "value": "₹193 to ₹203",
+      "value": "₹102 to ₹108",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹193 to ₹203"
+      "source_snippet": "₹102 to ₹108"
     },
     "lot_size": {
-      "value": "600 Shares",
+      "value": "1,200 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "600 Shares"
+      "source_snippet": "1,200 Shares"
     },
     "face_value": {
       "value": "₹ 10 per share",
@@ -45,36 +45,36 @@
       "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-06-17",
+      "value": "2026-06-18",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"17 to 19 Jun, 2026\" → start=2026-06-17"
+      "source_snippet": "raw=\"18 to 22 Jun, 2026\" → start=2026-06-18"
     },
     "close_date": {
-      "value": "2026-06-19",
+      "value": "2026-06-22",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"17 to 19 Jun, 2026\" → end=2026-06-19"
+      "source_snippet": "raw=\"18 to 22 Jun, 2026\" → end=2026-06-22"
     },
     "listing_date": {
-      "value": "2026-06-24",
+      "value": "2026-06-25",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Wed, Jun 24, 2026 T\" → 2026-06-24"
+      "source_snippet": "raw=\"Thu, Jun 25, 2026 T\" → 2026-06-25"
     },
     "registrar": {
-      "value": "Kfin Technologies Ltd.",
+      "value": "Skyline Financial Services Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 04067162222, 04079611000 claycraft.ipo@kfintech.com <i class=\"fa fa-\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Skyline Financial Services Pvt.Ltd. 02228511022 ipo@skylinerta.com <\" → \"Skyline Financial Services Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -85,24 +85,26 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": null,
-      "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/claycraftanchorallocationreport.pdf"
+      "value": [
+        "https://www.bsesme.com/download/389631/SME_IPO%20Open/1.RHP_Riyaasat_12062026_Final_20260615201158.pdf"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.bsesme.com/download/389631/SME_IPO%20Open/1.RHP_Riyaasat_12062026_Final_20260615201158.pdf"
     }
   },
-  "found_count_full": 9,
+  "found_count_full": 10,
   "found_count_narrow": 5,
-  "precision_ratio_full": 0.8181818181818182,
+  "precision_ratio_full": 0.9090909090909091,
   "precision_ratio_narrow": 1,
-  "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/claycraftanchorallocationreport.pdf"
+  "official_pdf_links_on_allowlist": [
+    "https://www.bsesme.com/download/389631/SME_IPO%20Open/1.RHP_Riyaasat_12062026_Final_20260615201158.pdf"
   ],
-  "noise_stripped_bytes": 85495,
-  "main_content_bytes": 85495,
-  "tables_parsed": 11,
-  "table_rows_parsed": 73
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 84652,
+  "main_content_bytes": 84652,
+  "tables_parsed": 10,
+  "table_rows_parsed": 62
 }
