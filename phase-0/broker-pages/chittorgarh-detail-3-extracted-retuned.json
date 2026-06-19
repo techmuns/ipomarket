@@ -105,8 +105,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/turtlemint_fintech_anchorallocationreport.pdf"
   ],
-  "noise_stripped_bytes": 87214,
-  "main_content_bytes": 87214,
+  "noise_stripped_bytes": 87269,
+  "main_content_bytes": 87269,
   "tables_parsed": 10,
   "table_rows_parsed": 66
 }
