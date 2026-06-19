@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-06-18T14:32:19.336Z",
+  "generated_at_utc": "2026-06-19T08:39:50.293Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "riyaasat-lifestyle-ipo",
-    "url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
+    "slug": "turtlemint-fintech-solutions-ipo",
+    "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"18 - 22 Jun\" covers today",
-    "date_text": "18 - 22 Jun",
-    "source_list": "sme"
+    "reason": "current-open: list \"mainboard\" row date range \"19 - 23 Jun\" covers today",
+    "date_text": "19 - 23 Jun",
+    "source_list": "mainboard"
   },
   "per_detail": [
     {
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "riyaasat-lifestyle-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
+      "slug": "turtlemint-fintech-solutions-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
       "found_count_full": 10,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84652,
+      "main_content_bytes": 87269,
       "tables_parsed": 10,
-      "table_rows_parsed": 62,
+      "table_rows_parsed": 66,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -110,9 +110,9 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [
-        "https://www.bsesme.com/download/389631/SME_IPO%20Open/1.RHP_Riyaasat_12062026_Final_20260615201158.pdf"
+        "https://www.bseindia.com/corporates/download/362965/IPO%20Open/6RHP_20260617145031.pdf"
       ],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

@@ -1,5 +1,25 @@
 [
   {
+    "companyName": "Turtlemint Fintech Solutions Limited",
+    "issueEndDate": "23-Jun-2026",
+    "issuePrice": "Rs.144 to Rs.152",
+    "issueSize": "32901878",
+    "issueStartDate": "19-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TURTLEMINT"
+  },
+  {
+    "companyName": "Waterways Leisure Tourism Limited",
+    "issueEndDate": "25-Jun-2026",
+    "issuePrice": "Rs. 769 to Rs. 808 ",
+    "issueSize": "7607282",
+    "issueStartDate": "23-Jun-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "CORD"
+  },
+  {
     "companyName": "Advit Jewels Limited",
     "issueEndDate": "25-Jun-2026",
     "issuePrice": "Rs.130 to Rs.138",
@@ -8,15 +28,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "RAMBHAJO"
-  },
-  {
-    "companyName": "Turtlemint Fintech Solutions Limited",
-    "issueEndDate": "23-Jun-2026",
-    "issuePrice": "Rs.144 to Rs.152",
-    "issueSize": "60485318",
-    "issueStartDate": "19-Jun-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "TURTLEMINT"
   }
 ]

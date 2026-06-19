@@ -1,29 +1,41 @@
 [
   {
-    "companyName": "Hexagon Nutrition Limited",
-    "issueEndDate": "09-Jun-2026",
-    "issuePrice": "Rs.42 to Rs.45",
-    "issueSize": "21602008",
-    "issueStartDate": "05-Jun-2026",
+    "companyName": "Turtlemint Fintech Solutions Limited",
+    "issueEndDate": "23-Jun-2026",
+    "issuePrice": "Rs.144 to Rs.152",
+    "issueSize": "32901878",
+    "issueStartDate": "19-Jun-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "HEXAGON",
+    "symbol": "TURTLEMINT",
     "category": "Total",
-    "noOfSharesOffered": "2.1602008E7",
-    "noOfTime": "39.946142321584176",
-    "noOfsharesBid": "8.62916886E8",
+    "noOfSharesOffered": "3.2901878E7",
+    "noOfTime": "0.19808273558123338",
+    "noOfsharesBid": "6517294.0",
     "srNo": null
   },
   {
-    "companyName": "GenXAI Analytics Limited",
+    "companyName": "Avience Biomedicals Limited",
     "isBse": "1",
-    "issueEndDate": "09-Jun-2026",
-    "issueStartDate": "05-Jun-2026",
+    "issueEndDate": "22-Jun-2026",
+    "issueStartDate": "18-Jun-2026",
     "series": "SME",
     "status": "Active",
-    "symbol": "GENXAI",
-    "noOfsharesBid": "54548400",
-    "noOfSharesOffered": "3435600",
-    "noOfTime": "15.88"
+    "symbol": "AVIENCE",
+    "noOfsharesBid": "30444000",
+    "noOfSharesOffered": "1044000",
+    "noOfTime": "29.16"
+  },
+  {
+    "companyName": "Clay Craft India Limited",
+    "isBse": "1",
+    "issueEndDate": "19-Jun-2026",
+    "issueStartDate": "17-Jun-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "CLAYCRAFT",
+    "noOfsharesBid": "196518000",
+    "noOfSharesOffered": "3880200",
+    "noOfTime": "50.65"
   }
 ]

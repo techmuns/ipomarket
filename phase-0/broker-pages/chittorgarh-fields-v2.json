@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-18T14:32:19.336Z",
+  "captured_at_utc": "2026-06-19T08:39:50.293Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "riyaasat-lifestyle-ipo",
-    "url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
+    "slug": "turtlemint-fintech-solutions-ipo",
+    "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"18 - 22 Jun\" covers today",
-    "date_text": "18 - 22 Jun",
-    "source_list": "sme"
+    "reason": "current-open: list \"mainboard\" row date range \"19 - 23 Jun\" covers today",
+    "date_text": "19 - 23 Jun",
+    "source_list": "mainboard"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
-      "slug": "riyaasat-lifestyle-ipo"
+      "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
+      "slug": "turtlemint-fintech-solutions-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/riyaasat-lifestyle-ipo/2538/",
+      "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
       "mode": "static",
       "status": 200,
-      "bytes": 277338,
-      "title": "Riyaasat Lifestyle IPO Date, Price, GMP, Review, Details",
+      "bytes": 319313,
+      "title": "Turtlemint Fintech Solutions IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
