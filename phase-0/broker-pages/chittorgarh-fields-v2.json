@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-19T08:39:50.293Z",
+  "captured_at_utc": "2026-06-19T14:21:05.666Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352222,
+      "bytes": 351946,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
       "mode": "static",
       "status": 200,
-      "bytes": 319313,
+      "bytes": 319056,
       "title": "Turtlemint Fintech Solutions IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

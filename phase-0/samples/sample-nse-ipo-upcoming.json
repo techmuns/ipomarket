@@ -17,7 +17,7 @@
     "issueStartDate": "23-Jun-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "CORD"
+    "symbol": "CORDELIA"
   },
   {
     "companyName": "Advit Jewels Limited",
@@ -28,5 +28,17 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "RAMBHAJO"
+  },
+  {
+    "companyName": "Shreedhar Spinners Limited",
+    "issueEndDate": "25-Jun-2026",
+    "issuePrice": "Rs.51 to Rs.53",
+    "issueSize": "5788000",
+    "issueStartDate": "23-Jun-2026",
+    "lotSize": "2000",
+    "priceBand": "Rs.51 to Rs.53",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "SHREEDHAR"
   }
 ]

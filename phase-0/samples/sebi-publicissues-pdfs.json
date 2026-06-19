@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-19T08:39:50.293Z",
+  "captured_at_utc": "2026-06-19T14:21:05.666Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44479,
+      "bytes": 44374,
       "tr_count": 26,
       "pdfs_found": 15,
-      "notes": "static ok: tr=26, bytes=44479"
+      "notes": "static ok: tr=26, bytes=44374"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Jio%20Platforms%20Ltd_p.PDF",
+      "link_text": "Jio Platforms Ltd - Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/National%20Stock%20Exchange%20of%20India%20Ltd%20-%20Abridged_p.pdf",
       "link_text": "National Stock Exchange of India Ltd - Abridged Prospectus",
@@ -90,11 +95,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Expression%20360%20Services%20India%20Limited-Abridged%20Prospectus_p.pdf",
       "link_text": "Expression 360 Services India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/TC%20TERRYTEX%20LIMITED-Abridged%20Prospectus_p.pdf",
-      "link_text": "T.C. TERRYTEX LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

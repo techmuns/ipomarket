@@ -10,8 +10,8 @@
     "symbol": "TURTLEMINT",
     "category": "Total",
     "noOfSharesOffered": "3.2901878E7",
-    "noOfTime": "0.19808273558123338",
-    "noOfsharesBid": "6517294.0",
+    "noOfTime": "0.3067731270537202",
+    "noOfsharesBid": "1.0093412E7",
     "srNo": null
   },
   {
@@ -22,9 +22,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "AVIENCE",
-    "noOfsharesBid": "30444000",
+    "noOfsharesBid": "41722800",
     "noOfSharesOffered": "1044000",
-    "noOfTime": "29.16"
+    "noOfTime": "39.96"
   },
   {
     "companyName": "Clay Craft India Limited",
@@ -34,8 +34,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "CLAYCRAFT",
-    "noOfsharesBid": "196518000",
+    "noOfsharesBid": "372106800",
     "noOfSharesOffered": "3880200",
-    "noOfTime": "50.65"
+    "noOfTime": "95.90"
   }
 ]

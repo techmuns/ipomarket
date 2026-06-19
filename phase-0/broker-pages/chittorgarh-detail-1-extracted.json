@@ -12,12 +12,12 @@
       "source_snippet": "Aastha Spintex IPO"
     },
     "issue_size_cr": {
-      "value": "[.] shares (agg. up to ₹ 160 Cr)",
+      "value": "[.] shares (agg. up to ₹ 170 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "[.] shares (agg. up to ₹ 160 Cr)"
+      "source_snippet": "[.] shares (agg. up to ₹ 170 Cr)"
     },
     "price_band": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "[.]",
-      "found": false,
-      "confidence": "low",
-      "method": "table[0].row[1]-rejected",
-      "why_missing": "value '[.]' failed date validation (expected \"Mon DD, YYYY\" or similar)",
-      "source_snippet": "[.]"
+      "value": "Mon, Jul 6, 2026 T",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[1] label=\"Listing Date\"",
+      "why_missing": null,
+      "source_snippet": "Mon, Jul 6, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -76,24 +76,22 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": [
-        "https://nsearchives.nseindia.com/corporate/Registration_30092025233301_AasthaSpintexDRHP.pdf"
-      ],
-      "found": true,
-      "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
-      "why_missing": null,
-      "source_snippet": "https://nsearchives.nseindia.com/corporate/Registration_30092025233301_AasthaSpintexDRHP.pdf"
+      "value": null,
+      "found": false,
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://aasthaspintex.com/pdf/RHP/RHP_Aastha.pdf"
     }
   },
   "found_count": 3,
   "precision_ratio": 0.3,
-  "official_pdf_links_on_allowlist": [
-    "https://nsearchives.nseindia.com/corporate/Registration_30092025233301_AasthaSpintexDRHP.pdf"
+  "official_pdf_links_on_allowlist": [],
+  "official_pdf_links_off_allowlist": [
+    "https://aasthaspintex.com/pdf/RHP/RHP_Aastha.pdf"
   ],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 76696,
-  "main_content_bytes": 76696,
+  "noise_stripped_bytes": 79465,
+  "main_content_bytes": 79465,
   "tables_parsed": 8,
-  "table_rows_parsed": 47
+  "table_rows_parsed": 49
 }

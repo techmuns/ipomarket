@@ -1,9 +1,10 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 4,
+  "valid": 4,
   "examples": {
     "Turtlemint Fintech Solutions Limited": "TURTLEMINT",
-    "Waterways Leisure Tourism Limited": "CORD",
-    "Advit Jewels Limited": "RAMBHAJO"
+    "Waterways Leisure Tourism Limited": "CORDELIA",
+    "Advit Jewels Limited": "RAMBHAJO",
+    "Shreedhar Spinners Limited": "SHREEDHAR"
   }
 }
