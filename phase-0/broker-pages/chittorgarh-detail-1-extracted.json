@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://aasthaspintex.com/pdf/RHP/RHP_Aastha.pdf"
   ],
-  "noise_stripped_bytes": 79752,
-  "main_content_bytes": 79752,
+  "noise_stripped_bytes": 79807,
+  "main_content_bytes": 79807,
   "tables_parsed": 8,
   "table_rows_parsed": 49
 }

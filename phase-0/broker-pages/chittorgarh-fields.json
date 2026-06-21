@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-21T08:08:26.638Z",
+  "captured_at_utc": "2026-06-21T13:18:13.822Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147234,
+      "bytes": 148730,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "mode": "static",
       "status": 200,
-      "bytes": 263637,
+      "bytes": 263913,
       "title": "Aastha Spintex IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
       "mode": "static",
       "status": 200,
-      "bytes": 283274,
+      "bytes": 282998,
       "title": "CSM Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
