@@ -12,28 +12,28 @@
       "source_snippet": "Aastha Spintex IPO"
     },
     "issue_size_cr": {
-      "value": "[.] shares (agg. up to ₹ 170 Cr)",
-      "found": true,
-      "confidence": "high",
-      "method": "table[1].row[0] label=\"Total Issue Size\"",
-      "why_missing": null,
-      "source_snippet": "[.] shares (agg. up to ₹ 170 Cr)"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
+      "source_snippet": null
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹126 to ₹136",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹126 to ₹136"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "110 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "110 Shares"
     },
     "open_date": {
       "value": null,
@@ -84,14 +84,14 @@
       "source_snippet": "https://aasthaspintex.com/pdf/RHP/RHP_Aastha.pdf"
     }
   },
-  "found_count": 3,
-  "precision_ratio": 0.3,
+  "found_count": 4,
+  "precision_ratio": 0.4,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
     "https://aasthaspintex.com/pdf/RHP/RHP_Aastha.pdf"
   ],
-  "noise_stripped_bytes": 79971,
-  "main_content_bytes": 79971,
+  "noise_stripped_bytes": 82270,
+  "main_content_bytes": 82270,
   "tables_parsed": 8,
-  "table_rows_parsed": 50
+  "table_rows_parsed": 53
 }

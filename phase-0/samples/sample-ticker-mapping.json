@@ -1,10 +1,12 @@
 {
-  "total": 4,
-  "valid": 4,
+  "total": 6,
+  "valid": 6,
   "examples": {
     "Turtlemint Fintech Solutions Limited": "TURTLEMINT",
+    "CSM Technologies Limited": "CSM",
     "Waterways Leisure Tourism Limited": "CORDELIA",
     "Advit Jewels Limited": "RAMBHAJO",
+    "IC Electricals Company Limited": "ICEL",
     "Shreedhar Spinners Limited": "SHREEDHAR"
   }
 }
