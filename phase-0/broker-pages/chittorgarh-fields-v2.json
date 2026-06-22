@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-21T20:45:59.308Z",
+  "captured_at_utc": "2026-06-22T09:20:31.826Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 327417,
+      "bytes": 327331,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
       "mode": "static",
       "status": 200,
-      "bytes": 319331,
+      "bytes": 319335,
       "title": "Turtlemint Fintech Solutions IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
