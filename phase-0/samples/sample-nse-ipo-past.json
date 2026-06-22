@@ -1,5 +1,25 @@
 [
   {
+    "companyName": "Advit Jewels Limited",
+    "issueEndDate": "25-Jun-2026",
+    "issuePrice": "Rs.130 to Rs.138",
+    "issueSize": "8379300",
+    "issueStartDate": "23-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "RAMBHAJO"
+  },
+  {
+    "companyName": "Waterways Leisure Tourism Limited",
+    "issueEndDate": "25-Jun-2026",
+    "issuePrice": "Rs.769 to Rs.808 ",
+    "issueSize": "4184004",
+    "issueStartDate": "23-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "CORDELIA"
+  },
+  {
     "companyName": "Turtlemint Fintech Solutions Limited",
     "issueEndDate": "23-Jun-2026",
     "issuePrice": "Rs.144 to Rs.152",
@@ -20,26 +40,6 @@
     "symbol": "CSM"
   },
   {
-    "companyName": "Waterways Leisure Tourism Limited",
-    "issueEndDate": "25-Jun-2026",
-    "issuePrice": "Rs.769 to Rs.808 ",
-    "issueSize": "4184004",
-    "issueStartDate": "23-Jun-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "CORDELIA"
-  },
-  {
-    "companyName": "Advit Jewels Limited",
-    "issueEndDate": "25-Jun-2026",
-    "issuePrice": "Rs.130 to Rs.138",
-    "issueSize": "8379300",
-    "issueStartDate": "23-Jun-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "RAMBHAJO"
-  },
-  {
     "companyName": "IC Electricals Company Limited",
     "issueEndDate": "30-Jun-2026",
     "issuePrice": "Rs.94 to Rs.99",
@@ -50,17 +50,5 @@
     "series": "SME",
     "status": "Forthcoming",
     "symbol": "ICEL"
-  },
-  {
-    "companyName": "Shreedhar Spinners Limited",
-    "issueEndDate": "25-Jun-2026",
-    "issuePrice": "Rs.51 to Rs.53",
-    "issueSize": "4170000",
-    "issueStartDate": "23-Jun-2026",
-    "lotSize": "2000",
-    "priceBand": "Rs.51 to Rs.53",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "SHREEDHAR"
   }
 ]

@@ -1,5 +1,35 @@
 [
   {
+    "companyName": "Advit Jewels Limited",
+    "issueEndDate": "25-Jun-2026",
+    "issuePrice": "Rs.130 to Rs.138",
+    "issueSize": "8379300",
+    "issueStartDate": "23-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "RAMBHAJO",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Waterways Leisure Tourism Limited",
+    "issueEndDate": "25-Jun-2026",
+    "issuePrice": "Rs.769 to Rs.808 ",
+    "issueSize": "4184004",
+    "issueStartDate": "23-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "CORDELIA",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Turtlemint Fintech Solutions Limited",
     "issueEndDate": "23-Jun-2026",
     "issuePrice": "Rs.144 to Rs.152",
@@ -15,15 +45,15 @@
     "srNo": null
   },
   {
-    "companyName": "Avience Biomedicals Limited",
+    "companyName": "Shreedhar Spinners Limited",
     "isBse": "1",
-    "issueEndDate": "22-Jun-2026",
-    "issueStartDate": "18-Jun-2026",
+    "issueEndDate": "25-Jun-2026",
+    "issueStartDate": "23-Jun-2026",
     "series": "SME",
     "status": "Active",
-    "symbol": "AVIENCE",
-    "noOfsharesBid": "370680000",
-    "noOfSharesOffered": "1044000",
-    "noOfTime": "355.06"
+    "symbol": "SHREEDHAR",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4170000",
+    "noOfTime": ""
   }
 ]

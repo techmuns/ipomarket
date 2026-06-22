@@ -1,12 +1,11 @@
 {
-  "totalIssues": 6,
+  "totalIssues": 5,
   "resolved": 0,
   "examples": {
+    "Advit Jewels Limited": null,
+    "Waterways Leisure Tourism Limited": null,
     "Turtlemint Fintech Solutions Limited": null,
     "CSM Technologies Limited": null,
-    "Waterways Leisure Tourism Limited": null,
-    "Advit Jewels Limited": null,
-    "IC Electricals Company Limited": null,
-    "Shreedhar Spinners Limited": null
+    "IC Electricals Company Limited": null
   }
 }
