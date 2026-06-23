@@ -33,7 +33,7 @@
     "companyName": "CSM Technologies Limited",
     "issueEndDate": "29-Jun-2026",
     "issuePrice": "Rs.107 to Rs.113 ",
-    "issueSize": "12901000",
+    "issueSize": "11130880",
     "issueStartDate": "24-Jun-2026",
     "series": "EQ",
     "status": "Forthcoming",
@@ -50,5 +50,17 @@
     "series": "SME",
     "status": "Forthcoming",
     "symbol": "ICEL"
+  },
+  {
+    "companyName": "Sri Priyanka Geo Commex Limited",
+    "issueEndDate": "29-Jun-2026",
+    "issuePrice": "Rs.207 to Rs.212",
+    "issueSize": "4458000",
+    "issueStartDate": "24-Jun-2026",
+    "lotSize": "600",
+    "priceBand": "Rs.207 to Rs.212",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "SPGCL"
   }
 ]

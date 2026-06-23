@@ -10,8 +10,8 @@
     "symbol": "RAMBHAJO",
     "category": "Total",
     "noOfSharesOffered": "8379300.0",
-    "noOfTime": "2.7725227644313963",
-    "noOfsharesBid": "2.32318E7",
+    "noOfTime": "6.6827539293258384",
+    "noOfsharesBid": "5.59968E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "CORDELIA",
     "category": "Total",
     "noOfSharesOffered": "4184004.0",
-    "noOfTime": "0.060668202038047764",
-    "noOfsharesBid": "253836.0",
+    "noOfTime": "0.13752090103164338",
+    "noOfsharesBid": "575388.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "TURTLEMINT",
     "category": "Total",
     "noOfSharesOffered": "3.2901878E7",
-    "noOfTime": "0.3841082870710298",
-    "noOfsharesBid": "1.2637884E7",
+    "noOfTime": "0.7128869665129753",
+    "noOfsharesBid": "2.345532E7",
     "srNo": null
   },
   {
@@ -52,8 +52,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SHREEDHAR",
-    "noOfsharesBid": "554000",
+    "noOfsharesBid": "2030000",
     "noOfSharesOffered": "4170000",
-    "noOfTime": "0.13"
+    "noOfTime": "0.49"
   }
 ]
