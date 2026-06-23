@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-22T21:36:02.461Z",
+  "captured_at_utc": "2026-06-23T06:58:34.564Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "turtlemint-fintech-solutions-ipo",
-    "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
+    "slug": "advit-jewels-ipo",
+    "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"19 - 23 Jun\" covers today",
-    "date_text": "19 - 23 Jun",
+    "reason": "current-open: list \"mainboard\" row date range \"23 - 25 Jun\" covers today",
+    "date_text": "23 - 25 Jun",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
-      "slug": "turtlemint-fintech-solutions-ipo"
+      "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+      "slug": "advit-jewels-ipo"
     }
   ],
   "details": [
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 351946,
+      "bytes": 352265,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
+      "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
       "mode": "static",
       "status": 200,
-      "bytes": 319337,
-      "title": "Turtlemint Fintech Solutions IPO Date, Price, GMP, Details",
+      "bytes": 312974,
+      "title": "Advit Jewels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

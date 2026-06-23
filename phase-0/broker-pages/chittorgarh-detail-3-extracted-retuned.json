@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
-  "slug": "turtlemint-fintech-solutions-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+  "slug": "advit-jewels-ipo",
   "fields": {
     "company_name": {
-      "value": "Turtlemint Fintech Solutions IPO",
+      "value": "Advit Jewels IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Turtlemint Fintech Solutions IPO"
+      "source_snippet": "Advit Jewels IPO"
     },
     "issue_size_cr": {
-      "value": "5,80,70,398 shares (agg. up to ₹ 883 Cr)",
+      "value": "1,19,68,000 shares (agg. up to ₹ 165 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "5,80,70,398 shares (agg. up to ₹ 883 Cr)"
+      "source_snippet": "1,19,68,000 shares (agg. up to ₹ 165 Cr)"
     },
     "price_band": {
-      "value": "₹144 to ₹152",
+      "value": "₹130 to ₹138",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹144 to ₹152"
+      "source_snippet": "₹130 to ₹138"
     },
     "lot_size": {
-      "value": "98 Shares",
+      "value": "100 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "98 Shares"
+      "source_snippet": "100 Shares"
     },
     "face_value": {
-      "value": "₹ 1 per share",
+      "value": "₹ 10 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 1 per share"
+      "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-06-19",
+      "value": "2026-06-23",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"19 to 23 Jun, 2026\" → start=2026-06-19"
+      "source_snippet": "raw=\"23 to 25 Jun, 2026\" → start=2026-06-23"
     },
     "close_date": {
-      "value": "2026-06-23",
+      "value": "2026-06-25",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"19 to 23 Jun, 2026\" → end=2026-06-23"
+      "source_snippet": "raw=\"23 to 25 Jun, 2026\" → end=2026-06-25"
     },
     "listing_date": {
-      "value": "2026-06-29",
+      "value": "2026-07-01",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Mon, Jun 29, 2026 T\" → 2026-06-29"
+      "source_snippet": "raw=\"Wed, Jul 1, 2026 T\" → 2026-07-01"
     },
     "registrar": {
-      "value": "Kfin Technologies Ltd.",
+      "value": "Bigshare Services Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 04067162222, 04079611000 turtlemint.ipo@kfintech.com <i class=\"fa fa\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. +91-22-6263 8200 ipo@bigshareonline.com <\" → \"Bigshare Services Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -85,28 +85,24 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": [
-        "https://www.bseindia.com/corporates/download/362965/IPO%20Open/6RHP_20260617145031.pdf"
-      ],
-      "found": true,
-      "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
-      "why_missing": null,
-      "source_snippet": "https://www.bseindia.com/corporates/download/362965/IPO%20Open/6RHP_20260617145031.pdf"
+      "value": null,
+      "found": false,
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list",
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/advit-jewels-anchor-report.pdf"
     }
   },
-  "found_count_full": 10,
+  "found_count_full": 9,
   "found_count_narrow": 5,
-  "precision_ratio_full": 0.9090909090909091,
+  "precision_ratio_full": 0.8181818181818182,
   "precision_ratio_narrow": 1,
-  "official_pdf_links_on_allowlist": [
-    "https://www.bseindia.com/corporates/download/362965/IPO%20Open/6RHP_20260617145031.pdf"
-  ],
+  "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/turtlemint_fintech_anchorallocationreport.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/advit-jewels-anchor-report.pdf"
   ],
-  "noise_stripped_bytes": 87269,
-  "main_content_bytes": 87269,
-  "tables_parsed": 10,
-  "table_rows_parsed": 66
+  "noise_stripped_bytes": 91835,
+  "main_content_bytes": 91835,
+  "tables_parsed": 11,
+  "table_rows_parsed": 72
 }

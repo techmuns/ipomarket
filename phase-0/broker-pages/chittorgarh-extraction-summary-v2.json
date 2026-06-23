@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-06-22T21:36:02.461Z",
+  "generated_at_utc": "2026-06-23T06:58:34.564Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.848,
+  "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "turtlemint-fintech-solutions-ipo",
-    "url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
+    "slug": "advit-jewels-ipo",
+    "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"19 - 23 Jun\" covers today",
-    "date_text": "19 - 23 Jun",
+    "reason": "current-open: list \"mainboard\" row date range \"23 - 25 Jun\" covers today",
+    "date_text": "23 - 25 Jun",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93516,
+      "main_content_bytes": 93572,
       "tables_parsed": 13,
       "table_rows_parsed": 87,
       "fields_high_confidence": [
@@ -82,36 +82,35 @@
     },
     {
       "index": 3,
-      "slug": "turtlemint-fintech-solutions-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
-      "found_count_full": 10,
+      "slug": "advit-jewels-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+      "found_count_full": 9,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.909,
+      "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 87269,
-      "tables_parsed": 10,
-      "table_rows_parsed": 66,
+      "main_content_bytes": 91835,
+      "tables_parsed": 11,
+      "table_rows_parsed": 72,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
-        "listing_date",
-        "official_pdf_links"
+        "listing_date"
       ],
       "fields_medium_confidence": [
         "open_date",
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [],
+      "fields_rejected_low_confidence": [
+        "official_pdf_links"
+      ],
       "fields_missing": [
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [
-        "https://www.bseindia.com/corporates/download/362965/IPO%20Open/6RHP_20260617145031.pdf"
-      ],
+      "official_pdf_links_on_allowlist": [],
       "official_pdf_links_off_allowlist_count": 1
     }
   ]
