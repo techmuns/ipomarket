@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "CSM Technologies Limited",
+    "issueEndDate": "29-Jun-2026",
+    "issuePrice": "Rs.107 to Rs.113 ",
+    "issueSize": "11130880",
+    "issueStartDate": "24-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "CSM",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Advit Jewels Limited",
     "issueEndDate": "25-Jun-2026",
     "issuePrice": "Rs.130 to Rs.138",
@@ -30,19 +45,16 @@
     "srNo": null
   },
   {
-    "companyName": "Turtlemint Fintech Solutions Limited",
-    "issueEndDate": "23-Jun-2026",
-    "issuePrice": "Rs.144 to Rs.152",
-    "issueSize": "32901878",
-    "issueStartDate": "19-Jun-2026",
-    "series": "EQ",
+    "companyName": "Sri Priyanka Geo Commex Limited",
+    "isBse": "1",
+    "issueEndDate": "29-Jun-2026",
+    "issueStartDate": "24-Jun-2026",
+    "series": "SME",
     "status": "Active",
-    "symbol": "TURTLEMINT",
-    "category": "Total",
-    "noOfSharesOffered": "3.2901878E7",
-    "noOfTime": "0.7128869665129753",
-    "noOfsharesBid": "2.345532E7",
-    "srNo": null
+    "symbol": "SPGCL",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4458000",
+    "noOfTime": ""
   },
   {
     "companyName": "Shreedhar Spinners Limited",

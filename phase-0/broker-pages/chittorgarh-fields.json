@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-23T13:47:03.299Z",
+  "captured_at_utc": "2026-06-23T21:06:56.738Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
       "mode": "static",
       "status": 200,
-      "bytes": 288750,
+      "bytes": 295453,
       "title": "CSM Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

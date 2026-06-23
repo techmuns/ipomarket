@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "CSM Technologies Limited",
+    "issueEndDate": "29-Jun-2026",
+    "issuePrice": "Rs.107 to Rs.113 ",
+    "issueSize": "11130880",
+    "issueStartDate": "24-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "CSM"
+  },
+  {
     "companyName": "Advit Jewels Limited",
     "issueEndDate": "25-Jun-2026",
     "issuePrice": "Rs.130 to Rs.138",
@@ -26,18 +36,8 @@
     "issueSize": "32901878",
     "issueStartDate": "19-Jun-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "TURTLEMINT"
-  },
-  {
-    "companyName": "CSM Technologies Limited",
-    "issueEndDate": "29-Jun-2026",
-    "issuePrice": "Rs.107 to Rs.113 ",
-    "issueSize": "11130880",
-    "issueStartDate": "24-Jun-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "CSM"
   },
   {
     "companyName": "IC Electricals Company Limited",
@@ -50,17 +50,5 @@
     "series": "SME",
     "status": "Forthcoming",
     "symbol": "ICEL"
-  },
-  {
-    "companyName": "Sri Priyanka Geo Commex Limited",
-    "issueEndDate": "29-Jun-2026",
-    "issuePrice": "Rs.207 to Rs.212",
-    "issueSize": "4458000",
-    "issueStartDate": "24-Jun-2026",
-    "lotSize": "600",
-    "priceBand": "Rs.207 to Rs.212",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "SPGCL"
   }
 ]
