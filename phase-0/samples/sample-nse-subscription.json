@@ -10,8 +10,8 @@
     "symbol": "CSM",
     "category": "Total",
     "noOfSharesOffered": "1.113088E7",
-    "noOfTime": "0.11026405818767249",
-    "noOfsharesBid": "1227336.0",
+    "noOfTime": "0.19239880404783807",
+    "noOfsharesBid": "2141568.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "RAMBHAJO",
     "category": "Total",
     "noOfSharesOffered": "8379300.0",
-    "noOfTime": "14.650197510531907",
-    "noOfsharesBid": "1.227584E8",
+    "noOfTime": "26.94531762796415",
+    "noOfsharesBid": "2.257829E8",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "CORDELIA",
     "category": "Total",
     "noOfSharesOffered": "4184004.0",
-    "noOfTime": "0.25374210923316515",
-    "noOfsharesBid": "1061658.0",
+    "noOfTime": "0.3744848236282757",
+    "noOfsharesBid": "1566846.0",
     "srNo": null
   },
   {
@@ -52,9 +52,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SPGCL",
-    "noOfsharesBid": "26400",
+    "noOfsharesBid": "457800",
     "noOfSharesOffered": "4458000",
-    "noOfTime": "0.01"
+    "noOfTime": "0.10"
   },
   {
     "companyName": "Shreedhar Spinners Limited",
@@ -64,8 +64,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SHREEDHAR",
-    "noOfsharesBid": "2282000",
+    "noOfsharesBid": "5278000",
     "noOfSharesOffered": "4170000",
-    "noOfTime": "0.55"
+    "noOfTime": "1.27"
   }
 ]
