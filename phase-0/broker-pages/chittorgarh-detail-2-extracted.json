@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
+  "source_url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
   "fields": {
     "company_name": {
-      "value": "CSM Technologies IPO",
+      "value": "Aastha Spintex IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "CSM Technologies IPO"
+      "source_snippet": "Aastha Spintex IPO"
     },
     "issue_size_cr": {
-      "value": "1,29,01,000 shares (agg. up to ₹ 146 Cr)",
+      "value": "1,25,00,000 shares (agg. up to ₹ 170 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,29,01,000 shares (agg. up to ₹ 146 Cr)"
+      "source_snippet": "1,25,00,000 shares (agg. up to ₹ 170 Cr)"
     },
     "price_band": {
-      "value": "₹107 to ₹113",
+      "value": "₹125 to ₹136",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹107 to ₹113"
+      "source_snippet": "₹125 to ₹136"
     },
     "lot_size": {
-      "value": "132 Shares",
+      "value": "110 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "132 Shares"
+      "source_snippet": "110 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Thu, Jul 2, 2026 T",
+      "value": "Mon, Jul 6, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Thu, Jul 2, 2026 T"
+      "source_snippet": "Mon, Jul 6, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,18 +78,20 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no .pdf href found in the captured HTML",
-      "source_snippet": null
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://aasthaspintex.com/pdf/RHP/RHP_Aastha.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 87121,
-  "main_content_bytes": 87121,
-  "tables_parsed": 11,
-  "table_rows_parsed": 65
+  "official_pdf_links_off_allowlist": [
+    "https://aasthaspintex.com/pdf/RHP/RHP_Aastha.pdf"
+  ],
+  "noise_stripped_bytes": 85508,
+  "main_content_bytes": 85508,
+  "tables_parsed": 9,
+  "table_rows_parsed": 60
 }

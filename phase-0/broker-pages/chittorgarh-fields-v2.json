@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-23T21:06:56.738Z",
+  "captured_at_utc": "2026-06-24T06:56:15.737Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "advit-jewels-ipo",
-    "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+    "slug": "csm-technologies-ipo",
+    "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"23 - 25 Jun\" covers today",
-    "date_text": "23 - 25 Jun",
+    "reason": "current-open: list \"mainboard\" row date range \"24 - 29 Jun\" covers today",
+    "date_text": "24 - 29 Jun",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
-      "slug": "advit-jewels-ipo"
+      "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
+      "slug": "csm-technologies-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+      "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
       "mode": "static",
       "status": 200,
-      "bytes": 312986,
-      "title": "Advit Jewels IPO Date, Price, GMP, Review, Details",
+      "bytes": 312665,
+      "title": "CSM Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

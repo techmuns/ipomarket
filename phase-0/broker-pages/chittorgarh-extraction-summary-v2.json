@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-06-23T21:06:56.738Z",
+  "generated_at_utc": "2026-06-24T06:56:15.737Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "advit-jewels-ipo",
-    "url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+    "slug": "csm-technologies-ipo",
+    "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"23 - 25 Jun\" covers today",
-    "date_text": "23 - 25 Jun",
+    "reason": "current-open: list \"mainboard\" row date range \"24 - 29 Jun\" covers today",
+    "date_text": "24 - 29 Jun",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "advit-jewels-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
+      "slug": "csm-technologies-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 91835,
-      "tables_parsed": 11,
-      "table_rows_parsed": 72,
+      "main_content_bytes": 91470,
+      "tables_parsed": 12,
+      "table_rows_parsed": 77,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

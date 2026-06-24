@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-23T21:06:56.738Z",
+  "captured_at_utc": "2026-06-24T06:56:15.737Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148380,
+      "bytes": 147594,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149577,
+      "bytes": 150000,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
     "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
     "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
     "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/central-mine-planning-design-institute-ipo/2456/",
     "https://www.chittorgarh.com/ipo/gsp-crop-ipo/2031/",
     "https://www.chittorgarh.com/ipo/raajmarg-infra-investment-trust-ipo/2863/",
-    "https://www.chittorgarh.com/ipo/innovision-limited-ipo/2039/",
-    "https://www.chittorgarh.com/ipo/rajputana-stainless-ipo/2067/"
+    "https://www.chittorgarh.com/ipo/innovision-limited-ipo/2039/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
+      "url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
+      "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
+      "url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
       "mode": "static",
       "status": 200,
-      "bytes": 284036,
-      "title": "Aastha Spintex IPO Date, Price, GMP, Review, Details",
+      "bytes": 273292,
+      "title": "Knack Packaging IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
+      "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "mode": "static",
       "status": 200,
-      "bytes": 295453,
-      "title": "CSM Technologies IPO Date, Price, GMP, Review, Details",
+      "bytes": 284036,
+      "title": "Aastha Spintex IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
