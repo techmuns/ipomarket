@@ -38,17 +38,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "AASTHA"
-  },
-  {
-    "companyName": "IC Electricals Company Limited-Issue postponed",
-    "issueEndDate": "30-Jun-2026",
-    "issuePrice": "Rs.94 to Rs.99",
-    "issueSize": "4839600",
-    "issueStartDate": "25-Jun-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.94 to Rs.99",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "ICEL"
   }
 ]

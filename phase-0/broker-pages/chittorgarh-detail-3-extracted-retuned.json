@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/cms-technologies-anchor-investor-list.pdf"
   ],
-  "noise_stripped_bytes": 91415,
-  "main_content_bytes": 91415,
+  "noise_stripped_bytes": 91470,
+  "main_content_bytes": 91470,
   "tables_parsed": 12,
   "table_rows_parsed": 77
 }
