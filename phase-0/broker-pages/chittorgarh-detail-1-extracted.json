@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://knackpackaging.com/INV/KnackPackagingLimited-RHP.pdf"
   ],
-  "noise_stripped_bytes": 82180,
-  "main_content_bytes": 82180,
+  "noise_stripped_bytes": 82828,
+  "main_content_bytes": 82828,
   "tables_parsed": 10,
-  "table_rows_parsed": 59
+  "table_rows_parsed": 60
 }

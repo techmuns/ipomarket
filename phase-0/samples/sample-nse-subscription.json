@@ -15,36 +15,6 @@
     "srNo": null
   },
   {
-    "companyName": "Waterways Leisure Tourism Limited",
-    "issueEndDate": "25-Jun-2026",
-    "issuePrice": "Rs.769 to Rs.808 ",
-    "issueSize": "4184004",
-    "issueStartDate": "23-Jun-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "CORDELIA",
-    "category": "Total",
-    "noOfSharesOffered": "4184004.0",
-    "noOfTime": "1.0854970501940246",
-    "noOfsharesBid": "4541724.0",
-    "srNo": null
-  },
-  {
-    "companyName": "Advit Jewels Limited",
-    "issueEndDate": "25-Jun-2026",
-    "issuePrice": "Rs.130 to Rs.138",
-    "issueSize": "8379300",
-    "issueStartDate": "23-Jun-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "RAMBHAJO",
-    "category": "Total",
-    "noOfSharesOffered": "8379300.0",
-    "noOfTime": "143.042354373277",
-    "noOfsharesBid": "1.1985948E9",
-    "srNo": null
-  },
-  {
     "companyName": "IC Electricals Company Limited-Issue postponed",
     "isBse": "1",
     "issueEndDate": "30-Jun-2026",
@@ -67,17 +37,5 @@
     "noOfsharesBid": "1390800",
     "noOfSharesOffered": "4458000",
     "noOfTime": "0.31"
-  },
-  {
-    "companyName": "Shreedhar Spinners Limited",
-    "isBse": "1",
-    "issueEndDate": "25-Jun-2026",
-    "issueStartDate": "23-Jun-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "SHREEDHAR",
-    "noOfsharesBid": "25742000",
-    "noOfSharesOffered": "4170000",
-    "noOfTime": "6.17"
   }
 ]
