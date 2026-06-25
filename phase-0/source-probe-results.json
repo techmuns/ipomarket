@@ -31,8 +31,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary source for Live & Upcoming tab.",
     "fallback_source": "P-06",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 282,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 315,
     "notes": "Total rows: 4, Active rows: 3"
   },
   {
@@ -67,8 +67,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Upcoming/Pipeline tab.",
     "fallback_source": "P-08b",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 221,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 24,
     "notes": "Total rows: 4, Forthcoming/upcoming rows: 1"
   },
   {
@@ -105,8 +105,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Recently Listed.",
     "fallback_source": "P-15",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 23,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 42,
     "notes": "Total rows: 4, Past/closed/listed rows: 0"
   },
   {
@@ -131,7 +131,7 @@
       "anchor",
       "subscription"
     ],
-    "sample_record": "[\n  {\n    \"companyName\": \"CSM Technologies Limited\",\n    \"issueEndDate\": \"29-Jun-2026\",\n    \"issuePrice\": \"Rs.107 to Rs.113 \",\n    \"issueSize\": \"11130880\",\n    \"issueStartDate\": \"24-Jun-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"CSM\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"1.113088E7\",\n    \"noOfTime\": \"0.19239880404783807\",\n    \"noOfsharesBid\": \"2141568.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Advit Jewels Limited\",\n    \"issueEndDate\": \"25-Jun-2026\",\n    \"issuePrice\": \"Rs.130 to Rs.138\",\n    \"issueSize\": \"8379300\",\n    \"issueStartDate\": \"23-Jun-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"RAMBHAJO\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"8379300.0\",\n    \"noOfTime\": \"26.94531762796415\",\n    \"noOfsharesBid\": \"2.2578…[truncated, total 2192 chars]",
+    "sample_record": "[\n  {\n    \"companyName\": \"CSM Technologies Limited\",\n    \"issueEndDate\": \"29-Jun-2026\",\n    \"issuePrice\": \"Rs.107 to Rs.113 \",\n    \"issueSize\": \"11130880\",\n    \"issueStartDate\": \"24-Jun-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"CSM\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"1.113088E7\",\n    \"noOfTime\": \"0.2770120601425943\",\n    \"noOfsharesBid\": \"3083388.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Advit Jewels Limited\",\n    \"issueEndDate\": \"25-Jun-2026\",\n    \"issuePrice\": \"Rs.130 to Rs.138\",\n    \"issueSize\": \"8379300\",\n    \"issueStartDate\": \"23-Jun-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"RAMBHAJO\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"8379300.0\",\n    \"noOfTime\": \"65.97452054467557\",\n    \"noOfsharesBid\": \"5.52820…[truncated, total 2191 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -139,8 +139,8 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE bidding (P-07).",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 317,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 381,
     "notes": "Active candidate symbol: CSM · Top-level keys: 0, 1, 2, 3, 4, 5"
   },
   {
@@ -168,8 +168,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 992,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 1317,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -197,8 +197,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 2914,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 2178,
     "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=44374 (pdfs=15)"
   },
   {
@@ -225,8 +225,8 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 343,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 431,
     "notes": "static ok: tbody_rows=3, bytes=25761"
   },
   {
@@ -254,8 +254,8 @@
     "status": "GREEN",
     "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 3603,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 3667,
     "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=in/sebi_data/commondocs/jun-2026/Jio%20Platforms%20Ltd_p.PDF; bytes=642980; page_count=13; pdf-parse=ok"
   },
   {
@@ -282,8 +282,8 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 11200,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 11098,
     "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
@@ -302,7 +302,7 @@
       "f1"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"CurrDate\": \"Wed Jun 24 2026 16:01:38\",\n  \"PrevClose\": \"1309.3\",\n  \"LowVal\": \"1290\",\n  \"HighVal\": \"1330\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1313.70\",\n  \"CurrTime\": \"16:01\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"1500000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Wed Jun 24 2026 16:01:38\\\",\\\"vale1\\\":\\\"1313.70\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Wed Jun 24 2026 16:00:04\\\",\\\"vale1\\\":\\\"1313.70\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Wed Jun 24 2026 15:59:54\\\",\\\"vale1\\\":\\\"1313.70\\\",\\\"vole\\\":\\\"15\\\"},{\\\"dttm\\\":\\\"Wed Jun 24 2026 15:56:27\\\",\\\"vale1\\\":\\\"1313.70\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Wed Jun 24 2026 15:53:11\\\",\\\"vale1\\\":\\\"1313.70\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Wed Jun 24 2026 15:52:37\\\",\\\"vale1\\\":\\\"1313.70\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Wed Jun 24 2026 15:51:57\\\",\\\"vale1\\\":\\\"1313.70\\\",\\\"vole\\\":\\\"144\\\"},{\\\"dttm\\\":\\\"Wed Jun 2…[truncated, total 31248 chars]",
+    "sample_record": "{\n  \"CurrDate\": \"Thu Jun 25 2026 12:25:59\",\n  \"PrevClose\": \"1313.7\",\n  \"LowVal\": \"1310\",\n  \"HighVal\": \"1330\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1319.80\",\n  \"CurrTime\": \"12:25\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"50000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Thu Jun 25 2026 12:25:59\\\",\\\"vale1\\\":\\\"1319.80\\\",\\\"vole\\\":\\\"6240\\\"},{\\\"dttm\\\":\\\"Thu Jun 25 2026 12:24:59\\\",\\\"vale1\\\":\\\"1320.50\\\",\\\"vole\\\":\\\"3749\\\"},{\\\"dttm\\\":\\\"Thu Jun 25 2026 12:23:59\\\",\\\"vale1\\\":\\\"1320.40\\\",\\\"vole\\\":\\\"720\\\"},{\\\"dttm\\\":\\\"Thu Jun 25 2026 12:22:59\\\",\\\"vale1\\\":\\\"1321.65\\\",\\\"vole\\\":\\\"6173\\\"},{\\\"dttm\\\":\\\"Thu Jun 25 2026 12:21:59\\\",\\\"vale1\\\":\\\"1321.60\\\",\\\"vole\\\":\\\"784\\\"},{\\\"dttm\\\":\\\"Thu Jun 25 2026 12:20:59\\\",\\\"vale1\\\":\\\"1322.15\\\",\\\"vole\\\":\\\"4207\\\"},{\\\"dttm\\\":\\\"Thu Jun 25 2026 12:19:59\\\",\\\"vale1\\\":\\\"1322.95\\\",\\\"vole\\\":\\\"11073\\\"},{\\\"dtt…[truncated, total 15440 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -310,9 +310,9 @@
     "status": "GREEN",
     "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 4495,
-    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [bse:RELIANCE] BSE rows=26317, fields=1"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 3889,
+    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22095 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22095 chars] ; [bse:RELIANCE] BSE rows=12911, fields=1"
   },
   {
     "probe_id": "P-15b",
@@ -331,7 +331,7 @@
     "fields_missing": [
       "priceInfo"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;885ed617&#46;1782334562&#46;263bc27b\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;885ed617&#46;1782334562&#46;263bc27b</P>\n</BODY>\n</HTML>\n",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;496adc17&#46;1782370566&#46;1cc64e1\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;496adc17&#46;1782370566&#46;1cc64e1</P>\n</BODY>\n</HTML>\n",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -339,9 +339,9 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE quote.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 19,
-    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 35,
+    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 397 chars]"
   },
   {
     "probe_id": "P-16",
@@ -367,8 +367,8 @@
     "status": "GREEN",
     "recommended_action": "Deterministic mapping; no manual override file needed for v1.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 19,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 31,
     "notes": "total=4, validSymbolPattern=4, rate=100%"
   },
   {
@@ -386,7 +386,7 @@
     "fields_missing": [
       "issue rows"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\" data-critters-container=\"\"><head>\n    <meta charset=\"utf-8\">\n    <title>\n      LIVE Stock/Share Market | Indian Stock/Share Market LIVE | BSE SENSEX | BSE (formerly Bombay Stock\n      Exchange)\n    </title>\n    <meta name=\"description\" content=\"BSE SENSEX - India's Index the World Tracks. Get live BSE SENSEX quotes. BSE Sensex Heat Map a great tool to track BSE SENSEX stocks. Gainers, losers, volume toppers in BSE SENSEX Stocks. Corporate announcements of BSE SENSEX stocks, Share Market Today | Share Market Live updates. Share Market Live Charts, News, Analysis, …[truncated, total 12565 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" data-critters-container=\"\"><head>\n    <meta charset=\"utf-8\">\n    <title>\n      LIVE Stock/Share Market | Indian Stock/Share Market LIVE | BSE SENSEX | BSE (formerly Bombay Stock\n      Exchange)\n    </title>\n    <meta name=\"description\" content=\"BSE SENSEX - India's Index the World Tracks. Get live BSE SENSEX quotes. BSE Sensex Heat Map a great tool to track BSE SENSEX stocks. Gainers, losers, volume toppers in BSE SENSEX Stocks. Corporate announcements of BSE SENSEX stocks, Share Market Today | Share Market Live updates. Share Market Live Charts, News, Analysis, …[truncated, total 13272 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -394,9 +394,9 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 558,
-    "notes": "<tr> count: 0, total bytes: 12565"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 20260,
+    "notes": "<tr> count: 0, total bytes: 13272"
   },
   {
     "probe_id": "P-06b",
@@ -421,8 +421,8 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 10224,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 10486,
     "notes": "Network error: fetch failed"
   },
   {
@@ -448,8 +448,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 410,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 1491,
     "notes": "Bid-link markers found: 0, bytes: 12565"
   },
   {
@@ -476,8 +476,8 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 22,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 289,
     "notes": "Issues=4, registrars resolved by name match=0"
   },
   {
@@ -494,7 +494,7 @@
       "landing page reachable"
     ],
     "fields_missing": [],
-    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37479 chars]",
+    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37481 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -502,8 +502,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 372,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 435,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -528,8 +528,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 57,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 197,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -554,8 +554,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 5017,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 4719,
     "notes": "status=200"
   },
   {
@@ -580,8 +580,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 1180,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 1187,
     "notes": "status=200"
   },
   {
@@ -604,8 +604,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 1097,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 962,
     "notes": "No PDF URL discovered."
   },
   {
@@ -628,8 +628,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 232,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 257,
     "notes": "No PDF URL discovered."
   },
   {
@@ -647,7 +647,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium plugin v27.9 (Yoast SEO v27.9) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n\t<title>IPO GMP Today, Live IPO Grey Market Premiu…[truncated, total 838872 chars]",
+    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium plugin v27.9 (Yoast SEO v27.9) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n\t<title>IPO GMP Today, Live IPO Grey Market Premiu…[truncated, total 838264 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -655,9 +655,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 1473,
-    "notes": "<tr> count: 302, bytes=838872"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 723,
+    "notes": "<tr> count: 300, bytes=838264"
   },
   {
     "probe_id": "P-20",
@@ -682,8 +682,8 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 1654,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 1627,
     "notes": "<tr> count: 0, bytes=124148"
   },
   {
@@ -701,7 +701,7 @@
     "fields_missing": [
       "discussion markers"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-KAho1ES04uNEudFUCSn8RF&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5747 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-5CVWWmSon0Az9JyTuIWuGx&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5747 chars]",
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -709,8 +709,8 @@
     "status": "RED",
     "recommended_action": "Skip.",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 41,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 73,
     "notes": "Non-200. status=403"
   },
   {
@@ -728,7 +728,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\" class=\"inter_a869fe2d-module__Nl2jCG__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/a7d17fd443782145.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/fe81322e39413244.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/635245f93e41a18e.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next…[truncated, total 139042 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" class=\"inter_a869fe2d-module__Nl2jCG__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/a7d17fd443782145.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/fe81322e39413244.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/635245f93e41a18e.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next…[truncated, total 139810 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -736,9 +736,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 272,
-    "notes": "<tr> count: 2, bytes=139042"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 127,
+    "notes": "<tr> count: 2, bytes=139810"
   },
   {
     "probe_id": "P-23a",
@@ -779,8 +779,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 4679,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 4387,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37991 | rendered_len=38813 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -816,9 +816,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 5011,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=225612 | rendered_len=267980 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 4513,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=225612 | rendered_len=265999 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-24",
@@ -844,9 +844,9 @@
     "status": "RED",
     "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 1072,
-    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 4 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=12565"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 928,
+    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 4 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13272"
   },
   {
     "probe_id": "P-25",
@@ -875,9 +875,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 1169,
-    "notes": "mainboard: static status=200 bytes=148698 | sme: static status=200 bytes=150024 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=273267 | detail-2: static status=200 bytes=284036 | challenges_detected=false"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 1476,
+    "notes": "mainboard: static status=200 bytes=148734 | sme: static status=200 bytes=148870 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=273267 | detail-2: static status=200 bytes=283760 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -919,9 +919,9 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
     "latency_ms": 17,
-    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=82180b tables=10 rows=59 | d2: main=85508b tables=9 rows=60"
+    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=82180b tables=10 rows=59 | d2: main=85453b tables=9 rows=60"
   },
   {
     "probe_id": "P-27",
@@ -962,8 +962,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 4042,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 3965,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=37991 | rendered_len=38813 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -999,9 +999,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 4650,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=225612 | rendered_len=266052 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 4276,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=225612 | rendered_len=267768 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-25b",
@@ -1029,9 +1029,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 2706,
-    "notes": "third_ipo_status=current | third_ipo_slug=csm-technologies-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"24 - 29 Jun\" covers today\" | detail-1: static status=200 bytes=352265 | detail-2: static status=200 bytes=327331 | detail-3: static status=200 bytes=312673 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 94,
+    "notes": "third_ipo_status=current | third_ipo_slug=csm-technologies-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"24 - 29 Jun\" covers today\" | detail-1: static status=200 bytes=352222 | detail-2: static status=200 bytes=327331 | detail-3: static status=200 bytes=312747 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
     "probe_id": "P-26b",
@@ -1086,8 +1086,8 @@
     "status": "GREEN",
     "recommended_action": "Precision met (full=0.82 narrow=0.93). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-06-24T20:55:37.336Z",
-    "latency_ms": 27,
+    "ran_at_utc": "2026-06-25T06:55:42.545Z",
+    "latency_ms": 26,
     "notes": "details_extracted=3 | avg_full=0.818 | avg_narrow=0.933 | pdf_on_allowlist=2 | pdf_off_allowlist=1 | third_ipo=csm-technologies-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.73 narrow=0.80 | d3:csm-technologies-ipo full=0.82 narrow=1.00"
   }
 ]
