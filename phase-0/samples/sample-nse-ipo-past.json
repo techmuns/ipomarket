@@ -10,16 +10,6 @@
     "symbol": "CSM"
   },
   {
-    "companyName": "Advit Jewels Limited",
-    "issueEndDate": "25-Jun-2026",
-    "issuePrice": "Rs.130 to Rs.138",
-    "issueSize": "8379300",
-    "issueStartDate": "23-Jun-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "RAMBHAJO"
-  },
-  {
     "companyName": "Waterways Leisure Tourism Limited",
     "issueEndDate": "25-Jun-2026",
     "issuePrice": "Rs.769 to Rs.808 ",
@@ -30,6 +20,26 @@
     "symbol": "CORDELIA"
   },
   {
+    "companyName": "Advit Jewels Limited",
+    "issueEndDate": "25-Jun-2026",
+    "issuePrice": "Rs.130 to Rs.138",
+    "issueSize": "8379300",
+    "issueStartDate": "23-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "RAMBHAJO"
+  },
+  {
+    "companyName": "Knack Packaging Limited",
+    "issueEndDate": "03-Jul-2026",
+    "issuePrice": "Rs.161 to Rs.170",
+    "issueSize": "27116191",
+    "issueStartDate": "01-Jul-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "KNACK"
+  },
+  {
     "companyName": "Aastha Spintex Limited",
     "issueEndDate": "01-Jul-2026",
     "issuePrice": "Rs.125 to Rs.136 ",
@@ -38,5 +48,17 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "AASTHA"
+  },
+  {
+    "companyName": "Vinit Mobile Limited",
+    "issueEndDate": "02-Jul-2026",
+    "issuePrice": "Rs.150 to Rs.158",
+    "issueSize": "2160000",
+    "issueStartDate": "30-Jun-2026",
+    "lotSize": "800",
+    "priceBand": "Rs.150 to Rs.158",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "VMOBILE"
   }
 ]

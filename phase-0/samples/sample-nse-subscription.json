@@ -10,23 +10,8 @@
     "symbol": "CSM",
     "category": "Total",
     "noOfSharesOffered": "1.113088E7",
-    "noOfTime": "0.2770120601425943",
-    "noOfsharesBid": "3083388.0",
-    "srNo": null
-  },
-  {
-    "companyName": "Advit Jewels Limited",
-    "issueEndDate": "25-Jun-2026",
-    "issuePrice": "Rs.130 to Rs.138",
-    "issueSize": "8379300",
-    "issueStartDate": "23-Jun-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "RAMBHAJO",
-    "category": "Total",
-    "noOfSharesOffered": "8379300.0",
-    "noOfTime": "65.97452054467557",
-    "noOfsharesBid": "5.528203E8",
+    "noOfTime": "0.5023430312787488",
+    "noOfsharesBid": "5591520.0",
     "srNo": null
   },
   {
@@ -40,8 +25,23 @@
     "symbol": "CORDELIA",
     "category": "Total",
     "noOfSharesOffered": "4184004.0",
-    "noOfTime": "0.556932545953589",
-    "noOfsharesBid": "2330208.0",
+    "noOfTime": "1.0854970501940246",
+    "noOfsharesBid": "4541724.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Advit Jewels Limited",
+    "issueEndDate": "25-Jun-2026",
+    "issuePrice": "Rs.130 to Rs.138",
+    "issueSize": "8379300",
+    "issueStartDate": "23-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "RAMBHAJO",
+    "category": "Total",
+    "noOfSharesOffered": "8379300.0",
+    "noOfTime": "143.042354373277",
+    "noOfsharesBid": "1.1985948E9",
     "srNo": null
   },
   {
@@ -64,9 +64,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SPGCL",
-    "noOfsharesBid": "730200",
+    "noOfsharesBid": "1390800",
     "noOfSharesOffered": "4458000",
-    "noOfTime": "0.16"
+    "noOfTime": "0.31"
   },
   {
     "companyName": "Shreedhar Spinners Limited",
@@ -76,8 +76,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SHREEDHAR",
-    "noOfsharesBid": "10604000",
+    "noOfsharesBid": "25742000",
     "noOfSharesOffered": "4170000",
-    "noOfTime": "2.54"
+    "noOfTime": "6.17"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-25T06:55:42.545Z",
+  "captured_at_utc": "2026-06-25T13:25:17.606Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44374,
+      "bytes": 44283,
       "tr_count": 26,
       "pdfs_found": 15,
-      "notes": "static ok: tr=26, bytes=44374"
+      "notes": "static ok: tr=26, bytes=44283"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Sky%20Alloys%20and%20Power%20Limited%20-%20Abri_p.pdf",
+      "link_text": "Sky Alloys and Power Limited- Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Jio%20Platforms%20Ltd_p.PDF",
       "link_text": "Jio Platforms Ltd - Abridged Prospectus",
@@ -90,11 +95,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
       "link_text": "Punjab Carbonic Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/apr-2026/Expression%20360%20Services%20India%20Limited-Abridged%20Prospectus_p.pdf",
-      "link_text": "Expression 360 Services India Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
