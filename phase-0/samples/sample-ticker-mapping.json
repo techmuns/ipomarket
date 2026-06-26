@@ -1,10 +1,8 @@
 {
-  "total": 6,
-  "valid": 6,
+  "total": 4,
+  "valid": 4,
   "examples": {
     "CSM Technologies Limited": "CSM",
-    "Waterways Leisure Tourism Limited": "CORDELIA",
-    "Advit Jewels Limited": "RAMBHAJO",
     "Knack Packaging Limited": "KNACK",
     "Aastha Spintex Limited": "AASTHA",
     "Vinit Mobile Limited": "VMOBILE"
