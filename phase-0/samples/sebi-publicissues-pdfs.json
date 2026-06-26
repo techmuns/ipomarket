@@ -1,34 +1,101 @@
 {
-  "captured_at_utc": "2026-06-25T21:02:48.166Z",
+  "captured_at_utc": "2026-06-26T07:01:55.369Z",
   "phases": [
     {
       "phase": "static-primary",
       "url": "https://www.sebi.gov.in/filings/public-issues.html",
-      "status": 0,
-      "bytes": 0,
+      "status": 200,
+      "bytes": 6080,
       "tr_count": 0,
       "pdfs_found": 0,
-      "notes": "static non-200 (status=0, err=fetch failed)"
+      "notes": "static ok: tr=0, bytes=6080"
     },
     {
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
-      "status": 0,
-      "bytes": 0,
-      "tr_count": 0,
-      "pdfs_found": 0,
-      "notes": "static non-200 (status=0, err=fetch failed)"
-    },
-    {
-      "phase": "playwright-listing",
-      "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
-      "status": 0,
-      "bytes": 0,
-      "tr_count": 0,
-      "pdfs_found": 0,
-      "notes": "playwright failed: page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10\", waiting until \"networkidle\"\n"
+      "status": 200,
+      "bytes": 44283,
+      "tr_count": 26,
+      "pdfs_found": 15,
+      "notes": "static ok: tr=26, bytes=44283"
     }
   ],
-  "detail_urls_found": 0,
-  "pdfs": []
+  "detail_urls_found": 31,
+  "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Sky%20Alloys%20and%20Power%20Limited%20-%20Abri_p.pdf",
+      "link_text": "Sky Alloys and Power Limited- Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Jio%20Platforms%20Ltd_p.PDF",
+      "link_text": "Jio Platforms Ltd - Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/National%20Stock%20Exchange%20of%20India%20Ltd%20-%20Abridged_p.pdf",
+      "link_text": "National Stock Exchange of India Ltd - Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Paras%20Healthcare%20Limited%20-%20Abridged_p.pdf",
+      "link_text": "Paras Healthcare Limited - Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Zepto%20Limited%20-%20abridged_p.pdf",
+      "link_text": "Zepto Limited - Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Pushp%20Brand%20India%20Limited%20-%20DAP_p.pdf",
+      "link_text": "Pushp Brand India Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Matangi%20Rubber%20Limited%20-%20Abridged_p.pdf",
+      "link_text": "Matangi Rubber Limited- Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Arohan%20Financial%20Services%20Limited%20-%20DRHP_p.pdf",
+      "link_text": "Arohan Financial Services Limited Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited%20-%20Abridged%20prospectus_p.pdf",
+      "link_text": "Dhoot Transmission Limited Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/M%20K%20SONS%20-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "M. K. SONS FINE JEWELS LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
+      "link_text": "Incred Holdings Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
+      "link_text": "Online Instruments(India) Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
+      "link_text": "Jindal Supreme (India) Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
+      "link_text": "Playsimple Games Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
+      "link_text": "Punjab Carbonic Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    }
+  ]
 }
