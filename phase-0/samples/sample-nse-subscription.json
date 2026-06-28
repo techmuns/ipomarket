@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Aastha Spintex Limited",
+    "issueEndDate": "01-Jul-2026",
+    "issuePrice": "Rs.125 to Rs.136 ",
+    "issueSize": "13600000",
+    "issueStartDate": "29-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "AASTHA",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "CSM Technologies Limited",
     "issueEndDate": "29-Jun-2026",
     "issuePrice": "Rs.107 to Rs.113 ",

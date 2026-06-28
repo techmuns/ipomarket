@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Aastha Spintex Limited",
+    "issueEndDate": "01-Jul-2026",
+    "issuePrice": "Rs.125 to Rs.136 ",
+    "issueSize": "13600000",
+    "issueStartDate": "29-Jun-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "AASTHA"
+  },
+  {
     "companyName": "CSM Technologies Limited",
     "issueEndDate": "29-Jun-2026",
     "issuePrice": "Rs.107 to Rs.113 ",
@@ -18,16 +28,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "KNACK"
-  },
-  {
-    "companyName": "Aastha Spintex Limited",
-    "issueEndDate": "01-Jul-2026",
-    "issuePrice": "Rs.125 to Rs.136 ",
-    "issueSize": "13600000",
-    "issueStartDate": "29-Jun-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "AASTHA"
   },
   {
     "companyName": "Vinit Mobile Limited",
