@@ -15,19 +15,28 @@
     "srNo": null
   },
   {
-    "companyName": "CSM Technologies Limited",
-    "issueEndDate": "29-Jun-2026",
-    "issuePrice": "Rs.107 to Rs.113 ",
-    "issueSize": "11130880",
-    "issueStartDate": "24-Jun-2026",
-    "series": "EQ",
+    "companyName": "Teja Engineering Industries Limited",
+    "isBse": "1",
+    "issueEndDate": "02-Jul-2026",
+    "issueStartDate": "30-Jun-2026",
+    "series": "SME",
     "status": "Active",
-    "symbol": "CSM",
-    "category": "Total",
-    "noOfSharesOffered": "1.113088E7",
-    "noOfTime": "0.9625988241720331",
-    "noOfsharesBid": "1.0714572E7",
-    "srNo": null
+    "symbol": "TEJA",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "1698000",
+    "noOfTime": ""
+  },
+  {
+    "companyName": "Vinit Mobile Limited",
+    "isBse": "1",
+    "issueEndDate": "02-Jul-2026",
+    "issueStartDate": "30-Jun-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "VMOBILE",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "2160000",
+    "noOfTime": ""
   },
   {
     "companyName": "IC Electricals Company Limited-Issue postponed",
@@ -40,17 +49,5 @@
     "noOfsharesBid": "",
     "noOfSharesOffered": "4839600",
     "noOfTime": ""
-  },
-  {
-    "companyName": "Sri Priyanka Geo Commex Limited-Issue Withdrawn",
-    "isBse": "1",
-    "issueEndDate": "29-Jun-2026",
-    "issueStartDate": "24-Jun-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "SPGCL",
-    "noOfsharesBid": "1432800",
-    "noOfSharesOffered": "4458000",
-    "noOfTime": "0.32"
   }
 ]
