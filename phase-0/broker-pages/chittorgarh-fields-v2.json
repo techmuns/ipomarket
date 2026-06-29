@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-29T08:24:21.899Z",
+  "captured_at_utc": "2026-06-29T14:53:11.090Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 329733,
+      "bytes": 329647,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "mode": "static",
       "status": 200,
-      "bytes": 299829,
+      "bytes": 299844,
       "title": "Aastha Spintex IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

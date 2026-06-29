@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-29T08:24:21.899Z",
+  "captured_at_utc": "2026-06-29T14:53:11.090Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149233,
+      "bytes": 148841,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
       "mode": "static",
       "status": 200,
-      "bytes": 281956,
+      "bytes": 282232,
       "title": "Knack Packaging IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "mode": "static",
       "status": 200,
-      "bytes": 299829,
+      "bytes": 299844,
       "title": "Aastha Spintex IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
