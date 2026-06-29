@@ -1,10 +1,11 @@
 {
-  "total": 4,
-  "valid": 4,
+  "total": 5,
+  "valid": 5,
   "examples": {
     "Aastha Spintex Limited": "AASTHA",
     "CSM Technologies Limited": "CSM",
     "Knack Packaging Limited": "KNACK",
+    "Teja Engineering Industries Limited": "TEJA",
     "Vinit Mobile Limited": "VMOBILE"
   }
 }

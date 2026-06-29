@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-28T20:23:00.897Z",
+  "captured_at_utc": "2026-06-29T08:24:21.899Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44283,
+      "bytes": 44601,
       "tr_count": 26,
-      "pdfs_found": 15,
-      "notes": "static ok: tr=26, bytes=44283"
+      "pdfs_found": 16,
+      "notes": "static ok: tr=26, bytes=44601"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Ujin%20Pharma%20Ltd.%20-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Ujin Pharma Ltd- Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Sky%20Alloys%20and%20Power%20Limited%20-%20Abri_p.pdf",
       "link_text": "Sky Alloys and Power Limited- Draft Abridged Prospectus",

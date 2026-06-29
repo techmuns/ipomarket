@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "AASTHA",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.36E7",
+    "noOfTime": "0.3691389705882353",
+    "noOfsharesBid": "5020290.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "CSM",
     "category": "Total",
     "noOfSharesOffered": "1.113088E7",
-    "noOfTime": "0.5023430312787488",
-    "noOfsharesBid": "5591520.0",
+    "noOfTime": "0.7582225304737811",
+    "noOfsharesBid": "8439684.0",
     "srNo": null
   },
   {
@@ -42,15 +42,15 @@
     "noOfTime": ""
   },
   {
-    "companyName": "Sri Priyanka Geo Commex Limited",
+    "companyName": "Sri Priyanka Geo Commex Limited-Issue Withdrawn",
     "isBse": "1",
     "issueEndDate": "29-Jun-2026",
     "issueStartDate": "24-Jun-2026",
     "series": "SME",
     "status": "Active",
     "symbol": "SPGCL",
-    "noOfsharesBid": "1390800",
+    "noOfsharesBid": "1432800",
     "noOfSharesOffered": "4458000",
-    "noOfTime": "0.31"
+    "noOfTime": "0.32"
   }
 ]

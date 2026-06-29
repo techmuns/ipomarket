@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-06-28T20:23:00.897Z",
+  "generated_at_utc": "2026-06-29T08:24:21.899Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "csm-technologies-ipo",
-    "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
+    "slug": "aastha-spintex-ipo",
+    "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"24 - 29 Jun\" covers today",
-    "date_text": "24 - 29 Jun",
+    "reason": "current-open: list \"mainboard\" row date range \"29 Jun - 01 Jul\" covers today",
+    "date_text": "29 Jun - 01 Jul",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,9 +20,9 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93572,
+      "main_content_bytes": 93782,
       "tables_parsed": 13,
-      "table_rows_parsed": 87,
+      "table_rows_parsed": 88,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -54,9 +54,9 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 81690,
+      "main_content_bytes": 82314,
       "tables_parsed": 11,
-      "table_rows_parsed": 60,
+      "table_rows_parsed": 61,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "csm-technologies-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
+      "slug": "aastha-spintex-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 91491,
-      "tables_parsed": 12,
-      "table_rows_parsed": 77,
+      "main_content_bytes": 89830,
+      "tables_parsed": 10,
+      "table_rows_parsed": 66,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -104,14 +104,13 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
+        "brlms",
         "official_pdf_links"
       ],
-      "fields_missing": [
-        "brlms"
-      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }

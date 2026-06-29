@@ -30,6 +30,18 @@
     "symbol": "KNACK"
   },
   {
+    "companyName": "Teja Engineering Industries Limited",
+    "issueEndDate": "02-Jul-2026",
+    "issuePrice": "Rs.220",
+    "issueSize": "1698000",
+    "issueStartDate": "30-Jun-2026",
+    "lotSize": "600",
+    "priceBand": "Rs.220",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "TEJA"
+  },
+  {
     "companyName": "Vinit Mobile Limited",
     "issueEndDate": "02-Jul-2026",
     "issuePrice": "Rs.150 to Rs.158",

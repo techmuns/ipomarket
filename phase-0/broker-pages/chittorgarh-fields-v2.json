@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-28T20:23:00.897Z",
+  "captured_at_utc": "2026-06-29T08:24:21.899Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "csm-technologies-ipo",
-    "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
+    "slug": "aastha-spintex-ipo",
+    "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"24 - 29 Jun\" covers today",
-    "date_text": "24 - 29 Jun",
+    "reason": "current-open: list \"mainboard\" row date range \"29 Jun - 01 Jul\" covers today",
+    "date_text": "29 Jun - 01 Jul",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
-      "slug": "csm-technologies-ipo"
+      "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
+      "slug": "aastha-spintex-ipo"
     }
   ],
   "details": [
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352265,
+      "bytes": 353059,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 327374,
+      "bytes": 329733,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
+      "url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "mode": "static",
       "status": 200,
-      "bytes": 312742,
-      "title": "CSM Technologies IPO Date, Price, GMP, Review, Details",
+      "bytes": 299829,
+      "title": "Aastha Spintex IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
