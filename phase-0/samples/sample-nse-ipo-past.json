@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Knack Packaging Limited",
+    "issueEndDate": "03-Jul-2026",
+    "issuePrice": "Rs.161 to Rs.170",
+    "issueSize": "18964018",
+    "issueStartDate": "01-Jul-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "KNACK"
+  },
+  {
     "companyName": "Aastha Spintex Limited",
     "issueEndDate": "01-Jul-2026",
     "issuePrice": "Rs.125 to Rs.136 ",
@@ -8,25 +18,5 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "AASTHA"
-  },
-  {
-    "companyName": "CSM Technologies Limited",
-    "issueEndDate": "29-Jun-2026",
-    "issuePrice": "Rs.107 to Rs.113 ",
-    "issueSize": "11130880",
-    "issueStartDate": "24-Jun-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "CSM"
-  },
-  {
-    "companyName": "Knack Packaging Limited",
-    "issueEndDate": "03-Jul-2026",
-    "issuePrice": "Rs.161 to Rs.170",
-    "issueSize": "27116191",
-    "issueStartDate": "01-Jul-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "KNACK"
   }
 ]

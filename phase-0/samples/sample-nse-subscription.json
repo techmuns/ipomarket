@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Knack Packaging Limited",
+    "issueEndDate": "03-Jul-2026",
+    "issuePrice": "Rs.161 to Rs.170",
+    "issueSize": "18964018",
+    "issueStartDate": "01-Jul-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "KNACK",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Aastha Spintex Limited",
     "issueEndDate": "01-Jul-2026",
     "issuePrice": "Rs.125 to Rs.136 ",
@@ -15,18 +30,6 @@
     "srNo": null
   },
   {
-    "companyName": "Teja Engineering Industries Limited",
-    "isBse": "1",
-    "issueEndDate": "02-Jul-2026",
-    "issueStartDate": "30-Jun-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "TEJA",
-    "noOfsharesBid": "97200",
-    "noOfSharesOffered": "1698000",
-    "noOfTime": "0.06"
-  },
-  {
     "companyName": "Vinit Mobile Limited",
     "isBse": "1",
     "issueEndDate": "02-Jul-2026",
@@ -39,15 +42,15 @@
     "noOfTime": "0.06"
   },
   {
-    "companyName": "IC Electricals Company Limited-Issue postponed",
+    "companyName": "Teja Engineering Industries Limited",
     "isBse": "1",
-    "issueEndDate": "30-Jun-2026",
-    "issueStartDate": "25-Jun-2026",
+    "issueEndDate": "02-Jul-2026",
+    "issueStartDate": "30-Jun-2026",
     "series": "SME",
     "status": "Active",
-    "symbol": "ICEL",
-    "noOfsharesBid": "",
-    "noOfSharesOffered": "4839600",
-    "noOfTime": ""
+    "symbol": "TEJA",
+    "noOfsharesBid": "97200",
+    "noOfSharesOffered": "1698000",
+    "noOfTime": "0.06"
   }
 ]
