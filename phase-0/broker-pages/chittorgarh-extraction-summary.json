@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-29T20:55:54.445Z",
+  "generated_at_utc": "2026-06-30T07:02:33.934Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.5,
   "per_detail": [
@@ -36,7 +36,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 89830,
+      "main_content_bytes": 89831,
       "tables_parsed": 10,
       "table_rows_parsed": 66,
       "fields_high_confidence": [

@@ -10,8 +10,8 @@
     "symbol": "AASTHA",
     "category": "Total",
     "noOfSharesOffered": "1.36E7",
-    "noOfTime": "0.6772764705882353",
-    "noOfsharesBid": "9210960.0",
+    "noOfTime": "0.8436110294117647",
+    "noOfsharesBid": "1.147311E7",
     "srNo": null
   },
   {
@@ -22,9 +22,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "TEJA",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "7200",
     "noOfSharesOffered": "1698000",
-    "noOfTime": ""
+    "noOfTime": "0.00"
   },
   {
     "companyName": "Vinit Mobile Limited",
@@ -34,9 +34,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "VMOBILE",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "48000",
     "noOfSharesOffered": "2160000",
-    "noOfTime": ""
+    "noOfTime": "0.02"
   },
   {
     "companyName": "IC Electricals Company Limited-Issue postponed",
