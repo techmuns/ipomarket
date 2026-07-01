@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-06-30T21:03:49.812Z",
+  "captured_at_utc": "2026-07-01T07:19:30.269Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,24 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44955,
+      "bytes": 45422,
       "tr_count": 26,
-      "pdfs_found": 17,
-      "notes": "static ok: tr=26, bytes=44955"
+      "pdfs_found": 18,
+      "notes": "static ok: tr=26, bytes=45422"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Social%20Worth%20Technologies%20-%20DA_p.pdf",
+      "link_text": "Social Worth Technologies Limited- Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Maan%20Fleet%20Partners%20Limited%20-%20DRPH_p.pdf",
+      "link_text": "Maan Fleet Partners Limited- Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/ORAVEL%20STAYS%20LIMITED%20-%20Abridged_p.pdf",
       "link_text": "ORAVEL STAYS LIMITED- Draft Abridged Prospectus",
@@ -100,11 +110,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
       "link_text": "Playsimple Games Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Draft_Abridged_Prospectus_PCL_p.pdf",
-      "link_text": "Punjab Carbonic Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

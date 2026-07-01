@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-30T21:03:49.812Z",
+  "generated_at_utc": "2026-07-01T07:19:30.269Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.5,
   "per_detail": [
@@ -8,9 +8,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 86026,
-      "tables_parsed": 11,
-      "table_rows_parsed": 64,
+      "main_content_bytes": 90418,
+      "tables_parsed": 12,
+      "table_rows_parsed": 76,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -36,7 +36,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 89849,
+      "main_content_bytes": 89848,
       "tables_parsed": 10,
       "table_rows_parsed": 66,
       "fields_high_confidence": [

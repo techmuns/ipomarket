@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "KNACK",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.8964018E7",
+    "noOfTime": "0.9037114392108254",
+    "noOfsharesBid": "1.7138E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "AASTHA",
     "category": "Total",
     "noOfSharesOffered": "1.36E7",
-    "noOfTime": "1.1110808823529412",
-    "noOfsharesBid": "1.51107E7",
+    "noOfTime": "2.060566911764706",
+    "noOfsharesBid": "2.802371E7",
     "srNo": null
   },
   {
@@ -37,9 +37,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "VMOBILE",
-    "noOfsharesBid": "136000",
+    "noOfsharesBid": "663200",
     "noOfSharesOffered": "2160000",
-    "noOfTime": "0.06"
+    "noOfTime": "0.31"
   },
   {
     "companyName": "Teja Engineering Industries Limited",
@@ -49,8 +49,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "TEJA",
-    "noOfsharesBid": "97200",
+    "noOfsharesBid": "124200",
     "noOfSharesOffered": "1698000",
-    "noOfTime": "0.06"
+    "noOfTime": "0.07"
   }
 ]
