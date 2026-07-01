@@ -18,5 +18,17 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "AASTHA"
+  },
+  {
+    "companyName": "IC Electricals Company Limited",
+    "issueEndDate": "07-Jul-2026",
+    "issuePrice": "Rs.94 to Rs.99",
+    "issueSize": "4839600",
+    "issueStartDate": "03-Jul-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.94 to Rs.99",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "ICELCO"
   }
 ]
