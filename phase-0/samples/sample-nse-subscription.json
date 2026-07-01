@@ -15,19 +15,16 @@
     "srNo": null
   },
   {
-    "companyName": "Aastha Spintex Limited",
-    "issueEndDate": "01-Jul-2026",
-    "issuePrice": "Rs.125 to Rs.136 ",
-    "issueSize": "13600000",
-    "issueStartDate": "29-Jun-2026",
-    "series": "EQ",
+    "companyName": "Teja Engineering Industries Limited",
+    "isBse": "1",
+    "issueEndDate": "02-Jul-2026",
+    "issueStartDate": "30-Jun-2026",
+    "series": "SME",
     "status": "Active",
-    "symbol": "AASTHA",
-    "category": "Total",
-    "noOfSharesOffered": "1.36E7",
-    "noOfTime": "3.295519117647059",
-    "noOfsharesBid": "4.481906E7",
-    "srNo": null
+    "symbol": "TEJA",
+    "noOfsharesBid": "591600",
+    "noOfSharesOffered": "1698000",
+    "noOfTime": "0.35"
   },
   {
     "companyName": "Vinit Mobile Limited",
@@ -40,17 +37,5 @@
     "noOfsharesBid": "990400",
     "noOfSharesOffered": "2160000",
     "noOfTime": "0.46"
-  },
-  {
-    "companyName": "Teja Engineering Industries Limited",
-    "isBse": "1",
-    "issueEndDate": "02-Jul-2026",
-    "issueStartDate": "30-Jun-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "TEJA",
-    "noOfsharesBid": "591600",
-    "noOfSharesOffered": "1698000",
-    "noOfTime": "0.35"
   }
 ]
