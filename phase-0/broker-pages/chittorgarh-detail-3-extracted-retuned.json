@@ -32,7 +32,7 @@
       "value": "88 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "88 Shares"
     },
@@ -74,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. +91-22-4918 6270 knackpackaging.ipo@in.mpms.mufg.com <i class=\"f\" → \"MUFG Intime India Pvt.Ltd.\""
+      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 knackpackaging.ipo@in.mpms.mufg.com <i class=\"fa fa\" → \"MUFG Intime India Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/anchor-intimation-knack-packaging-ipo-list.pdf"
   ],
-  "noise_stripped_bytes": 90418,
-  "main_content_bytes": 90418,
+  "noise_stripped_bytes": 90649,
+  "main_content_bytes": 90649,
   "tables_parsed": 12,
-  "table_rows_parsed": 76
+  "table_rows_parsed": 77
 }

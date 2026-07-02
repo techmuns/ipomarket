@@ -10,8 +10,8 @@
     "symbol": "KNACK",
     "category": "Total",
     "noOfSharesOffered": "1.8964018E7",
-    "noOfTime": "2.225222945896803",
-    "noOfsharesBid": "4.2199168E7",
+    "noOfTime": "3.3724933186627433",
+    "noOfsharesBid": "6.3956024E7",
     "srNo": null
   },
   {
@@ -22,9 +22,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "TEJA",
-    "noOfsharesBid": "591600",
+    "noOfsharesBid": "670800",
     "noOfSharesOffered": "1698000",
-    "noOfTime": "0.35"
+    "noOfTime": "0.40"
   },
   {
     "companyName": "Vinit Mobile Limited",
@@ -34,8 +34,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "VMOBILE",
-    "noOfsharesBid": "990400",
+    "noOfsharesBid": "2344000",
     "noOfSharesOffered": "2160000",
-    "noOfTime": "0.46"
+    "noOfTime": "1.09"
   }
 ]
