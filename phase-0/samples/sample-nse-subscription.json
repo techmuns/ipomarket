@@ -15,27 +15,15 @@
     "srNo": null
   },
   {
-    "companyName": "Teja Engineering Industries Limited",
+    "companyName": "IC Electricals Company Limited",
     "isBse": "1",
-    "issueEndDate": "02-Jul-2026",
-    "issueStartDate": "30-Jun-2026",
+    "issueEndDate": "07-Jul-2026",
+    "issueStartDate": "03-Jul-2026",
     "series": "SME",
     "status": "Active",
-    "symbol": "TEJA",
-    "noOfsharesBid": "1797000",
-    "noOfSharesOffered": "1698000",
-    "noOfTime": "1.06"
-  },
-  {
-    "companyName": "Vinit Mobile Limited",
-    "isBse": "1",
-    "issueEndDate": "02-Jul-2026",
-    "issueStartDate": "30-Jun-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "VMOBILE",
-    "noOfsharesBid": "3422400",
-    "noOfSharesOffered": "2160000",
-    "noOfTime": "1.58"
+    "symbol": "ICELCO",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "3471600",
+    "noOfTime": ""
   }
 ]

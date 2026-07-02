@@ -1,9 +1,7 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 1,
+  "valid": 1,
   "examples": {
-    "Knack Packaging Limited": "KNACK",
-    "Aastha Spintex Limited": "AASTHA",
-    "IC Electricals Company Limited": "ICELCO"
+    "Knack Packaging Limited": "KNACK"
   }
 }

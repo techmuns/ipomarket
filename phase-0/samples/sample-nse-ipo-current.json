@@ -8,27 +8,5 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "KNACK"
-  },
-  {
-    "companyName": "Aastha Spintex Limited",
-    "issueEndDate": "01-Jul-2026",
-    "issuePrice": "Rs.125 to Rs.136 ",
-    "issueSize": "13600000",
-    "issueStartDate": "29-Jun-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "AASTHA"
-  },
-  {
-    "companyName": "IC Electricals Company Limited",
-    "issueEndDate": "07-Jul-2026",
-    "issuePrice": "Rs.94 to Rs.99",
-    "issueSize": "3471600",
-    "issueStartDate": "03-Jul-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.94 to Rs.99",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "ICELCO"
   }
 ]
