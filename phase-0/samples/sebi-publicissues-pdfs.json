@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-02T06:50:27.208Z",
+  "captured_at_utc": "2026-07-02T13:05:45.712Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45422,
+      "bytes": 45083,
       "tr_count": 26,
-      "pdfs_found": 18,
-      "notes": "static ok: tr=26, bytes=45422"
+      "pdfs_found": 17,
+      "notes": "static ok: tr=26, bytes=45083"
     }
   ],
   "detail_urls_found": 31,
@@ -105,11 +105,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Jindal%20Supreme%20India%20Limited%20-%20AP_p.pdf",
       "link_text": "Jindal Supreme (India) Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Playsimple%20Games%20Limited_p.pdf",
-      "link_text": "Playsimple Games Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
