@@ -74,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 04067162222, 04079611000 kissht.ipo@kfintech.com <i class=\"fa fa-glo\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 kissht.ipo@kfintech.com <a h\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -103,8 +103,8 @@
     "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 93799,
-  "main_content_bytes": 93799,
+  "noise_stripped_bytes": 93754,
+  "main_content_bytes": 93754,
   "tables_parsed": 13,
   "table_rows_parsed": 88
 }

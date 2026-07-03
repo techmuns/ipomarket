@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-03T06:40:59.596Z",
+  "captured_at_utc": "2026-07-03T13:07:38.547Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44702,
+      "bytes": 44840,
       "tr_count": 26,
       "pdfs_found": 16,
-      "notes": "static ok: tr=26, bytes=44702"
+      "notes": "static ok: tr=26, bytes=44840"
     }
   ],
   "detail_urls_found": 31,

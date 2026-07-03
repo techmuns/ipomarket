@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-03T06:40:59.596Z",
+  "captured_at_utc": "2026-07-03T13:07:38.547Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147855,
+      "bytes": 147814,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
       "mode": "static",
       "status": 200,
-      "bytes": 318831,
+      "bytes": 318849,
       "title": "Knack Packaging IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

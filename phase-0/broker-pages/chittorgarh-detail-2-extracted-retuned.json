@@ -74,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 04067162222, 04079611000 einward.ris@kfintech.com <i class=\"fa fa-gl\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 einward.ris@kfintech.com <a\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -103,8 +103,8 @@
     "https://www.bseindia.com/downloads/ipo/bagmane%20prime%20office%20reit%20-%20od_040520261128.pdf"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 82330,
-  "main_content_bytes": 82330,
+  "noise_stripped_bytes": 82318,
+  "main_content_bytes": 82318,
   "tables_parsed": 11,
   "table_rows_parsed": 61
 }
