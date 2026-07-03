@@ -10,8 +10,8 @@
     "symbol": "KNACK",
     "category": "Total",
     "noOfSharesOffered": "1.8964018E7",
-    "noOfTime": "6.059790071914085",
-    "noOfsharesBid": "1.14917968E8",
+    "noOfTime": "15.962077656749745",
+    "noOfsharesBid": "3.02705128E8",
     "srNo": null
   },
   {
@@ -22,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ICELCO",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "7920000",
     "noOfSharesOffered": "3471600",
-    "noOfTime": ""
+    "noOfTime": "2.28"
   }
 ]

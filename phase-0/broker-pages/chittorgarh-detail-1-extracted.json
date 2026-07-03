@@ -12,28 +12,28 @@
       "source_snippet": "Kusumgar IPO"
     },
     "issue_size_cr": {
-      "value": "[.] shares (agg. up to ₹ 650 Cr)",
+      "value": "1,55,13,126 shares (agg. up to ₹ 650 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "[.] shares (agg. up to ₹ 650 Cr)"
+      "source_snippet": "1,55,13,126 shares (agg. up to ₹ 650 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹398 to ₹419",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹398 to ₹419"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "35 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "35 Shares"
     },
     "open_date": {
       "value": null,
@@ -78,20 +78,18 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.axiscapital.co.in/contents/Kusumgar%20Limited%20-%20RHP-1782968037.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
-  "found_count": 3,
-  "precision_ratio": 0.3,
+  "found_count": 5,
+  "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.axiscapital.co.in/contents/Kusumgar%20Limited%20-%20RHP-1782968037.pdf"
-  ],
-  "noise_stripped_bytes": 72099,
-  "main_content_bytes": 72099,
-  "tables_parsed": 8,
-  "table_rows_parsed": 43
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 77755,
+  "main_content_bytes": 77755,
+  "tables_parsed": 9,
+  "table_rows_parsed": 54
 }

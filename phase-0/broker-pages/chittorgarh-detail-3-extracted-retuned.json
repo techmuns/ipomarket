@@ -1,40 +1,40 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
-  "slug": "knack-packaging-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/ic-electricals-ipo/2754/",
+  "slug": "ic-electricals-ipo",
   "fields": {
     "company_name": {
-      "value": "Knack Packaging IPO",
+      "value": "IC Electricals Co. IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Knack Packaging IPO"
+      "source_snippet": "IC Electricals Co. IPO"
     },
     "issue_size_cr": {
-      "value": "2,58,52,941 shares (agg. up to ₹ 439 Cr)",
+      "value": "48,39,600 shares (agg. up to ₹ 48 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "2,58,52,941 shares (agg. up to ₹ 439 Cr)"
+      "source_snippet": "48,39,600 shares (agg. up to ₹ 48 Cr)"
     },
     "price_band": {
-      "value": "₹161 to ₹170",
+      "value": "₹94 to ₹99",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹161 to ₹170"
+      "source_snippet": "₹94 to ₹99"
     },
     "lot_size": {
-      "value": "88 Shares",
+      "value": "1,200 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[5] label=\"Lot Size\"",
+      "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "88 Shares"
+      "source_snippet": "1,200 Shares"
     },
     "face_value": {
       "value": "₹ 10 per share",
@@ -45,36 +45,36 @@
       "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-07-01",
+      "value": "2026-07-03",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"1 to 3 Jul, 2026\" → start=2026-07-01"
+      "source_snippet": "raw=\"3 to 7 Jul, 2026\" → start=2026-07-03"
     },
     "close_date": {
-      "value": "2026-07-03",
+      "value": "2026-07-07",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"1 to 3 Jul, 2026\" → end=2026-07-03"
+      "source_snippet": "raw=\"3 to 7 Jul, 2026\" → end=2026-07-07"
     },
     "listing_date": {
-      "value": "2026-07-08",
+      "value": "2026-07-10",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Wed, Jul 8, 2026 T\" → 2026-07-08"
+      "source_snippet": "raw=\"Fri, Jul 10, 2026 T\" → 2026-07-10"
     },
     "registrar": {
-      "value": "MUFG Intime India Pvt.Ltd.",
+      "value": "Skyline Financial Services Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 knackpackaging.ipo@in.mpms.mufg.com <i class=\"fa fa\" → \"MUFG Intime India Pvt.Ltd.\""
+      "source_snippet": "raw=\"Skyline Financial Services Pvt.Ltd. 011-26812682 ipo@skylinerta.com <i class=\"fa fa-globe\"\" → \"Skyline Financial Services Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/anchor-intimation-knack-packaging-ipo-list.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/ic-electricals-anchor-list.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/anchor-intimation-knack-packaging-ipo-list.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/ic-electricals-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 90649,
-  "main_content_bytes": 90649,
-  "tables_parsed": 12,
-  "table_rows_parsed": 77
+  "noise_stripped_bytes": 92223,
+  "main_content_bytes": 92223,
+  "tables_parsed": 11,
+  "table_rows_parsed": 76
 }
