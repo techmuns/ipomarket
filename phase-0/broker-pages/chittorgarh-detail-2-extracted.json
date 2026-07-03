@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/anchor-intimation-knack-packaging-ipo-list.pdf"
   ],
-  "noise_stripped_bytes": 90649,
-  "main_content_bytes": 90649,
-  "tables_parsed": 12,
-  "table_rows_parsed": 77
+  "noise_stripped_bytes": 94578,
+  "main_content_bytes": 94578,
+  "tables_parsed": 13,
+  "table_rows_parsed": 85
 }

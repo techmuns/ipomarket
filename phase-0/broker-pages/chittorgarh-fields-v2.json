@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-03T13:07:38.547Z",
+  "captured_at_utc": "2026-07-03T20:21:51.494Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352955,
+      "bytes": 352998,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 329465,
+      "bytes": 329551,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/ic-electricals-ipo/2754/",
       "mode": "static",
       "status": 200,
-      "bytes": 313224,
+      "bytes": 313227,
       "title": "IC Electricals IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
