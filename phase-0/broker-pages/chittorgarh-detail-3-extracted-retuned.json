@@ -32,7 +32,7 @@
       "value": "1,200 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "1,200 Shares"
     },
@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/ic-electricals-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 92221,
-  "main_content_bytes": 92221,
+  "noise_stripped_bytes": 92456,
+  "main_content_bytes": 92456,
   "tables_parsed": 11,
-  "table_rows_parsed": 76
+  "table_rows_parsed": 77
 }

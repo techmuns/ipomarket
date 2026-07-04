@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-04T12:16:33.424Z",
+  "captured_at_utc": "2026-07-04T20:16:22.177Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147776,
+      "bytes": 147718,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
     "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
     "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
     "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/powerica-ipo/2570/",
     "https://www.chittorgarh.com/ipo/amir-chand-jagdish-kumar-ipo/2501/",
     "https://www.chittorgarh.com/ipo/central-mine-planning-design-institute-ipo/2456/",
-    "https://www.chittorgarh.com/ipo/gsp-crop-ipo/2031/",
-    "https://www.chittorgarh.com/ipo/raajmarg-infra-investment-trust-ipo/2863/"
+    "https://www.chittorgarh.com/ipo/gsp-crop-ipo/2031/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
+      "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
+      "url": "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
+      "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
       "mode": "static",
       "status": 200,
-      "bytes": 259997,
-      "title": "Kusumgar IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 232458,
+      "title": "Laser Power &amp; Infra IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
+      "url": "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
       "mode": "static",
       "status": 200,
-      "bytes": 338496,
-      "title": "Knack Packaging IPO Date, Price, GMP, Review, Details",
+      "bytes": 259998,
+      "title": "Kusumgar IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

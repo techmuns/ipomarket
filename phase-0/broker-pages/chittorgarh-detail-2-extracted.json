@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
+  "source_url": "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
   "fields": {
     "company_name": {
-      "value": "Knack Packaging IPO",
+      "value": "Kusumgar IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Knack Packaging IPO"
+      "source_snippet": "Kusumgar IPO"
     },
     "issue_size_cr": {
-      "value": "2,58,52,941 shares (agg. up to ₹ 439 Cr)",
+      "value": "1,55,13,126 shares (agg. up to ₹ 650 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "2,58,52,941 shares (agg. up to ₹ 439 Cr)"
+      "source_snippet": "1,55,13,126 shares (agg. up to ₹ 650 Cr)"
     },
     "price_band": {
-      "value": "₹161 to ₹170",
+      "value": "₹398 to ₹419",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹161 to ₹170"
+      "source_snippet": "₹398 to ₹419"
     },
     "lot_size": {
-      "value": "88 Shares",
+      "value": "35 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[5] label=\"Lot Size\"",
+      "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "88 Shares"
+      "source_snippet": "35 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Wed, Jul 8, 2026 T",
+      "value": "Wed, Jul 15, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Wed, Jul 8, 2026 T"
+      "source_snippet": "Wed, Jul 15, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,20 +78,18 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/anchor-intimation-knack-packaging-ipo-list.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/anchor-intimation-knack-packaging-ipo-list.pdf"
-  ],
-  "noise_stripped_bytes": 94578,
-  "main_content_bytes": 94578,
-  "tables_parsed": 13,
-  "table_rows_parsed": 85
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 79492,
+  "main_content_bytes": 79492,
+  "tables_parsed": 10,
+  "table_rows_parsed": 57
 }
