@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/ic-electricals-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 92456,
-  "main_content_bytes": 92456,
+  "noise_stripped_bytes": 92401,
+  "main_content_bytes": 92401,
   "tables_parsed": 11,
   "table_rows_parsed": 77
 }

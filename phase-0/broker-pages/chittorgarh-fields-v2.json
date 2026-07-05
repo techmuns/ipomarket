@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-05T12:41:41.822Z",
+  "captured_at_utc": "2026-07-05T20:21:09.590Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 329465,
+      "bytes": 329189,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/ic-electricals-ipo/2754/",
       "mode": "static",
       "status": 200,
-      "bytes": 313935,
+      "bytes": 313659,
       "title": "IC Electricals IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
