@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-06T07:21:59.384Z",
+  "captured_at_utc": "2026-07-06T14:35:23.604Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45124,
+      "bytes": 44740,
       "tr_count": 26,
-      "pdfs_found": 17,
-      "notes": "static ok: tr=26, bytes=45124"
+      "pdfs_found": 16,
+      "notes": "static ok: tr=26, bytes=44740"
     }
   ],
   "detail_urls_found": 31,
@@ -100,11 +100,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/M%20K%20SONS%20-%20Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "M. K. SONS FINE JEWELS LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
-      "link_text": "Incred Holdings Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
