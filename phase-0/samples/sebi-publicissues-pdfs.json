@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-05T20:21:09.590Z",
+  "captured_at_utc": "2026-07-06T07:21:59.384Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,24 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44840,
+      "bytes": 45124,
       "tr_count": 26,
-      "pdfs_found": 16,
-      "notes": "static ok: tr=26, bytes=44840"
+      "pdfs_found": 17,
+      "notes": "static ok: tr=26, bytes=45124"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/GLOBAL%20-%20DAP_p.pdf",
+      "link_text": "ESWARI GLOBAL METAL INDUSTRIES LIMITED_Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/REIL%20Abridged_p.pdf",
+      "link_text": "Renfra Energy India Limited_Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Social%20Worth%20Technologies%20-%20DA_p.pdf",
       "link_text": "Social Worth Technologies Limited- Draft Abridged Prospectus",
@@ -95,11 +105,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited-Abridged%20prospectus_p.pdf",
       "link_text": "Incred Holdings Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Online%20Instruments%20india%20Limite-AP_p.pdf",
-      "link_text": "Online Instruments(India) Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
