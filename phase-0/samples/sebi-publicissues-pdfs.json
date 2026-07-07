@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-07T06:54:45.673Z",
+  "captured_at_utc": "2026-07-07T13:26:14.700Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44332,
+      "bytes": 45643,
       "tr_count": 26,
-      "pdfs_found": 15,
-      "notes": "static ok: tr=26, bytes=44332"
+      "pdfs_found": 18,
+      "notes": "static ok: tr=26, bytes=45643"
     }
   ],
   "detail_urls_found": 31,
@@ -25,6 +25,16 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Pragyawan%20Technologies%20Limited%20-%20Abriged_p.PDF",
       "link_text": "Pragyawan Technologies Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/SWARA%20Baby%20Products%20Limited%20-%20DAP_p.pdf",
+      "link_text": "Swara Baby Products Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Functional%20&%20Innovative%20Foods%20Limited-%20Abri_p.pdf",
+      "link_text": "Functional & Innovative Foods Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -95,6 +105,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Arohan%20Financial%20Services%20Limited%20-%20DRHP_p.pdf",
       "link_text": "Arohan Financial Services Limited Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited%20-%20Abridged%20prospectus_p.pdf",
+      "link_text": "Dhoot Transmission Limited Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

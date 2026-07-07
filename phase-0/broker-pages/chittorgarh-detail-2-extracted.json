@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://laserpowerinfra.com/wp-content/uploads/2026/07/Red-Herring-Prospectus.pdf"
   ],
-  "noise_stripped_bytes": 78896,
-  "main_content_bytes": 78896,
+  "noise_stripped_bytes": 78928,
+  "main_content_bytes": 78928,
   "tables_parsed": 9,
   "table_rows_parsed": 51
 }
