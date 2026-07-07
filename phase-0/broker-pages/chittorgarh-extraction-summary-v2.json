@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-07-06T20:59:32.650Z",
+  "generated_at_utc": "2026-07-07T06:54:45.673Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
     "slug": "ic-electricals-ipo",
     "url": "https://www.chittorgarh.com/ipo/ic-electricals-ipo/2754/",
-    "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"03 - 07 Jul\" covers today",
+    "status": "fallback",
+    "reason": "fallback (no current-open found): most-recently-listed end date \"03 - 07 Jul\" from list \"sme\"",
     "date_text": "03 - 07 Jul",
     "source_list": "sme"
   },
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93755,
+      "main_content_bytes": 93699,
       "tables_parsed": 13,
       "table_rows_parsed": 88,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 82319,
+      "main_content_bytes": 82263,
       "tables_parsed": 11,
       "table_rows_parsed": 61,
       "fields_high_confidence": [

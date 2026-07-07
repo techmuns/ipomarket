@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-06T20:59:32.650Z",
+  "captured_at_utc": "2026-07-07T06:54:45.673Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44740,
+      "bytes": 44332,
       "tr_count": 26,
-      "pdfs_found": 16,
-      "notes": "static ok: tr=26, bytes=44740"
+      "pdfs_found": 15,
+      "notes": "static ok: tr=26, bytes=44332"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Pragyawan%20Technologies%20Limited%20-%20Abriged_p.PDF",
+      "link_text": "Pragyawan Technologies Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/GLOBAL%20-%20DAP_p.pdf",
       "link_text": "ESWARI GLOBAL METAL INDUSTRIES LIMITED_Draft Abridged Prospectus",
@@ -90,16 +95,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Arohan%20Financial%20Services%20Limited%20-%20DRHP_p.pdf",
       "link_text": "Arohan Financial Services Limited Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/may-2026/Incred%20Holdings%20Limited%20-%20Abridged%20prospectus_p.pdf",
-      "link_text": "Dhoot Transmission Limited Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/M%20K%20SONS%20-%20Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "M. K. SONS FINE JEWELS LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
