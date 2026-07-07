@@ -1,29 +1,17 @@
 [
   {
-    "companyName": "Knack Packaging Limited",
-    "issueEndDate": "03-Jul-2026",
-    "issuePrice": "Rs.161 to Rs.170",
-    "issueSize": "18964018",
-    "issueStartDate": "01-Jul-2026",
+    "companyName": "Kusumgar Limited",
+    "issueEndDate": "10-Jul-2026",
+    "issuePrice": "Rs.398 to Rs.419",
+    "issueSize": "11468094",
+    "issueStartDate": "08-Jul-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "KNACK",
+    "symbol": "KUSUMGAR",
     "category": "Total",
-    "noOfSharesOffered": "1.8964018E7",
-    "noOfTime": "69.10794832614059",
-    "noOfsharesBid": "1.310564376E9",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
     "srNo": null
-  },
-  {
-    "companyName": "IC Electricals Company Limited",
-    "isBse": "1",
-    "issueEndDate": "07-Jul-2026",
-    "issueStartDate": "03-Jul-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "ICELCO",
-    "noOfsharesBid": "22808400",
-    "noOfSharesOffered": "3471600",
-    "noOfTime": "6.57"
   }
 ]

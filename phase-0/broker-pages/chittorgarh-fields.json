@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-07T13:26:14.700Z",
+  "captured_at_utc": "2026-07-07T20:57:32.971Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
       "mode": "static",
       "status": 200,
-      "bytes": 238690,
+      "bytes": 238966,
       "title": "SBI Funds Management IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
