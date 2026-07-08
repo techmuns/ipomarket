@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/ic-electricals-ipo/2754/",
-  "slug": "ic-electricals-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
+  "slug": "kusumgar-ipo",
   "fields": {
     "company_name": {
-      "value": "IC Electricals Co. IPO",
+      "value": "Kusumgar IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "IC Electricals Co. IPO"
+      "source_snippet": "Kusumgar IPO"
     },
     "issue_size_cr": {
-      "value": "48,39,600 shares (agg. up to ₹ 48 Cr)",
+      "value": "1,55,13,126 shares (agg. up to ₹ 650 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "48,39,600 shares (agg. up to ₹ 48 Cr)"
+      "source_snippet": "1,55,13,126 shares (agg. up to ₹ 650 Cr)"
     },
     "price_band": {
-      "value": "₹94 to ₹99",
+      "value": "₹398 to ₹419",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹94 to ₹99"
+      "source_snippet": "₹398 to ₹419"
     },
     "lot_size": {
-      "value": "1,200 Shares",
+      "value": "35 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[5] label=\"Lot Size\"",
+      "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "1,200 Shares"
+      "source_snippet": "35 Shares"
     },
     "face_value": {
-      "value": "₹ 10 per share",
+      "value": "₹ 1 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 10 per share"
+      "source_snippet": "₹ 1 per share"
     },
     "open_date": {
-      "value": "2026-07-03",
+      "value": "2026-07-08",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"3 to 7 Jul, 2026\" → start=2026-07-03"
+      "source_snippet": "raw=\"8 to 10 Jul, 2026\" → start=2026-07-08"
     },
     "close_date": {
-      "value": "2026-07-07",
+      "value": "2026-07-10",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"3 to 7 Jul, 2026\" → end=2026-07-07"
+      "source_snippet": "raw=\"8 to 10 Jul, 2026\" → end=2026-07-10"
     },
     "listing_date": {
-      "value": "2026-07-10",
+      "value": "2026-07-15",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Fri, Jul 10, 2026 T\" → 2026-07-10"
+      "source_snippet": "raw=\"Wed, Jul 15, 2026 T\" → 2026-07-15"
     },
     "registrar": {
-      "value": "Skyline Financial Services Pvt.Ltd.",
+      "value": "Bigshare Services Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Skyline Financial Services Pvt.Ltd. 011-26812682 ipo@skylinerta.com <i class=\"fa fa-globe\"\" → \"Skyline Financial Services Pvt.Ltd.\""
+      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. 8657578989/8069219065/8069219060 ipo@bigshareonline.com <i class\" → \"Bigshare Services Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/ic-electricals-anchor-list.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/kusumgar-ipo-anchor-allocation-letter.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/ic-electricals-anchor-list.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/kusumgar-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 96420,
-  "main_content_bytes": 96420,
-  "tables_parsed": 12,
-  "table_rows_parsed": 84
+  "noise_stripped_bytes": 80296,
+  "main_content_bytes": 80296,
+  "tables_parsed": 10,
+  "table_rows_parsed": 59
 }

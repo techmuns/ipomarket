@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-07T20:57:32.971Z",
+  "captured_at_utc": "2026-07-08T06:06:07.123Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147292,
+      "bytes": 147727,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148925,
+      "bytes": 146500,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
       "mode": "static",
       "status": 200,
-      "bytes": 238966,
+      "bytes": 238690,
       "title": "SBI Funds Management IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
       "mode": "static",
       "status": 200,
-      "bytes": 257632,
+      "bytes": 257356,
       "title": "Laser Power &amp; Infra IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

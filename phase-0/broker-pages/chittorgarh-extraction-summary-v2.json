@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-07-07T20:57:32.971Z",
+  "generated_at_utc": "2026-07-08T06:06:07.123Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "ic-electricals-ipo",
-    "url": "https://www.chittorgarh.com/ipo/ic-electricals-ipo/2754/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"03 - 07 Jul\" from list \"sme\"",
-    "date_text": "03 - 07 Jul",
-    "source_list": "sme"
+    "slug": "kusumgar-ipo",
+    "url": "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
+    "status": "current",
+    "reason": "current-open: list \"mainboard\" row date range \"08 - 10 Jul\" covers today",
+    "date_text": "08 - 10 Jul",
+    "source_list": "mainboard"
   },
   "per_detail": [
     {
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93756,
+      "main_content_bytes": 93754,
       "tables_parsed": 13,
       "table_rows_parsed": 88,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 82318,
+      "main_content_bytes": 82320,
       "tables_parsed": 11,
       "table_rows_parsed": 61,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "ic-electricals-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/ic-electricals-ipo/2754/",
+      "slug": "kusumgar-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96420,
-      "tables_parsed": 12,
-      "table_rows_parsed": 84,
+      "main_content_bytes": 80296,
+      "tables_parsed": 10,
+      "table_rows_parsed": 59,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
