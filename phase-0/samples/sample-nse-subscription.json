@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Laser Power & Infra Limited",
+    "issueEndDate": "13-Jul-2026",
+    "issuePrice": "Rs.203 to Rs.214",
+    "issueSize": "25586207",
+    "issueStartDate": "09-Jul-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LASERPOWER",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Kusumgar Limited",
     "issueEndDate": "10-Jul-2026",
     "issuePrice": "Rs.398 to Rs.419",
@@ -13,5 +28,17 @@
     "noOfTime": "1.9943061157329196",
     "noOfsharesBid": "2.287089E7",
     "srNo": null
+  },
+  {
+    "companyName": "Happy Steels Limited",
+    "isBse": "1",
+    "issueEndDate": "13-Jul-2026",
+    "issueStartDate": "09-Jul-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "HAPPY",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "2712000",
+    "noOfTime": ""
   }
 ]

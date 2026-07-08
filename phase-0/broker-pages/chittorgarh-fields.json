@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-08T12:50:53.422Z",
+  "captured_at_utc": "2026-07-08T20:36:53.388Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147727,
+      "bytes": 147715,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 145396,
+      "bytes": 147293,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
       "mode": "static",
       "status": 200,
-      "bytes": 257614,
+      "bytes": 259254,
       "title": "Laser Power &amp; Infra IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
