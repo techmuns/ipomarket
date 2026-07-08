@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/kusumgar-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 80296,
-  "main_content_bytes": 80296,
+  "noise_stripped_bytes": 83014,
+  "main_content_bytes": 83014,
   "tables_parsed": 10,
-  "table_rows_parsed": 59
+  "table_rows_parsed": 66
 }
