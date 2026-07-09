@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://dnafinserv.com/wp-content/uploads/2026/07/Alpine-Texworld-Limited-RHP.pdf"
   ],
-  "noise_stripped_bytes": 85504,
-  "main_content_bytes": 85504,
+  "noise_stripped_bytes": 85450,
+  "main_content_bytes": 85450,
   "tables_parsed": 10,
   "table_rows_parsed": 69
 }
