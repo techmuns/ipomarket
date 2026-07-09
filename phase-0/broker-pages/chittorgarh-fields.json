@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-08T20:36:53.388Z",
+  "captured_at_utc": "2026-07-09T07:09:02.224Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147715,
+      "bytes": 147573,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+    "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
     "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
     "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
     "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/om-power-transmission-ipo/2676/",
     "https://www.chittorgarh.com/ipo/sai-parenterals-ipo/2681/",
     "https://www.chittorgarh.com/ipo/powerica-ipo/2570/",
-    "https://www.chittorgarh.com/ipo/amir-chand-jagdish-kumar-ipo/2501/",
-    "https://www.chittorgarh.com/ipo/central-mine-planning-design-institute-ipo/2456/"
+    "https://www.chittorgarh.com/ipo/amir-chand-jagdish-kumar-ipo/2501/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
+      "url": "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
       "segment_guess": "unknown"
     }
   ],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
       "mode": "static",
       "status": 200,
-      "bytes": 238966,
+      "bytes": 274417,
       "title": "SBI Funds Management IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
+      "url": "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
       "mode": "static",
       "status": 200,
-      "bytes": 259254,
-      "title": "Laser Power &amp; Infra IPO Date, Price, GMP, Review, Details",
+      "bytes": 285489,
+      "title": "Alpine Texworld IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

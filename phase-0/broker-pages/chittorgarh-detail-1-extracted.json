@@ -12,28 +12,28 @@
       "source_snippet": "SBI Funds Management IPO"
     },
     "issue_size_cr": {
-      "value": "20,37,09,239 shares (agg. up to ₹ [.] Cr)",
-      "found": false,
-      "confidence": "low",
-      "method": "table[1].row[0]-rejected",
-      "why_missing": "value '20,37,09,239 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
-      "source_snippet": "20,37,09,239 shares (agg. up to ₹ [.] Cr)"
+      "value": "20,37,09,239 shares (agg. up to ₹ 11,693 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "20,37,09,239 shares (agg. up to ₹ 11,693 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹545 to ₹574",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹545 to ₹574"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "26 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "26 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "[.]",
-      "found": false,
-      "confidence": "low",
-      "method": "table[0].row[1]-rejected",
-      "why_missing": "value '[.]' failed date validation (expected \"Mon DD, YYYY\" or similar)",
-      "source_snippet": "[.]"
+      "value": "Tue, Jul 21, 2026 T",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[1] label=\"Listing Date\"",
+      "why_missing": null,
+      "source_snippet": "Tue, Jul 21, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,18 +78,20 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no .pdf href found in the captured HTML",
-      "source_snippet": null
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.sbimf.com/docs/default-source/sbi-funds/offer-documents/rhp-document.pdf"
     }
   },
-  "found_count": 1,
-  "precision_ratio": 0.1,
+  "found_count": 5,
+  "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 72788,
-  "main_content_bytes": 72788,
-  "tables_parsed": 7,
-  "table_rows_parsed": 33
+  "official_pdf_links_off_allowlist": [
+    "https://www.sbimf.com/docs/default-source/sbi-funds/offer-documents/rhp-document.pdf"
+  ],
+  "noise_stripped_bytes": 81672,
+  "main_content_bytes": 81672,
+  "tables_parsed": 9,
+  "table_rows_parsed": 54
 }

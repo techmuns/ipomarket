@@ -1,11 +1,11 @@
 {
-  "CurrDate": "Wed Jul 08 2026 16:01:24",
-  "PrevClose": "1306.65",
-  "LowVal": "1270",
-  "HighVal": "1310",
+  "CurrDate": "Thu Jul 09 2026 12:38:59",
+  "PrevClose": "1276",
+  "LowVal": "1275",
+  "HighVal": "1300",
   "Scripname": "RELIANCE",
-  "CurrVal": "1276.00",
-  "CurrTime": "16:01",
+  "CurrVal": "1289.00",
+  "CurrTime": "12:38",
   "LowVol": "0",
-  "HighVol": "75000",
-  "Data": "[{\"dttm\":\"Wed Jul 08 2026 16:01:24\",\"vale1\":\"1276.00\",\"vole\":\"0\"},{\"dttm\":\"Wed Jul 08 2026 16:00:06\",\"vale1\":\"1276.00\",\"vole\":\"0\"},{\"dttm\":\"Wed Jul 08 2026 15:59:24\",\"vale1\":\"1276.00\",\"vole\":\"1\"},{\"dttm\":\"Wed Jul 08 2026 15:58:35\",\"vale1\":\"1276.00\",\"vole\":\"0\"},{\"dttm\":\"Wed Jul 08 2026 15:57:43\",\"vale1\":\"1276.00\",\"vole\":\"1\"},{\"dttm\":\"Wed Jul 08 2026 15:56:23\",\"vale1\":\"1276.00\",\"vole\":\"10\"},{\"dttm\":\"Wed Jul 08 2026 15:53:50\",\"vale1\":\"1276.00\",\"vole\":\"1\"},{\"dttm\":\"Wed Jul 08 2…[truncated, total 31814 chars]
+  "HighVol": "40000",
+  "Data": "[{\"dttm\":\"Thu Jul 09 2026 12:38:59\",\"vale1\":\"1289.00\",\"vole\":\"273\"},{\"dttm\":\"Thu Jul 09 2026 12:37:59\",\"vale1\":\"1290.00\",\"vole\":\"373\"},{\"dttm\":\"Thu Jul 09 2026 12:36:59\",\"vale1\":\"1289.90\",\"vole\":\"404\"},{\"dttm\":\"Thu Jul 09 2026 12:35:59\",\"vale1\":\"1289.65\",\"vole\":\"1207\"},{\"dttm\":\"Thu Jul 09 2026 12:34:59\",\"vale1\":\"1290.00\",\"vole\":\"430\"},{\"dttm\":\"Thu Jul 09 2026 12:33:59\",\"vale1\":\"1291.50\",\"vole\":\"658\"},{\"dttm\":\"Thu Jul 09 2026 12:32:59\",\"vale1\":\"1291.50\",\"vole\":\"67\"},{\"dttm\":\"Th…[truncated, total 16496 chars]
