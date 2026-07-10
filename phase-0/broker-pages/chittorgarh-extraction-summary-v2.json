@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-09T20:55:47.833Z",
+  "generated_at_utc": "2026-07-10T06:53:53.100Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93699,
+      "main_content_bytes": 93756,
       "tables_parsed": 13,
       "table_rows_parsed": 88,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 82319,
+      "main_content_bytes": 82320,
       "tables_parsed": 11,
       "table_rows_parsed": 61,
       "fields_high_confidence": [
@@ -88,7 +88,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 83338,
+      "main_content_bytes": 83340,
       "tables_parsed": 10,
       "table_rows_parsed": 61,
       "fields_high_confidence": [

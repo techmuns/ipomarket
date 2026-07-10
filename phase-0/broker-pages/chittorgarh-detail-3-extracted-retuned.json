@@ -13,12 +13,12 @@
       "source_snippet": "Laser Power & Infra IPO"
     },
     "issue_size_cr": {
-      "value": "3,46,72,896 shares (agg. up to ₹ 742 Cr)",
+      "value": "3,46,72,895 shares (agg. up to ₹ 742 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "3,46,72,896 shares (agg. up to ₹ 742 Cr)"
+      "source_snippet": "3,46,72,895 shares (agg. up to ₹ 742 Cr)"
     },
     "price_band": {
       "value": "₹203 to ₹214",
@@ -102,8 +102,8 @@
     "https://listing.bseindia.com/download/8888888/preanchor/rhp_20260707165556.pdf",
     "https://www.chittorgarh.net/reports/anchor-investor/laser-power-infra-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 83338,
-  "main_content_bytes": 83338,
+  "noise_stripped_bytes": 83340,
+  "main_content_bytes": 83340,
   "tables_parsed": 10,
   "table_rows_parsed": 61
 }
