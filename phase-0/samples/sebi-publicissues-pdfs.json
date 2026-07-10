@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-10T06:53:53.100Z",
+  "captured_at_utc": "2026-07-10T13:19:36.756Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45531,
+      "bytes": 45881,
       "tr_count": 26,
-      "pdfs_found": 18,
-      "notes": "static ok: tr=26, bytes=45531"
+      "pdfs_found": 19,
+      "notes": "static ok: tr=26, bytes=45881"
     }
   ],
   "detail_urls_found": 31,
@@ -30,6 +30,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/TMC%20Transformers%20India%20Limited%20-%20Abri_p.pdf",
       "link_text": "TMC Transformers India Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/INNOTERRA%20LIMITED%20-%20Abri_p.pdf",
+      "link_text": "INNOTERRA LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {

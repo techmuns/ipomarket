@@ -10,8 +10,8 @@
     "symbol": "LASERPOWER",
     "category": "Total",
     "noOfSharesOffered": "2.5586207E7",
-    "noOfTime": "0.27192150833454914",
-    "noOfsharesBid": "6957440.0",
+    "noOfTime": "0.804468204294603",
+    "noOfsharesBid": "2.058329E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "KUSUMGAR",
     "category": "Total",
     "noOfSharesOffered": "1.1468094E7",
-    "noOfTime": "18.803199119225916",
-    "noOfsharesBid": "2.15636855E8",
+    "noOfTime": "84.73302058737922",
+    "noOfsharesBid": "9.71726245E8",
     "srNo": null
   },
   {
@@ -37,8 +37,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "HAPPY",
-    "noOfsharesBid": "4036000",
+    "noOfsharesBid": "8002000",
     "noOfSharesOffered": "2712000",
-    "noOfTime": "1.49"
+    "noOfTime": "2.95"
   }
 ]

@@ -1,8 +1,9 @@
 {
-  "total": 2,
-  "valid": 2,
+  "total": 3,
+  "valid": 3,
   "examples": {
     "Laser Power & Infra Limited": "LASERPOWER",
-    "Kusumgar Limited": "KUSUMGAR"
+    "Kusumgar Limited": "KUSUMGAR",
+    "Alpine Texworld Limited": "ALPINETEX"
   }
 }
