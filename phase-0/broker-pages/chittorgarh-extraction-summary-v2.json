@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-11T12:03:20.533Z",
+  "generated_at_utc": "2026-07-11T20:10:49.157Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
@@ -88,7 +88,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 83338,
+      "main_content_bytes": 83283,
       "tables_parsed": 10,
       "table_rows_parsed": 61,
       "fields_high_confidence": [
