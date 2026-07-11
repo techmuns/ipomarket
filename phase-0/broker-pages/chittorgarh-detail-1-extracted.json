@@ -12,12 +12,12 @@
       "source_snippet": "SBI Funds Management IPO"
     },
     "issue_size_cr": {
-      "value": "20,37,09,239 shares (agg. up to ₹ 11,693 Cr)",
+      "value": "17,09,56,631 shares (agg. up to ₹ 9,813 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "20,37,09,239 shares (agg. up to ₹ 11,693 Cr)"
+      "source_snippet": "17,09,56,631 shares (agg. up to ₹ 9,813 Cr)"
     },
     "price_band": {
       "value": "₹545 to ₹574",
@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.sbimf.com/docs/default-source/sbi-funds/offer-documents/rhp-document.pdf"
   ],
-  "noise_stripped_bytes": 83446,
-  "main_content_bytes": 83446,
+  "noise_stripped_bytes": 83444,
+  "main_content_bytes": 83444,
   "tables_parsed": 10,
   "table_rows_parsed": 57
 }
