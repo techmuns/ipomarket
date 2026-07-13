@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.sbimf.com/docs/default-source/sbi-funds/offer-documents/rhp-document.pdf"
   ],
-  "noise_stripped_bytes": 83444,
-  "main_content_bytes": 83444,
+  "noise_stripped_bytes": 83389,
+  "main_content_bytes": 83389,
   "tables_parsed": 10,
   "table_rows_parsed": 57
 }

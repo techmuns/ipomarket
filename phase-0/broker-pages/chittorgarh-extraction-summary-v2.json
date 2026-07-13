@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-07-12T20:10:29.571Z",
+  "generated_at_utc": "2026-07-13T06:28:59.522Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
     "slug": "laser-power-infra-ipo",
     "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
-    "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"09 - 13 Jul\" covers today",
+    "status": "fallback",
+    "reason": "fallback (no current-open found): most-recently-listed end date \"09 - 13 Jul\" from list \"mainboard\"",
     "date_text": "09 - 13 Jul",
     "source_list": "mainboard"
   },
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93745,
+      "main_content_bytes": 93690,
       "tables_parsed": 13,
       "table_rows_parsed": 88,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 82309,
+      "main_content_bytes": 82255,
       "tables_parsed": 11,
       "table_rows_parsed": 61,
       "fields_high_confidence": [
