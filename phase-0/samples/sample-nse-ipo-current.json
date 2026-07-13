@@ -1,32 +1,32 @@
 [
   {
-    "companyName": "Laser Power & Infra Limited",
-    "issueEndDate": "13-Jul-2026",
-    "issuePrice": "Rs.203 to Rs.214",
-    "issueSize": "25586207",
-    "issueStartDate": "09-Jul-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "LASERPOWER"
-  },
-  {
-    "companyName": "SBI Funds Management Limited",
-    "issueEndDate": "16-Jul-2026",
-    "issuePrice": "Rs.545 to Rs.574",
-    "issueSize": "170956631",
-    "issueStartDate": "14-Jul-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SBIFUNDS"
-  },
-  {
     "companyName": "Alpine Texworld Limited",
     "issueEndDate": "16-Jul-2026",
     "issuePrice": "Rs.100 to Rs.105",
     "issueSize": "12024000",
     "issueStartDate": "14-Jul-2026",
     "series": "EQ",
-    "status": "Forthcoming",
+    "status": "Active",
     "symbol": "ALPINETEX"
+  },
+  {
+    "companyName": "SBI Funds Management Limited",
+    "issueEndDate": "16-Jul-2026",
+    "issuePrice": "Rs.545 to Rs.574",
+    "issueSize": "124563536",
+    "issueStartDate": "14-Jul-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SBIFUNDS"
+  },
+  {
+    "companyName": "Laser Power & Infra Limited",
+    "issueEndDate": "13-Jul-2026",
+    "issuePrice": "Rs.203 to Rs.214",
+    "issueSize": "25586207",
+    "issueStartDate": "09-Jul-2026",
+    "series": "EQ",
+    "status": "Closed",
+    "symbol": "LASERPOWER"
   }
 ]
