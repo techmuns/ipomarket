@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-13T20:33:29.687Z",
+  "captured_at_utc": "2026-07-14T05:39:37.151Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "laser-power-infra-ipo",
-    "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"09 - 13 Jul\" from list \"mainboard\"",
-    "date_text": "09 - 13 Jul",
+    "slug": "sbi-funds-management-ipo",
+    "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+    "status": "current",
+    "reason": "current-open: list \"mainboard\" row date range \"14 - 16 Jul\" covers today",
+    "date_text": "14 - 16 Jul",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
-      "slug": "laser-power-infra-ipo"
+      "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+      "slug": "sbi-funds-management-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
+      "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
       "mode": "static",
       "status": 200,
-      "bytes": 293882,
-      "title": "Laser Power &amp; Infra IPO Date, Price, GMP, Review, Details",
+      "bytes": 301383,
+      "title": "SBI Funds Management IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

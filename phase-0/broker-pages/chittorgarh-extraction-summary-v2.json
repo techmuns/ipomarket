@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-07-13T20:33:29.687Z",
+  "generated_at_utc": "2026-07-14T05:39:37.151Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "laser-power-infra-ipo",
-    "url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"09 - 13 Jul\" from list \"mainboard\"",
-    "date_text": "09 - 13 Jul",
+    "slug": "sbi-funds-management-ipo",
+    "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+    "status": "current",
+    "reason": "current-open: list \"mainboard\" row date range \"14 - 16 Jul\" covers today",
+    "date_text": "14 - 16 Jul",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "laser-power-infra-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
+      "slug": "sbi-funds-management-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 83338,
-      "tables_parsed": 10,
-      "table_rows_parsed": 61,
+      "main_content_bytes": 89365,
+      "tables_parsed": 11,
+      "table_rows_parsed": 70,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -111,7 +111,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-13T20:33:29.687Z",
+  "captured_at_utc": "2026-07-14T05:39:37.151Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147531,
+      "bytes": 148255,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 146982,
+      "bytes": 147276,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
     "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
     "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
     "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/propshare-celestia-scheme-ipo/2965/",
     "https://www.chittorgarh.com/ipo/om-power-transmission-ipo/2676/",
     "https://www.chittorgarh.com/ipo/sai-parenterals-ipo/2681/",
-    "https://www.chittorgarh.com/ipo/powerica-ipo/2570/",
-    "https://www.chittorgarh.com/ipo/amir-chand-jagdish-kumar-ipo/2501/"
+    "https://www.chittorgarh.com/ipo/powerica-ipo/2570/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+      "url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
+      "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+      "url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
       "mode": "static",
       "status": 200,
-      "bytes": 281285,
-      "title": "SBI Funds Management IPO Date, Price, GMP, Review, Details",
+      "bytes": 265239,
+      "title": "Caliber Mining IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
+      "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
       "mode": "static",
       "status": 200,
-      "bytes": 294127,
-      "title": "Alpine Texworld IPO Date, Price, GMP, Review, Details",
+      "bytes": 301383,
+      "title": "SBI Funds Management IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

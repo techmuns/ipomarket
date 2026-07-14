@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
-  "slug": "laser-power-infra-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+  "slug": "sbi-funds-management-ipo",
   "fields": {
     "company_name": {
-      "value": "Laser Power & Infra IPO",
+      "value": "SBI Funds Management IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Laser Power & Infra IPO"
+      "source_snippet": "SBI Funds Management IPO"
     },
     "issue_size_cr": {
-      "value": "3,46,72,895 shares (agg. up to ₹ 742 Cr)",
+      "value": "17,09,56,631 shares (agg. up to ₹ 9,813 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "3,46,72,895 shares (agg. up to ₹ 742 Cr)"
+      "source_snippet": "17,09,56,631 shares (agg. up to ₹ 9,813 Cr)"
     },
     "price_band": {
-      "value": "₹203 to ₹214",
+      "value": "₹545 to ₹574",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹203 to ₹214"
+      "source_snippet": "₹545 to ₹574"
     },
     "lot_size": {
-      "value": "70 Shares",
+      "value": "26 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "70 Shares"
+      "source_snippet": "26 Shares"
     },
     "face_value": {
-      "value": "₹ 5 per share",
+      "value": "₹ 1 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 5 per share"
+      "source_snippet": "₹ 1 per share"
     },
     "open_date": {
-      "value": "2026-07-09",
+      "value": "2026-07-14",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"9 to 13 Jul, 2026\" → start=2026-07-09"
+      "source_snippet": "raw=\"14 to 16 Jul, 2026\" → start=2026-07-14"
     },
     "close_date": {
-      "value": "2026-07-13",
+      "value": "2026-07-16",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"9 to 13 Jul, 2026\" → end=2026-07-13"
+      "source_snippet": "raw=\"14 to 16 Jul, 2026\" → end=2026-07-16"
     },
     "listing_date": {
-      "value": "2026-07-16",
+      "value": "2026-07-21",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Thu, Jul 16, 2026 T\" → 2026-07-16"
+      "source_snippet": "raw=\"Tue, Jul 21, 2026 T\" → 2026-07-21"
     },
     "registrar": {
-      "value": "MUFG Intime India Pvt.Ltd.",
+      "value": "Kfin Technologies Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 laserpower.ipo@in.mpms.mufg.com <i class=\"fa fa-glo\" → \"MUFG Intime India Pvt.Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 sbifml.ipo@kfintech.com <a h\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -88,9 +88,9 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
-      "why_missing": "2 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://listing.bseindia.com/download/8888888/preanchor/rhp_20260707165556.pdf | https://www.chittorgarh.net/reports/anchor-investor/laser-power-infra-ipo-anchor-allocation-letter.pdf"
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list",
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/sbifundsanchorallocationintimationmb14f35745-1a56-47ff-8897-9f6521bba740.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,11 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://listing.bseindia.com/download/8888888/preanchor/rhp_20260707165556.pdf",
-    "https://www.chittorgarh.net/reports/anchor-investor/laser-power-infra-ipo-anchor-allocation-letter.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/sbifundsanchorallocationintimationmb14f35745-1a56-47ff-8897-9f6521bba740.pdf"
   ],
-  "noise_stripped_bytes": 83338,
-  "main_content_bytes": 83338,
-  "tables_parsed": 10,
-  "table_rows_parsed": 61
+  "noise_stripped_bytes": 89365,
+  "main_content_bytes": 89365,
+  "tables_parsed": 11,
+  "table_rows_parsed": 70
 }
