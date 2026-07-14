@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-14T12:22:40.764Z",
+  "generated_at_utc": "2026-07-14T20:21:33.439Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.45,
   "per_detail": [
@@ -37,9 +37,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 80067,
-      "tables_parsed": 9,
-      "table_rows_parsed": 51,
+      "main_content_bytes": 81858,
+      "tables_parsed": 10,
+      "table_rows_parsed": 54,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
