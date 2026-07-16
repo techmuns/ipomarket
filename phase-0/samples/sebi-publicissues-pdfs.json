@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-15T20:18:18.365Z",
+  "captured_at_utc": "2026-07-16T05:48:39.852Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46213,
+      "bytes": 45904,
       "tr_count": 26,
-      "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=46213"
+      "pdfs_found": 19,
+      "notes": "static ok: tr=26, bytes=45904"
     }
   ],
   "detail_urls_found": 31,
@@ -115,11 +115,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Zepto%20Limited%20-%20abridged_p.pdf",
       "link_text": "Zepto Limited - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Pushp%20Brand%20India%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Pushp Brand India Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-07-15T20:18:18.365Z",
+  "generated_at_utc": "2026-07-16T05:48:39.852Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "sbi-funds-management-ipo",
-    "url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+    "slug": "sotefin-bharat-ipo",
+    "url": "https://www.chittorgarh.com/ipo/sotefin-bharat-ipo/2836/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"14 - 16 Jul\" covers today",
-    "date_text": "14 - 16 Jul",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"16 - 20 Jul\" covers today",
+    "date_text": "16 - 20 Jul",
+    "source_list": "sme"
   },
   "per_detail": [
     {
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93745,
+      "main_content_bytes": 93747,
       "tables_parsed": 13,
       "table_rows_parsed": 88,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 82310,
+      "main_content_bytes": 82311,
       "tables_parsed": 11,
       "table_rows_parsed": 61,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "sbi-funds-management-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
+      "slug": "sotefin-bharat-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/sotefin-bharat-ipo/2836/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 89584,
+      "main_content_bytes": 90018,
       "tables_parsed": 11,
-      "table_rows_parsed": 70,
+      "table_rows_parsed": 73,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
