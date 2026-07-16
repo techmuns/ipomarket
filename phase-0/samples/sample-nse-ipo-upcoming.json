@@ -1,12 +1,22 @@
 [
   {
+    "companyName": "Caliber Mining and Logistics Limited",
+    "issueEndDate": "21-Jul-2026",
+    "issuePrice": "Rs.402 to Rs.424",
+    "issueSize": "7835821",
+    "issueStartDate": "17-Jul-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "CMLL"
+  },
+  {
     "companyName": "Alpine Texworld Limited",
     "issueEndDate": "16-Jul-2026",
     "issuePrice": "Rs.100 to Rs.105",
     "issueSize": "12024000",
     "issueStartDate": "14-Jul-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "ALPINETEX"
   },
   {
@@ -16,17 +26,7 @@
     "issueSize": "124563536",
     "issueStartDate": "14-Jul-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "SBIFUNDS"
-  },
-  {
-    "companyName": "Caliber Mining and Logistics Limited",
-    "issueEndDate": "21-Jul-2026",
-    "issuePrice": "Rs.402 to Rs.424",
-    "issueSize": "11194029",
-    "issueStartDate": "17-Jul-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "CMLL"
   }
 ]

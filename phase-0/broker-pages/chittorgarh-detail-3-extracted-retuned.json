@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/sotefinbharatanchor_letter_company7bd27aff-c537-4e73-915c-d81215ebfb3a.pdf"
   ],
-  "noise_stripped_bytes": 90018,
-  "main_content_bytes": 90018,
+  "noise_stripped_bytes": 89963,
+  "main_content_bytes": 89963,
   "tables_parsed": 11,
   "table_rows_parsed": 73
 }

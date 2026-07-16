@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-16T12:48:01.605Z",
+  "generated_at_utc": "2026-07-16T20:10:29.979Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.45,
   "per_detail": [
@@ -8,9 +8,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
       "found_count": 4,
       "precision_ratio": 0.4,
-      "main_content_bytes": 71229,
-      "tables_parsed": 5,
-      "table_rows_parsed": 26,
+      "main_content_bytes": 72955,
+      "tables_parsed": 6,
+      "table_rows_parsed": 29,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -36,7 +36,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 82127,
+      "main_content_bytes": 82908,
       "tables_parsed": 10,
       "table_rows_parsed": 54,
       "fields_high_confidence": [

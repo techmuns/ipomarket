@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://investmentbank.kotak.com//kib-cms/sites/default/files/offer-documets/Cube_Highways_Trust_Offer_Document_July_13_2026.pdf"
   ],
-  "noise_stripped_bytes": 71229,
-  "main_content_bytes": 71229,
-  "tables_parsed": 5,
-  "table_rows_parsed": 26
+  "noise_stripped_bytes": 72955,
+  "main_content_bytes": 72955,
+  "tables_parsed": 6,
+  "table_rows_parsed": 29
 }

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-16T12:48:01.605Z",
+  "captured_at_utc": "2026-07-16T20:10:29.979Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147804,
+      "bytes": 147847,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
       "mode": "static",
       "status": 200,
-      "bytes": 232529,
+      "bytes": 237620,
       "title": "Cube Highways Trust InvIT Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
       "mode": "static",
       "status": 200,
-      "bytes": 271410,
+      "bytes": 284906,
       "title": "Caliber Mining IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
