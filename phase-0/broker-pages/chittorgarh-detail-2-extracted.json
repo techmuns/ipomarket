@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
+  "source_url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
   "fields": {
     "company_name": {
-      "value": "Caliber Mining & Logistics IPO",
+      "value": "Cube Highways Trust InvIT Details",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Caliber Mining & Logistics IPO"
+      "source_snippet": "Cube Highways Trust InvIT Details"
     },
     "issue_size_cr": {
-      "value": "1,06,13,207 shares (agg. up to ₹ 450 Cr)",
+      "value": "32,89,47,368 shares (agg. up to ₹ 5,000 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,06,13,207 shares (agg. up to ₹ 450 Cr)"
+      "source_snippet": "32,89,47,368 shares (agg. up to ₹ 5,000 Cr)"
     },
     "price_band": {
-      "value": "₹402 to ₹424",
+      "value": "₹151.00 to ₹152.00",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[3] label=\"Price Band\"",
+      "method": "table[0].row[2] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹402 to ₹424"
+      "source_snippet": "₹151.00 to ₹152.00"
     },
     "lot_size": {
-      "value": "35 Shares",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
-      "why_missing": null,
-      "source_snippet": "35 Shares"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
+      "source_snippet": null
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Fri, Jul 24, 2026 T",
+      "value": "Wed, Jul 29, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Fri, Jul 24, 2026 T"
+      "source_snippet": "Wed, Jul 29, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,18 +78,20 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no .pdf href found in the captured HTML",
-      "source_snippet": null
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://investmentbank.kotak.com//kib-cms/sites/default/files/offer-documets/Cube_Highways_Trust_Offer_Document_July_13_2026.pdf"
     }
   },
-  "found_count": 5,
-  "precision_ratio": 0.5,
+  "found_count": 4,
+  "precision_ratio": 0.4,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 82908,
-  "main_content_bytes": 82908,
-  "tables_parsed": 10,
-  "table_rows_parsed": 54
+  "official_pdf_links_off_allowlist": [
+    "https://investmentbank.kotak.com//kib-cms/sites/default/files/offer-documets/Cube_Highways_Trust_Offer_Document_July_13_2026.pdf"
+  ],
+  "noise_stripped_bytes": 73010,
+  "main_content_bytes": 73010,
+  "tables_parsed": 6,
+  "table_rows_parsed": 29
 }
