@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-17T12:19:57.118Z",
+  "captured_at_utc": "2026-07-17T20:14:36.489Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
       "mode": "static",
       "status": 200,
-      "bytes": 284288,
+      "bytes": 289558,
       "title": "Xtranet Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
