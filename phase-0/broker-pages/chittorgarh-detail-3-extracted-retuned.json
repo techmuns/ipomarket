@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/caliber-mining-ipo-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 86483,
-  "main_content_bytes": 86483,
+  "noise_stripped_bytes": 86484,
+  "main_content_bytes": 86484,
   "tables_parsed": 11,
   "table_rows_parsed": 64
 }

@@ -1,9 +1,10 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 4,
+  "valid": 4,
   "examples": {
     "Caliber Mining and Logistics Limited": "CMLL",
     "Alpine Texworld Limited": "ALPINETEX",
-    "SBI Funds Management Limited": "SBIFUNDS"
+    "SBI Funds Management Limited": "SBIFUNDS",
+    "Metalic Technoforge Limited": "METALIC"
   }
 }

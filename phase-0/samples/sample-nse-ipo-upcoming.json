@@ -28,5 +28,17 @@
     "series": "EQ",
     "status": "Closed",
     "symbol": "SBIFUNDS"
+  },
+  {
+    "companyName": "Metalic Technoforge Limited",
+    "issueEndDate": "23-Jul-2026",
+    "issuePrice": "Rs.72 to Rs.77",
+    "issueSize": "6488000",
+    "issueStartDate": "21-Jul-2026",
+    "lotSize": "1600",
+    "priceBand": "Rs.72 to Rs.77",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "METALIC"
   }
 ]
