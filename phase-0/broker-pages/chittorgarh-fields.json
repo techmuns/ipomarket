@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-18T12:02:41.228Z",
+  "captured_at_utc": "2026-07-18T20:07:59.836Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147921,
+      "bytes": 147706,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
+    "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
     "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
     "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
     "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
     "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
     "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
-    "https://www.chittorgarh.com/ipo/citius-transnet-invit-ipo/2862/",
-    "https://www.chittorgarh.com/ipo/propshare-celestia-scheme-ipo/2965/"
+    "https://www.chittorgarh.com/ipo/citius-transnet-invit-ipo/2862/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
+      "url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
+      "url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
       "mode": "static",
       "status": 200,
-      "bytes": 278658,
-      "title": "Lohia Corp IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 287299,
+      "title": "Indo-MIM IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

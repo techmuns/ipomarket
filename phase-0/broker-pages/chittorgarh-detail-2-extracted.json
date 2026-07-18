@@ -1,23 +1,23 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
+  "source_url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
   "fields": {
     "company_name": {
-      "value": "Lohia Corp IPO",
+      "value": "Indo-MIM IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Lohia Corp IPO"
+      "source_snippet": "Indo-MIM IPO"
     },
     "issue_size_cr": {
-      "value": "2,59,31,407 shares (agg. up to ₹ [.] Cr)",
+      "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "table[1].row[0]-rejected",
-      "why_missing": "value '2,59,31,407 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
-      "source_snippet": "2,59,31,407 shares (agg. up to ₹ [.] Cr)"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
+      "source_snippet": null
     },
     "price_band": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.lohiagroup.com/storage/app/media/lohia-corp-limited-rhp-unsigned-version.pdf"
+      "source_snippet": "https://www.axiscapital.co.in/contents/Indo%20MIM%20RHP-1784352328.pdf"
     }
   },
   "found_count": 2,
   "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.lohiagroup.com/storage/app/media/lohia-corp-limited-rhp-unsigned-version.pdf"
+    "https://www.axiscapital.co.in/contents/Indo%20MIM%20RHP-1784352328.pdf"
   ],
-  "noise_stripped_bytes": 83064,
-  "main_content_bytes": 83064,
-  "tables_parsed": 8,
-  "table_rows_parsed": 58
+  "noise_stripped_bytes": 85974,
+  "main_content_bytes": 85974,
+  "tables_parsed": 9,
+  "table_rows_parsed": 62
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-18T12:02:41.228Z",
+  "generated_at_utc": "2026-07-18T20:07:59.836Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.35,
   "per_detail": [
@@ -33,22 +33,22 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
+      "source_url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 83064,
-      "tables_parsed": 8,
-      "table_rows_parsed": 58,
+      "main_content_bytes": 85974,
+      "tables_parsed": 9,
+      "table_rows_parsed": 62,
       "fields_high_confidence": [
         "company_name",
         "listing_date"
       ],
       "fields_medium_confidence": [],
       "fields_rejected_low_confidence": [
-        "issue_size_cr",
         "official_pdf_links"
       ],
       "fields_missing": [
+        "issue_size_cr",
         "price_band",
         "lot_size",
         "open_date",
