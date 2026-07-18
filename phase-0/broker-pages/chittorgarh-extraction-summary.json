@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-18T05:35:14.458Z",
+  "generated_at_utc": "2026-07-18T12:02:41.228Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.45,
+  "average_precision_ratio": 0.35,
   "per_detail": [
     {
       "index": 1,
@@ -33,23 +33,23 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
-      "found_count": 4,
-      "precision_ratio": 0.4,
-      "main_content_bytes": 73010,
-      "tables_parsed": 6,
-      "table_rows_parsed": 29,
+      "source_url": "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
+      "found_count": 2,
+      "precision_ratio": 0.2,
+      "main_content_bytes": 83064,
+      "tables_parsed": 8,
+      "table_rows_parsed": 58,
       "fields_high_confidence": [
         "company_name",
-        "issue_size_cr",
-        "price_band",
         "listing_date"
       ],
       "fields_medium_confidence": [],
       "fields_rejected_low_confidence": [
+        "issue_size_cr",
         "official_pdf_links"
       ],
       "fields_missing": [
+        "price_band",
         "lot_size",
         "open_date",
         "close_date",

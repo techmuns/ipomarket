@@ -12,12 +12,12 @@
       "source_snippet": "Xtranet Technologies IPO"
     },
     "issue_size_cr": {
-      "value": "1,33,85,826 shares (agg. up to ₹ 170 Cr)",
+      "value": "1,31,34,000 shares (agg. up to ₹ 167 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,33,85,826 shares (agg. up to ₹ 170 Cr)"
+      "source_snippet": "1,31,34,000 shares (agg. up to ₹ 167 Cr)"
     },
     "price_band": {
       "value": "₹120 to ₹127",

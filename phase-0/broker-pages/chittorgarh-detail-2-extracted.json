@@ -1,31 +1,31 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
+  "source_url": "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
   "fields": {
     "company_name": {
-      "value": "Cube Highways Trust InvIT Details",
+      "value": "Lohia Corp IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Cube Highways Trust InvIT Details"
+      "source_snippet": "Lohia Corp IPO"
     },
     "issue_size_cr": {
-      "value": "32,89,47,368 shares (agg. up to ₹ 5,000 Cr)",
-      "found": true,
-      "confidence": "high",
-      "method": "table[1].row[0] label=\"Total Issue Size\"",
-      "why_missing": null,
-      "source_snippet": "32,89,47,368 shares (agg. up to ₹ 5,000 Cr)"
+      "value": "2,59,31,407 shares (agg. up to ₹ [.] Cr)",
+      "found": false,
+      "confidence": "low",
+      "method": "table[1].row[0]-rejected",
+      "why_missing": "value '2,59,31,407 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
+      "source_snippet": "2,59,31,407 shares (agg. up to ₹ [.] Cr)"
     },
     "price_band": {
-      "value": "₹151.00 to ₹152.00",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[2] label=\"Price Band\"",
-      "why_missing": null,
-      "source_snippet": "₹151.00 to ₹152.00"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
+      "source_snippet": null
     },
     "lot_size": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Wed, Jul 29, 2026 T",
+      "value": "Thu, Jul 30, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Wed, Jul 29, 2026 T"
+      "source_snippet": "Thu, Jul 30, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://investmentbank.kotak.com//kib-cms/sites/default/files/offer-documets/Cube_Highways_Trust_Offer_Document_July_13_2026.pdf"
+      "source_snippet": "https://www.lohiagroup.com/storage/app/media/lohia-corp-limited-rhp-unsigned-version.pdf"
     }
   },
-  "found_count": 4,
-  "precision_ratio": 0.4,
+  "found_count": 2,
+  "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://investmentbank.kotak.com//kib-cms/sites/default/files/offer-documets/Cube_Highways_Trust_Offer_Document_July_13_2026.pdf"
+    "https://www.lohiagroup.com/storage/app/media/lohia-corp-limited-rhp-unsigned-version.pdf"
   ],
-  "noise_stripped_bytes": 73010,
-  "main_content_bytes": 73010,
-  "tables_parsed": 6,
-  "table_rows_parsed": 29
+  "noise_stripped_bytes": 83064,
+  "main_content_bytes": 83064,
+  "tables_parsed": 8,
+  "table_rows_parsed": 58
 }
