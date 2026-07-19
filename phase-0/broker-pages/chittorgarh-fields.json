@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-19T12:06:00.707Z",
+  "captured_at_utc": "2026-07-19T20:11:44.588Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
       "mode": "static",
       "status": 200,
-      "bytes": 287300,
+      "bytes": 287024,
       "title": "Indo-MIM IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
