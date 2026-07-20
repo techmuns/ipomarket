@@ -12,28 +12,28 @@
       "source_snippet": "Indo-MIM IPO"
     },
     "issue_size_cr": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
-      "source_snippet": null
+      "value": "7,86,00,300 shares (agg. up to ₹ 3,811 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "7,86,00,300 shares (agg. up to ₹ 3,811 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹461 to ₹485",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹461 to ₹485"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "30 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "30 Shares"
     },
     "open_date": {
       "value": null,
@@ -78,20 +78,18 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.axiscapital.co.in/contents/Indo%20MIM%20RHP-1784352328.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
-  "found_count": 2,
-  "precision_ratio": 0.2,
+  "found_count": 5,
+  "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.axiscapital.co.in/contents/Indo%20MIM%20RHP-1784352328.pdf"
-  ],
-  "noise_stripped_bytes": 85919,
-  "main_content_bytes": 85919,
-  "tables_parsed": 9,
-  "table_rows_parsed": 62
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 92179,
+  "main_content_bytes": 92179,
+  "tables_parsed": 10,
+  "table_rows_parsed": 74
 }
