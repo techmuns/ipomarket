@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://xtranetindia.com/assets/img/pdf/RHP.pdf"
   ],
-  "noise_stripped_bytes": 88165,
-  "main_content_bytes": 88165,
+  "noise_stripped_bytes": 88110,
+  "main_content_bytes": 88110,
   "tables_parsed": 10,
   "table_rows_parsed": 65
 }
