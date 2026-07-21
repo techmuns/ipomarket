@@ -1,33 +1,23 @@
 [
   {
+    "companyName": "Cube Highways Trust",
+    "issueEndDate": "24-Jul-2026",
+    "issuePrice": "Rs.151 to Rs.152",
+    "issueSize": "136589480",
+    "issueStartDate": "22-Jul-2026",
+    "series": "IV",
+    "status": "Active",
+    "symbol": "CUBEINVIT"
+  },
+  {
     "companyName": "Caliber Mining and Logistics Limited",
     "issueEndDate": "21-Jul-2026",
     "issuePrice": "Rs.402 to Rs.424",
     "issueSize": "7835821",
     "issueStartDate": "17-Jul-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "CMLL"
-  },
-  {
-    "companyName": "INDO-MIM Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.461 to Rs.485",
-    "issueSize": "79156531",
-    "issueStartDate": "23-Jul-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "INDOMIM"
-  },
-  {
-    "companyName": "Xtranet Technologies Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.120 to Rs.127",
-    "issueSize": "13134000",
-    "issueStartDate": "23-Jul-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "XTRANET"
   },
   {
     "companyName": "Lohia Corp Limited",
@@ -40,13 +30,23 @@
     "symbol": "LCL"
   },
   {
-    "companyName": "Cube Highways Trust",
-    "issueEndDate": "24-Jul-2026",
-    "issuePrice": "Rs.151 to Rs.152",
-    "issueSize": "248344345",
-    "issueStartDate": "22-Jul-2026",
-    "series": "IV",
+    "companyName": "Xtranet Technologies Limited",
+    "issueEndDate": "27-Jul-2026",
+    "issuePrice": "Rs.120 to Rs.127",
+    "issueSize": "13134000",
+    "issueStartDate": "23-Jul-2026",
+    "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "CUBEINVIT"
+    "symbol": "XTRANET"
+  },
+  {
+    "companyName": "INDO-MIM Limited",
+    "issueEndDate": "27-Jul-2026",
+    "issuePrice": "Rs.461 to Rs.485",
+    "issueSize": "79156531",
+    "issueStartDate": "23-Jul-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "INDOMIM"
   }
 ]

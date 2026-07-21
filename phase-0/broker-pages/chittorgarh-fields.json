@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-21T12:43:13.586Z",
+  "captured_at_utc": "2026-07-21T20:33:51.303Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147556,
+      "bytes": 147102,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147935,
+      "bytes": 147943,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
       "mode": "static",
       "status": 200,
-      "bytes": 295040,
+      "bytes": 294769,
       "title": "Xtranet Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
       "mode": "static",
       "status": 200,
-      "bytes": 314495,
+      "bytes": 314503,
       "title": "Indo-MIM IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],

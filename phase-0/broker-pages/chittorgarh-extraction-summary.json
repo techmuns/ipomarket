@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-21T12:43:13.586Z",
+  "generated_at_utc": "2026-07-21T20:33:51.303Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.5,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 88165,
+      "main_content_bytes": 88109,
       "tables_parsed": 10,
       "table_rows_parsed": 65,
       "fields_high_confidence": [
