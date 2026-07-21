@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-21T06:05:08.221Z",
+  "captured_at_utc": "2026-07-21T12:43:13.586Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 146452,
+      "bytes": 147556,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147848,
+      "bytes": 147935,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
       "mode": "static",
       "status": 200,
-      "bytes": 308771,
+      "bytes": 314495,
       "title": "Indo-MIM IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],

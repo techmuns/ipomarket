@@ -1,8 +1,11 @@
 {
-  "total": 2,
-  "valid": 2,
+  "total": 5,
+  "valid": 5,
   "examples": {
     "Caliber Mining and Logistics Limited": "CMLL",
+    "INDO-MIM Limited": "INDOMIM",
+    "Xtranet Technologies Limited": "XTRANET",
+    "Lohia Corp Limited": "LCL",
     "Cube Highways Trust": "CUBEINVIT"
   }
 }

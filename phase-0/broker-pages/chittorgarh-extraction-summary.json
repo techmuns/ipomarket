@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-21T06:05:08.221Z",
+  "generated_at_utc": "2026-07-21T12:43:13.586Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.5,
   "per_detail": [
@@ -36,9 +36,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 92176,
-      "tables_parsed": 10,
-      "table_rows_parsed": 74,
+      "main_content_bytes": 94045,
+      "tables_parsed": 11,
+      "table_rows_parsed": 77,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
