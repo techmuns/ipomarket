@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-20T20:39:17.980Z",
+  "captured_at_utc": "2026-07-21T06:05:08.221Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "caliber-mining-ipo",
-    "url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
+    "slug": "metalic-technoforge-ipo",
+    "url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"17 - 21 Jul\" covers today",
-    "date_text": "17 - 21 Jul",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"21 - 23 Jul\" covers today",
+    "date_text": "21 - 23 Jul",
+    "source_list": "sme"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
-      "slug": "caliber-mining-ipo"
+      "url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
+      "slug": "metalic-technoforge-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 325502,
+      "bytes": 325416,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
+      "url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
       "mode": "static",
       "status": 200,
-      "bytes": 299104,
-      "title": "Caliber Mining IPO Date, Price, GMP, Review, Details",
+      "bytes": 335673,
+      "title": "Metalic Technoforge IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

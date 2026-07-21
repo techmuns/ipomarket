@@ -1,9 +1,8 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 2,
+  "valid": 2,
   "examples": {
     "Caliber Mining and Logistics Limited": "CMLL",
-    "Cube Highways Trust": "CUBEINVIT",
-    "Metalic Technoforge Limited": "METALIC"
+    "Cube Highways Trust": "CUBEINVIT"
   }
 }

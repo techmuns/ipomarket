@@ -1,40 +1,40 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
-  "slug": "caliber-mining-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
+  "slug": "metalic-technoforge-ipo",
   "fields": {
     "company_name": {
-      "value": "Caliber Mining & Logistics IPO",
+      "value": "Metalic Technoforge IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Caliber Mining & Logistics IPO"
+      "source_snippet": "Metalic Technoforge IPO"
     },
     "issue_size_cr": {
-      "value": "1,06,13,207 shares (agg. up to ₹ 450 Cr)",
+      "value": "64,88,000 shares (agg. up to ₹ 50 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,06,13,207 shares (agg. up to ₹ 450 Cr)"
+      "source_snippet": "64,88,000 shares (agg. up to ₹ 50 Cr)"
     },
     "price_band": {
-      "value": "₹402 to ₹424",
+      "value": "₹72 to ₹77",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹402 to ₹424"
+      "source_snippet": "₹72 to ₹77"
     },
     "lot_size": {
-      "value": "35 Shares",
+      "value": "1,600 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "35 Shares"
+      "source_snippet": "1,600 Shares"
     },
     "face_value": {
       "value": "₹ 10 per share",
@@ -45,36 +45,36 @@
       "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-07-17",
+      "value": "2026-07-21",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"17 to 21 Jul, 2026\" → start=2026-07-17"
+      "source_snippet": "raw=\"21 to 23 Jul, 2026\" → start=2026-07-21"
     },
     "close_date": {
-      "value": "2026-07-21",
+      "value": "2026-07-23",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"17 to 21 Jul, 2026\" → end=2026-07-21"
+      "source_snippet": "raw=\"21 to 23 Jul, 2026\" → end=2026-07-23"
     },
     "listing_date": {
-      "value": "2026-07-24",
+      "value": "2026-07-28",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Fri, Jul 24, 2026 T\" → 2026-07-24"
+      "source_snippet": "raw=\"Tue, Jul 28, 2026 T\" → 2026-07-28"
     },
     "registrar": {
-      "value": "Kfin Technologies Ltd.",
+      "value": "Bigshare Services Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 cmll.ipo@kfintech.com <a hre\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. 8657578989/8069219065/8069219060 ipo@bigshareonline.com <i class\" → \"Bigshare Services Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -88,9 +88,9 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/caliber-mining-ipo-anchor-list.pdf"
+      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
+      "why_missing": "2 PDF link(s) found but none on the official allow-list",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/rhp_mtf.pdf | https://www.chittorgarh.net/reports/anchor-investor/metalic-technoforge-company_anchor_format-sme-ipo.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,11 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/caliber-mining-ipo-anchor-list.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/rhp_mtf.pdf",
+    "https://www.chittorgarh.net/reports/anchor-investor/metalic-technoforge-company_anchor_format-sme-ipo.pdf"
   ],
-  "noise_stripped_bytes": 86484,
-  "main_content_bytes": 86484,
+  "noise_stripped_bytes": 97212,
+  "main_content_bytes": 97212,
   "tables_parsed": 11,
-  "table_rows_parsed": 64
+  "table_rows_parsed": 84
 }

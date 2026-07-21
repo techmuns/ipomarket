@@ -10,8 +10,20 @@
     "symbol": "CMLL",
     "category": "Total",
     "noOfSharesOffered": "7835821.0",
-    "noOfTime": "0.7943609227418543",
-    "noOfsharesBid": "6224470.0",
+    "noOfTime": "30.38664806151136",
+    "noOfsharesBid": "2.38104335E8",
     "srNo": null
+  },
+  {
+    "companyName": "Metalic Technoforge Limited",
+    "isBse": "1",
+    "issueEndDate": "23-Jul-2026",
+    "issueStartDate": "21-Jul-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "METALIC",
+    "noOfsharesBid": "720000",
+    "noOfSharesOffered": "4648000",
+    "noOfTime": "0.15"
   }
 ]
