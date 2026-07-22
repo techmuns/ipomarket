@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "CUBEINVIT",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.3658948E8",
+    "noOfTime": "0.009664177651163178",
+    "noOfsharesBid": "1320025.0",
     "srNo": null
   },
   {
@@ -22,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "METALIC",
-    "noOfsharesBid": "1539200",
+    "noOfsharesBid": "2390400",
     "noOfSharesOffered": "4648000",
-    "noOfTime": "0.33"
+    "noOfTime": "0.51"
   }
 ]

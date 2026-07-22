@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-21T20:33:51.303Z",
+  "captured_at_utc": "2026-07-22T06:03:42.738Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "metalic-technoforge-ipo",
-    "url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
+    "slug": "cube-highways-trust-invit",
+    "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"21 - 23 Jul\" covers today",
-    "date_text": "21 - 23 Jul",
-    "source_list": "sme"
+    "reason": "current-open: list \"mainboard\" row date range \"22 - 24 Jul\" covers today",
+    "date_text": "22 - 24 Jul",
+    "source_list": "mainboard"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
-      "slug": "metalic-technoforge-ipo"
+      "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
+      "slug": "cube-highways-trust-invit"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 325147,
+      "bytes": 325423,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
+      "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
       "mode": "static",
       "status": 200,
-      "bytes": 335637,
-      "title": "Metalic Technoforge IPO Date, Price, GMP, Review, Details",
+      "bytes": 239031,
+      "title": "Cube Highways Trust InvIT Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

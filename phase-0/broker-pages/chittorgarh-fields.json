@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-21T20:33:51.303Z",
+  "captured_at_utc": "2026-07-22T06:03:42.738Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147943,
+      "bytes": 147976,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
       "mode": "static",
       "status": 200,
-      "bytes": 294769,
+      "bytes": 295045,
       "title": "Xtranet Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

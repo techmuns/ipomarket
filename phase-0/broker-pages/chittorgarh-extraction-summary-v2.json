@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-07-21T20:33:51.303Z",
+  "generated_at_utc": "2026-07-22T06:03:42.738Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.818,
+  "average_precision_ratio_full": 0.788,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "metalic-technoforge-ipo",
-    "url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
+    "slug": "cube-highways-trust-invit",
+    "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"21 - 23 Jul\" covers today",
-    "date_text": "21 - 23 Jul",
-    "source_list": "sme"
+    "reason": "current-open: list \"mainboard\" row date range \"22 - 24 Jul\" covers today",
+    "date_text": "22 - 24 Jul",
+    "source_list": "mainboard"
   },
   "per_detail": [
     {
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 81290,
+      "main_content_bytes": 81345,
       "tables_parsed": 11,
       "table_rows_parsed": 59,
       "fields_high_confidence": [
@@ -82,21 +82,20 @@
     },
     {
       "index": 3,
-      "slug": "metalic-technoforge-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/metalic-technoforge-ipo/2993/",
-      "found_count_full": 9,
+      "slug": "cube-highways-trust-invit",
+      "source_url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
+      "found_count_full": 8,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.818,
+      "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 97212,
-      "tables_parsed": 11,
-      "table_rows_parsed": 84,
+      "main_content_bytes": 73577,
+      "tables_parsed": 6,
+      "table_rows_parsed": 28,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
-        "face_value",
         "listing_date"
       ],
       "fields_medium_confidence": [
@@ -104,14 +103,14 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
+        "face_value",
+        "brlms",
         "official_pdf_links"
       ],
-      "fields_missing": [
-        "brlms"
-      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }
