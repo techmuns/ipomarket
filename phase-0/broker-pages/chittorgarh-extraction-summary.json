@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-22T12:45:28.623Z",
+  "generated_at_utc": "2026-07-22T20:20:18.332Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.5,
   "per_detail": [
@@ -8,9 +8,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 88164,
-      "tables_parsed": 10,
-      "table_rows_parsed": 65,
+      "main_content_bytes": 90605,
+      "tables_parsed": 11,
+      "table_rows_parsed": 70,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -29,14 +29,14 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 2
     },
     {
       "index": 2,
       "source_url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 93990,
+      "main_content_bytes": 94880,
       "tables_parsed": 11,
       "table_rows_parsed": 77,
       "fields_high_confidence": [

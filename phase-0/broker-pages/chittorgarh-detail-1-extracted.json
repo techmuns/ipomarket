@@ -79,19 +79,20 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://xtranetindia.com/assets/img/pdf/RHP.pdf"
+      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
+      "why_missing": "2 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://xtranetindia.com/assets/img/pdf/RHP.pdf | https://www.chittorgarh.net/reports/anchor-investor/xtranettechnologiesanchor_allocation24e17b2c-1778-4a2a-b0ee-85593cd7e9f6.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://xtranetindia.com/assets/img/pdf/RHP.pdf"
+    "https://xtranetindia.com/assets/img/pdf/RHP.pdf",
+    "https://www.chittorgarh.net/reports/anchor-investor/xtranettechnologiesanchor_allocation24e17b2c-1778-4a2a-b0ee-85593cd7e9f6.pdf"
   ],
-  "noise_stripped_bytes": 88164,
-  "main_content_bytes": 88164,
-  "tables_parsed": 10,
-  "table_rows_parsed": 65
+  "noise_stripped_bytes": 90605,
+  "main_content_bytes": 90605,
+  "tables_parsed": 11,
+  "table_rows_parsed": 70
 }
