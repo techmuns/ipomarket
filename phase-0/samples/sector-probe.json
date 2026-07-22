@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-22T06:03:42.738Z",
+  "captured_at_utc": "2026-07-22T12:45:28.623Z",
   "sector_reachable": {
     "listed_equity": false,
     "pre_ipo": false
@@ -33,7 +33,7 @@
       ],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "5 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none)"
+      "notes": "4 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none)"
     },
     {
       "source": "BSE IPO list",
@@ -43,7 +43,7 @@
       "sample_keys": [],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "BSE HTML; sector-related words found: (none); bytes=12565"
+      "notes": "BSE HTML; sector-related words found: (none); bytes=13289"
     }
   ]
 }

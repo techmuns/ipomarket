@@ -10,16 +10,6 @@
     "symbol": "CUBEINVIT"
   },
   {
-    "companyName": "Caliber Mining and Logistics Limited",
-    "issueEndDate": "21-Jul-2026",
-    "issuePrice": "Rs.402 to Rs.424",
-    "issueSize": "7835821",
-    "issueStartDate": "17-Jul-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "CMLL"
-  },
-  {
     "companyName": "Lohia Corp Limited",
     "issueEndDate": "27-Jul-2026",
     "issuePrice": "Rs.404 to Rs.425",
@@ -30,16 +20,6 @@
     "symbol": "LCL"
   },
   {
-    "companyName": "Xtranet Technologies Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.120 to Rs.127",
-    "issueSize": "13134000",
-    "issueStartDate": "23-Jul-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "XTRANET"
-  },
-  {
     "companyName": "INDO-MIM Limited",
     "issueEndDate": "27-Jul-2026",
     "issuePrice": "Rs.461 to Rs.485",
@@ -48,5 +28,15 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "INDOMIM"
+  },
+  {
+    "companyName": "Xtranet Technologies Limited",
+    "issueEndDate": "27-Jul-2026",
+    "issuePrice": "Rs.120 to Rs.127",
+    "issueSize": "9193800",
+    "issueStartDate": "23-Jul-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "XTRANET"
   }
 ]

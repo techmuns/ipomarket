@@ -1,11 +1,10 @@
 {
-  "total": 5,
-  "valid": 5,
+  "total": 4,
+  "valid": 4,
   "examples": {
     "Cube Highways Trust": "CUBEINVIT",
-    "Caliber Mining and Logistics Limited": "CMLL",
     "Lohia Corp Limited": "LCL",
-    "Xtranet Technologies Limited": "XTRANET",
-    "INDO-MIM Limited": "INDOMIM"
+    "INDO-MIM Limited": "INDOMIM",
+    "Xtranet Technologies Limited": "XTRANET"
   }
 }
