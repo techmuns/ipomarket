@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-07-22T20:20:18.332Z",
+  "generated_at_utc": "2026-07-23T06:09:25.508Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.788,
+  "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "cube-highways-trust-invit",
-    "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
+    "slug": "xtranet-technologies-ipo",
+    "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"22 - 24 Jul\" covers today",
-    "date_text": "22 - 24 Jul",
+    "reason": "current-open: list \"mainboard\" row date range \"23 - 27 Jul\" covers today",
+    "date_text": "23 - 27 Jul",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93744,
+      "main_content_bytes": 93746,
       "tables_parsed": 13,
       "table_rows_parsed": 88,
       "fields_high_confidence": [
@@ -82,35 +82,36 @@
     },
     {
       "index": 3,
-      "slug": "cube-highways-trust-invit",
-      "source_url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
-      "found_count_full": 8,
+      "slug": "xtranet-technologies-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
+      "found_count_full": 10,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.727,
+      "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 76846,
-      "tables_parsed": 7,
-      "table_rows_parsed": 36,
+      "main_content_bytes": 92637,
+      "tables_parsed": 11,
+      "table_rows_parsed": 75,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
-        "listing_date"
+        "face_value",
+        "listing_date",
+        "official_pdf_links"
       ],
       "fields_medium_confidence": [
         "open_date",
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
-        "official_pdf_links"
-      ],
+      "fields_rejected_low_confidence": [],
       "fields_missing": [
-        "face_value",
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_on_allowlist": [
+        "https://www.bseindia.com/corporates/download/305760/IPO%20Open/Xtranet_RHP_160726_20260718174206.pdf"
+      ],
       "official_pdf_links_off_allowlist_count": 1
     }
   ]

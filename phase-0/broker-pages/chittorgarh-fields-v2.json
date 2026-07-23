@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-22T20:20:18.332Z",
+  "captured_at_utc": "2026-07-23T06:09:25.508Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "cube-highways-trust-invit",
-    "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
+    "slug": "xtranet-technologies-ipo",
+    "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"22 - 24 Jul\" covers today",
-    "date_text": "22 - 24 Jul",
+    "reason": "current-open: list \"mainboard\" row date range \"23 - 27 Jul\" covers today",
+    "date_text": "23 - 27 Jul",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
-      "slug": "cube-highways-trust-invit"
+      "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
+      "slug": "xtranet-technologies-ipo"
     }
   ],
   "details": [
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352792,
+      "bytes": 353031,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 325270,
+      "bytes": 325423,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
+      "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
       "mode": "static",
       "status": 200,
-      "bytes": 308593,
-      "title": "Cube Highways Trust InvIT Date, Price, GMP, Details",
+      "bytes": 322994,
+      "title": "Xtranet Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

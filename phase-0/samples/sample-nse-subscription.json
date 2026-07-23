@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "XTRANET",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "9193800.0",
+    "noOfTime": "0.23801148600143576",
+    "noOfsharesBid": "2188230.0",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "LCL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.4352274E7",
+    "noOfTime": "0.04980186415058687",
+    "noOfsharesBid": "714770.0",
     "srNo": null
   },
   {
@@ -39,9 +39,9 @@
     "status": "Active",
     "symbol": "INDOMIM",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "5.5093201E7",
+    "noOfTime": "0.21405762936156134",
+    "noOfsharesBid": "1.179312E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "CUBEINVIT",
     "category": "Total",
     "noOfSharesOffered": "1.3658948E8",
-    "noOfTime": "0.024794405835647078",
-    "noOfsharesBid": "3386655.0",
+    "noOfTime": "0.03551576592867913",
+    "noOfsharesBid": "4851080.0",
     "srNo": null
   },
   {
@@ -67,8 +67,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "METALIC",
-    "noOfsharesBid": "3977600",
+    "noOfsharesBid": "6073600",
     "noOfSharesOffered": "4648000",
-    "noOfTime": "0.86"
+    "noOfTime": "1.31"
   }
 ]
