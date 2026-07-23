@@ -58,17 +58,5 @@
     "noOfTime": "0.05163918919670827",
     "noOfsharesBid": "7053370.0",
     "srNo": null
-  },
-  {
-    "companyName": "Metalic Technoforge Limited",
-    "isBse": "1",
-    "issueEndDate": "23-Jul-2026",
-    "issueStartDate": "21-Jul-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "METALIC",
-    "noOfsharesBid": "36931200",
-    "noOfSharesOffered": "4648000",
-    "noOfTime": "7.95"
   }
 ]
