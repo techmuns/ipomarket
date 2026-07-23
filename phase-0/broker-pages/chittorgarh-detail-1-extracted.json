@@ -94,8 +94,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/xtranettechnologiesanchor_allocation24e17b2c-1778-4a2a-b0ee-85593cd7e9f6.pdf"
   ],
-  "noise_stripped_bytes": 92637,
-  "main_content_bytes": 92637,
+  "noise_stripped_bytes": 92047,
+  "main_content_bytes": 92047,
   "tables_parsed": 11,
   "table_rows_parsed": 75
 }
