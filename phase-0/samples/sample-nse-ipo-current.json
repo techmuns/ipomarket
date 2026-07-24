@@ -38,5 +38,17 @@
     "series": "IV",
     "status": "Active",
     "symbol": "CUBEINVIT"
+  },
+  {
+    "companyName": "Propshop Events and Exhibitions Limited",
+    "issueEndDate": "29-Jul-2026",
+    "issuePrice": "Rs.65 to Rs.69",
+    "issueSize": "4140000",
+    "issueStartDate": "27-Jul-2026",
+    "lotSize": "2000",
+    "priceBand": "Rs.65 to Rs.69",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "PROPSHOP"
   }
 ]

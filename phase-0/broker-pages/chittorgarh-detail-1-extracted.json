@@ -1,39 +1,39 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
+  "source_url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
   "fields": {
     "company_name": {
-      "value": "Manipal Health Enterprises IPO",
+      "value": "Ardee Industries IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Manipal Health Enterprises IPO"
+      "source_snippet": "Ardee Industries IPO"
     },
     "issue_size_cr": {
-      "value": "15,72,07,054 shares (agg. up to ₹ 9,274 Cr)",
-      "found": true,
-      "confidence": "high",
-      "method": "table[1].row[0] label=\"Total Issue Size\"",
-      "why_missing": null,
-      "source_snippet": "15,72,07,054 shares (agg. up to ₹ 9,274 Cr)"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
+      "source_snippet": null
     },
     "price_band": {
-      "value": "₹560 to ₹590",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[3] label=\"Price Band\"",
-      "why_missing": null,
-      "source_snippet": "₹560 to ₹590"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
+      "source_snippet": null
     },
     "lot_size": {
-      "value": "25 Shares",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
-      "why_missing": null,
-      "source_snippet": "25 Shares"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
+      "source_snippet": null
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Wed, Aug 5, 2026 T",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[1] label=\"Listing Date\"",
-      "why_missing": null,
-      "source_snippet": "Wed, Aug 5, 2026 T"
+      "value": "[.]",
+      "found": false,
+      "confidence": "low",
+      "method": "table[0].row[1]-rejected",
+      "why_missing": "value '[.]' failed date validation (expected \"Mon DD, YYYY\" or similar)",
+      "source_snippet": "[.]"
     },
     "registrar": {
       "value": null,
@@ -76,22 +76,24 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": null,
-      "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.axiscapital.co.in/contents/Manipal%20Health%20Enterprises%20Limited-%20RHP%20(July%2023,%202026)-1784864230.pdf"
+      "value": [
+        "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
     }
   },
-  "found_count": 5,
-  "precision_ratio": 0.5,
-  "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.axiscapital.co.in/contents/Manipal%20Health%20Enterprises%20Limited-%20RHP%20(July%2023,%202026)-1784864230.pdf"
+  "found_count": 2,
+  "precision_ratio": 0.2,
+  "official_pdf_links_on_allowlist": [
+    "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
   ],
-  "noise_stripped_bytes": 82591,
-  "main_content_bytes": 82591,
-  "tables_parsed": 10,
-  "table_rows_parsed": 57
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 70358,
+  "main_content_bytes": 70358,
+  "tables_parsed": 8,
+  "table_rows_parsed": 38
 }

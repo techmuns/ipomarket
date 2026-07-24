@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-24T06:03:11.789Z",
+  "captured_at_utc": "2026-07-24T12:43:59.008Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148191,
+      "bytes": 148104,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147924,
+      "bytes": 146830,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,8 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
+    "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
     "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
     "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
     "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
@@ -45,41 +47,39 @@
     "https://www.chittorgarh.com/ipo/cordelia-cruises-ipo/2474/",
     "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
     "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
-    "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
-    "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
-    "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/"
+    "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
+      "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
+      "url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
+      "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
       "mode": "static",
       "status": 200,
-      "bytes": 272205,
-      "title": "Manipal Health Enterprises IPO Date, Price, GMP, Details",
+      "bytes": 227911,
+      "title": "Ardee Industries IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
+      "url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
       "mode": "static",
       "status": 200,
-      "bytes": 320980,
-      "title": "Xtranet Technologies IPO Date, Price, GMP, Review, Details",
+      "bytes": 248105,
+      "title": "Juniper Green Energy IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
