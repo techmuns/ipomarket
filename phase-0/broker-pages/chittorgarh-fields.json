@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-23T20:19:21.600Z",
+  "captured_at_utc": "2026-07-24T06:03:11.789Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148192,
+      "bytes": 148191,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147967,
+      "bytes": 147924,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
     "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
     "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
     "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
     "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/",
     "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
-    "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
-    "https://www.chittorgarh.com/ipo/citius-transnet-invit-ipo/2862/"
+    "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
+      "url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
+      "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
+      "url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
       "mode": "static",
       "status": 200,
-      "bytes": 320977,
-      "title": "Xtranet Technologies IPO Date, Price, GMP, Review, Details",
+      "bytes": 272205,
+      "title": "Manipal Health Enterprises IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
+      "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
       "mode": "static",
       "status": 200,
-      "bytes": 421759,
-      "title": "Indo-MIM IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 320980,
+      "title": "Xtranet Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

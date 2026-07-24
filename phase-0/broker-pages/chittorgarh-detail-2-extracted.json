@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
+  "source_url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
   "fields": {
     "company_name": {
-      "value": "Indo-MIM IPO",
+      "value": "Xtranet Technologies IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Indo-MIM IPO"
+      "source_snippet": "Xtranet Technologies IPO"
     },
     "issue_size_cr": {
-      "value": "7,86,00,300 shares (agg. up to ₹ 3,811 Cr)",
+      "value": "1,31,34,000 shares (agg. up to ₹ 167 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "7,86,00,300 shares (agg. up to ₹ 3,811 Cr)"
+      "source_snippet": "1,31,34,000 shares (agg. up to ₹ 167 Cr)"
     },
     "price_band": {
-      "value": "₹461 to ₹485",
+      "value": "₹120 to ₹127",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹461 to ₹485"
+      "source_snippet": "₹120 to ₹127"
     },
     "lot_size": {
-      "value": "30 Shares",
+      "value": "110 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "30 Shares"
+      "source_snippet": "110 Shares"
     },
     "open_date": {
       "value": null,
@@ -76,22 +76,26 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": null,
-      "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/indo-ipo-anchor-list.pdf"
+      "value": [
+        "https://www.bseindia.com/corporates/download/305760/IPO%20Open/Xtranet_RHP_160726_20260718174206.pdf"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.bseindia.com/corporates/download/305760/IPO%20Open/Xtranet_RHP_160726_20260718174206.pdf"
     }
   },
-  "found_count": 5,
-  "precision_ratio": 0.5,
-  "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/indo-ipo-anchor-list.pdf"
+  "found_count": 6,
+  "precision_ratio": 0.6,
+  "official_pdf_links_on_allowlist": [
+    "https://www.bseindia.com/corporates/download/305760/IPO%20Open/Xtranet_RHP_160726_20260718174206.pdf"
   ],
-  "noise_stripped_bytes": 99685,
-  "main_content_bytes": 99685,
-  "tables_parsed": 12,
-  "table_rows_parsed": 89
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/anchor-investor/xtranettechnologiesanchor_allocation24e17b2c-1778-4a2a-b0ee-85593cd7e9f6.pdf"
+  ],
+  "noise_stripped_bytes": 92102,
+  "main_content_bytes": 92102,
+  "tables_parsed": 11,
+  "table_rows_parsed": 75
 }
