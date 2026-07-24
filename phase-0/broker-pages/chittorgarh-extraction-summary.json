@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-24T12:43:59.008Z",
+  "generated_at_utc": "2026-07-24T20:39:47.060Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.25,
   "per_detail": [
@@ -38,7 +38,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
       "found_count": 3,
       "precision_ratio": 0.3,
-      "main_content_bytes": 74975,
+      "main_content_bytes": 75030,
       "tables_parsed": 9,
       "table_rows_parsed": 42,
       "fields_high_confidence": [

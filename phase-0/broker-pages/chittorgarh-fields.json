@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-24T12:43:59.008Z",
+  "captured_at_utc": "2026-07-24T20:39:47.060Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148104,
+      "bytes": 148123,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 146830,
+      "bytes": 147963,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
       "mode": "static",
       "status": 200,
-      "bytes": 227911,
+      "bytes": 227930,
       "title": "Ardee Industries IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
       "mode": "static",
       "status": 200,
-      "bytes": 248105,
+      "bytes": 248401,
       "title": "Juniper Green Energy IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-24T12:43:59.008Z",
+  "generated_at_utc": "2026-07-24T20:39:47.060Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 0.933,
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93744,
+      "main_content_bytes": 93689,
       "tables_parsed": 13,
       "table_rows_parsed": 88,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 81346,
+      "main_content_bytes": 81290,
       "tables_parsed": 11,
       "table_rows_parsed": 59,
       "fields_high_confidence": [
