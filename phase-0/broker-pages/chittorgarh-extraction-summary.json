@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-25T12:09:05.429Z",
+  "generated_at_utc": "2026-07-25T20:15:13.258Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.25,
   "per_detail": [
@@ -35,12 +35,12 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
+      "source_url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
       "found_count": 3,
       "precision_ratio": 0.3,
-      "main_content_bytes": 75030,
-      "tables_parsed": 9,
-      "table_rows_parsed": 42,
+      "main_content_bytes": 79107,
+      "tables_parsed": 8,
+      "table_rows_parsed": 48,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -59,7 +59,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

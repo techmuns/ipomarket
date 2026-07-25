@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-25T12:09:05.429Z",
+  "captured_at_utc": "2026-07-25T20:15:13.258Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147703,
+      "bytes": 147668,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 146439,
+      "bytes": 147935,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
+    "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
     "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
     "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
     "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
     "https://www.chittorgarh.com/ipo/cordelia-cruises-ipo/2474/",
     "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
-    "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/",
-    "https://www.chittorgarh.com/ipo/cmr-green-technologies-ipo/2586/"
+    "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
+      "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
+      "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
       "mode": "static",
       "status": 200,
-      "bytes": 248402,
-      "title": "Juniper Green Energy IPO Date, Price, GMP, Review, Details",
+      "bytes": 260417,
+      "title": "MV Electrosystems IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

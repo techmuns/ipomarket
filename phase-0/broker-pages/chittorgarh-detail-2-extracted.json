@@ -1,23 +1,23 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
+  "source_url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
   "fields": {
     "company_name": {
-      "value": "Juniper Green Energy IPO",
+      "value": "MV Electrosystems IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Juniper Green Energy IPO"
+      "source_snippet": "MV Electrosystems IPO"
     },
     "issue_size_cr": {
-      "value": "[.] shares (agg. up to ₹ 1,800 Cr)",
+      "value": "[.] shares (agg. up to ₹ 290 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "[.] shares (agg. up to ₹ 1,800 Cr)"
+      "source_snippet": "[.] shares (agg. up to ₹ 290 Cr)"
     },
     "price_band": {
       "value": null,
@@ -79,20 +79,19 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
-      "why_missing": "2 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.junipergreenenergy.com/pdfs/initial-public-offering/JuniperGreenEnergyLimited_RHP_23-07-26.pdf | https://www.icicisecurities.com/console/uploads/actual/ANNEXURE-A---JUNIPER-GREEN-ENERGY-LI…"
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/mv-electrosystems-red_herring_prospectus.pdf"
     }
   },
   "found_count": 3,
   "precision_ratio": 0.3,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.junipergreenenergy.com/pdfs/initial-public-offering/JuniperGreenEnergyLimited_RHP_23-07-26.pdf",
-    "https://www.icicisecurities.com/console/uploads/actual/ANNEXURE-A---JUNIPER-GREEN-ENERGY-LIMITED---ADDENDUM_1783610990_82.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/mv-electrosystems-red_herring_prospectus.pdf"
   ],
-  "noise_stripped_bytes": 75030,
-  "main_content_bytes": 75030,
-  "tables_parsed": 9,
-  "table_rows_parsed": 42
+  "noise_stripped_bytes": 79107,
+  "main_content_bytes": 79107,
+  "tables_parsed": 8,
+  "table_rows_parsed": 48
 }
