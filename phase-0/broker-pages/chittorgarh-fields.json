@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-24T20:39:47.060Z",
+  "captured_at_utc": "2026-07-25T05:50:27.355Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148123,
+      "bytes": 147703,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147963,
+      "bytes": 147939,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
       "mode": "static",
       "status": 200,
-      "bytes": 248401,
+      "bytes": 248402,
       "title": "Juniper Green Energy IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
