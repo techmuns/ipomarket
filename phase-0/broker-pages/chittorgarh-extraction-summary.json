@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-25T20:15:13.258Z",
+  "generated_at_utc": "2026-07-26T06:13:30.167Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.25,
   "per_detail": [
@@ -38,7 +38,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
       "found_count": 3,
       "precision_ratio": 0.3,
-      "main_content_bytes": 79107,
+      "main_content_bytes": 79162,
       "tables_parsed": 8,
       "table_rows_parsed": 48,
       "fields_high_confidence": [
