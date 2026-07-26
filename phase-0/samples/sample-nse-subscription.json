@@ -43,5 +43,17 @@
     "noOfTime": "2.2449782868851638",
     "noOfsharesBid": "1.2368304E8",
     "srNo": null
+  },
+  {
+    "companyName": "Propshop Events and Exhibitions Limited",
+    "isBse": "1",
+    "issueEndDate": "29-Jul-2026",
+    "issueStartDate": "27-Jul-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "PROPSHOP",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4140000",
+    "noOfTime": ""
   }
 ]

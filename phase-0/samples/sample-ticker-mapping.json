@@ -1,11 +1,10 @@
 {
-  "total": 5,
-  "valid": 5,
+  "total": 4,
+  "valid": 4,
   "examples": {
     "Xtranet Technologies Limited": "XTRANET",
     "Lohia Corp Limited": "LCL",
     "INDO-MIM Limited": "INDOMIM",
-    "Cube Highways Trust": "CUBEINVIT",
-    "Propshop Events and Exhibitions Limited": "PROPSHOP"
+    "Cube Highways Trust": "CUBEINVIT"
   }
 }
