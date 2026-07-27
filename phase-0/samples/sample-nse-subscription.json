@@ -10,8 +10,8 @@
     "symbol": "XTRANET",
     "category": "Total",
     "noOfSharesOffered": "9193800.0",
-    "noOfTime": "3.140272792534099",
-    "noOfsharesBid": "2.887104E7",
+    "noOfTime": "9.107023211294567",
+    "noOfsharesBid": "8.372815E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "INDOMIM",
     "category": "Total",
     "noOfSharesOffered": "5.5093201E7",
-    "noOfTime": "6.869099328608624",
-    "noOfsharesBid": "3.7844067E8",
+    "noOfTime": "51.89402663315933",
+    "noOfsharesBid": "2.85900804E9",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "LCL",
     "category": "Total",
     "noOfSharesOffered": "1.4352274E7",
-    "noOfTime": "0.5943253313029001",
-    "noOfsharesBid": "8529920.0",
+    "noOfTime": "4.196500847182823",
+    "noOfsharesBid": "6.022933E7",
     "srNo": null
   },
   {
@@ -52,8 +52,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PROPSHOP",
-    "noOfsharesBid": "60000",
+    "noOfsharesBid": "136000",
     "noOfSharesOffered": "4140000",
-    "noOfTime": "0.01"
+    "noOfTime": "0.03"
   }
 ]
