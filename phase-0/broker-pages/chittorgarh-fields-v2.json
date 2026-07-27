@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-27T13:44:27.416Z",
+  "captured_at_utc": "2026-07-27T20:41:37.417Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 352811,
+      "bytes": 352897,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/propshop-events-exhibitions-ipo/2732/",
       "mode": "static",
       "status": 200,
-      "bytes": 282522,
+      "bytes": 282525,
       "title": "Propshop Events &amp; Exhibitions IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
