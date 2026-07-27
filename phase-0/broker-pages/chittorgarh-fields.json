@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-26T20:17:22.494Z",
+  "captured_at_utc": "2026-07-27T06:38:46.648Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147722,
+      "bytes": 146618,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148760,
+      "bytes": 148763,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
       "mode": "static",
       "status": 200,
-      "bytes": 260694,
+      "bytes": 279688,
       "title": "MV Electrosystems IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

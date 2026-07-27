@@ -10,23 +10,8 @@
     "symbol": "XTRANET",
     "category": "Total",
     "noOfSharesOffered": "9193800.0",
-    "noOfTime": "1.3055754965302704",
-    "noOfsharesBid": "1.20032E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Lohia Corp Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.404 to Rs.425",
-    "issueSize": "14352274",
-    "issueStartDate": "23-Jul-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "LCL",
-    "category": "Total",
-    "noOfSharesOffered": "1.4352274E7",
-    "noOfTime": "0.2320144529013312",
-    "noOfsharesBid": "3329935.0",
+    "noOfTime": "3.140272792534099",
+    "noOfsharesBid": "2.887104E7",
     "srNo": null
   },
   {
@@ -40,8 +25,23 @@
     "symbol": "INDOMIM",
     "category": "Total",
     "noOfSharesOffered": "5.5093201E7",
-    "noOfTime": "2.2449782868851638",
-    "noOfsharesBid": "1.2368304E8",
+    "noOfTime": "6.869099328608624",
+    "noOfsharesBid": "3.7844067E8",
+    "srNo": null
+  },
+  {
+    "companyName": "Lohia Corp Limited",
+    "issueEndDate": "27-Jul-2026",
+    "issuePrice": "Rs.404 to Rs.425",
+    "issueSize": "14352274",
+    "issueStartDate": "23-Jul-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LCL",
+    "category": "Total",
+    "noOfSharesOffered": "1.4352274E7",
+    "noOfTime": "0.5943253313029001",
+    "noOfsharesBid": "8529920.0",
     "srNo": null
   },
   {
@@ -52,8 +52,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PROPSHOP",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "60000",
     "noOfSharesOffered": "4140000",
-    "noOfTime": ""
+    "noOfTime": "0.01"
   }
 ]

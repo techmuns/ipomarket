@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-07-26T20:17:22.494Z",
+  "generated_at_utc": "2026-07-27T06:38:46.648Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.848,
+  "average_precision_ratio_full": 0.818,
   "average_precision_ratio_narrow": 0.933,
   "third_ipo_selection": {
-    "slug": "xtranet-technologies-ipo",
-    "url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
+    "slug": "propshop-events-exhibitions-ipo",
+    "url": "https://www.chittorgarh.com/ipo/propshop-events-exhibitions-ipo/2732/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"23 - 27 Jul\" covers today",
-    "date_text": "23 - 27 Jul",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"27 - 29 Jul\" covers today",
+    "date_text": "27 - 29 Jul",
+    "source_list": "sme"
   },
   "per_detail": [
     {
@@ -54,7 +54,7 @@
       "found_count_narrow": 4,
       "precision_ratio_full": 0.727,
       "precision_ratio_narrow": 0.8,
-      "main_content_bytes": 81347,
+      "main_content_bytes": 81345,
       "tables_parsed": 11,
       "table_rows_parsed": 59,
       "fields_high_confidence": [
@@ -82,23 +82,22 @@
     },
     {
       "index": 3,
-      "slug": "xtranet-technologies-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
-      "found_count_full": 10,
+      "slug": "propshop-events-exhibitions-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/propshop-events-exhibitions-ipo/2732/",
+      "found_count_full": 9,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.909,
+      "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 92104,
-      "tables_parsed": 11,
-      "table_rows_parsed": 75,
+      "main_content_bytes": 85907,
+      "tables_parsed": 10,
+      "table_rows_parsed": 61,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
-        "listing_date",
-        "official_pdf_links"
+        "listing_date"
       ],
       "fields_medium_confidence": [
         "open_date",
@@ -107,12 +106,11 @@
       ],
       "fields_rejected_low_confidence": [],
       "fields_missing": [
-        "brlms"
+        "brlms",
+        "official_pdf_links"
       ],
-      "official_pdf_links_on_allowlist": [
-        "https://www.bseindia.com/corporates/download/305760/IPO%20Open/Xtranet_RHP_160726_20260718174206.pdf"
-      ],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }
