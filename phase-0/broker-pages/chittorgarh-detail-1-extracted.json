@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "[.]",
-      "found": false,
-      "confidence": "low",
-      "method": "table[0].row[1]-rejected",
-      "why_missing": "value '[.]' failed date validation (expected \"Mon DD, YYYY\" or similar)",
-      "source_snippet": "[.]"
+      "value": "Wed, Aug 12, 2026 T",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[1] label=\"Listing Date\"",
+      "why_missing": null,
+      "source_snippet": "Wed, Aug 12, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -86,14 +86,14 @@
       "source_snippet": "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
     }
   },
-  "found_count": 2,
-  "precision_ratio": 0.2,
+  "found_count": 3,
+  "precision_ratio": 0.3,
   "official_pdf_links_on_allowlist": [
     "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 72858,
-  "main_content_bytes": 72858,
-  "tables_parsed": 9,
-  "table_rows_parsed": 46
+  "noise_stripped_bytes": 75863,
+  "main_content_bytes": 75863,
+  "tables_parsed": 10,
+  "table_rows_parsed": 49
 }

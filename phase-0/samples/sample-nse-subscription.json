@@ -1,47 +1,17 @@
 [
   {
-    "companyName": "Xtranet Technologies Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.120 to Rs.127",
-    "issueSize": "9193800",
-    "issueStartDate": "23-Jul-2026",
+    "companyName": "Manipal Health Enterprises Limited",
+    "issueEndDate": "31-Jul-2026",
+    "issuePrice": "Rs.560 to Rs.590",
+    "issueSize": "90088286",
+    "issueStartDate": "29-Jul-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "XTRANET",
+    "symbol": "MANIPALHOS",
     "category": "Total",
-    "noOfSharesOffered": "9193800.0",
-    "noOfTime": "9.107023211294567",
-    "noOfsharesBid": "8.372815E7",
-    "srNo": null
-  },
-  {
-    "companyName": "INDO-MIM Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.461 to Rs.485",
-    "issueSize": "55093201",
-    "issueStartDate": "23-Jul-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "INDOMIM",
-    "category": "Total",
-    "noOfSharesOffered": "5.5093201E7",
-    "noOfTime": "51.89402663315933",
-    "noOfsharesBid": "2.85900804E9",
-    "srNo": null
-  },
-  {
-    "companyName": "Lohia Corp Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.404 to Rs.425",
-    "issueSize": "14352274",
-    "issueStartDate": "23-Jul-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "LCL",
-    "category": "Total",
-    "noOfSharesOffered": "1.4352274E7",
-    "noOfTime": "4.196500847182823",
-    "noOfsharesBid": "6.022933E7",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
     "srNo": null
   },
   {
@@ -52,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PROPSHOP",
-    "noOfsharesBid": "136000",
+    "noOfsharesBid": "1536000",
     "noOfSharesOffered": "4140000",
-    "noOfTime": "0.03"
+    "noOfTime": "0.37"
   }
 ]

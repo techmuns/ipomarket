@@ -1,13 +1,13 @@
 [
   {
-    "companyName": "MV Electrosystems Limited",
-    "issueEndDate": "03-Aug-2026",
-    "issuePrice": "Rs.400 to Rs.425",
-    "issueSize": "7249990",
-    "issueStartDate": "30-Jul-2026",
+    "companyName": "Manipal Health Enterprises Limited",
+    "issueEndDate": "31-Jul-2026",
+    "issuePrice": "Rs.560 to Rs.590",
+    "issueSize": "90088286",
+    "issueStartDate": "29-Jul-2026",
     "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "MVELECTRO"
+    "status": "Active",
+    "symbol": "MANIPALHOS"
   },
   {
     "companyName": "Juniper Green Energy Limited",
@@ -20,13 +20,13 @@
     "symbol": "JNPR"
   },
   {
-    "companyName": "Manipal Health Enterprises Limited",
-    "issueEndDate": "31-Jul-2026",
-    "issuePrice": "Rs.560 to Rs.590",
-    "issueSize": "164500738",
-    "issueStartDate": "29-Jul-2026",
+    "companyName": "MV Electrosystems Limited",
+    "issueEndDate": "03-Aug-2026",
+    "issuePrice": "Rs.400 to Rs.425",
+    "issueSize": "7249990",
+    "issueStartDate": "30-Jul-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "MANIPALHOS"
+    "symbol": "MVELECTRO"
   }
 ]
