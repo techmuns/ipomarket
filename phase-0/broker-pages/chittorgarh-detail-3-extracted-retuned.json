@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/pooja-engineering-ipo-anchor-allocation-report.pdf"
   ],
-  "noise_stripped_bytes": 101094,
-  "main_content_bytes": 101094,
-  "tables_parsed": 12,
-  "table_rows_parsed": 95
+  "noise_stripped_bytes": 102157,
+  "main_content_bytes": 102157,
+  "tables_parsed": 13,
+  "table_rows_parsed": 100
 }

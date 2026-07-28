@@ -1,10 +1,9 @@
 {
-  "total": 4,
-  "valid": 4,
+  "total": 3,
+  "valid": 3,
   "examples": {
-    "Xtranet Technologies Limited": "XTRANET",
-    "INDO-MIM Limited": "INDOMIM",
-    "Lohia Corp Limited": "LCL",
+    "MV Electrosystems Limited": "MVELECTRO",
+    "Juniper Green Energy Limited": "JNPR",
     "Manipal Health Enterprises Limited": "MANIPALHOS"
   }
 }

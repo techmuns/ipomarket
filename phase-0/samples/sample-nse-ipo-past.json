@@ -1,33 +1,23 @@
 [
   {
-    "companyName": "Xtranet Technologies Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.120 to Rs.127",
-    "issueSize": "9193800",
-    "issueStartDate": "23-Jul-2026",
+    "companyName": "MV Electrosystems Limited",
+    "issueEndDate": "03-Aug-2026",
+    "issuePrice": "Rs.400 to Rs.425",
+    "issueSize": "7249990",
+    "issueStartDate": "30-Jul-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "XTRANET"
+    "status": "Forthcoming",
+    "symbol": "MVELECTRO"
   },
   {
-    "companyName": "INDO-MIM Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.461 to Rs.485",
-    "issueSize": "55093201",
-    "issueStartDate": "23-Jul-2026",
+    "companyName": "Juniper Green Energy Limited",
+    "issueEndDate": "03-Aug-2026",
+    "issuePrice": "Rs.214 to Rs.225",
+    "issueSize": "84122317",
+    "issueStartDate": "30-Jul-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "INDOMIM"
-  },
-  {
-    "companyName": "Lohia Corp Limited",
-    "issueEndDate": "27-Jul-2026",
-    "issuePrice": "Rs.404 to Rs.425",
-    "issueSize": "14352274",
-    "issueStartDate": "23-Jul-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "LCL"
+    "status": "Forthcoming",
+    "symbol": "JNPR"
   },
   {
     "companyName": "Manipal Health Enterprises Limited",

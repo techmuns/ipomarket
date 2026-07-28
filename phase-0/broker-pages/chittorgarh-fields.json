@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-28T06:02:39.249Z",
+  "captured_at_utc": "2026-07-28T13:01:59.668Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147669,
+      "bytes": 147893,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147266,
+      "bytes": 148986,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
       "mode": "static",
       "status": 200,
-      "bytes": 227930,
+      "bytes": 239850,
       "title": "Ardee Industries IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
       "mode": "static",
       "status": 200,
-      "bytes": 285445,
+      "bytes": 292078,
       "title": "MV Electrosystems IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

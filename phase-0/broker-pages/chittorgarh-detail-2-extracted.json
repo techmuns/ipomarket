@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/mv-electrosystems-red_herring_prospectus.pdf"
   ],
-  "noise_stripped_bytes": 86501,
-  "main_content_bytes": 86501,
-  "tables_parsed": 10,
-  "table_rows_parsed": 63
+  "noise_stripped_bytes": 87898,
+  "main_content_bytes": 87898,
+  "tables_parsed": 11,
+  "table_rows_parsed": 68
 }

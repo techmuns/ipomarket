@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-28T06:02:39.249Z",
+  "captured_at_utc": "2026-07-28T13:01:59.668Z",
   "sector_reachable": {
     "listed_equity": false,
     "pre_ipo": false
@@ -14,7 +14,7 @@
       "sample_keys": [],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 397 chars]"
+      "notes": "NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 395 chars]"
     },
     {
       "source": "NSE IPO list",
@@ -33,7 +33,7 @@
       ],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "4 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none)"
+      "notes": "3 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none)"
     },
     {
       "source": "BSE IPO list",

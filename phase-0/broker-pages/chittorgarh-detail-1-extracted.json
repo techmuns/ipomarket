@@ -92,8 +92,8 @@
     "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 70358,
-  "main_content_bytes": 70358,
-  "tables_parsed": 8,
-  "table_rows_parsed": 38
+  "noise_stripped_bytes": 72858,
+  "main_content_bytes": 72858,
+  "tables_parsed": 9,
+  "table_rows_parsed": 46
 }
