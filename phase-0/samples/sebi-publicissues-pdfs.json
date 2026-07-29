@@ -1,121 +1,34 @@
 {
-  "captured_at_utc": "2026-07-29T06:06:32.869Z",
+  "captured_at_utc": "2026-07-29T13:06:56.378Z",
   "phases": [
     {
       "phase": "static-primary",
       "url": "https://www.sebi.gov.in/filings/public-issues.html",
-      "status": 200,
-      "bytes": 6080,
+      "status": 0,
+      "bytes": 0,
       "tr_count": 0,
       "pdfs_found": 0,
-      "notes": "static ok: tr=0, bytes=6080"
+      "notes": "static non-200 (status=0, err=fetch failed)"
     },
     {
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
-      "status": 200,
-      "bytes": 45978,
-      "tr_count": 26,
-      "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=45978"
+      "status": 0,
+      "bytes": 0,
+      "tr_count": 0,
+      "pdfs_found": 0,
+      "notes": "static non-200 (status=0, err=fetch failed)"
+    },
+    {
+      "phase": "playwright-listing",
+      "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
+      "status": 403,
+      "bytes": 283,
+      "tr_count": 0,
+      "pdfs_found": 0,
+      "notes": "playwright: status=403, tr=0, rendered_len=283, challenge=http-403"
     }
   ],
-  "detail_urls_found": 31,
-  "pdfs": [
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/GNI%20INFRASTRUCTURE%20LIMITED%20-%20DA_p.pdf",
-      "link_text": "GNI INFRASTRUCTURE LIMITED - Draft Abridged prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Ratnadeep%20Retail%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Ratnadeep Retail Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/CULT.FIT%20Limited%20-%20AP_p.pdf",
-      "link_text": "CULT.FIT LIMITED - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/TMC%20Transformers%20India%20Limited%20-%20Abri_p.pdf",
-      "link_text": "TMC Transformers India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/INNOTERRA%20LIMITED%20-%20Abri_p.pdf",
-      "link_text": "INNOTERRA LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Pragyawan%20Technologies%20Limited%20-%20Abriged_p.PDF",
-      "link_text": "Pragyawan Technologies Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/SWARA%20Baby%20Products%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Swara Baby Products Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Stalwart%20People%20Services%20India%20Limited%20-%20Abri_p.pdf",
-      "link_text": "Stalwart People Services India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Functional%20&%20Innovative%20Foods%20Limited-%20Abri_p.pdf",
-      "link_text": "Functional & Innovative Foods Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/GLOBAL%20-%20DAP_p.pdf",
-      "link_text": "ESWARI GLOBAL METAL INDUSTRIES LIMITED_Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/REIL%20Abridged_p.pdf",
-      "link_text": "Renfra Energy India Limited_Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Social%20Worth%20Technologies%20-%20DA_p.pdf",
-      "link_text": "Social Worth Technologies Limited- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Maan%20Fleet%20Partners%20Limited%20-%20DRPH_p.pdf",
-      "link_text": "Mann Fleet Partners Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/ORAVEL%20STAYS%20LIMITED%20-%20Abridged_p.pdf",
-      "link_text": "ORAVEL STAYS LIMITED- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Ujin%20Pharma%20Ltd.%20-%20Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "Ujin Pharma Ltd- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Sky%20Alloys%20and%20Power%20Limited%20-%20Abri_p.pdf",
-      "link_text": "Sky Alloys and Power Limited- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Jio%20Platforms%20Ltd_p.PDF",
-      "link_text": "Jio Platforms Ltd - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/National%20Stock%20Exchange%20of%20India%20Ltd%20-%20Abridged_p.pdf",
-      "link_text": "National Stock Exchange of India Ltd - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Paras%20Healthcare%20Limited%20-%20Abridged_p.pdf",
-      "link_text": "Paras Healthcare Limited - Abridged Prospectus",
-      "source": "static-alt"
-    }
-  ]
+  "detail_urls_found": 0,
+  "pdfs": []
 }

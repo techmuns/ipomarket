@@ -12,12 +12,12 @@
       "source_snippet": "Ardee Industries IPO"
     },
     "issue_size_cr": {
-      "value": "8,03,51,950 shares (agg. up to ₹ 426 Cr)",
+      "value": "8,03,52,358 shares (agg. up to ₹ 426 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "8,03,51,950 shares (agg. up to ₹ 426 Cr)"
+      "source_snippet": "8,03,52,358 shares (agg. up to ₹ 426 Cr)"
     },
     "price_band": {
       "value": "₹50 to ₹53",
@@ -76,24 +76,22 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": [
-        "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
-      ],
-      "found": true,
-      "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
-      "why_missing": null,
-      "source_snippet": "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
+      "value": null,
+      "found": false,
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/1785249966755-ardee-industries-limited-rhp.pdf"
     }
   },
-  "found_count": 6,
-  "precision_ratio": 0.6,
-  "official_pdf_links_on_allowlist": [
-    "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
+  "found_count": 5,
+  "precision_ratio": 0.5,
+  "official_pdf_links_on_allowlist": [],
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/1785249966755-ardee-industries-limited-rhp.pdf"
   ],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 81387,
-  "main_content_bytes": 81387,
+  "noise_stripped_bytes": 81333,
+  "main_content_bytes": 81333,
   "tables_parsed": 11,
   "table_rows_parsed": 61
 }

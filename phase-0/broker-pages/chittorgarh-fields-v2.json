@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-29T06:06:32.869Z",
+  "captured_at_utc": "2026-07-29T13:06:56.378Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 371305,
+      "bytes": 371348,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
       "mode": "static",
       "status": 200,
-      "bytes": 319878,
+      "bytes": 446270,
       "title": "Manipal Health Enterprises IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
