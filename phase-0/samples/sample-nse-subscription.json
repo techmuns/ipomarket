@@ -1,5 +1,35 @@
 [
   {
+    "companyName": "MV Electrosystems Limited",
+    "issueEndDate": "03-Aug-2026",
+    "issuePrice": "Rs.400 to Rs.425",
+    "issueSize": "3987491",
+    "issueStartDate": "30-Jul-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "MVELECTRO",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Juniper Green Energy Limited",
+    "issueEndDate": "03-Aug-2026",
+    "issuePrice": "Rs.214 to Rs.225",
+    "issueSize": "58916709",
+    "issueStartDate": "30-Jul-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "JNPR",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Manipal Health Enterprises Limited",
     "issueEndDate": "31-Jul-2026",
     "issuePrice": "Rs.560 to Rs.590",
@@ -13,17 +43,5 @@
     "noOfTime": "0.12082064698178407",
     "noOfsharesBid": "1.0884525E7",
     "srNo": null
-  },
-  {
-    "companyName": "Propshop Events and Exhibitions Limited",
-    "isBse": "1",
-    "issueEndDate": "29-Jul-2026",
-    "issueStartDate": "27-Jul-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "PROPSHOP",
-    "noOfsharesBid": "6212000",
-    "noOfSharesOffered": "4140000",
-    "noOfTime": "1.50"
   }
 ]
