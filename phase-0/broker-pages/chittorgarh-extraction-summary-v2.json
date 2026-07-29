@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-07-28T20:23:53.704Z",
+  "generated_at_utc": "2026-07-29T06:06:32.869Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "poojaa-precision-engg-ipo",
-    "url": "https://www.chittorgarh.com/ipo/poojaa-precision-engg-ipo/2954/",
+    "slug": "manipal-health-enterprises-ipo",
+    "url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"28 - 30 Jul\" covers today",
-    "date_text": "28 - 30 Jul",
-    "source_list": "sme"
+    "reason": "current-open: list \"mainboard\" row date range \"29 - 31 Jul\" covers today",
+    "date_text": "29 - 31 Jul",
+    "source_list": "mainboard"
   },
   "per_detail": [
     {
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 97997,
+      "main_content_bytes": 97996,
       "tables_parsed": 15,
       "table_rows_parsed": 105,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84290,
+      "main_content_bytes": 84287,
       "tables_parsed": 14,
       "table_rows_parsed": 67,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "poojaa-precision-engg-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/poojaa-precision-engg-ipo/2954/",
+      "slug": "manipal-health-enterprises-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 102157,
-      "tables_parsed": 13,
-      "table_rows_parsed": 100,
+      "main_content_bytes": 94619,
+      "tables_parsed": 14,
+      "table_rows_parsed": 88,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

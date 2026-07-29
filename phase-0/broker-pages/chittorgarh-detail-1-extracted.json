@@ -12,28 +12,28 @@
       "source_snippet": "Ardee Industries IPO"
     },
     "issue_size_cr": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
-      "source_snippet": null
+      "value": "8,03,51,950 shares (agg. up to ₹ 426 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "8,03,51,950 shares (agg. up to ₹ 426 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹50 to ₹53",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹50 to ₹53"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "281 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "281 Shares"
     },
     "open_date": {
       "value": null,
@@ -86,14 +86,14 @@
       "source_snippet": "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
     }
   },
-  "found_count": 3,
-  "precision_ratio": 0.3,
+  "found_count": 6,
+  "precision_ratio": 0.6,
   "official_pdf_links_on_allowlist": [
     "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760081406764_1010.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-16,850"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 75863,
-  "main_content_bytes": 75863,
-  "tables_parsed": 10,
-  "table_rows_parsed": 49
+  "noise_stripped_bytes": 81387,
+  "main_content_bytes": 81387,
+  "tables_parsed": 11,
+  "table_rows_parsed": 61
 }

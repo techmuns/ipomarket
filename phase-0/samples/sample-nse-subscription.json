@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "MANIPALHOS",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "9.0088286E7",
+    "noOfTime": "0.02836134544728712",
+    "noOfsharesBid": "2555025.0",
     "srNo": null
   },
   {
@@ -22,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PROPSHOP",
-    "noOfsharesBid": "1536000",
+    "noOfsharesBid": "2440000",
     "noOfSharesOffered": "4140000",
-    "noOfTime": "0.37"
+    "noOfTime": "0.59"
   }
 ]
