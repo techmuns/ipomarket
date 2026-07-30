@@ -28,5 +28,27 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "MANIPALHOS"
+  },
+  {
+    "companyName": "Ardee Industries Limited",
+    "issueEndDate": "07-Aug-2026",
+    "issuePrice": "Rs.50 to Rs.53",
+    "issueSize": "83974436",
+    "issueStartDate": "05-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ARDEE"
+  },
+  {
+    "companyName": "Anawil Wire and Engineering Limited",
+    "issueEndDate": "05-Aug-2026",
+    "issuePrice": "Rs.257 to Rs.270",
+    "issueSize": "6585600",
+    "issueStartDate": "03-Aug-2026",
+    "lotSize": "400",
+    "priceBand": "Rs.257 to Rs.270",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "ANAWIL"
   }
 ]

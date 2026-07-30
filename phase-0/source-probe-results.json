@@ -31,9 +31,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary source for Live & Upcoming tab.",
     "fallback_source": "P-06",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 477,
-    "notes": "Total rows: 3, Active rows: 3"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 326,
+    "notes": "Total rows: 5, Active rows: 3"
   },
   {
     "probe_id": "P-02",
@@ -67,9 +67,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Upcoming/Pipeline tab.",
     "fallback_source": "P-08b",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 321,
-    "notes": "Total rows: 3, Forthcoming/upcoming rows: 0"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 293,
+    "notes": "Total rows: 5, Forthcoming/upcoming rows: 2"
   },
   {
     "probe_id": "P-03",
@@ -105,9 +105,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Recently Listed.",
     "fallback_source": "P-15",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 60,
-    "notes": "Total rows: 3, Past/closed/listed rows: 0"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 34,
+    "notes": "Total rows: 5, Past/closed/listed rows: 0"
   },
   {
     "probe_id": "P-04",
@@ -131,7 +131,7 @@
       "anchor",
       "subscription"
     ],
-    "sample_record": "[\n  {\n    \"companyName\": \"MV Electrosystems Limited\",\n    \"issueEndDate\": \"03-Aug-2026\",\n    \"issuePrice\": \"Rs.400 to Rs.425\",\n    \"issueSize\": \"3987491\",\n    \"issueStartDate\": \"30-Jul-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"MVELECTRO\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"3987491.0\",\n    \"noOfTime\": \"0.6243138855987387\",\n    \"noOfsharesBid\": \"2489446.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Juniper Green Energy Limited\",\n    \"issueEndDate\": \"03-Aug-2026\",\n    \"issuePrice\": \"Rs.214 to Rs.225\",\n    \"issueSize\": \"58916709\",\n    \"issueStartDate\": \"30-Jul-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"JNPR\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"5.8916709E7\",\n    \"noOfTime\": \"0.025110974884900647\",\n    \"noOfshares…[truncated, total 1273 chars]",
+    "sample_record": "[\n  {\n    \"companyName\": \"MV Electrosystems Limited\",\n    \"issueEndDate\": \"03-Aug-2026\",\n    \"issuePrice\": \"Rs.400 to Rs.425\",\n    \"issueSize\": \"3987491\",\n    \"issueStartDate\": \"30-Jul-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"MVELECTRO\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"3987491.0\",\n    \"noOfTime\": \"2.3022080802188643\",\n    \"noOfsharesBid\": \"9180034.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Juniper Green Energy Limited\",\n    \"issueEndDate\": \"03-Aug-2026\",\n    \"issuePrice\": \"Rs.214 to Rs.225\",\n    \"issueSize\": \"58916709\",\n    \"issueStartDate\": \"30-Jul-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"JNPR\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"5.8916709E7\",\n    \"noOfTime\": \"0.3455985296123719\",\n    \"noOfsharesBi…[truncated, total 1275 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -139,8 +139,8 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE bidding (P-07).",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 354,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 379,
     "notes": "Active candidate symbol: MVELECTRO · Top-level keys: 0, 1, 2"
   },
   {
@@ -168,8 +168,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 923,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 932,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -189,7 +189,7 @@
       "rows"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 20\n    }\n  ],\n  \"unique_pdf_count\": 20,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Indian%20Gas%20Exchange%20Limited_p.pdf\",\n      \"link_text\": \"Indian Gas Exchange Limited - Draft Abridged prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/GNI%20INFRASTRUCTURE%20LIMITED%20-%20DA_p.pdf\",\n      \"link_text\": \"GNI INFRASTRUCTURE LIMITED - Draft Abridged prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Ratnadeep%20Retail%20Limited%20-%20DAP_p.pdf\",\n      \"link_text\": \"Ratnadeep Retail Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
+    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 21\n    }\n  ],\n  \"unique_pdf_count\": 21,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf\",\n      \"link_text\": \"YOGIJI DIGI LIMITED - Draft Abridged prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Indian%20Gas%20Exchange%20Limited_p.pdf\",\n      \"link_text\": \"Indian Gas Exchange Limited - Draft Abridged prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/GNI%20INFRASTRUCTURE%20LIMITED%20-%20DA_p.pdf\",\n      \"link_text\": \"GNI INFRASTRUCTURE LIMITED - Draft Abridged prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -197,9 +197,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 2206,
-    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46208 (pdfs=20)"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 2047,
+    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46569 (pdfs=21)"
   },
   {
     "probe_id": "P-08b",
@@ -225,14 +225,14 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 399,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 335,
     "notes": "static ok: tbody_rows=3, bytes=25899"
   },
   {
     "probe_id": "P-09",
     "source": "SEBI — DRHP PDF Download",
-    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Indian%20Gas%20Exchange%20Limited_p.pdf",
+    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
     "fetch_method": "GET (binary) + pdf-parse.py (page-count)",
     "headers_or_cookies_required": [
       "User-Agent",
@@ -246,7 +246,7 @@
       "page_count"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Indian%20Gas%20Exchange%20Limited_p.pdf\",\n  \"link_text\": \"Indian Gas Exchange Limited - Draft Abridged prospectus\",\n  \"bytes\": 468322,\n  \"sha256\": \"1c01ddfcde4e620d…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 12,\n  \"cover_text_first_200\": \"INDIAN GAS EXCHANGE LIMITED\\nCorporate Identity Number: U74999DL2019PLC357145\\nREGISTERED CORPORATE CONTACT PERSON EMAIL AND WEBSITE\\nOFFICE OFFICE TELEPHONE\\n1st Floor, Unit No. Plot No. C-001/A/1,6th Pr\"\n}",
+    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf\",\n  \"link_text\": \"YOGIJI DIGI LIMITED - Draft Abridged prospectus\",\n  \"bytes\": 663356,\n  \"sha256\": \"bda60651e0cac09f…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 11,\n  \"cover_text_first_200\": \"YOGIJI DIGI LIMITED (FORMERLY KNOWN AS YOGIJI DIGI PRIVATE LIMITED)\\nCORPORATE IDENTITY NUMBER: U74899HR1993PLC032121\\nREGISTERED AND CORPORATE CONTACT PERSON EMAIL AND TELEPHONE WEBSITE\\nOFFICE\\nPlot No.\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -254,9 +254,9 @@
     "status": "GREEN",
     "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 2981,
-    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=/commondocs/jul-2026/Indian%20Gas%20Exchange%20Limited_p.pdf; bytes=468322; page_count=12; pdf-parse=ok"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 3273,
+    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf; bytes=663356; page_count=11; pdf-parse=ok"
   },
   {
     "probe_id": "P-10",
@@ -282,8 +282,8 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 11635,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 11136,
     "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
@@ -302,7 +302,7 @@
       "f1"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"CurrDate\": \"Thu Jul 30 2026 11:21:59\",\n  \"PrevClose\": \"1276\",\n  \"LowVal\": \"1275\",\n  \"HighVal\": \"1290\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1285.50\",\n  \"CurrTime\": \"11:21\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"30000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Thu Jul 30 2026 11:21:59\\\",\\\"vale1\\\":\\\"1285.50\\\",\\\"vole\\\":\\\"6423\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 11:20:59\\\",\\\"vale1\\\":\\\"1285.00\\\",\\\"vole\\\":\\\"1084\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 11:19:59\\\",\\\"vale1\\\":\\\"1285.50\\\",\\\"vole\\\":\\\"351\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 11:18:59\\\",\\\"vale1\\\":\\\"1286.40\\\",\\\"vole\\\":\\\"12669\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 11:17:59\\\",\\\"vale1\\\":\\\"1285.85\\\",\\\"vole\\\":\\\"13167\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 11:16:59\\\",\\\"vale1\\\":\\\"1285.80\\\",\\\"vole\\\":\\\"276\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 11:15:59\\\",\\\"vale1\\\":\\\"1285.15\\\",\\\"vole\\\":\\\"7151\\\"},{\\\"dttm…[truncated, total 10358 chars]",
+    "sample_record": "{\n  \"CurrDate\": \"Thu Jul 30 2026 16:01:33\",\n  \"PrevClose\": \"1276\",\n  \"LowVal\": \"1275\",\n  \"HighVal\": \"1300\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1294.40\",\n  \"CurrTime\": \"16:01\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"400000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Thu Jul 30 2026 16:01:33\\\",\\\"vale1\\\":\\\"1294.40\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 16:00:03\\\",\\\"vale1\\\":\\\"1294.40\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 15:59:57\\\",\\\"vale1\\\":\\\"1294.40\\\",\\\"vole\\\":\\\"1253\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 15:58:58\\\",\\\"vale1\\\":\\\"1294.40\\\",\\\"vole\\\":\\\"210\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 15:55:50\\\",\\\"vale1\\\":\\\"1294.40\\\",\\\"vole\\\":\\\"11\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 15:54:53\\\",\\\"vale1\\\":\\\"1294.40\\\",\\\"vole\\\":\\\"12\\\"},{\\\"dttm\\\":\\\"Thu Jul 30 2026 15:53:44\\\",\\\"vale1\\\":\\\"1294.40\\\",\\\"vole\\\":\\\"216\\\"},{\\\"dttm\\\":\\\"Thu Ju…[truncated, total 31706 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -310,9 +310,9 @@
     "status": "GREEN",
     "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 4084,
-    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22098 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22098 chars] ; [bse:RELIANCE] BSE rows=8599, fields=1"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 4883,
+    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22095 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22095 chars] ; [bse:RELIANCE] BSE rows=26730, fields=1"
   },
   {
     "probe_id": "P-15b",
@@ -331,7 +331,7 @@
     "fields_missing": [
       "priceInfo"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;aebd7768&#46;1785390745&#46;65fb2ae\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;aebd7768&#46;1785390745&#46;65fb2ae</P>\n</BODY>\n</HTML>\n",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;650f3417&#46;1785416000&#46;b73c4c1c\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;650f3417&#46;1785416000&#46;b73c4c1c</P>\n</BODY>\n</HTML>\n",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -339,9 +339,9 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE quote.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 50,
-    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 397 chars]"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 25,
+    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
   },
   {
     "probe_id": "P-16",
@@ -359,7 +359,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"MV Electrosystems Limited\": \"MVELECTRO\",\n  \"Juniper Green Energy Limited\": \"JNPR\",\n  \"Manipal Health Enterprises Limited\": \"MANIPALHOS\"\n}",
+    "sample_record": "{\n  \"MV Electrosystems Limited\": \"MVELECTRO\",\n  \"Juniper Green Energy Limited\": \"JNPR\",\n  \"Manipal Health Enterprises Limited\": \"MANIPALHOS\",\n  \"Ardee Industries Limited\": \"ARDEE\",\n  \"Anawil Wire and Engineering Limited\": \"ANAWIL\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -367,9 +367,9 @@
     "status": "GREEN",
     "recommended_action": "Deterministic mapping; no manual override file needed for v1.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 275,
-    "notes": "total=3, validSymbolPattern=3, rate=100%"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 260,
+    "notes": "total=5, validSymbolPattern=5, rate=100%"
   },
   {
     "probe_id": "P-06",
@@ -394,8 +394,8 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 711,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 795,
     "notes": "<tr> count: 0, total bytes: 13850"
   },
   {
@@ -421,8 +421,8 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 10484,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 10060,
     "notes": "Network error: fetch failed"
   },
   {
@@ -448,8 +448,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 918,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 960,
     "notes": "Bid-link markers found: 0, bytes: 13850"
   },
   {
@@ -468,7 +468,7 @@
     "fields_missing": [
       "registrar field"
     ],
-    "sample_record": "{\n  \"MV Electrosystems Limited\": null,\n  \"Juniper Green Energy Limited\": null,\n  \"Manipal Health Enterprises Limited\": null\n}",
+    "sample_record": "{\n  \"MV Electrosystems Limited\": null,\n  \"Juniper Green Energy Limited\": null,\n  \"Manipal Health Enterprises Limited\": null,\n  \"Ardee Industries Limited\": null,\n  \"Anawil Wire and Engineering Limited\": null\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -476,9 +476,9 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 53,
-    "notes": "Issues=3, registrars resolved by name match=0"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 236,
+    "notes": "Issues=5, registrars resolved by name match=0"
   },
   {
     "probe_id": "P-12",
@@ -502,8 +502,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 648,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 503,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -528,8 +528,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 119,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 167,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -554,8 +554,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 5863,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 5133,
     "notes": "status=200"
   },
   {
@@ -580,8 +580,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 897,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 760,
     "notes": "status=200"
   },
   {
@@ -604,8 +604,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 999,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 880,
     "notes": "No PDF URL discovered."
   },
   {
@@ -628,8 +628,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 251,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 210,
     "notes": "No PDF URL discovered."
   },
   {
@@ -647,7 +647,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head><style>img.lazy{min-height:1px}</style><link href=\"https://ipowatch.in/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js\" as=\"script\">\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium p…[truncated, total 867566 chars]",
+    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head><style>img.lazy{min-height:1px}</style><link href=\"https://ipowatch.in/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js\" as=\"script\">\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium p…[truncated, total 866798 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -655,9 +655,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 1524,
-    "notes": "<tr> count: 307, bytes=867566"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 1417,
+    "notes": "<tr> count: 307, bytes=866798"
   },
   {
     "probe_id": "P-20",
@@ -674,7 +674,7 @@
     "fields_missing": [
       "gmp table"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/home.png\"/><link …[truncated, total 125134 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/home.png\"/><link …[truncated, total 123638 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -682,9 +682,9 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 878,
-    "notes": "<tr> count: 0, bytes=125134"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 582,
+    "notes": "<tr> count: 0, bytes=123638"
   },
   {
     "probe_id": "P-21",
@@ -701,7 +701,7 @@
       "discussion / table markers"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html >\n<!--[if IE 8]><html class=\"ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 9]><html class=\"ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--><html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]--><head><title>IPO GMP 2026 - IPO Grey Market Premium, Latest GMP &amp; Kostak - IPO Central</title><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"pingback\" href=\"https://ipocentral.in/xmlrpc.php\" /> <script data-no-defer=\"1\"…[truncated, total 333498 chars]",
+    "sample_record": "<!doctype html >\n<!--[if IE 8]><html class=\"ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 9]><html class=\"ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--><html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]--><head><title>IPO GMP 2026 - IPO Grey Market Premium, Latest GMP &amp; Kostak - IPO Central</title><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"pingback\" href=\"https://ipocentral.in/xmlrpc.php\" /> <script data-no-defer=\"1\"…[truncated, total 336714 chars]",
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -709,9 +709,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager (lower weight given parsing difficulty).",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 108,
-    "notes": "<tr> count: 20, bytes=333498"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 350,
+    "notes": "<tr> count: 17, bytes=336714"
   },
   {
     "probe_id": "P-22",
@@ -736,8 +736,8 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 196,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 420,
     "notes": "<tr> count: 2, bytes=135132"
   },
   {
@@ -779,8 +779,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 5092,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 4414,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38014 | rendered_len=38836 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -816,9 +816,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 4509,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=232933 | rendered_len=273305 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 4344,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=232933 | rendered_len=274902 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-24",
@@ -844,9 +844,9 @@
     "status": "RED",
     "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 1616,
-    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 397 chars] ; [NSE IPO list] 3 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 1736,
+    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 5 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850"
   },
   {
     "probe_id": "P-25",
@@ -875,9 +875,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 1645,
-    "notes": "mainboard: static status=200 bytes=149240 | sme: static status=200 bytes=149429 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=271317 | detail-2: static status=200 bytes=315544 | challenges_detected=false"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 898,
+    "notes": "mainboard: static status=200 bytes=148136 | sme: static status=200 bytes=149471 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=271042 | detail-2: static status=200 bytes=323278 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -909,9 +909,9 @@
       "d2.close_date[missing]",
       "d2.registrar[missing]",
       "d2.brlms[missing]",
-      "d2.official_pdf_links[missing]"
+      "d2.official_pdf_links[rejected-low]"
     ],
-    "sample_record": "{\n  \"avg_precision_ratio\": 0.5,\n  \"details\": [\n    {\n      \"index\": 1,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 11,\n      \"table_rows_parsed\": 61\n    },\n    {\n      \"index\": 2,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 11,\n      \"table_rows_parsed\": 70\n    }\n  ]\n}",
+    "sample_record": "{\n  \"avg_precision_ratio\": 0.5,\n  \"details\": [\n    {\n      \"index\": 1,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 11,\n      \"table_rows_parsed\": 61\n    },\n    {\n      \"index\": 2,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 12,\n      \"table_rows_parsed\": 78\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
@@ -919,9 +919,9 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 17,
-    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=1 | d1: main=81333b tables=11 rows=61 | d2: main=89760b tables=11 rows=70"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 18,
+    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=81278b tables=11 rows=61 | d2: main=92220b tables=12 rows=78"
   },
   {
     "probe_id": "P-27",
@@ -962,8 +962,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 5222,
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 3515,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38014 | rendered_len=38836 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -999,9 +999,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 4414,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=232933 | rendered_len=273989 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 4095,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=232933 | rendered_len=273762 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-25b",
@@ -1029,9 +1029,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
-    "latency_ms": 22531,
-    "notes": "third_ipo_status=current | third_ipo_slug=mv-electrosystems-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"30 Jul - 03 Aug\" covers today\" | detail-1: static status=200 bytes=371348 | detail-2: static status=200 bytes=339523 | detail-3: static status=200 bytes=315544 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
+    "latency_ms": 141,
+    "notes": "third_ipo_status=current | third_ipo_slug=mv-electrosystems-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"30 Jul - 03 Aug\" covers today\" | detail-1: static status=200 bytes=371348 | detail-2: static status=200 bytes=339247 | detail-3: static status=200 bytes=323278 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
     "probe_id": "P-26b",
@@ -1076,9 +1076,9 @@
       "d2.face_value[missing]",
       "d2.brlms[missing]",
       "d3.brlms[missing]",
-      "d3.official_pdf_links[missing]"
+      "d3.official_pdf_links[low]"
     ],
-    "sample_record": "{\n  \"avg_full\": 0.848,\n  \"avg_narrow\": 1,\n  \"third_ipo_selection\": {\n    \"slug\": \"mv-electrosystems-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"30 Jul - 03 Aug\\\" covers today\",\n    \"date_text\": \"30 Jul - 03 Aug\",\n    \"source_list\": \"mainboard\"\n  },\n  \"per_detail\": [\n    {\n      \"index\": 1,\n      \"slug\": \"onemi-technology-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 2,\n      \"slug\": \"bagmane-reit\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 3,\n      \"slug\": \"mv-electrosystems-ipo\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    }\n  ]\n}",
+    "sample_record": "{\n  \"avg_full\": 0.848,\n  \"avg_narrow\": 1,\n  \"third_ipo_selection\": {\n    \"slug\": \"mv-electrosystems-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"30 Jul - 03 Aug\\\" covers today\",\n    \"date_text\": \"30 Jul - 03 Aug\",\n    \"source_list\": \"mainboard\"\n  },\n  \"per_detail\": [\n    {\n      \"index\": 1,\n      \"slug\": \"onemi-technology-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 2,\n      \"slug\": \"bagmane-reit\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 3,\n      \"slug\": \"mv-electrosystems-ipo\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": [\n        \"official_pdf_links\"\n      ]\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
@@ -1086,8 +1086,8 @@
     "status": "GREEN",
     "recommended_action": "Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-07-30T05:52:00.083Z",
+    "ran_at_utc": "2026-07-30T12:52:56.294Z",
     "latency_ms": 29,
-    "notes": "details_extracted=3 | avg_full=0.848 | avg_narrow=1.000 | pdf_on_allowlist=2 | pdf_off_allowlist=0 | third_ipo=mv-electrosystems-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:mv-electrosystems-ipo full=0.82 narrow=1.00"
+    "notes": "details_extracted=3 | avg_full=0.848 | avg_narrow=1.000 | pdf_on_allowlist=2 | pdf_off_allowlist=1 | third_ipo=mv-electrosystems-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:mv-electrosystems-ipo full=0.82 narrow=1.00"
   }
 ]

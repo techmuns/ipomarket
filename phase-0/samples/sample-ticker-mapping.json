@@ -1,9 +1,11 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 5,
+  "valid": 5,
   "examples": {
     "MV Electrosystems Limited": "MVELECTRO",
     "Juniper Green Energy Limited": "JNPR",
-    "Manipal Health Enterprises Limited": "MANIPALHOS"
+    "Manipal Health Enterprises Limited": "MANIPALHOS",
+    "Ardee Industries Limited": "ARDEE",
+    "Anawil Wire and Engineering Limited": "ANAWIL"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-30T05:52:00.083Z",
+  "generated_at_utc": "2026-07-30T12:52:56.294Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84287,
+      "main_content_bytes": 84232,
       "tables_parsed": 14,
       "table_rows_parsed": 67,
       "fields_high_confidence": [
@@ -88,9 +88,9 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 89760,
-      "tables_parsed": 11,
-      "table_rows_parsed": 70,
+      "main_content_bytes": 92220,
+      "tables_parsed": 12,
+      "table_rows_parsed": 78,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -104,13 +104,14 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [],
-      "fields_missing": [
-        "brlms",
+      "fields_rejected_low_confidence": [
         "official_pdf_links"
       ],
+      "fields_missing": [
+        "brlms"
+      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }
