@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-07-29T20:16:44.978Z",
+  "generated_at_utc": "2026-07-30T05:52:00.083Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "manipal-health-enterprises-ipo",
-    "url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
+    "slug": "mv-electrosystems-ipo",
+    "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"29 - 31 Jul\" covers today",
-    "date_text": "29 - 31 Jul",
+    "reason": "current-open: list \"mainboard\" row date range \"30 Jul - 03 Aug\" covers today",
+    "date_text": "30 Jul - 03 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 97996,
+      "main_content_bytes": 97997,
       "tables_parsed": 15,
       "table_rows_parsed": 105,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84232,
+      "main_content_bytes": 84287,
       "tables_parsed": 14,
       "table_rows_parsed": 67,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "manipal-health-enterprises-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
+      "slug": "mv-electrosystems-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 95466,
-      "tables_parsed": 14,
-      "table_rows_parsed": 88,
+      "main_content_bytes": 89760,
+      "tables_parsed": 11,
+      "table_rows_parsed": 70,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -104,14 +104,13 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
+        "brlms",
         "official_pdf_links"
       ],
-      "fields_missing": [
-        "brlms"
-      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }

@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "MVELECTRO",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "3987491.0",
+    "noOfTime": "0.6243138855987387",
+    "noOfsharesBid": "2489446.0",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "JNPR",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "5.8916709E7",
+    "noOfTime": "0.025110974884900647",
+    "noOfsharesBid": "1479456.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "MANIPALHOS",
     "category": "Total",
     "noOfSharesOffered": "9.0088286E7",
-    "noOfTime": "0.12082064698178407",
-    "noOfsharesBid": "1.0884525E7",
+    "noOfTime": "0.14012143598780424",
+    "noOfsharesBid": "1.26233E7",
     "srNo": null
   }
 ]

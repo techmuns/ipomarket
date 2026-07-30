@@ -1,72 +1,72 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
-  "slug": "manipal-health-enterprises-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
+  "slug": "mv-electrosystems-ipo",
   "fields": {
     "company_name": {
-      "value": "Manipal Health Enterprises IPO",
+      "value": "MV Electrosystems IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Manipal Health Enterprises IPO"
+      "source_snippet": "MV Electrosystems IPO"
     },
     "issue_size_cr": {
-      "value": "15,72,07,054 shares (agg. up to ₹ 9,275 Cr)",
+      "value": "68,23,528 shares (agg. up to ₹ 290 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "15,72,07,054 shares (agg. up to ₹ 9,275 Cr)"
+      "source_snippet": "68,23,528 shares (agg. up to ₹ 290 Cr)"
     },
     "price_band": {
-      "value": "₹560 to ₹590",
+      "value": "₹400 to ₹425",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹560 to ₹590"
+      "source_snippet": "₹400 to ₹425"
     },
     "lot_size": {
-      "value": "25 Shares",
+      "value": "34 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "25 Shares"
+      "source_snippet": "34 Shares"
     },
     "face_value": {
-      "value": "₹ 2 per share",
+      "value": "₹ 5 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 2 per share"
+      "source_snippet": "₹ 5 per share"
     },
     "open_date": {
-      "value": "2026-07-29",
+      "value": "2026-07-30",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"29 to 31 Jul, 2026\" → start=2026-07-29"
+      "source_snippet": "raw=\"30 Jul to 3 Aug, 2026\" → start=2026-07-30"
     },
     "close_date": {
-      "value": "2026-07-31",
+      "value": "2026-08-03",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"29 to 31 Jul, 2026\" → end=2026-07-31"
+      "source_snippet": "raw=\"30 Jul to 3 Aug, 2026\" → end=2026-08-03"
     },
     "listing_date": {
-      "value": "2026-08-05",
+      "value": "2026-08-06",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Wed, Aug 5, 2026 T\" → 2026-08-05"
+      "source_snippet": "raw=\"Thu, Aug 6, 2026 T\" → 2026-08-06"
     },
     "registrar": {
       "value": "Kfin Technologies Ltd.",
@@ -74,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 manipal.ipo@kfintech.com <a\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 mvelectrosystems.ipo@kfintech.com <i class=\"fa fa-globe\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -87,10 +87,10 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/manipal-health-ipo-anchor-list.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
   "found_count_full": 9,
@@ -98,11 +98,9 @@
   "precision_ratio_full": 0.8181818181818182,
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/manipal-health-ipo-anchor-list.pdf"
-  ],
-  "noise_stripped_bytes": 95466,
-  "main_content_bytes": 95466,
-  "tables_parsed": 14,
-  "table_rows_parsed": 88
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 89760,
+  "main_content_bytes": 89760,
+  "tables_parsed": 11,
+  "table_rows_parsed": 70
 }
