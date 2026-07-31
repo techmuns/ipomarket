@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-07-31T06:21:52.272Z",
+  "captured_at_utc": "2026-07-31T13:05:34.209Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148032,
+      "bytes": 148050,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 150293,
+      "bytes": 150348,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
     "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
     "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
     "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
     "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
     "https://www.chittorgarh.com/ipo/cordelia-cruises-ipo/2474/",
-    "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/",
-    "https://www.chittorgarh.com/ipo/hexagon-nutrition-ipo/2658/"
+    "https://www.chittorgarh.com/ipo/turtlemint-fintech-solutions-ipo/2601/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
+      "url": "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
+      "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
+      "url": "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
       "mode": "static",
       "status": 200,
-      "bytes": 276496,
-      "title": "Ardee Industries IPO Date, Price, GMP, Review, Details",
+      "bytes": 295885,
+      "title": "Technocraft Ventures IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
+      "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
       "mode": "static",
       "status": 200,
-      "bytes": 323700,
-      "title": "MV Electrosystems IPO Date, Price, GMP, Review, Details",
+      "bytes": 276496,
+      "title": "Ardee Industries IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
