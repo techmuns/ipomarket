@@ -31,7 +31,7 @@
       "value": "34 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "34 Shares"
     },
@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/mv-electrosystem-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 92220,
-  "main_content_bytes": 92220,
+  "noise_stripped_bytes": 92356,
+  "main_content_bytes": 92356,
   "tables_parsed": 12,
-  "table_rows_parsed": 78
+  "table_rows_parsed": 79
 }
