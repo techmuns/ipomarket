@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-01T12:11:17.991Z",
+  "captured_at_utc": "2026-08-01T20:15:07.737Z",
   "sector_reachable": {
     "listed_equity": false,
     "pre_ipo": false
@@ -33,7 +33,7 @@
       ],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "5 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none)"
+      "notes": "4 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none)"
     },
     {
       "source": "BSE IPO list",
