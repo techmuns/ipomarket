@@ -28,5 +28,17 @@
     "noOfTime": "0.3897118897119661",
     "noOfsharesBid": "2.2960542E7",
     "srNo": null
+  },
+  {
+    "companyName": "Anawil Wire and Engineering Limited",
+    "isBse": "1",
+    "issueEndDate": "05-Aug-2026",
+    "issueStartDate": "03-Aug-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "ANAWIL",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4710000",
+    "noOfTime": ""
   }
 ]

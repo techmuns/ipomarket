@@ -1,10 +1,38 @@
 {
-  "generated_at_utc": "2026-08-02T12:13:50.312Z",
+  "generated_at_utc": "2026-08-02T20:16:47.013Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.35,
+  "average_precision_ratio": 0.25,
   "per_detail": [
     {
       "index": 1,
+      "source_url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
+      "found_count": 3,
+      "precision_ratio": 0.3,
+      "main_content_bytes": 77787,
+      "tables_parsed": 10,
+      "table_rows_parsed": 54,
+      "fields_high_confidence": [
+        "company_name",
+        "issue_size_cr",
+        "listing_date"
+      ],
+      "fields_medium_confidence": [],
+      "fields_rejected_low_confidence": [
+        "official_pdf_links"
+      ],
+      "fields_missing": [
+        "price_band",
+        "lot_size",
+        "open_date",
+        "close_date",
+        "registrar",
+        "brlms"
+      ],
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 1
+    },
+    {
+      "index": 2,
       "source_url": "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
       "found_count": 2,
       "precision_ratio": 0.2,
@@ -23,34 +51,6 @@
       "fields_missing": [
         "price_band",
         "lot_size",
-        "open_date",
-        "close_date",
-        "registrar",
-        "brlms"
-      ],
-      "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
-    },
-    {
-      "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
-      "found_count": 5,
-      "precision_ratio": 0.5,
-      "main_content_bytes": 83044,
-      "tables_parsed": 12,
-      "table_rows_parsed": 64,
-      "fields_high_confidence": [
-        "company_name",
-        "issue_size_cr",
-        "price_band",
-        "lot_size",
-        "listing_date"
-      ],
-      "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [
-        "official_pdf_links"
-      ],
-      "fields_missing": [
         "open_date",
         "close_date",
         "registrar",

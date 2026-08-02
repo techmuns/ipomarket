@@ -1,23 +1,23 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
+  "source_url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
   "fields": {
     "company_name": {
-      "value": "Technocraft Ventures IPO",
+      "value": "LEAP India IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Technocraft Ventures IPO"
+      "source_snippet": "LEAP India IPO"
     },
     "issue_size_cr": {
-      "value": "1,18,81,000 shares (agg. up to ₹ [.] Cr)",
-      "found": false,
-      "confidence": "low",
-      "method": "table[1].row[0]-rejected",
-      "why_missing": "value '1,18,81,000 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
-      "source_snippet": "1,18,81,000 shares (agg. up to ₹ [.] Cr)"
+      "value": "[.] shares (agg. up to ₹ 2,480 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "[.] shares (agg. up to ₹ 2,480 Cr)"
     },
     "price_band": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.khambattasecurities.com/pdf/Red%20Herring%20Prospectus__Technocraft%20Ventures%20Limited.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/leapindia_limited_red_herring_prospectus_260802_184621.pdf"
     }
   },
-  "found_count": 2,
-  "precision_ratio": 0.2,
+  "found_count": 3,
+  "precision_ratio": 0.3,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.khambattasecurities.com/pdf/Red%20Herring%20Prospectus__Technocraft%20Ventures%20Limited.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/leapindia_limited_red_herring_prospectus_260802_184621.pdf"
   ],
-  "noise_stripped_bytes": 87365,
-  "main_content_bytes": 87365,
+  "noise_stripped_bytes": 77787,
+  "main_content_bytes": 77787,
   "tables_parsed": 10,
-  "table_rows_parsed": 65
+  "table_rows_parsed": 54
 }
