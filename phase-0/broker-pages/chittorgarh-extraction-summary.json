@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-03T13:48:10.976Z",
+  "generated_at_utc": "2026-08-03T20:39:08.688Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.3,
   "per_detail": [
@@ -8,9 +8,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
       "found_count": 1,
       "precision_ratio": 0.1,
-      "main_content_bytes": 79270,
+      "main_content_bytes": 78782,
       "tables_parsed": 10,
-      "table_rows_parsed": 56,
+      "table_rows_parsed": 55,
       "fields_high_confidence": [
         "company_name"
       ],
@@ -36,9 +36,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 83864,
+      "main_content_bytes": 83240,
       "tables_parsed": 12,
-      "table_rows_parsed": 67,
+      "table_rows_parsed": 66,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

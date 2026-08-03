@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/leapindia_limited_red_herring_prospectus_260802_184621.pdf"
   ],
-  "noise_stripped_bytes": 83864,
-  "main_content_bytes": 83864,
+  "noise_stripped_bytes": 83240,
+  "main_content_bytes": 83240,
   "tables_parsed": 12,
-  "table_rows_parsed": 67
+  "table_rows_parsed": 66
 }

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-03T13:48:10.976Z",
+  "captured_at_utc": "2026-08-03T20:39:08.688Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 150325,
+      "bytes": 149850,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
       "mode": "static",
       "status": 200,
-      "bytes": 266861,
+      "bytes": 264854,
       "title": "Dhoot Transmission IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
       "mode": "static",
       "status": 200,
-      "bytes": 274835,
+      "bytes": 272155,
       "title": "LEAP India IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
