@@ -1,14 +1,42 @@
 {
-  "generated_at_utc": "2026-08-03T06:32:46.417Z",
+  "generated_at_utc": "2026-08-03T13:48:10.976Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.5,
+  "average_precision_ratio": 0.3,
   "per_detail": [
     {
       "index": 1,
+      "source_url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
+      "found_count": 1,
+      "precision_ratio": 0.1,
+      "main_content_bytes": 79270,
+      "tables_parsed": 10,
+      "table_rows_parsed": 56,
+      "fields_high_confidence": [
+        "company_name"
+      ],
+      "fields_medium_confidence": [],
+      "fields_rejected_low_confidence": [
+        "listing_date",
+        "official_pdf_links"
+      ],
+      "fields_missing": [
+        "issue_size_cr",
+        "price_band",
+        "lot_size",
+        "open_date",
+        "close_date",
+        "registrar",
+        "brlms"
+      ],
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 1
+    },
+    {
+      "index": 2,
       "source_url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 83875,
+      "main_content_bytes": 83864,
       "tables_parsed": 12,
       "table_rows_parsed": 67,
       "fields_high_confidence": [
@@ -30,33 +58,6 @@
       ],
       "official_pdf_links_on_allowlist": [],
       "official_pdf_links_off_allowlist_count": 1
-    },
-    {
-      "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
-      "found_count": 5,
-      "precision_ratio": 0.5,
-      "main_content_bytes": 92383,
-      "tables_parsed": 11,
-      "table_rows_parsed": 75,
-      "fields_high_confidence": [
-        "company_name",
-        "issue_size_cr",
-        "price_band",
-        "lot_size",
-        "listing_date"
-      ],
-      "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [],
-      "fields_missing": [
-        "open_date",
-        "close_date",
-        "registrar",
-        "brlms",
-        "official_pdf_links"
-      ],
-      "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-03T06:32:46.417Z",
+  "captured_at_utc": "2026-08-03T13:48:10.976Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46190,
+      "bytes": 46072,
       "tr_count": 26,
       "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=46190"
+      "notes": "static ok: tr=26, bytes=46072"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf",
+      "link_text": "Veritas Finance Limited - Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
       "link_text": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
@@ -115,11 +120,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Jio%20Platforms%20Ltd_p.PDF",
       "link_text": "Jio Platforms Ltd - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/National%20Stock%20Exchange%20of%20India%20Ltd%20-%20Abridged_p.pdf",
-      "link_text": "National Stock Exchange of India Ltd - Abridged Prospectus",
       "source": "static-alt"
     }
   ]

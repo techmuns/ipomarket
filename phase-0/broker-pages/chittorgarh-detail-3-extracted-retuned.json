@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/anawil-wire-anchor-investor.pdf"
   ],
-  "noise_stripped_bytes": 92538,
-  "main_content_bytes": 92538,
+  "noise_stripped_bytes": 92527,
+  "main_content_bytes": 92527,
   "tables_parsed": 13,
   "table_rows_parsed": 80
 }

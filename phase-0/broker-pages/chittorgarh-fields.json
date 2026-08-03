@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-03T06:32:46.417Z",
+  "captured_at_utc": "2026-08-03T13:48:10.976Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147439,
+      "bytes": 147373,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 150319,
+      "bytes": 150325,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
     "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
     "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
     "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
     "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/",
     "https://www.chittorgarh.com/ipo/csm-technologies-ipo/2641/",
-    "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/",
-    "https://www.chittorgarh.com/ipo/cordelia-cruises-ipo/2474/"
+    "https://www.chittorgarh.com/ipo/advit-jewels-ipo/2686/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
+      "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
+      "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
+      "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
       "mode": "static",
       "status": 200,
-      "bytes": 274804,
-      "title": "LEAP India IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 266861,
+      "title": "Dhoot Transmission IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
+      "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
       "mode": "static",
       "status": 200,
-      "bytes": 313562,
-      "title": "Technocraft Ventures IPO Date, Price, GMP, Review, Details",
+      "bytes": 274835,
+      "title": "LEAP India IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

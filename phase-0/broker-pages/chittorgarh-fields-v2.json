@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-03T06:32:46.417Z",
+  "captured_at_utc": "2026-08-03T13:48:10.976Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 372035,
+      "bytes": 372066,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 346925,
+      "bytes": 346956,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
       "mode": "static",
       "status": 200,
-      "bytes": 323442,
+      "bytes": 323489,
       "title": "Anawil Wire &amp; Engineering IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

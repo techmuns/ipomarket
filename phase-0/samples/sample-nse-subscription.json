@@ -10,8 +10,8 @@
     "symbol": "MVELECTRO",
     "category": "Total",
     "noOfSharesOffered": "3987491.0",
-    "noOfTime": "43.98624247678553",
-    "noOfsharesBid": "1.75394746E8",
+    "noOfTime": "137.73846762287363",
+    "noOfsharesBid": "5.492309E8",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "JNPR",
     "category": "Total",
     "noOfSharesOffered": "5.8916709E7",
-    "noOfTime": "1.1956469259000873",
-    "noOfsharesBid": "7.0443582E7",
+    "noOfTime": "6.117569397842639",
+    "noOfsharesBid": "3.60427056E8",
     "srNo": null
   },
   {
@@ -37,8 +37,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ANAWIL",
-    "noOfsharesBid": "4327600",
+    "noOfsharesBid": "20806400",
     "noOfSharesOffered": "4710000",
-    "noOfTime": "0.92"
+    "noOfTime": "4.42"
   }
 ]
