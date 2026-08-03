@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-02T20:16:47.013Z",
+  "captured_at_utc": "2026-08-03T06:32:46.417Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147492,
+      "bytes": 147439,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149918,
+      "bytes": 150319,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
       "mode": "static",
       "status": 200,
-      "bytes": 253792,
+      "bytes": 274804,
       "title": "LEAP India IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
       "mode": "static",
       "status": 200,
-      "bytes": 295902,
+      "bytes": 313562,
       "title": "Technocraft Ventures IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

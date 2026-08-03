@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-02T20:16:47.013Z",
+  "captured_at_utc": "2026-08-03T06:32:46.417Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "mv-electrosystems-ipo",
-    "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
+    "slug": "anawil-wire-engieering-ipo",
+    "url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"30 Jul - 03 Aug\" covers today",
-    "date_text": "30 Jul - 03 Aug",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"03 - 05 Aug\" covers today",
+    "date_text": "03 - 05 Aug",
+    "source_list": "sme"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
-      "slug": "mv-electrosystems-ipo"
+      "url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
+      "slug": "anawil-wire-engieering-ipo"
     }
   ],
   "details": [
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 371219,
+      "bytes": 372035,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 339652,
+      "bytes": 346925,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
+      "url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
       "mode": "static",
       "status": 200,
-      "bytes": 323711,
-      "title": "MV Electrosystems IPO Date, Price, GMP, Review, Details",
+      "bytes": 323442,
+      "title": "Anawil Wire &amp; Engineering IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
