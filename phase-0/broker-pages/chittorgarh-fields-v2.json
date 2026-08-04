@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-04T06:03:08.871Z",
+  "captured_at_utc": "2026-08-04T13:07:48.199Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 344520,
+      "bytes": 344563,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/aegeus-technologies-ipo/2837/",
       "mode": "static",
       "status": 200,
-      "bytes": 298600,
+      "bytes": 298524,
       "title": "Aegeus Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

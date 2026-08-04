@@ -1,9 +1,7 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 1,
+  "valid": 1,
   "examples": {
-    "MV Electrosystems Limited": "MVELECTRO",
-    "Juniper Green Energy Limited": "JNPR",
     "Ardee Industries Limited": "ARDEE"
   }
 }

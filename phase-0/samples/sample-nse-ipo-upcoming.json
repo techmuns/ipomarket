@@ -1,29 +1,9 @@
 [
   {
-    "companyName": "MV Electrosystems Limited",
-    "issueEndDate": "03-Aug-2026",
-    "issuePrice": "Rs.400 to Rs.425",
-    "issueSize": "3987491",
-    "issueStartDate": "30-Jul-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "MVELECTRO"
-  },
-  {
-    "companyName": "Juniper Green Energy Limited",
-    "issueEndDate": "03-Aug-2026",
-    "issuePrice": "Rs.214 to Rs.225",
-    "issueSize": "58916709",
-    "issueStartDate": "30-Jul-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "JNPR"
-  },
-  {
     "companyName": "Ardee Industries Limited",
     "issueEndDate": "07-Aug-2026",
     "issuePrice": "Rs.50 to Rs.53",
-    "issueSize": "83974436",
+    "issueSize": "58422516",
     "issueStartDate": "05-Aug-2026",
     "series": "EQ",
     "status": "Forthcoming",

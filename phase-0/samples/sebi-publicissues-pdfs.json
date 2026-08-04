@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-04T06:03:08.871Z",
+  "captured_at_utc": "2026-08-04T13:07:48.199Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46190,
+      "bytes": 46616,
       "tr_count": 26,
-      "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=46190"
+      "pdfs_found": 21,
+      "notes": "static ok: tr=26, bytes=46616"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Master%20Chains%20N%20Jewels%20Limited%20-%20AP_p.pdf",
+      "link_text": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
       "link_text": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
