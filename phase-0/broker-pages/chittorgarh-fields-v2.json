@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-03T20:39:08.688Z",
+  "captured_at_utc": "2026-08-04T06:03:08.871Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "anawil-wire-engieering-ipo",
-    "url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
+    "slug": "aegeus-technologies-ipo",
+    "url": "https://www.chittorgarh.com/ipo/aegeus-technologies-ipo/2837/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"03 - 05 Aug\" covers today",
-    "date_text": "03 - 05 Aug",
+    "reason": "current-open: list \"sme\" row date range \"04 - 06 Aug\" covers today",
+    "date_text": "04 - 06 Aug",
     "source_list": "sme"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
-      "slug": "anawil-wire-engieering-ipo"
+      "url": "https://www.chittorgarh.com/ipo/aegeus-technologies-ipo/2837/",
+      "slug": "aegeus-technologies-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 344563,
+      "bytes": 344520,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
+      "url": "https://www.chittorgarh.com/ipo/aegeus-technologies-ipo/2837/",
       "mode": "static",
       "status": 200,
-      "bytes": 321255,
-      "title": "Anawil Wire &amp; Engineering IPO Date, Price, GMP, Details",
+      "bytes": 298600,
+      "title": "Aegeus Technologies IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-03T20:39:08.688Z",
+  "captured_at_utc": "2026-08-04T06:03:08.871Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147373,
+      "bytes": 147257,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149850,
+      "bytes": 149892,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
       "mode": "static",
       "status": 200,
-      "bytes": 264854,
+      "bytes": 298256,
       "title": "Dhoot Transmission IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

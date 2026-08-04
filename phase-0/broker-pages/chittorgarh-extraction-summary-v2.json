@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-03T20:39:08.688Z",
+  "generated_at_utc": "2026-08-04T06:03:08.871Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "anawil-wire-engieering-ipo",
-    "url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
+    "slug": "aegeus-technologies-ipo",
+    "url": "https://www.chittorgarh.com/ipo/aegeus-technologies-ipo/2837/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"03 - 05 Aug\" covers today",
-    "date_text": "03 - 05 Aug",
+    "reason": "current-open: list \"sme\" row date range \"04 - 06 Aug\" covers today",
+    "date_text": "04 - 06 Aug",
     "source_list": "sme"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 86266,
+      "main_content_bytes": 86265,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "anawil-wire-engieering-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/anawil-wire-engieering-ipo/2618/",
+      "slug": "aegeus-technologies-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/aegeus-technologies-ipo/2837/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 92019,
-      "tables_parsed": 13,
-      "table_rows_parsed": 79,
+      "main_content_bytes": 90059,
+      "tables_parsed": 12,
+      "table_rows_parsed": 75,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -111,7 +111,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 2
     }
   ]
 }
