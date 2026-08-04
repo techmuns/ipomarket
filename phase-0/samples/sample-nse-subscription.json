@@ -1,32 +1,17 @@
 [
   {
-    "companyName": "MV Electrosystems Limited",
-    "issueEndDate": "03-Aug-2026",
-    "issuePrice": "Rs.400 to Rs.425",
-    "issueSize": "3987491",
-    "issueStartDate": "30-Jul-2026",
+    "companyName": "Ardee Industries Limited",
+    "issueEndDate": "07-Aug-2026",
+    "issuePrice": "Rs.50 to Rs.53",
+    "issueSize": "58422516",
+    "issueStartDate": "05-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "MVELECTRO",
+    "symbol": "ARDEE",
     "category": "Total",
-    "noOfSharesOffered": "3987491.0",
-    "noOfTime": "137.73846762287363",
-    "noOfsharesBid": "5.492309E8",
-    "srNo": null
-  },
-  {
-    "companyName": "Juniper Green Energy Limited",
-    "issueEndDate": "03-Aug-2026",
-    "issuePrice": "Rs.214 to Rs.225",
-    "issueSize": "58916709",
-    "issueStartDate": "30-Jul-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "JNPR",
-    "category": "Total",
-    "noOfSharesOffered": "5.8916709E7",
-    "noOfTime": "6.117569397842639",
-    "noOfsharesBid": "3.60427056E8",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
     "srNo": null
   },
   {
@@ -37,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ANAWIL",
-    "noOfsharesBid": "20806400",
+    "noOfsharesBid": "49041600",
     "noOfSharesOffered": "4710000",
-    "noOfTime": "4.42"
+    "noOfTime": "10.41"
   }
 ]
