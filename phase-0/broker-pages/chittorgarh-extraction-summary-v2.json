@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-08-04T20:40:49.374Z",
+  "generated_at_utc": "2026-08-05T05:54:52.661Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "aegeus-technologies-ipo",
-    "url": "https://www.chittorgarh.com/ipo/aegeus-technologies-ipo/2837/",
+    "slug": "ardee-industries-ipo",
+    "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
     "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"04 - 06 Aug\" covers today",
-    "date_text": "04 - 06 Aug",
-    "source_list": "sme"
+    "reason": "current-open: list \"mainboard\" row date range \"05 - 07 Aug\" covers today",
+    "date_text": "05 - 07 Aug",
+    "source_list": "mainboard"
   },
   "per_detail": [
     {
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 97578,
+      "main_content_bytes": 97575,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "aegeus-technologies-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/aegeus-technologies-ipo/2837/",
+      "slug": "ardee-industries-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 90057,
-      "tables_parsed": 12,
-      "table_rows_parsed": 75,
+      "main_content_bytes": 86876,
+      "tables_parsed": 13,
+      "table_rows_parsed": 73,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

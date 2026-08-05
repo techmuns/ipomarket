@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "ARDEE",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "5.8422516E7",
+    "noOfTime": "0.44382331976253814",
+    "noOfsharesBid": "2.5929275E7",
     "srNo": null
   },
   {
@@ -22,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ANAWIL",
-    "noOfsharesBid": "49041600",
+    "noOfsharesBid": "119407600",
     "noOfSharesOffered": "4710000",
-    "noOfTime": "10.41"
+    "noOfTime": "25.35"
   }
 ]
