@@ -1,7 +1,10 @@
 {
-  "total": 1,
-  "valid": 1,
+  "total": 4,
+  "valid": 4,
   "examples": {
-    "Ardee Industries Limited": "ARDEE"
+    "Ardee Industries Limited": "ARDEE",
+    "Leap India Limited": "LEAP",
+    "Technocraft Ventures Limited": "TECHNOCRAF",
+    "Optimystix Entertainment India Limited": "OPTIMYSTIX"
   }
 }

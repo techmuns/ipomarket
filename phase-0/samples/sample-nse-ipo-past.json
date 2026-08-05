@@ -8,5 +8,37 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "ARDEE"
+  },
+  {
+    "companyName": "Leap India Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.151 to Rs.159",
+    "issueSize": "164238410",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "LEAP"
+  },
+  {
+    "companyName": "Technocraft Ventures Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.200 to Rs.212",
+    "issueSize": "11881000",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "TECHNOCRAF"
+  },
+  {
+    "companyName": "Optimystix Entertainment India Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.166 to Rs.175",
+    "issueSize": "6200000",
+    "issueStartDate": "07-Aug-2026",
+    "lotSize": "800",
+    "priceBand": "Rs.166 to Rs.175",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "OPTIMYSTIX"
   }
 ]
