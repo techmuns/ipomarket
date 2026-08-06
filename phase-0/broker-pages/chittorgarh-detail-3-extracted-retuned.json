@@ -32,7 +32,7 @@
       "value": "281 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "281 Shares"
     },
@@ -102,8 +102,8 @@
     "https://www.chittorgarh.net/reports/ipo_notes/1785249966755-ardee-industries-limited-rhp.pdf",
     "https://www.chittorgarh.net/reports/anchor-investor/ardee-ipo-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 86876,
-  "main_content_bytes": 86876,
+  "noise_stripped_bytes": 87111,
+  "main_content_bytes": 87111,
   "tables_parsed": 13,
-  "table_rows_parsed": 73
+  "table_rows_parsed": 74
 }

@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
+  "source_url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
   "fields": {
     "company_name": {
-      "value": "Dhoot Transmission IPO",
+      "value": "Milky Mist Dairy Food IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Dhoot Transmission IPO"
+      "source_snippet": "Milky Mist Dairy Food IPO"
     },
     "issue_size_cr": {
-      "value": "3,52,18,047 shares (agg. up to ₹ 3,067 Cr)",
+      "value": "11,09,43,193 shares (agg. up to ₹ 1,553 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "3,52,18,047 shares (agg. up to ₹ 3,067 Cr)"
+      "source_snippet": "11,09,43,193 shares (agg. up to ₹ 1,553 Cr)"
     },
     "price_band": {
-      "value": "₹829 to ₹871",
+      "value": "₹133 to ₹140",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹829 to ₹871"
+      "source_snippet": "₹133 to ₹140"
     },
     "lot_size": {
-      "value": "17 Shares",
+      "value": "107 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "17 Shares"
+      "source_snippet": "107 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Mon, Aug 17, 2026 T",
+      "value": "Tue, Aug 18, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Mon, Aug 17, 2026 T"
+      "source_snippet": "Tue, Aug 18, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,18 +78,20 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no .pdf href found in the captured HTML",
-      "source_snippet": null
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/milky-mist-dairy-food-limited-rhp.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 88493,
-  "main_content_bytes": 88493,
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/milky-mist-dairy-food-limited-rhp.pdf"
+  ],
+  "noise_stripped_bytes": 86361,
+  "main_content_bytes": 86361,
   "tables_parsed": 12,
-  "table_rows_parsed": 74
+  "table_rows_parsed": 73
 }

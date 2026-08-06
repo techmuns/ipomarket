@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-05T20:39:00.218Z",
+  "captured_at_utc": "2026-08-06T06:03:23.287Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147724,
+      "bytes": 146250,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149597,
+      "bytes": 149653,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
     "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
     "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
     "https://www.chittorgarh.com/ipo/molbio-diagnostics-ipo/2579/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
     "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
     "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
-    "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/",
-    "https://www.chittorgarh.com/ipo/aastha-spintex-ipo/2678/"
+    "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+      "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
+      "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+      "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
       "mode": "static",
       "status": 200,
-      "bytes": 277906,
-      "title": "Milky Mist Dairy Food IPO Date, Price, GMP, Details",
+      "bytes": 298685,
+      "title": "Shiprocket IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
+      "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
       "mode": "static",
       "status": 200,
-      "bytes": 300738,
-      "title": "Dhoot Transmission IPO Date, Price, GMP, Review, Details",
+      "bytes": 293642,
+      "title": "Milky Mist Dairy Food IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

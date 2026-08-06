@@ -1,50 +1,50 @@
 # Phase 0 — Source Probe Report
 
-Generated: 2026-08-05T20:40:12.120Z
+Generated: 2026-08-06T06:04:35.558Z
 
 ## Status Summary
 
 - GREEN: 18
-- YELLOW: 7
-- RED: 10
+- YELLOW: 6
+- RED: 11
 
 | Probe | Source | Status | Code | Type | Latency (ms) | Recommendation |
 |---|---|---|---|---|---|---|
-| P-01 | NSE — Current/Open IPOs | GREEN | 200 | JSON | 271 | Use as primary source for Live & Upcoming tab. |
-| P-02 | NSE — Upcoming IPOs | GREEN | 200 | JSON | 217 | Use as primary for Upcoming/Pipeline tab. |
-| P-03 | NSE — Past/Recent IPOs | GREEN | 200 | JSON | 25 | Use as primary for Recently Listed. |
-| P-04 | NSE — Live Subscription | RED | 200 | JSON | 275 | Fall back to BSE bidding (P-07). |
-| P-05 | NSE Emerge — SME IPOs | YELLOW | 200 | JSON | 657 | Source reachable; 0 SME rows in current snapshot. |
-| P-08 | SEBI — Public Issues Filings | GREEN | 200 | HTML | 2082 | Use as primary for Pipeline tab + DRHP master. |
-| P-08b | SEBI — Processing Status | YELLOW | 200 | EMPTY | 330 | Endpoint reachable; show "no observations today" in Pipeline tab when empty. |
-| P-09 | SEBI — DRHP PDF Download | GREEN | 200 | PDF | 2740 | PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17). |
-| P-10 | NSE/BSE — DRHP Archive | RED | 200 | HTML | 11363 | Skip if SEBI (P-08) is GREEN. |
-| P-15 | BSE — Historical OHLC (fallback) | GREEN | 200 | JSON | 3206 | NSE historical still blocked; use BSE historical as primary (official fallback). |
+| P-01 | NSE — Current/Open IPOs | GREEN | 200 | JSON | 261 | Use as primary source for Live & Upcoming tab. |
+| P-02 | NSE — Upcoming IPOs | GREEN | 200 | JSON | 336 | Use as primary for Upcoming/Pipeline tab. |
+| P-03 | NSE — Past/Recent IPOs | GREEN | 200 | JSON | 29 | Use as primary for Recently Listed. |
+| P-04 | NSE — Live Subscription | RED | 200 | JSON | 334 | Fall back to BSE bidding (P-07). |
+| P-05 | NSE Emerge — SME IPOs | YELLOW | 200 | JSON | 1234 | Source reachable; 0 SME rows in current snapshot. |
+| P-08 | SEBI — Public Issues Filings | GREEN | 200 | HTML | 2319 | Use as primary for Pipeline tab + DRHP master. |
+| P-08b | SEBI — Processing Status | YELLOW | 200 | EMPTY | 341 | Endpoint reachable; show "no observations today" in Pipeline tab when empty. |
+| P-09 | SEBI — DRHP PDF Download | GREEN | 200 | PDF | 3562 | PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17). |
+| P-10 | NSE/BSE — DRHP Archive | RED | 200 | HTML | 11115 | Skip if SEBI (P-08) is GREEN. |
+| P-15 | BSE — Historical OHLC (fallback) | GREEN | 200 | JSON | 2899 | NSE historical still blocked; use BSE historical as primary (official fallback). |
 | P-15b | NSE — Equity Quote | RED | 403 | BLOCKED | 27 | Fall back to BSE quote. |
-| P-16 | Ticker mapping (NSE list symbol field) | GREEN | 200 | JSON | 28 | Deterministic mapping; no manual override file needed for v1. |
-| P-06 | BSE — Mainboard Public Issues | RED | 200 | HTML | 984 | Skip; NSE primary covers this. |
-| P-06b | BSE SME — Public Issues | RED | 0 | ERROR | 10486 | Skip if NSE Emerge is GREEN. |
-| P-07 | BSE — Subscription / Cumulative Bid Details | RED | 200 | HTML | 378 | Rely on NSE only (P-04). |
-| P-11 | Registrar resolution (from NSE list) | RED | 200 | JSON | 24 | Fall back to per-issue page scrape or manual seed. |
-| P-12 | MUFG Intime (Link Intime) — landing | GREEN | 200 | HTML | 1205 | Store URL as link-out; do not scrape per-PAN. |
-| P-13 | KFintech — landing | GREEN | 200 | HTML | 47 | Store URL as link-out only. |
-| P-14 | Bigshare — landing | GREEN | 200 | HTML | 5402 | Store URL as link-out only. |
-| P-14b | Maashitla — landing | GREEN | 200 | HTML | 731 | Store URL as link-out only. |
-| P-17 | RHP PDF parsing — sample | YELLOW | 200 | EMPTY | 691 | PDF discovery selector may have drifted. |
-| P-18 | Anchor circular PDF parsing — sample | YELLOW | 200 | EMPTY | 236 | PDF discovery selector may have drifted. |
-| P-19 | GMP — IPOWatch | YELLOW | 200 | HTML | 1455 | Include in Phase 6 GMP averager. |
-| P-20 | GMP — Chittorgarh | RED | 200 | HTML | 1765 | Skip; Phase 6 stays off if all GMP probes fail. |
-| P-21 | GMP — IPO Central | YELLOW | 200 | HTML | 57 | Include in Phase 6 GMP averager (lower weight given parsing difficulty). |
-| P-22 | GMP — InvestorGain | YELLOW | 200 | HTML | 119 | Include in Phase 6 GMP averager. |
-| P-23a | Broker IPO page — Zerodha (reference only) | GREEN | 200 | HTML | 4464 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
-| P-23b | Broker IPO page — Upstox (reference only) | GREEN | 200 | HTML | 5840 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
-| P-24 | Sector / industry classification (NSE + BSE) | RED | 403 | EMPTY | 679 | Sector unreachable from probed endpoints; manual sector-map.json required for v1. |
-| P-25 | Chittorgarh — IPO list + detail accessibility (Phase 5C) | GREEN | 200 | HTML | 908 | Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static). |
-| P-26 | Chittorgarh — detail field extraction (Phase 5C.3 calibration) | RED | - | JSON | 18 | Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual. |
-| P-27 | Zerodha — IPO detail refresh (Phase 5C, reference only) | GREEN | 200 | HTML | 4587 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
-| P-28 | Upstox — IPO detail refresh (Phase 5C, reference only) | GREEN | 200 | HTML | 5188 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
-| P-25b | Chittorgarh — detail-page accessibility retune (Phase 6A.1) | GREEN | 200 | HTML | 2764 | All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision. |
-| P-26b | Chittorgarh — detail field extraction retune (Phase 6A.1) | GREEN | - | JSON | 28 | Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval. |
+| P-16 | Ticker mapping (NSE list symbol field) | GREEN | 200 | JSON | 282 | Deterministic mapping; no manual override file needed for v1. |
+| P-06 | BSE — Mainboard Public Issues | RED | 200 | HTML | 528 | Skip; NSE primary covers this. |
+| P-06b | BSE SME — Public Issues | RED | 0 | ERROR | 10229 | Skip if NSE Emerge is GREEN. |
+| P-07 | BSE — Subscription / Cumulative Bid Details | RED | 200 | HTML | 381 | Rely on NSE only (P-04). |
+| P-11 | Registrar resolution (from NSE list) | RED | 200 | JSON | 337 | Fall back to per-issue page scrape or manual seed. |
+| P-12 | MUFG Intime (Link Intime) — landing | GREEN | 200 | HTML | 752 | Store URL as link-out; do not scrape per-PAN. |
+| P-13 | KFintech — landing | GREEN | 200 | HTML | 173 | Store URL as link-out only. |
+| P-14 | Bigshare — landing | GREEN | 200 | HTML | 947 | Store URL as link-out only. |
+| P-14b | Maashitla — landing | GREEN | 200 | HTML | 709 | Store URL as link-out only. |
+| P-17 | RHP PDF parsing — sample | YELLOW | 200 | EMPTY | 836 | PDF discovery selector may have drifted. |
+| P-18 | Anchor circular PDF parsing — sample | YELLOW | 200 | EMPTY | 215 | PDF discovery selector may have drifted. |
+| P-19 | GMP — IPOWatch | RED | 0 | ERROR | 10254 | Skip; phase-6 feature flag stays off if all GMP probes fail. |
+| P-20 | GMP — Chittorgarh | RED | 200 | HTML | 585 | Skip; Phase 6 stays off if all GMP probes fail. |
+| P-21 | GMP — IPO Central | YELLOW | 200 | HTML | 95 | Include in Phase 6 GMP averager (lower weight given parsing difficulty). |
+| P-22 | GMP — InvestorGain | YELLOW | 200 | HTML | 44 | Include in Phase 6 GMP averager. |
+| P-23a | Broker IPO page — Zerodha (reference only) | GREEN | 200 | HTML | 4120 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
+| P-23b | Broker IPO page — Upstox (reference only) | GREEN | 200 | HTML | 4904 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
+| P-24 | Sector / industry classification (NSE + BSE) | RED | 403 | EMPTY | 1057 | Sector unreachable from probed endpoints; manual sector-map.json required for v1. |
+| P-25 | Chittorgarh — IPO list + detail accessibility (Phase 5C) | GREEN | 200 | HTML | 1064 | Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static). |
+| P-26 | Chittorgarh — detail field extraction (Phase 5C.3 calibration) | RED | - | JSON | 19 | Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual. |
+| P-27 | Zerodha — IPO detail refresh (Phase 5C, reference only) | GREEN | 200 | HTML | 3403 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
+| P-28 | Upstox — IPO detail refresh (Phase 5C, reference only) | GREEN | 200 | HTML | 5336 | Use as information-architecture benchmark only. Do NOT scrape for production data. |
+| P-25b | Chittorgarh — detail-page accessibility retune (Phase 6A.1) | GREEN | 200 | HTML | 908 | All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision. |
+| P-26b | Chittorgarh — detail field extraction retune (Phase 6A.1) | GREEN | - | JSON | 29 | Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval. |
 
 ## Per-probe detail
 
@@ -63,8 +63,8 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Updated when an IPO opens/closes
 - Recommended action: Use as primary source for Live & Upcoming tab.
 - Fallback: P-06
-- Latency: 271 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 261 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > Total rows: 4, Active rows: 1
 
@@ -96,8 +96,8 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Updated when issues are announced
 - Recommended action: Use as primary for Upcoming/Pipeline tab.
 - Fallback: P-08b
-- Latency: 217 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 336 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > Total rows: 4, Forthcoming/upcoming rows: 3
 
@@ -129,8 +129,8 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Updated on listing
 - Recommended action: Use as primary for Recently Listed.
 - Fallback: P-15
-- Latency: 25 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 29 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > Total rows: 4, Past/closed/listed rows: 0
 
@@ -162,8 +162,8 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Updates every ~10 minutes during bidding window
 - Recommended action: Fall back to BSE bidding (P-07).
 - Fallback: P-07
-- Latency: 275 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 334 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > Active candidate symbol: ARDEE · Top-level keys: 0
 
@@ -180,8 +180,8 @@ Generated: 2026-08-05T20:40:12.120Z
     "symbol": "ARDEE",
     "category": "Total",
     "noOfSharesOffered": "5.8422516E7",
-    "noOfTime": "2.513571907789798",
-    "noOfsharesBid": "1.46849195E8",
+    "noOfTime": "5.299709772855383",
+    "noOfsharesBid": "3.09622379E8",
     "srNo": null
   }
 ]
@@ -202,8 +202,8 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Daily
 - Recommended action: Source reachable; 0 SME rows in current snapshot.
 - Fallback: P-06b
-- Latency: 657 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 1234 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > [nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed
 
@@ -226,10 +226,10 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Updated whenever a DRHP/RHP/observation is filed
 - Recommended action: Use as primary for Pipeline tab + DRHP master.
 - Fallback: P-10
-- Latency: 2082 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 2319 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> [static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46501 (pdfs=21)
+> [static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46526 (pdfs=21)
 
 ```
 {
@@ -248,18 +248,18 @@ Generated: 2026-08-05T20:40:12.120Z
   "unique_pdf_count": 21,
   "first_3_pdfs": [
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf",
+      "link_text": "Encube Ethicals Limited- Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Advanced%20Sys-Tek%20Limited%20%20-%20DAP_p.pdf",
+      "link_text": "Advanced Sys-Tek Limited- Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf",
       "link_text": "Veritas Finance Limited - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Master%20Chains%20N%20Jewels%20Limited%20-%20AP_p.pdf",
-      "link_text": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
-      "link_text": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
       "source": "static-alt"
     }
   ],
@@ -282,8 +282,8 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Updated on filing/observation status changes
 - Recommended action: Endpoint reachable; show "no observations today" in Pipeline tab when empty.
 - Fallback: P-08
-- Latency: 330 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 341 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > static ok: tbody_rows=3, bytes=25899
 
@@ -297,7 +297,7 @@ Generated: 2026-08-05T20:40:12.120Z
 
 ### P-09 — SEBI — DRHP PDF Download — GREEN
 
-- URL: `https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf`
+- URL: `https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf`
 - Method: GET (binary) + pdf-parse.py (page-count)
 - Headers/cookies required: User-Agent, Referer
 - Status code: 200
@@ -310,20 +310,20 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Immutable once published
 - Recommended action: PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).
 - Fallback: P-10
-- Latency: 2740 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 3562 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> discovery=sebi-publicissues-pdfs.json; pdf_url=mmondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf; bytes=456841; page_count=14; pdf-parse=ok
+> discovery=sebi-publicissues-pdfs.json; pdf_url=mmondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf; bytes=532589; page_count=14; pdf-parse=ok
 
 ```
 {
-  "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf",
-  "link_text": "Veritas Finance Limited - Abridged Prospectus",
-  "bytes": 456841,
-  "sha256": "32b0b6acc43c44f3…",
+  "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf",
+  "link_text": "Encube Ethicals Limited- Abridged Prospectus",
+  "bytes": 532589,
+  "sha256": "6e7d0a189ee7d2f2…",
   "magic": "%PDF",
   "page_count": 14,
-  "cover_text_first_200": "VERITAS FINANCE LIMITED [\nCORPORATE IDENTITY NUMBER: U65923TN2015PLC100328\nREGISTERED AND CORPORATE CONTACT EMAIL AND TELEPHONE WEBSITE\nOFFICE PERSON\nSKCL Central Square 1 V. Aruna Email: cs@veritasfi"
+  "cover_text_first_200": "ENCUBE ETHICALS LIMITED\nCorporate Identity Number: U24230MH1995PLC092485\nREGISTERED AND CORPORATE\nCONTACT PERSON EMAIL AND TELEPHONE WEBSITE\nOFF ICE\nEmail:\n803, B Wing, HDIL Kaledonia, Sahar Road,\nPar"
 }
 ```
 
@@ -342,8 +342,8 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: Updated with DRHP filings
 - Recommended action: Skip if SEBI (P-08) is GREEN.
 - Fallback: P-08
-- Latency: 11363 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 11115 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > primary status=200; secondary status=0; rows=0; pdf-refs=0
 
@@ -373,33 +373,33 @@ Generated: 2026-08-05T20:40:12.120Z
 - Update frequency: EOD daily
 - Recommended action: NSE historical still blocked; use BSE historical as primary (official fallback).
 - Fallback: P-15b (current quote only)
-- Latency: 3206 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 2899 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > [nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', "
 <!DOCTYPE "... is not valid JSON; body starts: 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="noindex, nofollow" name=…[truncated, total 22092 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', "
+<meta content="noindex, nofollow" name=…[truncated, total 22095 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', "
 <!DOCTYPE "... is not valid JSON; body starts: 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="noindex, nofollow" name=…[truncated, total 22092 chars] ; [bse:RELIANCE] BSE rows=26870, fields=1
+<meta content="noindex, nofollow" name=…[truncated, total 22095 chars] ; [bse:RELIANCE] BSE rows=9389, fields=1
 
 ```
 {
-  "CurrDate": "Wed Aug 05 2026 16:01:33",
-  "PrevClose": "1293",
-  "LowVal": "1270",
-  "HighVal": "1300",
+  "CurrDate": "Thu Aug 06 2026 11:32:59",
+  "PrevClose": "1281",
+  "LowVal": "1280",
+  "HighVal": "1320",
   "Scripname": "RELIANCE",
-  "CurrVal": "1281.00",
-  "CurrTime": "16:01",
+  "CurrVal": "1312.50",
+  "CurrTime": "11:32",
   "LowVol": "0",
-  "HighVol": "150000",
-  "Data": "[{\"dttm\":\"Wed Aug 05 2026 16:01:33\",\"vale1\":\"1281.00\",\"vole\":\"0\"},{\"dttm\":\"Wed Aug 05 2026 16:00:01\",\"vale1\":\"1281.00\",\"vole\":\"0\"},{\"dttm\":\"Wed Aug 05 2026 15:59:35\",\"vale1\":\"1281.00\",\"vole\":\"49\"},{\"dttm\":\"Wed Aug 05 2026 15:58:36\",\"vale1\":\"1281.00\",\"vole\":\"3\"},{\"dttm\":\"Wed Aug 05 2026 15:57:27\",\"vale1\":\"1281.00\",\"vole\":\"0\"},{\"dttm\":\"Wed Aug 05 2026 15:56:54\",\"vale1\":\"1281.00\",\"vole\":\"50\"},{\"dttm\":\"Wed Aug 05 2026 15:55:17\",\"vale1\":\"1281.00\",\"vole\":\"20\"},{\"dttm\":\"Wed Aug 05 2…[truncated, total 31894 chars]
+  "HighVol": "100000",
+  "Data": "[{\"dttm\":\"Thu Aug 06 2026 11:32:59\",\"vale1\":\"1312.50\",\"vole\":\"1804\"},{\"dttm\":\"Thu Aug 06 2026 11:31:59\",\"vale1\":\"1313.10\",\"vole\":\"8355\"},{\"dttm\":\"Thu Aug 06 2026 11:30:59\",\"vale1\":\"1314.35\",\"vole\":\"13156\"},{\"dttm\":\"Thu Aug 06 2026 11:29:59\",\"vale1\":\"1313.85\",\"vole\":\"8661\"},{\"dttm\":\"Thu Aug 06 2026 11:28:59\",\"vale1\":\"1312.95\",\"vole\":\"6646\"},{\"dttm\":\"Thu Aug 06 2026 11:27:59\",\"vale1\":\"1313.00\",\"vole\":\"7252\"},{\"dttm\":\"Thu Aug 06 2026 11:26:59\",\"vale1\":\"1313.40\",\"vole\":\"8126\"},{\"dt…[truncated, total 11281 chars]
 ```
 
 ### P-15b — NSE — Equity Quote — RED
@@ -418,14 +418,14 @@ Generated: 2026-08-05T20:40:12.120Z
 - Recommended action: Fall back to BSE quote.
 - Fallback: none
 - Latency: 27 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > Non-200. First bytes: <HTML><HEAD>
 <TITLE>Access Denied</TITLE>
 </HEAD><BODY>
 <H1>Access Denied</H1>
  
-You don't have permission to access "http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;" on …[truncated, total 397 chars]
+You don't have permission to access "http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;" on …[truncated, total 399 chars]
 
 ```
 <HTML><HEAD>
@@ -434,8 +434,8 @@ You don't have permission to access "http&#58;&#47;&#47;www&#46;nseindia&#46;com
 <H1>Access Denied</H1>
  
 You don't have permission to access "http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;" on this server.<P>
-Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;72d3e17&#46;1785962361&#46;9a06af07</P>
+Reference&#32;&#35;18&#46;244e4e68&#46;1785996226&#46;2bd158f3
+<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;244e4e68&#46;1785996226&#46;2bd158f3</P>
 </BODY>
 </HTML>
 
@@ -456,8 +456,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Matches NSE list
 - Recommended action: Deterministic mapping; no manual override file needed for v1.
 - Fallback: none
-- Latency: 28 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 282 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > total=4, validSymbolPattern=4, rate=100%
 
@@ -485,8 +485,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Updated with public issue lifecycle
 - Recommended action: Skip; NSE primary covers this.
 - Fallback: P-01
-- Latency: 984 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 528 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > <tr> count: 0, total bytes: 13850
 
@@ -515,8 +515,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Updated with SME public issue lifecycle
 - Recommended action: Skip if NSE Emerge is GREEN.
 - Fallback: P-05
-- Latency: 10486 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 10229 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > Network error: fetch failed
 
@@ -535,8 +535,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Intra-day during bidding window
 - Recommended action: Rely on NSE only (P-04).
 - Fallback: P-04
-- Latency: 378 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 381 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > Bid-link markers found: 0, bytes: 13850
 
@@ -565,8 +565,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Matches NSE list cadence
 - Recommended action: Fall back to per-issue page scrape or manual seed.
 - Fallback: P-12
-- Latency: 24 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 337 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > Issues=4, registrars resolved by name match=0
 
@@ -594,8 +594,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Static landing; per-issue lookup is form-based (do not scrape)
 - Recommended action: Store URL as link-out; do not scrape per-PAN.
 - Fallback: none
-- Latency: 1205 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 752 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > primary=200, legacy=(skipped)
 
@@ -608,7 +608,7 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="ima…[truncated, total 37478 chars]
+<link rel="icon" type="image/png" href="ima…[truncated, total 37481 chars]
 ```
 
 ### P-13 — KFintech — landing — GREEN
@@ -626,8 +626,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Static landing
 - Recommended action: Store URL as link-out only.
 - Fallback: none
-- Latency: 47 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 173 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > primary=200, secondary=(skipped)
 
@@ -650,8 +650,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Static landing
 - Recommended action: Store URL as link-out only.
 - Fallback: none
-- Latency: 5402 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 947 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > status=200
 
@@ -683,8 +683,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Static landing
 - Recommended action: Store URL as link-out only.
 - Fallback: none
-- Latency: 731 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 709 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > status=200
 
@@ -721,8 +721,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Immutable
 - Recommended action: PDF discovery selector may have drifted.
 - Fallback: manual
-- Latency: 691 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 836 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > No PDF URL discovered.
 
@@ -741,42 +741,30 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Immutable
 - Recommended action: PDF discovery selector may have drifted.
 - Fallback: manual
-- Latency: 236 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 215 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > No PDF URL discovered.
 
-### P-19 — GMP — IPOWatch — YELLOW
+### P-19 — GMP — IPOWatch — RED
 
 - URL: `https://ipowatch.in/ipo-grey-market-premium-latest-ipo-gmp/`
 - Method: GET
 - Headers/cookies required: User-Agent, Referer
-- Status code: 200
-- Response type: HTML
-- Fields found: gmp table rows
-- Fields missing: (none)
+- Status code: 0
+- Response type: ERROR
+- Fields found: (none)
+- Fields missing: gmp table
 - Parsing difficulty: Medium
 - Anti-bot risk: High
 - Legal/ToS risk: Medium
 - Update frequency: Daily, updates intra-day
-- Recommended action: Include in Phase 6 GMP averager.
+- Recommended action: Skip; phase-6 feature flag stays off if all GMP probes fail.
 - Fallback: P-20
-- Latency: 1455 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 10254 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> <tr> count: 313, bytes=876518
-
-```
-<!doctype html>
-<html lang="en-US">
-<head><style>img.lazy{min-height:1px}</style><link href="https://ipowatch.in/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-
-	<!-- This site is optimized with the Yoast SEO Premium p…[truncated, total 876518 chars]
-```
+> Network error: fetch failed
 
 ### P-20 — GMP — Chittorgarh — RED
 
@@ -793,13 +781,13 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Daily
 - Recommended action: Skip; Phase 6 stays off if all GMP probes fail.
 - Fallback: P-21
-- Latency: 1765 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 585 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> <tr> count: 0, bytes=124311
+> <tr> count: 0, bytes=123540
 
 ```
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/zerodha_logo_small.gif"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/angel-broking-logo-small.png"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/kotak-neo-logo.j…[truncated, total 124311 chars]
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/ipo/fyers-logo-small.png"/><link rel="preload" as="image" href="https://www.chittorgarh.net/images/home.png"/><link …[truncated, total 123540 chars]
 ```
 
 ### P-21 — GMP — IPO Central — YELLOW
@@ -817,16 +805,16 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Daily
 - Recommended action: Include in Phase 6 GMP averager (lower weight given parsing difficulty).
 - Fallback: P-22
-- Latency: 57 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 95 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> <tr> count: 20, bytes=325894
+> <tr> count: 21, bytes=326468
 
 ```
 <!doctype html >
 <!--[if IE 8]><html class="ie8" lang="en"> <![endif]-->
 <!--[if IE 9]><html class="ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--><html lang="en-US" prefix="og: https://ogp.me/ns#"> <!--<![endif]--><head><title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="pingback" href="https://ipocentral.in/xmlrpc.php" /> <script data-no-defer="1…[truncated, total 325894 chars]
+<!--[if gt IE 8]><!--><html lang="en-US" prefix="og: https://ogp.me/ns#"> <!--<![endif]--><head><title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="pingback" href="https://ipocentral.in/xmlrpc.php" /> <script data-no-defer="1…[truncated, total 326468 chars]
 ```
 
 ### P-22 — GMP — InvestorGain — YELLOW
@@ -844,13 +832,13 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Daily, intra-day
 - Recommended action: Include in Phase 6 GMP averager.
 - Fallback: none
-- Latency: 119 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 44 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> <tr> count: 2, bytes=135092
+> <tr> count: 2, bytes=135060
 
 ```
-<!DOCTYPE html><html lang="en" class="inter_a869fe2d-module__Nl2jCG__variable"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/192649c7fc70eb7a.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/fe81322e39413244.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/635245f93e41a18e.css" data-precedence="next"/><link rel="stylesheet" href="/_next…[truncated, total 135092 chars]
+<!DOCTYPE html><html lang="en" class="inter_a869fe2d-module__Nl2jCG__variable"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/192649c7fc70eb7a.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/fe81322e39413244.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/635245f93e41a18e.css" data-precedence="next"/><link rel="stylesheet" href="/_next…[truncated, total 135060 chars]
 ```
 
 ### P-23a — Broker IPO page — Zerodha (reference only) — GREEN
@@ -868,8 +856,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Per IPO lifecycle (open/close/listing)
 - Recommended action: Use as information-architecture benchmark only. Do NOT scrape for production data.
 - Fallback: Screenshots / PDF exports of the broker page provided by user
-- Latency: 4464 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 4120 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38014 | rendered_len=38836 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17
 
@@ -937,10 +925,10 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Per IPO lifecycle (open/close/listing)
 - Recommended action: Use as information-architecture benchmark only. Do NOT scrape for production data.
 - Fallback: Screenshots / PDF exports of the broker page provided by user
-- Latency: 5840 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 4904 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=234291 | rendered_len=277620 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11
+> final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=234291 | rendered_len=279038 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11
 
 ```
 {
@@ -1012,14 +1000,14 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Slow-changing (industry codes rarely change per company)
 - Recommended action: Sector unreachable from probed endpoints; manual sector-map.json required for v1.
 - Fallback: phase-0/samples/sector-manual-map.json (curated)
-- Latency: 679 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 1057 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > [NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>
 <TITLE>Access Denied</TITLE>
 </HEAD><BODY>
 <H1>Access Denied</H1>
- …[truncated, total 397 chars] ; [NSE IPO list] 4 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850
+ …[truncated, total 399 chars] ; [NSE IPO list] 4 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850
 
 ```
 {
@@ -1049,10 +1037,10 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Daily (manual editor maintained)
 - Recommended action: Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).
 - Fallback: P-26 (field extraction off captured HTML)
-- Latency: 908 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 1064 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> mainboard: static status=200 bytes=147724 | sme: static status=200 bytes=149597 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=277906 | detail-2: static status=200 bytes=300738 | challenges_detected=false
+> mainboard: static status=200 bytes=146250 | sme: static status=200 bytes=149653 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=298685 | detail-2: static status=200 bytes=293642 | challenges_detected=false
 
 ```
 {
@@ -1068,12 +1056,12 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
   ],
   "discovered_detail_count": 40,
   "picked_detail_urls": [
-    "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
-    "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/"
+    "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
+    "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/"
   ],
   "detail_titles": [
-    "Milky Mist Dairy Food IPO Date, Price, GMP, Details",
-    "Dhoot Transmission IPO Date, Price, GMP, Review, Details"
+    "Shiprocket IPO Date, Price, GMP, Review, Analysis &amp; Details",
+    "Milky Mist Dairy Food IPO Date, Price, GMP, Details"
   ],
   "challenges_detected": false,
   "diagnostics_first_hrefs_per_dashboard": null
@@ -1087,38 +1075,38 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Headers/cookies required: (none)
 - Status code: (no response)
 - Response type: JSON
-- Fields found: d1.company_name[high], d1.issue_size_cr[high], d1.listing_date[high], d2.company_name[high], d2.issue_size_cr[high], d2.price_band[high], d2.lot_size[high], d2.listing_date[high]
-- Fields missing: d1.price_band[missing], d1.lot_size[missing], d1.open_date[missing], d1.close_date[missing], d1.registrar[missing], d1.brlms[missing], d1.official_pdf_links[rejected-low], d2.open_date[missing], d2.close_date[missing], d2.registrar[missing], d2.brlms[missing], d2.official_pdf_links[missing]
+- Fields found: d1.company_name[high], d1.issue_size_cr[high], d1.price_band[high], d1.lot_size[high], d1.listing_date[high], d2.company_name[high], d2.issue_size_cr[high], d2.price_band[high], d2.lot_size[high], d2.listing_date[high]
+- Fields missing: d1.open_date[missing], d1.close_date[missing], d1.registrar[missing], d1.brlms[missing], d1.official_pdf_links[rejected-low], d2.open_date[missing], d2.close_date[missing], d2.registrar[missing], d2.brlms[missing], d2.official_pdf_links[rejected-low]
 - Parsing difficulty: Medium
 - Anti-bot risk: Low
 - Legal/ToS risk: Medium
 - Update frequency: N/A — operates on disk
 - Recommended action: Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.
 - Fallback: P-25 (re-run to refresh HTML)
-- Latency: 18 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 19 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> details_extracted=2 | avg_precision=0.400 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=1 | d1: main=82114b tables=11 rows=64 | d2: main=88493b tables=12 rows=74
+> details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=89153b tables=12 rows=81 | d2: main=86361b tables=12 rows=73
 
 ```
 {
-  "avg_precision_ratio": 0.4,
+  "avg_precision_ratio": 0.5,
   "details": [
     {
       "index": 1,
-      "source_url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
-      "found_count": 3,
-      "precision_ratio": 0.3,
-      "tables_parsed": 11,
-      "table_rows_parsed": 64
-    },
-    {
-      "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
+      "source_url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
       "found_count": 5,
       "precision_ratio": 0.5,
       "tables_parsed": 12,
-      "table_rows_parsed": 74
+      "table_rows_parsed": 81
+    },
+    {
+      "index": 2,
+      "source_url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+      "found_count": 5,
+      "precision_ratio": 0.5,
+      "tables_parsed": 12,
+      "table_rows_parsed": 73
     }
   ]
 }
@@ -1139,8 +1127,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Per IPO lifecycle (open/close/listing)
 - Recommended action: Use as information-architecture benchmark only. Do NOT scrape for production data.
 - Fallback: Screenshots / PDF exports of the broker page provided by user
-- Latency: 4587 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 3403 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38014 | rendered_len=38836 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17
 
@@ -1208,10 +1196,10 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Per IPO lifecycle (open/close/listing)
 - Recommended action: Use as information-architecture benchmark only. Do NOT scrape for production data.
 - Fallback: Screenshots / PDF exports of the broker page provided by user
-- Latency: 5188 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 5336 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=234291 | rendered_len=276919 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11
+> final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=234291 | rendered_len=277387 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11
 
 ```
 {
@@ -1283,10 +1271,10 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: Daily (manual editor maintained)
 - Recommended action: All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.
 - Fallback: P-26b (field extraction off captured HTML)
-- Latency: 2764 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 908 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
-> third_ipo_status=current | third_ipo_slug=ardee-industries-ipo | third_ipo_reason="current-open: list "mainboard" row date range "05 - 07 Aug" covers today" | detail-1: static status=200 bytes=369455 | detail-2: static status=200 bytes=344563 | detail-3: static status=200 bytes=299338 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)
+> third_ipo_status=current | third_ipo_slug=ardee-industries-ipo | third_ipo_reason="current-open: list "mainboard" row date range "05 - 07 Aug" covers today" | detail-1: static status=200 bytes=369412 | detail-2: static status=200 bytes=344244 | detail-3: static status=200 bytes=300066 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)
 
 ```
 {
@@ -1331,8 +1319,8 @@ Reference&#32;&#35;18&#46;72d3e17&#46;1785962361&#46;9a06af07
 - Update frequency: N/A — operates on disk
 - Recommended action: Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval.
 - Fallback: P-25b (re-run to refresh HTML)
-- Latency: 28 ms
-- Ran at (UTC): 2026-08-05T20:39:00.218Z
+- Latency: 29 ms
+- Ran at (UTC): 2026-08-06T06:03:23.287Z
 
 > details_extracted=3 | avg_full=0.848 | avg_narrow=1.000 | pdf_on_allowlist=2 | pdf_off_allowlist=2 | third_ipo=ardee-industries-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:ardee-industries-ipo full=0.82 narrow=1.00
 

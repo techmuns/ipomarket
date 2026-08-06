@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-05T20:39:00.218Z",
+  "captured_at_utc": "2026-08-06T06:03:23.287Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,24 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46501,
+      "bytes": 46526,
       "tr_count": 26,
       "pdfs_found": 21,
-      "notes": "static ok: tr=26, bytes=46501"
+      "notes": "static ok: tr=26, bytes=46526"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf",
+      "link_text": "Encube Ethicals Limited- Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Advanced%20Sys-Tek%20Limited%20%20-%20DAP_p.pdf",
+      "link_text": "Advanced Sys-Tek Limited- Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf",
       "link_text": "Veritas Finance Limited - Abridged Prospectus",
@@ -115,16 +125,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Ujin%20Pharma%20Ltd.%20-%20Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "Ujin Pharma Ltd- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Sky%20Alloys%20and%20Power%20Limited%20-%20Abri_p.pdf",
-      "link_text": "Sky Alloys and Power Limited- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2026/Jio%20Platforms%20Ltd_p.PDF",
-      "link_text": "Jio Platforms Ltd - Abridged Prospectus",
       "source": "static-alt"
     }
   ]
