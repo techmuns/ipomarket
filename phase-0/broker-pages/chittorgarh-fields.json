@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-06T06:03:23.287Z",
+  "captured_at_utc": "2026-08-06T13:03:30.408Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 146250,
+      "bytes": 147354,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
       "mode": "static",
       "status": 200,
-      "bytes": 298685,
+      "bytes": 297638,
       "title": "Shiprocket IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
       "mode": "static",
       "status": 200,
-      "bytes": 293642,
+      "bytes": 292895,
       "title": "Milky Mist Dairy Food IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-06T06:03:23.287Z",
+  "generated_at_utc": "2026-08-06T13:03:30.408Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 97577,
+      "main_content_bytes": 96994,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 86210,
+      "main_content_bytes": 85386,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -88,7 +88,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 87111,
+      "main_content_bytes": 87015,
       "tables_parsed": 13,
       "table_rows_parsed": 74,
       "fields_high_confidence": [
@@ -111,7 +111,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

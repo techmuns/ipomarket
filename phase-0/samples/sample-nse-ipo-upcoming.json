@@ -10,14 +10,24 @@
     "symbol": "ARDEE"
   },
   {
-    "companyName": "Leap India Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.151 to Rs.159",
-    "issueSize": "164238410",
-    "issueStartDate": "07-Aug-2026",
+    "companyName": "Dhoot Transmission Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.829 to Rs.871",
+    "issueSize": "36033148",
+    "issueStartDate": "10-Aug-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "LEAP"
+    "symbol": "DHOOTTRANS"
+  },
+  {
+    "companyName": "Molbio Diagnostics Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.768 to Rs.807",
+    "issueSize": "11772311",
+    "issueStartDate": "10-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "MOLBIO"
   },
   {
     "companyName": "Technocraft Ventures Limited",
@@ -30,10 +40,20 @@
     "symbol": "TECHNOCRAF"
   },
   {
+    "companyName": "Leap India Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.151 to Rs.159",
+    "issueSize": "164238410",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "LEAP"
+  },
+  {
     "companyName": "Optimystix Entertainment India Limited",
     "issueEndDate": "11-Aug-2026",
     "issuePrice": "Rs.166 to Rs.175",
-    "issueSize": "6200000",
+    "issueSize": "4529600",
     "issueStartDate": "07-Aug-2026",
     "lotSize": "800",
     "priceBand": "Rs.166 to Rs.175",
