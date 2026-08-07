@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-07T00:44:53.260Z",
+  "generated_at_utc": "2026-08-07T05:01:30.187Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
@@ -88,9 +88,9 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85398,
+      "main_content_bytes": 88456,
       "tables_parsed": 13,
-      "table_rows_parsed": 70,
+      "table_rows_parsed": 76,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -104,14 +104,13 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
+        "brlms",
         "official_pdf_links"
       ],
-      "fields_missing": [
-        "brlms"
-      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }

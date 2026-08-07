@@ -12,28 +12,28 @@
       "source_snippet": "Behari Lal Engineering IPO"
     },
     "issue_size_cr": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
-      "source_snippet": null
+      "value": "1,05,83,158 shares (agg. up to ₹ 302 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "1,05,83,158 shares (agg. up to ₹ 302 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹271 to ₹285",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹271 to ₹285"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "52 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "52 Shares"
     },
     "open_date": {
       "value": null,
@@ -84,14 +84,14 @@
       "source_snippet": "https://www.systematixgroup.in/wp-content/uploads/2026/08/Behari-Lal-RHP.pdf"
     }
   },
-  "found_count": 2,
-  "precision_ratio": 0.2,
+  "found_count": 5,
+  "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
     "https://www.systematixgroup.in/wp-content/uploads/2026/08/Behari-Lal-RHP.pdf"
   ],
-  "noise_stripped_bytes": 81013,
-  "main_content_bytes": 81013,
-  "tables_parsed": 10,
-  "table_rows_parsed": 61
+  "noise_stripped_bytes": 86789,
+  "main_content_bytes": 86789,
+  "tables_parsed": 11,
+  "table_rows_parsed": 72
 }

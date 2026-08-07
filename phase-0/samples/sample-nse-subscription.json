@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "LEAP",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.14991735E8",
+    "noOfTime": "0.0068543187038616294",
+    "noOfsharesBid": "788190.0",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "TECHNOCRAF",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "8317190.0",
+    "noOfTime": "0.06224698485906899",
+    "noOfsharesBid": "517720.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "ARDEE",
     "category": "Total",
     "noOfSharesOffered": "5.8422516E7",
-    "noOfTime": "11.191177559008242",
-    "noOfsharesBid": "6.5381675E8",
+    "noOfTime": "18.202648102317266",
+    "noOfsharesBid": "1.0634445E9",
     "srNo": null
   },
   {
@@ -52,8 +52,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "OPTIMYSTIX",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "114400",
     "noOfSharesOffered": "4529600",
-    "noOfTime": ""
+    "noOfTime": "0.03"
   }
 ]
