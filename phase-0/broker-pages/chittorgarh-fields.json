@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-07T05:01:30.187Z",
+  "captured_at_utc": "2026-08-07T11:55:06.621Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
       "mode": "static",
       "status": 200,
-      "bytes": 297658,
+      "bytes": 297553,
       "title": "Shiprocket IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],

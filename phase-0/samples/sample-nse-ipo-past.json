@@ -30,14 +30,14 @@
     "symbol": "ARDEE"
   },
   {
-    "companyName": "Molbio Diagnostics Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.768 to Rs.807",
-    "issueSize": "11772311",
-    "issueStartDate": "10-Aug-2026",
+    "companyName": "Milky Mist Dairy Food Limited",
+    "issueEndDate": "13-Aug-2026",
+    "issuePrice": "Rs.133 to Rs.140",
+    "issueSize": "116783206",
+    "issueStartDate": "11-Aug-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "MOLBIO"
+    "symbol": "MILKYMIST"
   },
   {
     "companyName": "Dhoot Transmission Limited",
@@ -48,5 +48,27 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "DHOOTTRANS"
+  },
+  {
+    "companyName": "Molbio Diagnostics Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.768 to Rs.807",
+    "issueSize": "11772311",
+    "issueStartDate": "10-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "MOLBIO"
+  },
+  {
+    "companyName": "Fascinate Textiles Limited",
+    "issueEndDate": "13-Aug-2026",
+    "issuePrice": "Rs.148 to Rs.156",
+    "issueSize": "4293600",
+    "issueStartDate": "11-Aug-2026",
+    "lotSize": "800",
+    "priceBand": "Rs.148 to Rs.156",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "FASCINATE"
   }
 ]
