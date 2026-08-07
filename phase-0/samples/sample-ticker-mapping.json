@@ -1,12 +1,11 @@
 {
-  "total": 6,
-  "valid": 6,
+  "total": 5,
+  "valid": 5,
   "examples": {
-    "Ardee Industries Limited": "ARDEE",
-    "Dhoot Transmission Limited": "DHOOTTRANS",
-    "Molbio Diagnostics Limited": "MOLBIO",
-    "Technocraft Ventures Limited": "TECHNOCRAF",
     "Leap India Limited": "LEAP",
-    "Optimystix Entertainment India Limited": "OPTIMYSTIX"
+    "Technocraft Ventures Limited": "TECHNOCRAF",
+    "Ardee Industries Limited": "ARDEE",
+    "Molbio Diagnostics Limited": "MOLBIO",
+    "Dhoot Transmission Limited": "DHOOTTRANS"
   }
 }

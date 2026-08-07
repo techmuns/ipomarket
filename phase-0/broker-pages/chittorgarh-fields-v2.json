@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-06T13:03:30.408Z",
+  "captured_at_utc": "2026-08-07T00:44:53.260Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "ardee-industries-ipo",
-    "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
+    "slug": "leap-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"05 - 07 Aug\" covers today",
-    "date_text": "05 - 07 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"07 - 11 Aug\" covers today",
+    "date_text": "07 - 11 Aug",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
-      "slug": "ardee-industries-ipo"
+      "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
+      "slug": "leap-india-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
+      "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
       "mode": "static",
       "status": 200,
-      "bytes": 299622,
-      "title": "Ardee Industries IPO Date, Price, GMP, Review, Details",
+      "bytes": 278482,
+      "title": "LEAP India IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

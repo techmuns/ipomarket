@@ -1,21 +1,18 @@
 {
-  "generated_at_utc": "2026-08-06T13:03:30.408Z",
+  "generated_at_utc": "2026-08-07T00:44:53.260Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.5,
+  "average_precision_ratio": 0.35,
   "per_detail": [
     {
       "index": 1,
-      "source_url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
-      "found_count": 5,
-      "precision_ratio": 0.5,
-      "main_content_bytes": 88755,
-      "tables_parsed": 12,
-      "table_rows_parsed": 81,
+      "source_url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
+      "found_count": 2,
+      "precision_ratio": 0.2,
+      "main_content_bytes": 81013,
+      "tables_parsed": 10,
+      "table_rows_parsed": 61,
       "fields_high_confidence": [
         "company_name",
-        "issue_size_cr",
-        "price_band",
-        "lot_size",
         "listing_date"
       ],
       "fields_medium_confidence": [],
@@ -23,6 +20,9 @@
         "official_pdf_links"
       ],
       "fields_missing": [
+        "issue_size_cr",
+        "price_band",
+        "lot_size",
         "open_date",
         "close_date",
         "registrar",
@@ -33,12 +33,12 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+      "source_url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 86100,
+      "main_content_bytes": 88740,
       "tables_parsed": 12,
-      "table_rows_parsed": 73,
+      "table_rows_parsed": 81,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

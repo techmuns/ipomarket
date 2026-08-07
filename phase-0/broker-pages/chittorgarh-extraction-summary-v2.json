@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-06T13:03:30.408Z",
+  "generated_at_utc": "2026-08-07T00:44:53.260Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "ardee-industries-ipo",
-    "url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
+    "slug": "leap-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"05 - 07 Aug\" covers today",
-    "date_text": "05 - 07 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"07 - 11 Aug\" covers today",
+    "date_text": "07 - 11 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "ardee-industries-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
+      "slug": "leap-india-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 87015,
+      "main_content_bytes": 85398,
       "tables_parsed": 13,
-      "table_rows_parsed": 74,
+      "table_rows_parsed": 70,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

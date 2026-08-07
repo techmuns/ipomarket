@@ -1,5 +1,25 @@
 [
   {
+    "companyName": "Leap India Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.151 to Rs.159",
+    "issueSize": "114991735",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LEAP"
+  },
+  {
+    "companyName": "Technocraft Ventures Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.200 to Rs.212",
+    "issueSize": "8317190",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TECHNOCRAF"
+  },
+  {
     "companyName": "Ardee Industries Limited",
     "issueEndDate": "07-Aug-2026",
     "issuePrice": "Rs.50 to Rs.53",
@@ -8,16 +28,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "ARDEE"
-  },
-  {
-    "companyName": "Dhoot Transmission Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.829 to Rs.871",
-    "issueSize": "36033148",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "DHOOTTRANS"
   },
   {
     "companyName": "Molbio Diagnostics Limited",
@@ -30,35 +40,13 @@
     "symbol": "MOLBIO"
   },
   {
-    "companyName": "Technocraft Ventures Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.200 to Rs.212",
-    "issueSize": "11881000",
-    "issueStartDate": "07-Aug-2026",
+    "companyName": "Dhoot Transmission Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.829 to Rs.871",
+    "issueSize": "36033148",
+    "issueStartDate": "10-Aug-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "TECHNOCRAF"
-  },
-  {
-    "companyName": "Leap India Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.151 to Rs.159",
-    "issueSize": "164238410",
-    "issueStartDate": "07-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "LEAP"
-  },
-  {
-    "companyName": "Optimystix Entertainment India Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.166 to Rs.175",
-    "issueSize": "4529600",
-    "issueStartDate": "07-Aug-2026",
-    "lotSize": "800",
-    "priceBand": "Rs.166 to Rs.175",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "OPTIMYSTIX"
+    "symbol": "DHOOTTRANS"
   }
 ]

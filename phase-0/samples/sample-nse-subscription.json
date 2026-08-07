@@ -1,5 +1,35 @@
 [
   {
+    "companyName": "Leap India Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.151 to Rs.159",
+    "issueSize": "114991735",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LEAP",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Technocraft Ventures Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.200 to Rs.212",
+    "issueSize": "8317190",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TECHNOCRAF",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Ardee Industries Limited",
     "issueEndDate": "07-Aug-2026",
     "issuePrice": "Rs.50 to Rs.53",
@@ -13,5 +43,17 @@
     "noOfTime": "11.191177559008242",
     "noOfsharesBid": "6.5381675E8",
     "srNo": null
+  },
+  {
+    "companyName": "Optimystix Entertainment India Limited",
+    "isBse": "1",
+    "issueEndDate": "11-Aug-2026",
+    "issueStartDate": "07-Aug-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "OPTIMYSTIX",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4529600",
+    "noOfTime": ""
   }
 ]

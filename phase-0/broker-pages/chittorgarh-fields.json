@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-06T13:03:30.408Z",
+  "captured_at_utc": "2026-08-07T00:44:53.260Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147354,
+      "bytes": 147366,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149653,
+      "bytes": 149180,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
     "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
     "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
     "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
     "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
     "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
-    "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/",
-    "https://www.chittorgarh.com/ipo/knack-packaging-ipo/2592/"
+    "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
+      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+      "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
+      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "mode": "static",
       "status": 200,
-      "bytes": 297638,
-      "title": "Shiprocket IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 271619,
+      "title": "Behari Lal Engineering IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+      "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
       "mode": "static",
       "status": 200,
-      "bytes": 292895,
-      "title": "Milky Mist Dairy Food IPO Date, Price, GMP, Details",
+      "bytes": 297658,
+      "title": "Shiprocket IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

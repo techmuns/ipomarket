@@ -1,12 +1,11 @@
 {
-  "totalIssues": 6,
+  "totalIssues": 5,
   "resolved": 0,
   "examples": {
-    "Ardee Industries Limited": null,
-    "Dhoot Transmission Limited": null,
-    "Molbio Diagnostics Limited": null,
-    "Technocraft Ventures Limited": null,
     "Leap India Limited": null,
-    "Optimystix Entertainment India Limited": null
+    "Technocraft Ventures Limited": null,
+    "Ardee Industries Limited": null,
+    "Molbio Diagnostics Limited": null,
+    "Dhoot Transmission Limited": null
   }
 }
