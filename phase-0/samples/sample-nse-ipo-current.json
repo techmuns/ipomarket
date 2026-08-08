@@ -1,15 +1,5 @@
 [
   {
-    "companyName": "Leap India Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.151 to Rs.159",
-    "issueSize": "114991735",
-    "issueStartDate": "07-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "LEAP"
-  },
-  {
     "companyName": "Technocraft Ventures Limited",
     "issueEndDate": "11-Aug-2026",
     "issuePrice": "Rs.200 to Rs.212",
@@ -20,14 +10,14 @@
     "symbol": "TECHNOCRAF"
   },
   {
-    "companyName": "Ardee Industries Limited",
-    "issueEndDate": "07-Aug-2026",
-    "issuePrice": "Rs.50 to Rs.53",
-    "issueSize": "58422516",
-    "issueStartDate": "05-Aug-2026",
+    "companyName": "Leap India Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.151 to Rs.159",
+    "issueSize": "114991735",
+    "issueStartDate": "07-Aug-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "ARDEE"
+    "status": "Active",
+    "symbol": "LEAP"
   },
   {
     "companyName": "Milky Mist Dairy Food Limited",
@@ -40,16 +30,6 @@
     "symbol": "MILKYMIST"
   },
   {
-    "companyName": "Dhoot Transmission Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.829 to Rs.871",
-    "issueSize": "24956363",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "DHOOTTRANS"
-  },
-  {
     "companyName": "Molbio Diagnostics Limited",
     "issueEndDate": "12-Aug-2026",
     "issuePrice": "Rs.768 to Rs.807",
@@ -58,6 +38,16 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "MOLBIO"
+  },
+  {
+    "companyName": "Dhoot Transmission Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.829 to Rs.871",
+    "issueSize": "24956363",
+    "issueStartDate": "10-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "DHOOTTRANS"
   },
   {
     "companyName": "Fascinate Textiles Limited",

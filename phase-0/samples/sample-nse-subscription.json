@@ -1,20 +1,5 @@
 [
   {
-    "companyName": "Leap India Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.151 to Rs.159",
-    "issueSize": "114991735",
-    "issueStartDate": "07-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "LEAP",
-    "category": "Total",
-    "noOfSharesOffered": "1.14991735E8",
-    "noOfTime": "0.06138804671483564",
-    "noOfsharesBid": "7059118.0",
-    "srNo": null
-  },
-  {
     "companyName": "Technocraft Ventures Limited",
     "issueEndDate": "11-Aug-2026",
     "issuePrice": "Rs.200 to Rs.212",
@@ -27,6 +12,21 @@
     "noOfSharesOffered": "8317190.0",
     "noOfTime": "2.2378615854633597",
     "noOfsharesBid": "1.861272E7",
+    "srNo": null
+  },
+  {
+    "companyName": "Leap India Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.151 to Rs.159",
+    "issueSize": "114991735",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LEAP",
+    "category": "Total",
+    "noOfSharesOffered": "1.14991735E8",
+    "noOfTime": "0.06138804671483564",
+    "noOfsharesBid": "7059118.0",
     "srNo": null
   },
   {
