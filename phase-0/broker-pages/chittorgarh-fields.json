@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-10T11:57:30.436Z",
+  "captured_at_utc": "2026-08-10T19:59:33.675Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 147171,
+      "bytes": 148245,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148750,
+      "bytes": 148785,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
     "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
     "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
     "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
     "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
     "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
-    "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
-    "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/"
+    "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
+      "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
+      "url": "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
+      "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
       "mode": "static",
       "status": 200,
-      "bytes": 268203,
-      "title": "Lalithaa Jewellery Mart IPO Date, Price, GMP, Details",
+      "bytes": 263797,
+      "title": "Shankesh Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
+      "url": "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
       "mode": "static",
       "status": 200,
-      "bytes": 291781,
-      "title": "Behari Lal Engineering IPO Date, Price, GMP, Details",
+      "bytes": 267559,
+      "title": "Lalithaa Jewellery Mart IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

@@ -1,14 +1,13 @@
 {
-  "totalIssues": 8,
+  "totalIssues": 7,
   "resolved": 0,
   "examples": {
+    "Milky Mist Dairy Food Limited": null,
     "Dhoot Transmission Limited": null,
     "Molbio Diagnostics Limited": null,
-    "Leap India Limited": null,
     "Technocraft Ventures Limited": null,
+    "Leap India Limited": null,
     "Behari Lal Engineering Limited": null,
-    "Milky Mist Dairy Food Limited": null,
-    "Pramodini Medicare Limited": null,
-    "Fascinate Textiles Limited": null
+    "Pramodini Medicare Limited": null
   }
 }

@@ -1,23 +1,23 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
+  "source_url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
   "fields": {
     "company_name": {
-      "value": "Lalithaa Jewellery Mart IPO",
+      "value": "Shankesh Jewellers IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Lalithaa Jewellery Mart IPO"
+      "source_snippet": "Shankesh Jewellers IPO"
     },
     "issue_size_cr": {
-      "value": "[.] shares (agg. up to ₹ 1,700 Cr)",
-      "found": true,
-      "confidence": "high",
-      "method": "table[1].row[0] label=\"Total Issue Size\"",
-      "why_missing": null,
-      "source_snippet": "[.] shares (agg. up to ₹ 1,700 Cr)"
+      "value": "3,94,82,000 shares (agg. up to ₹ [.] Cr)",
+      "found": false,
+      "confidence": "low",
+      "method": "table[1].row[0]-rejected",
+      "why_missing": "value '3,94,82,000 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
+      "source_snippet": "3,94,82,000 shares (agg. up to ₹ [.] Cr)"
     },
     "price_band": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Mon, Aug 24, 2026 T",
+      "value": "Tue, Aug 25, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Mon, Aug 24, 2026 T"
+      "source_snippet": "Tue, Aug 25, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/lalithaa-jewellery-mart-limited-rhp.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/shankesh-jewellers-limited_rhp.pdf"
     }
   },
-  "found_count": 3,
-  "precision_ratio": 0.3,
+  "found_count": 2,
+  "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/lalithaa-jewellery-mart-limited-rhp.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/shankesh-jewellers-limited_rhp.pdf"
   ],
-  "noise_stripped_bytes": 79871,
-  "main_content_bytes": 79871,
+  "noise_stripped_bytes": 79491,
+  "main_content_bytes": 79491,
   "tables_parsed": 10,
-  "table_rows_parsed": 53
+  "table_rows_parsed": 55
 }

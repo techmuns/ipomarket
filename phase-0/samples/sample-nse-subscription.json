@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Milky Mist Dairy Food Limited",
+    "issueEndDate": "13-Aug-2026",
+    "issuePrice": "Rs.133 to Rs.140",
+    "issueSize": "81798244",
+    "issueStartDate": "11-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "MILKYMIST",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Dhoot Transmission Limited",
     "issueEndDate": "12-Aug-2026",
     "issuePrice": "Rs.829 to Rs.871",
@@ -30,6 +45,21 @@
     "srNo": null
   },
   {
+    "companyName": "Technocraft Ventures Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.200 to Rs.212",
+    "issueSize": "8317190",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TECHNOCRAF",
+    "category": "Total",
+    "noOfSharesOffered": "8317190.0",
+    "noOfTime": "3.609273083817972",
+    "noOfsharesBid": "3.001901E7",
+    "srNo": null
+  },
+  {
     "companyName": "Leap India Limited",
     "issueEndDate": "11-Aug-2026",
     "issuePrice": "Rs.151 to Rs.159",
@@ -45,19 +75,16 @@
     "srNo": null
   },
   {
-    "companyName": "Technocraft Ventures Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.200 to Rs.212",
-    "issueSize": "8317190",
-    "issueStartDate": "07-Aug-2026",
-    "series": "EQ",
+    "companyName": "Fascinate Textiles Limited",
+    "isBse": "1",
+    "issueEndDate": "13-Aug-2026",
+    "issueStartDate": "11-Aug-2026",
+    "series": "SME",
     "status": "Active",
-    "symbol": "TECHNOCRAF",
-    "category": "Total",
-    "noOfSharesOffered": "8317190.0",
-    "noOfTime": "3.609273083817972",
-    "noOfsharesBid": "3.001901E7",
-    "srNo": null
+    "symbol": "FASCINATE",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4293600",
+    "noOfTime": ""
   },
   {
     "companyName": "Optimystix Entertainment India Limited",

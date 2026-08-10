@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Milky Mist Dairy Food Limited",
+    "issueEndDate": "13-Aug-2026",
+    "issuePrice": "Rs.133 to Rs.140",
+    "issueSize": "81798244",
+    "issueStartDate": "11-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "MILKYMIST"
+  },
+  {
     "companyName": "Dhoot Transmission Limited",
     "issueEndDate": "12-Aug-2026",
     "issuePrice": "Rs.829 to Rs.871",
@@ -20,16 +30,6 @@
     "symbol": "MOLBIO"
   },
   {
-    "companyName": "Leap India Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.151 to Rs.159",
-    "issueSize": "114991735",
-    "issueStartDate": "07-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "LEAP"
-  },
-  {
     "companyName": "Technocraft Ventures Limited",
     "issueEndDate": "11-Aug-2026",
     "issuePrice": "Rs.200 to Rs.212",
@@ -38,6 +38,16 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "TECHNOCRAF"
+  },
+  {
+    "companyName": "Leap India Limited",
+    "issueEndDate": "11-Aug-2026",
+    "issuePrice": "Rs.151 to Rs.159",
+    "issueSize": "114991735",
+    "issueStartDate": "07-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LEAP"
   },
   {
     "companyName": "Behari Lal Engineering Limited",
@@ -50,16 +60,6 @@
     "symbol": "BLEL"
   },
   {
-    "companyName": "Milky Mist Dairy Food Limited",
-    "issueEndDate": "13-Aug-2026",
-    "issuePrice": "Rs.133 to Rs.140",
-    "issueSize": "116783206",
-    "issueStartDate": "11-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "MILKYMIST"
-  },
-  {
     "companyName": "Pramodini Medicare Limited",
     "issueEndDate": "14-Aug-2026",
     "issuePrice": "Rs.110 to Rs.118",
@@ -70,17 +70,5 @@
     "series": "SME",
     "status": "Forthcoming",
     "symbol": "PRAMODINI"
-  },
-  {
-    "companyName": "Fascinate Textiles Limited",
-    "issueEndDate": "13-Aug-2026",
-    "issuePrice": "Rs.148 to Rs.156",
-    "issueSize": "4293600",
-    "issueStartDate": "11-Aug-2026",
-    "lotSize": "800",
-    "priceBand": "Rs.148 to Rs.156",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "FASCINATE"
   }
 ]
