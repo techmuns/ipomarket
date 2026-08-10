@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-09T19:46:38.816Z",
+  "generated_at_utc": "2026-08-10T04:51:01.877Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "leap-india-ipo",
-    "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
+    "slug": "dhoot-transmission-ipo",
+    "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"07 - 11 Aug\" covers today",
-    "date_text": "07 - 11 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"10 - 12 Aug\" covers today",
+    "date_text": "10 - 12 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96994,
+      "main_content_bytes": 96993,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85386,
+      "main_content_bytes": 85385,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "leap-india-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
+      "slug": "dhoot-transmission-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 90478,
+      "main_content_bytes": 94819,
       "tables_parsed": 14,
-      "table_rows_parsed": 82,
+      "table_rows_parsed": 89,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

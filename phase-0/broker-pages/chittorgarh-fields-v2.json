@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-09T19:46:38.816Z",
+  "captured_at_utc": "2026-08-10T04:51:01.877Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "leap-india-ipo",
-    "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
+    "slug": "dhoot-transmission-ipo",
+    "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"07 - 11 Aug\" covers today",
-    "date_text": "07 - 11 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"10 - 12 Aug\" covers today",
+    "date_text": "10 - 12 Aug",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
-      "slug": "leap-india-ipo"
+      "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
+      "slug": "dhoot-transmission-ipo"
     }
   ],
   "details": [
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 368054,
+      "bytes": 368011,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 342187,
+      "bytes": 342144,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
+      "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
       "mode": "static",
       "status": 200,
-      "bytes": 330446,
-      "title": "LEAP India IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 393422,
+      "title": "Dhoot Transmission IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
