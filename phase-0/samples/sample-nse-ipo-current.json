@@ -40,6 +40,16 @@
     "symbol": "TECHNOCRAF"
   },
   {
+    "companyName": "Behari Lal Engineering Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.271 to Rs.285",
+    "issueSize": "10751735",
+    "issueStartDate": "12-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "BLEL"
+  },
+  {
     "companyName": "Milky Mist Dairy Food Limited",
     "issueEndDate": "13-Aug-2026",
     "issuePrice": "Rs.133 to Rs.140",
@@ -48,6 +58,18 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "MILKYMIST"
+  },
+  {
+    "companyName": "Pramodini Medicare Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.110 to Rs.118",
+    "issueSize": "5851200",
+    "issueStartDate": "12-Aug-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.110 to Rs.118",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "PRAMODINI"
   },
   {
     "companyName": "Fascinate Textiles Limited",

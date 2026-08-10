@@ -1,10 +1,38 @@
 {
-  "generated_at_utc": "2026-08-10T04:51:01.877Z",
+  "generated_at_utc": "2026-08-10T11:57:30.436Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.5,
+  "average_precision_ratio": 0.4,
   "per_detail": [
     {
       "index": 1,
+      "source_url": "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
+      "found_count": 3,
+      "precision_ratio": 0.3,
+      "main_content_bytes": 79871,
+      "tables_parsed": 10,
+      "table_rows_parsed": 53,
+      "fields_high_confidence": [
+        "company_name",
+        "issue_size_cr",
+        "listing_date"
+      ],
+      "fields_medium_confidence": [],
+      "fields_rejected_low_confidence": [
+        "official_pdf_links"
+      ],
+      "fields_missing": [
+        "price_band",
+        "lot_size",
+        "open_date",
+        "close_date",
+        "registrar",
+        "brlms"
+      ],
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 1
+    },
+    {
+      "index": 2,
       "source_url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "found_count": 5,
       "precision_ratio": 0.5,
@@ -30,33 +58,6 @@
       ],
       "official_pdf_links_on_allowlist": [],
       "official_pdf_links_off_allowlist_count": 1
-    },
-    {
-      "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
-      "found_count": 5,
-      "precision_ratio": 0.5,
-      "main_content_bytes": 90507,
-      "tables_parsed": 13,
-      "table_rows_parsed": 84,
-      "fields_high_confidence": [
-        "company_name",
-        "issue_size_cr",
-        "price_band",
-        "lot_size",
-        "listing_date"
-      ],
-      "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [],
-      "fields_missing": [
-        "open_date",
-        "close_date",
-        "registrar",
-        "brlms",
-        "official_pdf_links"
-      ],
-      "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }

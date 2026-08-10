@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/dtl_anchor_allocation_outcome.pdf"
   ],
-  "noise_stripped_bytes": 94819,
-  "main_content_bytes": 94819,
+  "noise_stripped_bytes": 94822,
+  "main_content_bytes": 94822,
   "tables_parsed": 14,
   "table_rows_parsed": 89
 }

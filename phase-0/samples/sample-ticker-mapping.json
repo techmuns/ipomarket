@@ -1,12 +1,14 @@
 {
-  "total": 6,
-  "valid": 6,
+  "total": 8,
+  "valid": 8,
   "examples": {
     "Dhoot Transmission Limited": "DHOOTTRANS",
     "Molbio Diagnostics Limited": "MOLBIO",
     "Leap India Limited": "LEAP",
     "Technocraft Ventures Limited": "TECHNOCRAF",
+    "Behari Lal Engineering Limited": "BLEL",
     "Milky Mist Dairy Food Limited": "MILKYMIST",
+    "Pramodini Medicare Limited": "PRAMODINI",
     "Fascinate Textiles Limited": "FASCINATE"
   }
 }

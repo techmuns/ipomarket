@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-10T04:51:01.877Z",
+  "captured_at_utc": "2026-08-10T11:57:30.436Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148156,
+      "bytes": 147171,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
     "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
     "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
     "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
     "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/",
     "https://www.chittorgarh.com/ipo/alpine-texworld-ipo/2675/",
-    "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/",
-    "https://www.chittorgarh.com/ipo/kusumgar-ipo/2670/"
+    "https://www.chittorgarh.com/ipo/laser-power-infra-ipo/2654/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
+      "url": "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
+      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
+      "url": "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
       "mode": "static",
       "status": 200,
-      "bytes": 291781,
-      "title": "Behari Lal Engineering IPO Date, Price, GMP, Details",
+      "bytes": 268203,
+      "title": "Lalithaa Jewellery Mart IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
+      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "mode": "static",
       "status": 200,
-      "bytes": 303031,
-      "title": "Shiprocket IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 291781,
+      "title": "Behari Lal Engineering IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

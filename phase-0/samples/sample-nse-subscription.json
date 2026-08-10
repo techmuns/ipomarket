@@ -10,8 +10,8 @@
     "symbol": "DHOOTTRANS",
     "category": "Total",
     "noOfSharesOffered": "2.4956363E7",
-    "noOfTime": "0.03448519321505301",
-    "noOfsharesBid": "860625.0",
+    "noOfTime": "0.49590491210598275",
+    "noOfsharesBid": "1.2375983E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "MOLBIO",
     "category": "Total",
     "noOfSharesOffered": "8158529.0",
-    "noOfTime": "0.03889230521825687",
-    "noOfsharesBid": "317304.0",
+    "noOfTime": "0.4847660650590321",
+    "noOfsharesBid": "3954978.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "LEAP",
     "category": "Total",
     "noOfSharesOffered": "1.14991735E8",
-    "noOfTime": "0.09392664611939285",
-    "noOfsharesBid": "1.0800788E7",
+    "noOfTime": "0.23070402407616514",
+    "noOfsharesBid": "2.6529056E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "TECHNOCRAF",
     "category": "Total",
     "noOfSharesOffered": "8317190.0",
-    "noOfTime": "2.467113291869009",
-    "noOfsharesBid": "2.051945E7",
+    "noOfTime": "3.609273083817972",
+    "noOfsharesBid": "3.001901E7",
     "srNo": null
   },
   {
@@ -67,8 +67,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "OPTIMYSTIX",
-    "noOfsharesBid": "3044800",
+    "noOfsharesBid": "3628000",
     "noOfSharesOffered": "4529600",
-    "noOfTime": "0.67"
+    "noOfTime": "0.80"
   }
 ]
