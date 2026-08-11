@@ -1,5 +1,35 @@
 [
   {
+    "companyName": "Shiprocket Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.92 to Rs.97",
+    "issueSize": "94436030",
+    "issueStartDate": "12-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SHIPROCKET",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Behari Lal Engineering Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.271 to Rs.285",
+    "issueSize": "7412769",
+    "issueStartDate": "12-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "BLEL",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Milky Mist Dairy Food Limited",
     "issueEndDate": "13-Aug-2026",
     "issuePrice": "Rs.133 to Rs.140",
@@ -12,21 +42,6 @@
     "noOfSharesOffered": "8.1798244E7",
     "noOfTime": "0.5315724992825029",
     "noOfsharesBid": "4.3481697E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Molbio Diagnostics Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.768 to Rs.807",
-    "issueSize": "8158529",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "MOLBIO",
-    "category": "Total",
-    "noOfSharesOffered": "8158529.0",
-    "noOfTime": "2.05074174523373",
-    "noOfsharesBid": "1.6731036E7",
     "srNo": null
   },
   {
@@ -45,34 +60,31 @@
     "srNo": null
   },
   {
-    "companyName": "Technocraft Ventures Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.200 to Rs.212",
-    "issueSize": "8317190",
-    "issueStartDate": "07-Aug-2026",
+    "companyName": "Molbio Diagnostics Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.768 to Rs.807",
+    "issueSize": "8158529",
+    "issueStartDate": "10-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "TECHNOCRAF",
+    "symbol": "MOLBIO",
     "category": "Total",
-    "noOfSharesOffered": "8317190.0",
-    "noOfTime": "29.950023986466583",
-    "noOfsharesBid": "2.4910004E8",
+    "noOfSharesOffered": "8158529.0",
+    "noOfTime": "2.05074174523373",
+    "noOfsharesBid": "1.6731036E7",
     "srNo": null
   },
   {
-    "companyName": "Leap India Limited",
-    "issueEndDate": "11-Aug-2026",
-    "issuePrice": "Rs.151 to Rs.159",
-    "issueSize": "114991735",
-    "issueStartDate": "07-Aug-2026",
-    "series": "EQ",
+    "companyName": "Pramodini Medicare Limited",
+    "isBse": "1",
+    "issueEndDate": "14-Aug-2026",
+    "issueStartDate": "12-Aug-2026",
+    "series": "SME",
     "status": "Active",
-    "symbol": "LEAP",
-    "category": "Total",
-    "noOfSharesOffered": "1.14991735E8",
-    "noOfTime": "6.709211509853295",
-    "noOfsharesBid": "7.71503872E8",
-    "srNo": null
+    "symbol": "PRAMODINI",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4490400",
+    "noOfTime": ""
   },
   {
     "companyName": "Fascinate Textiles Limited",
@@ -85,17 +97,5 @@
     "noOfsharesBid": "204800",
     "noOfSharesOffered": "4293600",
     "noOfTime": "0.05"
-  },
-  {
-    "companyName": "Optimystix Entertainment India Limited",
-    "isBse": "1",
-    "issueEndDate": "11-Aug-2026",
-    "issueStartDate": "07-Aug-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "OPTIMYSTIX",
-    "noOfsharesBid": "8650400",
-    "noOfSharesOffered": "4529600",
-    "noOfTime": "1.91"
   }
 ]

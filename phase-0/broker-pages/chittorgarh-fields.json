@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-11T11:54:46.781Z",
+  "captured_at_utc": "2026-08-11T20:04:07.728Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149089,
+      "bytes": 149062,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/sunshine-pictures-ipo/2002/",
       "mode": "static",
       "status": 200,
-      "bytes": 268221,
+      "bytes": 268284,
       "title": "Sunshine Pictures IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

@@ -1,15 +1,14 @@
 {
-  "totalIssues": 9,
+  "totalIssues": 8,
   "resolved": 0,
   "examples": {
-    "Milky Mist Dairy Food Limited": null,
-    "Molbio Diagnostics Limited": null,
-    "Dhoot Transmission Limited": null,
-    "Technocraft Ventures Limited": null,
-    "Leap India Limited": null,
     "Shiprocket Limited": null,
     "Behari Lal Engineering Limited": null,
-    "Credent Connect N Care Limited": null,
-    "Pramodini Medicare Limited": null
+    "Milky Mist Dairy Food Limited": null,
+    "Dhoot Transmission Limited": null,
+    "Molbio Diagnostics Limited": null,
+    "Technocraft Ventures Limited": null,
+    "Leap India Limited": null,
+    "Credent Connect N Care Limited": null
   }
 }
