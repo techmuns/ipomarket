@@ -10,16 +10,6 @@
     "symbol": "MILKYMIST"
   },
   {
-    "companyName": "Dhoot Transmission Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.829 to Rs.871",
-    "issueSize": "24956363",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "DHOOTTRANS"
-  },
-  {
     "companyName": "Molbio Diagnostics Limited",
     "issueEndDate": "12-Aug-2026",
     "issuePrice": "Rs.768 to Rs.807",
@@ -28,6 +18,16 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "MOLBIO"
+  },
+  {
+    "companyName": "Dhoot Transmission Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.829 to Rs.871",
+    "issueSize": "24956363",
+    "issueStartDate": "10-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "DHOOTTRANS"
   },
   {
     "companyName": "Technocraft Ventures Limited",
@@ -50,6 +50,16 @@
     "symbol": "LEAP"
   },
   {
+    "companyName": "Shiprocket Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.92 to Rs.97",
+    "issueSize": "173503227",
+    "issueStartDate": "12-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SHIPROCKET"
+  },
+  {
     "companyName": "Behari Lal Engineering Limited",
     "issueEndDate": "14-Aug-2026",
     "issuePrice": "Rs.271 to Rs.285",
@@ -60,10 +70,22 @@
     "symbol": "BLEL"
   },
   {
+    "companyName": "Credent Connect N Care Limited",
+    "issueEndDate": "17-Aug-2026",
+    "issuePrice": "Rs.179 to Rs.189",
+    "issueSize": "4968000",
+    "issueStartDate": "13-Aug-2026",
+    "lotSize": "600",
+    "priceBand": "Rs.179 to Rs.189",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "CREDENT"
+  },
+  {
     "companyName": "Pramodini Medicare Limited",
     "issueEndDate": "14-Aug-2026",
     "issuePrice": "Rs.110 to Rs.118",
-    "issueSize": "5851200",
+    "issueSize": "4490400",
     "issueStartDate": "12-Aug-2026",
     "lotSize": "1200",
     "priceBand": "Rs.110 to Rs.118",

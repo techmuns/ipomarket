@@ -31,9 +31,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary source for Live & Upcoming tab.",
     "fallback_source": "P-06",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 270,
-    "notes": "Total rows: 7, Active rows: 5"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 434,
+    "notes": "Total rows: 9, Active rows: 5"
   },
   {
     "probe_id": "P-02",
@@ -67,9 +67,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Upcoming/Pipeline tab.",
     "fallback_source": "P-08b",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 26,
-    "notes": "Total rows: 7, Forthcoming/upcoming rows: 2"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 53,
+    "notes": "Total rows: 9, Forthcoming/upcoming rows: 4"
   },
   {
     "probe_id": "P-03",
@@ -105,9 +105,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Recently Listed.",
     "fallback_source": "P-15",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 26,
-    "notes": "Total rows: 7, Past/closed/listed rows: 0"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 58,
+    "notes": "Total rows: 9, Past/closed/listed rows: 0"
   },
   {
     "probe_id": "P-04",
@@ -131,7 +131,7 @@
       "anchor",
       "subscription"
     ],
-    "sample_record": "[\n  {\n    \"companyName\": \"Milky Mist Dairy Food Limited\",\n    \"issueEndDate\": \"13-Aug-2026\",\n    \"issuePrice\": \"Rs.133 to Rs.140\",\n    \"issueSize\": \"81798244\",\n    \"issueStartDate\": \"11-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"MILKYMIST\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"8.1798244E7\",\n    \"noOfTime\": \"0.020703243947388407\",\n    \"noOfsharesBid\": \"1693489.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Dhoot Transmission Limited\",\n    \"issueEndDate\": \"12-Aug-2026\",\n    \"issuePrice\": \"Rs.829 to Rs.871\",\n    \"issueSize\": \"24956363\",\n    \"issueStartDate\": \"10-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"DHOOTTRANS\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"2.4956363E7\",\n    \"noOfTime\": \"0.5775590377492105\",\n    …[truncated, total 2738 chars]",
+    "sample_record": "[\n  {\n    \"companyName\": \"Milky Mist Dairy Food Limited\",\n    \"issueEndDate\": \"13-Aug-2026\",\n    \"issuePrice\": \"Rs.133 to Rs.140\",\n    \"issueSize\": \"81798244\",\n    \"issueStartDate\": \"11-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"MILKYMIST\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"8.1798244E7\",\n    \"noOfTime\": \"0.5315724992825029\",\n    \"noOfsharesBid\": \"4.3481697E7\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Molbio Diagnostics Limited\",\n    \"issueEndDate\": \"12-Aug-2026\",\n    \"issuePrice\": \"Rs.768 to Rs.807\",\n    \"issueSize\": \"8158529\",\n    \"issueStartDate\": \"10-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"MOLBIO\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"8158529.0\",\n    \"noOfTime\": \"2.05074174523373\",\n    \"noOfshar…[truncated, total 2741 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -139,8 +139,8 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE bidding (P-07).",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 346,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 522,
     "notes": "Active candidate symbol: MILKYMIST · Top-level keys: 0, 1, 2, 3, 4, 5, 6"
   },
   {
@@ -168,8 +168,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 767,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 931,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -189,7 +189,7 @@
       "rows"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 21\n    }\n  ],\n  \"unique_pdf_count\": 21,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Arjun%20Jewellers%20Limited%20-%20DAP_p.pdf\",\n      \"link_text\": \"Arjun Jewellers Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf\",\n      \"link_text\": \"Encube Ethicals Limited- Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Advanced%20Sys-Tek%20Limited%20%20-%20DAP_p.pdf\",\n      \"link_text\": \"Advanced Sys-Tek Limited- Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
+    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 21\n    }\n  ],\n  \"unique_pdf_count\": 21,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/BEAUTY%20GARAGE%20LIMITED%20-%20AP_p.pdf\",\n      \"link_text\": \"BEAUTY GARAGE LIMITED - Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Arjun%20Jewellers%20Limited%20-%20DAP_p.pdf\",\n      \"link_text\": \"Arjun Jewellers Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf\",\n      \"link_text\": \"Encube Ethicals Limited- Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -197,9 +197,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 3610,
-    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46529 (pdfs=21)"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 3372,
+    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=46511 (pdfs=21)"
   },
   {
     "probe_id": "P-08b",
@@ -225,14 +225,14 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 332,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 434,
     "notes": "static ok: tbody_rows=3, bytes=25899"
   },
   {
     "probe_id": "P-09",
     "source": "SEBI — DRHP PDF Download",
-    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Arjun%20Jewellers%20Limited%20-%20DAP_p.pdf",
+    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/BEAUTY%20GARAGE%20LIMITED%20-%20AP_p.pdf",
     "fetch_method": "GET (binary) + pdf-parse.py (page-count)",
     "headers_or_cookies_required": [
       "User-Agent",
@@ -246,7 +246,7 @@
       "page_count"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Arjun%20Jewellers%20Limited%20-%20DAP_p.pdf\",\n  \"link_text\": \"Arjun Jewellers Limited - Draft Abridged Prospectus\",\n  \"bytes\": 572232,\n  \"sha256\": \"86d5407f510029f6…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 11,\n  \"cover_text_first_200\": \"ARJUN JEWELLERS LIMITED\\nCORPORATE IDENTITY NUMBER: U36100GJ2020PLC111829\\nREGISTERED AND CORPORATE CONTACT PERSON E-MAIL AND WEBSITE\\nOFFICE TELEPHONE\\nOffice No. 401, 4th Floor, Pride Limbasiya Pradip T\"\n}",
+    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/BEAUTY%20GARAGE%20LIMITED%20-%20AP_p.pdf\",\n  \"link_text\": \"BEAUTY GARAGE LIMITED - Abridged Prospectus\",\n  \"bytes\": 520261,\n  \"sha256\": \"1f3274e302ba068a…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 16,\n  \"cover_text_first_200\": \"BEAUTY GARAGE LIMITED\\n(formerly known as Beauty Garage Private Limited and Beauty Garage India Private Limited)\\nCORPORATE IDENTITY NUMBER: U20237MH2021PLC354428\\nREGISTERED CORPORATE CONTACT PERSON TEL\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -254,9 +254,9 @@
     "status": "GREEN",
     "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 3010,
-    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=mondocs/aug-2026/Arjun%20Jewellers%20Limited%20-%20DAP_p.pdf; bytes=572232; page_count=11; pdf-parse=ok"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 3014,
+    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=commondocs/aug-2026/BEAUTY%20GARAGE%20LIMITED%20-%20AP_p.pdf; bytes=520261; page_count=16; pdf-parse=ok"
   },
   {
     "probe_id": "P-10",
@@ -282,8 +282,8 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 11697,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 11066,
     "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
@@ -302,7 +302,7 @@
       "f1"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"CurrDate\": \"Tue Aug 11 2026 10:07:59\",\n  \"PrevClose\": \"1326\",\n  \"LowVal\": \"1315\",\n  \"HighVal\": \"1330\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1319.40\",\n  \"CurrTime\": \"10:07\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"20000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Tue Aug 11 2026 10:07:59\\\",\\\"vale1\\\":\\\"1319.40\\\",\\\"vole\\\":\\\"583\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 10:06:59\\\",\\\"vale1\\\":\\\"1319.00\\\",\\\"vole\\\":\\\"314\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 10:05:59\\\",\\\"vale1\\\":\\\"1319.50\\\",\\\"vole\\\":\\\"83\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 10:04:59\\\",\\\"vale1\\\":\\\"1319.85\\\",\\\"vole\\\":\\\"310\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 10:03:59\\\",\\\"vale1\\\":\\\"1319.50\\\",\\\"vole\\\":\\\"672\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 10:02:59\\\",\\\"vale1\\\":\\\"1318.60\\\",\\\"vole\\\":\\\"73\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 10:01:59\\\",\\\"vale1\\\":\\\"1318.50\\\",\\\"vole\\\":\\\"60\\\"},{\\\"dttm\\\":\\\"Tue A…[truncated, total 4428 chars]",
+    "sample_record": "{\n  \"CurrDate\": \"Tue Aug 11 2026 16:01:18\",\n  \"PrevClose\": \"1326\",\n  \"LowVal\": \"1315\",\n  \"HighVal\": \"1330\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1321.20\",\n  \"CurrTime\": \"16:01\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"200000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Tue Aug 11 2026 16:01:18\\\",\\\"vale1\\\":\\\"1321.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 16:00:04\\\",\\\"vale1\\\":\\\"1321.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 15:59:50\\\",\\\"vale1\\\":\\\"1321.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 15:58:25\\\",\\\"vale1\\\":\\\"1321.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 15:57:43\\\",\\\"vale1\\\":\\\"1321.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 15:51:02\\\",\\\"vale1\\\":\\\"1321.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026 15:50:57\\\",\\\"vale1\\\":\\\"1321.20\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Aug 11 2026…[truncated, total 30283 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -310,9 +310,9 @@
     "status": "GREEN",
     "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 2913,
-    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [bse:RELIANCE] BSE rows=3557, fields=1"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 4270,
+    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22097 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22098 chars] ; [bse:RELIANCE] BSE rows=25463, fields=1"
   },
   {
     "probe_id": "P-15b",
@@ -331,7 +331,7 @@
     "fields_missing": [
       "priceInfo"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;924ddb17&#46;1786423091&#46;208395e4\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;924ddb17&#46;1786423091&#46;208395e4</P>\n</BODY>\n</HTML>\n",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;d7427568&#46;1786449311&#46;52efdb24\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;d7427568&#46;1786449311&#46;52efdb24</P>\n</BODY>\n</HTML>\n",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -339,8 +339,8 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE quote.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 47,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 88,
     "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
   },
   {
@@ -359,7 +359,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"Milky Mist Dairy Food Limited\": \"MILKYMIST\",\n  \"Dhoot Transmission Limited\": \"DHOOTTRANS\",\n  \"Molbio Diagnostics Limited\": \"MOLBIO\",\n  \"Technocraft Ventures Limited\": \"TECHNOCRAF\",\n  \"Leap India Limited\": \"LEAP\",\n  \"Behari Lal Engineering Limited\": \"BLEL\",\n  \"Pramodini Medicare Limited\": \"PRAMODINI\"\n}",
+    "sample_record": "{\n  \"Milky Mist Dairy Food Limited\": \"MILKYMIST\",\n  \"Molbio Diagnostics Limited\": \"MOLBIO\",\n  \"Dhoot Transmission Limited\": \"DHOOTTRANS\",\n  \"Technocraft Ventures Limited\": \"TECHNOCRAF\",\n  \"Leap India Limited\": \"LEAP\",\n  \"Shiprocket Limited\": \"SHIPROCKET\",\n  \"Behari Lal Engineering Limited\": \"BLEL\",\n  \"Credent Connect N Care Limited\": \"CREDENT\",\n  \"Pramodini Medicare Limited\": \"PRAMODINI\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -367,9 +367,9 @@
     "status": "GREEN",
     "recommended_action": "Deterministic mapping; no manual override file needed for v1.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 207,
-    "notes": "total=7, validSymbolPattern=7, rate=100%"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 45,
+    "notes": "total=9, validSymbolPattern=9, rate=100%"
   },
   {
     "probe_id": "P-06",
@@ -394,8 +394,8 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 619,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 1471,
     "notes": "<tr> count: 0, total bytes: 13850"
   },
   {
@@ -421,8 +421,8 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 10162,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 10446,
     "notes": "Network error: fetch failed"
   },
   {
@@ -448,8 +448,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 408,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 377,
     "notes": "Bid-link markers found: 0, bytes: 13850"
   },
   {
@@ -468,7 +468,7 @@
     "fields_missing": [
       "registrar field"
     ],
-    "sample_record": "{\n  \"Milky Mist Dairy Food Limited\": null,\n  \"Dhoot Transmission Limited\": null,\n  \"Molbio Diagnostics Limited\": null,\n  \"Technocraft Ventures Limited\": null,\n  \"Leap India Limited\": null,\n  \"Behari Lal Engineering Limited\": null,\n  \"Pramodini Medicare Limited\": null\n}",
+    "sample_record": "{\n  \"Milky Mist Dairy Food Limited\": null,\n  \"Molbio Diagnostics Limited\": null,\n  \"Dhoot Transmission Limited\": null,\n  \"Technocraft Ventures Limited\": null,\n  \"Leap India Limited\": null,\n  \"Shiprocket Limited\": null,\n  \"Behari Lal Engineering Limited\": null,\n  \"Credent Connect N Care Limited\": null,\n  \"Pramodini Medicare Limited\": null\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -476,9 +476,9 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 287,
-    "notes": "Issues=7, registrars resolved by name match=0"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 85,
+    "notes": "Issues=9, registrars resolved by name match=0"
   },
   {
     "probe_id": "P-12",
@@ -494,7 +494,7 @@
       "landing page reachable"
     ],
     "fields_missing": [],
-    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37482 chars]",
+    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37480 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -502,8 +502,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 916,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 686,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -528,8 +528,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 99,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 189,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -554,8 +554,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 5343,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 2801,
     "notes": "status=200"
   },
   {
@@ -580,8 +580,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 786,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 854,
     "notes": "status=200"
   },
   {
@@ -589,9 +589,12 @@
     "source": "RHP PDF parsing — sample",
     "url_or_endpoint": "https://www.sebi.gov.in/filings/public-issues.html",
     "fetch_method": "GET (discovery)",
-    "headers_or_cookies_required": [],
-    "status_code": 200,
-    "response_type": "EMPTY",
+    "headers_or_cookies_required": [
+      "User-Agent",
+      "Referer"
+    ],
+    "status_code": 0,
+    "response_type": "BLOCKED",
     "fields_found": [],
     "fields_missing": [
       "pdf url"
@@ -600,13 +603,13 @@
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
-    "freshness_or_update_frequency": "Immutable",
-    "status": "YELLOW",
-    "recommended_action": "PDF discovery selector may have drifted.",
+    "freshness_or_update_frequency": "PDFs immutable",
+    "status": "RED",
+    "recommended_action": "Re-check after P-08 + P-09 GREEN.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 1877,
-    "notes": "No PDF URL discovered."
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 25002,
+    "notes": "SEBI list fetch failed: 0"
   },
   {
     "probe_id": "P-18",
@@ -628,8 +631,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 232,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 1278,
     "notes": "No PDF URL discovered."
   },
   {
@@ -647,7 +650,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head><style>img.lazy{min-height:1px}</style><link href=\"https://ipowatch.in/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js\" as=\"script\">\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium p…[truncated, total 883781 chars]",
+    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head><style>img.lazy{min-height:1px}</style><link href=\"https://ipowatch.in/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js\" as=\"script\">\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium p…[truncated, total 885198 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -655,9 +658,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 1691,
-    "notes": "<tr> count: 313, bytes=883781"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 1824,
+    "notes": "<tr> count: 317, bytes=885198"
   },
   {
     "probe_id": "P-20",
@@ -682,8 +685,8 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 1352,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 1556,
     "notes": "<tr> count: 0, bytes=125018"
   },
   {
@@ -701,7 +704,7 @@
       "discussion / table markers"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html >\n<!--[if IE 8]><html class=\"ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 9]><html class=\"ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--><html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]--><head><title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"pingback\" href=\"https://ipocentral.in/xmlrpc.php\" /> <script data-no-defer=\"1…[truncated, total 368683 chars]",
+    "sample_record": "<!doctype html >\n<!--[if IE 8]><html class=\"ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 9]><html class=\"ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--><html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]--><head><title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"pingback\" href=\"https://ipocentral.in/xmlrpc.php\" /> <script data-no-defer=\"1…[truncated, total 369560 chars]",
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -709,9 +712,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager (lower weight given parsing difficulty).",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 88,
-    "notes": "<tr> count: 21, bytes=368683"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 411,
+    "notes": "<tr> count: 21, bytes=369560"
   },
   {
     "probe_id": "P-22",
@@ -736,8 +739,8 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 81,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 510,
     "notes": "<tr> count: 2, bytes=135100"
   },
   {
@@ -779,8 +782,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 4188,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 4394,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38014 | rendered_len=38836 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -816,9 +819,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 6153,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235272 | rendered_len=279345 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 4704,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235272 | rendered_len=278015 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-24",
@@ -844,9 +847,9 @@
     "status": "RED",
     "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 978,
-    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 7 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 862,
+    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 397 chars] ; [NSE IPO list] 9 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850"
   },
   {
     "probe_id": "P-25",
@@ -875,9 +878,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 1539,
-    "notes": "mainboard: static status=200 bytes=148683 | sme: static status=200 bytes=147593 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=285551 | detail-2: static status=200 bytes=268221 | challenges_detected=false"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 194,
+    "notes": "mainboard: static status=200 bytes=148693 | sme: static status=200 bytes=149089 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=285508 | detail-2: static status=200 bytes=268221 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -919,9 +922,9 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 17,
-    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=85563b tables=11 rows=65 | d2: main=80574b tables=11 rows=66"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 13,
+    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=85562b tables=11 rows=65 | d2: main=80574b tables=11 rows=66"
   },
   {
     "probe_id": "P-27",
@@ -962,8 +965,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 3545,
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 3550,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38014 | rendered_len=38836 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -999,9 +1002,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 5280,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235272 | rendered_len=279662 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 4615,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235272 | rendered_len=277785 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-25b",
@@ -1029,9 +1032,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 1127,
-    "notes": "third_ipo_status=current | third_ipo_slug=milky-mist-dairy-food-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"11 - 13 Aug\" covers today\" | detail-1: static status=200 bytes=367486 | detail-2: static status=200 bytes=341981 | detail-3: static status=200 bytes=325108 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 2363,
+    "notes": "third_ipo_status=current | third_ipo_slug=milky-mist-dairy-food-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"11 - 13 Aug\" covers today\" | detail-1: static status=200 bytes=367762 | detail-2: static status=200 bytes=341981 | detail-3: static status=200 bytes=345459 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
     "probe_id": "P-26b",
@@ -1069,25 +1072,25 @@
       "d3.open_date[medium]",
       "d3.close_date[medium]",
       "d3.listing_date[high]",
-      "d3.registrar[medium]"
+      "d3.registrar[medium]",
+      "d3.official_pdf_links[high]"
     ],
     "fields_missing": [
       "d1.brlms[missing]",
       "d2.face_value[missing]",
       "d2.brlms[missing]",
-      "d3.brlms[missing]",
-      "d3.official_pdf_links[low]"
+      "d3.brlms[missing]"
     ],
-    "sample_record": "{\n  \"avg_full\": 0.848,\n  \"avg_narrow\": 1,\n  \"third_ipo_selection\": {\n    \"slug\": \"milky-mist-dairy-food-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"11 - 13 Aug\\\" covers today\",\n    \"date_text\": \"11 - 13 Aug\",\n    \"source_list\": \"mainboard\"\n  },\n  \"per_detail\": [\n    {\n      \"index\": 1,\n      \"slug\": \"onemi-technology-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 2,\n      \"slug\": \"bagmane-reit\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 3,\n      \"slug\": \"milky-mist-dairy-food-ipo\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": [\n        \"official_pdf_links\"\n      ]\n    }\n  ]\n}",
+    "sample_record": "{\n  \"avg_full\": 0.879,\n  \"avg_narrow\": 1,\n  \"third_ipo_selection\": {\n    \"slug\": \"milky-mist-dairy-food-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"11 - 13 Aug\\\" covers today\",\n    \"date_text\": \"11 - 13 Aug\",\n    \"source_list\": \"mainboard\"\n  },\n  \"per_detail\": [\n    {\n      \"index\": 1,\n      \"slug\": \"onemi-technology-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 2,\n      \"slug\": \"bagmane-reit\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 3,\n      \"slug\": \"milky-mist-dairy-food-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
     "freshness_or_update_frequency": "N/A — operates on disk",
     "status": "GREEN",
-    "recommended_action": "Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval.",
+    "recommended_action": "Precision met (full=0.88 narrow=1.00). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-08-11T04:37:48.360Z",
-    "latency_ms": 35,
-    "notes": "details_extracted=3 | avg_full=0.848 | avg_narrow=1.000 | pdf_on_allowlist=2 | pdf_off_allowlist=1 | third_ipo=milky-mist-dairy-food-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:milky-mist-dairy-food-ipo full=0.82 narrow=1.00"
+    "ran_at_utc": "2026-08-11T11:54:46.781Z",
+    "latency_ms": 21,
+    "notes": "details_extracted=3 | avg_full=0.879 | avg_narrow=1.000 | pdf_on_allowlist=3 | pdf_off_allowlist=1 | third_ipo=milky-mist-dairy-food-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:milky-mist-dairy-food-ipo full=0.91 narrow=1.00"
   }
 ]

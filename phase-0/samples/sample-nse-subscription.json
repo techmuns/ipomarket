@@ -10,23 +10,8 @@
     "symbol": "MILKYMIST",
     "category": "Total",
     "noOfSharesOffered": "8.1798244E7",
-    "noOfTime": "0.020703243947388407",
-    "noOfsharesBid": "1693489.0",
-    "srNo": null
-  },
-  {
-    "companyName": "Dhoot Transmission Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.829 to Rs.871",
-    "issueSize": "24956363",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "DHOOTTRANS",
-    "category": "Total",
-    "noOfSharesOffered": "2.4956363E7",
-    "noOfTime": "0.5775590377492105",
-    "noOfsharesBid": "1.4413773E7",
+    "noOfTime": "0.5315724992825029",
+    "noOfsharesBid": "4.3481697E7",
     "srNo": null
   },
   {
@@ -40,8 +25,23 @@
     "symbol": "MOLBIO",
     "category": "Total",
     "noOfSharesOffered": "8158529.0",
-    "noOfTime": "0.5633405237635363",
-    "noOfsharesBid": "4596030.0",
+    "noOfTime": "2.05074174523373",
+    "noOfsharesBid": "1.6731036E7",
+    "srNo": null
+  },
+  {
+    "companyName": "Dhoot Transmission Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.829 to Rs.871",
+    "issueSize": "24956363",
+    "issueStartDate": "10-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "DHOOTTRANS",
+    "category": "Total",
+    "noOfSharesOffered": "2.4956363E7",
+    "noOfTime": "3.0370511921148124",
+    "noOfsharesBid": "7.5793752E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "TECHNOCRAF",
     "category": "Total",
     "noOfSharesOffered": "8317190.0",
-    "noOfTime": "4.0139963136588195",
-    "noOfsharesBid": "3.338517E7",
+    "noOfTime": "29.950023986466583",
+    "noOfsharesBid": "2.4910004E8",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "LEAP",
     "category": "Total",
     "noOfSharesOffered": "1.14991735E8",
-    "noOfTime": "0.27625315854222043",
-    "noOfsharesBid": "3.176683E7",
+    "noOfTime": "6.709211509853295",
+    "noOfsharesBid": "7.71503872E8",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "FASCINATE",
-    "noOfsharesBid": "8000",
+    "noOfsharesBid": "204800",
     "noOfSharesOffered": "4293600",
-    "noOfTime": "0.00"
+    "noOfTime": "0.05"
   },
   {
     "companyName": "Optimystix Entertainment India Limited",
@@ -94,8 +94,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "OPTIMYSTIX",
-    "noOfsharesBid": "3854400",
+    "noOfsharesBid": "8650400",
     "noOfSharesOffered": "4529600",
-    "noOfTime": "0.85"
+    "noOfTime": "1.91"
   }
 ]

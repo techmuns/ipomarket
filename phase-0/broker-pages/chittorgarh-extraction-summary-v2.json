@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-11T04:37:48.360Z",
+  "generated_at_utc": "2026-08-11T11:54:46.781Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.848,
+  "average_precision_ratio_full": 0.879,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
     "slug": "milky-mist-dairy-food-ipo",
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96864,
+      "main_content_bytes": 96919,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -84,33 +84,34 @@
       "index": 3,
       "slug": "milky-mist-dairy-food-ipo",
       "source_url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
-      "found_count_full": 9,
+      "found_count_full": 10,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.818,
+      "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 90313,
-      "tables_parsed": 13,
-      "table_rows_parsed": 78,
+      "main_content_bytes": 95726,
+      "tables_parsed": 14,
+      "table_rows_parsed": 90,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
-        "listing_date"
+        "listing_date",
+        "official_pdf_links"
       ],
       "fields_medium_confidence": [
         "open_date",
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
-        "official_pdf_links"
-      ],
+      "fields_rejected_low_confidence": [],
       "fields_missing": [
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_on_allowlist": [
+        "https://www.bseindia.com/corporates/download/386960/IPO%20Open/RHPSigned_20260806221222.pdf"
+      ],
       "official_pdf_links_off_allowlist_count": 1
     }
   ]
