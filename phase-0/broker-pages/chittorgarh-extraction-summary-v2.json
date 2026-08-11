@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-10T19:59:33.675Z",
+  "generated_at_utc": "2026-08-11T04:37:48.360Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "dhoot-transmission-ipo",
-    "url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
+    "slug": "milky-mist-dairy-food-ipo",
+    "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"10 - 12 Aug\" covers today",
-    "date_text": "10 - 12 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"11 - 13 Aug\" covers today",
+    "date_text": "11 - 13 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96919,
+      "main_content_bytes": 96864,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85314,
+      "main_content_bytes": 85313,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "dhoot-transmission-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
+      "slug": "milky-mist-dairy-food-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 94748,
-      "tables_parsed": 14,
-      "table_rows_parsed": 89,
+      "main_content_bytes": 90313,
+      "tables_parsed": 13,
+      "table_rows_parsed": 78,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
