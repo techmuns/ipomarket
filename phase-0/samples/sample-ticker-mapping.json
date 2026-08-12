@@ -2,13 +2,13 @@
   "total": 8,
   "valid": 8,
   "examples": {
-    "Shiprocket Limited": "SHIPROCKET",
     "Behari Lal Engineering Limited": "BLEL",
+    "Shiprocket Limited": "SHIPROCKET",
     "Milky Mist Dairy Food Limited": "MILKYMIST",
-    "Dhoot Transmission Limited": "DHOOTTRANS",
     "Molbio Diagnostics Limited": "MOLBIO",
-    "Technocraft Ventures Limited": "TECHNOCRAF",
-    "Leap India Limited": "LEAP",
+    "Dhoot Transmission Limited": "DHOOTTRANS",
+    "Shankesh Jewellers Limited": "SHANKESH",
+    "Lalithaa Jewellery Mart Limited": "LALITHAA",
     "Credent Connect N Care Limited": "CREDENT"
   }
 }

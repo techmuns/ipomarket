@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-12T04:58:59.452Z",
+  "captured_at_utc": "2026-08-12T11:56:51.620Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 367891,
+      "bytes": 367848,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "mode": "static",
       "status": 200,
-      "bytes": 325775,
+      "bytes": 325802,
       "title": "Behari Lal Engineering IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

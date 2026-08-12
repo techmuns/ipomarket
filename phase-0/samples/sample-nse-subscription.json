@@ -1,20 +1,5 @@
 [
   {
-    "companyName": "Shiprocket Limited",
-    "issueEndDate": "14-Aug-2026",
-    "issuePrice": "Rs.92 to Rs.97",
-    "issueSize": "94436030",
-    "issueStartDate": "12-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SHIPROCKET",
-    "category": "Total",
-    "noOfSharesOffered": "9.443603E7",
-    "noOfTime": "0.08031199532636007",
-    "noOfsharesBid": "7584346.0",
-    "srNo": null
-  },
-  {
     "companyName": "Behari Lal Engineering Limited",
     "issueEndDate": "14-Aug-2026",
     "issuePrice": "Rs.271 to Rs.285",
@@ -25,8 +10,23 @@
     "symbol": "BLEL",
     "category": "Total",
     "noOfSharesOffered": "7412769.0",
-    "noOfTime": "0.13524770568191186",
-    "noOfsharesBid": "1002560.0",
+    "noOfTime": "1.3527015343389224",
+    "noOfsharesBid": "1.0027264E7",
+    "srNo": null
+  },
+  {
+    "companyName": "Shiprocket Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.92 to Rs.97",
+    "issueSize": "94436030",
+    "issueStartDate": "12-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SHIPROCKET",
+    "category": "Total",
+    "noOfSharesOffered": "9.443603E7",
+    "noOfTime": "0.6980664689102242",
+    "noOfsharesBid": "6.5922626E7",
     "srNo": null
   },
   {
@@ -40,23 +40,8 @@
     "symbol": "MILKYMIST",
     "category": "Total",
     "noOfSharesOffered": "8.1798244E7",
-    "noOfTime": "0.7036931501854734",
-    "noOfsharesBid": "5.7560864E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Dhoot Transmission Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.829 to Rs.871",
-    "issueSize": "24956363",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "DHOOTTRANS",
-    "category": "Total",
-    "noOfSharesOffered": "2.4956363E7",
-    "noOfTime": "4.186881878581426",
-    "noOfsharesBid": "1.04489344E8",
+    "noOfTime": "1.5902111052652914",
+    "noOfsharesBid": "1.30076476E8",
     "srNo": null
   },
   {
@@ -70,8 +55,23 @@
     "symbol": "MOLBIO",
     "category": "Total",
     "noOfSharesOffered": "8158529.0",
-    "noOfTime": "2.9845409632054993",
-    "noOfsharesBid": "2.4349464E7",
+    "noOfTime": "43.068579397094744",
+    "noOfsharesBid": "3.51376254E8",
+    "srNo": null
+  },
+  {
+    "companyName": "Dhoot Transmission Limited",
+    "issueEndDate": "12-Aug-2026",
+    "issuePrice": "Rs.829 to Rs.871",
+    "issueSize": "24956363",
+    "issueStartDate": "10-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "DHOOTTRANS",
+    "category": "Total",
+    "noOfSharesOffered": "2.4956363E7",
+    "noOfTime": "50.02996370104089",
+    "noOfsharesBid": "1.248565935E9",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PRAMODINI",
-    "noOfsharesBid": "98400",
+    "noOfsharesBid": "3120000",
     "noOfSharesOffered": "4490400",
-    "noOfTime": "0.02"
+    "noOfTime": "0.69"
   },
   {
     "companyName": "Fascinate Textiles Limited",
@@ -94,8 +94,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "FASCINATE",
-    "noOfsharesBid": "288800",
+    "noOfsharesBid": "699200",
     "noOfSharesOffered": "4293600",
-    "noOfTime": "0.07"
+    "noOfTime": "0.16"
   }
 ]
