@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-11T20:04:07.728Z",
+  "generated_at_utc": "2026-08-12T04:58:59.452Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.879,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "milky-mist-dairy-food-ipo",
-    "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+    "slug": "behari-lal-engineering-ipo",
+    "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"11 - 13 Aug\" covers today",
-    "date_text": "11 - 13 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"12 - 14 Aug\" covers today",
+    "date_text": "12 - 14 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85258,
+      "main_content_bytes": 85314,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "milky-mist-dairy-food-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+      "slug": "behari-lal-engineering-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "found_count_full": 10,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 95726,
-      "tables_parsed": 14,
-      "table_rows_parsed": 90,
+      "main_content_bytes": 92888,
+      "tables_parsed": 13,
+      "table_rows_parsed": 85,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -110,7 +110,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [
-        "https://www.bseindia.com/corporates/download/386960/IPO%20Open/RHPSigned_20260806221222.pdf"
+        "https://www.bseindia.com/corporates/download/306242/IPO%20Open/RHPSigned_20260807221340.pdf"
       ],
       "official_pdf_links_off_allowlist_count": 1
     }

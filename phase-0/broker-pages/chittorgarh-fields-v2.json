@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-11T20:04:07.728Z",
+  "captured_at_utc": "2026-08-12T04:58:59.452Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "milky-mist-dairy-food-ipo",
-    "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+    "slug": "behari-lal-engineering-ipo",
+    "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"11 - 13 Aug\" covers today",
-    "date_text": "11 - 13 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"12 - 14 Aug\" covers today",
+    "date_text": "12 - 14 Aug",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
-      "slug": "milky-mist-dairy-food-ipo"
+      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
+      "slug": "behari-lal-engineering-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 341705,
+      "bytes": 342024,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
+      "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "mode": "static",
       "status": 200,
-      "bytes": 345460,
-      "title": "Milky Mist Dairy Food IPO Date, Price, GMP, Details",
+      "bytes": 325775,
+      "title": "Behari Lal Engineering IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

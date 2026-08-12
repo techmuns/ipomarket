@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "SHIPROCKET",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "9.443603E7",
+    "noOfTime": "0.08031199532636007",
+    "noOfsharesBid": "7584346.0",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "BLEL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "7412769.0",
+    "noOfTime": "0.13524770568191186",
+    "noOfsharesBid": "1002560.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "MILKYMIST",
     "category": "Total",
     "noOfSharesOffered": "8.1798244E7",
-    "noOfTime": "0.5315724992825029",
-    "noOfsharesBid": "4.3481697E7",
+    "noOfTime": "0.7036931501854734",
+    "noOfsharesBid": "5.7560864E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "DHOOTTRANS",
     "category": "Total",
     "noOfSharesOffered": "2.4956363E7",
-    "noOfTime": "3.0370511921148124",
-    "noOfsharesBid": "7.5793752E7",
+    "noOfTime": "4.186881878581426",
+    "noOfsharesBid": "1.04489344E8",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "MOLBIO",
     "category": "Total",
     "noOfSharesOffered": "8158529.0",
-    "noOfTime": "2.05074174523373",
-    "noOfsharesBid": "1.6731036E7",
+    "noOfTime": "2.9845409632054993",
+    "noOfsharesBid": "2.4349464E7",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PRAMODINI",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "98400",
     "noOfSharesOffered": "4490400",
-    "noOfTime": ""
+    "noOfTime": "0.02"
   },
   {
     "companyName": "Fascinate Textiles Limited",
@@ -94,8 +94,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "FASCINATE",
-    "noOfsharesBid": "204800",
+    "noOfsharesBid": "288800",
     "noOfSharesOffered": "4293600",
-    "noOfTime": "0.05"
+    "noOfTime": "0.07"
   }
 ]

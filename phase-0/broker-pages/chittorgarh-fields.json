@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-11T20:04:07.728Z",
+  "captured_at_utc": "2026-08-12T04:58:59.452Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148693,
+      "bytes": 149482,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149062,
+      "bytes": 149434,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -30,6 +30,7 @@
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
     "https://www.chittorgarh.com/ipo/sunshine-pictures-ipo/2002/",
+    "https://www.chittorgarh.com/ipo/horizon-industrial-parks-ipo/2826/",
     "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
     "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
     "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
     "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
     "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/",
-    "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/",
-    "https://www.chittorgarh.com/ipo/sbi-funds-management-ipo/2949/"
+    "https://www.chittorgarh.com/ipo/caliber-mining-ipo/1999/"
   ],
   "picked_detail_urls": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/sunshine-pictures-ipo/2002/",
       "mode": "static",
       "status": 200,
-      "bytes": 268284,
+      "bytes": 268285,
       "title": "Sunshine Pictures IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
