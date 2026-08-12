@@ -36,7 +36,7 @@
     "issueSize": "8158529",
     "issueStartDate": "10-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "MOLBIO"
   },
   {
@@ -46,7 +46,7 @@
     "issueSize": "24956363",
     "issueStartDate": "10-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "DHOOTTRANS"
   },
   {
@@ -70,15 +70,15 @@
     "symbol": "LALITHAA"
   },
   {
-    "companyName": "Credent Connect N Care Limited",
-    "issueEndDate": "17-Aug-2026",
-    "issuePrice": "Rs.179 to Rs.189",
-    "issueSize": "4968000",
-    "issueStartDate": "13-Aug-2026",
-    "lotSize": "600",
-    "priceBand": "Rs.179 to Rs.189",
+    "companyName": "Skytech Infinite Platform Limited",
+    "issueEndDate": "18-Aug-2026",
+    "issuePrice": "Rs.73 to Rs.77",
+    "issueSize": "2945600",
+    "issueStartDate": "14-Aug-2026",
+    "lotSize": "1600",
+    "priceBand": "Rs.73 to Rs.77",
     "series": "SME",
     "status": "Forthcoming",
-    "symbol": "CREDENT"
+    "symbol": "SKYTECH"
   }
 ]

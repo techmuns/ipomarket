@@ -45,34 +45,16 @@
     "srNo": null
   },
   {
-    "companyName": "Molbio Diagnostics Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.768 to Rs.807",
-    "issueSize": "8158529",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
+    "companyName": "Credent Connect N Care Limited",
+    "isBse": "1",
+    "issueEndDate": "17-Aug-2026",
+    "issueStartDate": "13-Aug-2026",
+    "series": "SME",
     "status": "Active",
-    "symbol": "MOLBIO",
-    "category": "Total",
-    "noOfSharesOffered": "8158529.0",
-    "noOfTime": "43.068579397094744",
-    "noOfsharesBid": "3.51376254E8",
-    "srNo": null
-  },
-  {
-    "companyName": "Dhoot Transmission Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.829 to Rs.871",
-    "issueSize": "24956363",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "DHOOTTRANS",
-    "category": "Total",
-    "noOfSharesOffered": "2.4956363E7",
-    "noOfTime": "50.02996370104089",
-    "noOfsharesBid": "1.248565935E9",
-    "srNo": null
+    "symbol": "CREDENT",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "3564000",
+    "noOfTime": ""
   },
   {
     "companyName": "Pramodini Medicare Limited",
