@@ -10,8 +10,8 @@
     "symbol": "BLEL",
     "category": "Total",
     "noOfSharesOffered": "7412769.0",
-    "noOfTime": "1.3527015343389224",
-    "noOfsharesBid": "1.0027264E7",
+    "noOfTime": "2.2169750601968037",
+    "noOfsharesBid": "1.6433924E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "SHIPROCKET",
     "category": "Total",
     "noOfSharesOffered": "9.443603E7",
-    "noOfTime": "0.6980664689102242",
-    "noOfsharesBid": "6.5922626E7",
+    "noOfTime": "0.9442110177651475",
+    "noOfsharesBid": "8.916754E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "MILKYMIST",
     "category": "Total",
     "noOfSharesOffered": "8.1798244E7",
-    "noOfTime": "1.5902111052652914",
-    "noOfsharesBid": "1.30076476E8",
+    "noOfTime": "2.265763174573772",
+    "noOfsharesBid": "1.85335449E8",
     "srNo": null
   },
   {
@@ -52,9 +52,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "CREDENT",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "478800",
     "noOfSharesOffered": "3564000",
-    "noOfTime": ""
+    "noOfTime": "0.13"
   },
   {
     "companyName": "Pramodini Medicare Limited",
@@ -64,9 +64,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PRAMODINI",
-    "noOfsharesBid": "3120000",
+    "noOfsharesBid": "3322800",
     "noOfSharesOffered": "4490400",
-    "noOfTime": "0.69"
+    "noOfTime": "0.74"
   },
   {
     "companyName": "Fascinate Textiles Limited",
@@ -76,8 +76,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "FASCINATE",
-    "noOfsharesBid": "699200",
+    "noOfsharesBid": "805600",
     "noOfSharesOffered": "4293600",
-    "noOfTime": "0.16"
+    "noOfTime": "0.19"
   }
 ]

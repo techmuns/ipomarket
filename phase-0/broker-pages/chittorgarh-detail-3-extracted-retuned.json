@@ -32,7 +32,7 @@
       "value": "52 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "52 Shares"
     },
@@ -105,8 +105,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/behari-lal-engineering-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 92888,
-  "main_content_bytes": 92888,
+  "noise_stripped_bytes": 93124,
+  "main_content_bytes": 93124,
   "tables_parsed": 13,
-  "table_rows_parsed": 85
+  "table_rows_parsed": 86
 }

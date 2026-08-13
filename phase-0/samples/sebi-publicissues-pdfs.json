@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-12T20:04:45.251Z",
+  "captured_at_utc": "2026-08-13T05:02:06.688Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46416,
+      "bytes": 45998,
       "tr_count": 26,
-      "pdfs_found": 21,
-      "notes": "static ok: tr=26, bytes=46416"
+      "pdfs_found": 20,
+      "notes": "static ok: tr=26, bytes=45998"
     }
   ],
   "detail_urls_found": 31,
@@ -120,11 +120,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/REIL%20Abridged_p.pdf",
       "link_text": "Renfra Energy India Limited_Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Social%20Worth%20Technologies%20-%20DA_p.pdf",
-      "link_text": "Social Worth Technologies Limited- Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
