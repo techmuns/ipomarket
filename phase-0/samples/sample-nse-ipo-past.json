@@ -26,7 +26,7 @@
     "issueSize": "81798244",
     "issueStartDate": "11-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "MILKYMIST"
   },
   {
@@ -58,17 +58,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "LALITHAA"
-  },
-  {
-    "companyName": "Skytech Infinite Platform Limited",
-    "issueEndDate": "18-Aug-2026",
-    "issuePrice": "Rs.73 to Rs.77",
-    "issueSize": "2945600",
-    "issueStartDate": "14-Aug-2026",
-    "lotSize": "1600",
-    "priceBand": "Rs.73 to Rs.77",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "SKYTECH"
   }
 ]

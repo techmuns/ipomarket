@@ -1,13 +1,12 @@
 {
-  "total": 7,
-  "valid": 7,
+  "total": 6,
+  "valid": 6,
   "examples": {
     "Shiprocket Limited": "SHIPROCKET",
     "Behari Lal Engineering Limited": "BLEL",
     "Milky Mist Dairy Food Limited": "MILKYMIST",
     "Shankesh Jewellers Limited": "SHANKESH",
     "Horizon Industrial Parks Limited": "HORIZONIND",
-    "Lalithaa Jewellery Mart Limited": "LALITHAA",
-    "Skytech Infinite Platform Limited": "SKYTECH"
+    "Lalithaa Jewellery Mart Limited": "LALITHAA"
   }
 }

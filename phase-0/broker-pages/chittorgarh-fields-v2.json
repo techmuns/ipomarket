@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-13T11:57:31.655Z",
+  "captured_at_utc": "2026-08-13T20:00:30.544Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 342024,
+      "bytes": 341981,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
       "mode": "static",
       "status": 200,
-      "bytes": 326524,
+      "bytes": 326526,
       "title": "Behari Lal Engineering IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

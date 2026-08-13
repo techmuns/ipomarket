@@ -30,19 +30,16 @@
     "srNo": null
   },
   {
-    "companyName": "Milky Mist Dairy Food Limited",
-    "issueEndDate": "13-Aug-2026",
-    "issuePrice": "Rs.133 to Rs.140",
-    "issueSize": "81798244",
-    "issueStartDate": "11-Aug-2026",
-    "series": "EQ",
+    "companyName": "Skytech Infinite Platform Limited",
+    "isBse": "1",
+    "issueEndDate": "18-Aug-2026",
+    "issueStartDate": "14-Aug-2026",
+    "series": "SME",
     "status": "Active",
-    "symbol": "MILKYMIST",
-    "category": "Total",
-    "noOfSharesOffered": "8.1798244E7",
-    "noOfTime": "41.16796564728211",
-    "noOfsharesBid": "3.367467299E9",
-    "srNo": null
+    "symbol": "SKYTECH",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "2945600",
+    "noOfTime": ""
   },
   {
     "companyName": "Credent Connect N Care Limited",
