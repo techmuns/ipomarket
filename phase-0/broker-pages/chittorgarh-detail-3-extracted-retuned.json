@@ -105,8 +105,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/behari-lal-engineering-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 93124,
-  "main_content_bytes": 93124,
+  "noise_stripped_bytes": 93122,
+  "main_content_bytes": 93122,
   "tables_parsed": 13,
   "table_rows_parsed": 86
 }

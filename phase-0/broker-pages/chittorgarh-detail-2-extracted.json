@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
+  "source_url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
   "fields": {
     "company_name": {
-      "value": "Shankesh Jewellers IPO",
+      "value": "Gaja Alternative Asset Management IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Shankesh Jewellers IPO"
+      "source_snippet": "Gaja Alternative Asset Management IPO"
     },
     "issue_size_cr": {
-      "value": "3,94,82,000 shares (agg. up to ₹ 367 Cr)",
+      "value": "3,43,75,000 shares (agg. up to ₹ 550 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "3,94,82,000 shares (agg. up to ₹ 367 Cr)"
+      "source_snippet": "3,43,75,000 shares (agg. up to ₹ 550 Cr)"
     },
     "price_band": {
-      "value": "₹88 to ₹93",
+      "value": "₹152 to ₹160",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹88 to ₹93"
+      "source_snippet": "₹152 to ₹160"
     },
     "lot_size": {
-      "value": "160 Shares",
+      "value": "93 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "160 Shares"
+      "source_snippet": "93 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Tue, Aug 25, 2026 T",
+      "value": "Wed, Aug 26, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Tue, Aug 25, 2026 T"
+      "source_snippet": "Wed, Aug 26, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/shankesh-jewellers-limited_rhp.pdf"
+      "source_snippet": "https://gajacapital.com/assets/gaja-alternative-asset-management-limited---red-herring-prospectus.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/shankesh-jewellers-limited_rhp.pdf"
+    "https://gajacapital.com/assets/gaja-alternative-asset-management-limited---red-herring-prospectus.pdf"
   ],
-  "noise_stripped_bytes": 85562,
-  "main_content_bytes": 85562,
+  "noise_stripped_bytes": 84136,
+  "main_content_bytes": 84136,
   "tables_parsed": 11,
-  "table_rows_parsed": 65
+  "table_rows_parsed": 64
 }

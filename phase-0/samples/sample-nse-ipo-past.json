@@ -1,15 +1,5 @@
 [
   {
-    "companyName": "Behari Lal Engineering Limited",
-    "issueEndDate": "14-Aug-2026",
-    "issuePrice": "Rs.271 to Rs.285",
-    "issueSize": "7412769",
-    "issueStartDate": "12-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "BLEL"
-  },
-  {
     "companyName": "Shiprocket Limited",
     "issueEndDate": "14-Aug-2026",
     "issuePrice": "Rs.92 to Rs.97",
@@ -18,6 +8,16 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "SHIPROCKET"
+  },
+  {
+    "companyName": "Behari Lal Engineering Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.271 to Rs.285",
+    "issueSize": "7412769",
+    "issueStartDate": "12-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "BLEL"
   },
   {
     "companyName": "Milky Mist Dairy Food Limited",
@@ -30,26 +30,6 @@
     "symbol": "MILKYMIST"
   },
   {
-    "companyName": "Molbio Diagnostics Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.768 to Rs.807",
-    "issueSize": "8158529",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "MOLBIO"
-  },
-  {
-    "companyName": "Dhoot Transmission Limited",
-    "issueEndDate": "12-Aug-2026",
-    "issuePrice": "Rs.829 to Rs.871",
-    "issueSize": "24956363",
-    "issueStartDate": "10-Aug-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "DHOOTTRANS"
-  },
-  {
     "companyName": "Shankesh Jewellers Limited",
     "issueEndDate": "20-Aug-2026",
     "issuePrice": "Rs.88 to Rs.93",
@@ -58,6 +38,16 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "SHANKESH"
+  },
+  {
+    "companyName": "Horizon Industrial Parks Limited",
+    "issueEndDate": "19-Aug-2026",
+    "issuePrice": "Rs.57 to Rs.60",
+    "issueSize": "456224695",
+    "issueStartDate": "17-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "HORIZONIND"
   },
   {
     "companyName": "Lalithaa Jewellery Mart Limited",

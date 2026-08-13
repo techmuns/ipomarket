@@ -1,20 +1,5 @@
 [
   {
-    "companyName": "Behari Lal Engineering Limited",
-    "issueEndDate": "14-Aug-2026",
-    "issuePrice": "Rs.271 to Rs.285",
-    "issueSize": "7412769",
-    "issueStartDate": "12-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "BLEL",
-    "category": "Total",
-    "noOfSharesOffered": "7412769.0",
-    "noOfTime": "2.2169750601968037",
-    "noOfsharesBid": "1.6433924E7",
-    "srNo": null
-  },
-  {
     "companyName": "Shiprocket Limited",
     "issueEndDate": "14-Aug-2026",
     "issuePrice": "Rs.92 to Rs.97",
@@ -25,8 +10,23 @@
     "symbol": "SHIPROCKET",
     "category": "Total",
     "noOfSharesOffered": "9.443603E7",
-    "noOfTime": "0.9442110177651475",
-    "noOfsharesBid": "8.916754E7",
+    "noOfTime": "2.2856997059279176",
+    "noOfsharesBid": "2.15852406E8",
+    "srNo": null
+  },
+  {
+    "companyName": "Behari Lal Engineering Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.271 to Rs.285",
+    "issueSize": "7412769",
+    "issueStartDate": "12-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "BLEL",
+    "category": "Total",
+    "noOfSharesOffered": "7412769.0",
+    "noOfTime": "5.438150305236815",
+    "noOfsharesBid": "4.0311752E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "MILKYMIST",
     "category": "Total",
     "noOfSharesOffered": "8.1798244E7",
-    "noOfTime": "2.265763174573772",
-    "noOfsharesBid": "1.85335449E8",
+    "noOfTime": "41.16796564728211",
+    "noOfsharesBid": "3.367467299E9",
     "srNo": null
   },
   {
@@ -52,9 +52,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "CREDENT",
-    "noOfsharesBid": "478800",
+    "noOfsharesBid": "7110000",
     "noOfSharesOffered": "3564000",
-    "noOfTime": "0.13"
+    "noOfTime": "1.99"
   },
   {
     "companyName": "Pramodini Medicare Limited",
@@ -64,20 +64,20 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PRAMODINI",
-    "noOfsharesBid": "3322800",
+    "noOfsharesBid": "4096800",
     "noOfSharesOffered": "4490400",
-    "noOfTime": "0.74"
+    "noOfTime": "0.91"
   },
   {
     "companyName": "Fascinate Textiles Limited",
     "isBse": "1",
-    "issueEndDate": "13-Aug-2026",
+    "issueEndDate": "19-Aug-2026",
     "issueStartDate": "11-Aug-2026",
     "series": "SME",
     "status": "Active",
     "symbol": "FASCINATE",
-    "noOfsharesBid": "805600",
+    "noOfsharesBid": "1880000",
     "noOfSharesOffered": "4293600",
-    "noOfTime": "0.19"
+    "noOfTime": "0.44"
   }
 ]

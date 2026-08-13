@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-13T05:02:06.688Z",
+  "captured_at_utc": "2026-08-13T11:57:31.655Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149050,
+      "bytes": 149034,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149561,
+      "bytes": 149536,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
     "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
     "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
     "https://www.chittorgarh.com/ipo/sunshine-pictures-ipo/2002/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
     "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
     "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/",
-    "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/",
-    "https://www.chittorgarh.com/ipo/cube-highways-trust-invit/3192/"
+    "https://www.chittorgarh.com/ipo/lohia-corp-ipo/2574/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
+      "url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
+      "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
+      "url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
       "mode": "static",
       "status": 200,
-      "bytes": 284002,
-      "title": "Gaja Alternative Asset Management IPO Date, Details",
+      "bytes": 283861,
+      "title": "Skyways Air IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
+      "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
       "mode": "static",
       "status": 200,
-      "bytes": 285508,
-      "title": "Shankesh Jewellers IPO Date, Price, GMP, Review, Details",
+      "bytes": 284002,
+      "title": "Gaja Alternative Asset Management IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
