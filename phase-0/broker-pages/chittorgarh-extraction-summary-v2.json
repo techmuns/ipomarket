@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-08-13T20:00:30.544Z",
+  "generated_at_utc": "2026-08-14T04:59:19.033Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.879,
+  "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "behari-lal-engineering-ipo",
-    "url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
+    "slug": "technocrats-plasma-systems-ipo",
+    "url": "https://www.chittorgarh.com/ipo/technocrats-plasma-systems-ipo/2840/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"12 - 14 Aug\" covers today",
-    "date_text": "12 - 14 Aug",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"14 - 18 Aug\" covers today",
+    "date_text": "14 - 18 Aug",
+    "source_list": "sme"
   },
   "per_detail": [
     {
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96922,
+      "main_content_bytes": 96919,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85313,
+      "main_content_bytes": 85314,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,23 +82,22 @@
     },
     {
       "index": 3,
-      "slug": "behari-lal-engineering-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
-      "found_count_full": 10,
+      "slug": "technocrats-plasma-systems-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/technocrats-plasma-systems-ipo/2840/",
+      "found_count_full": 9,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.909,
+      "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93122,
-      "tables_parsed": 13,
-      "table_rows_parsed": 86,
+      "main_content_bytes": 87987,
+      "tables_parsed": 11,
+      "table_rows_parsed": 68,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
-        "listing_date",
-        "official_pdf_links"
+        "listing_date"
       ],
       "fields_medium_confidence": [
         "open_date",
@@ -107,12 +106,11 @@
       ],
       "fields_rejected_low_confidence": [],
       "fields_missing": [
-        "brlms"
+        "brlms",
+        "official_pdf_links"
       ],
-      "official_pdf_links_on_allowlist": [
-        "https://www.bseindia.com/corporates/download/306242/IPO%20Open/RHPSigned_20260807221340.pdf"
-      ],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }

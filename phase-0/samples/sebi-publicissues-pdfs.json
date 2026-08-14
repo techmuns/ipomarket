@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-13T20:00:30.544Z",
+  "captured_at_utc": "2026-08-14T04:59:19.033Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45558,
+      "bytes": 45447,
       "tr_count": 26,
       "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=45558"
+      "notes": "static ok: tr=26, bytes=45447"
     }
   ],
   "detail_urls_found": 31,
@@ -50,6 +50,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Master%20Chains%20N%20Jewels%20Limited%20-%20AP_p.pdf",
       "link_text": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/IFL%20Finance%20Ltd-%20DAP_p.pdf",
+      "link_text": "IFL Finance Ltd. - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -115,11 +120,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/REIL%20Abridged_p.pdf",
       "link_text": "Renfra Energy India Limited_Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Social%20Worth%20Technologies%20-%20DA_p.pdf",
-      "link_text": "Social Worth Technologies Limited- Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

@@ -10,8 +10,8 @@
     "symbol": "SHIPROCKET",
     "category": "Total",
     "noOfSharesOffered": "9.443603E7",
-    "noOfTime": "2.2856997059279176",
-    "noOfsharesBid": "2.15852406E8",
+    "noOfTime": "4.033404114933675",
+    "noOfsharesBid": "3.80898672E8",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "BLEL",
     "category": "Total",
     "noOfSharesOffered": "7412769.0",
-    "noOfTime": "5.438150305236815",
-    "noOfsharesBid": "4.0311752E7",
+    "noOfTime": "9.031923158539001",
+    "noOfsharesBid": "6.695156E7",
     "srNo": null
   },
   {
@@ -37,9 +37,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SKYTECH",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "97600",
     "noOfSharesOffered": "2945600",
-    "noOfTime": ""
+    "noOfTime": "0.03"
   },
   {
     "companyName": "Credent Connect N Care Limited",
@@ -49,9 +49,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "CREDENT",
-    "noOfsharesBid": "7110000",
+    "noOfsharesBid": "11238600",
     "noOfSharesOffered": "3564000",
-    "noOfTime": "1.99"
+    "noOfTime": "3.15"
   },
   {
     "companyName": "Pramodini Medicare Limited",
@@ -61,9 +61,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PRAMODINI",
-    "noOfsharesBid": "4096800",
+    "noOfsharesBid": "4497600",
     "noOfSharesOffered": "4490400",
-    "noOfTime": "0.91"
+    "noOfTime": "1.00"
   },
   {
     "companyName": "Fascinate Textiles Limited",
@@ -73,7 +73,7 @@
     "series": "SME",
     "status": "Active",
     "symbol": "FASCINATE",
-    "noOfsharesBid": "1880000",
+    "noOfsharesBid": "1888000",
     "noOfSharesOffered": "4293600",
     "noOfTime": "0.44"
   }
