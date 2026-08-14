@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://r2.skyways-air.in/RHP-Skyways.pdf"
   ],
-  "noise_stripped_bytes": 88482,
-  "main_content_bytes": 88482,
+  "noise_stripped_bytes": 88434,
+  "main_content_bytes": 88434,
   "tables_parsed": 11,
   "table_rows_parsed": 72
 }

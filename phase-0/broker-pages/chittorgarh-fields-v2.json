@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-14T11:54:29.931Z",
+  "captured_at_utc": "2026-08-14T19:54:36.195Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 367815,
+      "bytes": 367772,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 342024,
+      "bytes": 341905,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/technocrats-plasma-systems-ipo/2840/",
       "mode": "static",
       "status": 200,
-      "bytes": 309237,
+      "bytes": 308963,
       "title": "Technocrats Plasma Systems IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

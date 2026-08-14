@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-14T11:54:29.931Z",
+  "captured_at_utc": "2026-08-14T19:54:36.195Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149126,
+      "bytes": 147733,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 150278,
+      "bytes": 150272,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
       "mode": "static",
       "status": 200,
-      "bytes": 301276,
+      "bytes": 301200,
       "title": "Skyways Air IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
       "mode": "static",
       "status": 200,
-      "bytes": 284031,
+      "bytes": 283955,
       "title": "Gaja Alternative Asset Management IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
