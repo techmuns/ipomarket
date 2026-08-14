@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-14T04:59:19.033Z",
+  "captured_at_utc": "2026-08-14T11:54:29.931Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 367762,
+      "bytes": 367815,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/technocrats-plasma-systems-ipo/2840/",
       "mode": "static",
       "status": 200,
-      "bytes": 303584,
+      "bytes": 309237,
       "title": "Technocrats Plasma Systems IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

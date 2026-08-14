@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-14T04:59:19.033Z",
+  "captured_at_utc": "2026-08-14T11:54:29.931Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,24 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45447,
+      "bytes": 45056,
       "tr_count": 26,
-      "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=45447"
+      "pdfs_found": 19,
+      "notes": "static ok: tr=26, bytes=45056"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf",
+      "link_text": "Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/AGS%20Health%20Limited%20-%20AP_p.pdf",
+      "link_text": "AGS Health Limited - Abridged prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/BEAUTY%20GARAGE%20LIMITED%20-%20AP_p.pdf",
       "link_text": "BEAUTY GARAGE LIMITED - Abridged Prospectus",
@@ -105,21 +115,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Stalwart%20People%20Services%20India%20Limited%20-%20Abri_p.pdf",
       "link_text": "Stalwart People Services India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Functional%20&%20Innovative%20Foods%20Limited-%20Abri_p.pdf",
-      "link_text": "Functional & Innovative Foods Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/GLOBAL%20-%20DAP_p.pdf",
-      "link_text": "ESWARI GLOBAL METAL INDUSTRIES LIMITED_Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/REIL%20Abridged_p.pdf",
-      "link_text": "Renfra Energy India Limited_Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

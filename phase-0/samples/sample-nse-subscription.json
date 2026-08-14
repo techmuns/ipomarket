@@ -1,20 +1,5 @@
 [
   {
-    "companyName": "Shiprocket Limited",
-    "issueEndDate": "14-Aug-2026",
-    "issuePrice": "Rs.92 to Rs.97",
-    "issueSize": "94436030",
-    "issueStartDate": "12-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SHIPROCKET",
-    "category": "Total",
-    "noOfSharesOffered": "9.443603E7",
-    "noOfTime": "4.033404114933675",
-    "noOfsharesBid": "3.80898672E8",
-    "srNo": null
-  },
-  {
     "companyName": "Behari Lal Engineering Limited",
     "issueEndDate": "14-Aug-2026",
     "issuePrice": "Rs.271 to Rs.285",
@@ -25,8 +10,23 @@
     "symbol": "BLEL",
     "category": "Total",
     "noOfSharesOffered": "7412769.0",
-    "noOfTime": "9.031923158539001",
-    "noOfsharesBid": "6.695156E7",
+    "noOfTime": "81.62799515268856",
+    "noOfsharesBid": "6.05089472E8",
+    "srNo": null
+  },
+  {
+    "companyName": "Shiprocket Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.92 to Rs.97",
+    "issueSize": "94436030",
+    "issueStartDate": "12-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SHIPROCKET",
+    "category": "Total",
+    "noOfSharesOffered": "9.443603E7",
+    "noOfTime": "68.64523195225382",
+    "noOfsharesBid": "6.482583184E9",
     "srNo": null
   },
   {
@@ -37,9 +37,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SKYTECH",
-    "noOfsharesBid": "97600",
+    "noOfsharesBid": "1238400",
     "noOfSharesOffered": "2945600",
-    "noOfTime": "0.03"
+    "noOfTime": "0.42"
   },
   {
     "companyName": "Credent Connect N Care Limited",
@@ -49,9 +49,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "CREDENT",
-    "noOfsharesBid": "11238600",
+    "noOfsharesBid": "40010400",
     "noOfSharesOffered": "3564000",
-    "noOfTime": "3.15"
+    "noOfTime": "11.23"
   },
   {
     "companyName": "Pramodini Medicare Limited",
@@ -61,9 +61,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PRAMODINI",
-    "noOfsharesBid": "4497600",
+    "noOfsharesBid": "16429200",
     "noOfSharesOffered": "4490400",
-    "noOfTime": "1.00"
+    "noOfTime": "3.66"
   },
   {
     "companyName": "Fascinate Textiles Limited",
@@ -73,8 +73,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "FASCINATE",
-    "noOfsharesBid": "1888000",
+    "noOfsharesBid": "2304800",
     "noOfSharesOffered": "4293600",
-    "noOfTime": "0.44"
+    "noOfTime": "0.54"
   }
 ]

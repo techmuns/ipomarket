@@ -1,15 +1,5 @@
 [
   {
-    "companyName": "Shiprocket Limited",
-    "issueEndDate": "14-Aug-2026",
-    "issuePrice": "Rs.92 to Rs.97",
-    "issueSize": "94436030",
-    "issueStartDate": "12-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SHIPROCKET"
-  },
-  {
     "companyName": "Behari Lal Engineering Limited",
     "issueEndDate": "14-Aug-2026",
     "issuePrice": "Rs.271 to Rs.285",
@@ -20,14 +10,24 @@
     "symbol": "BLEL"
   },
   {
-    "companyName": "Milky Mist Dairy Food Limited",
-    "issueEndDate": "13-Aug-2026",
-    "issuePrice": "Rs.133 to Rs.140",
-    "issueSize": "81798244",
-    "issueStartDate": "11-Aug-2026",
+    "companyName": "Shiprocket Limited",
+    "issueEndDate": "14-Aug-2026",
+    "issuePrice": "Rs.92 to Rs.97",
+    "issueSize": "94436030",
+    "issueStartDate": "12-Aug-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "MILKYMIST"
+    "status": "Active",
+    "symbol": "SHIPROCKET"
+  },
+  {
+    "companyName": "Sunshine Pictures Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.342 to Rs.360",
+    "issueSize": "7837191",
+    "issueStartDate": "18-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SUNSHINE"
   },
   {
     "companyName": "Shankesh Jewellers Limited",
