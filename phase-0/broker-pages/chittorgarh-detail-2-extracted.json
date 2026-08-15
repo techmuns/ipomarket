@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
+  "source_url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
   "fields": {
     "company_name": {
-      "value": "Gaja Alternative Asset Management IPO",
+      "value": "Tempsens Instruments (India) IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Gaja Alternative Asset Management IPO"
+      "source_snippet": "Tempsens Instruments (India) IPO"
     },
     "issue_size_cr": {
-      "value": "3,43,75,000 shares (agg. up to ₹ 550 Cr)",
-      "found": true,
-      "confidence": "high",
-      "method": "table[1].row[0] label=\"Total Issue Size\"",
-      "why_missing": null,
-      "source_snippet": "3,43,75,000 shares (agg. up to ₹ 550 Cr)"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
+      "source_snippet": null
     },
     "price_band": {
-      "value": "₹152 to ₹160",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[3] label=\"Price Band\"",
-      "why_missing": null,
-      "source_snippet": "₹152 to ₹160"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
+      "source_snippet": null
     },
     "lot_size": {
-      "value": "93 Shares",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
-      "why_missing": null,
-      "source_snippet": "93 Shares"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
+      "source_snippet": null
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Wed, Aug 26, 2026 T",
+      "value": "Thu, Aug 27, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Wed, Aug 26, 2026 T"
+      "source_snippet": "Thu, Aug 27, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://gajacapital.com/assets/gaja-alternative-asset-management-limited---red-herring-prospectus.pdf"
+      "source_snippet": "https://www.icicisecurities.com/console/uploads/actual/TEMPSENS-INSTRUMENTS-(INDIA)-LIMITED---RED-HERRING-PROSPECTUS_1786731387_84.pdf"
     }
   },
-  "found_count": 5,
-  "precision_ratio": 0.5,
+  "found_count": 2,
+  "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://gajacapital.com/assets/gaja-alternative-asset-management-limited---red-herring-prospectus.pdf"
+    "https://www.icicisecurities.com/console/uploads/actual/TEMPSENS-INSTRUMENTS-(INDIA)-LIMITED---RED-HERRING-PROSPECTUS_1786731387_84.pdf"
   ],
-  "noise_stripped_bytes": 84083,
-  "main_content_bytes": 84083,
-  "tables_parsed": 11,
-  "table_rows_parsed": 64
+  "noise_stripped_bytes": 78052,
+  "main_content_bytes": 78052,
+  "tables_parsed": 10,
+  "table_rows_parsed": 54
 }

@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/technocrats-plasma-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 89859,
-  "main_content_bytes": 89859,
+  "noise_stripped_bytes": 89914,
+  "main_content_bytes": 89914,
   "tables_parsed": 12,
   "table_rows_parsed": 74
 }
