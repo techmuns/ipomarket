@@ -1,23 +1,13 @@
 [
   {
-    "companyName": "Behari Lal Engineering Limited",
-    "issueEndDate": "14-Aug-2026",
-    "issuePrice": "Rs.271 to Rs.285",
-    "issueSize": "7412769",
-    "issueStartDate": "12-Aug-2026",
+    "companyName": "Shankesh Jewellers Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "39482000",
+    "issueStartDate": "18-Aug-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "BLEL"
-  },
-  {
-    "companyName": "Shiprocket Limited",
-    "issueEndDate": "14-Aug-2026",
-    "issuePrice": "Rs.92 to Rs.97",
-    "issueSize": "94436030",
-    "issueStartDate": "12-Aug-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "SHIPROCKET"
+    "status": "Forthcoming",
+    "symbol": "SHANKESH"
   },
   {
     "companyName": "Sunshine Pictures Limited",
@@ -28,16 +18,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "SUNSHINE"
-  },
-  {
-    "companyName": "Shankesh Jewellers Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "39482000",
-    "issueStartDate": "18-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SHANKESH"
   },
   {
     "companyName": "Horizon Industrial Parks Limited",
