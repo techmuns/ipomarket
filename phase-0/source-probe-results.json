@@ -23,7 +23,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"companyName\": \"Shankesh Jewellers Limited\",\n  \"issueEndDate\": \"20-Aug-2026\",\n  \"issuePrice\": \"Rs.88 to Rs.93\",\n  \"issueSize\": \"39482000\",\n  \"issueStartDate\": \"18-Aug-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Forthcoming\",\n  \"symbol\": \"SHANKESH\"\n}",
+    "sample_record": "{\n  \"companyName\": \"Horizon Industrial Parks Limited\",\n  \"issueEndDate\": \"19-Aug-2026\",\n  \"issuePrice\": \"Rs.57 to Rs.60\",\n  \"issueSize\": \"251356273\",\n  \"issueStartDate\": \"17-Aug-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"HORIZONIND\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -31,9 +31,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary source for Live & Upcoming tab.",
     "fallback_source": "P-06",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 322,
-    "notes": "Total rows: 4, Active rows: 0"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 358,
+    "notes": "Total rows: 4, Active rows: 2"
   },
   {
     "probe_id": "P-02",
@@ -59,7 +59,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"companyName\": \"Shankesh Jewellers Limited\",\n  \"issueEndDate\": \"20-Aug-2026\",\n  \"issuePrice\": \"Rs.88 to Rs.93\",\n  \"issueSize\": \"39482000\",\n  \"issueStartDate\": \"18-Aug-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Forthcoming\",\n  \"symbol\": \"SHANKESH\"\n}",
+    "sample_record": "{\n  \"companyName\": \"Horizon Industrial Parks Limited\",\n  \"issueEndDate\": \"19-Aug-2026\",\n  \"issuePrice\": \"Rs.57 to Rs.60\",\n  \"issueSize\": \"251356273\",\n  \"issueStartDate\": \"17-Aug-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"HORIZONIND\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -67,9 +67,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Upcoming/Pipeline tab.",
     "fallback_source": "P-08b",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 67,
-    "notes": "Total rows: 4, Forthcoming/upcoming rows: 4"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 49,
+    "notes": "Total rows: 4, Forthcoming/upcoming rows: 2"
   },
   {
     "probe_id": "P-03",
@@ -97,7 +97,7 @@
     "fields_missing": [
       "listingDate"
     ],
-    "sample_record": "{\n  \"companyName\": \"Shankesh Jewellers Limited\",\n  \"issueEndDate\": \"20-Aug-2026\",\n  \"issuePrice\": \"Rs.88 to Rs.93\",\n  \"issueSize\": \"39482000\",\n  \"issueStartDate\": \"18-Aug-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Forthcoming\",\n  \"symbol\": \"SHANKESH\"\n}",
+    "sample_record": "{\n  \"companyName\": \"Horizon Industrial Parks Limited\",\n  \"issueEndDate\": \"19-Aug-2026\",\n  \"issuePrice\": \"Rs.57 to Rs.60\",\n  \"issueSize\": \"251356273\",\n  \"issueStartDate\": \"17-Aug-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"HORIZONIND\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -105,43 +105,43 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Recently Listed.",
     "fallback_source": "P-15",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 62,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 31,
     "notes": "Total rows: 4, Past/closed/listed rows: 0"
   },
   {
     "probe_id": "P-04",
     "source": "NSE — Live Subscription",
-    "url_or_endpoint": "https://www.nseindia.com/api/ipo-current-issue?symbol=<no-active-ipo>",
-    "fetch_method": "GET (after cookie warm-up + active-symbol discovery)",
+    "url_or_endpoint": "https://www.nseindia.com/api/ipo-current-issue?symbol=HORIZONIND",
+    "fetch_method": "GET (after cookie warm-up + active-symbol discovery from P-01 endpoint)",
     "headers_or_cookies_required": [
       "User-Agent",
       "Referer",
       "X-Requested-With",
       "warmed cookies"
     ],
-    "status_code": null,
-    "response_type": "EMPTY",
+    "status_code": 200,
+    "response_type": "JSON",
     "fields_found": [],
     "fields_missing": [
       "qib",
-      "nii_big",
-      "nii_small",
+      "nii",
       "retail",
       "employee",
-      "anchor"
+      "anchor",
+      "subscription"
     ],
-    "sample_record": "",
+    "sample_record": "[\n  {\n    \"companyName\": \"Horizon Industrial Parks Limited\",\n    \"issueEndDate\": \"19-Aug-2026\",\n    \"issuePrice\": \"Rs.57 to Rs.60\",\n    \"issueSize\": \"251356273\",\n    \"issueStartDate\": \"17-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"HORIZONIND\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"0.0\",\n    \"noOfTime\": \"0.00\",\n    \"noOfsharesBid\": \"0.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Lalithaa Jewellery Mart Limited\",\n    \"issueEndDate\": \"19-Aug-2026\",\n    \"issuePrice\": \"Rs.190 to Rs.201\",\n    \"issueSize\": \"62761403\",\n    \"issueStartDate\": \"17-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"LALITHAA\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"0.0\",\n    \"noOfTime\": \"0.00\",\n    \"noOfsharesBid\": \"0.0\",\n    \"srNo\": null\n  },\n…[truncated, total 1742 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
     "freshness_or_update_frequency": "Updates every ~10 minutes during bidding window",
-    "status": "YELLOW",
-    "recommended_action": "No currently open IPO discovered; re-run during an active issue window. Endpoint not validated this run.",
+    "status": "RED",
+    "recommended_action": "Fall back to BSE bidding (P-07).",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 120,
-    "notes": "Active candidate symbol: (none currently open)"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 427,
+    "notes": "Active candidate symbol: HORIZONIND · Top-level keys: 0, 1, 2, 3, 4"
   },
   {
     "probe_id": "P-05",
@@ -168,8 +168,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 1239,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 836,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -197,9 +197,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 5452,
-    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=45056 (pdfs=19)"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 3239,
+    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=45221 (pdfs=19)"
   },
   {
     "probe_id": "P-08b",
@@ -225,8 +225,8 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 1525,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 407,
     "notes": "static ok: tbody_rows=3, bytes=25504"
   },
   {
@@ -254,8 +254,8 @@
     "status": "GREEN",
     "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 3725,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 4031,
     "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=twerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf; bytes=756815; page_count=17; pdf-parse=ok"
   },
   {
@@ -282,8 +282,8 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 11111,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 11242,
     "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
@@ -310,9 +310,9 @@
     "status": "GREEN",
     "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 4528,
-    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22097 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [bse:RELIANCE] BSE rows=25890, fields=1"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 5137,
+    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [bse:RELIANCE] BSE rows=25890, fields=1"
   },
   {
     "probe_id": "P-15b",
@@ -331,7 +331,7 @@
     "fields_missing": [
       "priceInfo"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;7c7dd17&#46;1786879991&#46;1dee1ad4\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;7c7dd17&#46;1786879991&#46;1dee1ad4</P>\n</BODY>\n</HTML>\n",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;73cfdb17&#46;1786908731&#46;5f4c5479\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;73cfdb17&#46;1786908731&#46;5f4c5479</P>\n</BODY>\n</HTML>\n",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -339,9 +339,9 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE quote.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 75,
-    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 397 chars]"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 40,
+    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
   },
   {
     "probe_id": "P-16",
@@ -359,7 +359,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"Shankesh Jewellers Limited\": \"SHANKESH\",\n  \"Sunshine Pictures Limited\": \"SUNSHINE\",\n  \"Horizon Industrial Parks Limited\": \"HORIZONIND\",\n  \"Lalithaa Jewellery Mart Limited\": \"LALITHAA\"\n}",
+    "sample_record": "{\n  \"Horizon Industrial Parks Limited\": \"HORIZONIND\",\n  \"Lalithaa Jewellery Mart Limited\": \"LALITHAA\",\n  \"Sunshine Pictures Limited\": \"SUNSHINE\",\n  \"Shankesh Jewellers Limited\": \"SHANKESH\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -367,8 +367,8 @@
     "status": "GREEN",
     "recommended_action": "Deterministic mapping; no manual override file needed for v1.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 378,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 275,
     "notes": "total=4, validSymbolPattern=4, rate=100%"
   },
   {
@@ -394,8 +394,8 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 686,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 1804,
     "notes": "<tr> count: 0, total bytes: 13850"
   },
   {
@@ -421,8 +421,8 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 10484,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 10116,
     "notes": "Network error: fetch failed"
   },
   {
@@ -448,8 +448,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 253,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 402,
     "notes": "Bid-link markers found: 0, bytes: 13850"
   },
   {
@@ -468,7 +468,7 @@
     "fields_missing": [
       "registrar field"
     ],
-    "sample_record": "{\n  \"Shankesh Jewellers Limited\": null,\n  \"Sunshine Pictures Limited\": null,\n  \"Horizon Industrial Parks Limited\": null,\n  \"Lalithaa Jewellery Mart Limited\": null\n}",
+    "sample_record": "{\n  \"Horizon Industrial Parks Limited\": null,\n  \"Lalithaa Jewellery Mart Limited\": null,\n  \"Sunshine Pictures Limited\": null,\n  \"Shankesh Jewellers Limited\": null\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -476,8 +476,8 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 75,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 110,
     "notes": "Issues=4, registrars resolved by name match=0"
   },
   {
@@ -494,7 +494,7 @@
       "landing page reachable"
     ],
     "fields_missing": [],
-    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37481 chars]",
+    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37480 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -502,8 +502,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 611,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 768,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -528,8 +528,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 156,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 140,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -554,8 +554,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 900,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 1024,
     "notes": "status=200"
   },
   {
@@ -580,8 +580,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 705,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 768,
     "notes": "status=200"
   },
   {
@@ -604,8 +604,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 709,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 740,
     "notes": "No PDF URL discovered."
   },
   {
@@ -628,8 +628,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 232,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 250,
     "notes": "No PDF URL discovered."
   },
   {
@@ -655,8 +655,8 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 1324,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 1513,
     "notes": "<tr> count: 320, bytes=885292"
   },
   {
@@ -674,7 +674,7 @@
     "fields_missing": [
       "gmp table"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/home.png\"/><link …[truncated, total 125018 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/zerodha_logo_small.gif\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/angel-broking-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/kotak-neo-logo.j…[truncated, total 124293 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -682,9 +682,9 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 490,
-    "notes": "<tr> count: 0, bytes=125018"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 1272,
+    "notes": "<tr> count: 0, bytes=124293"
   },
   {
     "probe_id": "P-21",
@@ -701,7 +701,7 @@
       "discussion / table markers"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html >\n<!--[if IE 8]><html class=\"ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 9]><html class=\"ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--><html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]--><head><title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"pingback\" href=\"https://ipocentral.in/xmlrpc.php\" /> <script data-no-defer=\"1…[truncated, total 345585 chars]",
+    "sample_record": "<!doctype html >\n<!--[if IE 8]><html class=\"ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 9]><html class=\"ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--><html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]--><head><title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"pingback\" href=\"https://ipocentral.in/xmlrpc.php\" /> <script data-no-defer=\"1…[truncated, total 346768 chars]",
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -709,9 +709,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager (lower weight given parsing difficulty).",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 90,
-    "notes": "<tr> count: 24, bytes=345585"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 87,
+    "notes": "<tr> count: 25, bytes=346768"
   },
   {
     "probe_id": "P-22",
@@ -736,8 +736,8 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 117,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 318,
     "notes": "<tr> count: 2, bytes=135153"
   },
   {
@@ -779,8 +779,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 4479,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 4317,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38014 | rendered_len=38836 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -816,9 +816,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 4903,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235304 | rendered_len=278182 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 5886,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235304 | rendered_len=280133 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-24",
@@ -844,8 +844,8 @@
     "status": "RED",
     "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 1025,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 628,
     "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 4 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850"
   },
   {
@@ -875,9 +875,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 92,
-    "notes": "mainboard: static status=200 bytes=148548 | sme: static status=200 bytes=149780 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=301184 | detail-2: static status=200 bytes=257024 | challenges_detected=false"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 201,
+    "notes": "mainboard: static status=200 bytes=148548 | sme: static status=200 bytes=149780 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=301460 | detail-2: static status=200 bytes=257300 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -919,9 +919,9 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 16,
-    "notes": "details_extracted=2 | avg_precision=0.350 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=88434b tables=11 rows=72 | d2: main=78782b tables=11 rows=60"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 14,
+    "notes": "details_extracted=2 | avg_precision=0.350 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=88489b tables=11 rows=72 | d2: main=78837b tables=11 rows=60"
   },
   {
     "probe_id": "P-27",
@@ -962,8 +962,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 3468,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 3434,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38014 | rendered_len=38836 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -999,9 +999,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 5190,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235304 | rendered_len=279786 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 5688,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235304 | rendered_len=278649 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-25b",
@@ -1029,9 +1029,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 2647,
-    "notes": "third_ipo_status=current | third_ipo_slug=technocrats-plasma-systems-ipo | third_ipo_reason=\"current-open: list \"sme\" row date range \"14 - 18 Aug\" covers today\" | detail-1: static status=200 bytes=367815 | detail-2: static status=200 bytes=341948 | detail-3: static status=200 bytes=311652 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 2399,
+    "notes": "third_ipo_status=current | third_ipo_slug=technocrats-plasma-systems-ipo | third_ipo_reason=\"current-open: list \"sme\" row date range \"14 - 18 Aug\" covers today\" | detail-1: static status=200 bytes=367686 | detail-2: static status=200 bytes=341948 | detail-3: static status=200 bytes=311652 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
     "probe_id": "P-26b",
@@ -1086,8 +1086,8 @@
     "status": "GREEN",
     "recommended_action": "Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-08-16T11:32:42.931Z",
-    "latency_ms": 27,
+    "ran_at_utc": "2026-08-16T19:31:44.985Z",
+    "latency_ms": 25,
     "notes": "details_extracted=3 | avg_full=0.848 | avg_narrow=1.000 | pdf_on_allowlist=2 | pdf_off_allowlist=1 | third_ipo=technocrats-plasma-systems-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:technocrats-plasma-systems-ipo full=0.82 narrow=1.00"
   }
 ]

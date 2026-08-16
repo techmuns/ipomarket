@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-16T11:32:42.931Z",
+  "captured_at_utc": "2026-08-16T19:31:44.985Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
       "mode": "static",
       "status": 200,
-      "bytes": 301184,
+      "bytes": 301460,
       "title": "Skyways Air IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
       "mode": "static",
       "status": 200,
-      "bytes": 257024,
+      "bytes": 257300,
       "title": "Tempsens Instruments (India) IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

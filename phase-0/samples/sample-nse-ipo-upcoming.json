@@ -1,13 +1,23 @@
 [
   {
-    "companyName": "Shankesh Jewellers Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "39482000",
-    "issueStartDate": "18-Aug-2026",
+    "companyName": "Horizon Industrial Parks Limited",
+    "issueEndDate": "19-Aug-2026",
+    "issuePrice": "Rs.57 to Rs.60",
+    "issueSize": "251356273",
+    "issueStartDate": "17-Aug-2026",
     "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SHANKESH"
+    "status": "Active",
+    "symbol": "HORIZONIND"
+  },
+  {
+    "companyName": "Lalithaa Jewellery Mart Limited",
+    "issueEndDate": "19-Aug-2026",
+    "issuePrice": "Rs.190 to Rs.201",
+    "issueSize": "62761403",
+    "issueStartDate": "17-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LALITHAA"
   },
   {
     "companyName": "Sunshine Pictures Limited",
@@ -20,23 +30,13 @@
     "symbol": "SUNSHINE"
   },
   {
-    "companyName": "Horizon Industrial Parks Limited",
-    "issueEndDate": "19-Aug-2026",
-    "issuePrice": "Rs.57 to Rs.60",
-    "issueSize": "251356273",
-    "issueStartDate": "17-Aug-2026",
+    "companyName": "Shankesh Jewellers Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "39482000",
+    "issueStartDate": "18-Aug-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "HORIZONIND"
-  },
-  {
-    "companyName": "Lalithaa Jewellery Mart Limited",
-    "issueEndDate": "19-Aug-2026",
-    "issuePrice": "Rs.190 to Rs.201",
-    "issueSize": "62761403",
-    "issueStartDate": "17-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "LALITHAA"
+    "symbol": "SHANKESH"
   }
 ]
