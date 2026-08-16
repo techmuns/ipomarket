@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-16T03:57:02.424Z",
+  "captured_at_utc": "2026-08-16T11:32:42.931Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45221,
+      "bytes": 45056,
       "tr_count": 26,
       "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=45221"
+      "notes": "static ok: tr=26, bytes=45056"
     }
   ],
   "detail_urls_found": 31,
@@ -60,6 +60,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Master%20Chains%20N%20Jewels%20Limited%20-%20AP_p.pdf",
       "link_text": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/IFL%20Finance%20Ltd-%20DAP_p.pdf",
+      "link_text": "IFL Finance Ltd. - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -110,11 +115,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Stalwart%20People%20Services%20India%20Limited%20-%20Abri_p.pdf",
       "link_text": "Stalwart People Services India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Functional%20&%20Innovative%20Foods%20Limited-%20Abri_p.pdf",
-      "link_text": "Functional & Innovative Foods Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

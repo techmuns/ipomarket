@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-16T03:57:02.424Z",
+  "generated_at_utc": "2026-08-16T11:32:42.931Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.35,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 88489,
+      "main_content_bytes": 88434,
       "tables_parsed": 11,
       "table_rows_parsed": 72,
       "fields_high_confidence": [
@@ -36,7 +36,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 78837,
+      "main_content_bytes": 78782,
       "tables_parsed": 11,
       "table_rows_parsed": 60,
       "fields_high_confidence": [
