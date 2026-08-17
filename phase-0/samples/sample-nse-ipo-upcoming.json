@@ -1,5 +1,25 @@
 [
   {
+    "companyName": "Sunshine Pictures Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.342 to Rs.360",
+    "issueSize": "5486051",
+    "issueStartDate": "18-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SUNSHINE"
+  },
+  {
+    "companyName": "Shankesh Jewellers Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "27637400",
+    "issueStartDate": "18-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SHANKESH"
+  },
+  {
     "companyName": "Lalithaa Jewellery Mart Limited",
     "issueEndDate": "19-Aug-2026",
     "issuePrice": "Rs.190 to Rs.201",
@@ -28,25 +48,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "GAJA"
-  },
-  {
-    "companyName": "Sunshine Pictures Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.342 to Rs.360",
-    "issueSize": "7837191",
-    "issueStartDate": "18-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SUNSHINE"
-  },
-  {
-    "companyName": "Shankesh Jewellers Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "39482000",
-    "issueStartDate": "18-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SHANKESH"
   }
 ]

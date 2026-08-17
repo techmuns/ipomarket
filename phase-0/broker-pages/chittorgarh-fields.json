@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-17T11:37:03.601Z",
+  "captured_at_utc": "2026-08-17T19:38:01.798Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149405,
+      "bytes": 149453,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149684,
+      "bytes": 149694,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
       "mode": "static",
       "status": 200,
-      "bytes": 301460,
+      "bytes": 301184,
       "title": "Skyways Air IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

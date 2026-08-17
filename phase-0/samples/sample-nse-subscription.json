@@ -1,5 +1,35 @@
 [
   {
+    "companyName": "Sunshine Pictures Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.342 to Rs.360",
+    "issueSize": "5486051",
+    "issueStartDate": "18-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SUNSHINE",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Shankesh Jewellers Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "27637400",
+    "issueStartDate": "18-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SHANKESH",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Lalithaa Jewellery Mart Limited",
     "issueEndDate": "19-Aug-2026",
     "issuePrice": "Rs.190 to Rs.201",
@@ -40,18 +70,6 @@
     "noOfsharesBid": "2750400",
     "noOfSharesOffered": "2945600",
     "noOfTime": "0.93"
-  },
-  {
-    "companyName": "Credent Connect N Care Limited",
-    "isBse": "1",
-    "issueEndDate": "17-Aug-2026",
-    "issueStartDate": "13-Aug-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "CREDENT",
-    "noOfsharesBid": "507430200",
-    "noOfSharesOffered": "3564000",
-    "noOfTime": "142.38"
   },
   {
     "companyName": "Fascinate Textiles Limited",

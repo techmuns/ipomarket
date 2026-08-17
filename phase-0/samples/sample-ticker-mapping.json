@@ -2,10 +2,10 @@
   "total": 5,
   "valid": 5,
   "examples": {
+    "Sunshine Pictures Limited": "SUNSHINE",
+    "Shankesh Jewellers Limited": "SHANKESH",
     "Lalithaa Jewellery Mart Limited": "LALITHAA",
     "Horizon Industrial Parks Limited": "HORIZONIND",
-    "Gaja Alternative Asset Management Limited": "GAJA",
-    "Sunshine Pictures Limited": "SUNSHINE",
-    "Shankesh Jewellers Limited": "SHANKESH"
+    "Gaja Alternative Asset Management Limited": "GAJA"
   }
 }
