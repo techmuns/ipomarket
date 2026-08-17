@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-16T19:31:44.985Z",
+  "captured_at_utc": "2026-08-17T03:59:45.203Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148548,
+      "bytes": 149405,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149780,
+      "bytes": 149752,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
       "mode": "static",
       "status": 200,
-      "bytes": 257300,
+      "bytes": 278054,
       "title": "Tempsens Instruments (India) IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
