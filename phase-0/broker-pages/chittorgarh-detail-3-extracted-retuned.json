@@ -88,9 +88,9 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.axiscapital.co.in/contents/Horizon%20Industrial%20Parks%20Limited_RHP-1786462662.pdf"
+      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
+      "why_missing": "2 PDF link(s) found but none on the official allow-list",
+      "source_snippet": "https://listing.bseindia.com/download//preanchor/rhp_20260812192140.pdf | https://www.chittorgarh.net/reports/anchor-investor/horizon-industrial-parks-ipo-anchor-allocation-letter.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,11 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.axiscapital.co.in/contents/Horizon%20Industrial%20Parks%20Limited_RHP-1786462662.pdf"
+    "https://listing.bseindia.com/download//preanchor/rhp_20260812192140.pdf",
+    "https://www.chittorgarh.net/reports/anchor-investor/horizon-industrial-parks-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 83276,
-  "main_content_bytes": 83276,
-  "tables_parsed": 12,
-  "table_rows_parsed": 60
+  "noise_stripped_bytes": 88676,
+  "main_content_bytes": 88676,
+  "tables_parsed": 13,
+  "table_rows_parsed": 72
 }

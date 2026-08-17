@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-17T03:59:45.203Z",
+  "captured_at_utc": "2026-08-17T11:37:03.601Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,17 +14,22 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45221,
+      "bytes": 45069,
       "tr_count": 26,
       "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=45221"
+      "notes": "static ok: tr=26, bytes=45069"
     }
   ],
-  "detail_urls_found": 31,
+  "detail_urls_found": 30,
   "pdfs": [
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf",
       "link_text": "Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Tonbo%20Imaging%20India%20Limited%20-%20DAP_p.pdf",
+      "link_text": "Tonbo Imaging India Limited- Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -110,11 +115,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Stalwart%20People%20Services%20India%20Limited%20-%20Abri_p.pdf",
       "link_text": "Stalwart People Services India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Functional%20&%20Innovative%20Foods%20Limited-%20Abri_p.pdf",
-      "link_text": "Functional & Innovative Foods Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
