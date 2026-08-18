@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-18T03:55:46.622Z",
+  "captured_at_utc": "2026-08-18T11:37:17.055Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,24 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45069,
+      "bytes": 45350,
       "tr_count": 26,
-      "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=45069"
+      "pdfs_found": 20,
+      "notes": "static ok: tr=26, bytes=45350"
     }
   ],
-  "detail_urls_found": 30,
+  "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf",
+      "link_text": "TABLESPACE TECHNOLOGIES LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Muthoot%20Fincorp%20DAP_p.pdf",
+      "link_text": "Muthoot Fincorp Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf",
       "link_text": "Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus",
@@ -68,6 +78,11 @@
       "source": "static-alt"
     },
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/IFL%20Finance%20Ltd-%20DAP_p.pdf",
+      "link_text": "IFL Finance Ltd. - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
       "link_text": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
       "source": "static-alt"
@@ -105,16 +120,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Pragyawan%20Technologies%20Limited%20-%20Abriged_p.PDF",
       "link_text": "Pragyawan Technologies Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/SWARA%20Baby%20Products%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Swara Baby Products Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Stalwart%20People%20Services%20India%20Limited%20-%20Abri_p.pdf",
-      "link_text": "Stalwart People Services India Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

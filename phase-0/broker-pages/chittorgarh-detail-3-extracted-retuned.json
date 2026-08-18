@@ -88,9 +88,9 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/shankesh-jewellers-limited_rhp.pdf"
+      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
+      "why_missing": "2 PDF link(s) found but none on the official allow-list",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/shankesh-jewellers-limited_rhp.pdf | https://www.chittorgarh.net/reports/anchor-investor/shankesh-jewellers-ipo-anchor-allocation-letter.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,11 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/shankesh-jewellers-limited_rhp.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/shankesh-jewellers-limited_rhp.pdf",
+    "https://www.chittorgarh.net/reports/anchor-investor/shankesh-jewellers-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 87414,
-  "main_content_bytes": 87414,
-  "tables_parsed": 12,
-  "table_rows_parsed": 68
+  "noise_stripped_bytes": 91778,
+  "main_content_bytes": 91778,
+  "tables_parsed": 13,
+  "table_rows_parsed": 78
 }

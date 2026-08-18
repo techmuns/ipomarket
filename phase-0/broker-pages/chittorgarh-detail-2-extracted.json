@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/augmont-enterprises-ltd-rhp.pdf"
   ],
-  "noise_stripped_bytes": 86264,
-  "main_content_bytes": 86264,
+  "noise_stripped_bytes": 86319,
+  "main_content_bytes": 86319,
   "tables_parsed": 12,
   "table_rows_parsed": 71
 }

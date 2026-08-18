@@ -20,6 +20,16 @@
     "symbol": "SHANKESH"
   },
   {
+    "companyName": "Horizon Industrial Parks Limited",
+    "issueEndDate": "19-Aug-2026",
+    "issuePrice": "Rs.57 to Rs.60",
+    "issueSize": "251356273",
+    "issueStartDate": "17-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "HORIZONIND"
+  },
+  {
     "companyName": "Lalithaa Jewellery Mart Limited",
     "issueEndDate": "19-Aug-2026",
     "issuePrice": "Rs.190 to Rs.201",
@@ -30,14 +40,24 @@
     "symbol": "LALITHAA"
   },
   {
-    "companyName": "Horizon Industrial Parks Limited",
-    "issueEndDate": "19-Aug-2026",
-    "issuePrice": "Rs.57 to Rs.60",
-    "issueSize": "251356273",
-    "issueStartDate": "17-Aug-2026",
+    "companyName": "Skyways Air Services Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.131 to Rs.138",
+    "issueSize": "42231600",
+    "issueStartDate": "24-Aug-2026",
     "series": "EQ",
-    "status": "Active",
-    "symbol": "HORIZONIND"
+    "status": "Forthcoming",
+    "symbol": "SKYWAYS"
+  },
+  {
+    "companyName": "Tempsens Instruments (India) Limited",
+    "issueEndDate": "24-Aug-2026",
+    "issuePrice": "Rs.285 to Rs.300",
+    "issueSize": "21833332",
+    "issueStartDate": "20-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "TEMPSENS"
   },
   {
     "companyName": "Gaja Alternative Asset Management Limited",
