@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
+  "source_url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
   "fields": {
     "company_name": {
-      "value": "Tempsens Instruments (India) IPO",
+      "value": "Augmont Enterprises IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Tempsens Instruments (India) IPO"
+      "source_snippet": "Augmont Enterprises IPO"
     },
     "issue_size_cr": {
-      "value": "2,16,66,666 shares (agg. up to ₹ 650 Cr)",
+      "value": "1,04,69,541 shares (agg. up to ₹ 825 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "2,16,66,666 shares (agg. up to ₹ 650 Cr)"
+      "source_snippet": "1,04,69,541 shares (agg. up to ₹ 825 Cr)"
     },
     "price_band": {
-      "value": "₹285 to ₹300",
+      "value": "₹750 to ₹788",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹285 to ₹300"
+      "source_snippet": "₹750 to ₹788"
     },
     "lot_size": {
-      "value": "50 Shares",
+      "value": "19 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "50 Shares"
+      "source_snippet": "19 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Fri, Aug 28, 2026 T",
+      "value": "Mon, Aug 31, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Fri, Aug 28, 2026 T"
+      "source_snippet": "Mon, Aug 31, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.icicisecurities.com/console/uploads/actual/TEMPSENS-INSTRUMENTS-(INDIA)-LIMITED---RED-HERRING-PROSPECTUS_1786731387_84.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/augmont-enterprises-ltd-rhp.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.icicisecurities.com/console/uploads/actual/TEMPSENS-INSTRUMENTS-(INDIA)-LIMITED---RED-HERRING-PROSPECTUS_1786731387_84.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/augmont-enterprises-ltd-rhp.pdf"
   ],
-  "noise_stripped_bytes": 84816,
-  "main_content_bytes": 84816,
+  "noise_stripped_bytes": 86264,
+  "main_content_bytes": 86264,
   "tables_parsed": 12,
-  "table_rows_parsed": 72
+  "table_rows_parsed": 71
 }

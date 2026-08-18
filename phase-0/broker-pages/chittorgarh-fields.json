@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-17T19:38:01.798Z",
+  "captured_at_utc": "2026-08-18T03:55:46.622Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149453,
+      "bytes": 149540,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149694,
+      "bytes": 149650,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
+    "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
     "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
     "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
     "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
     "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
     "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
-    "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/",
-    "https://www.chittorgarh.com/ipo/indo-mim-ipo/2682/"
+    "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
+      "url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
       "segment_guess": "unknown"
     }
   ],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
       "mode": "static",
       "status": 200,
-      "bytes": 301184,
+      "bytes": 301460,
       "title": "Skyways Air IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
+      "url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
       "mode": "static",
       "status": 200,
-      "bytes": 278054,
-      "title": "Tempsens Instruments (India) IPO Date, Price, GMP, Details",
+      "bytes": 283284,
+      "title": "Augmont Enterprises IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

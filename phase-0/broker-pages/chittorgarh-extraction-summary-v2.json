@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-17T19:38:01.798Z",
+  "generated_at_utc": "2026-08-18T03:55:46.622Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "horizon-industrial-parks-ipo",
-    "url": "https://www.chittorgarh.com/ipo/horizon-industrial-parks-ipo/2826/",
+    "slug": "shankesh-jewellers-ipo",
+    "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"17 - 19 Aug\" covers today",
-    "date_text": "17 - 19 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"18 - 20 Aug\" covers today",
+    "date_text": "18 - 20 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85251,
+      "main_content_bytes": 85250,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "horizon-industrial-parks-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/horizon-industrial-parks-ipo/2826/",
+      "slug": "shankesh-jewellers-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 88621,
-      "tables_parsed": 13,
-      "table_rows_parsed": 72,
+      "main_content_bytes": 87414,
+      "tables_parsed": 12,
+      "table_rows_parsed": 68,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -111,7 +111,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }
