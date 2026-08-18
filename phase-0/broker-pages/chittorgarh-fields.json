@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-18T11:37:17.055Z",
+  "captured_at_utc": "2026-08-18T19:42:07.453Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149542,
+      "bytes": 149562,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149703,
+      "bytes": 149723,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
       "mode": "static",
       "status": 200,
-      "bytes": 283560,
+      "bytes": 283620,
       "title": "Augmont Enterprises IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

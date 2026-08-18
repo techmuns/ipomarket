@@ -1,13 +1,13 @@
 [
   {
-    "companyName": "Sunshine Pictures Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.342 to Rs.360",
-    "issueSize": "5486051",
-    "issueStartDate": "18-Aug-2026",
+    "companyName": "Gaja Alternative Asset Management Limited",
+    "issueEndDate": "21-Aug-2026",
+    "issuePrice": "Rs.152 to Rs.160",
+    "issueSize": "25328946",
+    "issueStartDate": "19-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "SUNSHINE"
+    "symbol": "GAJA"
   },
   {
     "companyName": "Shankesh Jewellers Limited",
@@ -20,14 +20,14 @@
     "symbol": "SHANKESH"
   },
   {
-    "companyName": "Horizon Industrial Parks Limited",
-    "issueEndDate": "19-Aug-2026",
-    "issuePrice": "Rs.57 to Rs.60",
-    "issueSize": "251356273",
-    "issueStartDate": "17-Aug-2026",
+    "companyName": "Sunshine Pictures Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.342 to Rs.360",
+    "issueSize": "5486051",
+    "issueStartDate": "18-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "HORIZONIND"
+    "symbol": "SUNSHINE"
   },
   {
     "companyName": "Lalithaa Jewellery Mart Limited",
@@ -38,6 +38,16 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "LALITHAA"
+  },
+  {
+    "companyName": "Horizon Industrial Parks Limited",
+    "issueEndDate": "19-Aug-2026",
+    "issuePrice": "Rs.57 to Rs.60",
+    "issueSize": "251356273",
+    "issueStartDate": "17-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "HORIZONIND"
   },
   {
     "companyName": "Skyways Air Services Limited",
@@ -58,15 +68,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "TEMPSENS"
-  },
-  {
-    "companyName": "Gaja Alternative Asset Management Limited",
-    "issueEndDate": "21-Aug-2026",
-    "issuePrice": "Rs.152 to Rs.160",
-    "issueSize": "36184210",
-    "issueStartDate": "19-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "GAJA"
   }
 ]

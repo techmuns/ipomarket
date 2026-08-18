@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-18T11:37:17.055Z",
+  "captured_at_utc": "2026-08-18T19:42:07.453Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45350,
+      "bytes": 45443,
       "tr_count": 26,
       "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=45350"
+      "notes": "static ok: tr=26, bytes=45443"
     }
   ],
   "detail_urls_found": 31,
@@ -78,11 +78,6 @@
       "source": "static-alt"
     },
     {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/IFL%20Finance%20Ltd-%20DAP_p.pdf",
-      "link_text": "IFL Finance Ltd. - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
       "link_text": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
       "source": "static-alt"
@@ -120,6 +115,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Pragyawan%20Technologies%20Limited%20-%20Abriged_p.PDF",
       "link_text": "Pragyawan Technologies Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/SWARA%20Baby%20Products%20Limited%20-%20DAP_p.pdf",
+      "link_text": "Swara Baby Products Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

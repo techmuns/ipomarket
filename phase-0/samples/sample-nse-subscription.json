@@ -1,17 +1,17 @@
 [
   {
-    "companyName": "Sunshine Pictures Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.342 to Rs.360",
-    "issueSize": "5486051",
-    "issueStartDate": "18-Aug-2026",
+    "companyName": "Gaja Alternative Asset Management Limited",
+    "issueEndDate": "21-Aug-2026",
+    "issuePrice": "Rs.152 to Rs.160",
+    "issueSize": "25328946",
+    "issueStartDate": "19-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "SUNSHINE",
+    "symbol": "GAJA",
     "category": "Total",
-    "noOfSharesOffered": "5486051.0",
-    "noOfTime": "3.183404419681844",
-    "noOfsharesBid": "1.7464319E7",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
     "srNo": null
   },
   {
@@ -30,18 +30,18 @@
     "srNo": null
   },
   {
-    "companyName": "Horizon Industrial Parks Limited",
-    "issueEndDate": "19-Aug-2026",
-    "issuePrice": "Rs.57 to Rs.60",
-    "issueSize": "251356273",
-    "issueStartDate": "17-Aug-2026",
+    "companyName": "Sunshine Pictures Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.342 to Rs.360",
+    "issueSize": "5486051",
+    "issueStartDate": "18-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "HORIZONIND",
+    "symbol": "SUNSHINE",
     "category": "Total",
-    "noOfSharesOffered": "2.51356273E8",
-    "noOfTime": "0.11578187268873134",
-    "noOfsharesBid": "2.91025E7",
+    "noOfSharesOffered": "5486051.0",
+    "noOfTime": "3.183404419681844",
+    "noOfsharesBid": "1.7464319E7",
     "srNo": null
   },
   {
@@ -60,16 +60,19 @@
     "srNo": null
   },
   {
-    "companyName": "Skytech Infinite Platform Limited",
-    "isBse": "1",
-    "issueEndDate": "18-Aug-2026",
-    "issueStartDate": "14-Aug-2026",
-    "series": "SME",
+    "companyName": "Horizon Industrial Parks Limited",
+    "issueEndDate": "19-Aug-2026",
+    "issuePrice": "Rs.57 to Rs.60",
+    "issueSize": "251356273",
+    "issueStartDate": "17-Aug-2026",
+    "series": "EQ",
     "status": "Active",
-    "symbol": "SKYTECH",
-    "noOfsharesBid": "5857600",
-    "noOfSharesOffered": "2945600",
-    "noOfTime": "1.99"
+    "symbol": "HORIZONIND",
+    "category": "Total",
+    "noOfSharesOffered": "2.51356273E8",
+    "noOfTime": "0.11578187268873134",
+    "noOfsharesBid": "2.91025E7",
+    "srNo": null
   },
   {
     "companyName": "Fascinate Textiles Limited",
