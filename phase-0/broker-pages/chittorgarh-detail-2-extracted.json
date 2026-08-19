@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
+  "source_url": "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/",
   "fields": {
     "company_name": {
-      "value": "Augmont Enterprises IPO",
+      "value": "Hy-Tech Engineers IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Augmont Enterprises IPO"
+      "source_snippet": "Hy-Tech Engineers IPO"
     },
     "issue_size_cr": {
-      "value": "1,04,69,541 shares (agg. up to ₹ 825 Cr)",
+      "value": "2,56,10,204 shares (agg. up to ₹ 136 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,04,69,541 shares (agg. up to ₹ 825 Cr)"
+      "source_snippet": "2,56,10,204 shares (agg. up to ₹ 136 Cr)"
     },
     "price_band": {
-      "value": "₹750 to ₹788",
+      "value": "₹50 to ₹53",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹750 to ₹788"
+      "source_snippet": "₹50 to ₹53"
     },
     "lot_size": {
-      "value": "19 Shares",
+      "value": "283 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "19 Shares"
+      "source_snippet": "283 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Mon, Aug 31, 2026 T",
+      "value": "Tue, Sep 1, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Mon, Aug 31, 2026 T"
+      "source_snippet": "Tue, Sep 1, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/augmont-enterprises-ltd-rhp.pdf"
+      "source_snippet": "https://www.hy-techengineers.com/pdf/Project%20Darwin_RHP_170826_website.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/augmont-enterprises-ltd-rhp.pdf"
+    "https://www.hy-techengineers.com/pdf/Project%20Darwin_RHP_170826_website.pdf"
   ],
-  "noise_stripped_bytes": 86318,
-  "main_content_bytes": 86318,
-  "tables_parsed": 12,
-  "table_rows_parsed": 71
+  "noise_stripped_bytes": 83145,
+  "main_content_bytes": 83145,
+  "tables_parsed": 11,
+  "table_rows_parsed": 62
 }

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-18T19:42:07.453Z",
+  "captured_at_utc": "2026-08-19T03:56:38.950Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "shankesh-jewellers-ipo",
-    "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
+    "slug": "gaja-alternative-asset-management-ipo",
+    "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"18 - 20 Aug\" covers today",
-    "date_text": "18 - 20 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"19 - 21 Aug\" covers today",
+    "date_text": "19 - 21 Aug",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
-      "slug": "shankesh-jewellers-ipo"
+      "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
+      "slug": "gaja-alternative-asset-management-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 341773,
+      "bytes": 341902,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
+      "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
       "mode": "static",
       "status": 200,
-      "bytes": 322624,
-      "title": "Shankesh Jewellers IPO Date, Price, GMP, Review, Details",
+      "bytes": 290092,
+      "title": "Gaja Alternative Asset Management IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

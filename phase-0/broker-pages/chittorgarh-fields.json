@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-18T19:42:07.453Z",
+  "captured_at_utc": "2026-08-19T03:56:38.950Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149562,
+      "bytes": 149577,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149723,
+      "bytes": 150039,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,8 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+    "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/",
     "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
     "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
     "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
@@ -45,41 +47,39 @@
     "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
     "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
     "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/",
-    "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/",
-    "https://www.chittorgarh.com/ipo/manipal-health-enterprises-ipo/2956/",
-    "https://www.chittorgarh.com/ipo/xtranet-technologies-ipo/2688/"
+    "https://www.chittorgarh.com/ipo/juniper-green-energy-ipo/2492/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
+      "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
+      "url": "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
+      "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
       "mode": "static",
       "status": 200,
-      "bytes": 301460,
-      "title": "Skyways Air IPO Date, Price, GMP, Review, Details",
+      "bytes": 303487,
+      "title": "Symbiotec Pharmalab IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
+      "url": "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/",
       "mode": "static",
       "status": 200,
-      "bytes": 283620,
-      "title": "Augmont Enterprises IPO Date, Price, GMP, Review, Details",
+      "bytes": 277209,
+      "title": "Hy-Tech Engineers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

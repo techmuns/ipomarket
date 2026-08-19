@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-18T19:42:07.453Z",
+  "generated_at_utc": "2026-08-19T03:56:38.950Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "shankesh-jewellers-ipo",
-    "url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
+    "slug": "gaja-alternative-asset-management-ipo",
+    "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"18 - 20 Aug\" covers today",
-    "date_text": "18 - 20 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"19 - 21 Aug\" covers today",
+    "date_text": "19 - 21 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85248,
+      "main_content_bytes": 85251,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "shankesh-jewellers-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
+      "slug": "gaja-alternative-asset-management-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 91809,
-      "tables_parsed": 13,
-      "table_rows_parsed": 78,
+      "main_content_bytes": 86230,
+      "tables_parsed": 12,
+      "table_rows_parsed": 68,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -111,7 +111,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

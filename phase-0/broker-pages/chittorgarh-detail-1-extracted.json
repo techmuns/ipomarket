@@ -1,39 +1,39 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
+  "source_url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
   "fields": {
     "company_name": {
-      "value": "Skyways Air Services IPO",
+      "value": "Symbiotec Pharmalab IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Skyways Air Services IPO"
+      "source_snippet": "Symbiotec Pharmalab IPO"
     },
     "issue_size_cr": {
-      "value": "4,22,31,600 shares (agg. up to ₹ 583 Cr)",
+      "value": "1,77,86,442 shares (agg. up to ₹ 1,757 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "4,22,31,600 shares (agg. up to ₹ 583 Cr)"
+      "source_snippet": "1,77,86,442 shares (agg. up to ₹ 1,757 Cr)"
     },
     "price_band": {
-      "value": "₹131 to ₹138",
+      "value": "₹938 to ₹988",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹131 to ₹138"
+      "source_snippet": "₹938 to ₹988"
     },
     "lot_size": {
-      "value": "100 Shares",
+      "value": "15 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "100 Shares"
+      "source_snippet": "15 Shares"
     },
     "open_date": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://r2.skyways-air.in/RHP-Skyways.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://r2.skyways-air.in/RHP-Skyways.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf"
   ],
-  "noise_stripped_bytes": 88489,
-  "main_content_bytes": 88489,
-  "tables_parsed": 11,
-  "table_rows_parsed": 72
+  "noise_stripped_bytes": 89896,
+  "main_content_bytes": 89896,
+  "tables_parsed": 12,
+  "table_rows_parsed": 77
 }
