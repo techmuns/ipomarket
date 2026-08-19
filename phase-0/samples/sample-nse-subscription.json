@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "GAJA",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "2.5328946E7",
+    "noOfTime": "0.502364093634216",
+    "noOfsharesBid": "1.2724353E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "SHANKESH",
     "category": "Total",
     "noOfSharesOffered": "2.76374E7",
-    "noOfTime": "0.23416963969114316",
-    "noOfsharesBid": "6471840.0",
+    "noOfTime": "0.6768914586755628",
+    "noOfsharesBid": "1.870752E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "SUNSHINE",
     "category": "Total",
     "noOfSharesOffered": "5486051.0",
-    "noOfTime": "3.183404419681844",
-    "noOfsharesBid": "1.7464319E7",
+    "noOfTime": "13.671048628603709",
+    "noOfsharesBid": "7.500007E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "LALITHAA",
     "category": "Total",
     "noOfSharesOffered": "6.2761403E7",
-    "noOfTime": "2.2372909350034766",
-    "noOfsharesBid": "1.40415518E8",
+    "noOfTime": "46.83637690508608",
+    "noOfsharesBid": "2.939516726E9",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "HORIZONIND",
     "category": "Total",
     "noOfSharesOffered": "2.51356273E8",
-    "noOfTime": "0.11578187268873134",
-    "noOfsharesBid": "2.91025E7",
+    "noOfTime": "0.9035422004367482",
+    "noOfsharesBid": "2.27111E8",
     "srNo": null
   },
   {
@@ -82,8 +82,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "FASCINATE",
-    "noOfsharesBid": "4081600",
+    "noOfsharesBid": "6239200",
     "noOfSharesOffered": "4293600",
-    "noOfTime": "0.95"
+    "noOfTime": "1.45"
   }
 ]

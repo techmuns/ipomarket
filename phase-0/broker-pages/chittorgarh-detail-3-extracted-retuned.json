@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://gajacapital.com/assets/gaja-alternative-asset-management-limited---red-herring-prospectus.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/gaja-ipo-anchor-investor-link.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://gajacapital.com/assets/gaja-alternative-asset-management-limited---red-herring-prospectus.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/gaja-ipo-anchor-investor-link.pdf"
   ],
-  "noise_stripped_bytes": 86230,
-  "main_content_bytes": 86230,
-  "tables_parsed": 12,
-  "table_rows_parsed": 68
+  "noise_stripped_bytes": 90574,
+  "main_content_bytes": 90574,
+  "tables_parsed": 13,
+  "table_rows_parsed": 78
 }

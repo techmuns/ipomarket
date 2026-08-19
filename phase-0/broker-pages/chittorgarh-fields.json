@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-19T03:56:38.950Z",
+  "captured_at_utc": "2026-08-19T11:36:52.077Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149577,
+      "bytes": 149631,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/",
       "mode": "static",
       "status": 200,
-      "bytes": 277209,
+      "bytes": 283522,
       "title": "Hy-Tech Engineers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

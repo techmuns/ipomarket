@@ -1,6 +1,6 @@
 {
-  "total": 7,
-  "valid": 7,
+  "total": 10,
+  "valid": 10,
   "examples": {
     "Gaja Alternative Asset Management Limited": "GAJA",
     "Shankesh Jewellers Limited": "SHANKESH",
@@ -8,6 +8,9 @@
     "Lalithaa Jewellery Mart Limited": "LALITHAA",
     "Horizon Industrial Parks Limited": "HORIZONIND",
     "Skyways Air Services Limited": "SKYWAYS",
-    "Tempsens Instruments (India) Limited": "TEMPSENS"
+    "Augmont Enterprises Limited": "AUGMONT",
+    "Tempsens Instruments (India) Limited": "TEMPSENS",
+    "Sumax Engineering Limited": "SUMAX",
+    "ABH Healthcare Limited": "ABH"
   }
 }

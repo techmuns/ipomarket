@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-19T03:56:38.950Z",
+  "captured_at_utc": "2026-08-19T11:36:52.077Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45443,
+      "bytes": 45141,
       "tr_count": 26,
-      "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=45443"
+      "pdfs_found": 19,
+      "notes": "static ok: tr=26, bytes=45141"
     }
   ],
   "detail_urls_found": 31,
@@ -28,8 +28,8 @@
       "source": "static-alt"
     },
     {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Muthoot%20Fincorp%20DAP_p.pdf",
-      "link_text": "Muthoot Fincorp Limited - Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Svatantra%20Microfin%20Limited%20%20-%20DAP_p.pdf",
+      "link_text": "Svatantra Microfin Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -115,11 +115,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Pragyawan%20Technologies%20Limited%20-%20Abriged_p.PDF",
       "link_text": "Pragyawan Technologies Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/SWARA%20Baby%20Products%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Swara Baby Products Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
