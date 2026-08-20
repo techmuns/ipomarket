@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-20T03:56:55.483Z",
+  "captured_at_utc": "2026-08-20T11:39:32.925Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149114,
+      "bytes": 149103,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149229,
+      "bytes": 148125,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
     "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
     "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
     "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/molbio-diagnostics-ipo/2579/",
     "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
     "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
-    "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/",
-    "https://www.chittorgarh.com/ipo/mv-electrosystems-ipo/2800/"
+    "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
+      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+      "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
+      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "mode": "static",
       "status": 200,
-      "bytes": 309238,
-      "title": "Annu Projects IPO Date, Price, GMP, Review, Details",
+      "bytes": 251324,
+      "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+      "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
       "mode": "static",
       "status": 200,
-      "bytes": 303552,
-      "title": "Symbiotec Pharmalab IPO Date, Price, GMP, Review, Details",
+      "bytes": 304117,
+      "title": "Annu Projects IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

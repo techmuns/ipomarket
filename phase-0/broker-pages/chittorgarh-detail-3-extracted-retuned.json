@@ -85,24 +85,28 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": null,
-      "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.icicisecurities.com/console/uploads/actual/TEMPSENS-INSTRUMENTS-(INDIA)-LIMITED---RED-HERRING-PROSPECTUS_1786731387_84.pdf"
+      "value": [
+        "https://www.bseindia.com/corporates/download/363130/IPO%20Open/RedHerringProspectus_20260818164505.pdf"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 1 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.bseindia.com/corporates/download/363130/IPO%20Open/RedHerringProspectus_20260818164505.pdf"
     }
   },
-  "found_count_full": 9,
+  "found_count_full": 10,
   "found_count_narrow": 5,
-  "precision_ratio_full": 0.8181818181818182,
+  "precision_ratio_full": 0.9090909090909091,
   "precision_ratio_narrow": 1,
-  "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.icicisecurities.com/console/uploads/actual/TEMPSENS-INSTRUMENTS-(INDIA)-LIMITED---RED-HERRING-PROSPECTUS_1786731387_84.pdf"
+  "official_pdf_links_on_allowlist": [
+    "https://www.bseindia.com/corporates/download/363130/IPO%20Open/RedHerringProspectus_20260818164505.pdf"
   ],
-  "noise_stripped_bytes": 85381,
-  "main_content_bytes": 85381,
-  "tables_parsed": 13,
-  "table_rows_parsed": 73
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/anchor-investor/tempsens-instrument-ipo-anchor-allocation-letter.pdf"
+  ],
+  "noise_stripped_bytes": 90719,
+  "main_content_bytes": 90719,
+  "tables_parsed": 14,
+  "table_rows_parsed": 85
 }

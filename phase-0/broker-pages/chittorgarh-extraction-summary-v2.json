@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-20T03:56:55.483Z",
+  "generated_at_utc": "2026-08-20T11:39:32.925Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.848,
+  "average_precision_ratio_full": 0.879,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
     "slug": "tempsens-instruments-india-ipo",
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96874,
+      "main_content_bytes": 96362,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85248,
+      "main_content_bytes": 84888,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -84,33 +84,34 @@
       "index": 3,
       "slug": "tempsens-instruments-india-ipo",
       "source_url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
-      "found_count_full": 9,
+      "found_count_full": 10,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.818,
+      "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85381,
-      "tables_parsed": 13,
-      "table_rows_parsed": 73,
+      "main_content_bytes": 90719,
+      "tables_parsed": 14,
+      "table_rows_parsed": 85,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
-        "listing_date"
+        "listing_date",
+        "official_pdf_links"
       ],
       "fields_medium_confidence": [
         "open_date",
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
-        "official_pdf_links"
-      ],
+      "fields_rejected_low_confidence": [],
       "fields_missing": [
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_on_allowlist": [
+        "https://www.bseindia.com/corporates/download/363130/IPO%20Open/RedHerringProspectus_20260818164505.pdf"
+      ],
       "official_pdf_links_off_allowlist_count": 1
     }
   ]

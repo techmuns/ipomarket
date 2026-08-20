@@ -31,9 +31,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary source for Live & Upcoming tab.",
     "fallback_source": "P-06",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 338,
-    "notes": "Total rows: 11, Active rows: 4"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 388,
+    "notes": "Total rows: 10, Active rows: 4"
   },
   {
     "probe_id": "P-02",
@@ -67,9 +67,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Upcoming/Pipeline tab.",
     "fallback_source": "P-08b",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 34,
-    "notes": "Total rows: 11, Forthcoming/upcoming rows: 5"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 68,
+    "notes": "Total rows: 10, Forthcoming/upcoming rows: 6"
   },
   {
     "probe_id": "P-03",
@@ -105,9 +105,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Recently Listed.",
     "fallback_source": "P-15",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 37,
-    "notes": "Total rows: 11, Past/closed/listed rows: 2"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 50,
+    "notes": "Total rows: 10, Past/closed/listed rows: 0"
   },
   {
     "probe_id": "P-04",
@@ -131,7 +131,7 @@
       "anchor",
       "subscription"
     ],
-    "sample_record": "[\n  {\n    \"companyName\": \"Tempsens Instruments (India) Limited\",\n    \"issueEndDate\": \"24-Aug-2026\",\n    \"issuePrice\": \"Rs.285 to Rs.300\",\n    \"issueSize\": \"15181667\",\n    \"issueStartDate\": \"20-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"TEMPSENS\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"0.0\",\n    \"noOfTime\": \"0.00\",\n    \"noOfsharesBid\": \"0.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Gaja Alternative Asset Management Limited\",\n    \"issueEndDate\": \"21-Aug-2026\",\n    \"issuePrice\": \"Rs.152 to Rs.160\",\n    \"issueSize\": \"25328946\",\n    \"issueStartDate\": \"19-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"GAJA\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"2.5328946E7\",\n    \"noOfTime\": \"0.502364093634216\",\n    \"noOfsharesBid\":…[truncated, total 1674 chars]",
+    "sample_record": "[\n  {\n    \"companyName\": \"Tempsens Instruments (India) Limited\",\n    \"issueEndDate\": \"24-Aug-2026\",\n    \"issuePrice\": \"Rs.285 to Rs.300\",\n    \"issueSize\": \"15181667\",\n    \"issueStartDate\": \"20-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"TEMPSENS\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"1.5181667E7\",\n    \"noOfTime\": \"3.6813315691880213\",\n    \"noOfsharesBid\": \"5.588875E7\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Gaja Alternative Asset Management Limited\",\n    \"issueEndDate\": \"21-Aug-2026\",\n    \"issuePrice\": \"Rs.152 to Rs.160\",\n    \"issueSize\": \"25328946\",\n    \"issueStartDate\": \"19-Aug-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"GAJA\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"2.5328946E7\",\n    \"noOfTime\": \"1.439768200…[truncated, total 1703 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -139,8 +139,8 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE bidding (P-07).",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 354,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 340,
     "notes": "Active candidate symbol: TEMPSENS · Top-level keys: 0, 1, 2, 3"
   },
   {
@@ -168,8 +168,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 939,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 739,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -189,7 +189,7 @@
       "rows"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 19\n    }\n  ],\n  \"unique_pdf_count\": 19,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf\",\n      \"link_text\": \"TABLESPACE TECHNOLOGIES LIMITED - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Svatantra%20Microfin%20Limited%20%20-%20DAP_p.pdf\",\n      \"link_text\": \"Svatantra Microfin Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf\",\n      \"link_text\": \"Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
+    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"playwright-listing\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 31\n    }\n  ],\n  \"unique_pdf_count\": 31,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Insolvency%20and%20Bankruptcy%20Code_p.pdf\",\n      \"link_text\": \"Brochure - 7th National Online Quiz on Insolvency and Bankruptcy Code, 2016\",\n      \"source\": \"playwright-listing\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Corrigendum%20No.%202_p.pdf\",\n      \"link_text\": \"Corrigendum No. 2 to the Request for Proposal for Sale of Properties in Cuttack, Odisha\",\n      \"source\": \"playwright-listing\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Public%20Notice%20Phase_p.pdf\",\n      \"link_text\": \"PUBLIC NOTICE IN THE MATTER OF CITRUS CHECK INNS LIMITED AND ROYAL TWINKLE STAR CLUB PVT. LTD FOR REFUND (PHASE-II)\",\n      \"source\": \"playwright-listing\"\n    }\n  ],\n  \"detail_urls_found\": 138\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -197,9 +197,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 2351,
-    "notes": "[static-primary] static ok: tr=0, bytes=6080 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=45141 (pdfs=19)"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 16813,
+    "notes": "[static-primary] static non-200 (status=0, err=fetch failed) (pdfs=0) ; [static-alt] static non-200 (status=0, err=fetch failed) (pdfs=0) ; [playwright-listing] playwright: status=200, tr=26, rendered_len=174323 (pdfs=31)"
   },
   {
     "probe_id": "P-08b",
@@ -217,7 +217,7 @@
       "tbody data rows"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"winning_attempt\": \"static\",\n  \"tbody_row_count\": 3,\n  \"notes\": \"static ok: tbody_rows=3, bytes=25504\"\n}",
+    "sample_record": "{\n  \"winning_attempt\": \"static\",\n  \"tbody_row_count\": 3,\n  \"notes\": \"static ok: tbody_rows=3, bytes=25548\"\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -225,14 +225,14 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 508,
-    "notes": "static ok: tbody_rows=3, bytes=25504"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 1127,
+    "notes": "static ok: tbody_rows=3, bytes=25548"
   },
   {
     "probe_id": "P-09",
     "source": "SEBI — DRHP PDF Download",
-    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf",
+    "url_or_endpoint": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Insolvency%20and%20Bankruptcy%20Code_p.pdf",
     "fetch_method": "GET (binary) + pdf-parse.py (page-count)",
     "headers_or_cookies_required": [
       "User-Agent",
@@ -246,17 +246,17 @@
       "page_count"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf\",\n  \"link_text\": \"TABLESPACE TECHNOLOGIES LIMITED - Draft Abridged Prospectus\",\n  \"bytes\": 534873,\n  \"sha256\": \"6b4c96aded05c554…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 13,\n  \"cover_text_first_200\": \"TABLESPACE TECHNOLOGIES LIMITED\\nCorporate Identity Number: U74999KA2017PLC101040\\nREGISTERED AND CORPORATE CONTACT PERSON EMAIL AND TELEPHONE WEBSITE\\nOFFICE\\n46, Level 5, Prestige Trade Tower, Ful Kumar\"\n}",
+    "sample_record": "{\n  \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Insolvency%20and%20Bankruptcy%20Code_p.pdf\",\n  \"link_text\": \"Brochure - 7th National Online Quiz on Insolvency and Bankruptcy Code, 2016\",\n  \"bytes\": 5790805,\n  \"sha256\": \"e73393009c8f52a1…\",\n  \"magic\": \"%PDF\",\n  \"page_count\": 4,\n  \"cover_text_first_200\": \"Investors Protection Fund\\n7\\n2016\\n15th July, 2026 - 15th Aug, 2026\\nClick here Click here Click here Click here\\nfor Guidelines for Sample Quiz for Registra\\u0000on for Taking Quiz\\nhttps://quiz.mygov.in/\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
     "freshness_or_update_frequency": "Immutable once published",
-    "status": "GREEN",
-    "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
+    "status": "YELLOW",
+    "recommended_action": "PDF downloads but page-count check shaky; investigate before Phase 5.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 3386,
-    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf; bytes=534873; page_count=13; pdf-parse=ok"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 29657,
+    "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=mmondocs/aug-2026/Insolvency%20and%20Bankruptcy%20Code_p.pdf; bytes=5790805; page_count=4; pdf-parse=ok"
   },
   {
     "probe_id": "P-10",
@@ -282,8 +282,8 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 11270,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 11352,
     "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
@@ -302,7 +302,7 @@
       "f1"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"CurrDate\": \"Thu Aug 20 2026 09:26:59\",\n  \"PrevClose\": \"1307.5\",\n  \"LowVal\": \"1307\",\n  \"HighVal\": \"1312\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1309.00\",\n  \"CurrTime\": \"09:26\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"15000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Thu Aug 20 2026 09:26:59\\\",\\\"vale1\\\":\\\"1309.00\\\",\\\"vole\\\":\\\"650\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 09:25:59\\\",\\\"vale1\\\":\\\"1308.65\\\",\\\"vole\\\":\\\"382\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 09:24:59\\\",\\\"vale1\\\":\\\"1308.75\\\",\\\"vole\\\":\\\"1975\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 09:23:59\\\",\\\"vale1\\\":\\\"1309.20\\\",\\\"vole\\\":\\\"1952\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 09:22:59\\\",\\\"vale1\\\":\\\"1309.65\\\",\\\"vole\\\":\\\"710\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 09:21:59\\\",\\\"vale1\\\":\\\"1309.75\\\",\\\"vole\\\":\\\"4764\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 09:20:59\\\",\\\"vale1\\\":\\\"1310.65\\\",\\\"vole\\\":\\\"968\\\"},{\\\"dttm\\\"…[truncated, total 1193 chars]",
+    "sample_record": "{\n  \"CurrDate\": \"Thu Aug 20 2026 16:01:33\",\n  \"PrevClose\": \"1307.5\",\n  \"LowVal\": \"1305\",\n  \"HighVal\": \"1320\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1315.55\",\n  \"CurrTime\": \"16:01\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"200000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Thu Aug 20 2026 16:01:33\\\",\\\"vale1\\\":\\\"1315.55\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 16:00:07\\\",\\\"vale1\\\":\\\"1315.55\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 15:58:04\\\",\\\"vale1\\\":\\\"1315.55\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 15:57:20\\\",\\\"vale1\\\":\\\"1315.55\\\",\\\"vole\\\":\\\"1502\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 15:56:58\\\",\\\"vale1\\\":\\\"1315.55\\\",\\\"vole\\\":\\\"25066\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 15:55:50\\\",\\\"vale1\\\":\\\"1315.55\\\",\\\"vole\\\":\\\"4659\\\"},{\\\"dttm\\\":\\\"Thu Aug 20 2026 15:54:27\\\",\\\"vale1\\\":\\\"1315.55\\\",\\\"vole\\\":\\\"450\\\"},{\\\"dttm\\\":\\\"T…[truncated, total 30964 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -310,9 +310,9 @@
     "status": "GREEN",
     "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 2555,
-    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22095 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22095 chars] ; [bse:RELIANCE] BSE rows=812, fields=1"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 3908,
+    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22097 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22096 chars] ; [bse:RELIANCE] BSE rows=26058, fields=1"
   },
   {
     "probe_id": "P-15b",
@@ -331,7 +331,7 @@
     "fields_missing": [
       "priceInfo"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;66cfdb17&#46;1787198237&#46;34d38bf4\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;66cfdb17&#46;1787198237&#46;34d38bf4</P>\n</BODY>\n</HTML>\n",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;73cfdb17&#46;1787226037&#46;38e0e1f\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;73cfdb17&#46;1787226037&#46;38e0e1f</P>\n</BODY>\n</HTML>\n",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -339,9 +339,9 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE quote.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 62,
-    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 85,
+    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 397 chars]"
   },
   {
     "probe_id": "P-16",
@@ -359,7 +359,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"Tempsens Instruments (India) Limited\": \"TEMPSENS\",\n  \"Gaja Alternative Asset Management Limited\": \"GAJA\",\n  \"Sunshine Pictures Limited\": \"SUNSHINE\",\n  \"Shankesh Jewellers Limited\": \"SHANKESH\",\n  \"Horizon Industrial Parks Limited\": \"HORIZONIND\",\n  \"Lalithaa Jewellery Mart Limited\": \"LALITHAA\",\n  \"Symbiotec Pharmalab Limited\": \"SYMBIOTEC\",\n  \"Skyways Air Services Limited\": \"SKYWAYS\",\n  \"Augmont Enterprises Limited\": \"AUGMONT\",\n  \"Sumax Engineering Limited\": \"SUMAX\",\n  \"ABH Healthcare Limited\": \"ABH\"\n}",
+    "sample_record": "{\n  \"Tempsens Instruments (India) Limited\": \"TEMPSENS\",\n  \"Gaja Alternative Asset Management Limited\": \"GAJA\",\n  \"Sunshine Pictures Limited\": \"SUNSHINE\",\n  \"Shankesh Jewellers Limited\": \"SHANKESH\",\n  \"Hy-Tech Engineers Limited\": \"HTEL\",\n  \"Skyways Air Services Limited\": \"SKYWAYS\",\n  \"Symbiotec Pharmalab Limited\": \"SYMBIOTEC\",\n  \"Augmont Enterprises Limited\": \"AUGMONT\",\n  \"Sumax Engineering Limited\": \"SUMAX\",\n  \"ABH Healthcare Limited\": \"ABH\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -367,9 +367,9 @@
     "status": "GREEN",
     "recommended_action": "Deterministic mapping; no manual override file needed for v1.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 332,
-    "notes": "total=11, validSymbolPattern=11, rate=100%"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 328,
+    "notes": "total=10, validSymbolPattern=10, rate=100%"
   },
   {
     "probe_id": "P-06",
@@ -394,8 +394,8 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 768,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 696,
     "notes": "<tr> count: 0, total bytes: 13850"
   },
   {
@@ -421,8 +421,8 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 10050,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 10486,
     "notes": "Network error: fetch failed"
   },
   {
@@ -448,8 +448,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 319,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 314,
     "notes": "Bid-link markers found: 0, bytes: 13850"
   },
   {
@@ -468,7 +468,7 @@
     "fields_missing": [
       "registrar field"
     ],
-    "sample_record": "{\n  \"Tempsens Instruments (India) Limited\": null,\n  \"Gaja Alternative Asset Management Limited\": null,\n  \"Sunshine Pictures Limited\": null,\n  \"Shankesh Jewellers Limited\": null,\n  \"Horizon Industrial Parks Limited\": null,\n  \"Lalithaa Jewellery Mart Limited\": null,\n  \"Symbiotec Pharmalab Limited\": null,\n  \"Skyways Air Services Limited\": null,\n  \"Augmont Enterprises Limited\": null,\n  \"Sumax Engineering Limited\": null,\n  \"ABH Healthcare Limited\": null\n}",
+    "sample_record": "{\n  \"Tempsens Instruments (India) Limited\": null,\n  \"Gaja Alternative Asset Management Limited\": null,\n  \"Sunshine Pictures Limited\": null,\n  \"Shankesh Jewellers Limited\": null,\n  \"Hy-Tech Engineers Limited\": null,\n  \"Skyways Air Services Limited\": null,\n  \"Symbiotec Pharmalab Limited\": null,\n  \"Augmont Enterprises Limited\": null,\n  \"Sumax Engineering Limited\": null,\n  \"ABH Healthcare Limited\": null\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -476,9 +476,9 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 299,
-    "notes": "Issues=11, registrars resolved by name match=0"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 237,
+    "notes": "Issues=10, registrars resolved by name match=0"
   },
   {
     "probe_id": "P-12",
@@ -502,8 +502,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 512,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 452,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -528,8 +528,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 85,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 107,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -554,8 +554,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 1006,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 976,
     "notes": "status=200"
   },
   {
@@ -580,8 +580,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 794,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 768,
     "notes": "status=200"
   },
   {
@@ -604,8 +604,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 1157,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 949,
     "notes": "No PDF URL discovered."
   },
   {
@@ -628,8 +628,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 242,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 245,
     "notes": "No PDF URL discovered."
   },
   {
@@ -641,23 +641,23 @@
       "User-Agent",
       "Referer"
     ],
-    "status_code": 200,
-    "response_type": "HTML",
-    "fields_found": [
-      "gmp table rows"
+    "status_code": 522,
+    "response_type": "BLOCKED",
+    "fields_found": [],
+    "fields_missing": [
+      "gmp table"
     ],
-    "fields_missing": [],
-    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head><style>img.lazy{min-height:1px}</style><link href=\"https://ipowatch.in/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js\" as=\"script\">\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium p…[truncated, total 890050 chars]",
+    "sample_record": "",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
     "freshness_or_update_frequency": "Daily, updates intra-day",
-    "status": "YELLOW",
-    "recommended_action": "Include in Phase 6 GMP averager.",
+    "status": "RED",
+    "recommended_action": "Skip; phase-6 feature flag stays off if all GMP probes fail.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 151,
-    "notes": "<tr> count: 322, bytes=890050"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 19621,
+    "notes": "Non-200 (Cloudflare expected). status=522"
   },
   {
     "probe_id": "P-20",
@@ -682,8 +682,8 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 860,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 1372,
     "notes": "<tr> count: 0, bytes=125018"
   },
   {
@@ -701,7 +701,7 @@
       "discussion / table markers"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html >\r\n<!--[if IE 8]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->\r\n<!--[if IE 9]>    <html class=\"ie9\" lang=\"en\"> <![endif]-->\r\n<!--[if gt IE 8]><!--> <html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]-->\r\n<head>\r\n    <title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link rel=\"pingback\" href=\"https://ipocentral.in/x…[truncated, total 515033 chars]",
+    "sample_record": "<!doctype html >\r\n<!--[if IE 8]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->\r\n<!--[if IE 9]>    <html class=\"ie9\" lang=\"en\"> <![endif]-->\r\n<!--[if gt IE 8]><!--> <html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]-->\r\n<head>\r\n    <title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link rel=\"pingback\" href=\"https://ipocentral.in/x…[truncated, total 514465 chars]",
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -709,9 +709,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager (lower weight given parsing difficulty).",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 391,
-    "notes": "<tr> count: 24, bytes=515033"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 337,
+    "notes": "<tr> count: 25, bytes=514465"
   },
   {
     "probe_id": "P-22",
@@ -736,8 +736,8 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 332,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 155,
     "notes": "<tr> count: 2, bytes=135159"
   },
   {
@@ -779,8 +779,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 4713,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 4133,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38034 | rendered_len=38856 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -816,9 +816,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 5327,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235304 | rendered_len=279892 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 5911,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235304 | rendered_len=278836 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-24",
@@ -844,9 +844,9 @@
     "status": "RED",
     "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 268,
-    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 395 chars] ; [NSE IPO list] 11 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 417,
+    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 397 chars] ; [NSE IPO list] 10 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=13850"
   },
   {
     "probe_id": "P-25",
@@ -867,7 +867,7 @@
       "detail-2 reachable"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"dashboard_titles\": [\n    {\n      \"kind\": \"mainboard\",\n      \"title\": \"Mainboard IPO Dashboard (Main board IPO at BSE and NSE)\"\n    },\n    {\n      \"kind\": \"sme\",\n      \"title\": \"SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)\"\n    }\n  ],\n  \"discovered_detail_count\": 40,\n  \"picked_detail_urls\": [\n    \"https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/\",\n    \"https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/\"\n  ],\n  \"detail_titles\": [\n    \"Annu Projects IPO Date, Price, GMP, Review, Details\",\n    \"Symbiotec Pharmalab IPO Date, Price, GMP, Review, Details\"\n  ],\n  \"challenges_detected\": false,\n  \"diagnostics_first_hrefs_per_dashboard\": null\n}",
+    "sample_record": "{\n  \"dashboard_titles\": [\n    {\n      \"kind\": \"mainboard\",\n      \"title\": \"Mainboard IPO Dashboard (Main board IPO at BSE and NSE)\"\n    },\n    {\n      \"kind\": \"sme\",\n      \"title\": \"SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)\"\n    }\n  ],\n  \"discovered_detail_count\": 40,\n  \"picked_detail_urls\": [\n    \"https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/\",\n    \"https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/\"\n  ],\n  \"detail_titles\": [\n    \"Rays of Belief IPO Date, Price, GMP, Review, Details\",\n    \"Annu Projects IPO Date, Price, GMP, Review, Details\"\n  ],\n  \"challenges_detected\": false,\n  \"diagnostics_first_hrefs_per_dashboard\": null\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
@@ -875,9 +875,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 1947,
-    "notes": "mainboard: static status=200 bytes=149114 | sme: static status=200 bytes=149229 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=309238 | detail-2: static status=200 bytes=303552 | challenges_detected=false"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 1577,
+    "notes": "mainboard: static status=200 bytes=149103 | sme: static status=200 bytes=148125 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=251324 | detail-2: static status=200 bytes=304117 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -889,9 +889,6 @@
     "response_type": "JSON",
     "fields_found": [
       "d1.company_name[high]",
-      "d1.issue_size_cr[high]",
-      "d1.price_band[high]",
-      "d1.lot_size[high]",
       "d1.listing_date[high]",
       "d2.company_name[high]",
       "d2.issue_size_cr[high]",
@@ -900,6 +897,9 @@
       "d2.listing_date[high]"
     ],
     "fields_missing": [
+      "d1.issue_size_cr[rejected-low]",
+      "d1.price_band[missing]",
+      "d1.lot_size[missing]",
       "d1.open_date[missing]",
       "d1.close_date[missing]",
       "d1.registrar[missing]",
@@ -911,7 +911,7 @@
       "d2.brlms[missing]",
       "d2.official_pdf_links[rejected-low]"
     ],
-    "sample_record": "{\n  \"avg_precision_ratio\": 0.5,\n  \"details\": [\n    {\n      \"index\": 1,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 11,\n      \"table_rows_parsed\": 79\n    },\n    {\n      \"index\": 2,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 12,\n      \"table_rows_parsed\": 77\n    }\n  ]\n}",
+    "sample_record": "{\n  \"avg_precision_ratio\": 0.35,\n  \"details\": [\n    {\n      \"index\": 1,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/\",\n      \"found_count\": 2,\n      \"precision_ratio\": 0.2,\n      \"tables_parsed\": 10,\n      \"table_rows_parsed\": 60\n    },\n    {\n      \"index\": 2,\n      \"source_url\": \"https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/\",\n      \"found_count\": 5,\n      \"precision_ratio\": 0.5,\n      \"tables_parsed\": 10,\n      \"table_rows_parsed\": 72\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
@@ -919,9 +919,9 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 15,
-    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=91250b tables=11 rows=79 | d2: main=89896b tables=12 rows=77"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 18,
+    "notes": "details_extracted=2 | avg_precision=0.350 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=77432b tables=10 rows=60 | d2: main=90258b tables=10 rows=72"
   },
   {
     "probe_id": "P-27",
@@ -962,8 +962,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 3606,
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 3502,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38034 | rendered_len=38856 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
@@ -999,9 +999,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 6158,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235304 | rendered_len=278780 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 5678,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=235304 | rendered_len=278796 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-25b",
@@ -1029,9 +1029,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 3884,
-    "notes": "third_ipo_status=current | third_ipo_slug=tempsens-instruments-india-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"20 - 24 Aug\" covers today\" | detail-1: static status=200 bytes=367815 | detail-2: static status=200 bytes=341773 | detail-3: static status=200 bytes=278333 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 2095,
+    "notes": "third_ipo_status=current | third_ipo_slug=tempsens-instruments-india-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"20 - 24 Aug\" covers today\" | detail-1: static status=200 bytes=366275 | detail-2: static status=200 bytes=340784 | detail-3: static status=200 bytes=329014 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
     "probe_id": "P-26b",
@@ -1069,25 +1069,25 @@
       "d3.open_date[medium]",
       "d3.close_date[medium]",
       "d3.listing_date[high]",
-      "d3.registrar[medium]"
+      "d3.registrar[medium]",
+      "d3.official_pdf_links[high]"
     ],
     "fields_missing": [
       "d1.brlms[missing]",
       "d2.face_value[missing]",
       "d2.brlms[missing]",
-      "d3.brlms[missing]",
-      "d3.official_pdf_links[low]"
+      "d3.brlms[missing]"
     ],
-    "sample_record": "{\n  \"avg_full\": 0.848,\n  \"avg_narrow\": 1,\n  \"third_ipo_selection\": {\n    \"slug\": \"tempsens-instruments-india-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"20 - 24 Aug\\\" covers today\",\n    \"date_text\": \"20 - 24 Aug\",\n    \"source_list\": \"mainboard\"\n  },\n  \"per_detail\": [\n    {\n      \"index\": 1,\n      \"slug\": \"onemi-technology-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 2,\n      \"slug\": \"bagmane-reit\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 3,\n      \"slug\": \"tempsens-instruments-india-ipo\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": [\n        \"official_pdf_links\"\n      ]\n    }\n  ]\n}",
+    "sample_record": "{\n  \"avg_full\": 0.879,\n  \"avg_narrow\": 1,\n  \"third_ipo_selection\": {\n    \"slug\": \"tempsens-instruments-india-ipo\",\n    \"url\": \"https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/\",\n    \"status\": \"current\",\n    \"reason\": \"current-open: list \\\"mainboard\\\" row date range \\\"20 - 24 Aug\\\" covers today\",\n    \"date_text\": \"20 - 24 Aug\",\n    \"source_list\": \"mainboard\"\n  },\n  \"per_detail\": [\n    {\n      \"index\": 1,\n      \"slug\": \"onemi-technology-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 2,\n      \"slug\": \"bagmane-reit\",\n      \"found_full\": 9,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    },\n    {\n      \"index\": 3,\n      \"slug\": \"tempsens-instruments-india-ipo\",\n      \"found_full\": 10,\n      \"found_narrow\": 5,\n      \"high\": [\n        \"company_name\",\n        \"issue_size_cr\",\n        \"price_band\",\n        \"lot_size\",\n        \"face_value\",\n        \"listing_date\",\n        \"official_pdf_links\"\n      ],\n      \"medium\": [\n        \"open_date\",\n        \"close_date\",\n        \"registrar\"\n      ],\n      \"low\": []\n    }\n  ]\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Medium",
     "freshness_or_update_frequency": "N/A — operates on disk",
     "status": "GREEN",
-    "recommended_action": "Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval.",
+    "recommended_action": "Precision met (full=0.88 narrow=1.00). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-08-20T03:56:55.483Z",
-    "latency_ms": 22,
-    "notes": "details_extracted=3 | avg_full=0.848 | avg_narrow=1.000 | pdf_on_allowlist=2 | pdf_off_allowlist=1 | third_ipo=tempsens-instruments-india-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:tempsens-instruments-india-ipo full=0.82 narrow=1.00"
+    "ran_at_utc": "2026-08-20T11:39:32.925Z",
+    "latency_ms": 30,
+    "notes": "details_extracted=3 | avg_full=0.879 | avg_narrow=1.000 | pdf_on_allowlist=3 | pdf_off_allowlist=1 | third_ipo=tempsens-instruments-india-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:tempsens-instruments-india-ipo full=0.91 narrow=1.00"
   }
 ]

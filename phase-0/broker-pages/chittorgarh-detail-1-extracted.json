@@ -1,39 +1,39 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
+  "source_url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
   "fields": {
     "company_name": {
-      "value": "Annu Projects IPO",
+      "value": "Rays of Belief IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Annu Projects IPO"
+      "source_snippet": "Rays of Belief IPO"
     },
     "issue_size_cr": {
-      "value": "1,76,83,000 shares (agg. up to ₹ 175 Cr)",
-      "found": true,
-      "confidence": "high",
-      "method": "table[1].row[0] label=\"Total Issue Size\"",
-      "why_missing": null,
-      "source_snippet": "1,76,83,000 shares (agg. up to ₹ 175 Cr)"
+      "value": "52,30,000 shares (agg. up to ₹ [.] Cr)",
+      "found": false,
+      "confidence": "low",
+      "method": "table[1].row[0]-rejected",
+      "why_missing": "value '52,30,000 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
+      "source_snippet": "52,30,000 shares (agg. up to ₹ [.] Cr)"
     },
     "price_band": {
-      "value": "₹94 to ₹99",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[3] label=\"Price Band\"",
-      "why_missing": null,
-      "source_snippet": "₹94 to ₹99"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
+      "source_snippet": null
     },
     "lot_size": {
-      "value": "151 Shares",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
-      "why_missing": null,
-      "source_snippet": "151 Shares"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
+      "source_snippet": null
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Wed, Sep 2, 2026 T",
+      "value": "Tue, Sep 8, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Wed, Sep 2, 2026 T"
+      "source_snippet": "Tue, Sep 8, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://mefcomcap.in/upload/OfferDocument/Annu%20Projects%20Limited_RHP.pdf"
+      "source_snippet": "https://mefcomcap.in/upload/OfferDocument/Rays%20of%20Belief%20Limited_RHP.pdf"
     }
   },
-  "found_count": 5,
-  "precision_ratio": 0.5,
+  "found_count": 2,
+  "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://mefcomcap.in/upload/OfferDocument/Annu%20Projects%20Limited_RHP.pdf"
+    "https://mefcomcap.in/upload/OfferDocument/Rays%20of%20Belief%20Limited_RHP.pdf"
   ],
-  "noise_stripped_bytes": 91250,
-  "main_content_bytes": 91250,
-  "tables_parsed": 11,
-  "table_rows_parsed": 79
+  "noise_stripped_bytes": 77432,
+  "main_content_bytes": 77432,
+  "tables_parsed": 10,
+  "table_rows_parsed": 60
 }

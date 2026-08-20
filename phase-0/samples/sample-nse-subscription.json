@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "TEMPSENS",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.5181667E7",
+    "noOfTime": "3.6813315691880213",
+    "noOfsharesBid": "5.588875E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "GAJA",
     "category": "Total",
     "noOfSharesOffered": "2.5328946E7",
-    "noOfTime": "0.502364093634216",
-    "noOfsharesBid": "1.2724353E7",
+    "noOfTime": "1.439768200382282",
+    "noOfsharesBid": "3.6467811E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "SUNSHINE",
     "category": "Total",
     "noOfSharesOffered": "5486051.0",
-    "noOfTime": "13.671048628603709",
-    "noOfsharesBid": "7.500007E7",
+    "noOfTime": "82.1550078553772",
+    "noOfsharesBid": "4.50706563E8",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "SHANKESH",
     "category": "Total",
     "noOfSharesOffered": "2.76374E7",
-    "noOfTime": "0.6768914586755628",
-    "noOfsharesBid": "1.870752E7",
+    "noOfTime": "2.1935435315912497",
+    "noOfsharesBid": "6.062384E7",
     "srNo": null
   }
 ]

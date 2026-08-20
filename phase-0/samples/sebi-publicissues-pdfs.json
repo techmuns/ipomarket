@@ -1,121 +1,190 @@
 {
-  "captured_at_utc": "2026-08-20T03:56:55.483Z",
+  "captured_at_utc": "2026-08-20T11:39:32.925Z",
   "phases": [
     {
       "phase": "static-primary",
       "url": "https://www.sebi.gov.in/filings/public-issues.html",
-      "status": 200,
-      "bytes": 6080,
+      "status": 0,
+      "bytes": 0,
       "tr_count": 0,
       "pdfs_found": 0,
-      "notes": "static ok: tr=0, bytes=6080"
+      "notes": "static non-200 (status=0, err=fetch failed)"
     },
     {
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
+      "status": 0,
+      "bytes": 0,
+      "tr_count": 0,
+      "pdfs_found": 0,
+      "notes": "static non-200 (status=0, err=fetch failed)"
+    },
+    {
+      "phase": "playwright-listing",
+      "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45141,
+      "bytes": 174323,
       "tr_count": 26,
-      "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=45141"
+      "pdfs_found": 31,
+      "notes": "playwright: status=200, tr=26, rendered_len=174323"
     }
   ],
-  "detail_urls_found": 31,
+  "detail_urls_found": 138,
   "pdfs": [
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Insolvency%20and%20Bankruptcy%20Code_p.pdf",
+      "link_text": "Brochure - 7th National Online Quiz on Insolvency and Bankruptcy Code, 2016",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Corrigendum%20No.%202_p.pdf",
+      "link_text": "Corrigendum No. 2 to the Request for Proposal for Sale of Properties in Cuttack, Odisha",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Public%20Notice%20Phase_p.pdf",
+      "link_text": "PUBLIC NOTICE IN THE MATTER OF CITRUS CHECK INNS LIMITED AND ROYAL TWINKLE STAR CLUB PVT. LTD FOR REFUND (PHASE-II)",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/documents/Corrigendum%201%20to%20RFP%20for%20Pune.pdf",
+      "link_text": "Corrigendum No. 1 to the Request for Proposal for Sale of Properties in Pune, Maharashtra",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/documents/Corrigendum%201_Cuttack.pdf",
+      "link_text": "Corrigendum No. 1 to the Request for Proposal for Sale of Properties in Cuttack, Odisha",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/faqfiles/jun-2026/1782726476068.pdf",
+      "link_text": "Settlement Helpdesk Facility",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/faqfiles/sep-2025/1758091557500.pdf",
+      "link_text": "FAQs on Inter-Operable Regulatory Sandbox (IoRS)",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/faqfiles/jun-2025/1749647139924.pdf",
+      "link_text": "Frequently Asked Questions (FAQs) on Cybersecurity and Cyber Resilience Framework (CSCRF) for SEBI REs and Framework for Adoption of Cloud Services by SEBI REs",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jun-2025/Caution Notice in the matter of Sai Prasad - English, Hindi &amp; Marathi_p.pdf",
+      "link_text": "Caution to public against buying / dealing with assets of Sai Prasad Group of companies and its Directors (English, Hindi, Marathi)",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/documents/Requirements%20for%20filing%20objections%20wrt%20properties%20of%20PACL%20Limited.pdf",
+      "link_text": "Requirements for filing objections w.r.t properties of PACL Limited",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/faqfiles/nov-2022/1667476171429.pdf",
+      "link_text": "FAQs for grant of registration as Alternative Investment Fund (AIF)",
+      "source": "playwright-listing"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf",
-      "link_text": "TABLESPACE TECHNOLOGIES LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "TABLESPACE TECHNOLOGIES LIMITED - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Svatantra%20Microfin%20Limited%20%20-%20DAP_p.pdf",
-      "link_text": "Svatantra Microfin Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "Svatantra Microfin Limited - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus",
-      "source": "static-alt"
+      "link_text": "Zetwerk Manufacturing Businesses Limited - UDRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Tonbo%20Imaging%20India%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Tonbo Imaging India Limited- Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "Tonbo Imaging India Limited - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/AGS%20Health%20Limited%20-%20AP_p.pdf",
-      "link_text": "AGS Health Limited - Abridged prospectus",
-      "source": "static-alt"
+      "link_text": "AGS Health Limited - UDRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/BEAUTY%20GARAGE%20LIMITED%20-%20AP_p.pdf",
-      "link_text": "BEAUTY GARAGE LIMITED - Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "BEAUTY GARAGE LIMITED - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Arjun%20Jewellers%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Arjun Jewellers Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "Arjun Jewellers Limited - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf",
-      "link_text": "Encube Ethicals Limited- Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "Encube Ethicals Limited - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Advanced%20Sys-Tek%20Limited%20%20-%20DAP_p.pdf",
-      "link_text": "Advanced Sys-Tek Limited- Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "Advanced Sys-Tek Limited - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf",
-      "link_text": "Veritas Finance Limited - Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "Veritas Finance Limited - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Master%20Chains%20N%20Jewels%20Limited%20-%20AP_p.pdf",
-      "link_text": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "MASTER CHAINS N JEWELS LIMITED - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
-      "link_text": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
-      "source": "static-alt"
+      "link_text": "YOGIJI DIGI LIMITED - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Indian%20Gas%20Exchange%20Limited_p.pdf",
-      "link_text": "Indian Gas Exchange Limited - Draft Abridged prospectus",
-      "source": "static-alt"
+      "link_text": "Indian Gas Exchange Limited - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/GNI%20INFRASTRUCTURE%20LIMITED%20-%20DA_p.pdf",
-      "link_text": "GNI INFRASTRUCTURE LIMITED - Draft Abridged prospectus",
-      "source": "static-alt"
+      "link_text": "GNI INFRASTRUCTURE LIMITED - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Ratnadeep%20Retail%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Ratnadeep Retail Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "RATNADEEP RETAIL LIMITED - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/CULT.FIT%20Limited%20-%20AP_p.pdf",
-      "link_text": "CULT.FIT LIMITED - Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "CULT.FIT LIMITED - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/TMC%20Transformers%20India%20Limited%20-%20Abri_p.pdf",
-      "link_text": "TMC Transformers India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "TMC Transformers India Limited - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/INNOTERRA%20LIMITED%20-%20Abri_p.pdf",
-      "link_text": "INNOTERRA LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "INNOTERRA LIMITED - DRHP",
+      "source": "playwright-listing"
     },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Pragyawan%20Technologies%20Limited%20-%20Abriged_p.PDF",
-      "link_text": "Pragyawan Technologies Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
+      "link_text": "Pragyawan Technologies Limited - DRHP",
+      "source": "playwright-listing"
+    },
+    {
+      "url": "https://www.sebi.gov.in/pdf/guidelines-of-data-sharing-final.pdf",
+      "link_text": "Guidelines for Data Sharing",
+      "source": "playwright-listing"
     }
   ]
 }
