@@ -1,15 +1,16 @@
 {
-  "total": 10,
-  "valid": 10,
+  "total": 11,
+  "valid": 11,
   "examples": {
+    "Tempsens Instruments (India) Limited": "TEMPSENS",
     "Gaja Alternative Asset Management Limited": "GAJA",
-    "Shankesh Jewellers Limited": "SHANKESH",
     "Sunshine Pictures Limited": "SUNSHINE",
-    "Lalithaa Jewellery Mart Limited": "LALITHAA",
+    "Shankesh Jewellers Limited": "SHANKESH",
     "Horizon Industrial Parks Limited": "HORIZONIND",
+    "Lalithaa Jewellery Mart Limited": "LALITHAA",
+    "Symbiotec Pharmalab Limited": "SYMBIOTEC",
     "Skyways Air Services Limited": "SKYWAYS",
     "Augmont Enterprises Limited": "AUGMONT",
-    "Tempsens Instruments (India) Limited": "TEMPSENS",
     "Sumax Engineering Limited": "SUMAX",
     "ABH Healthcare Limited": "ABH"
   }

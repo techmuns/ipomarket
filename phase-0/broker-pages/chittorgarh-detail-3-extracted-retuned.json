@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
-  "slug": "gaja-alternative-asset-management-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
+  "slug": "tempsens-instruments-india-ipo",
   "fields": {
     "company_name": {
-      "value": "Gaja Alternative Asset Management IPO",
+      "value": "Tempsens Instruments (India) IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Gaja Alternative Asset Management IPO"
+      "source_snippet": "Tempsens Instruments (India) IPO"
     },
     "issue_size_cr": {
-      "value": "3,43,75,000 shares (agg. up to ₹ 550 Cr)",
+      "value": "2,16,66,666 shares (agg. up to ₹ 650 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "3,43,75,000 shares (agg. up to ₹ 550 Cr)"
+      "source_snippet": "2,16,66,666 shares (agg. up to ₹ 650 Cr)"
     },
     "price_band": {
-      "value": "₹152 to ₹160",
+      "value": "₹285 to ₹300",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹152 to ₹160"
+      "source_snippet": "₹285 to ₹300"
     },
     "lot_size": {
-      "value": "93 Shares",
+      "value": "50 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "93 Shares"
+      "source_snippet": "50 Shares"
     },
     "face_value": {
-      "value": "₹ 5 per share",
+      "value": "₹ 4 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 5 per share"
+      "source_snippet": "₹ 4 per share"
     },
     "open_date": {
-      "value": "2026-08-19",
+      "value": "2026-08-20",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"19 to 21 Aug, 2026\" → start=2026-08-19"
+      "source_snippet": "raw=\"20 to 24 Aug, 2026\" → start=2026-08-20"
     },
     "close_date": {
-      "value": "2026-08-21",
+      "value": "2026-08-24",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"19 to 21 Aug, 2026\" → end=2026-08-21"
+      "source_snippet": "raw=\"20 to 24 Aug, 2026\" → end=2026-08-24"
     },
     "listing_date": {
-      "value": "2026-08-26",
+      "value": "2026-08-28",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Wed, Aug 26, 2026 T\" → 2026-08-26"
+      "source_snippet": "raw=\"Fri, Aug 28, 2026 T\" → 2026-08-28"
     },
     "registrar": {
-      "value": "MUFG Intime India Pvt.Ltd.",
+      "value": "Kfin Technologies Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 gajaalternative.ipo@in.mpms.mufg.com <i class=\"fa f\" → \"MUFG Intime India Pvt.Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 tempsens.ipo@kfintech.com <a\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/gaja-ipo-anchor-investor-link.pdf"
+      "source_snippet": "https://www.icicisecurities.com/console/uploads/actual/TEMPSENS-INSTRUMENTS-(INDIA)-LIMITED---RED-HERRING-PROSPECTUS_1786731387_84.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/gaja-ipo-anchor-investor-link.pdf"
+    "https://www.icicisecurities.com/console/uploads/actual/TEMPSENS-INSTRUMENTS-(INDIA)-LIMITED---RED-HERRING-PROSPECTUS_1786731387_84.pdf"
   ],
-  "noise_stripped_bytes": 90574,
-  "main_content_bytes": 90574,
+  "noise_stripped_bytes": 85381,
+  "main_content_bytes": 85381,
   "tables_parsed": 13,
-  "table_rows_parsed": 78
+  "table_rows_parsed": 73
 }

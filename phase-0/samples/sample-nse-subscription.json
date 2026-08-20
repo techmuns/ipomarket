@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Tempsens Instruments (India) Limited",
+    "issueEndDate": "24-Aug-2026",
+    "issuePrice": "Rs.285 to Rs.300",
+    "issueSize": "15181667",
+    "issueStartDate": "20-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TEMPSENS",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Gaja Alternative Asset Management Limited",
     "issueEndDate": "21-Aug-2026",
     "issuePrice": "Rs.152 to Rs.160",
@@ -12,21 +27,6 @@
     "noOfSharesOffered": "2.5328946E7",
     "noOfTime": "0.502364093634216",
     "noOfsharesBid": "1.2724353E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Shankesh Jewellers Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "27637400",
-    "issueStartDate": "18-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SHANKESH",
-    "category": "Total",
-    "noOfSharesOffered": "2.76374E7",
-    "noOfTime": "0.6768914586755628",
-    "noOfsharesBid": "1.870752E7",
     "srNo": null
   },
   {
@@ -45,45 +45,18 @@
     "srNo": null
   },
   {
-    "companyName": "Lalithaa Jewellery Mart Limited",
-    "issueEndDate": "19-Aug-2026",
-    "issuePrice": "Rs.190 to Rs.201",
-    "issueSize": "62761403",
-    "issueStartDate": "17-Aug-2026",
+    "companyName": "Shankesh Jewellers Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "27637400",
+    "issueStartDate": "18-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "LALITHAA",
+    "symbol": "SHANKESH",
     "category": "Total",
-    "noOfSharesOffered": "6.2761403E7",
-    "noOfTime": "46.83637690508608",
-    "noOfsharesBid": "2.939516726E9",
+    "noOfSharesOffered": "2.76374E7",
+    "noOfTime": "0.6768914586755628",
+    "noOfsharesBid": "1.870752E7",
     "srNo": null
-  },
-  {
-    "companyName": "Horizon Industrial Parks Limited",
-    "issueEndDate": "19-Aug-2026",
-    "issuePrice": "Rs.57 to Rs.60",
-    "issueSize": "251356273",
-    "issueStartDate": "17-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "HORIZONIND",
-    "category": "Total",
-    "noOfSharesOffered": "2.51356273E8",
-    "noOfTime": "0.9035422004367482",
-    "noOfsharesBid": "2.27111E8",
-    "srNo": null
-  },
-  {
-    "companyName": "Fascinate Textiles Limited",
-    "isBse": "1",
-    "issueEndDate": "19-Aug-2026",
-    "issueStartDate": "11-Aug-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "FASCINATE",
-    "noOfsharesBid": "6239200",
-    "noOfSharesOffered": "4293600",
-    "noOfTime": "1.45"
   }
 ]

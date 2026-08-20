@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-19T11:36:52.077Z",
+  "generated_at_utc": "2026-08-20T03:56:55.483Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "gaja-alternative-asset-management-ipo",
-    "url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
+    "slug": "tempsens-instruments-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"19 - 21 Aug\" covers today",
-    "date_text": "19 - 21 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"20 - 24 Aug\" covers today",
+    "date_text": "20 - 24 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85251,
+      "main_content_bytes": 85248,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "gaja-alternative-asset-management-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
+      "slug": "tempsens-instruments-india-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 90574,
+      "main_content_bytes": 85381,
       "tables_parsed": 13,
-      "table_rows_parsed": 78,
+      "table_rows_parsed": 73,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

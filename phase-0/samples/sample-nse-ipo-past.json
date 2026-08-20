@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Tempsens Instruments (India) Limited",
+    "issueEndDate": "24-Aug-2026",
+    "issuePrice": "Rs.285 to Rs.300",
+    "issueSize": "15181667",
+    "issueStartDate": "20-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TEMPSENS"
+  },
+  {
     "companyName": "Gaja Alternative Asset Management Limited",
     "issueEndDate": "21-Aug-2026",
     "issuePrice": "Rs.152 to Rs.160",
@@ -8,16 +18,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "GAJA"
-  },
-  {
-    "companyName": "Shankesh Jewellers Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "27637400",
-    "issueStartDate": "18-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SHANKESH"
   },
   {
     "companyName": "Sunshine Pictures Limited",
@@ -30,14 +30,14 @@
     "symbol": "SUNSHINE"
   },
   {
-    "companyName": "Lalithaa Jewellery Mart Limited",
-    "issueEndDate": "19-Aug-2026",
-    "issuePrice": "Rs.190 to Rs.201",
-    "issueSize": "62761403",
-    "issueStartDate": "17-Aug-2026",
+    "companyName": "Shankesh Jewellers Limited",
+    "issueEndDate": "20-Aug-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "27637400",
+    "issueStartDate": "18-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "LALITHAA"
+    "symbol": "SHANKESH"
   },
   {
     "companyName": "Horizon Industrial Parks Limited",
@@ -46,8 +46,28 @@
     "issueSize": "251356273",
     "issueStartDate": "17-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "HORIZONIND"
+  },
+  {
+    "companyName": "Lalithaa Jewellery Mart Limited",
+    "issueEndDate": "19-Aug-2026",
+    "issuePrice": "Rs.190 to Rs.201",
+    "issueSize": "62761403",
+    "issueStartDate": "17-Aug-2026",
+    "series": "EQ",
+    "status": "Closed",
+    "symbol": "LALITHAA"
+  },
+  {
+    "companyName": "Symbiotec Pharmalab Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.938 to Rs.988",
+    "issueSize": "18734736",
+    "issueStartDate": "24-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SYMBIOTEC"
   },
   {
     "companyName": "Skyways Air Services Limited",
@@ -68,16 +88,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "AUGMONT"
-  },
-  {
-    "companyName": "Tempsens Instruments (India) Limited",
-    "issueEndDate": "24-Aug-2026",
-    "issuePrice": "Rs.285 to Rs.300",
-    "issueSize": "21833332",
-    "issueStartDate": "20-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "TEMPSENS"
   },
   {
     "companyName": "Sumax Engineering Limited",

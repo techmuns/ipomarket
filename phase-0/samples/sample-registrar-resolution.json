@@ -1,15 +1,16 @@
 {
-  "totalIssues": 10,
+  "totalIssues": 11,
   "resolved": 0,
   "examples": {
+    "Tempsens Instruments (India) Limited": null,
     "Gaja Alternative Asset Management Limited": null,
-    "Shankesh Jewellers Limited": null,
     "Sunshine Pictures Limited": null,
-    "Lalithaa Jewellery Mart Limited": null,
+    "Shankesh Jewellers Limited": null,
     "Horizon Industrial Parks Limited": null,
+    "Lalithaa Jewellery Mart Limited": null,
+    "Symbiotec Pharmalab Limited": null,
     "Skyways Air Services Limited": null,
     "Augmont Enterprises Limited": null,
-    "Tempsens Instruments (India) Limited": null,
     "Sumax Engineering Limited": null,
     "ABH Healthcare Limited": null
   }

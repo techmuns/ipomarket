@@ -1,39 +1,39 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+  "source_url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
   "fields": {
     "company_name": {
-      "value": "Symbiotec Pharmalab IPO",
+      "value": "Annu Projects IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Symbiotec Pharmalab IPO"
+      "source_snippet": "Annu Projects IPO"
     },
     "issue_size_cr": {
-      "value": "1,77,86,442 shares (agg. up to ₹ 1,757 Cr)",
+      "value": "1,76,83,000 shares (agg. up to ₹ 175 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,77,86,442 shares (agg. up to ₹ 1,757 Cr)"
+      "source_snippet": "1,76,83,000 shares (agg. up to ₹ 175 Cr)"
     },
     "price_band": {
-      "value": "₹938 to ₹988",
+      "value": "₹94 to ₹99",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹938 to ₹988"
+      "source_snippet": "₹94 to ₹99"
     },
     "lot_size": {
-      "value": "15 Shares",
+      "value": "151 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "15 Shares"
+      "source_snippet": "151 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Tue, Sep 1, 2026 T",
+      "value": "Wed, Sep 2, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Tue, Sep 1, 2026 T"
+      "source_snippet": "Wed, Sep 2, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf"
+      "source_snippet": "https://mefcomcap.in/upload/OfferDocument/Annu%20Projects%20Limited_RHP.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf"
+    "https://mefcomcap.in/upload/OfferDocument/Annu%20Projects%20Limited_RHP.pdf"
   ],
-  "noise_stripped_bytes": 89896,
-  "main_content_bytes": 89896,
-  "tables_parsed": 12,
-  "table_rows_parsed": 77
+  "noise_stripped_bytes": 91250,
+  "main_content_bytes": 91250,
+  "tables_parsed": 11,
+  "table_rows_parsed": 79
 }
