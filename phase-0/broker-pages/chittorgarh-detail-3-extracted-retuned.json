@@ -105,8 +105,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/tempsens-instrument-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 90719,
-  "main_content_bytes": 90719,
+  "noise_stripped_bytes": 90138,
+  "main_content_bytes": 90138,
   "tables_parsed": 14,
   "table_rows_parsed": 85
 }

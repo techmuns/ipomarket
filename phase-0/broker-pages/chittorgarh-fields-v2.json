@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-20T11:39:32.925Z",
+  "captured_at_utc": "2026-08-20T19:42:55.321Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 340784,
+      "bytes": 340741,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
       "mode": "static",
       "status": 200,
-      "bytes": 329014,
+      "bytes": 327673,
       "title": "Tempsens Instruments (India) IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

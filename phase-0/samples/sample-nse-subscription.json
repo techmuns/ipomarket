@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Augmont Enterprises Limited",
+    "issueEndDate": "25-Aug-2026",
+    "issuePrice": "Rs.750 to Rs.788",
+    "issueSize": "7715999",
+    "issueStartDate": "21-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "AUGMONT",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Tempsens Instruments (India) Limited",
     "issueEndDate": "24-Aug-2026",
     "issuePrice": "Rs.285 to Rs.300",
@@ -27,36 +42,6 @@
     "noOfSharesOffered": "2.5328946E7",
     "noOfTime": "1.439768200382282",
     "noOfsharesBid": "3.6467811E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Sunshine Pictures Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.342 to Rs.360",
-    "issueSize": "5486051",
-    "issueStartDate": "18-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SUNSHINE",
-    "category": "Total",
-    "noOfSharesOffered": "5486051.0",
-    "noOfTime": "82.1550078553772",
-    "noOfsharesBid": "4.50706563E8",
-    "srNo": null
-  },
-  {
-    "companyName": "Shankesh Jewellers Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "27637400",
-    "issueStartDate": "18-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SHANKESH",
-    "category": "Total",
-    "noOfSharesOffered": "2.76374E7",
-    "noOfTime": "2.1935435315912497",
-    "noOfsharesBid": "6.062384E7",
     "srNo": null
   }
 ]
