@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-21T03:58:28.450Z",
+  "captured_at_utc": "2026-08-21T11:38:04.308Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44716,
+      "bytes": 46131,
       "tr_count": 26,
-      "pdfs_found": 18,
-      "notes": "static ok: tr=26, bytes=44716"
+      "pdfs_found": 20,
+      "notes": "static ok: tr=26, bytes=46131"
     }
   ],
   "detail_urls_found": 31,
@@ -45,6 +45,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/AGS%20Health%20Limited%20-%20AP_p.pdf",
       "link_text": "AGS Health Limited - Abridged prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/J%20PAN%20TUBULAR%20COMPONENTS%20LIMITED%20-%20DAP_p.pdf",
+      "link_text": "J PAN TUBULAR COMPONENTS LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -110,6 +115,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/INNOTERRA%20LIMITED%20-%20Abri_p.pdf",
       "link_text": "INNOTERRA LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Pragyawan%20Technologies%20Limited%20-%20Abriged_p.PDF",
+      "link_text": "Pragyawan Technologies Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

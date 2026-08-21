@@ -1,14 +1,12 @@
 {
-  "total": 11,
-  "valid": 11,
+  "total": 9,
+  "valid": 9,
   "examples": {
     "Augmont Enterprises Limited": "AUGMONT",
     "Tempsens Instruments (India) Limited": "TEMPSENS",
     "Gaja Alternative Asset Management Limited": "GAJA",
-    "Sunshine Pictures Limited": "SUNSHINE",
-    "Shankesh Jewellers Limited": "SHANKESH",
-    "Symbiotec Pharmalab Limited": "SYMBIOTEC",
     "Hy-Tech Engineers Limited": "HTEL",
+    "Symbiotec Pharmalab Limited": "SYMBIOTEC",
     "Skyways Air Services Limited": "SKYWAYS",
     "Sumax Engineering Limited": "SUMAX",
     "Madhur Knit Crafts Limited": "MADHURKNIT",

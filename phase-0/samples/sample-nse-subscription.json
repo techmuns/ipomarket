@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "AUGMONT",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "7715999.0",
+    "noOfTime": "1.7901764891364034",
+    "noOfsharesBid": "1.3813E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "TEMPSENS",
     "category": "Total",
     "noOfSharesOffered": "1.5181667E7",
-    "noOfTime": "3.6813315691880213",
-    "noOfsharesBid": "5.588875E7",
+    "noOfTime": "13.70394305184009",
+    "noOfsharesBid": "2.080487E8",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "GAJA",
     "category": "Total",
     "noOfSharesOffered": "2.5328946E7",
-    "noOfTime": "1.439768200382282",
-    "noOfsharesBid": "3.6467811E7",
+    "noOfTime": "15.63183564764203",
+    "noOfsharesBid": "3.95937921E8",
     "srNo": null
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-21T03:58:28.450Z",
+  "captured_at_utc": "2026-08-21T11:38:04.308Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148989,
+      "bytes": 147885,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
       "mode": "static",
       "status": 200,
-      "bytes": 281766,
+      "bytes": 283831,
       "title": "Lumino Industries IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

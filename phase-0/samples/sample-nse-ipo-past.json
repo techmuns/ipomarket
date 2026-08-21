@@ -30,24 +30,14 @@
     "symbol": "GAJA"
   },
   {
-    "companyName": "Sunshine Pictures Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.342 to Rs.360",
-    "issueSize": "5486051",
-    "issueStartDate": "18-Aug-2026",
+    "companyName": "Hy-Tech Engineers Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.50 to Rs.53",
+    "issueSize": "18145406",
+    "issueStartDate": "24-Aug-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "SUNSHINE"
-  },
-  {
-    "companyName": "Shankesh Jewellers Limited",
-    "issueEndDate": "20-Aug-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "27637400",
-    "issueStartDate": "18-Aug-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "SHANKESH"
+    "status": "Forthcoming",
+    "symbol": "HTEL"
   },
   {
     "companyName": "Symbiotec Pharmalab Limited",
@@ -58,16 +48,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "SYMBIOTEC"
-  },
-  {
-    "companyName": "Hy-Tech Engineers Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.50 to Rs.53",
-    "issueSize": "26289450",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "HTEL"
   },
   {
     "companyName": "Skyways Air Services Limited",
@@ -95,7 +75,7 @@
     "companyName": "Madhur Knit Crafts Limited",
     "issueEndDate": "27-Aug-2026",
     "issuePrice": "Rs.95 to Rs.100",
-    "issueSize": "5326800",
+    "issueSize": "5024400",
     "issueStartDate": "24-Aug-2026",
     "lotSize": "1200",
     "priceBand": "Rs.95 to Rs.100",
