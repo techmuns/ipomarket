@@ -28,20 +28,5 @@
     "noOfTime": "13.70394305184009",
     "noOfsharesBid": "2.080487E8",
     "srNo": null
-  },
-  {
-    "companyName": "Gaja Alternative Asset Management Limited",
-    "issueEndDate": "21-Aug-2026",
-    "issuePrice": "Rs.152 to Rs.160",
-    "issueSize": "25328946",
-    "issueStartDate": "19-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "GAJA",
-    "category": "Total",
-    "noOfSharesOffered": "2.5328946E7",
-    "noOfTime": "15.63183564764203",
-    "noOfsharesBid": "3.95937921E8",
-    "srNo": null
   }
 ]
