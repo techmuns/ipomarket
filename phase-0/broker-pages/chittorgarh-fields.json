@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-20T19:42:55.321Z",
+  "captured_at_utc": "2026-08-21T03:58:28.450Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149103,
+      "bytes": 149421,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149249,
+      "bytes": 148989,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
+    "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
     "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
     "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
     "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
     "https://www.chittorgarh.com/ipo/molbio-diagnostics-ipo/2579/",
     "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
-    "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/",
-    "https://www.chittorgarh.com/ipo/ardee-industries-ipo/2860/"
+    "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
+      "url": "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
       "segment_guess": "unknown"
     }
   ],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "mode": "static",
       "status": 200,
-      "bytes": 251387,
+      "bytes": 251388,
       "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
+      "url": "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
       "mode": "static",
       "status": 200,
-      "bytes": 304180,
-      "title": "Annu Projects IPO Date, Price, GMP, Review, Details",
+      "bytes": 281766,
+      "title": "Lumino Industries IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
