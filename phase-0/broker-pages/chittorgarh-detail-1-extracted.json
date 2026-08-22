@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://mefcomcap.in/upload/OfferDocument/Rays%20of%20Belief%20Limited_RHP.pdf"
   ],
-  "noise_stripped_bytes": 77432,
-  "main_content_bytes": 77432,
+  "noise_stripped_bytes": 78058,
+  "main_content_bytes": 78058,
   "tables_parsed": 10,
-  "table_rows_parsed": 60
+  "table_rows_parsed": 61
 }
