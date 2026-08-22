@@ -32,7 +32,7 @@
       "value": "19 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "19 Shares"
     },
@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/augmont-enterprises-anchor-investor-list.pdf"
   ],
-  "noise_stripped_bytes": 92879,
-  "main_content_bytes": 92879,
+  "noise_stripped_bytes": 93113,
+  "main_content_bytes": 93113,
   "tables_parsed": 14,
-  "table_rows_parsed": 86
+  "table_rows_parsed": 87
 }
