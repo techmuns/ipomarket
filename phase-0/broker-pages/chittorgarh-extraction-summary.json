@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-22T19:32:40.114Z",
+  "generated_at_utc": "2026-08-23T03:58:23.845Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.35,
   "per_detail": [
@@ -8,9 +8,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 78058,
+      "main_content_bytes": 77432,
       "tables_parsed": 10,
-      "table_rows_parsed": 61,
+      "table_rows_parsed": 60,
       "fields_high_confidence": [
         "company_name",
         "listing_date"
