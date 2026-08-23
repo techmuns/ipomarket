@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-23T03:58:23.845Z",
+  "captured_at_utc": "2026-08-23T11:33:15.231Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148289,
+      "bytes": 149315,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 146634,
+      "bytes": 147738,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
     "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
     "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
     "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
     "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
     "https://www.chittorgarh.com/ipo/molbio-diagnostics-ipo/2579/",
-    "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/",
-    "https://www.chittorgarh.com/ipo/technocraft-ventures-ipo/2565/"
+    "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
+      "url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
+      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
+      "url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
       "mode": "static",
       "status": 200,
-      "bytes": 251389,
-      "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
+      "bytes": 239361,
+      "title": "Priority Jewels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
+      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "mode": "static",
       "status": 200,
-      "bytes": 283906,
-      "title": "Lumino Industries IPO Date, Price, GMP, Review, Details",
+      "bytes": 251113,
+      "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
