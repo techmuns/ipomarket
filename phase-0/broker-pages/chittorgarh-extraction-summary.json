@@ -1,23 +1,24 @@
 {
-  "generated_at_utc": "2026-08-23T11:33:15.231Z",
+  "generated_at_utc": "2026-08-23T19:32:24.240Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.15,
+  "average_precision_ratio": 0.2,
   "per_detail": [
     {
       "index": 1,
-      "source_url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
-      "found_count": 1,
-      "precision_ratio": 0.1,
-      "main_content_bytes": 73602,
-      "tables_parsed": 8,
-      "table_rows_parsed": 44,
+      "source_url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
+      "found_count": 2,
+      "precision_ratio": 0.2,
+      "main_content_bytes": 77377,
+      "tables_parsed": 10,
+      "table_rows_parsed": 60,
       "fields_high_confidence": [
-        "company_name"
+        "company_name",
+        "listing_date"
       ],
       "fields_medium_confidence": [],
       "fields_rejected_low_confidence": [
         "issue_size_cr",
-        "listing_date"
+        "official_pdf_links"
       ],
       "fields_missing": [
         "price_band",
@@ -25,20 +26,19 @@
         "open_date",
         "close_date",
         "registrar",
-        "brlms",
-        "official_pdf_links"
+        "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_off_allowlist_count": 1
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
+      "source_url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 77377,
-      "tables_parsed": 10,
-      "table_rows_parsed": 60,
+      "main_content_bytes": 77386,
+      "tables_parsed": 9,
+      "table_rows_parsed": 50,
       "fields_high_confidence": [
         "company_name",
         "listing_date"

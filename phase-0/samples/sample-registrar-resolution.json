@@ -1,14 +1,12 @@
 {
-  "totalIssues": 8,
+  "totalIssues": 6,
   "resolved": 0,
   "examples": {
+    "Skyways Air Services Limited": null,
+    "Symbiotec Pharmalab Limited": null,
+    "Hy-Tech Engineers Limited": null,
     "Augmont Enterprises Limited": null,
     "Tempsens Instruments (India) Limited": null,
-    "Hy-Tech Engineers Limited": null,
-    "Symbiotec Pharmalab Limited": null,
-    "Skyways Air Services Limited": null,
-    "Sumax Engineering Limited": null,
-    "Madhur Knit Crafts Limited": null,
-    "ABH Healthcare Limited": null
+    "Sumax Engineering Limited": null
   }
 }

@@ -1,14 +1,12 @@
 {
-  "total": 8,
-  "valid": 8,
+  "total": 6,
+  "valid": 6,
   "examples": {
+    "Skyways Air Services Limited": "SKYWAYS",
+    "Symbiotec Pharmalab Limited": "SYMBIOTEC",
+    "Hy-Tech Engineers Limited": "HTEL",
     "Augmont Enterprises Limited": "AUGMONT",
     "Tempsens Instruments (India) Limited": "TEMPSENS",
-    "Hy-Tech Engineers Limited": "HTEL",
-    "Symbiotec Pharmalab Limited": "SYMBIOTEC",
-    "Skyways Air Services Limited": "SKYWAYS",
-    "Sumax Engineering Limited": "SUMAX",
-    "Madhur Knit Crafts Limited": "MADHURKNIT",
-    "ABH Healthcare Limited": "ABH"
+    "Sumax Engineering Limited": "SUMAX"
   }
 }
