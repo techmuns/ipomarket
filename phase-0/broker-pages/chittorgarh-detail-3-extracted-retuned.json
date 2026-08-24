@@ -1,72 +1,72 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
-  "slug": "augmont-enterprises-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+  "slug": "symbiotec-pharmalab-ipo",
   "fields": {
     "company_name": {
-      "value": "Augmont Enterprises IPO",
+      "value": "Symbiotec Pharmalab IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Augmont Enterprises IPO"
+      "source_snippet": "Symbiotec Pharmalab IPO"
     },
     "issue_size_cr": {
-      "value": "1,04,69,541 shares (agg. up to ₹ 825 Cr)",
+      "value": "1,77,86,442 shares (agg. up to ₹ 1,757 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,04,69,541 shares (agg. up to ₹ 825 Cr)"
+      "source_snippet": "1,77,86,442 shares (agg. up to ₹ 1,757 Cr)"
     },
     "price_band": {
-      "value": "₹750 to ₹788",
+      "value": "₹938 to ₹988",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹750 to ₹788"
+      "source_snippet": "₹938 to ₹988"
     },
     "lot_size": {
-      "value": "19 Shares",
+      "value": "15 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[5] label=\"Lot Size\"",
+      "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "19 Shares"
+      "source_snippet": "15 Shares"
     },
     "face_value": {
-      "value": "₹ 5 per share",
+      "value": "₹ 2 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 5 per share"
+      "source_snippet": "₹ 2 per share"
     },
     "open_date": {
-      "value": "2026-08-21",
+      "value": "2026-08-24",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"21 to 25 Aug, 2026\" → start=2026-08-21"
+      "source_snippet": "raw=\"24 to 27 Aug, 2026\" → start=2026-08-24"
     },
     "close_date": {
-      "value": "2026-08-25",
+      "value": "2026-08-27",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"21 to 25 Aug, 2026\" → end=2026-08-25"
+      "source_snippet": "raw=\"24 to 27 Aug, 2026\" → end=2026-08-27"
     },
     "listing_date": {
-      "value": "2026-08-31",
+      "value": "2026-09-01",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Mon, Aug 31, 2026 T\" → 2026-08-31"
+      "source_snippet": "raw=\"Tue, Sep 1, 2026 T\" → 2026-09-01"
     },
     "registrar": {
       "value": "MUFG Intime India Pvt.Ltd.",
@@ -74,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 augmont.ipo@in.mpms.mufg.com <i class=\"fa fa-globe\"\" → \"MUFG Intime India Pvt.Ltd.\""
+      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 symbiotecpharmalab.ipo@in.mpms.mufg.com <i class=\"f\" → \"MUFG Intime India Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/augmont-enterprises-anchor-investor-list.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/augmont-enterprises-anchor-investor-list.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf"
   ],
-  "noise_stripped_bytes": 93113,
-  "main_content_bytes": 93113,
-  "tables_parsed": 14,
-  "table_rows_parsed": 87
+  "noise_stripped_bytes": 90148,
+  "main_content_bytes": 90148,
+  "tables_parsed": 12,
+  "table_rows_parsed": 77
 }

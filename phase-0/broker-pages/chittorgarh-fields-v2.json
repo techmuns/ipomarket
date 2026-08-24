@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-23T19:32:24.240Z",
+  "captured_at_utc": "2026-08-24T04:03:09.255Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "augmont-enterprises-ipo",
-    "url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
+    "slug": "symbiotec-pharmalab-ipo",
+    "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"21 - 25 Aug\" covers today",
-    "date_text": "21 - 25 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"24 - 27 Aug\" covers today",
+    "date_text": "24 - 27 Aug",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
-      "slug": "augmont-enterprises-ipo"
+      "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+      "slug": "symbiotec-pharmalab-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
+      "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
       "mode": "static",
       "status": 200,
-      "bytes": 324808,
-      "title": "Augmont Enterprises IPO Date, Price, GMP, Review, Details",
+      "bytes": 338170,
+      "title": "Symbiotec Pharmalab IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
