@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Annu Projects Limited",
+    "issueEndDate": "28-Aug-2026",
+    "issuePrice": "Rs.94 to Rs.99",
+    "issueSize": "17683000",
+    "issueStartDate": "25-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ANNU"
+  },
+  {
     "companyName": "Skyways Air Services Limited",
     "issueEndDate": "27-Aug-2026",
     "issuePrice": "Rs.131 to Rs.138",
@@ -46,7 +56,7 @@
     "issueSize": "15181667",
     "issueStartDate": "20-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "TEMPSENS"
   },
   {
@@ -58,27 +68,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "LUMINO"
-  },
-  {
-    "companyName": "Annu Projects Limited",
-    "issueEndDate": "28-Aug-2026",
-    "issuePrice": "Rs.94 to Rs.99",
-    "issueSize": "17683000",
-    "issueStartDate": "25-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "ANNU"
-  },
-  {
-    "companyName": "Sumax Engineering Limited",
-    "issueEndDate": "28-Aug-2026",
-    "issuePrice": "Rs.95 to Rs.101",
-    "issueSize": "3852000",
-    "issueStartDate": "25-Aug-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.95 to Rs.101",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "SUMAX"
   }
 ]

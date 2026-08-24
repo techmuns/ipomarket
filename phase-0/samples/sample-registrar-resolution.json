@@ -1,14 +1,13 @@
 {
-  "totalIssues": 8,
+  "totalIssues": 7,
   "resolved": 0,
   "examples": {
+    "Annu Projects Limited": null,
     "Skyways Air Services Limited": null,
     "Symbiotec Pharmalab Limited": null,
     "Hy-Tech Engineers Limited": null,
     "Augmont Enterprises Limited": null,
     "Tempsens Instruments (India) Limited": null,
-    "Lumino Industries Limited": null,
-    "Annu Projects Limited": null,
-    "Sumax Engineering Limited": null
+    "Lumino Industries Limited": null
   }
 }

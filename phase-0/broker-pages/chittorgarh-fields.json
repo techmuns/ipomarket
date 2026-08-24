@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-24T11:41:30.749Z",
+  "captured_at_utc": "2026-08-24T19:41:18.683Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 150623,
+      "bytes": 150276,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
