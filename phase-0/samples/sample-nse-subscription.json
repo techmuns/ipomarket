@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "SKYWAYS",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "2.95836E7",
+    "noOfTime": "0.7399572736245758",
+    "noOfsharesBid": "2.18906E7",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "SYMBIOTEC",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.3124929E7",
+    "noOfTime": "0.6163827629086603",
+    "noOfsharesBid": "8089980.0",
     "srNo": null
   },
   {
@@ -39,9 +39,9 @@
     "status": "Active",
     "symbol": "HTEL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.8145406E7",
+    "noOfTime": "5.382026447906429",
+    "noOfsharesBid": "9.7659055E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "AUGMONT",
     "category": "Total",
     "noOfSharesOffered": "7715999.0",
-    "noOfTime": "1.7901764891364034",
-    "noOfsharesBid": "1.3813E7",
+    "noOfTime": "11.173924594858034",
+    "noOfsharesBid": "8.6217991E7",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "TEMPSENS",
     "category": "Total",
     "noOfSharesOffered": "1.5181667E7",
-    "noOfTime": "13.70394305184009",
-    "noOfsharesBid": "2.080487E8",
+    "noOfTime": "130.84515685925663",
+    "noOfsharesBid": "1.9864476E9",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "MADHURKNIT",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "1472400",
     "noOfSharesOffered": "5024400",
-    "noOfTime": ""
+    "noOfTime": "0.29"
   },
   {
     "companyName": "ABH Healthcare Limited",
@@ -94,8 +94,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ABH",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "1213200",
     "noOfSharesOffered": "3429600",
-    "noOfTime": ""
+    "noOfTime": "0.35"
   }
 ]

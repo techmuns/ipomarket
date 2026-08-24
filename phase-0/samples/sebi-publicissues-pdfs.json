@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-24T04:03:09.255Z",
+  "captured_at_utc": "2026-08-24T11:41:30.749Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46029,
+      "bytes": 45477,
       "tr_count": 26,
-      "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=46029"
+      "pdfs_found": 18,
+      "notes": "static ok: tr=26, bytes=45477"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Avtar%20Steel%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Avtar Steel Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf",
       "link_text": "TABLESPACE TECHNOLOGIES LIMITED - Draft Abridged Prospectus",
@@ -30,11 +35,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Svatantra%20Microfin%20Limited%20%20-%20DAP_p.pdf",
       "link_text": "Svatantra Microfin Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Muthoot%20Fincorp%20DAP_p.pdf",
-      "link_text": "Muthoot Fincorp Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -88,11 +88,6 @@
       "source": "static-alt"
     },
     {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/IFL%20Finance%20Ltd-%20DAP_p.pdf",
-      "link_text": "IFL Finance Ltd. - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
       "link_text": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
       "source": "static-alt"
@@ -115,11 +110,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/CULT.FIT%20Limited%20-%20AP_p.pdf",
       "link_text": "CULT.FIT LIMITED - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/TMC%20Transformers%20India%20Limited%20-%20Abri_p.pdf",
-      "link_text": "TMC Transformers India Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

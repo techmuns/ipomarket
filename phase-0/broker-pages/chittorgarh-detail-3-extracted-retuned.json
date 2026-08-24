@@ -88,9 +88,9 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf"
+      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
+      "why_missing": "2 PDF link(s) found but none on the official allow-list",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf | https://www.chittorgarh.net/reports/anchor-investor/symbiotech-ipo-anchor-allocation-report.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,11 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf"
+    "https://www.chittorgarh.net/reports/ipo_notes/symbiotec-rhp.pdf",
+    "https://www.chittorgarh.net/reports/anchor-investor/symbiotech-ipo-anchor-allocation-report.pdf"
   ],
-  "noise_stripped_bytes": 90148,
-  "main_content_bytes": 90148,
-  "tables_parsed": 12,
-  "table_rows_parsed": 77
+  "noise_stripped_bytes": 95496,
+  "main_content_bytes": 95496,
+  "tables_parsed": 13,
+  "table_rows_parsed": 89
 }

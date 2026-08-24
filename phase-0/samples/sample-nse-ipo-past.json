@@ -50,10 +50,30 @@
     "symbol": "TEMPSENS"
   },
   {
+    "companyName": "Lumino Industries Limited",
+    "issueEndDate": "31-Aug-2026",
+    "issuePrice": "Rs.78 to Rs.82",
+    "issueSize": "89743588",
+    "issueStartDate": "27-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "LUMINO"
+  },
+  {
+    "companyName": "Annu Projects Limited",
+    "issueEndDate": "28-Aug-2026",
+    "issuePrice": "Rs.94 to Rs.99",
+    "issueSize": "17683000",
+    "issueStartDate": "25-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ANNU"
+  },
+  {
     "companyName": "Sumax Engineering Limited",
     "issueEndDate": "28-Aug-2026",
     "issuePrice": "Rs.95 to Rs.101",
-    "issueSize": "5287200",
+    "issueSize": "3852000",
     "issueStartDate": "25-Aug-2026",
     "lotSize": "1200",
     "priceBand": "Rs.95 to Rs.101",
