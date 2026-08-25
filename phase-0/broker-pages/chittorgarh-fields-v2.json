@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-24T19:41:18.683Z",
+  "captured_at_utc": "2026-08-25T03:57:16.068Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "symbiotec-pharmalab-ipo",
-    "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+    "slug": "annu-projects-ipo",
+    "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"24 - 27 Aug\" covers today",
-    "date_text": "24 - 27 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"25 - 28 Aug\" covers today",
+    "date_text": "25 - 28 Aug",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
-      "slug": "symbiotec-pharmalab-ipo"
+      "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
+      "slug": "annu-projects-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 340379,
+      "bytes": 340784,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+      "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
       "mode": "static",
       "status": 200,
-      "bytes": 358188,
-      "title": "Symbiotec Pharmalab IPO Date, Price, GMP, Review, Details",
+      "bytes": 303860,
+      "title": "Annu Projects IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

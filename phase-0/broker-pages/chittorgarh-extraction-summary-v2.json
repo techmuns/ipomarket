@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-24T19:41:18.683Z",
+  "generated_at_utc": "2026-08-25T03:57:16.068Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "symbiotec-pharmalab-ipo",
-    "url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+    "slug": "annu-projects-ipo",
+    "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"24 - 27 Aug\" covers today",
-    "date_text": "24 - 27 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"25 - 28 Aug\" covers today",
+    "date_text": "25 - 28 Aug",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84830,
+      "main_content_bytes": 84888,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "symbiotec-pharmalab-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
+      "slug": "annu-projects-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 95496,
-      "tables_parsed": 13,
-      "table_rows_parsed": 89,
+      "main_content_bytes": 90306,
+      "tables_parsed": 10,
+      "table_rows_parsed": 72,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -104,14 +104,13 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
+        "brlms",
         "official_pdf_links"
       ],
-      "fields_missing": [
-        "brlms"
-      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }
