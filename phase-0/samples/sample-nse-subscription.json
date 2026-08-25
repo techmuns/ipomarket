@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "ANNU",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.7683E7",
+    "noOfTime": "0.23044941469207714",
+    "noOfsharesBid": "4075037.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "SKYWAYS",
     "category": "Total",
     "noOfSharesOffered": "2.95836E7",
-    "noOfTime": "0.7399572736245758",
-    "noOfsharesBid": "2.18906E7",
+    "noOfTime": "1.6276315255749807",
+    "noOfsharesBid": "4.81512E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "SYMBIOTEC",
     "category": "Total",
     "noOfSharesOffered": "1.3124929E7",
-    "noOfTime": "0.6163827629086603",
-    "noOfsharesBid": "8089980.0",
+    "noOfTime": "1.3419158305542072",
+    "noOfsharesBid": "1.761255E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "HTEL",
     "category": "Total",
     "noOfSharesOffered": "1.8145406E7",
-    "noOfTime": "5.382026447906429",
-    "noOfsharesBid": "9.7659055E7",
+    "noOfTime": "12.819090683338802",
+    "noOfsharesBid": "2.32607605E8",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "AUGMONT",
     "category": "Total",
     "noOfSharesOffered": "7715999.0",
-    "noOfTime": "11.173924594858034",
-    "noOfsharesBid": "8.6217991E7",
+    "noOfTime": "79.78747910672358",
+    "noOfsharesBid": "6.15640109E8",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SUMAX",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "11306400",
     "noOfSharesOffered": "3852000",
-    "noOfTime": ""
+    "noOfTime": "2.94"
   },
   {
     "companyName": "Madhur Knit Crafts Limited",
@@ -94,9 +94,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "MADHURKNIT",
-    "noOfsharesBid": "1472400",
+    "noOfsharesBid": "2245200",
     "noOfSharesOffered": "5024400",
-    "noOfTime": "0.29"
+    "noOfTime": "0.45"
   },
   {
     "companyName": "ABH Healthcare Limited",
@@ -106,8 +106,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ABH",
-    "noOfsharesBid": "1213200",
+    "noOfsharesBid": "2871600",
     "noOfSharesOffered": "3429600",
-    "noOfTime": "0.35"
+    "noOfTime": "0.84"
   }
 ]

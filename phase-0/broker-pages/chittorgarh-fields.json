@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-25T03:57:16.068Z",
+  "captured_at_utc": "2026-08-25T11:39:48.655Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 150276,
+      "bytes": 149217,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148503,
+      "bytes": 148557,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
+    "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
     "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
     "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
     "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
     "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
     "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
-    "https://www.chittorgarh.com/ipo/molbio-diagnostics-ipo/2579/",
-    "https://www.chittorgarh.com/ipo/leap-india-ipo/2583/"
+    "https://www.chittorgarh.com/ipo/molbio-diagnostics-ipo/2579/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
+      "url": "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
+      "url": "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
       "mode": "static",
       "status": 200,
-      "bytes": 277141,
-      "title": "Priority Jewels IPO Date, Price, GMP, Review, Details",
+      "bytes": 251051,
+      "title": "Pernia&#x27;s Pop-up Studio IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-25T03:57:16.068Z",
+  "generated_at_utc": "2026-08-25T11:39:48.655Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96346,
+      "main_content_bytes": 96349,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84888,
+      "main_content_bytes": 84885,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -88,9 +88,9 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 90306,
+      "main_content_bytes": 92240,
       "tables_parsed": 10,
-      "table_rows_parsed": 72,
+      "table_rows_parsed": 75,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

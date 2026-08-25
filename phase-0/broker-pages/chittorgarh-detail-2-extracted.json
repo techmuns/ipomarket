@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
+  "source_url": "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
   "fields": {
     "company_name": {
-      "value": "Priority Jewels IPO",
+      "value": "Purple Style Labs IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Priority Jewels IPO"
+      "source_snippet": "Purple Style Labs IPO"
     },
     "issue_size_cr": {
-      "value": "45,75,000 shares (agg. up to ₹ 92 Cr)",
+      "value": "[.] shares (agg. up to ₹ 680 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "45,75,000 shares (agg. up to ₹ 92 Cr)"
+      "source_snippet": "[.] shares (agg. up to ₹ 680 Cr)"
     },
     "price_band": {
-      "value": "₹190 to ₹200",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[3] label=\"Price Band\"",
-      "why_missing": null,
-      "source_snippet": "₹190 to ₹200"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
+      "source_snippet": null
     },
     "lot_size": {
-      "value": "75 Shares",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
-      "why_missing": null,
-      "source_snippet": "75 Shares"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
+      "source_snippet": null
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Fri, Sep 4, 2026 T",
+      "value": "Mon, Sep 7, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Fri, Sep 4, 2026 T"
+      "source_snippet": "Mon, Sep 7, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://priorityjewels.in/wp-content/uploads/2026/08/Priority-Jewels-Limited_RHP.pdf"
+      "source_snippet": "https://img.perniaspopupshop.com/store-locator-v2/uploads/Red_Herring_Prospectus_RHP_a99142e0fd.pdf"
     }
   },
-  "found_count": 5,
-  "precision_ratio": 0.5,
+  "found_count": 3,
+  "precision_ratio": 0.3,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://priorityjewels.in/wp-content/uploads/2026/08/Priority-Jewels-Limited_RHP.pdf"
+    "https://img.perniaspopupshop.com/store-locator-v2/uploads/Red_Herring_Prospectus_RHP_a99142e0fd.pdf"
   ],
-  "noise_stripped_bytes": 83206,
-  "main_content_bytes": 83206,
-  "tables_parsed": 10,
-  "table_rows_parsed": 61
+  "noise_stripped_bytes": 77589,
+  "main_content_bytes": 77589,
+  "tables_parsed": 9,
+  "table_rows_parsed": 48
 }
