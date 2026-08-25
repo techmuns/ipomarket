@@ -15,21 +15,6 @@
     "srNo": null
   },
   {
-    "companyName": "Skyways Air Services Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.131 to Rs.138",
-    "issueSize": "29583600",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SKYWAYS",
-    "category": "Total",
-    "noOfSharesOffered": "2.95836E7",
-    "noOfTime": "1.6276315255749807",
-    "noOfsharesBid": "4.81512E7",
-    "srNo": null
-  },
-  {
     "companyName": "Symbiotec Pharmalab Limited",
     "issueEndDate": "27-Aug-2026",
     "issuePrice": "Rs.938 to Rs.988",
@@ -45,6 +30,21 @@
     "srNo": null
   },
   {
+    "companyName": "Skyways Air Services Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.131 to Rs.138",
+    "issueSize": "29583600",
+    "issueStartDate": "24-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SKYWAYS",
+    "category": "Total",
+    "noOfSharesOffered": "2.95836E7",
+    "noOfTime": "1.6276315255749807",
+    "noOfsharesBid": "4.81512E7",
+    "srNo": null
+  },
+  {
     "companyName": "Hy-Tech Engineers Limited",
     "issueEndDate": "27-Aug-2026",
     "issuePrice": "Rs.50 to Rs.53",
@@ -57,21 +57,6 @@
     "noOfSharesOffered": "1.8145406E7",
     "noOfTime": "12.819090683338802",
     "noOfsharesBid": "2.32607605E8",
-    "srNo": null
-  },
-  {
-    "companyName": "Augmont Enterprises Limited",
-    "issueEndDate": "25-Aug-2026",
-    "issuePrice": "Rs.750 to Rs.788",
-    "issueSize": "7715999",
-    "issueStartDate": "21-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "AUGMONT",
-    "category": "Total",
-    "noOfSharesOffered": "7715999.0",
-    "noOfTime": "79.78747910672358",
-    "noOfsharesBid": "6.15640109E8",
     "srNo": null
   },
   {

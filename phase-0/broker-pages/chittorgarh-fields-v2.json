@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-25T11:39:48.655Z",
+  "captured_at_utc": "2026-08-25T19:43:49.770Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 340670,
+      "bytes": 340799,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
       "mode": "static",
       "status": 200,
-      "bytes": 312627,
+      "bytes": 312631,
       "title": "Annu Projects IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

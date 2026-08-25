@@ -10,16 +10,6 @@
     "symbol": "ANNU"
   },
   {
-    "companyName": "Skyways Air Services Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.131 to Rs.138",
-    "issueSize": "29583600",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SKYWAYS"
-  },
-  {
     "companyName": "Symbiotec Pharmalab Limited",
     "issueEndDate": "27-Aug-2026",
     "issuePrice": "Rs.938 to Rs.988",
@@ -28,6 +18,16 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "SYMBIOTEC"
+  },
+  {
+    "companyName": "Skyways Air Services Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.131 to Rs.138",
+    "issueSize": "29583600",
+    "issueStartDate": "24-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SKYWAYS"
   },
   {
     "companyName": "Hy-Tech Engineers Limited",
@@ -46,18 +46,8 @@
     "issueSize": "7715999",
     "issueStartDate": "21-Aug-2026",
     "series": "EQ",
-    "status": "Active",
-    "symbol": "AUGMONT"
-  },
-  {
-    "companyName": "Tempsens Instruments (India) Limited",
-    "issueEndDate": "24-Aug-2026",
-    "issuePrice": "Rs.285 to Rs.300",
-    "issueSize": "15181667",
-    "issueStartDate": "20-Aug-2026",
-    "series": "EQ",
     "status": "Closed",
-    "symbol": "TEMPSENS"
+    "symbol": "AUGMONT"
   },
   {
     "companyName": "Priority Jewels Limited",
@@ -73,7 +63,7 @@
     "companyName": "Lumino Industries Limited",
     "issueEndDate": "31-Aug-2026",
     "issuePrice": "Rs.78 to Rs.82",
-    "issueSize": "89743588",
+    "issueSize": "63205127",
     "issueStartDate": "27-Aug-2026",
     "series": "EQ",
     "status": "Forthcoming",

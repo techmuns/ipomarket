@@ -1,13 +1,12 @@
 {
-  "total": 8,
-  "valid": 8,
+  "total": 7,
+  "valid": 7,
   "examples": {
     "Annu Projects Limited": "ANNU",
-    "Skyways Air Services Limited": "SKYWAYS",
     "Symbiotec Pharmalab Limited": "SYMBIOTEC",
+    "Skyways Air Services Limited": "SKYWAYS",
     "Hy-Tech Engineers Limited": "HTEL",
     "Augmont Enterprises Limited": "AUGMONT",
-    "Tempsens Instruments (India) Limited": "TEMPSENS",
     "Priority Jewels Limited": "PRIORITY",
     "Lumino Industries Limited": "LUMINO"
   }
