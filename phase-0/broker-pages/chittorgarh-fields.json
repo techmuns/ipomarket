@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-25T19:43:49.770Z",
+  "captured_at_utc": "2026-08-26T04:00:58.836Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 150331,
+      "bytes": 148407,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148577,
+      "bytes": 147537,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "mode": "static",
       "status": 200,
-      "bytes": 269216,
+      "bytes": 269280,
       "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
       "mode": "static",
       "status": 200,
-      "bytes": 251119,
+      "bytes": 269844,
       "title": "Pernia&#x27;s Pop-up Studio IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
