@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-26T04:00:58.836Z",
+  "captured_at_utc": "2026-08-26T11:42:15.502Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148407,
+      "bytes": 149506,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
     "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
     "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
     "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/",
     "https://www.chittorgarh.com/ipo/shiprocket-ipo/2450/",
     "https://www.chittorgarh.com/ipo/milky-mist-dairy-food-ipo/2541/",
-    "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/",
-    "https://www.chittorgarh.com/ipo/molbio-diagnostics-ipo/2579/"
+    "https://www.chittorgarh.com/ipo/dhoot-transmission-ipo/2859/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
+      "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
+      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
+      "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "mode": "static",
       "status": 200,
-      "bytes": 269280,
-      "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
+      "bytes": 268391,
+      "title": "Deepa Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
+      "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "mode": "static",
       "status": 200,
-      "bytes": 269844,
-      "title": "Pernia&#x27;s Pop-up Studio IPO Date, Price, GMP, Details",
+      "bytes": 269280,
+      "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

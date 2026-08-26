@@ -1,10 +1,38 @@
 {
-  "generated_at_utc": "2026-08-26T04:00:58.836Z",
+  "generated_at_utc": "2026-08-26T11:42:15.502Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.5,
+  "average_precision_ratio": 0.35,
   "per_detail": [
     {
       "index": 1,
+      "source_url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
+      "found_count": 2,
+      "precision_ratio": 0.2,
+      "main_content_bytes": 80193,
+      "tables_parsed": 10,
+      "table_rows_parsed": 54,
+      "fields_high_confidence": [
+        "company_name",
+        "listing_date"
+      ],
+      "fields_medium_confidence": [],
+      "fields_rejected_low_confidence": [
+        "official_pdf_links"
+      ],
+      "fields_missing": [
+        "issue_size_cr",
+        "price_band",
+        "lot_size",
+        "open_date",
+        "close_date",
+        "registrar",
+        "brlms"
+      ],
+      "official_pdf_links_on_allowlist": [],
+      "official_pdf_links_off_allowlist_count": 1
+    },
+    {
+      "index": 2,
       "source_url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "found_count": 5,
       "precision_ratio": 0.5,
@@ -29,34 +57,6 @@
       ],
       "official_pdf_links_on_allowlist": [],
       "official_pdf_links_off_allowlist_count": 0
-    },
-    {
-      "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
-      "found_count": 5,
-      "precision_ratio": 0.5,
-      "main_content_bytes": 82981,
-      "tables_parsed": 10,
-      "table_rows_parsed": 59,
-      "fields_high_confidence": [
-        "company_name",
-        "issue_size_cr",
-        "price_band",
-        "lot_size",
-        "listing_date"
-      ],
-      "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [
-        "official_pdf_links"
-      ],
-      "fields_missing": [
-        "open_date",
-        "close_date",
-        "registrar",
-        "brlms"
-      ],
-      "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

@@ -20,16 +20,6 @@
     "symbol": "SYMBIOTEC"
   },
   {
-    "companyName": "Skyways Air Services Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.131 to Rs.138",
-    "issueSize": "29583600",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SKYWAYS"
-  },
-  {
     "companyName": "Hy-Tech Engineers Limited",
     "issueEndDate": "27-Aug-2026",
     "issuePrice": "Rs.50 to Rs.53",
@@ -40,14 +30,24 @@
     "symbol": "HTEL"
   },
   {
-    "companyName": "Augmont Enterprises Limited",
-    "issueEndDate": "25-Aug-2026",
-    "issuePrice": "Rs.750 to Rs.788",
-    "issueSize": "7715999",
-    "issueStartDate": "21-Aug-2026",
+    "companyName": "Skyways Air Services Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.131 to Rs.138",
+    "issueSize": "29583600",
+    "issueStartDate": "24-Aug-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "AUGMONT"
+    "status": "Active",
+    "symbol": "SKYWAYS"
+  },
+  {
+    "companyName": "Purple Style Labs Limited",
+    "issueEndDate": "02-Sep-2026",
+    "issuePrice": "Rs.546 to Rs.575",
+    "issueSize": "12454212",
+    "issueStartDate": "31-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "PERNIASPOP"
   },
   {
     "companyName": "Priority Jewels Limited",
@@ -60,6 +60,16 @@
     "symbol": "PRIORITY"
   },
   {
+    "companyName": "ESDS Software Solution Limited",
+    "issueEndDate": "01-Sep-2026",
+    "issuePrice": "Rs.408 to Rs.429",
+    "issueSize": "17647058",
+    "issueStartDate": "28-Aug-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ESDS"
+  },
+  {
     "companyName": "Lumino Industries Limited",
     "issueEndDate": "31-Aug-2026",
     "issuePrice": "Rs.78 to Rs.82",
@@ -68,5 +78,17 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "LUMINO"
+  },
+  {
+    "companyName": "Shanti Inorganics Limited",
+    "issueEndDate": "02-Sep-2026",
+    "issuePrice": "Rs.79 to Rs.83",
+    "issueSize": "5691200",
+    "issueStartDate": "31-Aug-2026",
+    "lotSize": "1600",
+    "priceBand": "Rs.79 to Rs.83",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "SHANTIINOR"
   }
 ]

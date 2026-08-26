@@ -10,8 +10,8 @@
     "symbol": "ANNU",
     "category": "Total",
     "noOfSharesOffered": "1.7683E7",
-    "noOfTime": "0.23044941469207714",
-    "noOfsharesBid": "4075037.0",
+    "noOfTime": "0.30407504382740486",
+    "noOfsharesBid": "5376959.0",
     "srNo": null
   },
   {
@@ -25,23 +25,8 @@
     "symbol": "SYMBIOTEC",
     "category": "Total",
     "noOfSharesOffered": "1.3124929E7",
-    "noOfTime": "1.3419158305542072",
-    "noOfsharesBid": "1.761255E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Skyways Air Services Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.131 to Rs.138",
-    "issueSize": "29583600",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SKYWAYS",
-    "category": "Total",
-    "noOfSharesOffered": "2.95836E7",
-    "noOfTime": "1.6276315255749807",
-    "noOfsharesBid": "4.81512E7",
+    "noOfTime": "3.6690747050898334",
+    "noOfsharesBid": "4.8156345E7",
     "srNo": null
   },
   {
@@ -55,8 +40,23 @@
     "symbol": "HTEL",
     "category": "Total",
     "noOfSharesOffered": "1.8145406E7",
-    "noOfTime": "12.819090683338802",
-    "noOfsharesBid": "2.32607605E8",
+    "noOfTime": "29.781617286491137",
+    "noOfsharesBid": "5.40399537E8",
+    "srNo": null
+  },
+  {
+    "companyName": "Skyways Air Services Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.131 to Rs.138",
+    "issueSize": "29583600",
+    "issueStartDate": "24-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SKYWAYS",
+    "category": "Total",
+    "noOfSharesOffered": "2.95836E7",
+    "noOfTime": "3.2530591273543448",
+    "noOfsharesBid": "9.62372E7",
     "srNo": null
   },
   {
@@ -67,9 +67,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SUMAX",
-    "noOfsharesBid": "11306400",
+    "noOfsharesBid": "34315200",
     "noOfSharesOffered": "3852000",
-    "noOfTime": "2.94"
+    "noOfTime": "8.91"
   },
   {
     "companyName": "Madhur Knit Crafts Limited",
@@ -79,9 +79,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "MADHURKNIT",
-    "noOfsharesBid": "2245200",
+    "noOfsharesBid": "3588000",
     "noOfSharesOffered": "5024400",
-    "noOfTime": "0.45"
+    "noOfTime": "0.71"
   },
   {
     "companyName": "ABH Healthcare Limited",
@@ -91,8 +91,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ABH",
-    "noOfsharesBid": "2871600",
+    "noOfsharesBid": "3379200",
     "noOfSharesOffered": "3429600",
-    "noOfTime": "0.84"
+    "noOfTime": "0.99"
   }
 ]

@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/pernias-pop-up-studio-ipo/2622/",
+  "source_url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
   "fields": {
     "company_name": {
-      "value": "Purple Style Labs IPO",
+      "value": "Rays of Belief IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Purple Style Labs IPO"
+      "source_snippet": "Rays of Belief IPO"
     },
     "issue_size_cr": {
-      "value": "1,18,26,086 shares (agg. up to ₹ 680 Cr)",
+      "value": "52,30,000 shares (agg. up to ₹ 125 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,18,26,086 shares (agg. up to ₹ 680 Cr)"
+      "source_snippet": "52,30,000 shares (agg. up to ₹ 125 Cr)"
     },
     "price_band": {
-      "value": "₹546 to ₹575",
+      "value": "₹227 to ₹239",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹546 to ₹575"
+      "source_snippet": "₹227 to ₹239"
     },
     "lot_size": {
-      "value": "26 Shares",
+      "value": "62 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "26 Shares"
+      "source_snippet": "62 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Mon, Sep 7, 2026 T",
+      "value": "Tue, Sep 8, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Mon, Sep 7, 2026 T"
+      "source_snippet": "Tue, Sep 8, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,20 +78,18 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://img.perniaspopupshop.com/store-locator-v2/uploads/Red_Herring_Prospectus_RHP_a99142e0fd.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://img.perniaspopupshop.com/store-locator-v2/uploads/Red_Herring_Prospectus_RHP_a99142e0fd.pdf"
-  ],
-  "noise_stripped_bytes": 82981,
-  "main_content_bytes": 82981,
-  "tables_parsed": 10,
-  "table_rows_parsed": 59
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 82469,
+  "main_content_bytes": 82469,
+  "tables_parsed": 11,
+  "table_rows_parsed": 70
 }
