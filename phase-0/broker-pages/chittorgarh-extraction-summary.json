@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-26T11:42:15.502Z",
+  "generated_at_utc": "2026-08-26T21:49:36.407Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.35,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 80193,
+      "main_content_bytes": 80329,
       "tables_parsed": 10,
       "table_rows_parsed": 54,
       "fields_high_confidence": [

@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Lumino Industries Limited",
+    "issueEndDate": "31-Aug-2026",
+    "issuePrice": "Rs.78 to Rs.82",
+    "issueSize": "63205127",
+    "issueStartDate": "27-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LUMINO"
+  },
+  {
     "companyName": "Annu Projects Limited",
     "issueEndDate": "28-Aug-2026",
     "issuePrice": "Rs.94 to Rs.99",
@@ -8,16 +18,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "ANNU"
-  },
-  {
-    "companyName": "Symbiotec Pharmalab Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.938 to Rs.988",
-    "issueSize": "13124929",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SYMBIOTEC"
   },
   {
     "companyName": "Hy-Tech Engineers Limited",
@@ -38,6 +38,16 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "SKYWAYS"
+  },
+  {
+    "companyName": "Symbiotec Pharmalab Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.938 to Rs.988",
+    "issueSize": "13124929",
+    "issueStartDate": "24-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SYMBIOTEC"
   },
   {
     "companyName": "Purple Style Labs Limited",
@@ -68,16 +78,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "ESDS"
-  },
-  {
-    "companyName": "Lumino Industries Limited",
-    "issueEndDate": "31-Aug-2026",
-    "issuePrice": "Rs.78 to Rs.82",
-    "issueSize": "63205127",
-    "issueStartDate": "27-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "LUMINO"
   },
   {
     "companyName": "Shanti Inorganics Limited",

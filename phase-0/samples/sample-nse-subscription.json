@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Lumino Industries Limited",
+    "issueEndDate": "31-Aug-2026",
+    "issuePrice": "Rs.78 to Rs.82",
+    "issueSize": "63205127",
+    "issueStartDate": "27-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LUMINO",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Annu Projects Limited",
     "issueEndDate": "28-Aug-2026",
     "issuePrice": "Rs.94 to Rs.99",
@@ -12,21 +27,6 @@
     "noOfSharesOffered": "1.7683E7",
     "noOfTime": "0.30407504382740486",
     "noOfsharesBid": "5376959.0",
-    "srNo": null
-  },
-  {
-    "companyName": "Symbiotec Pharmalab Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.938 to Rs.988",
-    "issueSize": "13124929",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SYMBIOTEC",
-    "category": "Total",
-    "noOfSharesOffered": "1.3124929E7",
-    "noOfTime": "3.6690747050898334",
-    "noOfsharesBid": "4.8156345E7",
     "srNo": null
   },
   {
@@ -57,6 +57,21 @@
     "noOfSharesOffered": "2.95836E7",
     "noOfTime": "3.2530591273543448",
     "noOfsharesBid": "9.62372E7",
+    "srNo": null
+  },
+  {
+    "companyName": "Symbiotec Pharmalab Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.938 to Rs.988",
+    "issueSize": "13124929",
+    "issueStartDate": "24-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SYMBIOTEC",
+    "category": "Total",
+    "noOfSharesOffered": "1.3124929E7",
+    "noOfTime": "3.6690747050898334",
+    "noOfsharesBid": "4.8156345E7",
     "srNo": null
   },
   {
