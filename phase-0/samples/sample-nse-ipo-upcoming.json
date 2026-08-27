@@ -63,7 +63,7 @@
     "companyName": "Priority Jewels Limited",
     "issueEndDate": "01-Sep-2026",
     "issuePrice": "Rs.190 to Rs.200",
-    "issueSize": "4575000",
+    "issueSize": "3202500",
     "issueStartDate": "28-Aug-2026",
     "series": "EQ",
     "status": "Forthcoming",
@@ -78,6 +78,18 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "ESDS"
+  },
+  {
+    "companyName": "Ashutosh Fibre Limited",
+    "issueEndDate": "02-Sep-2026",
+    "issuePrice": "Rs.87 to Rs.92",
+    "issueSize": "6124800",
+    "issueStartDate": "31-Aug-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.87 to Rs.92",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "ASHUTOSH"
   },
   {
     "companyName": "Shanti Inorganics Limited",

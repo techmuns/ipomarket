@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-26T21:49:36.407Z",
+  "captured_at_utc": "2026-08-27T14:07:23.086Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,24 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46169,
+      "bytes": 46104,
       "tr_count": 26,
-      "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=46169"
+      "pdfs_found": 19,
+      "notes": "static ok: tr=26, bytes=46104"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/ATOMBERG%20TECHNOLOGIES%20LIMITED%20-%20AP_p.pdf",
+      "link_text": "ATOMBERG TECHNOLOGIES LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Avaada%20Electro%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Avaada Electro Limited - Draft Abridged Prospectus.",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/MPSteel-Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "M P STEEL (INDIA) LIMITED - Draft Abridged Prospectus",
@@ -35,6 +45,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Jay%20Jagdamba%20Limited%20Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "JAY JAGDAMBA LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Gemini%20Edibles%20&%20Fats%20India%20Ltd.%20-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "GEMINI EDIBLES & FATS INDIA LIMITED - Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -100,26 +115,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf",
       "link_text": "Veritas Finance Limited - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Master%20Chains%20N%20Jewels%20Limited%20-%20AP_p.pdf",
-      "link_text": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/IFL%20Finance%20Ltd-%20DAP_p.pdf",
-      "link_text": "IFL Finance Ltd. - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/YOGIJI%20DIGI%20LIMITED_p.pdf",
-      "link_text": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/jul-2026/Indian%20Gas%20Exchange%20Limited_p.pdf",
-      "link_text": "Indian Gas Exchange Limited - Draft Abridged prospectus",
       "source": "static-alt"
     }
   ]
