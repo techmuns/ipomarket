@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-27T14:07:23.086Z",
+  "generated_at_utc": "2026-08-28T03:34:38.957Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "lumino-industries-ipo",
-    "url": "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
+    "slug": "priority-jewels-ipo",
+    "url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"27 - 31 Aug\" covers today",
-    "date_text": "27 - 31 Aug",
+    "reason": "current-open: list \"mainboard\" row date range \"28 Aug - 01 Sep\" covers today",
+    "date_text": "28 Aug - 01 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84885,
+      "main_content_bytes": 84888,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "lumino-industries-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
+      "slug": "priority-jewels-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 89543,
-      "tables_parsed": 13,
-      "table_rows_parsed": 82,
+      "main_content_bytes": 83918,
+      "tables_parsed": 10,
+      "table_rows_parsed": 62,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -104,14 +104,13 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
+        "brlms",
         "official_pdf_links"
       ],
-      "fields_missing": [
-        "brlms"
-      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }

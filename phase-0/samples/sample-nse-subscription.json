@@ -1,5 +1,35 @@
 [
   {
+    "companyName": "ESDS Software Solution Limited",
+    "issueEndDate": "01-Sep-2026",
+    "issuePrice": "Rs.408 to Rs.429",
+    "issueSize": "12352942",
+    "issueStartDate": "28-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ESDS",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Priority Jewels Limited",
+    "issueEndDate": "01-Sep-2026",
+    "issuePrice": "Rs.190 to Rs.200",
+    "issueSize": "3202500",
+    "issueStartDate": "28-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "PRIORITY",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Lumino Industries Limited",
     "issueEndDate": "31-Aug-2026",
     "issuePrice": "Rs.78 to Rs.82",
@@ -30,51 +60,6 @@
     "srNo": null
   },
   {
-    "companyName": "Hy-Tech Engineers Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.50 to Rs.53",
-    "issueSize": "18145406",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "HTEL",
-    "category": "Total",
-    "noOfSharesOffered": "1.8145406E7",
-    "noOfTime": "173.31271485465797",
-    "noOfsharesBid": "3.144829576E9",
-    "srNo": null
-  },
-  {
-    "companyName": "Skyways Air Services Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.131 to Rs.138",
-    "issueSize": "29583600",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SKYWAYS",
-    "category": "Total",
-    "noOfSharesOffered": "2.95836E7",
-    "noOfTime": "48.522384023580635",
-    "noOfsharesBid": "1.4354668E9",
-    "srNo": null
-  },
-  {
-    "companyName": "Symbiotec Pharmalab Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.938 to Rs.988",
-    "issueSize": "13124929",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SYMBIOTEC",
-    "category": "Total",
-    "noOfSharesOffered": "1.3124929E7",
-    "noOfTime": "58.32175549292495",
-    "noOfsharesBid": "7.654689E8",
-    "srNo": null
-  },
-  {
     "companyName": "Sumax Engineering Limited",
     "isBse": "1",
     "issueEndDate": "28-Aug-2026",
@@ -85,29 +70,5 @@
     "noOfsharesBid": "74383200",
     "noOfSharesOffered": "3852000",
     "noOfTime": "19.31"
-  },
-  {
-    "companyName": "Madhur Knit Crafts Limited",
-    "isBse": "1",
-    "issueEndDate": "27-Aug-2026",
-    "issueStartDate": "24-Aug-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "MADHURKNIT",
-    "noOfsharesBid": "7399200",
-    "noOfSharesOffered": "5024400",
-    "noOfTime": "1.47"
-  },
-  {
-    "companyName": "ABH Healthcare Limited",
-    "isBse": "1",
-    "issueEndDate": "27-Aug-2026",
-    "issueStartDate": "24-Aug-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "ABH",
-    "noOfsharesBid": "4854000",
-    "noOfSharesOffered": "3429600",
-    "noOfTime": "1.42"
   }
 ]

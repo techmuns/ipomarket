@@ -1,5 +1,25 @@
 [
   {
+    "companyName": "ESDS Software Solution Limited",
+    "issueEndDate": "01-Sep-2026",
+    "issuePrice": "Rs.408 to Rs.429",
+    "issueSize": "12352942",
+    "issueStartDate": "28-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ESDS"
+  },
+  {
+    "companyName": "Priority Jewels Limited",
+    "issueEndDate": "01-Sep-2026",
+    "issuePrice": "Rs.190 to Rs.200",
+    "issueSize": "3202500",
+    "issueStartDate": "28-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "PRIORITY"
+  },
+  {
     "companyName": "Lumino Industries Limited",
     "issueEndDate": "31-Aug-2026",
     "issuePrice": "Rs.78 to Rs.82",
@@ -26,18 +46,8 @@
     "issueSize": "18145406",
     "issueStartDate": "24-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "HTEL"
-  },
-  {
-    "companyName": "Skyways Air Services Limited",
-    "issueEndDate": "27-Aug-2026",
-    "issuePrice": "Rs.131 to Rs.138",
-    "issueSize": "29583600",
-    "issueStartDate": "24-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SKYWAYS"
   },
   {
     "companyName": "Symbiotec Pharmalab Limited",
@@ -46,8 +56,18 @@
     "issueSize": "13124929",
     "issueStartDate": "24-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "SYMBIOTEC"
+  },
+  {
+    "companyName": "Skyways Air Services Limited",
+    "issueEndDate": "27-Aug-2026",
+    "issuePrice": "Rs.131 to Rs.138",
+    "issueSize": "29583600",
+    "issueStartDate": "24-Aug-2026",
+    "series": "EQ",
+    "status": "Closed",
+    "symbol": "SKYWAYS"
   },
   {
     "companyName": "Purple Style Labs Limited",
@@ -58,26 +78,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "PERNIASPOP"
-  },
-  {
-    "companyName": "Priority Jewels Limited",
-    "issueEndDate": "01-Sep-2026",
-    "issuePrice": "Rs.190 to Rs.200",
-    "issueSize": "3202500",
-    "issueStartDate": "28-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "PRIORITY"
-  },
-  {
-    "companyName": "ESDS Software Solution Limited",
-    "issueEndDate": "01-Sep-2026",
-    "issuePrice": "Rs.408 to Rs.429",
-    "issueSize": "17647058",
-    "issueStartDate": "28-Aug-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "ESDS"
   },
   {
     "companyName": "Ashutosh Fibre Limited",

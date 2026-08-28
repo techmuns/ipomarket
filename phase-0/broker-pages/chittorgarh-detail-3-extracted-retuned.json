@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
-  "slug": "lumino-industries-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
+  "slug": "priority-jewels-ipo",
   "fields": {
     "company_name": {
-      "value": "Lumino Industries IPO",
+      "value": "Priority Jewels IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Lumino Industries IPO"
+      "source_snippet": "Priority Jewels IPO"
     },
     "issue_size_cr": {
-      "value": "8,53,65,851 shares (agg. up to ₹ 700 Cr)",
+      "value": "45,75,000 shares (agg. up to ₹ 92 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "8,53,65,851 shares (agg. up to ₹ 700 Cr)"
+      "source_snippet": "45,75,000 shares (agg. up to ₹ 92 Cr)"
     },
     "price_band": {
-      "value": "₹78 to ₹82",
+      "value": "₹190 to ₹200",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹78 to ₹82"
+      "source_snippet": "₹190 to ₹200"
     },
     "lot_size": {
-      "value": "182 Shares",
+      "value": "75 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "182 Shares"
+      "source_snippet": "75 Shares"
     },
     "face_value": {
-      "value": "₹ 5 per share",
+      "value": "₹ 10 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 5 per share"
+      "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-08-27",
+      "value": "2026-08-28",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"27 to 31 Aug, 2026\" → start=2026-08-27"
+      "source_snippet": "raw=\"28 Aug to 1 Sep, 2026\" → start=2026-08-28"
     },
     "close_date": {
-      "value": "2026-08-31",
+      "value": "2026-09-01",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"27 to 31 Aug, 2026\" → end=2026-08-31"
+      "source_snippet": "raw=\"28 Aug to 1 Sep, 2026\" → end=2026-09-01"
     },
     "listing_date": {
-      "value": "2026-09-03",
+      "value": "2026-09-04",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Thu, Sep 3, 2026 T\" → 2026-09-03"
+      "source_snippet": "raw=\"Fri, Sep 4, 2026 T\" → 2026-09-04"
     },
     "registrar": {
-      "value": "Bigshare Services Pvt.Ltd.",
+      "value": "MUFG Intime India Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. 8657578989/8069219065/8069219060 ipo@bigshareonline.com <i class\" → \"Bigshare Services Pvt.Ltd.\""
+      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 priorityjewels.ipo@in.mpms.mufg.com <i class=\"fa fa\" → \"MUFG Intime India Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -87,10 +87,10 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/lumino-industries-ipo-anchor-allocation-report.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
   "found_count_full": 9,
@@ -98,11 +98,9 @@
   "precision_ratio_full": 0.8181818181818182,
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/lumino-industries-ipo-anchor-allocation-report.pdf"
-  ],
-  "noise_stripped_bytes": 89543,
-  "main_content_bytes": 89543,
-  "tables_parsed": 13,
-  "table_rows_parsed": 82
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 83918,
+  "main_content_bytes": 83918,
+  "tables_parsed": 10,
+  "table_rows_parsed": 62
 }
