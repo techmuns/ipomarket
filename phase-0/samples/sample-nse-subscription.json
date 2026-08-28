@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "ESDS",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.2352942E7",
+    "noOfTime": "1.5433727447275314",
+    "noOfsharesBid": "1.9065194E7",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "PRIORITY",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "3202500.0",
+    "noOfTime": "1.367704918032787",
+    "noOfsharesBid": "4380075.0",
     "srNo": null
   },
   {
@@ -40,35 +40,8 @@
     "symbol": "LUMINO",
     "category": "Total",
     "noOfSharesOffered": "6.3205127E7",
-    "noOfTime": "0.796654771376379",
-    "noOfsharesBid": "5.0352666E7",
+    "noOfTime": "2.858714515358857",
+    "noOfsharesBid": "1.80685414E8",
     "srNo": null
-  },
-  {
-    "companyName": "Annu Projects Limited",
-    "issueEndDate": "28-Aug-2026",
-    "issuePrice": "Rs.94 to Rs.99",
-    "issueSize": "17683000",
-    "issueStartDate": "25-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ANNU",
-    "category": "Total",
-    "noOfSharesOffered": "1.7683E7",
-    "noOfTime": "0.6159122886388056",
-    "noOfsharesBid": "1.0891177E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Sumax Engineering Limited",
-    "isBse": "1",
-    "issueEndDate": "28-Aug-2026",
-    "issueStartDate": "25-Aug-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "SUMAX",
-    "noOfsharesBid": "74383200",
-    "noOfSharesOffered": "3852000",
-    "noOfTime": "19.31"
   }
 ]
