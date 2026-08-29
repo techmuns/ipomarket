@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-29T10:00:01.209Z",
+  "captured_at_utc": "2026-08-29T15:36:39.602Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "mode": "static",
       "status": 200,
-      "bytes": 271346,
+      "bytes": 271622,
       "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
