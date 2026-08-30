@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-30T09:10:38.574Z",
+  "captured_at_utc": "2026-08-30T15:20:01.126Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148809,
+      "bytes": 147313,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "mode": "static",
       "status": 200,
-      "bytes": 285841,
+      "bytes": 285565,
       "title": "Deepa Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
       "mode": "static",
       "status": 200,
-      "bytes": 271346,
+      "bytes": 271622,
       "title": "Rays of Belief IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
