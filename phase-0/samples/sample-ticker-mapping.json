@@ -1,14 +1,12 @@
 {
-  "total": 8,
-  "valid": 8,
+  "total": 6,
+  "valid": 6,
   "examples": {
-    "ESDS Software Solution Limited": "ESDS",
-    "Priority Jewels Limited": "PRIORITY",
-    "Lumino Industries Limited": "LUMINO",
-    "Rays of Belief Limited- For Profit Social Enterprise (FPSE)": "MOMSBELIEF",
-    "Deepa Jewellers Limited": "DEEPA",
     "Purple Style Labs Limited": "PERNIASPOP",
-    "Ashutosh Fibre Limited": "ASHUTOSH",
-    "Shanti Inorganics Limited": "SHANTIINOR"
+    "Priority Jewels Limited": "PRIORITY",
+    "ESDS Software Solution Limited": "ESDS",
+    "Lumino Industries Limited": "LUMINO",
+    "Deepa Jewellers Limited": "DEEPA",
+    "Rays of Belief Limited- For Profit Social Enterprise (FPSE)": "MOMSBELIEF"
   }
 }

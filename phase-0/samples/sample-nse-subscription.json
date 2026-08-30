@@ -1,17 +1,17 @@
 [
   {
-    "companyName": "ESDS Software Solution Limited",
-    "issueEndDate": "01-Sep-2026",
-    "issuePrice": "Rs.408 to Rs.429",
-    "issueSize": "12352942",
-    "issueStartDate": "28-Aug-2026",
+    "companyName": "Purple Style Labs Limited",
+    "issueEndDate": "02-Sep-2026",
+    "issuePrice": "Rs.546 to Rs.575",
+    "issueSize": "6849816",
+    "issueStartDate": "31-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "ESDS",
+    "symbol": "PERNIASPOP",
     "category": "Total",
-    "noOfSharesOffered": "1.2352942E7",
-    "noOfTime": "1.5433727447275314",
-    "noOfsharesBid": "1.9065194E7",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
     "srNo": null
   },
   {
@@ -30,6 +30,21 @@
     "srNo": null
   },
   {
+    "companyName": "ESDS Software Solution Limited",
+    "issueEndDate": "01-Sep-2026",
+    "issuePrice": "Rs.408 to Rs.429",
+    "issueSize": "12352942",
+    "issueStartDate": "28-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ESDS",
+    "category": "Total",
+    "noOfSharesOffered": "1.2352942E7",
+    "noOfTime": "1.5433727447275314",
+    "noOfsharesBid": "1.9065194E7",
+    "srNo": null
+  },
+  {
     "companyName": "Lumino Industries Limited",
     "issueEndDate": "31-Aug-2026",
     "issuePrice": "Rs.78 to Rs.82",
@@ -43,5 +58,29 @@
     "noOfTime": "2.858714515358857",
     "noOfsharesBid": "1.80685414E8",
     "srNo": null
+  },
+  {
+    "companyName": "Ashutosh Fibre Limited",
+    "isBse": "1",
+    "issueEndDate": "02-Sep-2026",
+    "issueStartDate": "31-Aug-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "ASHUTOSH",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4381200",
+    "noOfTime": ""
+  },
+  {
+    "companyName": "Shanti Inorganics Limited",
+    "isBse": "1",
+    "issueEndDate": "02-Sep-2026",
+    "issueStartDate": "31-Aug-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "SHANTIINOR",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "4072000",
+    "noOfTime": ""
   }
 ]

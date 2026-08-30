@@ -1,13 +1,13 @@
 [
   {
-    "companyName": "ESDS Software Solution Limited",
-    "issueEndDate": "01-Sep-2026",
-    "issuePrice": "Rs.408 to Rs.429",
-    "issueSize": "12352942",
-    "issueStartDate": "28-Aug-2026",
+    "companyName": "Purple Style Labs Limited",
+    "issueEndDate": "02-Sep-2026",
+    "issuePrice": "Rs.546 to Rs.575",
+    "issueSize": "6849816",
+    "issueStartDate": "31-Aug-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "ESDS"
+    "symbol": "PERNIASPOP"
   },
   {
     "companyName": "Priority Jewels Limited",
@@ -20,6 +20,16 @@
     "symbol": "PRIORITY"
   },
   {
+    "companyName": "ESDS Software Solution Limited",
+    "issueEndDate": "01-Sep-2026",
+    "issuePrice": "Rs.408 to Rs.429",
+    "issueSize": "12352942",
+    "issueStartDate": "28-Aug-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ESDS"
+  },
+  {
     "companyName": "Lumino Industries Limited",
     "issueEndDate": "31-Aug-2026",
     "issuePrice": "Rs.78 to Rs.82",
@@ -28,16 +38,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "LUMINO"
-  },
-  {
-    "companyName": "Rays of Belief Limited- For Profit Social Enterprise (FPSE)",
-    "issueEndDate": "03-Sep-2026",
-    "issuePrice": "Rs.227 to Rs.239",
-    "issueSize": "5230000",
-    "issueStartDate": "01-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "MOMSBELIEF"
   },
   {
     "companyName": "Deepa Jewellers Limited",
@@ -50,37 +50,13 @@
     "symbol": "DEEPA"
   },
   {
-    "companyName": "Purple Style Labs Limited",
-    "issueEndDate": "02-Sep-2026",
-    "issuePrice": "Rs.546 to Rs.575",
-    "issueSize": "6849816",
-    "issueStartDate": "31-Aug-2026",
+    "companyName": "Rays of Belief Limited- For Profit Social Enterprise (FPSE)",
+    "issueEndDate": "03-Sep-2026",
+    "issuePrice": "Rs.227 to Rs.239",
+    "issueSize": "5230000",
+    "issueStartDate": "01-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "PERNIASPOP"
-  },
-  {
-    "companyName": "Ashutosh Fibre Limited",
-    "issueEndDate": "02-Sep-2026",
-    "issuePrice": "Rs.87 to Rs.92",
-    "issueSize": "4381200",
-    "issueStartDate": "31-Aug-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.87 to Rs.92",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "ASHUTOSH"
-  },
-  {
-    "companyName": "Shanti Inorganics Limited",
-    "issueEndDate": "02-Sep-2026",
-    "issuePrice": "Rs.79 to Rs.83",
-    "issueSize": "4072000",
-    "issueStartDate": "31-Aug-2026",
-    "lotSize": "1600",
-    "priceBand": "Rs.79 to Rs.83",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "SHANTIINOR"
+    "symbol": "MOMSBELIEF"
   }
 ]
