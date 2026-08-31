@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-31T18:00:08.423Z",
+  "captured_at_utc": "2026-08-31T23:12:08.739Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46095,
+      "bytes": 46160,
       "tr_count": 26,
       "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=46095"
+      "notes": "static ok: tr=26, bytes=46160"
     }
   ],
   "detail_urls_found": 31,
@@ -68,11 +68,6 @@
       "source": "static-alt"
     },
     {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Muthoot%20Fincorp%20DAP_p.pdf",
-      "link_text": "Muthoot Fincorp Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf",
       "link_text": "Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus",
       "source": "static-alt"
@@ -115,6 +110,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Veritas%20Finance%20Limited%20-%20AP_p.pdf",
       "link_text": "Veritas Finance Limited - Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Master%20Chains%20N%20Jewels%20Limited%20-%20AP_p.pdf",
+      "link_text": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

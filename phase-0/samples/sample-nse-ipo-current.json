@@ -1,5 +1,25 @@
 [
   {
+    "companyName": "Deepa Jewellers Limited",
+    "issueEndDate": "03-Sep-2026",
+    "issuePrice": "Rs.168 to Rs.177",
+    "issueSize": "18520085",
+    "issueStartDate": "01-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "DEEPA"
+  },
+  {
+    "companyName": "Rays of Belief Limited- For Profit Social Enterprise (FPSE)",
+    "issueEndDate": "03-Sep-2026",
+    "issuePrice": "Rs.227 to Rs.239",
+    "issueSize": "3137810",
+    "issueStartDate": "01-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "MOMSBELIEF"
+  },
+  {
     "companyName": "Purple Style Labs Limited",
     "issueEndDate": "02-Sep-2026",
     "issuePrice": "Rs.546 to Rs.575",
@@ -36,27 +56,7 @@
     "issueSize": "63205127",
     "issueStartDate": "27-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "LUMINO"
-  },
-  {
-    "companyName": "Deepa Jewellers Limited",
-    "issueEndDate": "03-Sep-2026",
-    "issuePrice": "Rs.168 to Rs.177",
-    "issueSize": "18520085",
-    "issueStartDate": "01-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "DEEPA"
-  },
-  {
-    "companyName": "Rays of Belief Limited- For Profit Social Enterprise (FPSE)",
-    "issueEndDate": "03-Sep-2026",
-    "issuePrice": "Rs.227 to Rs.239",
-    "issueSize": "3137810",
-    "issueStartDate": "01-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "MOMSBELIEF"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-31T18:00:08.423Z",
+  "captured_at_utc": "2026-08-31T23:12:08.739Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 366314,
+      "bytes": 366443,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 340741,
+      "bytes": 340551,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
       "mode": "static",
       "status": 200,
-      "bytes": 296942,
+      "bytes": 296666,
       "title": "Purple Style Labs IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
