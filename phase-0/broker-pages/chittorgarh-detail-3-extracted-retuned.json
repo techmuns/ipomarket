@@ -1,40 +1,40 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
-  "slug": "priority-jewels-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
+  "slug": "purple-style-labs-ipo",
   "fields": {
     "company_name": {
-      "value": "Priority Jewels IPO",
+      "value": "Purple Style Labs IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Priority Jewels IPO"
+      "source_snippet": "Purple Style Labs IPO"
     },
     "issue_size_cr": {
-      "value": "45,75,000 shares (agg. up to ₹ 92 Cr)",
+      "value": "1,18,26,086 shares (agg. up to ₹ 680 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "45,75,000 shares (agg. up to ₹ 92 Cr)"
+      "source_snippet": "1,18,26,086 shares (agg. up to ₹ 680 Cr)"
     },
     "price_band": {
-      "value": "₹190 to ₹200",
+      "value": "₹546 to ₹575",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹190 to ₹200"
+      "source_snippet": "₹546 to ₹575"
     },
     "lot_size": {
-      "value": "75 Shares",
+      "value": "26 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "75 Shares"
+      "source_snippet": "26 Shares"
     },
     "face_value": {
       "value": "₹ 10 per share",
@@ -45,36 +45,36 @@
       "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-08-28",
+      "value": "2026-08-31",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"28 Aug to 1 Sep, 2026\" → start=2026-08-28"
+      "source_snippet": "raw=\"31 Aug to 2 Sep, 2026\" → start=2026-08-31"
     },
     "close_date": {
-      "value": "2026-09-01",
+      "value": "2026-09-02",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"28 Aug to 1 Sep, 2026\" → end=2026-09-01"
+      "source_snippet": "raw=\"31 Aug to 2 Sep, 2026\" → end=2026-09-02"
     },
     "listing_date": {
-      "value": "2026-09-04",
+      "value": "2026-09-07",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Fri, Sep 4, 2026 T\" → 2026-09-04"
+      "source_snippet": "raw=\"Mon, Sep 7, 2026 T\" → 2026-09-07"
     },
     "registrar": {
-      "value": "MUFG Intime India Pvt.Ltd.",
+      "value": "Kfin Technologies Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 priorityjewels.ipo@in.mpms.mufg.com <i class=\"fa fa\" → \"MUFG Intime India Pvt.Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 purplestyle.ipo@kfintech.com </i\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -87,10 +87,10 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/priority-jewels-ipo-anchor-allocation-letter.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
   "found_count_full": 9,
@@ -98,11 +98,9 @@
   "precision_ratio_full": 0.8181818181818182,
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/priority-jewels-ipo-anchor-allocation-letter.pdf"
-  ],
-  "noise_stripped_bytes": 88191,
-  "main_content_bytes": 88191,
-  "tables_parsed": 11,
-  "table_rows_parsed": 72
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 88936,
+  "main_content_bytes": 88936,
+  "tables_parsed": 10,
+  "table_rows_parsed": 69
 }

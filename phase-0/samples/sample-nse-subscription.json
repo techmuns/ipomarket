@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "PERNIASPOP",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "6849816.0",
+    "noOfTime": "0.06750312709129705",
+    "noOfsharesBid": "462384.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "PRIORITY",
     "category": "Total",
     "noOfSharesOffered": "3202500.0",
-    "noOfTime": "1.367704918032787",
-    "noOfsharesBid": "4380075.0",
+    "noOfTime": "17.885175644028102",
+    "noOfsharesBid": "5.7277275E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "ESDS",
     "category": "Total",
     "noOfSharesOffered": "1.2352942E7",
-    "noOfTime": "1.5433727447275314",
-    "noOfsharesBid": "1.9065194E7",
+    "noOfTime": "17.277316124369403",
+    "noOfsharesBid": "2.13425684E8",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "LUMINO",
     "category": "Total",
     "noOfSharesOffered": "6.3205127E7",
-    "noOfTime": "2.858714515358857",
-    "noOfsharesBid": "1.80685414E8",
+    "noOfTime": "75.90817596173804",
+    "noOfsharesBid": "4.797785902E9",
     "srNo": null
   },
   {
@@ -67,9 +67,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ASHUTOSH",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "4254000",
     "noOfSharesOffered": "4381200",
-    "noOfTime": ""
+    "noOfTime": "0.97"
   },
   {
     "companyName": "Shanti Inorganics Limited",
@@ -79,8 +79,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SHANTIINOR",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "2955200",
     "noOfSharesOffered": "4072000",
-    "noOfTime": ""
+    "noOfTime": "0.73"
   }
 ]

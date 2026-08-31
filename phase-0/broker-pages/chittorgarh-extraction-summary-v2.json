@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-30T21:54:37.272Z",
+  "generated_at_utc": "2026-08-31T09:39:20.116Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "priority-jewels-ipo",
-    "url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
+    "slug": "purple-style-labs-ipo",
+    "url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"28 Aug - 01 Sep\" covers today",
-    "date_text": "28 Aug - 01 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"31 Aug - 02 Sep\" covers today",
+    "date_text": "31 Aug - 02 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96349,
+      "main_content_bytes": 96341,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84888,
+      "main_content_bytes": 84880,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "priority-jewels-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
+      "slug": "purple-style-labs-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 88191,
-      "tables_parsed": 11,
-      "table_rows_parsed": 72,
+      "main_content_bytes": 88936,
+      "tables_parsed": 10,
+      "table_rows_parsed": 69,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -104,14 +104,13 @@
         "close_date",
         "registrar"
       ],
-      "fields_rejected_low_confidence": [
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
+        "brlms",
         "official_pdf_links"
       ],
-      "fields_missing": [
-        "brlms"
-      ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }
