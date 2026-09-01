@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-01T08:35:29.258Z",
+  "captured_at_utc": "2026-09-01T15:28:15.040Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 150828,
+      "bytes": 150829,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -30,6 +30,7 @@
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
     "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+    "https://www.chittorgarh.com/ipo/pranav-constructions-ipo/2127/",
     "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
     "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
     "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
     "https://www.chittorgarh.com/ipo/sunshine-pictures-ipo/2002/",
     "https://www.chittorgarh.com/ipo/horizon-industrial-parks-ipo/2826/",
-    "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/",
-    "https://www.chittorgarh.com/ipo/behari-lal-engineering-ipo/2659/"
+    "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/"
   ],
   "picked_detail_urls": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
       "mode": "static",
       "status": 200,
-      "bytes": 254072,
+      "bytes": 254107,
       "title": "Kanohar Electricals IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
       "mode": "static",
       "status": 200,
-      "bytes": 260094,
+      "bytes": 260095,
       "title": "Veegaland Developers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

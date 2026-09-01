@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-01T08:35:29.258Z",
+  "captured_at_utc": "2026-09-01T15:28:15.040Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 340741,
+      "bytes": 340870,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "mode": "static",
       "status": 200,
-      "bytes": 318101,
+      "bytes": 318116,
       "title": "Deepa Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
