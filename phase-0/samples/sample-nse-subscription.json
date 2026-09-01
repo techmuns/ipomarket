@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "DEEPA",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.8520085E7",
+    "noOfTime": "0.33892393042472535",
+    "noOfsharesBid": "6276900.0",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "MOMSBELIEF",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "3137810.0",
+    "noOfTime": "0.5276444399119131",
+    "noOfsharesBid": "1655648.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "PERNIASPOP",
     "category": "Total",
     "noOfSharesOffered": "6849816.0",
-    "noOfTime": "0.09228539861508689",
-    "noOfsharesBid": "632138.0",
+    "noOfTime": "0.15256147026431074",
+    "noOfsharesBid": "1045018.0",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "PRIORITY",
     "category": "Total",
     "noOfSharesOffered": "3202500.0",
-    "noOfTime": "22.16063231850117",
-    "noOfsharesBid": "7.0969425E7",
+    "noOfTime": "49.038782201405155",
+    "noOfsharesBid": "1.570467E8",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "ESDS",
     "category": "Total",
     "noOfSharesOffered": "1.2352942E7",
-    "noOfTime": "20.84214189623816",
-    "noOfsharesBid": "2.5746177E8",
+    "noOfTime": "46.946164241684286",
+    "noOfsharesBid": "5.79923244E8",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ASHUTOSH",
-    "noOfsharesBid": "5952000",
+    "noOfsharesBid": "15998400",
     "noOfSharesOffered": "4381200",
-    "noOfTime": "1.36"
+    "noOfTime": "3.65"
   },
   {
     "companyName": "Shanti Inorganics Limited",
@@ -94,8 +94,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SHANTIINOR",
-    "noOfsharesBid": "4334400",
+    "noOfsharesBid": "11416000",
     "noOfSharesOffered": "4072000",
-    "noOfTime": "1.06"
+    "noOfTime": "2.80"
   }
 ]

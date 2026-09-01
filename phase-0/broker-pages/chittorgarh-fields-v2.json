@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-08-31T23:12:08.739Z",
+  "captured_at_utc": "2026-09-01T08:35:29.258Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "purple-style-labs-ipo",
-    "url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
+    "slug": "deepa-jewellers-ipo",
+    "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"31 Aug - 02 Sep\" covers today",
-    "date_text": "31 Aug - 02 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"01 - 03 Sep\" covers today",
+    "date_text": "01 - 03 Sep",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
-      "slug": "purple-style-labs-ipo"
+      "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
+      "slug": "deepa-jewellers-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 340551,
+      "bytes": 340741,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
+      "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "mode": "static",
       "status": 200,
-      "bytes": 296666,
-      "title": "Purple Style Labs IPO Date, Price, GMP, Review, Details",
+      "bytes": 318101,
+      "title": "Deepa Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

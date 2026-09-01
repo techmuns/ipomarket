@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
-  "slug": "purple-style-labs-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
+  "slug": "deepa-jewellers-ipo",
   "fields": {
     "company_name": {
-      "value": "Purple Style Labs IPO",
+      "value": "Deepa Jewellers IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Purple Style Labs IPO"
+      "source_snippet": "Deepa Jewellers IPO"
     },
     "issue_size_cr": {
-      "value": "1,18,26,086 shares (agg. up to ₹ 680 Cr)",
+      "value": "2,59,72,633 shares (agg. up to ₹ 460 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,18,26,086 shares (agg. up to ₹ 680 Cr)"
+      "source_snippet": "2,59,72,633 shares (agg. up to ₹ 460 Cr)"
     },
     "price_band": {
-      "value": "₹546 to ₹575",
+      "value": "₹168 to ₹177",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹546 to ₹575"
+      "source_snippet": "₹168 to ₹177"
     },
     "lot_size": {
-      "value": "26 Shares",
+      "value": "84 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "26 Shares"
+      "source_snippet": "84 Shares"
     },
     "face_value": {
-      "value": "₹ 10 per share",
+      "value": "₹ 2 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 10 per share"
+      "source_snippet": "₹ 2 per share"
     },
     "open_date": {
-      "value": "2026-08-31",
+      "value": "2026-09-01",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"31 Aug to 2 Sep, 2026\" → start=2026-08-31"
+      "source_snippet": "raw=\"1 to 3 Sep, 2026\" → start=2026-09-01"
     },
     "close_date": {
-      "value": "2026-09-02",
+      "value": "2026-09-03",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"31 Aug to 2 Sep, 2026\" → end=2026-09-02"
+      "source_snippet": "raw=\"1 to 3 Sep, 2026\" → end=2026-09-03"
     },
     "listing_date": {
-      "value": "2026-09-07",
+      "value": "2026-09-08",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Mon, Sep 7, 2026 T\" → 2026-09-07"
+      "source_snippet": "raw=\"Tue, Sep 8, 2026 T\" → 2026-09-08"
     },
     "registrar": {
-      "value": "Kfin Technologies Ltd.",
+      "value": "Bigshare Services Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 purplestyle.ipo@kfintech.com </i\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. 8657578989/8069219065/8069219060 ipo@bigshareonline.com <i class\" → \"Bigshare Services Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/purple-style-labs-anchor-allocation.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/anchor-intimation-letter.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/purple-style-labs-anchor-allocation.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/anchor-intimation-letter.pdf"
   ],
-  "noise_stripped_bytes": 86925,
-  "main_content_bytes": 86925,
-  "tables_parsed": 11,
-  "table_rows_parsed": 69
+  "noise_stripped_bytes": 89242,
+  "main_content_bytes": 89242,
+  "tables_parsed": 12,
+  "table_rows_parsed": 74
 }

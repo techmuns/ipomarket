@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-31T23:12:08.739Z",
+  "generated_at_utc": "2026-09-01T08:35:29.258Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "purple-style-labs-ipo",
-    "url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
+    "slug": "deepa-jewellers-ipo",
+    "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"31 Aug - 02 Sep\" covers today",
-    "date_text": "31 Aug - 02 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"01 - 03 Sep\" covers today",
+    "date_text": "01 - 03 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84824,
+      "main_content_bytes": 84877,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "purple-style-labs-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
+      "slug": "deepa-jewellers-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 86925,
-      "tables_parsed": 11,
-      "table_rows_parsed": 69,
+      "main_content_bytes": 89242,
+      "tables_parsed": 12,
+      "table_rows_parsed": 74,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
