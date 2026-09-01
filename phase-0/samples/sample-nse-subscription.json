@@ -45,36 +45,6 @@
     "srNo": null
   },
   {
-    "companyName": "Priority Jewels Limited",
-    "issueEndDate": "01-Sep-2026",
-    "issuePrice": "Rs.190 to Rs.200",
-    "issueSize": "3202500",
-    "issueStartDate": "28-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "PRIORITY",
-    "category": "Total",
-    "noOfSharesOffered": "3202500.0",
-    "noOfTime": "70.1915925058548",
-    "noOfsharesBid": "2.24788575E8",
-    "srNo": null
-  },
-  {
-    "companyName": "ESDS Software Solution Limited",
-    "issueEndDate": "01-Sep-2026",
-    "issuePrice": "Rs.408 to Rs.429",
-    "issueSize": "12352942",
-    "issueStartDate": "28-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ESDS",
-    "category": "Total",
-    "noOfSharesOffered": "1.2352942E7",
-    "noOfTime": "96.09905526958678",
-    "noOfsharesBid": "1.187106056E9",
-    "srNo": null
-  },
-  {
     "companyName": "Ashutosh Fibre Limited",
     "isBse": "1",
     "issueEndDate": "02-Sep-2026",

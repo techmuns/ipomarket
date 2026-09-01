@@ -36,7 +36,7 @@
     "issueSize": "3202500",
     "issueStartDate": "28-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "PRIORITY"
   },
   {
@@ -46,17 +46,7 @@
     "issueSize": "12352942",
     "issueStartDate": "28-Aug-2026",
     "series": "EQ",
-    "status": "Active",
-    "symbol": "ESDS"
-  },
-  {
-    "companyName": "Lumino Industries Limited",
-    "issueEndDate": "31-Aug-2026",
-    "issuePrice": "Rs.78 to Rs.82",
-    "issueSize": "63205127",
-    "issueStartDate": "27-Aug-2026",
-    "series": "EQ",
     "status": "Closed",
-    "symbol": "LUMINO"
+    "symbol": "ESDS"
   }
 ]
