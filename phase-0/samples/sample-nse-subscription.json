@@ -10,8 +10,8 @@
     "symbol": "DEEPA",
     "category": "Total",
     "noOfSharesOffered": "1.8520085E7",
-    "noOfTime": "1.3854992566178828",
-    "noOfsharesBid": "2.5659564E7",
+    "noOfTime": "2.3868091318155398",
+    "noOfsharesBid": "4.4203908E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "MOMSBELIEF",
     "category": "Total",
     "noOfSharesOffered": "3137810.0",
-    "noOfTime": "1.672579920390336",
-    "noOfsharesBid": "5248238.0",
+    "noOfTime": "2.3170791093150958",
+    "noOfsharesBid": "7270554.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "PERNIASPOP",
     "category": "Total",
     "noOfSharesOffered": "6849816.0",
-    "noOfTime": "0.7001361788404243",
-    "noOfsharesBid": "4795804.0",
+    "noOfTime": "1.0822249823936876",
+    "noOfsharesBid": "7413042.0",
     "srNo": null
   },
   {
@@ -52,9 +52,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "ASHUTOSH",
-    "noOfsharesBid": "118406400",
+    "noOfsharesBid": "545186400",
     "noOfSharesOffered": "4381200",
-    "noOfTime": "27.03"
+    "noOfTime": "124.44"
   },
   {
     "companyName": "Shanti Inorganics Limited",
@@ -64,8 +64,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SHANTIINOR",
-    "noOfsharesBid": "204889600",
+    "noOfsharesBid": "538715200",
     "noOfSharesOffered": "4072000",
-    "noOfTime": "50.32"
+    "noOfTime": "132.30"
   }
 ]

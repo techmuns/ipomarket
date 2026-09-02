@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-02T07:52:12.667Z",
+  "captured_at_utc": "2026-09-02T15:05:03.894Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46354,
+      "bytes": 46745,
       "tr_count": 26,
-      "pdfs_found": 19,
-      "notes": "static ok: tr=26, bytes=46354"
+      "pdfs_found": 20,
+      "notes": "static ok: tr=26, bytes=46745"
     }
   ],
   "detail_urls_found": 31,
@@ -115,6 +115,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf",
       "link_text": "Encube Ethicals Limited- Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Advanced%20Sys-Tek%20Limited%20%20-%20DAP_p.pdf",
+      "link_text": "Advanced Sys-Tek Limited- Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
