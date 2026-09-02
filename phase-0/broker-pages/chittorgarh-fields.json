@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-01T21:45:31.441Z",
+  "captured_at_utc": "2026-09-02T07:52:12.667Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149584,
+      "bytes": 148483,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 150169,
+      "bytes": 148630,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -30,6 +30,7 @@
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
     "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+    "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
     "https://www.chittorgarh.com/ipo/pranav-constructions-ipo/2127/",
     "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
     "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
     "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/",
     "https://www.chittorgarh.com/ipo/sunshine-pictures-ipo/2002/",
-    "https://www.chittorgarh.com/ipo/horizon-industrial-parks-ipo/2826/",
-    "https://www.chittorgarh.com/ipo/lalithaa-jewellery-mart-ipo/2469/"
+    "https://www.chittorgarh.com/ipo/horizon-industrial-parks-ipo/2826/"
   ],
   "picked_detail_urls": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
       "mode": "static",
       "status": 200,
-      "bytes": 260158,
+      "bytes": 260159,
       "title": "Veegaland Developers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
