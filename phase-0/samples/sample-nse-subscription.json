@@ -28,44 +28,5 @@
     "noOfTime": "2.3170791093150958",
     "noOfsharesBid": "7270554.0",
     "srNo": null
-  },
-  {
-    "companyName": "Purple Style Labs Limited",
-    "issueEndDate": "02-Sep-2026",
-    "issuePrice": "Rs.546 to Rs.575",
-    "issueSize": "6849816",
-    "issueStartDate": "31-Aug-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "PERNIASPOP",
-    "category": "Total",
-    "noOfSharesOffered": "6849816.0",
-    "noOfTime": "1.0822249823936876",
-    "noOfsharesBid": "7413042.0",
-    "srNo": null
-  },
-  {
-    "companyName": "Ashutosh Fibre Limited",
-    "isBse": "1",
-    "issueEndDate": "02-Sep-2026",
-    "issueStartDate": "31-Aug-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "ASHUTOSH",
-    "noOfsharesBid": "545186400",
-    "noOfSharesOffered": "4381200",
-    "noOfTime": "124.44"
-  },
-  {
-    "companyName": "Shanti Inorganics Limited",
-    "isBse": "1",
-    "issueEndDate": "02-Sep-2026",
-    "issueStartDate": "31-Aug-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "SHANTIINOR",
-    "noOfsharesBid": "538715200",
-    "noOfSharesOffered": "4072000",
-    "noOfTime": "132.30"
   }
 ]

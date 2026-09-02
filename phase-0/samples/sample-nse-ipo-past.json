@@ -26,28 +26,8 @@
     "issueSize": "6849816",
     "issueStartDate": "31-Aug-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "PERNIASPOP"
-  },
-  {
-    "companyName": "Priority Jewels Limited",
-    "issueEndDate": "01-Sep-2026",
-    "issuePrice": "Rs.190 to Rs.200",
-    "issueSize": "3202500",
-    "issueStartDate": "28-Aug-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "PRIORITY"
-  },
-  {
-    "companyName": "ESDS Software Solution Limited",
-    "issueEndDate": "01-Sep-2026",
-    "issuePrice": "Rs.408 to Rs.429",
-    "issueSize": "12352942",
-    "issueStartDate": "28-Aug-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "ESDS"
   },
   {
     "companyName": "Qualiance International Limited",
