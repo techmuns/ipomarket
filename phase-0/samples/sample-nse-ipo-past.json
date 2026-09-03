@@ -20,20 +20,40 @@
     "symbol": "MOMSBELIEF"
   },
   {
-    "companyName": "Purple Style Labs Limited",
-    "issueEndDate": "02-Sep-2026",
-    "issuePrice": "Rs.546 to Rs.575",
-    "issueSize": "6849816",
-    "issueStartDate": "31-Aug-2026",
+    "companyName": "Glass Wall Systems (India) Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.172 to Rs.182",
+    "issueSize": "23702094",
+    "issueStartDate": "08-Sep-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "PERNIASPOP"
+    "status": "Forthcoming",
+    "symbol": "GLASSWALL"
+  },
+  {
+    "companyName": "Kanohar Electricals Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.601 to Rs.632",
+    "issueSize": "16949595",
+    "issueStartDate": "08-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "KANOHAR"
+  },
+  {
+    "companyName": "Pranav Constructions Limited",
+    "issueEndDate": "09-Sep-2026",
+    "issuePrice": "Rs.118 to Rs.124",
+    "issueSize": "29602631",
+    "issueStartDate": "07-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "PRANAV"
   },
   {
     "companyName": "Qualiance International Limited",
     "issueEndDate": "08-Sep-2026",
     "issuePrice": "Rs.120 to Rs.127",
-    "issueSize": "3552000",
+    "issueSize": "2543000",
     "issueStartDate": "04-Sep-2026",
     "lotSize": "1000",
     "priceBand": "Rs.120 to Rs.127",

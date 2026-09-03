@@ -1,10 +1,12 @@
 {
-  "total": 4,
-  "valid": 4,
+  "total": 6,
+  "valid": 6,
   "examples": {
     "Deepa Jewellers Limited": "DEEPA",
     "Rays of Belief Limited- For Profit Social Enterprise (FPSE)": "MOMSBELIEF",
-    "Purple Style Labs Limited": "PERNIASPOP",
+    "Glass Wall Systems (India) Limited": "GLASSWALL",
+    "Kanohar Electricals Limited": "KANOHAR",
+    "Pranav Constructions Limited": "PRANAV",
     "Qualiance International Limited": "QUALIANCE"
   }
 }
