@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-02T21:48:49.459Z",
+  "captured_at_utc": "2026-09-03T08:00:02.616Z",
   "sector_reachable": {
     "listed_equity": false,
     "pre_ipo": false
@@ -14,7 +14,7 @@
       "sample_keys": [],
       "sector_fields_found": [],
       "sector_field_values": {},
-      "notes": "NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 397 chars]"
+      "notes": "NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars]"
     },
     {
       "source": "NSE IPO list",

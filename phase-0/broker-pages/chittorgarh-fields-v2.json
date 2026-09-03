@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-02T21:48:49.459Z",
+  "captured_at_utc": "2026-09-03T08:00:02.616Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -32,8 +32,8 @@
   "third_ipo_selection": {
     "slug": "deepa-jewellers-ipo",
     "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
-    "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"01 - 03 Sep\" covers today",
+    "status": "fallback",
+    "reason": "fallback (no current-open found): most-recently-listed end date \"01 - 03 Sep\" from list \"mainboard\"",
     "date_text": "01 - 03 Sep",
     "source_list": "mainboard"
   },
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 366443,
+      "bytes": 366400,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 340870,
+      "bytes": 340741,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "mode": "static",
       "status": 200,
-      "bytes": 318030,
+      "bytes": 319165,
       "title": "Deepa Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

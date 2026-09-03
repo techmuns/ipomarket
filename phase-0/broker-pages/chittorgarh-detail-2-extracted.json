@@ -1,31 +1,31 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+  "source_url": "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
   "fields": {
     "company_name": {
-      "value": "Veegaland Developers IPO",
+      "value": "Asset Reconstruction Co.(India) IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Veegaland Developers IPO"
+      "source_snippet": "Asset Reconstruction Co.(India) IPO"
     },
     "issue_size_cr": {
-      "value": "1,50,00,000 shares (agg. up to ₹ 210 Cr)",
+      "value": "5,27,31,946 shares (agg. up to ₹ 733 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,50,00,000 shares (agg. up to ₹ 210 Cr)"
+      "source_snippet": "5,27,31,946 shares (agg. up to ₹ 733 Cr)"
     },
     "price_band": {
-      "value": "₹130 to ₹140",
+      "value": "₹132 to ₹139",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹130 to ₹140"
+      "source_snippet": "₹132 to ₹139"
     },
     "lot_size": {
       "value": "107 Shares",
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Fri, Sep 18, 2026 T",
+      "value": "Thu, Sep 17, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Fri, Sep 18, 2026 T"
+      "source_snippet": "Thu, Sep 17, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,18 +78,20 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no .pdf href found in the captured HTML",
-      "source_snippet": null
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.arcil.co.in/sites/default/files/2026-09/Arcil-RHP-01-09-26.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 79284,
-  "main_content_bytes": 79284,
+  "official_pdf_links_off_allowlist": [
+    "https://www.arcil.co.in/sites/default/files/2026-09/Arcil-RHP-01-09-26.pdf"
+  ],
+  "noise_stripped_bytes": 79249,
+  "main_content_bytes": 79249,
   "tables_parsed": 10,
-  "table_rows_parsed": 54
+  "table_rows_parsed": 53
 }
