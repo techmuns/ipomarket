@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-03T14:58:55.588Z",
+  "captured_at_utc": "2026-09-03T21:41:36.539Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46745,
+      "bytes": 46400,
       "tr_count": 26,
-      "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=46745"
+      "pdfs_found": 19,
+      "notes": "static ok: tr=26, bytes=46400"
     }
   ],
   "detail_urls_found": 31,
@@ -83,6 +83,11 @@
       "source": "static-alt"
     },
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Muthoot%20Fincorp%20DAP_p.pdf",
+      "link_text": "Muthoot Fincorp Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf",
       "link_text": "Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus",
       "source": "static-alt"
@@ -110,16 +115,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Arjun%20Jewellers%20Limited%20-%20DAP_p.pdf",
       "link_text": "Arjun Jewellers Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Encube%20Ethicals%20Limited%20-%20AP_p.pdf",
-      "link_text": "Encube Ethicals Limited- Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Advanced%20Sys-Tek%20Limited%20%20-%20DAP_p.pdf",
-      "link_text": "Advanced Sys-Tek Limited- Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

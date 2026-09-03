@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-03T14:58:55.588Z",
+  "captured_at_utc": "2026-09-03T21:41:36.539Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149247,
+      "bytes": 148821,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149698,
+      "bytes": 148153,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
       "mode": "static",
       "status": 200,
-      "bytes": 260159,
+      "bytes": 260167,
       "title": "Veegaland Developers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
       "mode": "static",
       "status": 200,
-      "bytes": 257618,
+      "bytes": 257626,
       "title": "Asset Reconstruction IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

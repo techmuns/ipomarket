@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-03T14:58:55.588Z",
+  "captured_at_utc": "2026-09-03T21:41:36.539Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 366400,
+      "bytes": 366451,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 340870,
+      "bytes": 340878,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
       "mode": "static",
       "status": 200,
-      "bytes": 318903,
+      "bytes": 319187,
       "title": "Deepa Jewellers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
