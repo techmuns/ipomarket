@@ -1,23 +1,23 @@
 [
   {
-    "companyName": "Deepa Jewellers Limited",
-    "issueEndDate": "03-Sep-2026",
-    "issuePrice": "Rs.168 to Rs.177",
-    "issueSize": "18520085",
-    "issueStartDate": "01-Sep-2026",
+    "companyName": "Kanohar Electricals Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.601 to Rs.632",
+    "issueSize": "16949595",
+    "issueStartDate": "08-Sep-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "DEEPA"
+    "status": "Forthcoming",
+    "symbol": "KANOHAR"
   },
   {
-    "companyName": "Rays of Belief Limited- For Profit Social Enterprise (FPSE)",
-    "issueEndDate": "03-Sep-2026",
-    "issuePrice": "Rs.227 to Rs.239",
-    "issueSize": "3137810",
-    "issueStartDate": "01-Sep-2026",
+    "companyName": "Prasol Chemicals Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.643 to Rs.676",
+    "issueSize": "7776039",
+    "issueStartDate": "08-Sep-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "MOMSBELIEF"
+    "status": "Forthcoming",
+    "symbol": "PRASOLCHEM"
   },
   {
     "companyName": "Glass Wall Systems (India) Limited",
@@ -28,16 +28,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "GLASSWALL"
-  },
-  {
-    "companyName": "Kanohar Electricals Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.601 to Rs.632",
-    "issueSize": "16949595",
-    "issueStartDate": "08-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "KANOHAR"
   },
   {
     "companyName": "Pranav Constructions Limited",

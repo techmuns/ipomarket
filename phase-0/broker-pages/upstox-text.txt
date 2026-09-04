@@ -210,7 +210,6 @@ Buy Stock
 022-41792999
 support@upstox.com
 Scan to download
-AVAILABLE ON
 Our Products
 Pro Web
 Upstox x TradingView
@@ -249,7 +248,7 @@ News
 Community
 Market holidays 2026
 Help center
-Stocks
+Stocks A-Z
 A
 B
 C
@@ -365,7 +364,6 @@ Commodity Futures
 Aluminium
 Aluminium Mini
 Copper
-Cotton Candy
 Crude Oil
 Popular ETFs
 ICICI Pru Nifty 50 ETF

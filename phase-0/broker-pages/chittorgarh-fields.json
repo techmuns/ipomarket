@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-04T07:56:20.172Z",
+  "captured_at_utc": "2026-09-04T14:56:30.560Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148772,
+      "bytes": 149204,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149561,
+      "bytes": 149932,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/national-stock-exchange-of-india-ipo/3151/",
     "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
     "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
     "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/esds-software-ipo/1198/",
     "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
     "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
-    "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
-    "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/"
+    "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+      "url": "https://www.chittorgarh.com/ipo/national-stock-exchange-of-india-ipo/3151/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
+      "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+      "url": "https://www.chittorgarh.com/ipo/national-stock-exchange-of-india-ipo/3151/",
       "mode": "static",
       "status": 200,
-      "bytes": 260167,
-      "title": "Veegaland Developers IPO Date, Price, GMP, Review, Details",
+      "bytes": 253963,
+      "title": "National Stock Exchange of India IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
+      "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
       "mode": "static",
       "status": 200,
-      "bytes": 287288,
-      "title": "Rentomojo IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 260522,
+      "title": "Veegaland Developers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
