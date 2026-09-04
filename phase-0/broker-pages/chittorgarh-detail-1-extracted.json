@@ -1,7 +1,7 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/national-stock-exchange-of-india-ipo/3151/",
+  "source_url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
   "fields": {
     "company_name": {
       "value": "National Stock Exchange of India IPO",
@@ -92,8 +92,8 @@
     "https://www.bseindia.com/corporates/download/327007/IPO%20Prior/NSEDRHP_20260617214858.pdf"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 76409,
-  "main_content_bytes": 76409,
+  "noise_stripped_bytes": 75005,
+  "main_content_bytes": 75005,
   "tables_parsed": 8,
   "table_rows_parsed": 63
 }

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-04T14:56:30.560Z",
+  "captured_at_utc": "2026-09-04T21:25:37.967Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149204,
+      "bytes": 148353,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149932,
+      "bytes": 149128,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,7 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
-    "https://www.chittorgarh.com/ipo/national-stock-exchange-of-india-ipo/3151/",
+    "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
     "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
     "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
     "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
@@ -52,7 +52,7 @@
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/national-stock-exchange-of-india-ipo/3151/",
+      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "segment_guess": "unknown"
     },
     {
@@ -64,11 +64,11 @@
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/national-stock-exchange-of-india-ipo/3151/",
+      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "mode": "static",
       "status": 200,
-      "bytes": 253963,
-      "title": "National Stock Exchange of India IPO Date, Details",
+      "bytes": 250299,
+      "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
       "mode": "static",
       "status": 200,
-      "bytes": 260522,
+      "bytes": 260548,
       "title": "Veegaland Developers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
