@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-03T21:41:36.539Z",
+  "captured_at_utc": "2026-09-04T07:56:20.172Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148821,
+      "bytes": 148772,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148153,
+      "bytes": 149561,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,7 +29,12 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+    "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
     "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
+    "https://www.chittorgarh.com/ipo/manipal-payment-and-identity-solutions-ipo/2524/",
+    "https://www.chittorgarh.com/ipo/steamhouse-india-ipo/2514/",
+    "https://www.chittorgarh.com/ipo/lcc-projects-ipo/2086/",
+    "https://www.chittorgarh.com/ipo/karamtara-engineering-ipo/2020/",
     "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
     "https://www.chittorgarh.com/ipo/prasol-chemicals-ipo/2775/",
     "https://www.chittorgarh.com/ipo/glass-wall-systems-ipo/2594/",
@@ -42,12 +47,7 @@
     "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
     "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
     "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/",
-    "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/",
-    "https://www.chittorgarh.com/ipo/skyways-air-ipo/2510/",
-    "https://www.chittorgarh.com/ipo/augmont-enterprises-ipo/2673/",
-    "https://www.chittorgarh.com/ipo/tempsens-instruments-india-ipo/2668/",
-    "https://www.chittorgarh.com/ipo/gaja-alternative-asset-management-ipo/2527/",
-    "https://www.chittorgarh.com/ipo/shankesh-jewellers-ipo/2663/"
+    "https://www.chittorgarh.com/ipo/hy-tech-engineers-ipo/2591/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
+      "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
+      "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
       "mode": "static",
       "status": 200,
-      "bytes": 257626,
-      "title": "Asset Reconstruction IPO Date, Price, GMP, Review, Details",
+      "bytes": 287288,
+      "title": "Rentomojo IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-09-03T21:41:36.539Z",
+  "generated_at_utc": "2026-09-04T07:56:20.172Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "deepa-jewellers-ipo",
-    "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"01 - 03 Sep\" from list \"mainboard\"",
-    "date_text": "01 - 03 Sep",
-    "source_list": "mainboard"
+    "slug": "qualiance-international-ipo",
+    "url": "https://www.chittorgarh.com/ipo/qualiance-international-ipo/2979/",
+    "status": "current",
+    "reason": "current-open: list \"sme\" row date range \"04 - 08 Sep\" covers today",
+    "date_text": "04 - 08 Sep",
+    "source_list": "sme"
   },
   "per_detail": [
     {
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "deepa-jewellers-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
+      "slug": "qualiance-international-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/qualiance-international-ipo/2979/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 89476,
-      "tables_parsed": 12,
-      "table_rows_parsed": 75,
+      "main_content_bytes": 93870,
+      "tables_parsed": 11,
+      "table_rows_parsed": 79,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-03T21:41:36.539Z",
+  "captured_at_utc": "2026-09-04T07:56:20.172Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "deepa-jewellers-ipo",
-    "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"01 - 03 Sep\" from list \"mainboard\"",
-    "date_text": "01 - 03 Sep",
-    "source_list": "mainboard"
+    "slug": "qualiance-international-ipo",
+    "url": "https://www.chittorgarh.com/ipo/qualiance-international-ipo/2979/",
+    "status": "current",
+    "reason": "current-open: list \"sme\" row date range \"04 - 08 Sep\" covers today",
+    "date_text": "04 - 08 Sep",
+    "source_list": "sme"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
-      "slug": "deepa-jewellers-ipo"
+      "url": "https://www.chittorgarh.com/ipo/qualiance-international-ipo/2979/",
+      "slug": "qualiance-international-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
+      "url": "https://www.chittorgarh.com/ipo/qualiance-international-ipo/2979/",
       "mode": "static",
       "status": 200,
-      "bytes": 319187,
-      "title": "Deepa Jewellers IPO Date, Price, GMP, Review, Details",
+      "bytes": 324352,
+      "title": "Qualiance International IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
