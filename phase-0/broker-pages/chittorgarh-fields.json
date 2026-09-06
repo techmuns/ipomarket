@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-05T21:11:55.381Z",
+  "captured_at_utc": "2026-09-06T07:52:06.497Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148353,
+      "bytes": 148329,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 147632,
+      "bytes": 149128,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+    "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
     "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
     "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
     "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
     "https://www.chittorgarh.com/ipo/esds-software-ipo/1198/",
     "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
-    "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/",
-    "https://www.chittorgarh.com/ipo/symbiotec-pharmalab-ipo/2815/"
+    "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+      "url": "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+      "url": "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
       "mode": "static",
       "status": 200,
-      "bytes": 260548,
-      "title": "Veegaland Developers IPO Date, Price, GMP, Review, Details",
+      "bytes": 264621,
+      "title": "Manika Plastech IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
