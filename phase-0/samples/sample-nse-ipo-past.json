@@ -1,23 +1,13 @@
 [
   {
-    "companyName": "Kanohar Electricals Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.601 to Rs.632",
-    "issueSize": "16949595",
-    "issueStartDate": "08-Sep-2026",
+    "companyName": "Pranav Constructions Limited",
+    "issueEndDate": "09-Sep-2026",
+    "issuePrice": "Rs.118 to Rs.124",
+    "issueSize": "22463137",
+    "issueStartDate": "07-Sep-2026",
     "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "KANOHAR"
-  },
-  {
-    "companyName": "Prasol Chemicals Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.643 to Rs.676",
-    "issueSize": "7776039",
-    "issueStartDate": "08-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "PRASOLCHEM"
+    "status": "Active",
+    "symbol": "PRANAV"
   },
   {
     "companyName": "Glass Wall Systems (India) Limited",
@@ -30,13 +20,23 @@
     "symbol": "GLASSWALL"
   },
   {
-    "companyName": "Pranav Constructions Limited",
-    "issueEndDate": "09-Sep-2026",
-    "issuePrice": "Rs.118 to Rs.124",
-    "issueSize": "22463137",
-    "issueStartDate": "07-Sep-2026",
+    "companyName": "Prasol Chemicals Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.643 to Rs.676",
+    "issueSize": "7776039",
+    "issueStartDate": "08-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "PRANAV"
+    "symbol": "PRASOLCHEM"
+  },
+  {
+    "companyName": "Kanohar Electricals Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.601 to Rs.632",
+    "issueSize": "16949595",
+    "issueStartDate": "08-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "KANOHAR"
   }
 ]

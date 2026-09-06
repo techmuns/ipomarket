@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-06T14:08:55.692Z",
+  "generated_at_utc": "2026-09-06T21:17:53.650Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.2,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 75005,
+      "main_content_bytes": 74950,
       "tables_parsed": 8,
       "table_rows_parsed": 63,
       "fields_high_confidence": [

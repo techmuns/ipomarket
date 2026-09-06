@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-06T14:08:55.692Z",
+  "captured_at_utc": "2026-09-06T21:17:53.650Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148329,
+      "bytes": 147255,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148024,
+      "bytes": 148131,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "mode": "static",
       "status": 200,
-      "bytes": 250305,
+      "bytes": 250068,
       "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
       "mode": "static",
       "status": 200,
-      "bytes": 264621,
+      "bytes": 264622,
       "title": "Manika Plastech IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
