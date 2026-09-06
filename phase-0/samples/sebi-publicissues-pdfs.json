@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-06T07:52:06.497Z",
+  "captured_at_utc": "2026-09-06T14:08:55.692Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46033,
+      "bytes": 45709,
       "tr_count": 26,
-      "pdfs_found": 18,
-      "notes": "static ok: tr=26, bytes=46033"
+      "pdfs_found": 17,
+      "notes": "static ok: tr=26, bytes=45709"
     }
   ],
   "detail_urls_found": 31,
@@ -83,6 +83,11 @@
       "source": "static-alt"
     },
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Muthoot%20Fincorp%20DAP_p.pdf",
+      "link_text": "Muthoot Fincorp Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf",
       "link_text": "Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus",
       "source": "static-alt"
@@ -100,16 +105,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/J%20PAN%20TUBULAR%20COMPONENTS%20LIMITED%20-%20DAP_p.pdf",
       "link_text": "J PAN TUBULAR COMPONENTS LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/BEAUTY%20GARAGE%20LIMITED%20-%20AP_p.pdf",
-      "link_text": "BEAUTY GARAGE LIMITED - Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Arjun%20Jewellers%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Arjun Jewellers Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
