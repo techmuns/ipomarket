@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-06T21:17:53.650Z",
+  "captured_at_utc": "2026-09-07T08:14:10.828Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45709,
+      "bytes": 45785,
       "tr_count": 26,
       "pdfs_found": 17,
-      "notes": "static ok: tr=26, bytes=45709"
+      "notes": "static ok: tr=26, bytes=45785"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Mahanadi%20Coalfields%20Limited%20_Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Mahanadi Coalfields Ltd. - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Kataria%20Dhulchand%20Pannalal%20Jewellers%20Ltd%20-%20DAP_p.pdf",
       "link_text": "Kataria Dhulchand Pannalal Jewellers Limited - Draft Abridged Prospectus",
@@ -80,11 +85,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Svatantra%20Microfin%20Limited%20%20-%20DAP_p.pdf",
       "link_text": "Svatantra Microfin Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Muthoot%20Fincorp%20DAP_p.pdf",
-      "link_text": "Muthoot Fincorp Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {

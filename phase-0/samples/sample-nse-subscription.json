@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "PRANAV",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "2.2463137E7",
+    "noOfTime": "2.2110251119422903",
+    "noOfsharesBid": "4.966656E7",
     "srNo": null
   },
   {
@@ -22,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "QUALIANCE",
-    "noOfsharesBid": "31801000",
+    "noOfsharesBid": "140092000",
     "noOfSharesOffered": "2543000",
-    "noOfTime": "12.51"
+    "noOfTime": "55.09"
   }
 ]

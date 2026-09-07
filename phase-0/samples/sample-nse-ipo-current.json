@@ -10,14 +10,24 @@
     "symbol": "PRANAV"
   },
   {
-    "companyName": "Glass Wall Systems (India) Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.172 to Rs.182",
-    "issueSize": "23702094",
-    "issueStartDate": "08-Sep-2026",
+    "companyName": "Rentomojo Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.384 to Rs.404",
+    "issueSize": "31274640",
+    "issueStartDate": "09-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "GLASSWALL"
+    "symbol": "RENTOMOJO"
+  },
+  {
+    "companyName": "LCC Projects Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.139 to Rs.146",
+    "issueSize": "30146151",
+    "issueStartDate": "09-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "LCCPROJECT"
   },
   {
     "companyName": "Prasol Chemicals Limited",
@@ -38,5 +48,15 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "KANOHAR"
+  },
+  {
+    "companyName": "Glass Wall Systems (India) Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.172 to Rs.182",
+    "issueSize": "23702094",
+    "issueStartDate": "08-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "GLASSWALL"
   }
 ]
