@@ -1,12 +1,16 @@
 {
-  "total": 6,
-  "valid": 6,
+  "total": 10,
+  "valid": 10,
   "examples": {
     "Pranav Constructions Limited": "PRANAV",
     "Rentomojo Limited": "RENTOMOJO",
+    "Asset Reconstruction Company (India) Limited": "ARCIL",
+    "Steamhouse India Limited": "STEAMHOUSE",
+    "Karamtara Engineering Limited": "KARAMTARA",
     "LCC Projects Limited": "LCCPROJECT",
+    "Manipal Payment and Identity Solutions Limited": "MPIMANIPAL",
     "Prasol Chemicals Limited": "PRASOLCHEM",
-    "Kanohar Electricals Limited": "KANOHAR",
-    "Glass Wall Systems (India) Limited": "GLASSWALL"
+    "Glass Wall Systems (India) Limited": "GLASSWALL",
+    "Kanohar Electricals Limited": "KANOHAR"
   }
 }

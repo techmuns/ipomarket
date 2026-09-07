@@ -20,6 +20,36 @@
     "symbol": "RENTOMOJO"
   },
   {
+    "companyName": "Asset Reconstruction Company (India) Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.132 to Rs.139",
+    "issueSize": "52731946",
+    "issueStartDate": "09-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ARCIL"
+  },
+  {
+    "companyName": "Steamhouse India Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.77 to Rs.81",
+    "issueSize": "53766232",
+    "issueStartDate": "09-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "STEAMHOUSE"
+  },
+  {
+    "companyName": "Karamtara Engineering Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.241 to Rs.254",
+    "issueSize": "36307052",
+    "issueStartDate": "09-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "KARAMTARA"
+  },
+  {
     "companyName": "LCC Projects Limited",
     "issueEndDate": "11-Sep-2026",
     "issuePrice": "Rs.139 to Rs.146",
@@ -30,14 +60,34 @@
     "symbol": "LCCPROJECT"
   },
   {
+    "companyName": "Manipal Payment and Identity Solutions Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.322 to Rs.339",
+    "issueSize": "24244673",
+    "issueStartDate": "09-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "MPIMANIPAL"
+  },
+  {
     "companyName": "Prasol Chemicals Limited",
     "issueEndDate": "10-Sep-2026",
     "issuePrice": "Rs.643 to Rs.676",
-    "issueSize": "7776039",
+    "issueSize": "5443229",
     "issueStartDate": "08-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "PRASOLCHEM"
+  },
+  {
+    "companyName": "Glass Wall Systems (India) Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.172 to Rs.182",
+    "issueSize": "16457298",
+    "issueStartDate": "08-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "GLASSWALL"
   },
   {
     "companyName": "Kanohar Electricals Limited",
@@ -48,15 +98,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "KANOHAR"
-  },
-  {
-    "companyName": "Glass Wall Systems (India) Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.172 to Rs.182",
-    "issueSize": "23702094",
-    "issueStartDate": "08-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "GLASSWALL"
   }
 ]
