@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/pranav-constructions-ipo/2127/",
-  "slug": "pranav-constructions-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
+  "slug": "kanohar-electricals-ipo",
   "fields": {
     "company_name": {
-      "value": "Pranav Constructions IPO",
+      "value": "Kanohar Electricals IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Pranav Constructions IPO"
+      "source_snippet": "Kanohar Electricals IPO"
     },
     "issue_size_cr": {
-      "value": "2,83,08,481 shares (agg. up to ₹ 351 Cr)",
+      "value": "1,67,04,750 shares (agg. up to ₹ 1,056 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "2,83,08,481 shares (agg. up to ₹ 351 Cr)"
+      "source_snippet": "1,67,04,750 shares (agg. up to ₹ 1,056 Cr)"
     },
     "price_band": {
-      "value": "₹118 to ₹124",
+      "value": "₹601 to ₹632",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹118 to ₹124"
+      "source_snippet": "₹601 to ₹632"
     },
     "lot_size": {
-      "value": "120 Shares",
+      "value": "23 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "120 Shares"
+      "source_snippet": "23 Shares"
     },
     "face_value": {
-      "value": "₹ 10 per share",
+      "value": "₹ 2 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 10 per share"
+      "source_snippet": "₹ 2 per share"
     },
     "open_date": {
-      "value": "2026-09-07",
+      "value": "2026-09-08",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"7 to 9 Sep, 2026\" → start=2026-09-07"
+      "source_snippet": "raw=\"8 to 10 Sep, 2026\" → start=2026-09-08"
     },
     "close_date": {
-      "value": "2026-09-09",
+      "value": "2026-09-10",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"7 to 9 Sep, 2026\" → end=2026-09-09"
+      "source_snippet": "raw=\"8 to 10 Sep, 2026\" → end=2026-09-10"
     },
     "listing_date": {
-      "value": "2026-09-15",
+      "value": "2026-09-16",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Tue, Sep 15, 2026 T\" → 2026-09-15"
+      "source_snippet": "raw=\"Wed, Sep 16, 2026 T\" → 2026-09-16"
     },
     "registrar": {
-      "value": "Kfin Technologies Ltd.",
+      "value": "MUFG Intime India Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 pcpl.ipo@kfintech.com <a hre\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 kanoharelectricals.ipo@in.mpms <i class=\"fa fa-glob\" → \"MUFG Intime India Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/pranav-constructions-anchor-book.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/kanohar-electrical-ipo-anchor-allocation.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/pranav-constructions-anchor-book.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/kanohar-electrical-ipo-anchor-allocation.pdf"
   ],
-  "noise_stripped_bytes": 86433,
-  "main_content_bytes": 86433,
+  "noise_stripped_bytes": 87689,
+  "main_content_bytes": 87689,
   "tables_parsed": 12,
-  "table_rows_parsed": 68
+  "table_rows_parsed": 73
 }

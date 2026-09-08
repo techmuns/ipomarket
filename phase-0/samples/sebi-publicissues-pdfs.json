@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-07T22:00:06.447Z",
+  "captured_at_utc": "2026-09-08T08:01:53.852Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45785,
+      "bytes": 45386,
       "tr_count": 26,
-      "pdfs_found": 17,
-      "notes": "static ok: tr=26, bytes=45785"
+      "pdfs_found": 16,
+      "notes": "static ok: tr=26, bytes=45386"
     }
   ],
   "detail_urls_found": 31,
@@ -100,11 +100,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/AGS%20Health%20Limited%20-%20AP_p.pdf",
       "link_text": "AGS Health Limited - Abridged prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/J%20PAN%20TUBULAR%20COMPONENTS%20LIMITED%20-%20DAP_p.pdf",
-      "link_text": "J PAN TUBULAR COMPONENTS LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

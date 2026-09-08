@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-07T22:00:06.447Z",
+  "generated_at_utc": "2026-09-08T08:01:53.852Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "pranav-constructions-ipo",
-    "url": "https://www.chittorgarh.com/ipo/pranav-constructions-ipo/2127/",
+    "slug": "kanohar-electricals-ipo",
+    "url": "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"07 - 09 Sep\" covers today",
-    "date_text": "07 - 09 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"08 - 10 Sep\" covers today",
+    "date_text": "08 - 10 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "pranav-constructions-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/pranav-constructions-ipo/2127/",
+      "slug": "kanohar-electricals-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 86433,
+      "main_content_bytes": 87689,
       "tables_parsed": 12,
-      "table_rows_parsed": 68,
+      "table_rows_parsed": 73,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
