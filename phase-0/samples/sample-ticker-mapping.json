@@ -1,18 +1,17 @@
 {
-  "total": 12,
-  "valid": 12,
+  "total": 11,
+  "valid": 11,
   "examples": {
-    "Prasol Chemicals Limited": "PRASOLCHEM",
-    "Glass Wall Systems (India) Limited": "GLASSWALL",
-    "Kanohar Electricals Limited": "KANOHAR",
-    "Pranav Constructions Limited": "PRANAV",
-    "Veegaland Developers Limited": "VEEGALAND",
+    "LCC Projects Limited": "LCCPROJECT",
     "Karamtara Engineering Limited": "KARAMTARA",
     "Asset Reconstruction Company (India) Limited": "ARCIL",
     "Steamhouse India Limited": "STEAMHOUSE",
     "Manipal Payment and Identity Solutions Limited": "MPIMANIPAL",
     "Rentomojo Limited": "RENTOMOJO",
-    "LCC Projects Limited": "LCCPROJECT",
-    "Vinod Texworld Limited": "VINOD"
+    "Prasol Chemicals Limited": "PRASOLCHEM",
+    "Glass Wall Systems (India) Limited": "GLASSWALL",
+    "Kanohar Electricals Limited": "KANOHAR",
+    "Pranav Constructions Limited": "PRANAV",
+    "Veegaland Developers Limited": "VEEGALAND"
   }
 }

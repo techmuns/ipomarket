@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-08T15:04:37.543Z",
+  "generated_at_utc": "2026-09-08T21:49:33.825Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.2,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 76033,
+      "main_content_bytes": 76175,
       "tables_parsed": 9,
       "table_rows_parsed": 66,
       "fields_high_confidence": [
@@ -38,7 +38,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 81687,
+      "main_content_bytes": 81742,
       "tables_parsed": 11,
       "table_rows_parsed": 58,
       "fields_high_confidence": [
