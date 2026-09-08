@@ -40,6 +40,26 @@
     "symbol": "PRANAV"
   },
   {
+    "companyName": "Veegaland Developers Limited",
+    "issueEndDate": "15-Sep-2026",
+    "issuePrice": "Rs.130 to Rs.140",
+    "issueSize": "16153846",
+    "issueStartDate": "10-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "VEEGALAND"
+  },
+  {
+    "companyName": "Karamtara Engineering Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.241 to Rs.254",
+    "issueSize": "25414937",
+    "issueStartDate": "09-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "KARAMTARA"
+  },
+  {
     "companyName": "Asset Reconstruction Company (India) Limited",
     "issueEndDate": "11-Sep-2026",
     "issuePrice": "Rs.132 to Rs.139",
@@ -53,7 +73,7 @@
     "companyName": "Steamhouse India Limited",
     "issueEndDate": "11-Sep-2026",
     "issuePrice": "Rs.77 to Rs.81",
-    "issueSize": "53766232",
+    "issueSize": "37636363",
     "issueStartDate": "09-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
@@ -70,26 +90,6 @@
     "symbol": "MPIMANIPAL"
   },
   {
-    "companyName": "LCC Projects Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.139 to Rs.146",
-    "issueSize": "30146151",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "LCCPROJECT"
-  },
-  {
-    "companyName": "Karamtara Engineering Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.241 to Rs.254",
-    "issueSize": "36307052",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "KARAMTARA"
-  },
-  {
     "companyName": "Rentomojo Limited",
     "issueEndDate": "11-Sep-2026",
     "issuePrice": "Rs.384 to Rs.404",
@@ -98,6 +98,16 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "RENTOMOJO"
+  },
+  {
+    "companyName": "LCC Projects Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.139 to Rs.146",
+    "issueSize": "20927281",
+    "issueStartDate": "09-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "LCCPROJECT"
   },
   {
     "companyName": "Vinod Texworld Limited",

@@ -10,8 +10,8 @@
     "symbol": "PRASOLCHEM",
     "category": "Total",
     "noOfSharesOffered": "5443229.0",
-    "noOfTime": "0.16993810107934096",
-    "noOfsharesBid": "925012.0",
+    "noOfTime": "0.25976529739976034",
+    "noOfsharesBid": "1413962.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "GLASSWALL",
     "category": "Total",
     "noOfSharesOffered": "1.6457298E7",
-    "noOfTime": "0.9594678300168108",
-    "noOfsharesBid": "1.5790248E7",
+    "noOfTime": "1.7716502429499665",
+    "noOfsharesBid": "2.9156576E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "KANOHAR",
     "category": "Total",
     "noOfSharesOffered": "1.1693326E7",
-    "noOfTime": "1.1169411508752942",
-    "noOfsharesBid": "1.3060757E7",
+    "noOfTime": "2.0479283652914493",
+    "noOfsharesBid": "2.3947094E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "PRANAV",
     "category": "Total",
     "noOfSharesOffered": "2.2463137E7",
-    "noOfTime": "8.57962981750946",
-    "noOfsharesBid": "1.927254E8",
+    "noOfTime": "12.260695378388156",
+    "noOfsharesBid": "2.7541368E8",
     "srNo": null
   },
   {
@@ -67,8 +67,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "QUALIANCE",
-    "noOfsharesBid": "622366000",
+    "noOfsharesBid": "1085311000",
     "noOfSharesOffered": "2543000",
-    "noOfTime": "244.74"
+    "noOfTime": "426.78"
   }
 ]

@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
+  "source_url": "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
   "fields": {
     "company_name": {
-      "value": "Manika Plastech IPO",
+      "value": "Jindal Supreme (India) IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Manika Plastech IPO"
+      "source_snippet": "Jindal Supreme (India) IPO"
     },
     "issue_size_cr": {
-      "value": "2,91,86,045 shares (agg. up to ₹ 125 Cr)",
-      "found": true,
-      "confidence": "high",
-      "method": "table[1].row[0] label=\"Total Issue Size\"",
-      "why_missing": null,
-      "source_snippet": "2,91,86,045 shares (agg. up to ₹ 125 Cr)"
+      "value": "1,34,28,000 shares (agg. up to ₹ [.] Cr)",
+      "found": false,
+      "confidence": "low",
+      "method": "table[1].row[0]-rejected",
+      "why_missing": "value '1,34,28,000 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
+      "source_snippet": "1,34,28,000 shares (agg. up to ₹ [.] Cr)"
     },
     "price_band": {
-      "value": "₹40 to ₹43",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[3] label=\"Price Band\"",
-      "why_missing": null,
-      "source_snippet": "₹40 to ₹43"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
+      "source_snippet": null
     },
     "lot_size": {
-      "value": "348 Shares",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
-      "why_missing": null,
-      "source_snippet": "348 Shares"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
+      "source_snippet": null
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Mon, Sep 21, 2026 T",
+      "value": "Wed, Sep 23, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Mon, Sep 21, 2026 T"
+      "source_snippet": "Wed, Sep 23, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://manikaplastech.com/wp-content/uploads/2026/09/RHP.pdf"
+      "source_snippet": "https://www.sarthi.in/wp-content/uploads/2026/09/Jindal-Supreme_RHP.pdf"
     }
   },
-  "found_count": 5,
-  "precision_ratio": 0.5,
+  "found_count": 2,
+  "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://manikaplastech.com/wp-content/uploads/2026/09/RHP.pdf"
+    "https://www.sarthi.in/wp-content/uploads/2026/09/Jindal-Supreme_RHP.pdf"
   ],
-  "noise_stripped_bytes": 85698,
-  "main_content_bytes": 85698,
+  "noise_stripped_bytes": 81687,
+  "main_content_bytes": 81687,
   "tables_parsed": 11,
-  "table_rows_parsed": 63
+  "table_rows_parsed": 58
 }

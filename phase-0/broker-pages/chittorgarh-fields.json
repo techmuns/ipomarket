@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-08T08:01:53.852Z",
+  "captured_at_utc": "2026-09-08T15:04:37.543Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149579,
+      "bytes": 149617,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148452,
+      "bytes": 147348,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+    "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
     "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
     "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
     "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/",
     "https://www.chittorgarh.com/ipo/priority-jewels-ipo/2435/",
     "https://www.chittorgarh.com/ipo/esds-software-ipo/1198/",
-    "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/",
-    "https://www.chittorgarh.com/ipo/annu-projects-ipo/2500/"
+    "https://www.chittorgarh.com/ipo/lumino-industries-ipo/2013/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
+      "url": "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
       "segment_guess": "unknown"
     }
   ],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "mode": "static",
       "status": 200,
-      "bytes": 250299,
+      "bytes": 253502,
       "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
+      "url": "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
       "mode": "static",
       "status": 200,
-      "bytes": 285099,
-      "title": "Manika Plastech IPO Date, Price, GMP, Review, Details",
+      "bytes": 271353,
+      "title": "Jindal Supreme IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

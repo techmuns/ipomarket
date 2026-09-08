@@ -92,8 +92,8 @@
     "https://www.bseindia.com/corporates/download/327007/IPO%20Prior/NSEDRHP_20260617214858.pdf"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 75005,
-  "main_content_bytes": 75005,
-  "tables_parsed": 8,
-  "table_rows_parsed": 63
+  "noise_stripped_bytes": 76033,
+  "main_content_bytes": 76033,
+  "tables_parsed": 9,
+  "table_rows_parsed": 66
 }
