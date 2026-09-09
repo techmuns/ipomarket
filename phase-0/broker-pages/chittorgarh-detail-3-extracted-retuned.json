@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/rentmojo-anchor-investor.pdf"
   ],
-  "noise_stripped_bytes": 93573,
-  "main_content_bytes": 93573,
+  "noise_stripped_bytes": 93768,
+  "main_content_bytes": 93768,
   "tables_parsed": 14,
   "table_rows_parsed": 100
 }

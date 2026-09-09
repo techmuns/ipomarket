@@ -1,14 +1,14 @@
 {
-  "captured_at_utc": "2026-09-09T08:05:40.547Z",
+  "captured_at_utc": "2026-09-09T15:06:17.652Z",
   "phases": [
     {
       "phase": "static-primary",
       "url": "https://www.sebi.gov.in/filings/public-issues.html",
       "status": 200,
-      "bytes": 6080,
+      "bytes": 6035,
       "tr_count": 0,
       "pdfs_found": 0,
-      "notes": "static ok: tr=0, bytes=6080"
+      "notes": "static ok: tr=0, bytes=6035"
     },
     {
       "phase": "static-alt",

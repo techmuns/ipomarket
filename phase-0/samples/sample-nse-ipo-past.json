@@ -100,10 +100,20 @@
     "symbol": "PRANAV"
   },
   {
+    "companyName": "Manika Plastech Limited",
+    "issueEndDate": "16-Sep-2026",
+    "issuePrice": "Rs.40 to Rs.43",
+    "issueSize": "30799418",
+    "issueStartDate": "11-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "MANIKA"
+  },
+  {
     "companyName": "Veegaland Developers Limited",
     "issueEndDate": "15-Sep-2026",
     "issuePrice": "Rs.130 to Rs.140",
-    "issueSize": "16153846",
+    "issueSize": "11307692",
     "issueStartDate": "10-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",

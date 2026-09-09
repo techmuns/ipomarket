@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-09T08:05:40.547Z",
+  "captured_at_utc": "2026-09-09T15:06:17.652Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 148745,
+      "bytes": 147641,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "mode": "static",
       "status": 200,
-      "bytes": 253889,
+      "bytes": 254094,
       "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
       "mode": "static",
       "status": 200,
-      "bytes": 280187,
+      "bytes": 280649,
       "title": "Sonaselection India IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

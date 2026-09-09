@@ -88,8 +88,8 @@
   "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 83778,
-  "main_content_bytes": 83778,
+  "noise_stripped_bytes": 84117,
+  "main_content_bytes": 84117,
   "tables_parsed": 10,
   "table_rows_parsed": 60
 }
