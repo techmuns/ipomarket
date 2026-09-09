@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Veegaland Developers Limited",
+    "issueEndDate": "15-Sep-2026",
+    "issuePrice": "Rs.130 to Rs.140",
+    "issueSize": "11307692",
+    "issueStartDate": "10-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "VEEGALAND"
+  },
+  {
     "companyName": "LCC Projects Limited",
     "issueEndDate": "11-Sep-2026",
     "issuePrice": "Rs.139 to Rs.146",
@@ -96,7 +106,7 @@
     "issueSize": "22463137",
     "issueStartDate": "07-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "PRANAV"
   },
   {
@@ -108,15 +118,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "MANIKA"
-  },
-  {
-    "companyName": "Veegaland Developers Limited",
-    "issueEndDate": "15-Sep-2026",
-    "issuePrice": "Rs.130 to Rs.140",
-    "issueSize": "11307692",
-    "issueStartDate": "10-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "VEEGALAND"
   }
 ]

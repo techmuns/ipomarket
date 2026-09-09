@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Veegaland Developers Limited",
+    "issueEndDate": "15-Sep-2026",
+    "issuePrice": "Rs.130 to Rs.140",
+    "issueSize": "11307692",
+    "issueStartDate": "10-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "VEEGALAND",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "LCC Projects Limited",
     "issueEndDate": "11-Sep-2026",
     "issuePrice": "Rs.139 to Rs.146",
@@ -132,21 +147,6 @@
     "noOfSharesOffered": "1.1693326E7",
     "noOfTime": "8.198017484503554",
     "noOfsharesBid": "9.5862091E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Pranav Constructions Limited",
-    "issueEndDate": "09-Sep-2026",
-    "issuePrice": "Rs.118 to Rs.124",
-    "issueSize": "22463137",
-    "issueStartDate": "07-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "PRANAV",
-    "category": "Total",
-    "noOfSharesOffered": "2.2463137E7",
-    "noOfTime": "87.07862307922531",
-    "noOfsharesBid": "1.95605904E9",
     "srNo": null
   },
   {

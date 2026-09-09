@@ -2,6 +2,7 @@
   "total": 12,
   "valid": 12,
   "examples": {
+    "Veegaland Developers Limited": "VEEGALAND",
     "LCC Projects Limited": "LCCPROJECT",
     "Karamtara Engineering Limited": "KARAMTARA",
     "Asset Reconstruction Company (India) Limited": "ARCIL",
@@ -12,7 +13,6 @@
     "Glass Wall Systems (India) Limited": "GLASSWALL",
     "Kanohar Electricals Limited": "KANOHAR",
     "Pranav Constructions Limited": "PRANAV",
-    "Manika Plastech Limited": "MANIKA",
-    "Veegaland Developers Limited": "VEEGALAND"
+    "Manika Plastech Limited": "MANIKA"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-09T15:06:17.652Z",
+  "generated_at_utc": "2026-09-09T21:40:33.212Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.2,
   "per_detail": [
@@ -38,7 +38,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 84117,
+      "main_content_bytes": 84116,
       "tables_parsed": 10,
       "table_rows_parsed": 60,
       "fields_high_confidence": [
