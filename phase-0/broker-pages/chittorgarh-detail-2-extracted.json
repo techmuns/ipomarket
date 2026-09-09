@@ -1,23 +1,23 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
+  "source_url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
   "fields": {
     "company_name": {
-      "value": "Jindal Supreme (India) IPO",
+      "value": "Sonaselection India IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Jindal Supreme (India) IPO"
+      "source_snippet": "Sonaselection India IPO"
     },
     "issue_size_cr": {
-      "value": "1,34,28,000 shares (agg. up to ₹ [.] Cr)",
+      "value": "1,43,00,000 shares (agg. up to ₹ [.] Cr)",
       "found": false,
       "confidence": "low",
       "method": "table[1].row[0]-rejected",
-      "why_missing": "value '1,34,28,000 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
-      "source_snippet": "1,34,28,000 shares (agg. up to ₹ [.] Cr)"
+      "why_missing": "value '1,43,00,000 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
+      "source_snippet": "1,43,00,000 shares (agg. up to ₹ [.] Cr)"
     },
     "price_band": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Wed, Sep 23, 2026 T",
+      "value": "Thu, Sep 24, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Wed, Sep 23, 2026 T"
+      "source_snippet": "Thu, Sep 24, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,20 +78,18 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.sarthi.in/wp-content/uploads/2026/09/Jindal-Supreme_RHP.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
   "found_count": 2,
   "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.sarthi.in/wp-content/uploads/2026/09/Jindal-Supreme_RHP.pdf"
-  ],
-  "noise_stripped_bytes": 81742,
-  "main_content_bytes": 81742,
-  "tables_parsed": 11,
-  "table_rows_parsed": 58
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 83778,
+  "main_content_bytes": 83778,
+  "tables_parsed": 10,
+  "table_rows_parsed": 60
 }

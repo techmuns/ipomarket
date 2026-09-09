@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "LCCPROJECT",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "2.0927281E7",
+    "noOfTime": "0.4339486816275846",
+    "noOfsharesBid": "9081366.0",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "KARAMTARA",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "2.5414937E7",
+    "noOfTime": "0.6127588276138556",
+    "noOfsharesBid": "1.5573227E7",
     "srNo": null
   },
   {
@@ -39,9 +39,9 @@
     "status": "Active",
     "symbol": "ARCIL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "3.6912363E7",
+    "noOfTime": "0.1251857541604692",
+    "noOfsharesBid": "4620902.0",
     "srNo": null
   },
   {
@@ -54,9 +54,9 @@
     "status": "Active",
     "symbol": "STEAMHOUSE",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "3.7636363E7",
+    "noOfTime": "0.15599700746854844",
+    "noOfsharesBid": "5871160.0",
     "srNo": null
   },
   {
@@ -69,9 +69,9 @@
     "status": "Active",
     "symbol": "MPIMANIPAL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.3060472E7",
+    "noOfTime": "0.06520928186975172",
+    "noOfsharesBid": "851664.0",
     "srNo": null
   },
   {
@@ -84,9 +84,9 @@
     "status": "Active",
     "symbol": "RENTOMOJO",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "2.1772311E7",
+    "noOfTime": "0.5311629987280634",
+    "noOfsharesBid": "1.1564646E7",
     "srNo": null
   },
   {
@@ -100,8 +100,8 @@
     "symbol": "PRASOLCHEM",
     "category": "Total",
     "noOfSharesOffered": "5443229.0",
-    "noOfTime": "0.25976529739976034",
-    "noOfsharesBid": "1413962.0",
+    "noOfTime": "0.38136444378878787",
+    "noOfsharesBid": "2075854.0",
     "srNo": null
   },
   {
@@ -115,8 +115,8 @@
     "symbol": "GLASSWALL",
     "category": "Total",
     "noOfSharesOffered": "1.6457298E7",
-    "noOfTime": "1.7716502429499665",
-    "noOfsharesBid": "2.9156576E7",
+    "noOfTime": "4.066771592760853",
+    "noOfsharesBid": "6.6928072E7",
     "srNo": null
   },
   {
@@ -130,8 +130,8 @@
     "symbol": "KANOHAR",
     "category": "Total",
     "noOfSharesOffered": "1.1693326E7",
-    "noOfTime": "2.0479283652914493",
-    "noOfsharesBid": "2.3947094E7",
+    "noOfTime": "4.744164064184989",
+    "noOfsharesBid": "5.5475057E7",
     "srNo": null
   },
   {
@@ -145,8 +145,8 @@
     "symbol": "PRANAV",
     "category": "Total",
     "noOfSharesOffered": "2.2463137E7",
-    "noOfTime": "12.260695378388156",
-    "noOfsharesBid": "2.7541368E8",
+    "noOfTime": "34.95304150974105",
+    "noOfsharesBid": "7.8515496E8",
     "srNo": null
   },
   {
@@ -157,8 +157,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "VINOD",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "134400",
     "noOfSharesOffered": "4556400",
-    "noOfTime": ""
+    "noOfTime": "0.03"
   }
 ]

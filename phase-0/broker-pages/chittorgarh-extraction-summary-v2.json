@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-08T21:49:33.825Z",
+  "generated_at_utc": "2026-09-09T08:05:40.547Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "kanohar-electricals-ipo",
-    "url": "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
+    "slug": "rentomojo-ipo",
+    "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"08 - 10 Sep\" covers today",
-    "date_text": "08 - 10 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"09 - 11 Sep\" covers today",
+    "date_text": "09 - 11 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96370,
+      "main_content_bytes": 96373,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "kanohar-electricals-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
+      "slug": "rentomojo-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 88797,
-      "tables_parsed": 13,
-      "table_rows_parsed": 76,
+      "main_content_bytes": 93573,
+      "tables_parsed": 14,
+      "table_rows_parsed": 100,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

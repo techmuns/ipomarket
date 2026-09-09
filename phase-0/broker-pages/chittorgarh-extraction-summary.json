@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-08T21:49:33.825Z",
+  "generated_at_utc": "2026-09-09T08:05:40.547Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.2,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 76175,
+      "main_content_bytes": 76174,
       "tables_parsed": 9,
       "table_rows_parsed": 66,
       "fields_high_confidence": [
@@ -35,20 +35,19 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
+      "source_url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 81742,
-      "tables_parsed": 11,
-      "table_rows_parsed": 58,
+      "main_content_bytes": 83778,
+      "tables_parsed": 10,
+      "table_rows_parsed": 60,
       "fields_high_confidence": [
         "company_name",
         "listing_date"
       ],
       "fields_medium_confidence": [],
       "fields_rejected_low_confidence": [
-        "issue_size_cr",
-        "official_pdf_links"
+        "issue_size_cr"
       ],
       "fields_missing": [
         "price_band",
@@ -56,10 +55,11 @@
         "open_date",
         "close_date",
         "registrar",
-        "brlms"
+        "brlms",
+        "official_pdf_links"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }
