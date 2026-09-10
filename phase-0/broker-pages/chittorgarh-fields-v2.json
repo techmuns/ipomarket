@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-09T21:40:33.212Z",
+  "captured_at_utc": "2026-09-10T08:04:46.515Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "rentomojo-ipo",
-    "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
+    "slug": "veegaland-developers-ipo",
+    "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"09 - 11 Sep\" covers today",
-    "date_text": "09 - 11 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"10 - 15 Sep\" covers today",
+    "date_text": "10 - 15 Sep",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
-      "slug": "rentomojo-ipo"
+      "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
+      "slug": "veegaland-developers-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 341025,
+      "bytes": 341154,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
+      "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
       "mode": "static",
       "status": 200,
-      "bytes": 352002,
-      "title": "Rentomojo IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 291851,
+      "title": "Veegaland Developers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

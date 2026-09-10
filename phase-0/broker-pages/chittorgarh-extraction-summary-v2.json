@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-09T21:40:33.212Z",
+  "generated_at_utc": "2026-09-10T08:04:46.515Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "rentomojo-ipo",
-    "url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
+    "slug": "veegaland-developers-ipo",
+    "url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"09 - 11 Sep\" covers today",
-    "date_text": "09 - 11 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"10 - 15 Sep\" covers today",
+    "date_text": "10 - 15 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85102,
+      "main_content_bytes": 85105,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "rentomojo-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
+      "slug": "veegaland-developers-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93768,
-      "tables_parsed": 14,
-      "table_rows_parsed": 100,
+      "main_content_bytes": 85024,
+      "tables_parsed": 12,
+      "table_rows_parsed": 67,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
