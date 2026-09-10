@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Manika Plastech Limited",
+    "issueEndDate": "16-Sep-2026",
+    "issuePrice": "Rs.40 to Rs.43",
+    "issueSize": "21386919",
+    "issueStartDate": "11-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "MANIKA"
+  },
+  {
     "companyName": "Veegaland Developers Limited",
     "issueEndDate": "15-Sep-2026",
     "issuePrice": "Rs.130 to Rs.140",
@@ -50,16 +60,6 @@
     "symbol": "STEAMHOUSE"
   },
   {
-    "companyName": "LCC Projects Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.139 to Rs.146",
-    "issueSize": "20927281",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "LCCPROJECT"
-  },
-  {
     "companyName": "Rentomojo Limited",
     "issueEndDate": "11-Sep-2026",
     "issuePrice": "Rs.384 to Rs.404",
@@ -70,13 +70,33 @@
     "symbol": "RENTOMOJO"
   },
   {
+    "companyName": "LCC Projects Limited",
+    "issueEndDate": "11-Sep-2026",
+    "issuePrice": "Rs.139 to Rs.146",
+    "issueSize": "20927281",
+    "issueStartDate": "09-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "LCCPROJECT"
+  },
+  {
+    "companyName": "Glass Wall Systems (India) Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.172 to Rs.182",
+    "issueSize": "16457298",
+    "issueStartDate": "08-Sep-2026",
+    "series": "EQ",
+    "status": "Closed",
+    "symbol": "GLASSWALL"
+  },
+  {
     "companyName": "Kanohar Electricals Limited",
     "issueEndDate": "10-Sep-2026",
     "issuePrice": "Rs.601 to Rs.632",
     "issueSize": "11693326",
     "issueStartDate": "08-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "KANOHAR"
   },
   {
@@ -86,18 +106,8 @@
     "issueSize": "5443229",
     "issueStartDate": "08-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "PRASOLCHEM"
-  },
-  {
-    "companyName": "Glass Wall Systems (India) Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.172 to Rs.182",
-    "issueSize": "16457298",
-    "issueStartDate": "08-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "GLASSWALL"
   },
   {
     "companyName": "Hero Motors Limited",
@@ -108,15 +118,5 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "HEROMOTORS"
-  },
-  {
-    "companyName": "Manika Plastech Limited",
-    "issueEndDate": "16-Sep-2026",
-    "issuePrice": "Rs.40 to Rs.43",
-    "issueSize": "21386919",
-    "issueStartDate": "11-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "MANIKA"
   }
 ]
