@@ -10,14 +10,14 @@
     "symbol": "VEEGALAND"
   },
   {
-    "companyName": "LCC Projects Limited",
+    "companyName": "Manipal Payment and Identity Solutions Limited",
     "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.139 to Rs.146",
-    "issueSize": "20927281",
+    "issuePrice": "Rs.322 to Rs.339",
+    "issueSize": "13060472",
     "issueStartDate": "09-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "LCCPROJECT"
+    "symbol": "MPIMANIPAL"
   },
   {
     "companyName": "Karamtara Engineering Limited",
@@ -50,14 +50,14 @@
     "symbol": "STEAMHOUSE"
   },
   {
-    "companyName": "Manipal Payment and Identity Solutions Limited",
+    "companyName": "LCC Projects Limited",
     "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.322 to Rs.339",
-    "issueSize": "13060472",
+    "issuePrice": "Rs.139 to Rs.146",
+    "issueSize": "20927281",
     "issueStartDate": "09-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "MPIMANIPAL"
+    "symbol": "LCCPROJECT"
   },
   {
     "companyName": "Rentomojo Limited",
@@ -68,6 +68,16 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "RENTOMOJO"
+  },
+  {
+    "companyName": "Kanohar Electricals Limited",
+    "issueEndDate": "10-Sep-2026",
+    "issuePrice": "Rs.601 to Rs.632",
+    "issueSize": "11693326",
+    "issueStartDate": "08-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "KANOHAR"
   },
   {
     "companyName": "Prasol Chemicals Limited",
@@ -90,30 +100,20 @@
     "symbol": "GLASSWALL"
   },
   {
-    "companyName": "Kanohar Electricals Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.601 to Rs.632",
-    "issueSize": "11693326",
-    "issueStartDate": "08-Sep-2026",
+    "companyName": "Hero Motors Limited",
+    "issueEndDate": "17-Sep-2026",
+    "issuePrice": "Rs.79 to Rs.84",
+    "issueSize": "126582278",
+    "issueStartDate": "16-Sep-2026",
     "series": "EQ",
-    "status": "Active",
-    "symbol": "KANOHAR"
-  },
-  {
-    "companyName": "Pranav Constructions Limited",
-    "issueEndDate": "09-Sep-2026",
-    "issuePrice": "Rs.118 to Rs.124",
-    "issueSize": "22463137",
-    "issueStartDate": "07-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "PRANAV"
+    "status": "Forthcoming",
+    "symbol": "HEROMOTORS"
   },
   {
     "companyName": "Manika Plastech Limited",
     "issueEndDate": "16-Sep-2026",
     "issuePrice": "Rs.40 to Rs.43",
-    "issueSize": "30799418",
+    "issueSize": "21386919",
     "issueStartDate": "11-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",

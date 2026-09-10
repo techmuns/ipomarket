@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-10T08:04:46.515Z",
+  "captured_at_utc": "2026-09-10T14:58:40.280Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 151514,
+      "bytes": 150410,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 150062,
+      "bytes": 150072,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,8 +28,8 @@
     }
   ],
   "discovered_detail_urls": [
-    "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
     "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+    "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
     "https://www.chittorgarh.com/ipo/ss-retail-ipo/2822/",
     "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
     "https://www.chittorgarh.com/ipo/hero-motors-ipo/2225/",
@@ -52,34 +52,34 @@
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
+      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+      "url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
+      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "mode": "static",
       "status": 200,
-      "bytes": 298423,
-      "title": "Sonaselection India IPO Date, Price, GMP, Review, Details",
+      "bytes": 280900,
+      "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+      "url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
       "mode": "static",
       "status": 200,
-      "bytes": 262765,
-      "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 298424,
+      "title": "Sonaselection India IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
