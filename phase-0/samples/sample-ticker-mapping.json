@@ -1,6 +1,6 @@
 {
-  "total": 11,
-  "valid": 11,
+  "total": 12,
+  "valid": 12,
   "examples": {
     "Manika Plastech Limited": "MANIKA",
     "Veegaland Developers Limited": "VEEGALAND",
@@ -12,6 +12,7 @@
     "Karamtara Engineering Limited": "KARAMTARA",
     "Sonaselection India Limited": "SONA",
     "Hero Motors Limited": "HEROMOTORS",
-    "Jindal Supreme (India) Limited": "JSIPL"
+    "Jindal Supreme (India) Limited": "JSIPL",
+    "SS Retail Limited": "SSRETAIL"
   }
 }
