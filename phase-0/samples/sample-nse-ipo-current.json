@@ -3,7 +3,7 @@
     "companyName": "Manika Plastech Limited",
     "issueEndDate": "16-Sep-2026",
     "issuePrice": "Rs.40 to Rs.43",
-    "issueSize": "30799418",
+    "issueSize": "21386919",
     "issueStartDate": "11-Sep-2026",
     "series": "EQ",
     "status": "Active",
@@ -30,14 +30,14 @@
     "symbol": "MPIMANIPAL"
   },
   {
-    "companyName": "Karamtara Engineering Limited",
+    "companyName": "Steamhouse India Limited",
     "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.241 to Rs.254",
-    "issueSize": "25414937",
+    "issuePrice": "Rs.77 to Rs.81",
+    "issueSize": "37636363",
     "issueStartDate": "09-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "KARAMTARA"
+    "symbol": "STEAMHOUSE"
   },
   {
     "companyName": "Asset Reconstruction Company (India) Limited",
@@ -50,14 +50,14 @@
     "symbol": "ARCIL"
   },
   {
-    "companyName": "Steamhouse India Limited",
+    "companyName": "LCC Projects Limited",
     "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.77 to Rs.81",
-    "issueSize": "37636363",
+    "issuePrice": "Rs.139 to Rs.146",
+    "issueSize": "20927281",
     "issueStartDate": "09-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "STEAMHOUSE"
+    "symbol": "LCCPROJECT"
   },
   {
     "companyName": "Rentomojo Limited",
@@ -70,44 +70,24 @@
     "symbol": "RENTOMOJO"
   },
   {
-    "companyName": "LCC Projects Limited",
+    "companyName": "Karamtara Engineering Limited",
     "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.139 to Rs.146",
-    "issueSize": "20927281",
+    "issuePrice": "Rs.241 to Rs.254",
+    "issueSize": "25414937",
     "issueStartDate": "09-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "LCCPROJECT"
+    "symbol": "KARAMTARA"
   },
   {
-    "companyName": "Glass Wall Systems (India) Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.172 to Rs.182",
-    "issueSize": "16457298",
-    "issueStartDate": "08-Sep-2026",
+    "companyName": "Sonaselection India Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.94 to Rs.99",
+    "issueSize": "14300000",
+    "issueStartDate": "17-Sep-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "GLASSWALL"
-  },
-  {
-    "companyName": "Kanohar Electricals Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.601 to Rs.632",
-    "issueSize": "11693326",
-    "issueStartDate": "08-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "KANOHAR"
-  },
-  {
-    "companyName": "Prasol Chemicals Limited",
-    "issueEndDate": "10-Sep-2026",
-    "issuePrice": "Rs.643 to Rs.676",
-    "issueSize": "5443229",
-    "issueStartDate": "08-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "PRASOLCHEM"
+    "status": "Forthcoming",
+    "symbol": "SONA"
   },
   {
     "companyName": "Hero Motors Limited",
@@ -118,5 +98,25 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "HEROMOTORS"
+  },
+  {
+    "companyName": "Jindal Supreme (India) Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "13428000",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "JSIPL"
+  },
+  {
+    "companyName": "SS Retail Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.403 to Rs.424",
+    "issueSize": "12426638",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SSRETAIL"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-11T08:00:06.126Z",
+  "captured_at_utc": "2026-09-11T14:59:09.464Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44899,
+      "bytes": 45240,
       "tr_count": 26,
-      "pdfs_found": 15,
-      "notes": "static ok: tr=26, bytes=44899"
+      "pdfs_found": 16,
+      "notes": "static ok: tr=26, bytes=45240"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/M%20K%20C%20AGRO%20FRESH%20LIMITED%20-%20DAP_p.pdf",
+      "link_text": "M K C AGRO FRESH LIMITED - Draft Abridged prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/NOPAPERFORMS%20SOLUTIONS%20LIMITED%20-%20DAP_p.pdf",
       "link_text": "NOPAPERFORMS SOLUTIONS LIMITED - Draft Abridged Prospectus",
