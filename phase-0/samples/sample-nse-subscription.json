@@ -3,15 +3,15 @@
     "companyName": "Manika Plastech Limited",
     "issueEndDate": "16-Sep-2026",
     "issuePrice": "Rs.40 to Rs.43",
-    "issueSize": "21386919",
+    "issueSize": "30799418",
     "issueStartDate": "11-Sep-2026",
     "series": "EQ",
     "status": "Active",
     "symbol": "MANIKA",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "2.1386919E7",
+    "noOfTime": "0.6026034886090885",
+    "noOfsharesBid": "1.2887832E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "VEEGALAND",
     "category": "Total",
     "noOfSharesOffered": "1.1307692E7",
-    "noOfTime": "0.50269984361088",
-    "noOfsharesBid": "5684375.0",
+    "noOfTime": "0.7916588106573826",
+    "noOfsharesBid": "8951834.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "MPIMANIPAL",
     "category": "Total",
     "noOfSharesOffered": "1.3060472E7",
-    "noOfTime": "0.20091708783572293",
-    "noOfsharesBid": "2624072.0",
+    "noOfTime": "0.6100046001400256",
+    "noOfsharesBid": "7966948.0",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "KARAMTARA",
     "category": "Total",
     "noOfSharesOffered": "2.5414937E7",
-    "noOfTime": "2.426116657302751",
-    "noOfsharesBid": "6.1659602E7",
+    "noOfTime": "8.784972042228553",
+    "noOfsharesBid": "2.23269511E8",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "ARCIL",
     "category": "Total",
     "noOfSharesOffered": "3.6912363E7",
-    "noOfTime": "0.5997211015723919",
-    "noOfsharesBid": "2.2137123E7",
+    "noOfTime": "1.4132371856009327",
+    "noOfsharesBid": "5.2165924E7",
     "srNo": null
   },
   {
@@ -85,8 +85,8 @@
     "symbol": "STEAMHOUSE",
     "category": "Total",
     "noOfSharesOffered": "3.7636363E7",
-    "noOfTime": "1.2811947318076404",
-    "noOfsharesBid": "4.821951E7",
+    "noOfTime": "6.427478792252057",
+    "noOfsharesBid": "2.41906925E8",
     "srNo": null
   },
   {
@@ -100,8 +100,8 @@
     "symbol": "RENTOMOJO",
     "category": "Total",
     "noOfSharesOffered": "2.1772311E7",
-    "noOfTime": "3.3707126909954575",
-    "noOfsharesBid": "7.3388205E7",
+    "noOfTime": "12.348573608010652",
+    "noOfsharesBid": "2.68856985E8",
     "srNo": null
   },
   {
@@ -115,8 +115,8 @@
     "symbol": "LCCPROJECT",
     "category": "Total",
     "noOfSharesOffered": "2.0927281E7",
-    "noOfTime": "3.0067492284353614",
-    "noOfsharesBid": "6.2923086E7",
+    "noOfTime": "11.618339525330596",
+    "noOfsharesBid": "2.43140256E8",
     "srNo": null
   },
   {
@@ -127,8 +127,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "VINOD",
-    "noOfsharesBid": "2725200",
+    "noOfsharesBid": "5841600",
     "noOfSharesOffered": "4556400",
-    "noOfTime": "0.60"
+    "noOfTime": "1.28"
   }
 ]

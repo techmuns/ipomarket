@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-10T21:36:10.003Z",
+  "captured_at_utc": "2026-09-11T08:00:06.126Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45339,
+      "bytes": 44899,
       "tr_count": 26,
-      "pdfs_found": 16,
-      "notes": "static ok: tr=26, bytes=45339"
+      "pdfs_found": 15,
+      "notes": "static ok: tr=26, bytes=44899"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/NOPAPERFORMS%20SOLUTIONS%20LIMITED%20-%20DAP_p.pdf",
+      "link_text": "NOPAPERFORMS SOLUTIONS LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Torrent%20Gas%20Limited%20-%20DAP_p.pdf",
       "link_text": "Torrent Gas Limited - Draft Abridged Prospectus",
@@ -90,16 +95,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Svatantra%20Microfin%20Limited%20%20-%20DAP_p.pdf",
       "link_text": "Svatantra Microfin Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Zetwerk%20Manufacturing%20Businesses%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Zetwerk Manufacturing Businesses Limited - Draft abridged prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Tonbo%20Imaging%20India%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Tonbo Imaging India Limited- Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
