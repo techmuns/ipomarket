@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/va20260912_rhp_project-ace_final.pdf"
   ],
-  "noise_stripped_bytes": 83423,
-  "main_content_bytes": 83423,
+  "noise_stripped_bytes": 82794,
+  "main_content_bytes": 82794,
   "tables_parsed": 12,
-  "table_rows_parsed": 65
+  "table_rows_parsed": 63
 }

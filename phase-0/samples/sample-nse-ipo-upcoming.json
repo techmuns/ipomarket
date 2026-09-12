@@ -20,66 +20,6 @@
     "symbol": "VEEGALAND"
   },
   {
-    "companyName": "Manipal Payment and Identity Solutions Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.322 to Rs.339",
-    "issueSize": "13060472",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "MPIMANIPAL"
-  },
-  {
-    "companyName": "Steamhouse India Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.77 to Rs.81",
-    "issueSize": "37636363",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "STEAMHOUSE"
-  },
-  {
-    "companyName": "Asset Reconstruction Company (India) Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.132 to Rs.139",
-    "issueSize": "36912363",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "ARCIL"
-  },
-  {
-    "companyName": "LCC Projects Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.139 to Rs.146",
-    "issueSize": "20927281",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "LCCPROJECT"
-  },
-  {
-    "companyName": "Rentomojo Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.384 to Rs.404",
-    "issueSize": "21772311",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "RENTOMOJO"
-  },
-  {
-    "companyName": "Karamtara Engineering Limited",
-    "issueEndDate": "11-Sep-2026",
-    "issuePrice": "Rs.241 to Rs.254",
-    "issueSize": "25414937",
-    "issueStartDate": "09-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "KARAMTARA"
-  },
-  {
     "companyName": "Sonaselection India Limited",
     "issueEndDate": "21-Sep-2026",
     "issuePrice": "Rs.94 to Rs.99",
@@ -88,16 +28,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "SONA"
-  },
-  {
-    "companyName": "Hero Motors Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.79 to Rs.84",
-    "issueSize": "126582278",
-    "issueStartDate": "16-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "HEROMOTORS"
   },
   {
     "companyName": "Jindal Supreme (India) Limited",
@@ -118,5 +48,15 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "SSRETAIL"
+  },
+  {
+    "companyName": "Hero Motors Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.79 to Rs.84",
+    "issueSize": "126582278",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "HEROMOTORS"
   }
 ]
