@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-12T07:53:07.372Z",
+  "captured_at_utc": "2026-09-12T14:04:58.691Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 151603,
+      "bytes": 151563,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
     "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
     "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
     "https://www.chittorgarh.com/ipo/ss-retail-ipo/2822/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/glass-wall-systems-ipo/2594/",
     "https://www.chittorgarh.com/ipo/pranav-constructions-ipo/2127/",
     "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/",
-    "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/",
-    "https://www.chittorgarh.com/ipo/purple-style-labs-ipo/2622/"
+    "https://www.chittorgarh.com/ipo/rays-of-belief-ipo/2787/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
+      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "mode": "static",
       "status": 200,
-      "bytes": 289742,
-      "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 278585,
+      "title": "A-One Steels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
+      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "mode": "static",
       "status": 200,
-      "bytes": 298432,
-      "title": "Sonaselection India IPO Date, Price, GMP, Review, Details",
+      "bytes": 289505,
+      "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

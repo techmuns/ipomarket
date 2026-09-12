@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
+  "source_url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
   "fields": {
     "company_name": {
-      "value": "Sonaselection India IPO",
+      "value": "National Stock Exchange of India IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Sonaselection India IPO"
+      "source_snippet": "National Stock Exchange of India IPO"
     },
     "issue_size_cr": {
-      "value": "1,43,00,000 shares (agg. up to ₹ 142 Cr)",
+      "value": "12,64,36,650 shares (agg. up to ₹ 22,562 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,43,00,000 shares (agg. up to ₹ 142 Cr)"
+      "source_snippet": "12,64,36,650 shares (agg. up to ₹ 22,562 Cr)"
     },
     "price_band": {
-      "value": "₹94 to ₹99",
+      "value": "₹1700 to ₹1785",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹94 to ₹99"
+      "source_snippet": "₹1700 to ₹1785"
     },
     "lot_size": {
-      "value": "150 Shares",
+      "value": "8 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "150 Shares"
+      "source_snippet": "8 Shares"
     },
     "open_date": {
       "value": null,
@@ -78,18 +78,20 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no .pdf href found in the captured HTML",
-      "source_snippet": null
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/nse-ipo-rhp.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 89139,
-  "main_content_bytes": 89139,
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/nse-ipo-rhp.pdf"
+  ],
+  "noise_stripped_bytes": 85589,
+  "main_content_bytes": 85589,
   "tables_parsed": 11,
-  "table_rows_parsed": 70
+  "table_rows_parsed": 80
 }
