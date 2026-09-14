@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-14T08:50:16.900Z",
+  "captured_at_utc": "2026-09-14T16:57:21.525Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45240,
+      "bytes": 44891,
       "tr_count": 26,
-      "pdfs_found": 16,
-      "notes": "static ok: tr=26, bytes=45240"
+      "pdfs_found": 15,
+      "notes": "static ok: tr=26, bytes=44891"
     }
   ],
   "detail_urls_found": 31,
@@ -95,11 +95,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf",
       "link_text": "TABLESPACE TECHNOLOGIES LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Svatantra%20Microfin%20Limited%20%20-%20DAP_p.pdf",
-      "link_text": "Svatantra Microfin Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

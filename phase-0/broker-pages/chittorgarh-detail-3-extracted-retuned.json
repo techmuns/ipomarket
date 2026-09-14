@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/manika-plastech-ipo-anchor-list.pdf"
   ],
-  "noise_stripped_bytes": 91344,
-  "main_content_bytes": 91344,
-  "tables_parsed": 13,
-  "table_rows_parsed": 76
+  "noise_stripped_bytes": 90065,
+  "main_content_bytes": 90065,
+  "tables_parsed": 12,
+  "table_rows_parsed": 71
 }

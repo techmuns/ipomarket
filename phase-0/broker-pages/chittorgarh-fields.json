@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-14T08:50:16.900Z",
+  "captured_at_utc": "2026-09-14T16:57:21.525Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 150459,
+      "bytes": 151563,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "mode": "static",
       "status": 200,
-      "bytes": 276452,
+      "bytes": 272204,
       "title": "A-One Steels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "mode": "static",
       "status": 200,
-      "bytes": 289505,
+      "bytes": 288571,
       "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
