@@ -1,5 +1,35 @@
 [
   {
+    "companyName": "Jindal Supreme (India) Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "9399600",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "JSIPL"
+  },
+  {
+    "companyName": "Hero Motors Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.79 to Rs.84",
+    "issueSize": "88607596",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "HEROMOTORS"
+  },
+  {
+    "companyName": "SS Retail Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.403 to Rs.424",
+    "issueSize": "8793884",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SSRETAIL"
+  },
+  {
     "companyName": "Manika Plastech Limited",
     "issueEndDate": "16-Sep-2026",
     "issuePrice": "Rs.40 to Rs.43",
@@ -16,7 +46,7 @@
     "issueSize": "11307692",
     "issueStartDate": "10-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "VEEGALAND"
   },
   {
@@ -38,36 +68,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "NSE"
-  },
-  {
-    "companyName": "SS Retail Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.403 to Rs.424",
-    "issueSize": "8793884",
-    "issueStartDate": "16-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SSRETAIL"
-  },
-  {
-    "companyName": "Hero Motors Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.79 to Rs.84",
-    "issueSize": "88607596",
-    "issueStartDate": "16-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "HEROMOTORS"
-  },
-  {
-    "companyName": "Jindal Supreme (India) Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "9399600",
-    "issueStartDate": "16-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "JSIPL"
   },
   {
     "companyName": "SpectraA Technology Solutions Limited",

@@ -1,5 +1,50 @@
 [
   {
+    "companyName": "Jindal Supreme (India) Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "9399600",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "JSIPL",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Hero Motors Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.79 to Rs.84",
+    "issueSize": "88607596",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "HEROMOTORS",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
+    "companyName": "SS Retail Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.403 to Rs.424",
+    "issueSize": "8793884",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SSRETAIL",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "Manika Plastech Limited",
     "issueEndDate": "16-Sep-2026",
     "issuePrice": "Rs.40 to Rs.43",
@@ -12,21 +57,6 @@
     "noOfSharesOffered": "2.1386919E7",
     "noOfTime": "6.081032990305896",
     "noOfsharesBid": "1.3005456E8",
-    "srNo": null
-  },
-  {
-    "companyName": "Veegaland Developers Limited",
-    "issueEndDate": "15-Sep-2026",
-    "issuePrice": "Rs.130 to Rs.140",
-    "issueSize": "11307692",
-    "issueStartDate": "10-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "VEEGALAND",
-    "category": "Total",
-    "noOfSharesOffered": "1.1307692E7",
-    "noOfTime": "10.605447955250284",
-    "noOfsharesBid": "1.19923139E8",
     "srNo": null
   }
 ]

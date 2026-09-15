@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/nse-ipo-rhp.pdf"
   ],
-  "noise_stripped_bytes": 85728,
-  "main_content_bytes": 85728,
+  "noise_stripped_bytes": 85673,
+  "main_content_bytes": 85673,
   "tables_parsed": 11,
   "table_rows_parsed": 80
 }
