@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-15T08:37:12.265Z",
+  "captured_at_utc": "2026-09-15T15:33:13.529Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44921,
+      "bytes": 44543,
       "tr_count": 26,
-      "pdfs_found": 15,
-      "notes": "static ok: tr=26, bytes=44921"
+      "pdfs_found": 14,
+      "notes": "static ok: tr=26, bytes=44543"
     }
   ],
   "detail_urls_found": 31,
@@ -90,11 +90,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Avtar%20Steel%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "Avtar Steel Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf",
-      "link_text": "TABLESPACE TECHNOLOGIES LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

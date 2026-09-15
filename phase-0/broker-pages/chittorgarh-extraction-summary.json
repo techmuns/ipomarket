@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-15T08:37:12.265Z",
+  "generated_at_utc": "2026-09-15T15:33:13.529Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.4,
   "per_detail": [
@@ -8,9 +8,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "found_count": 3,
       "precision_ratio": 0.3,
-      "main_content_bytes": 81078,
-      "tables_parsed": 11,
-      "table_rows_parsed": 59,
+      "main_content_bytes": 82878,
+      "tables_parsed": 12,
+      "table_rows_parsed": 63,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -36,7 +36,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 85164,
+      "main_content_bytes": 85728,
       "tables_parsed": 11,
       "table_rows_parsed": 80,
       "fields_high_confidence": [
