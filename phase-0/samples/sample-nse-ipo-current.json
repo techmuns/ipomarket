@@ -30,14 +30,14 @@
     "symbol": "SONA"
   },
   {
-    "companyName": "Jindal Supreme (India) Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "13428000",
-    "issueStartDate": "16-Sep-2026",
+    "companyName": "National Stock Exchange of India Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.1700 to Rs.1785",
+    "issueSize": "126436650",
+    "issueStartDate": "17-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "JSIPL"
+    "symbol": "NSE"
   },
   {
     "companyName": "SS Retail Limited",
@@ -58,5 +58,27 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "HEROMOTORS"
+  },
+  {
+    "companyName": "Jindal Supreme (India) Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "13428000",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "JSIPL"
+  },
+  {
+    "companyName": "Kheria Autocomp Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.96 to Rs.101",
+    "issueSize": "4598400",
+    "issueStartDate": "17-Sep-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.96 to Rs.101",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "KHERIAAUTO"
   }
 ]
