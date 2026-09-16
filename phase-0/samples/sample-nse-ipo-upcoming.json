@@ -1,23 +1,23 @@
 [
   {
-    "companyName": "Jindal Supreme (India) Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "9399600",
-    "issueStartDate": "16-Sep-2026",
+    "companyName": "National Stock Exchange of India Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.1700 to Rs.1785",
+    "issueSize": "88642911",
+    "issueStartDate": "17-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "JSIPL"
+    "symbol": "NSE"
   },
   {
-    "companyName": "Hero Motors Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.79 to Rs.84",
-    "issueSize": "88607596",
-    "issueStartDate": "16-Sep-2026",
+    "companyName": "Sonaselection India Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.94 to Rs.99",
+    "issueSize": "10010000",
+    "issueStartDate": "17-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "HEROMOTORS"
+    "symbol": "SONA"
   },
   {
     "companyName": "SS Retail Limited",
@@ -30,57 +30,33 @@
     "symbol": "SSRETAIL"
   },
   {
+    "companyName": "Hero Motors Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.79 to Rs.84",
+    "issueSize": "88607596",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "HEROMOTORS"
+  },
+  {
+    "companyName": "Jindal Supreme (India) Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "9399600",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "JSIPL"
+  },
+  {
     "companyName": "Manika Plastech Limited",
     "issueEndDate": "16-Sep-2026",
     "issuePrice": "Rs.40 to Rs.43",
     "issueSize": "21386919",
     "issueStartDate": "11-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "MANIKA"
-  },
-  {
-    "companyName": "National Stock Exchange of India Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.1700 to Rs.1785",
-    "issueSize": "126436650",
-    "issueStartDate": "17-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "NSE"
-  },
-  {
-    "companyName": "Sonaselection India Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.94 to Rs.99",
-    "issueSize": "10010000",
-    "issueStartDate": "17-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SONA"
-  },
-  {
-    "companyName": "SpectraA Technology Solutions Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.112 to Rs.118",
-    "issueSize": "2578800",
-    "issueStartDate": "17-Sep-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.112 to Rs.118",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "SPECTRAA"
-  },
-  {
-    "companyName": "Kheria Autocomp Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.96 to Rs.101",
-    "issueSize": "3288000",
-    "issueStartDate": "17-Sep-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.96 to Rs.101",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "KHERIAAUTO"
   }
 ]
