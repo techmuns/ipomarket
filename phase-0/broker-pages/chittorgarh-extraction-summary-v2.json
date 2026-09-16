@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-15T22:12:04.018Z",
+  "generated_at_utc": "2026-09-16T08:31:27.103Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "manika-plastech-ipo",
-    "url": "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
+    "slug": "ss-retail-ipo",
+    "url": "https://www.chittorgarh.com/ipo/ss-retail-ipo/2822/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"11 - 16 Sep\" covers today",
-    "date_text": "11 - 16 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"16 - 18 Sep\" covers today",
+    "date_text": "16 - 18 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96651,
+      "main_content_bytes": 96652,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "manika-plastech-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
+      "slug": "ss-retail-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/ss-retail-ipo/2822/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 92117,
+      "main_content_bytes": 88219,
       "tables_parsed": 13,
-      "table_rows_parsed": 76,
+      "table_rows_parsed": 83,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

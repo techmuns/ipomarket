@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-15T22:12:04.018Z",
+  "captured_at_utc": "2026-09-16T08:31:27.103Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44921,
+      "bytes": 44956,
       "tr_count": 26,
       "pdfs_found": 15,
-      "notes": "static ok: tr=26, bytes=44921"
+      "notes": "static ok: tr=26, bytes=44956"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Maharashtra%20Oil%20Extractions%20Limited%20-%20DAP_p.pdf",
+      "link_text": "Maharashtra Oil Extractions Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/M%20K%20C%20AGRO%20FRESH%20LIMITED%20-%20DAP_p.pdf",
       "link_text": "M K C AGRO FRESH LIMITED - Draft Abridged prospectus",
@@ -90,11 +95,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Avtar%20Steel%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "Avtar Steel Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/TABLESPACE%20TECHNOLOGIES%20LIMITED%20-%20DAP_p.pdf",
-      "link_text": "TABLESPACE TECHNOLOGIES LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

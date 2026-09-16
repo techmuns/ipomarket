@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "JSIPL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "9399600.0",
+    "noOfTime": "2.889781799225499",
+    "noOfsharesBid": "2.7162793E7",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "HEROMOTORS",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "8.8607596E7",
+    "noOfTime": "0.5718774268517566",
+    "noOfsharesBid": "5.0672684E7",
     "srNo": null
   },
   {
@@ -39,9 +39,9 @@
     "status": "Active",
     "symbol": "SSRETAIL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "8793884.0",
+    "noOfTime": "0.5937979168249206",
+    "noOfsharesBid": "5221790.0",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "MANIKA",
     "category": "Total",
     "noOfSharesOffered": "2.1386919E7",
-    "noOfTime": "6.081032990305896",
-    "noOfsharesBid": "1.3005456E8",
+    "noOfTime": "11.57575039209715",
+    "noOfsharesBid": "2.47569636E8",
     "srNo": null
   }
 ]
