@@ -40,26 +40,6 @@
     "symbol": "MANIKA"
   },
   {
-    "companyName": "Veegaland Developers Limited",
-    "issueEndDate": "15-Sep-2026",
-    "issuePrice": "Rs.130 to Rs.140",
-    "issueSize": "11307692",
-    "issueStartDate": "10-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "VEEGALAND"
-  },
-  {
-    "companyName": "Sonaselection India Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.94 to Rs.99",
-    "issueSize": "14300000",
-    "issueStartDate": "17-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SONA"
-  },
-  {
     "companyName": "National Stock Exchange of India Limited",
     "issueEndDate": "21-Sep-2026",
     "issuePrice": "Rs.1700 to Rs.1785",
@@ -70,10 +50,20 @@
     "symbol": "NSE"
   },
   {
+    "companyName": "Sonaselection India Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.94 to Rs.99",
+    "issueSize": "10010000",
+    "issueStartDate": "17-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SONA"
+  },
+  {
     "companyName": "SpectraA Technology Solutions Limited",
     "issueEndDate": "21-Sep-2026",
     "issuePrice": "Rs.112 to Rs.118",
-    "issueSize": "3603600",
+    "issueSize": "2578800",
     "issueStartDate": "17-Sep-2026",
     "lotSize": "1200",
     "priceBand": "Rs.112 to Rs.118",
@@ -85,7 +75,7 @@
     "companyName": "Kheria Autocomp Limited",
     "issueEndDate": "21-Sep-2026",
     "issuePrice": "Rs.96 to Rs.101",
-    "issueSize": "4598400",
+    "issueSize": "3288000",
     "issueStartDate": "17-Sep-2026",
     "lotSize": "1200",
     "priceBand": "Rs.96 to Rs.101",
