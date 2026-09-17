@@ -1,12 +1,13 @@
 {
-  "total": 6,
-  "valid": 6,
+  "total": 7,
+  "valid": 7,
   "examples": {
     "National Stock Exchange of India Limited": "NSE",
     "Sonaselection India Limited": "SONA",
     "SS Retail Limited": "SSRETAIL",
     "Hero Motors Limited": "HEROMOTORS",
     "Jindal Supreme (India) Limited": "JSIPL",
-    "Manika Plastech Limited": "MANIKA"
+    "Manika Plastech Limited": "MANIKA",
+    "Axiom Gas Engineering Limited": "AXIOMGAS"
   }
 }

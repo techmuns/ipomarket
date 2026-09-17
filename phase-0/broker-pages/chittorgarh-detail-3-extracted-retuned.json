@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/ss-retail-ipo/2822/",
-  "slug": "ss-retail-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+  "slug": "nse-ipo",
   "fields": {
     "company_name": {
-      "value": "SS Retail IPO",
+      "value": "National Stock Exchange of India IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "SS Retail IPO"
+      "source_snippet": "National Stock Exchange of India IPO"
     },
     "issue_size_cr": {
-      "value": "1,18,10,182 shares (agg. up to ₹ 500 Cr)",
+      "value": "12,64,36,650 shares (agg. up to ₹ 22,562 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,18,10,182 shares (agg. up to ₹ 500 Cr)"
+      "source_snippet": "12,64,36,650 shares (agg. up to ₹ 22,562 Cr)"
     },
     "price_band": {
-      "value": "₹403 to ₹424",
+      "value": "₹1700 to ₹1785",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹403 to ₹424"
+      "source_snippet": "₹1700 to ₹1785"
     },
     "lot_size": {
-      "value": "35 Shares",
+      "value": "8 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "35 Shares"
+      "source_snippet": "8 Shares"
     },
     "face_value": {
-      "value": "₹ 10 per share",
+      "value": "₹ 1 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 10 per share"
+      "source_snippet": "₹ 1 per share"
     },
     "open_date": {
-      "value": "2026-09-16",
+      "value": "2026-09-17",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"16 to 18 Sep, 2026\" → start=2026-09-16"
+      "source_snippet": "raw=\"17 to 21 Sep, 2026\" → start=2026-09-17"
     },
     "close_date": {
-      "value": "2026-09-18",
+      "value": "2026-09-21",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"16 to 18 Sep, 2026\" → end=2026-09-18"
+      "source_snippet": "raw=\"17 to 21 Sep, 2026\" → end=2026-09-21"
     },
     "listing_date": {
-      "value": "2026-09-23",
+      "value": "2026-09-24",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Wed, Sep 23, 2026 T\" → 2026-09-23"
+      "source_snippet": "raw=\"Thu, Sep 24, 2026 T\" → 2026-09-24"
     },
     "registrar": {
-      "value": "Kfin Technologies Ltd.",
+      "value": "MUFG Intime India Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 ssretail.ipo@kfintech.com <a\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 nse.ipo@in.mpms.mufg.com </i\" → \"MUFG Intime India Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/ss-retail-ipo-anchor-allocation.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/nse-anchor-book.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/ss-retail-ipo-anchor-allocation.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/nse-anchor-book.pdf"
   ],
-  "noise_stripped_bytes": 88219,
-  "main_content_bytes": 88219,
-  "tables_parsed": 13,
-  "table_rows_parsed": 83
+  "noise_stripped_bytes": 94458,
+  "main_content_bytes": 94458,
+  "tables_parsed": 12,
+  "table_rows_parsed": 92
 }

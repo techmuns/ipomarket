@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "NSE",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "8.8642911E7",
+    "noOfTime": "0.20483009634013485",
+    "noOfsharesBid": "1.8156736E7",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "SONA",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.001E7",
+    "noOfTime": "0.24917082917082917",
+    "noOfsharesBid": "2494200.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "SSRETAIL",
     "category": "Total",
     "noOfSharesOffered": "8793884.0",
-    "noOfTime": "0.9764587524693298",
-    "noOfsharesBid": "8586865.0",
+    "noOfTime": "2.524542625306406",
+    "noOfsharesBid": "2.2200535E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "HEROMOTORS",
     "category": "Total",
     "noOfSharesOffered": "8.8607596E7",
-    "noOfTime": "0.8179122024707679",
-    "noOfsharesBid": "7.2473234E7",
+    "noOfTime": "1.5817941838756127",
+    "noOfsharesBid": "1.4015898E8",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "JSIPL",
     "category": "Total",
     "noOfSharesOffered": "9399600.0",
-    "noOfTime": "4.55471254095919",
-    "noOfsharesBid": "4.2812476E7",
+    "noOfTime": "12.829728179922549",
+    "noOfsharesBid": "1.20594313E8",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SPECTRAA",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "8979600",
     "noOfSharesOffered": "2578800",
-    "noOfTime": ""
+    "noOfTime": "3.48"
   },
   {
     "companyName": "Kheria Autocomp Limited",
@@ -94,8 +94,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "KHERIAAUTO",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "250800",
     "noOfSharesOffered": "3288000",
-    "noOfTime": ""
+    "noOfTime": "0.08"
   }
 ]

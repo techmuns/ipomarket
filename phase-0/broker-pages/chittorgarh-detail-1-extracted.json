@@ -1,39 +1,39 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
+  "source_url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
   "fields": {
     "company_name": {
-      "value": "Varmora Granito IPO",
+      "value": "A-One Steels India IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Varmora Granito IPO"
+      "source_snippet": "A-One Steels India IPO"
     },
     "issue_size_cr": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"(Total) Issue Size\" / \"IPO Size\"",
-      "source_snippet": null
+      "value": "99,99,999 shares (agg. up to ₹ 405 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "99,99,999 shares (agg. up to ₹ 405 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹385 to ₹405",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹385 to ₹405"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "37 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "37 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "[.]",
-      "found": false,
-      "confidence": "low",
-      "method": "table[0].row[1]-rejected",
-      "why_missing": "value '[.]' failed date validation (expected \"Mon DD, YYYY\" or similar)",
-      "source_snippet": "[.]"
+      "value": "Thu, Oct 1, 2026 T",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[1] label=\"Listing Date\"",
+      "why_missing": null,
+      "source_snippet": "Thu, Oct 1, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -76,24 +76,22 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": [
-        "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/jun-2026/1781761649731.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-15,842"
-      ],
-      "found": true,
-      "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
-      "why_missing": null,
-      "source_snippet": "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/jun-2026/1781761649731.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-15,842"
+      "value": null,
+      "found": false,
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/va20260912_rhp_project-ace_final.pdf"
     }
   },
-  "found_count": 2,
-  "precision_ratio": 0.2,
-  "official_pdf_links_on_allowlist": [
-    "https://www.sebi.gov.in/web/?file&#x3D;https://www.sebi.gov.in/sebi_data/attachdocs/jun-2026/1781761649731.pdf#page&#x3D;1&amp;zoom&#x3D;page-width,-15,842"
+  "found_count": 5,
+  "precision_ratio": 0.5,
+  "official_pdf_links_on_allowlist": [],
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/va20260912_rhp_project-ace_final.pdf"
   ],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 71815,
-  "main_content_bytes": 71815,
-  "tables_parsed": 10,
-  "table_rows_parsed": 48
+  "noise_stripped_bytes": 88067,
+  "main_content_bytes": 88067,
+  "tables_parsed": 13,
+  "table_rows_parsed": 73
 }

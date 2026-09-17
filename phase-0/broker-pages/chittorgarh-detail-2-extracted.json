@@ -1,23 +1,23 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
+  "source_url": "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
   "fields": {
     "company_name": {
-      "value": "A-One Steels India IPO",
+      "value": "ArMee Infotech IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "A-One Steels India IPO"
+      "source_snippet": "ArMee Infotech IPO"
     },
     "issue_size_cr": {
-      "value": "[.] shares (agg. up to ₹ 405 Cr)",
-      "found": true,
-      "confidence": "high",
-      "method": "table[1].row[0] label=\"Total Issue Size\"",
-      "why_missing": null,
-      "source_snippet": "[.] shares (agg. up to ₹ 405 Cr)"
+      "value": "3,00,00,00,000 shares (agg. up to ₹ [.] Cr)",
+      "found": false,
+      "confidence": "low",
+      "method": "table[1].row[0]-rejected",
+      "why_missing": "value '3,00,00,00,000 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
+      "source_snippet": "3,00,00,00,000 shares (agg. up to ₹ [.] Cr)"
     },
     "price_band": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Thu, Oct 1, 2026 T",
+      "value": "Wed, Sep 30, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Thu, Oct 1, 2026 T"
+      "source_snippet": "Wed, Sep 30, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/va20260912_rhp_project-ace_final.pdf"
+      "source_snippet": "https://www.saffronadvisor.com/files/offer-documents/Red_Herring_Prospectus.pdf"
     }
   },
-  "found_count": 3,
-  "precision_ratio": 0.3,
+  "found_count": 2,
+  "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/va20260912_rhp_project-ace_final.pdf"
+    "https://www.saffronadvisor.com/files/offer-documents/Red_Herring_Prospectus.pdf"
   ],
-  "noise_stripped_bytes": 82878,
-  "main_content_bytes": 82878,
-  "tables_parsed": 12,
-  "table_rows_parsed": 63
+  "noise_stripped_bytes": 76568,
+  "main_content_bytes": 76568,
+  "tables_parsed": 10,
+  "table_rows_parsed": 49
 }

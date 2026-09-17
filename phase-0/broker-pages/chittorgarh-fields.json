@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-16T22:07:52.961Z",
+  "captured_at_utc": "2026-09-17T08:39:34.182Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 152318,
+      "bytes": 152347,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 152196,
+      "bytes": 150963,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,8 +28,9 @@
     }
   ],
   "discovered_detail_urls": [
-    "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
     "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
+    "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
+    "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
     "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
     "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
     "https://www.chittorgarh.com/ipo/ss-retail-ipo/2822/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
     "https://www.chittorgarh.com/ipo/prasol-chemicals-ipo/2775/",
     "https://www.chittorgarh.com/ipo/glass-wall-systems-ipo/2594/",
-    "https://www.chittorgarh.com/ipo/pranav-constructions-ipo/2127/",
-    "https://www.chittorgarh.com/ipo/deepa-jewellers-ipo/2827/"
+    "https://www.chittorgarh.com/ipo/pranav-constructions-ipo/2127/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
+      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
+      "url": "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
+      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "mode": "static",
       "status": 200,
-      "bytes": 238089,
-      "title": "Varmora Granito IPO Date, Price, GMP, Review, Details",
+      "bytes": 294839,
+      "title": "A-One Steels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
+      "url": "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
       "mode": "static",
       "status": 200,
-      "bytes": 276630,
-      "title": "A-One Steels IPO Date, Price, GMP, Review, Details",
+      "bytes": 252177,
+      "title": "ArMee Infotech IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
