@@ -1,23 +1,23 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
+  "source_url": "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
   "fields": {
     "company_name": {
-      "value": "ArMee Infotech IPO",
+      "value": "Elevate Campuses IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "ArMee Infotech IPO"
+      "source_snippet": "Elevate Campuses IPO"
     },
     "issue_size_cr": {
-      "value": "3,00,00,00,000 shares (agg. up to ₹ [.] Cr)",
-      "found": false,
-      "confidence": "low",
-      "method": "table[1].row[0]-rejected",
-      "why_missing": "value '3,00,00,00,000 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
-      "source_snippet": "3,00,00,00,000 shares (agg. up to ₹ [.] Cr)"
+      "value": "[.] shares (agg. up to ₹ 2,100 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "[.] shares (agg. up to ₹ 2,100 Cr)"
     },
     "price_band": {
       "value": null,
@@ -76,22 +76,24 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": null,
-      "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.saffronadvisor.com/files/offer-documents/Red_Herring_Prospectus.pdf"
+      "value": [
+        "https://www.bseindia.com/corporates/download/304620/IPO%20Prior/ProjectScholarspaceConsolidatedDRHP_20250929071116.pdf"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.bseindia.com/corporates/download/304620/IPO%20Prior/ProjectScholarspaceConsolidatedDRHP_20250929071116.pdf"
     }
   },
-  "found_count": 2,
-  "precision_ratio": 0.2,
-  "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.saffronadvisor.com/files/offer-documents/Red_Herring_Prospectus.pdf"
+  "found_count": 4,
+  "precision_ratio": 0.4,
+  "official_pdf_links_on_allowlist": [
+    "https://www.bseindia.com/corporates/download/304620/IPO%20Prior/ProjectScholarspaceConsolidatedDRHP_20250929071116.pdf"
   ],
-  "noise_stripped_bytes": 76568,
-  "main_content_bytes": 76568,
-  "tables_parsed": 10,
-  "table_rows_parsed": 49
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 73398,
+  "main_content_bytes": 73398,
+  "tables_parsed": 8,
+  "table_rows_parsed": 39
 }

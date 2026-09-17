@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-09-17T08:39:34.182Z",
+  "generated_at_utc": "2026-09-17T15:32:14.212Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.35,
+  "average_precision_ratio": 0.45,
   "per_detail": [
     {
       "index": 1,
@@ -33,21 +33,20 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
-      "found_count": 2,
-      "precision_ratio": 0.2,
-      "main_content_bytes": 76568,
-      "tables_parsed": 10,
-      "table_rows_parsed": 49,
+      "source_url": "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
+      "found_count": 4,
+      "precision_ratio": 0.4,
+      "main_content_bytes": 73398,
+      "tables_parsed": 8,
+      "table_rows_parsed": 39,
       "fields_high_confidence": [
         "company_name",
-        "listing_date"
-      ],
-      "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [
         "issue_size_cr",
+        "listing_date",
         "official_pdf_links"
       ],
+      "fields_medium_confidence": [],
+      "fields_rejected_low_confidence": [],
       "fields_missing": [
         "price_band",
         "lot_size",
@@ -56,8 +55,10 @@
         "registrar",
         "brlms"
       ],
-      "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_on_allowlist": [
+        "https://www.bseindia.com/corporates/download/304620/IPO%20Prior/ProjectScholarspaceConsolidatedDRHP_20250929071116.pdf"
+      ],
+      "official_pdf_links_off_allowlist_count": 0
     }
   ]
 }
