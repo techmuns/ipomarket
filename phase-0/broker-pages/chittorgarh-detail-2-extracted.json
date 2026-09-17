@@ -76,24 +76,22 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": [
-        "https://www.bseindia.com/corporates/download/304620/IPO%20Prior/ProjectScholarspaceConsolidatedDRHP_20250929071116.pdf"
-      ],
-      "found": true,
-      "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
-      "why_missing": null,
-      "source_snippet": "https://www.bseindia.com/corporates/download/304620/IPO%20Prior/ProjectScholarspaceConsolidatedDRHP_20250929071116.pdf"
+      "value": null,
+      "found": false,
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/elevate-campus-rhp.pdf"
     }
   },
-  "found_count": 4,
-  "precision_ratio": 0.4,
-  "official_pdf_links_on_allowlist": [
-    "https://www.bseindia.com/corporates/download/304620/IPO%20Prior/ProjectScholarspaceConsolidatedDRHP_20250929071116.pdf"
+  "found_count": 3,
+  "precision_ratio": 0.3,
+  "official_pdf_links_on_allowlist": [],
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/elevate-campus-rhp.pdf"
   ],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 73398,
-  "main_content_bytes": 73398,
+  "noise_stripped_bytes": 73948,
+  "main_content_bytes": 73948,
   "tables_parsed": 8,
-  "table_rows_parsed": 39
+  "table_rows_parsed": 40
 }

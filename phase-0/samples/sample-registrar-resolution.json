@@ -1,13 +1,11 @@
 {
-  "totalIssues": 7,
+  "totalIssues": 5,
   "resolved": 0,
   "examples": {
-    "National Stock Exchange of India Limited": null,
     "Sonaselection India Limited": null,
-    "SS Retail Limited": null,
-    "Hero Motors Limited": null,
+    "National Stock Exchange of India Limited": null,
     "Jindal Supreme (India) Limited": null,
-    "Manika Plastech Limited": null,
-    "Axiom Gas Engineering Limited": null
+    "SS Retail Limited": null,
+    "Hero Motors Limited": null
   }
 }
