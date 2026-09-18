@@ -1,20 +1,5 @@
 [
   {
-    "companyName": "Sonaselection India Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.94 to Rs.99",
-    "issueSize": "10010000",
-    "issueStartDate": "17-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SONA",
-    "category": "Total",
-    "noOfSharesOffered": "1.001E7",
-    "noOfTime": "0.47426073926073925",
-    "noOfsharesBid": "4747350.0",
-    "srNo": null
-  },
-  {
     "companyName": "National Stock Exchange of India Limited",
     "issueEndDate": "21-Sep-2026",
     "issuePrice": "Rs.1700 to Rs.1785",
@@ -25,38 +10,23 @@
     "symbol": "NSE",
     "category": "Total",
     "noOfSharesOffered": "8.8642911E7",
-    "noOfTime": "0.46076862254670314",
-    "noOfsharesBid": "4.0843872E7",
+    "noOfTime": "0.6040483034227069",
+    "noOfsharesBid": "5.35446E7",
     "srNo": null
   },
   {
-    "companyName": "Jindal Supreme (India) Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "9399600",
-    "issueStartDate": "16-Sep-2026",
+    "companyName": "Sonaselection India Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.94 to Rs.99",
+    "issueSize": "10010000",
+    "issueStartDate": "17-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "JSIPL",
+    "symbol": "SONA",
     "category": "Total",
-    "noOfSharesOffered": "9399600.0",
-    "noOfTime": "64.75334152517128",
-    "noOfsharesBid": "6.08655509E8",
-    "srNo": null
-  },
-  {
-    "companyName": "SS Retail Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.403 to Rs.424",
-    "issueSize": "8793884",
-    "issueStartDate": "16-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SSRETAIL",
-    "category": "Total",
-    "noOfSharesOffered": "8793884.0",
-    "noOfTime": "21.449153752767263",
-    "noOfsharesBid": "1.8862137E8",
+    "noOfSharesOffered": "1.001E7",
+    "noOfTime": "0.6866133866133867",
+    "noOfsharesBid": "6873000.0",
     "srNo": null
   },
   {
@@ -70,8 +40,38 @@
     "symbol": "HEROMOTORS",
     "category": "Total",
     "noOfSharesOffered": "8.8607596E7",
-    "noOfTime": "3.2268171455639085",
-    "noOfsharesBid": "2.8592051E8",
+    "noOfTime": "4.008565902182924",
+    "noOfsharesBid": "3.55189388E8",
+    "srNo": null
+  },
+  {
+    "companyName": "Jindal Supreme (India) Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.88 to Rs.93",
+    "issueSize": "9399600",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "JSIPL",
+    "category": "Total",
+    "noOfSharesOffered": "9399600.0",
+    "noOfTime": "125.10088471849866",
+    "noOfsharesBid": "1.175898276E9",
+    "srNo": null
+  },
+  {
+    "companyName": "SS Retail Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.403 to Rs.424",
+    "issueSize": "8793884",
+    "issueStartDate": "16-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SSRETAIL",
+    "category": "Total",
+    "noOfSharesOffered": "8793884.0",
+    "noOfTime": "71.33152597873703",
+    "noOfsharesBid": "6.27281165E8",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "AXIOMGAS",
-    "noOfsharesBid": "2332000",
+    "noOfsharesBid": "4808000",
     "noOfSharesOffered": "8328000",
-    "noOfTime": "0.28"
+    "noOfTime": "0.58"
   },
   {
     "companyName": "Kheria Autocomp Limited",
@@ -94,9 +94,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "KHERIAAUTO",
-    "noOfsharesBid": "1036800",
+    "noOfsharesBid": "1478400",
     "noOfSharesOffered": "3288000",
-    "noOfTime": "0.32"
+    "noOfTime": "0.45"
   },
   {
     "companyName": "SpectraA Technology Solutions Limited",
@@ -106,8 +106,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SPECTRAA",
-    "noOfsharesBid": "34605600",
+    "noOfsharesBid": "47528400",
     "noOfSharesOffered": "2578800",
-    "noOfTime": "13.42"
+    "noOfTime": "18.43"
   }
 ]

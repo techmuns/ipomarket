@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "National Stock Exchange of India Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.1700 to Rs.1785",
+    "issueSize": "88642911",
+    "issueStartDate": "17-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "NSE"
+  },
+  {
     "companyName": "Sonaselection India Limited",
     "issueEndDate": "21-Sep-2026",
     "issuePrice": "Rs.94 to Rs.99",
@@ -10,14 +20,14 @@
     "symbol": "SONA"
   },
   {
-    "companyName": "National Stock Exchange of India Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.1700 to Rs.1785",
-    "issueSize": "88642911",
-    "issueStartDate": "17-Sep-2026",
+    "companyName": "Hero Motors Limited",
+    "issueEndDate": "18-Sep-2026",
+    "issuePrice": "Rs.79 to Rs.84",
+    "issueSize": "88607596",
+    "issueStartDate": "16-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "NSE"
+    "symbol": "HEROMOTORS"
   },
   {
     "companyName": "Jindal Supreme (India) Limited",
@@ -40,13 +50,25 @@
     "symbol": "SSRETAIL"
   },
   {
-    "companyName": "Hero Motors Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.79 to Rs.84",
-    "issueSize": "88607596",
-    "issueStartDate": "16-Sep-2026",
+    "companyName": "Varmora Granito Limited",
+    "issueEndDate": "24-Sep-2026",
+    "issuePrice": "Rs.140 to Rs.148",
+    "issueSize": "49074776",
+    "issueStartDate": "22-Sep-2026",
     "series": "EQ",
-    "status": "Active",
-    "symbol": "HEROMOTORS"
+    "status": "Forthcoming",
+    "symbol": "VARMORA"
+  },
+  {
+    "companyName": "Pooja Logistics Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.109 to Rs.115",
+    "issueSize": "3846000",
+    "issueStartDate": "23-Sep-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.109 to Rs.115",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "POOJALOGIS"
   }
 ]
