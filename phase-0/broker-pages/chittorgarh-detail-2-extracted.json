@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
+  "source_url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
   "fields": {
     "company_name": {
-      "value": "Elevate Campuses IPO",
+      "value": "Adroit Industries (India) IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Elevate Campuses IPO"
+      "source_snippet": "Adroit Industries (India) IPO"
     },
     "issue_size_cr": {
-      "value": "[.] shares (agg. up to ₹ 2,100 Cr)",
+      "value": "1,12,47,000 shares (agg. up to ₹ 151 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "[.] shares (agg. up to ₹ 2,100 Cr)"
+      "source_snippet": "1,12,47,000 shares (agg. up to ₹ 151 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹126 to ₹134",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹126 to ₹134"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "111 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "111 Shares"
     },
     "open_date": {
       "value": null,
@@ -76,22 +76,24 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": null,
-      "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/elevate-campus-rhp.pdf"
+      "value": [
+        "https://www.bseindia.com/corporates/download/327156/IPO%20Prior/AIILDRHP_20260331221847.pdf"
+      ],
+      "found": true,
+      "confidence": "high",
+      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
+      "why_missing": null,
+      "source_snippet": "https://www.bseindia.com/corporates/download/327156/IPO%20Prior/AIILDRHP_20260331221847.pdf"
     }
   },
-  "found_count": 3,
-  "precision_ratio": 0.3,
-  "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/ipo_notes/elevate-campus-rhp.pdf"
+  "found_count": 6,
+  "precision_ratio": 0.6,
+  "official_pdf_links_on_allowlist": [
+    "https://www.bseindia.com/corporates/download/327156/IPO%20Prior/AIILDRHP_20260331221847.pdf"
   ],
-  "noise_stripped_bytes": 73948,
-  "main_content_bytes": 73948,
-  "tables_parsed": 8,
-  "table_rows_parsed": 40
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 95172,
+  "main_content_bytes": 95172,
+  "tables_parsed": 12,
+  "table_rows_parsed": 81
 }

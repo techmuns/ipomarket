@@ -10,8 +10,8 @@
     "symbol": "SONA",
     "category": "Total",
     "noOfSharesOffered": "1.001E7",
-    "noOfTime": "0.3457192807192807",
-    "noOfsharesBid": "3460650.0",
+    "noOfTime": "0.47426073926073925",
+    "noOfsharesBid": "4747350.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "NSE",
     "category": "Total",
     "noOfSharesOffered": "8.8642911E7",
-    "noOfTime": "0.2896917498569062",
-    "noOfsharesBid": "2.567912E7",
+    "noOfTime": "0.46076862254670314",
+    "noOfsharesBid": "4.0843872E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "JSIPL",
     "category": "Total",
     "noOfSharesOffered": "9399600.0",
-    "noOfTime": "20.17604259755734",
-    "noOfsharesBid": "1.8964673E8",
+    "noOfTime": "64.75334152517128",
+    "noOfsharesBid": "6.08655509E8",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "SSRETAIL",
     "category": "Total",
     "noOfSharesOffered": "8793884.0",
-    "noOfTime": "3.9306266719006073",
-    "noOfsharesBid": "3.4565475E7",
+    "noOfTime": "21.449153752767263",
+    "noOfsharesBid": "1.8862137E8",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "HEROMOTORS",
     "category": "Total",
     "noOfSharesOffered": "8.8607596E7",
-    "noOfTime": "1.981422157080077",
-    "noOfsharesBid": "1.75569054E8",
+    "noOfTime": "3.2268171455639085",
+    "noOfsharesBid": "2.8592051E8",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "AXIOMGAS",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "2332000",
     "noOfSharesOffered": "8328000",
-    "noOfTime": ""
+    "noOfTime": "0.28"
   },
   {
     "companyName": "Kheria Autocomp Limited",
@@ -94,9 +94,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "KHERIAAUTO",
-    "noOfsharesBid": "627600",
+    "noOfsharesBid": "1036800",
     "noOfSharesOffered": "3288000",
-    "noOfTime": "0.19"
+    "noOfTime": "0.32"
   },
   {
     "companyName": "SpectraA Technology Solutions Limited",
@@ -106,8 +106,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SPECTRAA",
-    "noOfsharesBid": "13344000",
+    "noOfsharesBid": "34605600",
     "noOfSharesOffered": "2578800",
-    "noOfTime": "5.17"
+    "noOfTime": "13.42"
   }
 ]

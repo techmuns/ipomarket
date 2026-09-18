@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-17T22:08:32.644Z",
+  "captured_at_utc": "2026-09-18T08:11:51.237Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148455,
+      "bytes": 149933,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 150621,
+      "bytes": 150537,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,7 +29,9 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
+    "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
     "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
+    "https://www.chittorgarh.com/ipo/swastika-infra-ipo/2287/",
     "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
     "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
     "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
@@ -45,9 +47,7 @@
     "https://www.chittorgarh.com/ipo/steamhouse-india-ipo/2514/",
     "https://www.chittorgarh.com/ipo/lcc-projects-ipo/2086/",
     "https://www.chittorgarh.com/ipo/karamtara-engineering-ipo/2020/",
-    "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/",
-    "https://www.chittorgarh.com/ipo/prasol-chemicals-ipo/2775/",
-    "https://www.chittorgarh.com/ipo/glass-wall-systems-ipo/2594/"
+    "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
+      "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
+      "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
       "mode": "static",
       "status": 200,
-      "bytes": 236865,
-      "title": "Elevate Campuses IPO Date, Price, GMP, Review, Details",
+      "bytes": 319736,
+      "title": "Adroit Industries IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
