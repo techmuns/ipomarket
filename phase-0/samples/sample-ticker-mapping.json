@@ -1,12 +1,9 @@
 {
-  "total": 7,
-  "valid": 7,
+  "total": 4,
+  "valid": 4,
   "examples": {
     "National Stock Exchange of India Limited": "NSE",
     "Sonaselection India Limited": "SONA",
-    "Hero Motors Limited": "HEROMOTORS",
-    "Jindal Supreme (India) Limited": "JSIPL",
-    "SS Retail Limited": "SSRETAIL",
     "Varmora Granito Limited": "VARMORA",
     "Pooja Logistics Limited": "POOJALOGIS"
   }

@@ -20,36 +20,6 @@
     "symbol": "SONA"
   },
   {
-    "companyName": "Hero Motors Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.79 to Rs.84",
-    "issueSize": "88607596",
-    "issueStartDate": "16-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "HEROMOTORS"
-  },
-  {
-    "companyName": "Jindal Supreme (India) Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.88 to Rs.93",
-    "issueSize": "9399600",
-    "issueStartDate": "16-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "JSIPL"
-  },
-  {
-    "companyName": "SS Retail Limited",
-    "issueEndDate": "18-Sep-2026",
-    "issuePrice": "Rs.403 to Rs.424",
-    "issueSize": "8793884",
-    "issueStartDate": "16-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "SSRETAIL"
-  },
-  {
     "companyName": "Varmora Granito Limited",
     "issueEndDate": "24-Sep-2026",
     "issuePrice": "Rs.140 to Rs.148",
