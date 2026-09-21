@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-21T08:51:50.946Z",
+  "captured_at_utc": "2026-09-21T17:01:10.584Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 366940,
+      "bytes": 366897,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -69,20 +69,20 @@
     {
       "index": 2,
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
-      "mode": "failed",
-      "status": 0,
-      "bytes": 0,
-      "title": "",
+      "mode": "static",
+      "status": 200,
+      "bytes": 341277,
+      "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
-      "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.chittorgarh.com/ipo/bagmane-reit/3090/\", waiting until \"networkidle\"\n"
+      "error": null
     },
     {
       "index": 3,
       "url": "https://www.chittorgarh.com/ipo/robokidz-eduventures-ipo/3205/",
       "mode": "static",
       "status": 200,
-      "bytes": 291503,
+      "bytes": 291510,
       "title": "Robokidz Eduventures IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

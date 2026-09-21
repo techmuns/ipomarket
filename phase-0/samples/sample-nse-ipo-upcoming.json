@@ -20,14 +20,66 @@
     "symbol": "SONA"
   },
   {
+    "companyName": "Swastika Infra Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.175 to Rs.185",
+    "issueSize": "9092857",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SWASTIKAIN"
+  },
+  {
+    "companyName": "Adroit Industries (India) Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.126 to Rs.134",
+    "issueSize": "11247000",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ADROITIND"
+  },
+  {
+    "companyName": "Elevate Campuses Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.343 to Rs.362",
+    "issueSize": "61224489",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ELEVATE"
+  },
+  {
+    "companyName": "ArMee Infotech Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.350 to Rs.375",
+    "issueSize": "8571428",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ARMEE"
+  },
+  {
     "companyName": "Varmora Granito Limited",
     "issueEndDate": "24-Sep-2026",
     "issuePrice": "Rs.140 to Rs.148",
-    "issueSize": "49074776",
+    "issueSize": "33902899",
     "issueStartDate": "22-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "VARMORA"
+  },
+  {
+    "companyName": "Coreintegra Consulting Services Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.74 to Rs.78",
+    "issueSize": "2819200",
+    "issueStartDate": "23-Sep-2026",
+    "lotSize": "1600",
+    "priceBand": "Rs.74 to Rs.78",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "COREIN"
   },
   {
     "companyName": "Pooja Logistics Limited",
