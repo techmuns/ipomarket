@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-21T17:01:10.584Z",
+  "captured_at_utc": "2026-09-21T22:34:38.483Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 148247,
+      "bytes": 149243,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149563,
+      "bytes": 150297,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/acevector-ipo/2543/",
       "mode": "static",
       "status": 200,
-      "bytes": 258140,
+      "bytes": 258404,
       "title": "Acevector IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
       "mode": "static",
       "status": 200,
-      "bytes": 289340,
+      "bytes": 289341,
       "title": "Moneyview IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],

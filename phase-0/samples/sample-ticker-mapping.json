@@ -2,13 +2,13 @@
   "total": 9,
   "valid": 9,
   "examples": {
-    "National Stock Exchange of India Limited": "NSE",
-    "Sonaselection India Limited": "SONA",
-    "Swastika Infra Limited": "SWASTIKAIN",
-    "Adroit Industries (India) Limited": "ADROITIND",
-    "Elevate Campuses Limited": "ELEVATE",
-    "ArMee Infotech Limited": "ARMEE",
     "Varmora Granito Limited": "VARMORA",
+    "Sonaselection India Limited": "SONA",
+    "National Stock Exchange of India Limited": "NSE",
+    "ArMee Infotech Limited": "ARMEE",
+    "Elevate Campuses Limited": "ELEVATE",
+    "Adroit Industries (India) Limited": "ADROITIND",
+    "Swastika Infra Limited": "SWASTIKAIN",
     "Coreintegra Consulting Services Limited": "COREIN",
     "Pooja Logistics Limited": "POOJALOGIS"
   }

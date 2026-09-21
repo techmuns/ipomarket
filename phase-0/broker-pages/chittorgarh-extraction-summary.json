@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-21T17:01:10.584Z",
+  "generated_at_utc": "2026-09-21T22:34:38.483Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.35,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/acevector-ipo/2543/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 77188,
+      "main_content_bytes": 77243,
       "tables_parsed": 10,
       "table_rows_parsed": 57,
       "fields_high_confidence": [

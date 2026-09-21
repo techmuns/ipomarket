@@ -1,13 +1,13 @@
 [
   {
-    "companyName": "National Stock Exchange of India Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.1700 to Rs.1785",
-    "issueSize": "88642911",
-    "issueStartDate": "17-Sep-2026",
+    "companyName": "Varmora Granito Limited",
+    "issueEndDate": "24-Sep-2026",
+    "issuePrice": "Rs.140 to Rs.148",
+    "issueSize": "33902899",
+    "issueStartDate": "22-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "NSE"
+    "symbol": "VARMORA"
   },
   {
     "companyName": "Sonaselection India Limited",
@@ -16,38 +16,18 @@
     "issueSize": "10010000",
     "issueStartDate": "17-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "SONA"
   },
   {
-    "companyName": "Swastika Infra Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.175 to Rs.185",
-    "issueSize": "9092857",
-    "issueStartDate": "23-Sep-2026",
+    "companyName": "National Stock Exchange of India Limited",
+    "issueEndDate": "21-Sep-2026",
+    "issuePrice": "Rs.1700 to Rs.1785",
+    "issueSize": "88642911",
+    "issueStartDate": "17-Sep-2026",
     "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SWASTIKAIN"
-  },
-  {
-    "companyName": "Adroit Industries (India) Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.126 to Rs.134",
-    "issueSize": "11247000",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "ADROITIND"
-  },
-  {
-    "companyName": "Elevate Campuses Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.343 to Rs.362",
-    "issueSize": "61224489",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "ELEVATE"
+    "status": "Closed",
+    "symbol": "NSE"
   },
   {
     "companyName": "ArMee Infotech Limited",
@@ -60,14 +40,34 @@
     "symbol": "ARMEE"
   },
   {
-    "companyName": "Varmora Granito Limited",
-    "issueEndDate": "24-Sep-2026",
-    "issuePrice": "Rs.140 to Rs.148",
-    "issueSize": "33902899",
-    "issueStartDate": "22-Sep-2026",
+    "companyName": "Elevate Campuses Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.343 to Rs.362",
+    "issueSize": "61224489",
+    "issueStartDate": "23-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "VARMORA"
+    "symbol": "ELEVATE"
+  },
+  {
+    "companyName": "Adroit Industries (India) Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.126 to Rs.134",
+    "issueSize": "11247000",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ADROITIND"
+  },
+  {
+    "companyName": "Swastika Infra Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.175 to Rs.185",
+    "issueSize": "9092857",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SWASTIKAIN"
   },
   {
     "companyName": "Coreintegra Consulting Services Limited",
