@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-09-20T21:30:44.558Z",
+  "generated_at_utc": "2026-09-21T08:51:50.946Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "nse-ipo",
-    "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+    "slug": "robokidz-eduventures-ipo",
+    "url": "https://www.chittorgarh.com/ipo/robokidz-eduventures-ipo/3205/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"17 - 21 Sep\" covers today",
-    "date_text": "17 - 21 Sep",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"21 - 23 Sep\" covers today",
+    "date_text": "21 - 23 Sep",
+    "source_list": "sme"
   },
   "per_detail": [
     {
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "nse-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+      "slug": "robokidz-eduventures-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/robokidz-eduventures-ipo/3205/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 94281,
+      "main_content_bytes": 88379,
       "tables_parsed": 12,
-      "table_rows_parsed": 92,
+      "table_rows_parsed": 72,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

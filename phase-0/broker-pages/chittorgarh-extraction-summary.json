@@ -1,16 +1,16 @@
 {
-  "generated_at_utc": "2026-09-20T21:30:44.558Z",
+  "generated_at_utc": "2026-09-21T08:51:50.946Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.5,
   "per_detail": [
     {
       "index": 1,
-      "source_url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
+      "source_url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 88067,
-      "tables_parsed": 13,
-      "table_rows_parsed": 73,
+      "main_content_bytes": 86186,
+      "tables_parsed": 12,
+      "table_rows_parsed": 71,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -33,12 +33,12 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
+      "source_url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 95647,
-      "tables_parsed": 12,
-      "table_rows_parsed": 82,
+      "main_content_bytes": 88067,
+      "tables_parsed": 13,
+      "table_rows_parsed": 73,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

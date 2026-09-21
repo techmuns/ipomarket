@@ -10,8 +10,8 @@
     "symbol": "NSE",
     "category": "Total",
     "noOfSharesOffered": "8.8642911E7",
-    "noOfTime": "0.6040483034227069",
-    "noOfsharesBid": "5.35446E7",
+    "noOfTime": "2.6313588911808186",
+    "noOfsharesBid": "2.33251312E8",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "SONA",
     "category": "Total",
     "noOfSharesOffered": "1.001E7",
-    "noOfTime": "0.6866133866133867",
-    "noOfsharesBid": "6873000.0",
+    "noOfTime": "1.1127422577422577",
+    "noOfsharesBid": "1.113855E7",
     "srNo": null
   },
   {
@@ -37,9 +37,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "AXIOMGAS",
-    "noOfsharesBid": "4808000",
+    "noOfsharesBid": "6658000",
     "noOfSharesOffered": "8328000",
-    "noOfTime": "0.58"
+    "noOfTime": "0.80"
   },
   {
     "companyName": "Kheria Autocomp Limited",
@@ -49,9 +49,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "KHERIAAUTO",
-    "noOfsharesBid": "1478400",
+    "noOfsharesBid": "4195200",
     "noOfSharesOffered": "3288000",
-    "noOfTime": "0.45"
+    "noOfTime": "1.28"
   },
   {
     "companyName": "SpectraA Technology Solutions Limited",
@@ -61,8 +61,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "SPECTRAA",
-    "noOfsharesBid": "47528400",
+    "noOfsharesBid": "383373600",
     "noOfSharesOffered": "2578800",
-    "noOfTime": "18.43"
+    "noOfTime": "148.66"
   }
 ]

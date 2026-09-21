@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-20T21:30:44.558Z",
+  "captured_at_utc": "2026-09-21T08:51:50.946Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "nse-ipo",
-    "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+    "slug": "robokidz-eduventures-ipo",
+    "url": "https://www.chittorgarh.com/ipo/robokidz-eduventures-ipo/3205/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"17 - 21 Sep\" covers today",
-    "date_text": "17 - 21 Sep",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"21 - 23 Sep\" covers today",
+    "date_text": "21 - 23 Sep",
+    "source_list": "sme"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
-      "slug": "nse-ipo"
+      "url": "https://www.chittorgarh.com/ipo/robokidz-eduventures-ipo/3205/",
+      "slug": "robokidz-eduventures-ipo"
     }
   ],
   "details": [
@@ -69,21 +69,21 @@
     {
       "index": 2,
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
-      "mode": "static",
-      "status": 200,
-      "bytes": 341277,
-      "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
+      "mode": "failed",
+      "status": 0,
+      "bytes": 0,
+      "title": "",
       "challenge_detected": false,
       "challenge_reasons": [],
-      "error": null
+      "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.chittorgarh.com/ipo/bagmane-reit/3090/\", waiting until \"networkidle\"\n"
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
+      "url": "https://www.chittorgarh.com/ipo/robokidz-eduventures-ipo/3205/",
       "mode": "static",
       "status": 200,
-      "bytes": 491386,
-      "title": "NSE IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 291503,
+      "title": "Robokidz Eduventures IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

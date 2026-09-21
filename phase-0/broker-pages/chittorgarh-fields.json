@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-20T21:30:44.558Z",
+  "captured_at_utc": "2026-09-21T08:51:50.946Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 149465,
+      "bytes": 149379,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 150699,
+      "bytes": 149553,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
     "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
     "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
     "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/manipal-payment-and-identity-solutions-ipo/2524/",
     "https://www.chittorgarh.com/ipo/steamhouse-india-ipo/2514/",
     "https://www.chittorgarh.com/ipo/lcc-projects-ipo/2086/",
-    "https://www.chittorgarh.com/ipo/karamtara-engineering-ipo/2020/",
-    "https://www.chittorgarh.com/ipo/kanohar-electricals-ipo/2856/"
+    "https://www.chittorgarh.com/ipo/karamtara-engineering-ipo/2020/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
+      "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
+      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
+      "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
       "mode": "static",
       "status": 200,
-      "bytes": 294839,
-      "title": "A-One Steels IPO Date, Price, GMP, Review, Details",
+      "bytes": 289050,
+      "title": "Moneyview IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
+      "url": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
       "mode": "static",
       "status": 200,
-      "bytes": 321519,
-      "title": "Adroit Industries IPO Date, Price, GMP, Review, Details",
+      "bytes": 294839,
+      "title": "A-One Steels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
