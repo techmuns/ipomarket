@@ -1,16 +1,14 @@
 {
-  "totalIssues": 10,
+  "totalIssues": 8,
   "resolved": 0,
   "examples": {
+    "Elevate Campuses Limited": null,
+    "Adroit Industries (India) Limited": null,
+    "Swastika Infra Limited": null,
+    "ArMee Infotech Limited": null,
     "Varmora Granito Limited": null,
     "Moneyview Limited": null,
-    "Adroit Industries (India) Limited": null,
-    "ArMee Infotech Limited": null,
-    "Swastika Infra Limited": null,
-    "Elevate Campuses Limited": null,
-    "Bench Mark Infotech Services Limited": null,
     "Himalayan Solar Limited": null,
-    "Pooja Logistics Limited": null,
-    "Coreintegra Consulting Services Limited": null
+    "Bench Mark Infotech Services Limited": null
   }
 }
