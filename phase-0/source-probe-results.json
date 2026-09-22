@@ -31,8 +31,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary source for Live & Upcoming tab.",
     "fallback_source": "P-06",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 232,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 72,
     "notes": "Total rows: 10, Active rows: 1"
   },
   {
@@ -67,9 +67,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Upcoming/Pipeline tab.",
     "fallback_source": "P-08b",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 22,
-    "notes": "Total rows: 10, Forthcoming/upcoming rows: 7"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 28,
+    "notes": "Total rows: 10, Forthcoming/upcoming rows: 9"
   },
   {
     "probe_id": "P-03",
@@ -105,9 +105,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Recently Listed.",
     "fallback_source": "P-15",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 21,
-    "notes": "Total rows: 10, Past/closed/listed rows: 2"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 28,
+    "notes": "Total rows: 10, Past/closed/listed rows: 0"
   },
   {
     "probe_id": "P-04",
@@ -120,8 +120,8 @@
       "X-Requested-With",
       "warmed cookies"
     ],
-    "status_code": 200,
-    "response_type": "JSON",
+    "status_code": 0,
+    "response_type": "ERROR",
     "fields_found": [],
     "fields_missing": [
       "qib",
@@ -131,7 +131,7 @@
       "anchor",
       "subscription"
     ],
-    "sample_record": "[\n  {\n    \"companyName\": \"Varmora Granito Limited\",\n    \"issueEndDate\": \"24-Sep-2026\",\n    \"issuePrice\": \"Rs.140 to Rs.148\",\n    \"issueSize\": \"33902899\",\n    \"issueStartDate\": \"22-Sep-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"VARMORA\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"3.3902899E7\",\n    \"noOfTime\": \"0.055944448880315516\",\n    \"noOfsharesBid\": \"1896679.0\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Axiom Gas Engineering Limited\",\n    \"isBse\": \"1\",\n    \"issueEndDate\": \"22-Sep-2026\",\n    \"issueStartDate\": \"18-Sep-2026\",\n    \"series\": \"SME\",\n    \"status\": \"Active\",\n    \"symbol\": \"AXIOMGAS\",\n    \"noOfsharesBid\": \"9976000\",\n    \"noOfSharesOffered\": \"8328000\",\n    \"noOfTime\": \"1.20\"\n  }\n]",
+    "sample_record": "",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -139,9 +139,9 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE bidding (P-07).",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 385,
-    "notes": "Active candidate symbol: VARMORA · Top-level keys: 0, 1"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 25001,
+    "notes": "Active candidate symbol: VARMORA · Network error: This operation was aborted"
   },
   {
     "probe_id": "P-05",
@@ -168,8 +168,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 726,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 41043,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -189,7 +189,7 @@
       "rows"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 15\n    }\n  ],\n  \"unique_pdf_count\": 15,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/HitechFlowSolutionsDAP_p.pdf\",\n      \"link_text\": \"Hi-Tech Flow Solutions Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Anchor%20Offshore%20Services%20Limited-DA_p.pdf\",\n      \"link_text\": \"ANCHOR OFFSHORE SERVICES LIMITED- Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Madhur%20Iron%20And%20Steel%20India%20Limited%20-%20Draft%20AP_p.pdf\",\n      \"link_text\": \"Madhur Iron & Steel India Limited- Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
+    "sample_record": "{\n  \"phases_summary\": [\n    {\n      \"phase\": \"static-primary\",\n      \"tr_count\": 0,\n      \"pdfs_found\": 0\n    },\n    {\n      \"phase\": \"static-alt\",\n      \"tr_count\": 26,\n      \"pdfs_found\": 14\n    }\n  ],\n  \"unique_pdf_count\": 14,\n  \"first_3_pdfs\": [\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/HitechFlowSolutionsDAP_p.pdf\",\n      \"link_text\": \"Hi-Tech Flow Solutions Limited - Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Anchor%20Offshore%20Services%20Limited-DA_p.pdf\",\n      \"link_text\": \"ANCHOR OFFSHORE SERVICES LIMITED- Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    },\n    {\n      \"url\": \"https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Madhur%20Iron%20And%20Steel%20India%20Limited%20-%20Draft%20AP_p.pdf\",\n      \"link_text\": \"Madhur Iron & Steel India Limited- Draft Abridged Prospectus\",\n      \"source\": \"static-alt\"\n    }\n  ],\n  \"detail_urls_found\": 31\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -197,9 +197,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 4180,
-    "notes": "[static-primary] static ok: tr=0, bytes=6035 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=44946 (pdfs=15)"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 3393,
+    "notes": "[static-primary] static ok: tr=0, bytes=6035 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=44543 (pdfs=14)"
   },
   {
     "probe_id": "P-08b",
@@ -225,8 +225,8 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 510,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 470,
     "notes": "static ok: tbody_rows=3, bytes=25826"
   },
   {
@@ -252,8 +252,8 @@
     "status": "RED",
     "recommended_action": "Download failed; fall back to P-10 exchange-side DRHP archive.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 1516,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 1079,
     "notes": "Sample URL: https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/HitechFlowSolutionsDAP_p.pdf; status=0 bytes=0"
   },
   {
@@ -272,7 +272,7 @@
       "rows",
       "pdf links"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\" data-critters-container=\"\"><head>\n    <meta charset=\"utf-8\">\n    <title>\n      LIVE Stock/Share Market | Indian Stock/Share Market LIVE | BSE SENSEX | BSE (formerly Bombay Stock\n      Exchange)\n    </title>\n    <meta name=\"description\" content=\"BSE SENSEX - India's Index the World Tracks. Get live BSE SENSEX quotes. BSE Sensex Heat Map a great tool to track BSE SENSEX stocks. Gainers, losers, volume toppers in BSE SENSEX Stocks. Corporate announcements of BSE SENSEX stocks, Share Market Today | Share Market Live updates. Share Market Live Charts, News, Analysis, IPO News and more. Click here to stay updated and invest wisely!Get all the latest share market and India stock market news and updates on bseindia.com\">\n    <meta name=\"keywords\" content=\"BSE SENSEX,…[truncated, total 14287 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" data-critters-container=\"\"><head>\n    <meta charset=\"utf-8\">\n    <title>\n      LIVE Stock/Share Market | Indian Stock/Share Market LIVE | BSE SENSEX | BSE (formerly Bombay Stock\n      Exchange)\n    </title>\n    <meta name=\"description\" content=\"BSE SENSEX - India's Index the World Tracks. Get live BSE SENSEX quotes. BSE Sensex Heat Map a great tool to track BSE SENSEX stocks. Gainers, losers, volume toppers in BSE SENSEX Stocks. Corporate announcements of BSE SENSEX stocks, Share Market Today | Share Market Live updates. Share Market Live Charts, News, Analysis, IPO News and more. Click here to stay updated and invest wisely!Get all the latest share market and India stock market news and updates on bseindia.com\">\n    <meta name=\"keywords\" content=\"BSE SENSEX,…[truncated, total 13850 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -280,8 +280,8 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 11200,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 31228,
     "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
@@ -300,7 +300,7 @@
       "f1"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"CurrDate\": \"Tue Sep 22 2026 13:58:59\",\n  \"PrevClose\": \"1247.7\",\n  \"LowVal\": \"1235\",\n  \"HighVal\": \"1255\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1239.10\",\n  \"CurrTime\": \"13:58\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"150000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Tue Sep 22 2026 13:58:59\\\",\\\"vale1\\\":\\\"1239.10\\\",\\\"vole\\\":\\\"2421\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 13:57:59\\\",\\\"vale1\\\":\\\"1238.15\\\",\\\"vole\\\":\\\"1660\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 13:56:59\\\",\\\"vale1\\\":\\\"1238.80\\\",\\\"vole\\\":\\\"447\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 13:55:59\\\",\\\"vale1\\\":\\\"1239.00\\\",\\\"vole\\\":\\\"739\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 13:54:59\\\",\\\"vale1\\\":\\\"1238.25\\\",\\\"vole\\\":\\\"2605\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 13:53:59\\\",\\\"vale1\\\":\\\"1239.40\\\",\\\"vole\\\":\\\"156\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 13:52:59\\\",\\\"vale1\\\":\\\"1239.60\\\",\\\"vole\\\":\\\"478\\\"},{\\\"dttm\\…[truncated, total 22758 chars]",
+    "sample_record": "{\n  \"CurrDate\": \"Tue Sep 22 2026 16:01:18\",\n  \"PrevClose\": \"1247.7\",\n  \"LowVal\": \"1235\",\n  \"HighVal\": \"1255\",\n  \"Scripname\": \"RELIANCE\",\n  \"CurrVal\": \"1242.00\",\n  \"CurrTime\": \"16:01\",\n  \"LowVol\": \"0\",\n  \"HighVol\": \"150000\",\n  \"Data\": \"[{\\\"dttm\\\":\\\"Tue Sep 22 2026 16:01:18\\\",\\\"vale1\\\":\\\"1242.00\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 16:00:03\\\",\\\"vale1\\\":\\\"1242.00\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 15:59:46\\\",\\\"vale1\\\":\\\"1242.00\\\",\\\"vole\\\":\\\"10\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 15:58:52\\\",\\\"vale1\\\":\\\"1242.00\\\",\\\"vole\\\":\\\"40\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 15:57:46\\\",\\\"vale1\\\":\\\"1242.00\\\",\\\"vole\\\":\\\"0\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 15:56:53\\\",\\\"vale1\\\":\\\"1242.00\\\",\\\"vole\\\":\\\"3\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 2026 15:55:54\\\",\\\"vale1\\\":\\\"1242.00\\\",\\\"vole\\\":\\\"4\\\"},{\\\"dttm\\\":\\\"Tue Sep 22 …[truncated, total 31115 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -308,9 +308,9 @@
     "status": "GREEN",
     "recommended_action": "NSE historical still blocked; use BSE historical as primary (official fallback).",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 3108,
-    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22094 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22095 chars] ; [bse:RELIANCE] BSE rows=19112, fields=1"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 80712,
+    "notes": "[nse:RELIANCE] NSE non-200 (status=0, err=This operation was aborted) ; [nse:TCS] NSE non-200 (status=0, err=This operation was aborted) ; [bse:RELIANCE] BSE rows=26197, fields=1"
   },
   {
     "probe_id": "P-15b",
@@ -329,7 +329,7 @@
     "fields_missing": [
       "priceInfo"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;e44f4317&#46;1790065771&#46;19906894\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;e44f4317&#46;1790065771&#46;19906894</P>\n</BODY>\n</HTML>\n",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;5969dc17&#46;1790091239&#46;2548269\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;5969dc17&#46;1790091239&#46;2548269</P>\n</BODY>\n</HTML>\n",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -337,9 +337,9 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE quote.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 54,
-    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 34,
+    "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 397 chars]"
   },
   {
     "probe_id": "P-16",
@@ -357,7 +357,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"Varmora Granito Limited\": \"VARMORA\",\n  \"Sonaselection India Limited\": \"SONA\",\n  \"National Stock Exchange of India Limited\": \"NSE\",\n  \"ArMee Infotech Limited\": \"ARMEE\",\n  \"Elevate Campuses Limited\": \"ELEVATE\",\n  \"Adroit Industries (India) Limited\": \"ADROITIND\",\n  \"Swastika Infra Limited\": \"SWASTIKAIN\",\n  \"Bench Mark Infotech Services Limited\": \"BMISL\",\n  \"Pooja Logistics Limited\": \"POOJALOGIS\",\n  \"Coreintegra Consulting Services Limited\": \"COREIN\"\n}",
+    "sample_record": "{\n  \"Varmora Granito Limited\": \"VARMORA\",\n  \"Moneyview Limited\": \"MONEYVIEW\",\n  \"Adroit Industries (India) Limited\": \"ADROITIND\",\n  \"ArMee Infotech Limited\": \"ARMEE\",\n  \"Swastika Infra Limited\": \"SWASTIKAIN\",\n  \"Elevate Campuses Limited\": \"ELEVATE\",\n  \"Bench Mark Infotech Services Limited\": \"BMISL\",\n  \"Himalayan Solar Limited\": \"HIMALAYAN\",\n  \"Pooja Logistics Limited\": \"POOJALOGIS\",\n  \"Coreintegra Consulting Services Limited\": \"COREIN\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -365,8 +365,8 @@
     "status": "GREEN",
     "recommended_action": "Deterministic mapping; no manual override file needed for v1.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 229,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 351,
     "notes": "total=10, validSymbolPattern=10, rate=100%"
   },
   {
@@ -392,8 +392,8 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 407,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 1175,
     "notes": "<tr> count: 0, total bytes: 14287"
   },
   {
@@ -419,8 +419,8 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 10276,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 10487,
     "notes": "Network error: fetch failed"
   },
   {
@@ -446,8 +446,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 316,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 293,
     "notes": "Bid-link markers found: 0, bytes: 14287"
   },
   {
@@ -466,7 +466,7 @@
     "fields_missing": [
       "registrar field"
     ],
-    "sample_record": "{\n  \"Varmora Granito Limited\": null,\n  \"Sonaselection India Limited\": null,\n  \"National Stock Exchange of India Limited\": null,\n  \"ArMee Infotech Limited\": null,\n  \"Elevate Campuses Limited\": null,\n  \"Adroit Industries (India) Limited\": null,\n  \"Swastika Infra Limited\": null,\n  \"Bench Mark Infotech Services Limited\": null,\n  \"Pooja Logistics Limited\": null,\n  \"Coreintegra Consulting Services Limited\": null\n}",
+    "sample_record": "{\n  \"Varmora Granito Limited\": null,\n  \"Moneyview Limited\": null,\n  \"Adroit Industries (India) Limited\": null,\n  \"ArMee Infotech Limited\": null,\n  \"Swastika Infra Limited\": null,\n  \"Elevate Campuses Limited\": null,\n  \"Bench Mark Infotech Services Limited\": null,\n  \"Himalayan Solar Limited\": null,\n  \"Pooja Logistics Limited\": null,\n  \"Coreintegra Consulting Services Limited\": null\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -474,8 +474,8 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 51,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 20339,
     "notes": "Issues=10, registrars resolved by name match=0"
   },
   {
@@ -492,7 +492,7 @@
       "landing page reachable"
     ],
     "fields_missing": [],
-    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37480 chars]",
+    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37478 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -500,8 +500,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 542,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 593,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -526,8 +526,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 59,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 129,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -552,8 +552,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 1052,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 961,
     "notes": "status=200"
   },
   {
@@ -578,8 +578,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 779,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 709,
     "notes": "status=200"
   },
   {
@@ -602,8 +602,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 1028,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 1051,
     "notes": "No PDF URL discovered."
   },
   {
@@ -626,8 +626,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 280,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 207,
     "notes": "No PDF URL discovered."
   },
   {
@@ -645,7 +645,7 @@
       "gmp table rows"
     ],
     "fields_missing": [],
-    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head><style>img.lazy{min-height:1px}</style><link href=\"https://ipowatch.in/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js\" as=\"script\">\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium p…[truncated, total 964262 chars]",
+    "sample_record": "<!doctype html>\n<html lang=\"en-US\">\n<head><style>img.lazy{min-height:1px}</style><link href=\"https://ipowatch.in/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js\" as=\"script\">\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO Premium p…[truncated, total 981810 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -653,9 +653,9 @@
     "status": "YELLOW",
     "recommended_action": "Include in Phase 6 GMP averager.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 1492,
-    "notes": "<tr> count: 362, bytes=964262"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 1401,
+    "notes": "<tr> count: 368, bytes=981810"
   },
   {
     "probe_id": "P-20",
@@ -672,7 +672,7 @@
     "fields_missing": [
       "gmp table"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/home.png\"/><link …[truncated, total 125464 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/paytrm-money-logo-small-25x25.jpg\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/ipo/fyers-logo-small.png\"/><link rel=\"preload\" as=\"image\" href=\"https://www.chittorgarh.net/images/home.png\"/><link …[truncated, total 125473 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -680,9 +680,9 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 1495,
-    "notes": "<tr> count: 0, bytes=125464"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 1263,
+    "notes": "<tr> count: 0, bytes=125473"
   },
   {
     "probe_id": "P-21",
@@ -699,7 +699,7 @@
     "fields_missing": [
       "discussion markers"
     ],
-    "sample_record": "<!doctype html >\n<!--[if IE 8]><html class=\"ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 9]><html class=\"ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--><html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]--><head><title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"pingback\" href=\"https://ipocentral.in/xmlrpc.php\" /> <script data-cfasync=\"fa…[truncated, total 554306 chars]",
+    "sample_record": "<!doctype html >\n<!--[if IE 8]><html class=\"ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 9]><html class=\"ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--><html lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\"> <!--<![endif]--><head><title>IPO GMP Today 2026 – Live Grey Market Premium &amp; Kostak Rates - IPO Central</title><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"pingback\" href=\"https://ipocentral.in/xmlrpc.php\" /> <script data-cfasync=\"fa…[truncated, total 554307 chars]",
     "parsing_difficulty": "Hard",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -707,9 +707,9 @@
     "status": "RED",
     "recommended_action": "Skip.",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 339,
-    "notes": "<tr> count: 0, bytes=554306"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 85,
+    "notes": "<tr> count: 0, bytes=554307"
   },
   {
     "probe_id": "P-22",
@@ -734,8 +734,8 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 52,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 92,
     "notes": "<tr> count: 0, bytes=49270"
   },
   {
@@ -777,9 +777,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 5369,
-    "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38569 | rendered_len=39388 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 4809,
+    "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38579 | rendered_len=39398 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
     "probe_id": "P-23b",
@@ -814,9 +814,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 5973,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=347228 | rendered_len=391771 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 5566,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=347835 | rendered_len=392836 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-24",
@@ -842,9 +842,9 @@
     "status": "RED",
     "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 976,
-    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 397 chars] ; [NSE IPO list] 10 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=14287"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 1416,
+    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 10 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=14287"
   },
   {
     "probe_id": "P-25",
@@ -873,9 +873,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 1459,
-    "notes": "mainboard: static status=200 bytes=149182 | sme: static status=200 bytes=149541 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=282656 | detail-2: static status=200 bytes=282741 | challenges_detected=false"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 164,
+    "notes": "mainboard: static status=200 bytes=149221 | sme: static status=200 bytes=149550 | detail_urls_discovered=40 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=282390 | detail-2: static status=200 bytes=282738 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -917,9 +917,9 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 15,
-    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=84252b tables=12 rows=71 | d2: main=84351b tables=12 rows=66"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 18,
+    "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=2 | d1: main=84197b tables=12 rows=71 | d2: main=84351b tables=12 rows=66"
   },
   {
     "probe_id": "P-27",
@@ -960,9 +960,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 3467,
-    "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38569 | rendered_len=39388 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 3413,
+    "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=38579 | rendered_len=39398 | challenge=false | headings=11 | tables=4 | doc_links=2 | labels=17"
   },
   {
     "probe_id": "P-28",
@@ -997,9 +997,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 5208,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=347228 | rendered_len=391182 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 5044,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=347835 | rendered_len=392812 | challenge=false | headings=20 | tables=1 | doc_links=8 | labels=11"
   },
   {
     "probe_id": "P-25b",
@@ -1027,9 +1027,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 1893,
-    "notes": "third_ipo_status=current | third_ipo_slug=varmora-granito-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"22 - 24 Sep\" covers today\" | detail-1: static status=200 bytes=366897 | detail-2: static status=200 bytes=341014 | detail-3: static status=200 bytes=304061 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 2080,
+    "notes": "third_ipo_status=current | third_ipo_slug=varmora-granito-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"22 - 24 Sep\" covers today\" | detail-1: static status=200 bytes=366949 | detail-2: static status=200 bytes=341286 | detail-3: static status=200 bytes=304064 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
     "probe_id": "P-26b",
@@ -1084,8 +1084,8 @@
     "status": "GREEN",
     "recommended_action": "Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-09-22T08:29:08.997Z",
-    "latency_ms": 22,
+    "ran_at_utc": "2026-09-22T15:30:55.871Z",
+    "latency_ms": 29,
     "notes": "details_extracted=3 | avg_full=0.848 | avg_narrow=1.000 | pdf_on_allowlist=2 | pdf_off_allowlist=2 | third_ipo=varmora-granito-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:varmora-granito-ipo full=0.82 narrow=1.00"
   }
 ]

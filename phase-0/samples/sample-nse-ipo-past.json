@@ -10,64 +10,54 @@
     "symbol": "VARMORA"
   },
   {
-    "companyName": "Sonaselection India Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.94 to Rs.99",
-    "issueSize": "10010000",
-    "issueStartDate": "17-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "SONA"
-  },
-  {
-    "companyName": "National Stock Exchange of India Limited",
-    "issueEndDate": "21-Sep-2026",
-    "issuePrice": "Rs.1700 to Rs.1785",
-    "issueSize": "88642911",
-    "issueStartDate": "17-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "NSE"
-  },
-  {
-    "companyName": "ArMee Infotech Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.350 to Rs.375",
-    "issueSize": "8571428",
-    "issueStartDate": "23-Sep-2026",
+    "companyName": "Moneyview Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.32 to Rs.34",
+    "issueSize": "334869200",
+    "issueStartDate": "24-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "ARMEE"
-  },
-  {
-    "companyName": "Elevate Campuses Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.343 to Rs.362",
-    "issueSize": "61224489",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "ELEVATE"
+    "symbol": "MONEYVIEW"
   },
   {
     "companyName": "Adroit Industries (India) Limited",
     "issueEndDate": "25-Sep-2026",
     "issuePrice": "Rs.126 to Rs.134",
-    "issueSize": "11247000",
+    "issueSize": "7872900",
     "issueStartDate": "23-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "ADROITIND"
   },
   {
+    "companyName": "ArMee Infotech Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.350 to Rs.375",
+    "issueSize": "7430356",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ARMEE"
+  },
+  {
     "companyName": "Swastika Infra Limited",
     "issueEndDate": "25-Sep-2026",
     "issuePrice": "Rs.175 to Rs.185",
-    "issueSize": "9092857",
+    "issueSize": "6335001",
     "issueStartDate": "23-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "SWASTIKAIN"
+  },
+  {
+    "companyName": "Elevate Campuses Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.343 to Rs.362",
+    "issueSize": "33673468",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ELEVATE"
   },
   {
     "companyName": "Bench Mark Infotech Services Limited",
@@ -82,10 +72,22 @@
     "symbol": "BMISL"
   },
   {
+    "companyName": "Himalayan Solar Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.98 to Rs.103",
+    "issueSize": "6604800",
+    "issueStartDate": "25-Sep-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.98 to Rs.103",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "HIMALAYAN"
+  },
+  {
     "companyName": "Pooja Logistics Limited",
     "issueEndDate": "25-Sep-2026",
     "issuePrice": "Rs.109 to Rs.115",
-    "issueSize": "3846000",
+    "issueSize": "2784000",
     "issueStartDate": "23-Sep-2026",
     "lotSize": "1200",
     "priceBand": "Rs.109 to Rs.115",
