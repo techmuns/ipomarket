@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-21T22:34:38.483Z",
+  "captured_at_utc": "2026-09-22T08:29:08.997Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44613,
+      "bytes": 44946,
       "tr_count": 26,
-      "pdfs_found": 14,
-      "notes": "static ok: tr=26, bytes=44613"
+      "pdfs_found": 15,
+      "notes": "static ok: tr=26, bytes=44946"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/HitechFlowSolutionsDAP_p.pdf",
+      "link_text": "Hi-Tech Flow Solutions Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Anchor%20Offshore%20Services%20Limited-DA_p.pdf",
       "link_text": "ANCHOR OFFSHORE SERVICES LIMITED- Draft Abridged Prospectus",

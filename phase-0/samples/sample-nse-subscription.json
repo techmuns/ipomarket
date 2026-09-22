@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "VARMORA",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "3.3902899E7",
+    "noOfTime": "0.055944448880315516",
+    "noOfsharesBid": "1896679.0",
     "srNo": null
   },
   {
@@ -22,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "AXIOMGAS",
-    "noOfsharesBid": "7126000",
+    "noOfsharesBid": "9976000",
     "noOfSharesOffered": "8328000",
-    "noOfTime": "0.86"
+    "noOfTime": "1.20"
   }
 ]

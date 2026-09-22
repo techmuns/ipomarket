@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/robokidz-eduventures-ipo/3205/",
-  "slug": "robokidz-eduventures-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
+  "slug": "varmora-granito-ipo",
   "fields": {
     "company_name": {
-      "value": "Robokidz Eduventures IPO",
+      "value": "Varmora Granito IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Robokidz Eduventures IPO"
+      "source_snippet": "Varmora Granito IPO"
     },
     "issue_size_cr": {
-      "value": "29,32,800 shares (agg. up to ₹ 31 Cr)",
+      "value": "4,78,39,255 shares (agg. up to ₹ 708 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "29,32,800 shares (agg. up to ₹ 31 Cr)"
+      "source_snippet": "4,78,39,255 shares (agg. up to ₹ 708 Cr)"
     },
     "price_band": {
-      "value": "₹100 to ₹106",
+      "value": "₹140 to ₹148",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹100 to ₹106"
+      "source_snippet": "₹140 to ₹148"
     },
     "lot_size": {
-      "value": "1,200 Shares",
+      "value": "101 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "1,200 Shares"
+      "source_snippet": "101 Shares"
     },
     "face_value": {
-      "value": "₹ 10 per share",
+      "value": "₹ 2 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 10 per share"
+      "source_snippet": "₹ 2 per share"
     },
     "open_date": {
-      "value": "2026-09-21",
+      "value": "2026-09-22",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"21 to 23 Sep, 2026\" → start=2026-09-21"
+      "source_snippet": "raw=\"22 to 24 Sep, 2026\" → start=2026-09-22"
     },
     "close_date": {
-      "value": "2026-09-23",
+      "value": "2026-09-24",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"21 to 23 Sep, 2026\" → end=2026-09-23"
+      "source_snippet": "raw=\"22 to 24 Sep, 2026\" → end=2026-09-24"
     },
     "listing_date": {
-      "value": "2026-09-28",
+      "value": "2026-09-29",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Mon, Sep 28, 2026 T\" → 2026-09-28"
+      "source_snippet": "raw=\"Tue, Sep 29, 2026 T\" → 2026-09-29"
     },
     "registrar": {
-      "value": "Maashitla Securities Pvt.Ltd.",
+      "value": "Kfin Technologies Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Maashitla Securities Pvt.Ltd. 011-45121795 investor.ipo@maashitla.com <i class=\"fa fa-globe\" → \"Maashitla Securities Pvt.Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 einward.ris@kfintech.com <a\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -88,9 +88,9 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/robokidz-anchor-book.pdf"
+      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
+      "why_missing": "2 PDF link(s) found but none on the official allow-list",
+      "source_snippet": "https://live.jmfl.com/od/UploadedFiles/A49FD961-AE8C-4FE8-9A30-5041E1D8672C.pdf | https://www.chittorgarh.net/reports/anchor-investor/varmora-granito-ipo-anchor-allocation-letter.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,11 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/robokidz-anchor-book.pdf"
+    "https://live.jmfl.com/od/UploadedFiles/A49FD961-AE8C-4FE8-9A30-5041E1D8672C.pdf",
+    "https://www.chittorgarh.net/reports/anchor-investor/varmora-granito-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 88379,
-  "main_content_bytes": 88379,
+  "noise_stripped_bytes": 84929,
+  "main_content_bytes": 84929,
   "tables_parsed": 12,
-  "table_rows_parsed": 72
+  "table_rows_parsed": 68
 }

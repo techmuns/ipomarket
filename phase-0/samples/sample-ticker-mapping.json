@@ -1,6 +1,6 @@
 {
-  "total": 9,
-  "valid": 9,
+  "total": 10,
+  "valid": 10,
   "examples": {
     "Varmora Granito Limited": "VARMORA",
     "Sonaselection India Limited": "SONA",
@@ -9,7 +9,8 @@
     "Elevate Campuses Limited": "ELEVATE",
     "Adroit Industries (India) Limited": "ADROITIND",
     "Swastika Infra Limited": "SWASTIKAIN",
-    "Coreintegra Consulting Services Limited": "COREIN",
-    "Pooja Logistics Limited": "POOJALOGIS"
+    "Bench Mark Infotech Services Limited": "BMISL",
+    "Pooja Logistics Limited": "POOJALOGIS",
+    "Coreintegra Consulting Services Limited": "COREIN"
   }
 }

@@ -70,16 +70,16 @@
     "symbol": "SWASTIKAIN"
   },
   {
-    "companyName": "Coreintegra Consulting Services Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.74 to Rs.78",
-    "issueSize": "2819200",
-    "issueStartDate": "23-Sep-2026",
-    "lotSize": "1600",
-    "priceBand": "Rs.74 to Rs.78",
+    "companyName": "Bench Mark Infotech Services Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.104 to Rs.110",
+    "issueSize": "3858000",
+    "issueStartDate": "25-Sep-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.104 to Rs.110",
     "series": "SME",
     "status": "Forthcoming",
-    "symbol": "COREIN"
+    "symbol": "BMISL"
   },
   {
     "companyName": "Pooja Logistics Limited",
@@ -92,5 +92,17 @@
     "series": "SME",
     "status": "Forthcoming",
     "symbol": "POOJALOGIS"
+  },
+  {
+    "companyName": "Coreintegra Consulting Services Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.74 to Rs.78",
+    "issueSize": "2819200",
+    "issueStartDate": "23-Sep-2026",
+    "lotSize": "1600",
+    "priceBand": "Rs.74 to Rs.78",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "COREIN"
   }
 ]
