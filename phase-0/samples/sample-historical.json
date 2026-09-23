@@ -1,8 +1,11 @@
-<HTML><HEAD>
-<TITLE>Access Denied</TITLE>
-</HEAD><BODY>
-<H1>Access Denied</H1>
- 
-You don't have permission to access "http&#58;&#47;&#47;api&#46;bseindia&#46;com&#47;BseIndiaAPI&#47;api&#47;StockReachGraph&#47;w&#63;" on this server.<P>
-Reference&#32;&#35;18&#46;9094d817&#46;1790177242&#46;2b56cbb2
-…[truncated, total 420 chars]
+{
+  "CurrDate": "Wed Sep 23 2026 16:01:28",
+  "PrevClose": "1242",
+  "LowVal": "1235",
+  "HighVal": "1255",
+  "Scripname": "RELIANCE",
+  "CurrVal": "1247.05",
+  "CurrTime": "16:01",
+  "LowVol": "0",
+  "HighVol": "75000",
+  "Data": "[{\"dttm\":\"Wed Sep 23 2026 16:01:28\",\"vale1\":\"1247.05\",\"vole\":\"0\"},{\"dttm\":\"Wed Sep 23 2026 16:00:09\",\"vale1\":\"1247.05\",\"vole\":\"0\"},{\"dttm\":\"Wed Sep 23 2026 15:59:31\",\"vale1\":\"1247.05\",\"vole\":\"2\"},{\"dttm\":\"Wed Sep 23 2026 15:58:28\",\"vale1\":\"1247.05\",\"vole\":\"0\"},{\"dttm\":\"Wed Sep 23 2026 15:57:19\",\"vale1\":\"1247.05\",\"vole\":\"1\"},{\"dttm\":\"Wed Sep 23 2026 15:56:38\",\"vale1\":\"1247.05\",\"vole\":\"1222\"},{\"dttm\":\"Wed Sep 23 2026 15:55:56\",\"vale1\":\"1247.05\",\"vole\":\"0\"},{\"dttm\":\"Wed Sep 23 20…[truncated, total 31266 chars]

@@ -1,20 +1,19 @@
 {
-  "total": 14,
-  "valid": 14,
+  "total": 13,
+  "valid": 13,
   "examples": {
+    "Moneyview Limited": "MONEYVIEW",
+    "A-One Steels India Limited": "AONESTEELS",
+    "Swastika Infra Limited": "SWASTIKAIN",
     "Adroit Industries (India) Limited": "ADROITIND",
     "ArMee Infotech Limited": "ARMEE",
     "Elevate Campuses Limited": "ELEVATE",
-    "Swastika Infra Limited": "SWASTIKAIN",
     "Varmora Granito Limited": "VARMORA",
     "Runwal Enterprises Limited": "RUNWALENTR",
     "AceVector Limited": "ACEVECTOR",
     "Orient Cables (India) Limited": "ORIENTCABL",
     "German Green Steel and Power Limited": "GERMAN",
-    "A-One Steels India Limited": "AONESTEELS",
-    "Moneyview Limited": "MONEYVIEW",
-    "Bench Mark Infotech Services Limited": "BMISL",
     "Himalayan Solar Limited": "HIMALAYAN",
-    "Green Asia Impex Limited": "GREENASIA"
+    "Bench Mark Infotech Services Limited": "BMISL"
   }
 }
