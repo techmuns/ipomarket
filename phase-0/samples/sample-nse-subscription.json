@@ -1,17 +1,17 @@
 [
   {
-    "companyName": "Elevate Campuses Limited",
+    "companyName": "ArMee Infotech Limited",
     "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.343 to Rs.362",
-    "issueSize": "33673468",
+    "issuePrice": "Rs.350 to Rs.375",
+    "issueSize": "7430356",
     "issueStartDate": "23-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "ELEVATE",
+    "symbol": "ARMEE",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "7430356.0",
+    "noOfTime": "0.3012399405896568",
+    "noOfsharesBid": "2238320.0",
     "srNo": null
   },
   {
@@ -24,9 +24,24 @@
     "status": "Active",
     "symbol": "ADROITIND",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "7872900.0",
+    "noOfTime": "1.7802522577449225",
+    "noOfsharesBid": "1.4015748E7",
+    "srNo": null
+  },
+  {
+    "companyName": "Elevate Campuses Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.343 to Rs.362",
+    "issueSize": "33673468",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ELEVATE",
+    "category": "Total",
+    "noOfSharesOffered": "3.3673468E7",
+    "noOfTime": "0.03081927884588543",
+    "noOfsharesBid": "1037792.0",
     "srNo": null
   },
   {
@@ -39,24 +54,9 @@
     "status": "Active",
     "symbol": "SWASTIKAIN",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
-    "srNo": null
-  },
-  {
-    "companyName": "ArMee Infotech Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.350 to Rs.375",
-    "issueSize": "7430356",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ARMEE",
-    "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "6335001.0",
+    "noOfTime": "0.4580111352784317",
+    "noOfsharesBid": "2901501.0",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "VARMORA",
     "category": "Total",
     "noOfSharesOffered": "3.3902899E7",
-    "noOfTime": "0.07312787617365701",
-    "noOfsharesBid": "2479247.0",
+    "noOfTime": "0.12943875389535273",
+    "noOfsharesBid": "4388349.0",
     "srNo": null
   },
   {
@@ -82,9 +82,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "POOJALOGIS",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "645600",
     "noOfSharesOffered": "2784000",
-    "noOfTime": ""
+    "noOfTime": "0.23"
   },
   {
     "companyName": "Coreintegra Consulting Services Limited",
@@ -94,8 +94,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "COREIN",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "318400",
     "noOfSharesOffered": "2819200",
-    "noOfTime": ""
+    "noOfTime": "0.11"
   }
 ]

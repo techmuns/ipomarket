@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-22T22:04:41.411Z",
+  "captured_at_utc": "2026-09-23T08:31:09.880Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "varmora-granito-ipo",
-    "url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
+    "slug": "adroit-industries-ipo",
+    "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"22 - 24 Sep\" covers today",
-    "date_text": "22 - 24 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"23 - 25 Sep\" covers today",
+    "date_text": "23 - 25 Sep",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
-      "slug": "varmora-granito-ipo"
+      "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
+      "slug": "adroit-industries-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
+      "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
       "mode": "static",
       "status": 200,
-      "bytes": 304065,
-      "title": "Varmora Granito IPO Date, Price, GMP, Review, Details",
+      "bytes": 322780,
+      "title": "Adroit Industries IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

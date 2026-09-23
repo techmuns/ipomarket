@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-22T22:04:41.411Z",
+  "captured_at_utc": "2026-09-23T08:31:09.880Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44171,
+      "bytes": 44543,
       "tr_count": 26,
-      "pdfs_found": 13,
-      "notes": "static ok: tr=26, bytes=44171"
+      "pdfs_found": 14,
+      "notes": "static ok: tr=26, bytes=44543"
     }
   ],
   "detail_urls_found": 31,
@@ -85,6 +85,11 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/ATOMBERG%20TECHNOLOGIES%20LIMITED%20-%20AP_p.pdf",
       "link_text": "ATOMBERG TECHNOLOGIES LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/aug-2026/Avaada%20Electro%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Avaada Electro Limited - Draft Abridged Prospectus.",
       "source": "static-alt"
     }
   ]

@@ -1,13 +1,13 @@
 [
   {
-    "companyName": "Elevate Campuses Limited",
+    "companyName": "ArMee Infotech Limited",
     "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.343 to Rs.362",
-    "issueSize": "33673468",
+    "issuePrice": "Rs.350 to Rs.375",
+    "issueSize": "7430356",
     "issueStartDate": "23-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "ELEVATE"
+    "symbol": "ARMEE"
   },
   {
     "companyName": "Adroit Industries (India) Limited",
@@ -20,6 +20,16 @@
     "symbol": "ADROITIND"
   },
   {
+    "companyName": "Elevate Campuses Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.343 to Rs.362",
+    "issueSize": "33673468",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ELEVATE"
+  },
+  {
     "companyName": "Swastika Infra Limited",
     "issueEndDate": "25-Sep-2026",
     "issuePrice": "Rs.175 to Rs.185",
@@ -28,16 +38,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "SWASTIKAIN"
-  },
-  {
-    "companyName": "ArMee Infotech Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.350 to Rs.375",
-    "issueSize": "7430356",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ARMEE"
   },
   {
     "companyName": "Varmora Granito Limited",
@@ -58,6 +58,16 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "MONEYVIEW"
+  },
+  {
+    "companyName": "A-One Steels India Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.385 to Rs.405",
+    "issueSize": "10525168",
+    "issueStartDate": "24-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "AONESTEELS"
   },
   {
     "companyName": "Himalayan Solar Limited",

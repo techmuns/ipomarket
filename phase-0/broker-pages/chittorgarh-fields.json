@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-22T22:04:41.411Z",
+  "captured_at_utc": "2026-09-23T08:31:09.880Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 150878,
+      "bytes": 150843,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 151494,
+      "bytes": 149179,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,8 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
+    "https://www.chittorgarh.com/ipo/shah-investors-home-ipo/2657/",
     "https://www.chittorgarh.com/ipo/acevector-ipo/2543/",
     "https://www.chittorgarh.com/ipo/orient-cables-ipo/2532/",
     "https://www.chittorgarh.com/ipo/german-green-steel-and-power-ipo/2497/",
@@ -45,41 +47,39 @@
     "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
     "https://www.chittorgarh.com/ipo/hero-motors-ipo/2225/",
     "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/",
-    "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/",
-    "https://www.chittorgarh.com/ipo/rentomojo-ipo/2971/",
-    "https://www.chittorgarh.com/ipo/asset-reconstruction-ipo/2558/"
+    "https://www.chittorgarh.com/ipo/veegaland-developers-ipo/2834/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/acevector-ipo/2543/",
+      "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/orient-cables-ipo/2532/",
+      "url": "https://www.chittorgarh.com/ipo/shah-investors-home-ipo/2657/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/acevector-ipo/2543/",
+      "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
       "mode": "static",
       "status": 200,
-      "bytes": 282653,
-      "title": "Acevector IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 283648,
+      "title": "SRIT India IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/orient-cables-ipo/2532/",
+      "url": "https://www.chittorgarh.com/ipo/shah-investors-home-ipo/2657/",
       "mode": "static",
       "status": 200,
-      "bytes": 282802,
-      "title": "Orient Cables IPO Date, Price, GMP, Review, Details",
+      "bytes": 262589,
+      "title": "Shah Investor&#x27;s Home IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

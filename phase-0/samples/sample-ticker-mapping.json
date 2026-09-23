@@ -1,13 +1,14 @@
 {
-  "total": 8,
-  "valid": 8,
+  "total": 9,
+  "valid": 9,
   "examples": {
-    "Elevate Campuses Limited": "ELEVATE",
-    "Adroit Industries (India) Limited": "ADROITIND",
-    "Swastika Infra Limited": "SWASTIKAIN",
     "ArMee Infotech Limited": "ARMEE",
+    "Adroit Industries (India) Limited": "ADROITIND",
+    "Elevate Campuses Limited": "ELEVATE",
+    "Swastika Infra Limited": "SWASTIKAIN",
     "Varmora Granito Limited": "VARMORA",
     "Moneyview Limited": "MONEYVIEW",
+    "A-One Steels India Limited": "AONESTEELS",
     "Himalayan Solar Limited": "HIMALAYAN",
     "Bench Mark Infotech Services Limited": "BMISL"
   }

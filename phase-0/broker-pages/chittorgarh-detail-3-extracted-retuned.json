@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
-  "slug": "varmora-granito-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
+  "slug": "adroit-industries-ipo",
   "fields": {
     "company_name": {
-      "value": "Varmora Granito IPO",
+      "value": "Adroit Industries (India) IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Varmora Granito IPO"
+      "source_snippet": "Adroit Industries (India) IPO"
     },
     "issue_size_cr": {
-      "value": "4,78,39,255 shares (agg. up to ₹ 708 Cr)",
+      "value": "1,12,47,000 shares (agg. up to ₹ 151 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "4,78,39,255 shares (agg. up to ₹ 708 Cr)"
+      "source_snippet": "1,12,47,000 shares (agg. up to ₹ 151 Cr)"
     },
     "price_band": {
-      "value": "₹140 to ₹148",
+      "value": "₹126 to ₹134",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹140 to ₹148"
+      "source_snippet": "₹126 to ₹134"
     },
     "lot_size": {
-      "value": "101 Shares",
+      "value": "111 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "101 Shares"
+      "source_snippet": "111 Shares"
     },
     "face_value": {
-      "value": "₹ 2 per share",
+      "value": "₹ 10 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 2 per share"
+      "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-09-22",
+      "value": "2026-09-23",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"22 to 24 Sep, 2026\" → start=2026-09-22"
+      "source_snippet": "raw=\"23 to 25 Sep, 2026\" → start=2026-09-23"
     },
     "close_date": {
-      "value": "2026-09-24",
+      "value": "2026-09-25",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"22 to 24 Sep, 2026\" → end=2026-09-24"
+      "source_snippet": "raw=\"23 to 25 Sep, 2026\" → end=2026-09-25"
     },
     "listing_date": {
-      "value": "2026-09-29",
+      "value": "2026-09-30",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Tue, Sep 29, 2026 T\" → 2026-09-29"
+      "source_snippet": "raw=\"Wed, Sep 30, 2026 T\" → 2026-09-30"
     },
     "registrar": {
-      "value": "Kfin Technologies Ltd.",
+      "value": "Bigshare Services Pvt.Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 einward.ris@kfintech.com <a\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. 8657578989/8069219065/8069219060 ipo@bigshareonline.com <i class\" → \"Bigshare Services Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -88,9 +88,9 @@
       "value": null,
       "found": false,
       "confidence": "low",
-      "method": "href[*.pdf] scan; 2 found but all off-allowlist",
-      "why_missing": "2 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://live.jmfl.com/od/UploadedFiles/A49FD961-AE8C-4FE8-9A30-5041E1D8672C.pdf | https://www.chittorgarh.net/reports/anchor-investor/varmora-granito-ipo-anchor-allocation-letter.pdf"
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list",
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/adroit-industries-ipo-anchor-allocation.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,11 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://live.jmfl.com/od/UploadedFiles/A49FD961-AE8C-4FE8-9A30-5041E1D8672C.pdf",
-    "https://www.chittorgarh.net/reports/anchor-investor/varmora-granito-ipo-anchor-allocation-letter.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/adroit-industries-ipo-anchor-allocation.pdf"
   ],
-  "noise_stripped_bytes": 84929,
-  "main_content_bytes": 84929,
-  "tables_parsed": 12,
-  "table_rows_parsed": 68
+  "noise_stripped_bytes": 94181,
+  "main_content_bytes": 94181,
+  "tables_parsed": 13,
+  "table_rows_parsed": 82
 }

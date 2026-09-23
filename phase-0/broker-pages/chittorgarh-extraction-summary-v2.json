@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-22T22:04:41.411Z",
+  "generated_at_utc": "2026-09-23T08:31:09.880Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "varmora-granito-ipo",
-    "url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
+    "slug": "adroit-industries-ipo",
+    "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"22 - 24 Sep\" covers today",
-    "date_text": "22 - 24 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"23 - 25 Sep\" covers today",
+    "date_text": "23 - 25 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "varmora-granito-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
+      "slug": "adroit-industries-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84929,
-      "tables_parsed": 12,
-      "table_rows_parsed": 68,
+      "main_content_bytes": 94181,
+      "tables_parsed": 13,
+      "table_rows_parsed": 82,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -111,7 +111,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 2
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }
