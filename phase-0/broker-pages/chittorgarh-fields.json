@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-23T08:31:09.880Z",
+  "captured_at_utc": "2026-09-23T15:26:58.283Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 149179,
+      "bytes": 148075,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
       "mode": "static",
       "status": 200,
-      "bytes": 283648,
+      "bytes": 288310,
       "title": "SRIT India IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/shah-investors-home-ipo/2657/",
       "mode": "static",
       "status": 200,
-      "bytes": 262589,
+      "bytes": 269949,
       "title": "Shah Investor&#x27;s Home IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

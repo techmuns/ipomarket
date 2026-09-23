@@ -1,15 +1,5 @@
 [
   {
-    "companyName": "ArMee Infotech Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.350 to Rs.375",
-    "issueSize": "7430356",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ARMEE"
-  },
-  {
     "companyName": "Adroit Industries (India) Limited",
     "issueEndDate": "25-Sep-2026",
     "issuePrice": "Rs.126 to Rs.134",
@@ -18,6 +8,16 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "ADROITIND"
+  },
+  {
+    "companyName": "ArMee Infotech Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.350 to Rs.375",
+    "issueSize": "7430356",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ARMEE"
   },
   {
     "companyName": "Elevate Campuses Limited",
@@ -50,6 +50,56 @@
     "symbol": "VARMORA"
   },
   {
+    "companyName": "Runwal Enterprises Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.290 to Rs.302",
+    "issueSize": "17247500",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "RUNWALENTR"
+  },
+  {
+    "companyName": "AceVector Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.30 to Rs.32",
+    "issueSize": "137229166",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ACEVECTOR"
+  },
+  {
+    "companyName": "Orient Cables (India) Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.258 to Rs.272",
+    "issueSize": "21395346",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "ORIENTCABL"
+  },
+  {
+    "companyName": "German Green Steel and Power Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.132 to Rs.139",
+    "issueSize": "22969696",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "GERMAN"
+  },
+  {
+    "companyName": "A-One Steels India Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.385 to Rs.405",
+    "issueSize": "7384934",
+    "issueStartDate": "24-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "AONESTEELS"
+  },
+  {
     "companyName": "Moneyview Limited",
     "issueEndDate": "28-Sep-2026",
     "issuePrice": "Rs.32 to Rs.34",
@@ -60,14 +110,16 @@
     "symbol": "MONEYVIEW"
   },
   {
-    "companyName": "A-One Steels India Limited",
-    "issueEndDate": "28-Sep-2026",
-    "issuePrice": "Rs.385 to Rs.405",
-    "issueSize": "10525168",
-    "issueStartDate": "24-Sep-2026",
-    "series": "EQ",
+    "companyName": "Bench Mark Infotech Services Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.104 to Rs.110",
+    "issueSize": "3858000",
+    "issueStartDate": "25-Sep-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.104 to Rs.110",
+    "series": "SME",
     "status": "Forthcoming",
-    "symbol": "AONESTEELS"
+    "symbol": "BMISL"
   },
   {
     "companyName": "Himalayan Solar Limited",
@@ -82,15 +134,15 @@
     "symbol": "HIMALAYAN"
   },
   {
-    "companyName": "Bench Mark Infotech Services Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.104 to Rs.110",
-    "issueSize": "3858000",
-    "issueStartDate": "25-Sep-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.104 to Rs.110",
+    "companyName": "Green Asia Impex Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.85 to Rs.90",
+    "issueSize": "7057600",
+    "issueStartDate": "24-Sep-2026",
+    "lotSize": "1600",
+    "priceBand": "Rs.85 to Rs.90",
     "series": "SME",
     "status": "Forthcoming",
-    "symbol": "BMISL"
+    "symbol": "GREENASIA"
   }
 ]
