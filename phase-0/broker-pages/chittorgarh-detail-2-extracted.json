@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/shah-investors-home-ltd_rhp.pdf"
   ],
-  "noise_stripped_bytes": 46960,
-  "main_content_bytes": 46960,
-  "tables_parsed": 4,
-  "table_rows_parsed": 22
+  "noise_stripped_bytes": 81641,
+  "main_content_bytes": 81641,
+  "tables_parsed": 11,
+  "table_rows_parsed": 57
 }

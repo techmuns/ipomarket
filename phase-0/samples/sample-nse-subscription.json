@@ -1,20 +1,5 @@
 [
   {
-    "companyName": "Moneyview Limited",
-    "issueEndDate": "28-Sep-2026",
-    "issuePrice": "Rs.32 to Rs.34",
-    "issueSize": "232524175",
-    "issueStartDate": "24-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "MONEYVIEW",
-    "category": "Total",
-    "noOfSharesOffered": "2.32524175E8",
-    "noOfTime": "0.6406845696796903",
-    "noOfsharesBid": "1.48974651E8",
-    "srNo": null
-  },
-  {
     "companyName": "A-One Steels India Limited",
     "issueEndDate": "28-Sep-2026",
     "issuePrice": "Rs.385 to Rs.405",
@@ -25,8 +10,23 @@
     "symbol": "AONESTEELS",
     "category": "Total",
     "noOfSharesOffered": "7384934.0",
-    "noOfTime": "0.22285371812395344",
-    "noOfsharesBid": "1645760.0",
+    "noOfTime": "0.397995296911252",
+    "noOfsharesBid": "2939169.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Moneyview Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.32 to Rs.34",
+    "issueSize": "232524175",
+    "issueStartDate": "24-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "MONEYVIEW",
+    "category": "Total",
+    "noOfSharesOffered": "2.32524175E8",
+    "noOfTime": "1.0861165382051134",
+    "noOfsharesBid": "2.52548352E8",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "SWASTIKAIN",
     "category": "Total",
     "noOfSharesOffered": "6335001.0",
-    "noOfTime": "1.0627556333455985",
-    "noOfsharesBid": "6732558.0",
+    "noOfTime": "1.2742250553709462",
+    "noOfsharesBid": "8072217.0",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "ADROITIND",
     "category": "Total",
     "noOfSharesOffered": "7872900.0",
-    "noOfTime": "7.279721449529398",
-    "noOfsharesBid": "5.7312519E7",
+    "noOfTime": "10.899498151888123",
+    "noOfsharesBid": "8.5810659E7",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "ARMEE",
     "category": "Total",
     "noOfSharesOffered": "7430356.0",
-    "noOfTime": "0.668640910341308",
-    "noOfsharesBid": "4968240.0",
+    "noOfTime": "0.7831011057882018",
+    "noOfsharesBid": "5818720.0",
     "srNo": null
   },
   {
@@ -85,8 +85,8 @@
     "symbol": "ELEVATE",
     "category": "Total",
     "noOfSharesOffered": "3.3673468E7",
-    "noOfTime": "0.09493925603386025",
-    "noOfsharesBid": "3196934.0",
+    "noOfTime": "0.1031542400087808",
+    "noOfsharesBid": "3473561.0",
     "srNo": null
   },
   {
@@ -100,8 +100,8 @@
     "symbol": "VARMORA",
     "category": "Total",
     "noOfSharesOffered": "3.3902899E7",
-    "noOfTime": "0.5159943696850231",
-    "noOfsharesBid": "1.7493705E7",
+    "noOfTime": "0.9725319359857693",
+    "noOfsharesBid": "3.2971652E7",
     "srNo": null
   },
   {
@@ -112,7 +112,7 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "51200",
+    "noOfsharesBid": "86400",
     "noOfSharesOffered": "7057600",
     "noOfTime": "0.01"
   },
@@ -124,9 +124,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "POOJALOGIS",
-    "noOfsharesBid": "1053600",
+    "noOfsharesBid": "1214400",
     "noOfSharesOffered": "2784000",
-    "noOfTime": "0.38"
+    "noOfTime": "0.44"
   },
   {
     "companyName": "Coreintegra Consulting Services Limited",
@@ -136,8 +136,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "COREIN",
-    "noOfsharesBid": "920000",
+    "noOfsharesBid": "1364800",
     "noOfSharesOffered": "2819200",
-    "noOfTime": "0.33"
+    "noOfTime": "0.48"
   }
 ]

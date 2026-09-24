@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-24T08:29:48.626Z",
+  "captured_at_utc": "2026-09-24T15:48:58.140Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -58,9 +58,9 @@
     {
       "index": 1,
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
-      "mode": "playwright",
+      "mode": "static",
       "status": 200,
-      "bytes": 75746,
+      "bytes": 366937,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -69,24 +69,24 @@
     {
       "index": 2,
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
-      "mode": "failed",
-      "status": 0,
-      "bytes": 0,
-      "title": "",
+      "mode": "static",
+      "status": 200,
+      "bytes": 341274,
+      "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
-      "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.chittorgarh.com/ipo/bagmane-reit/3090/\", waiting until \"networkidle\"\n"
+      "error": null
     },
     {
       "index": 3,
       "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
-      "mode": "failed",
-      "status": 0,
-      "bytes": 0,
-      "title": "",
+      "mode": "static",
+      "status": 200,
+      "bytes": 328347,
+      "title": "Moneyview IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
-      "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.chittorgarh.com/ipo/moneyview-ipo/2936/\", waiting until \"networkidle\"\n"
+      "error": null
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-09-24T08:29:48.626Z",
+  "generated_at_utc": "2026-09-24T15:48:58.140Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.606,
-  "average_precision_ratio_narrow": 0.667,
+  "average_precision_ratio_full": 0.848,
+  "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
     "slug": "moneyview-ipo",
     "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
@@ -16,28 +16,29 @@
       "index": 1,
       "slug": "onemi-technology-ipo",
       "source_url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
-      "found_count_full": 2,
-      "found_count_narrow": 0,
-      "precision_ratio_full": 0.182,
-      "precision_ratio_narrow": 0,
-      "main_content_bytes": 36821,
-      "tables_parsed": 0,
-      "table_rows_parsed": 0,
+      "found_count_full": 10,
+      "found_count_narrow": 5,
+      "precision_ratio_full": 0.909,
+      "precision_ratio_narrow": 1,
+      "main_content_bytes": 96652,
+      "tables_parsed": 15,
+      "table_rows_parsed": 104,
       "fields_high_confidence": [
         "company_name",
-        "official_pdf_links"
-      ],
-      "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [],
-      "fields_missing": [
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
+        "listing_date",
+        "official_pdf_links"
+      ],
+      "fields_medium_confidence": [
         "open_date",
         "close_date",
-        "listing_date",
-        "registrar",
+        "registrar"
+      ],
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [
@@ -53,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85190,
+      "main_content_bytes": 85193,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -87,9 +88,9 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 94181,
+      "main_content_bytes": 91355,
       "tables_parsed": 13,
-      "table_rows_parsed": 82,
+      "table_rows_parsed": 81,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

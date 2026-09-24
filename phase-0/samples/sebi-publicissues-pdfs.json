@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-24T08:29:48.626Z",
+  "captured_at_utc": "2026-09-24T15:48:58.140Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 44543,
+      "bytes": 44922,
       "tr_count": 26,
-      "pdfs_found": 14,
-      "notes": "static ok: tr=26, bytes=44543"
+      "pdfs_found": 15,
+      "notes": "static ok: tr=26, bytes=44922"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/VARDAAN%20BIOTECH%20LIMITED_p.pdf",
+      "link_text": "VARDAAN BIOTECH LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/HitechFlowSolutionsDAP_p.pdf",
       "link_text": "Hi-Tech Flow Solutions Limited - Draft Abridged Prospectus",
