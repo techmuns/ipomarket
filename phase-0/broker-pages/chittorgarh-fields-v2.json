@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-24T15:48:58.140Z",
+  "captured_at_utc": "2026-09-24T22:21:03.185Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 341274,
+      "bytes": 341145,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
       "mode": "static",
       "status": 200,
-      "bytes": 328347,
+      "bytes": 328086,
       "title": "Moneyview IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],

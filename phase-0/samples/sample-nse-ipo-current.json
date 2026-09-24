@@ -1,5 +1,45 @@
 [
   {
+    "companyName": "Orient Cables (India) Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.258 to Rs.272",
+    "issueSize": "14976743",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ORIENTCABL"
+  },
+  {
+    "companyName": "German Green Steel and Power Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.132 to Rs.139",
+    "issueSize": "16062879",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "GERMAN"
+  },
+  {
+    "companyName": "Runwal Enterprises Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.290 to Rs.302",
+    "issueSize": "12111294",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "RUNWALENTR"
+  },
+  {
+    "companyName": "AceVector Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.30 to Rs.32",
+    "issueSize": "74229166",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ACEVECTOR"
+  },
+  {
     "companyName": "A-One Steels India Limited",
     "issueEndDate": "28-Sep-2026",
     "issuePrice": "Rs.385 to Rs.405",
@@ -18,26 +58,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "MONEYVIEW"
-  },
-  {
-    "companyName": "Swastika Infra Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.175 to Rs.185",
-    "issueSize": "6335001",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SWASTIKAIN"
-  },
-  {
-    "companyName": "Adroit Industries (India) Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.126 to Rs.134",
-    "issueSize": "7872900",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ADROITIND"
   },
   {
     "companyName": "ArMee Infotech Limited",
@@ -60,24 +80,34 @@
     "symbol": "ELEVATE"
   },
   {
+    "companyName": "Swastika Infra Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.175 to Rs.185",
+    "issueSize": "6335001",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SWASTIKAIN"
+  },
+  {
+    "companyName": "Adroit Industries (India) Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.126 to Rs.134",
+    "issueSize": "7872900",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ADROITIND"
+  },
+  {
     "companyName": "Varmora Granito Limited",
     "issueEndDate": "24-Sep-2026",
     "issuePrice": "Rs.140 to Rs.148",
     "issueSize": "33902899",
     "issueStartDate": "22-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "VARMORA"
-  },
-  {
-    "companyName": "Shah Investor's Home Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.159 to Rs.167",
-    "issueSize": "5399200",
-    "issueStartDate": "28-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SHAHINVEST"
   },
   {
     "companyName": "Srit India Limited",
@@ -90,67 +120,13 @@
     "symbol": "SRIT"
   },
   {
-    "companyName": "Orient Cables (India) Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.258 to Rs.272",
-    "issueSize": "14976743",
-    "issueStartDate": "25-Sep-2026",
+    "companyName": "Shah Investor's Home Limited",
+    "issueEndDate": "30-Sep-2026",
+    "issuePrice": "Rs.159 to Rs.167",
+    "issueSize": "5399200",
+    "issueStartDate": "28-Sep-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "ORIENTCABL"
-  },
-  {
-    "companyName": "German Green Steel and Power Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.132 to Rs.139",
-    "issueSize": "16062879",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "GERMAN"
-  },
-  {
-    "companyName": "Runwal Enterprises Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.290 to Rs.302",
-    "issueSize": "17247500",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "RUNWALENTR"
-  },
-  {
-    "companyName": "AceVector Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.30 to Rs.32",
-    "issueSize": "74229166",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "ACEVECTOR"
-  },
-  {
-    "companyName": "Himalayan Solar Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.98 to Rs.103",
-    "issueSize": "5852400",
-    "issueStartDate": "25-Sep-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.98 to Rs.103",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "HIMALAYAN"
-  },
-  {
-    "companyName": "Bench Mark Infotech Services Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.104 to Rs.110",
-    "issueSize": "2761200",
-    "issueStartDate": "25-Sep-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.104 to Rs.110",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "BMISL"
+    "symbol": "SHAHINVEST"
   }
 ]

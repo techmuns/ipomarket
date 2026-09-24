@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/moneyview-ipo-anchor-allocation-letter.pdf"
   ],
-  "noise_stripped_bytes": 91355,
-  "main_content_bytes": 91355,
+  "noise_stripped_bytes": 91301,
+  "main_content_bytes": 91301,
   "tables_parsed": 13,
   "table_rows_parsed": 81
 }
