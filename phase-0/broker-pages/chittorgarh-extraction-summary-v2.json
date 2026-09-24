@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-23T22:15:51.251Z",
+  "generated_at_utc": "2026-09-24T08:29:48.626Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.848,
-  "average_precision_ratio_narrow": 1,
+  "average_precision_ratio_full": 0.606,
+  "average_precision_ratio_narrow": 0.667,
   "third_ipo_selection": {
-    "slug": "adroit-industries-ipo",
-    "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
+    "slug": "moneyview-ipo",
+    "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"23 - 25 Sep\" covers today",
-    "date_text": "23 - 25 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"24 - 28 Sep\" covers today",
+    "date_text": "24 - 28 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -16,29 +16,28 @@
       "index": 1,
       "slug": "onemi-technology-ipo",
       "source_url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
-      "found_count_full": 10,
-      "found_count_narrow": 5,
-      "precision_ratio_full": 0.909,
-      "precision_ratio_narrow": 1,
-      "main_content_bytes": 96652,
-      "tables_parsed": 15,
-      "table_rows_parsed": 104,
+      "found_count_full": 2,
+      "found_count_narrow": 0,
+      "precision_ratio_full": 0.182,
+      "precision_ratio_narrow": 0,
+      "main_content_bytes": 36821,
+      "tables_parsed": 0,
+      "table_rows_parsed": 0,
       "fields_high_confidence": [
         "company_name",
+        "official_pdf_links"
+      ],
+      "fields_medium_confidence": [],
+      "fields_rejected_low_confidence": [],
+      "fields_missing": [
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
-        "listing_date",
-        "official_pdf_links"
-      ],
-      "fields_medium_confidence": [
         "open_date",
         "close_date",
-        "registrar"
-      ],
-      "fields_rejected_low_confidence": [],
-      "fields_missing": [
+        "listing_date",
+        "registrar",
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [
@@ -82,8 +81,8 @@
     },
     {
       "index": 3,
-      "slug": "adroit-industries-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
+      "slug": "moneyview-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,

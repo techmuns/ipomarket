@@ -4,12 +4,12 @@
   "source_url": "https://www.chittorgarh.com/ipo/shah-investors-home-ipo/2657/",
   "fields": {
     "company_name": {
-      "value": "Shah Investor&#x27;s Home ; IPO",
+      "value": "Shah Investor&#x27;s Home IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Shah Investor&#x27;s Home ; IPO"
+      "source_snippet": "Shah Investor&#x27;s Home IPO"
     },
     "issue_size_cr": {
       "value": "53,99,200 shares (agg. up to ₹ 90 Cr)",
@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/shah-investors-home-ltd_rhp.pdf"
   ],
-  "noise_stripped_bytes": 81707,
-  "main_content_bytes": 81707,
-  "tables_parsed": 11,
-  "table_rows_parsed": 57
+  "noise_stripped_bytes": 46960,
+  "main_content_bytes": 46960,
+  "tables_parsed": 4,
+  "table_rows_parsed": 22
 }

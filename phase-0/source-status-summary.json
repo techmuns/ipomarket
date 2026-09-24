@@ -28,10 +28,10 @@
   "P-23a": "GREEN",
   "P-23b": "GREEN",
   "P-24": "RED",
-  "P-25": "GREEN",
+  "P-25": "YELLOW",
   "P-26": "RED",
   "P-27": "GREEN",
   "P-28": "GREEN",
-  "P-25b": "GREEN",
-  "P-26b": "GREEN"
+  "P-25b": "YELLOW",
+  "P-26b": "YELLOW"
 }

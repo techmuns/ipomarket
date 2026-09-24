@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-23T22:15:51.251Z",
+  "captured_at_utc": "2026-09-24T08:29:48.626Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "adroit-industries-ipo",
-    "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
+    "slug": "moneyview-ipo",
+    "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"23 - 25 Sep\" covers today",
-    "date_text": "23 - 25 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"24 - 28 Sep\" covers today",
+    "date_text": "24 - 28 Sep",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,17 +50,17 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
-      "slug": "adroit-industries-ipo"
+      "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
+      "slug": "moneyview-ipo"
     }
   ],
   "details": [
     {
       "index": 1,
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
-      "mode": "static",
+      "mode": "playwright",
       "status": 200,
-      "bytes": 366937,
+      "bytes": 75746,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -69,24 +69,24 @@
     {
       "index": 2,
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
-      "mode": "static",
-      "status": 200,
-      "bytes": 341145,
-      "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
+      "mode": "failed",
+      "status": 0,
+      "bytes": 0,
+      "title": "",
       "challenge_detected": false,
       "challenge_reasons": [],
-      "error": null
+      "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.chittorgarh.com/ipo/bagmane-reit/3090/\", waiting until \"networkidle\"\n"
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
-      "mode": "static",
-      "status": 200,
-      "bytes": 322786,
-      "title": "Adroit Industries IPO Date, Price, GMP, Review, Details",
+      "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
+      "mode": "failed",
+      "status": 0,
+      "bytes": 0,
+      "title": "",
       "challenge_detected": false,
       "challenge_reasons": [],
-      "error": null
+      "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.chittorgarh.com/ipo/moneyview-ipo/2936/\", waiting until \"networkidle\"\n"
     }
   ]
 }
