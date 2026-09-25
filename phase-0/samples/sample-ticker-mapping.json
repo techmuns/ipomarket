@@ -1,19 +1,18 @@
 {
-  "total": 13,
-  "valid": 13,
+  "total": 12,
+  "valid": 12,
   "examples": {
     "Orient Cables (India) Limited": "ORIENTCABL",
     "German Green Steel and Power Limited": "GERMAN",
     "Runwal Enterprises Limited": "RUNWALENTR",
     "AceVector Limited": "ACEVECTOR",
-    "A-One Steels India Limited": "AONESTEELS",
     "Moneyview Limited": "MONEYVIEW",
+    "A-One Steels India Limited": "AONESTEELS",
+    "Adroit Industries (India) Limited": "ADROITIND",
     "ArMee Infotech Limited": "ARMEE",
     "Elevate Campuses Limited": "ELEVATE",
     "Swastika Infra Limited": "SWASTIKAIN",
-    "Adroit Industries (India) Limited": "ADROITIND",
-    "Varmora Granito Limited": "VARMORA",
-    "Srit India Limited": "SRIT",
-    "Shah Investor's Home Limited": "SHAHINVEST"
+    "Shah Investor's Home Limited": "SHAHINVEST",
+    "Srit India Limited": "SRIT"
   }
 }

@@ -40,16 +40,6 @@
     "symbol": "ACEVECTOR"
   },
   {
-    "companyName": "A-One Steels India Limited",
-    "issueEndDate": "28-Sep-2026",
-    "issuePrice": "Rs.385 to Rs.405",
-    "issueSize": "7384934",
-    "issueStartDate": "24-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "AONESTEELS"
-  },
-  {
     "companyName": "Moneyview Limited",
     "issueEndDate": "28-Sep-2026",
     "issuePrice": "Rs.32 to Rs.34",
@@ -60,13 +50,33 @@
     "symbol": "MONEYVIEW"
   },
   {
+    "companyName": "A-One Steels India Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.385 to Rs.405",
+    "issueSize": "7384934",
+    "issueStartDate": "24-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "AONESTEELS"
+  },
+  {
+    "companyName": "Adroit Industries (India) Limited",
+    "issueEndDate": "25-Sep-2026",
+    "issuePrice": "Rs.126 to Rs.134",
+    "issueSize": "7872900",
+    "issueStartDate": "23-Sep-2026",
+    "series": "EQ",
+    "status": "Closed",
+    "symbol": "ADROITIND"
+  },
+  {
     "companyName": "ArMee Infotech Limited",
     "issueEndDate": "25-Sep-2026",
     "issuePrice": "Rs.350 to Rs.375",
     "issueSize": "7430356",
     "issueStartDate": "23-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "ARMEE"
   },
   {
@@ -76,7 +86,7 @@
     "issueSize": "33673468",
     "issueStartDate": "23-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "ELEVATE"
   },
   {
@@ -86,38 +96,8 @@
     "issueSize": "6335001",
     "issueStartDate": "23-Sep-2026",
     "series": "EQ",
-    "status": "Active",
-    "symbol": "SWASTIKAIN"
-  },
-  {
-    "companyName": "Adroit Industries (India) Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.126 to Rs.134",
-    "issueSize": "7872900",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ADROITIND"
-  },
-  {
-    "companyName": "Varmora Granito Limited",
-    "issueEndDate": "24-Sep-2026",
-    "issuePrice": "Rs.140 to Rs.148",
-    "issueSize": "33902899",
-    "issueStartDate": "22-Sep-2026",
-    "series": "EQ",
     "status": "Closed",
-    "symbol": "VARMORA"
-  },
-  {
-    "companyName": "Srit India Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.123 to Rs.130",
-    "issueSize": "11760000",
-    "issueStartDate": "28-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SRIT"
+    "symbol": "SWASTIKAIN"
   },
   {
     "companyName": "Shah Investor's Home Limited",
@@ -128,5 +108,15 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "SHAHINVEST"
+  },
+  {
+    "companyName": "Srit India Limited",
+    "issueEndDate": "30-Sep-2026",
+    "issuePrice": "Rs.123 to Rs.130",
+    "issueSize": "11760000",
+    "issueStartDate": "28-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SRIT"
   }
 ]
