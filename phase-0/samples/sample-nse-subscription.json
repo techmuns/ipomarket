@@ -10,8 +10,8 @@
     "symbol": "ORIENTCABL",
     "category": "Total",
     "noOfSharesOffered": "1.4976743E7",
-    "noOfTime": "0.7442773104940106",
-    "noOfsharesBid": "1.114685E7",
+    "noOfTime": "1.3155937843094456",
+    "noOfsharesBid": "1.970331E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "GERMAN",
     "category": "Total",
     "noOfSharesOffered": "1.6062879E7",
-    "noOfTime": "0.8865219615985404",
-    "noOfsharesBid": "1.4240095E7",
+    "noOfTime": "1.477654286009376",
+    "noOfsharesBid": "2.3735382E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "RUNWALENTR",
     "category": "Total",
     "noOfSharesOffered": "1.2111294E7",
-    "noOfTime": "0.19282332672297445",
-    "noOfsharesBid": "2335340.0",
+    "noOfTime": "0.24159152605823953",
+    "noOfsharesBid": "2925986.0",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "ACEVECTOR",
     "category": "Total",
     "noOfSharesOffered": "7.4229166E7",
-    "noOfTime": "0.059504696577084",
-    "noOfsharesBid": "4416984.0",
+    "noOfTime": "0.178514089731252",
+    "noOfsharesBid": "1.3250952E7",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "AONESTEELS",
     "category": "Total",
     "noOfSharesOffered": "7384934.0",
-    "noOfTime": "0.7285933767315997",
-    "noOfsharesBid": "5380614.0",
+    "noOfTime": "0.9891488535984208",
+    "noOfsharesBid": "7304799.0",
     "srNo": null
   },
   {
@@ -85,8 +85,8 @@
     "symbol": "MONEYVIEW",
     "category": "Total",
     "noOfSharesOffered": "2.32524175E8",
-    "noOfTime": "3.2803214590482903",
-    "noOfsharesBid": "7.62754041E8",
+    "noOfTime": "4.725856406113472",
+    "noOfsharesBid": "1.098875862E9",
     "srNo": null
   },
   {
@@ -100,8 +100,8 @@
     "symbol": "ARMEE",
     "category": "Total",
     "noOfSharesOffered": "7430356.0",
-    "noOfTime": "1.1764173883458613",
-    "noOfsharesBid": "8741200.0",
+    "noOfTime": "1.3801922815003749",
+    "noOfsharesBid": "1.025532E7",
     "srNo": null
   },
   {
@@ -115,8 +115,8 @@
     "symbol": "ELEVATE",
     "category": "Total",
     "noOfSharesOffered": "3.3673468E7",
-    "noOfTime": "0.38482822737473904",
-    "noOfsharesBid": "1.2958501E7",
+    "noOfTime": "1.3556939546589024",
+    "noOfsharesBid": "4.5650917E7",
     "srNo": null
   },
   {
@@ -130,8 +130,8 @@
     "symbol": "SWASTIKAIN",
     "category": "Total",
     "noOfSharesOffered": "6335001.0",
-    "noOfTime": "3.2200148034704337",
-    "noOfsharesBid": "2.0398797E7",
+    "noOfTime": "5.859898364656927",
+    "noOfsharesBid": "3.7122462E7",
     "srNo": null
   },
   {
@@ -145,8 +145,8 @@
     "symbol": "ADROITIND",
     "category": "Total",
     "noOfSharesOffered": "7872900.0",
-    "noOfTime": "64.46734329154441",
-    "noOfsharesBid": "5.07544947E8",
+    "noOfTime": "121.54356895172046",
+    "noOfsharesBid": "9.56900364E8",
     "srNo": null
   },
   {
@@ -157,9 +157,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "BMISL",
-    "noOfsharesBid": "370800",
+    "noOfsharesBid": "661200",
     "noOfSharesOffered": "2761200",
-    "noOfTime": "0.13"
+    "noOfTime": "0.24"
   },
   {
     "companyName": "Himalayan Solar Limited",
@@ -169,9 +169,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "HIMALAYAN",
-    "noOfsharesBid": "1590000",
+    "noOfsharesBid": "2820000",
     "noOfSharesOffered": "5852400",
-    "noOfTime": "0.27"
+    "noOfTime": "0.48"
   },
   {
     "companyName": "Green Asia Impex Limited",
@@ -181,7 +181,7 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "128000",
+    "noOfsharesBid": "161600",
     "noOfSharesOffered": "7057600",
     "noOfTime": "0.02"
   },
@@ -193,9 +193,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "COREIN",
-    "noOfsharesBid": "3368000",
+    "noOfsharesBid": "3891200",
     "noOfSharesOffered": "2819200",
-    "noOfTime": "1.19"
+    "noOfTime": "1.38"
   },
   {
     "companyName": "Pooja Logistics Limited",
@@ -205,8 +205,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "POOJALOGIS",
-    "noOfsharesBid": "2553600",
+    "noOfsharesBid": "8250000",
     "noOfSharesOffered": "2784000",
-    "noOfTime": "0.92"
+    "noOfTime": "2.96"
   }
 ]

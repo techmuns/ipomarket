@@ -76,24 +76,22 @@
       "source_snippet": null
     },
     "official_pdf_links": {
-      "value": [
-        "https://nsearchives.nseindia.com/corporate/Registration_30032026163754_NITYASGEMSANDJEWELLERYLIMITEDDRHP.pdf"
-      ],
-      "found": true,
-      "confidence": "high",
-      "method": "href[*.pdf] scan; 1 on-allowlist, 0 off-allowlist",
-      "why_missing": null,
-      "source_snippet": "https://nsearchives.nseindia.com/corporate/Registration_30032026163754_NITYASGEMSANDJEWELLERYLIMITEDDRHP.pdf"
+      "value": null,
+      "found": false,
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/va20260924_nityas-gems_rhp_final.pdf"
     }
   },
-  "found_count": 6,
-  "precision_ratio": 0.6,
-  "official_pdf_links_on_allowlist": [
-    "https://nsearchives.nseindia.com/corporate/Registration_30032026163754_NITYASGEMSANDJEWELLERYLIMITEDDRHP.pdf"
+  "found_count": 5,
+  "precision_ratio": 0.5,
+  "official_pdf_links_on_allowlist": [],
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/va20260924_nityas-gems_rhp_final.pdf"
   ],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 88143,
-  "main_content_bytes": 88143,
+  "noise_stripped_bytes": 88916,
+  "main_content_bytes": 88916,
   "tables_parsed": 12,
-  "table_rows_parsed": 73
+  "table_rows_parsed": 72
 }

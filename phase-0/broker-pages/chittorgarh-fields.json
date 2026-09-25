@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-25T08:45:58.096Z",
+  "captured_at_utc": "2026-09-25T15:48:44.856Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 179246,
+      "bytes": 179250,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
       "mode": "static",
       "status": 200,
-      "bytes": 295783,
+      "bytes": 297631,
       "title": "Nityas Gems &amp; Jewellery IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
       "mode": "static",
       "status": 200,
-      "bytes": 288375,
+      "bytes": 299618,
       "title": "SRIT India IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],

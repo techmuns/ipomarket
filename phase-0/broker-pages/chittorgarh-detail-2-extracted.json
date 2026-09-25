@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://static1.squarespace.com/static/64bf881ed10e9e2c82cb9367/t/6ab39d3507e7c86aadbbfaf8/1790156118227/Red+Herring+Prospectus%28RHP%29.pdf"
   ],
-  "noise_stripped_bytes": 85708,
-  "main_content_bytes": 85708,
+  "noise_stripped_bytes": 85710,
+  "main_content_bytes": 85710,
   "tables_parsed": 11,
   "table_rows_parsed": 65
 }
