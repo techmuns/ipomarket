@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "ORIENTCABL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.4976743E7",
+    "noOfTime": "0.7442773104940106",
+    "noOfsharesBid": "1.114685E7",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "GERMAN",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.6062879E7",
+    "noOfTime": "0.8865219615985404",
+    "noOfsharesBid": "1.4240095E7",
     "srNo": null
   },
   {
@@ -39,9 +39,9 @@
     "status": "Active",
     "symbol": "RUNWALENTR",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.2111294E7",
+    "noOfTime": "0.19282332672297445",
+    "noOfsharesBid": "2335340.0",
     "srNo": null
   },
   {
@@ -54,9 +54,9 @@
     "status": "Active",
     "symbol": "ACEVECTOR",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "7.4229166E7",
+    "noOfTime": "0.059504696577084",
+    "noOfsharesBid": "4416984.0",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "AONESTEELS",
     "category": "Total",
     "noOfSharesOffered": "7384934.0",
-    "noOfTime": "0.397995296911252",
-    "noOfsharesBid": "2939169.0",
+    "noOfTime": "0.7285933767315997",
+    "noOfsharesBid": "5380614.0",
     "srNo": null
   },
   {
@@ -85,8 +85,8 @@
     "symbol": "MONEYVIEW",
     "category": "Total",
     "noOfSharesOffered": "2.32524175E8",
-    "noOfTime": "1.0861165382051134",
-    "noOfsharesBid": "2.52548352E8",
+    "noOfTime": "3.2803214590482903",
+    "noOfsharesBid": "7.62754041E8",
     "srNo": null
   },
   {
@@ -100,8 +100,8 @@
     "symbol": "ARMEE",
     "category": "Total",
     "noOfSharesOffered": "7430356.0",
-    "noOfTime": "0.7831011057882018",
-    "noOfsharesBid": "5818720.0",
+    "noOfTime": "1.1764173883458613",
+    "noOfsharesBid": "8741200.0",
     "srNo": null
   },
   {
@@ -115,8 +115,8 @@
     "symbol": "ELEVATE",
     "category": "Total",
     "noOfSharesOffered": "3.3673468E7",
-    "noOfTime": "0.1031542400087808",
-    "noOfsharesBid": "3473561.0",
+    "noOfTime": "0.38482822737473904",
+    "noOfsharesBid": "1.2958501E7",
     "srNo": null
   },
   {
@@ -130,8 +130,8 @@
     "symbol": "SWASTIKAIN",
     "category": "Total",
     "noOfSharesOffered": "6335001.0",
-    "noOfTime": "1.2742250553709462",
-    "noOfsharesBid": "8072217.0",
+    "noOfTime": "3.2200148034704337",
+    "noOfsharesBid": "2.0398797E7",
     "srNo": null
   },
   {
@@ -145,8 +145,8 @@
     "symbol": "ADROITIND",
     "category": "Total",
     "noOfSharesOffered": "7872900.0",
-    "noOfTime": "10.899498151888123",
-    "noOfsharesBid": "8.5810659E7",
+    "noOfTime": "64.46734329154441",
+    "noOfsharesBid": "5.07544947E8",
     "srNo": null
   },
   {
@@ -157,9 +157,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "BMISL",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "370800",
     "noOfSharesOffered": "2761200",
-    "noOfTime": ""
+    "noOfTime": "0.13"
   },
   {
     "companyName": "Himalayan Solar Limited",
@@ -169,9 +169,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "HIMALAYAN",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "1590000",
     "noOfSharesOffered": "5852400",
-    "noOfTime": ""
+    "noOfTime": "0.27"
   },
   {
     "companyName": "Green Asia Impex Limited",
@@ -181,9 +181,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "86400",
+    "noOfsharesBid": "128000",
     "noOfSharesOffered": "7057600",
-    "noOfTime": "0.01"
+    "noOfTime": "0.02"
   },
   {
     "companyName": "Coreintegra Consulting Services Limited",
@@ -193,9 +193,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "COREIN",
-    "noOfsharesBid": "1364800",
+    "noOfsharesBid": "3368000",
     "noOfSharesOffered": "2819200",
-    "noOfTime": "0.48"
+    "noOfTime": "1.19"
   },
   {
     "companyName": "Pooja Logistics Limited",
@@ -205,8 +205,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "POOJALOGIS",
-    "noOfsharesBid": "1214400",
+    "noOfsharesBid": "2553600",
     "noOfSharesOffered": "2784000",
-    "noOfTime": "0.44"
+    "noOfTime": "0.92"
   }
 ]

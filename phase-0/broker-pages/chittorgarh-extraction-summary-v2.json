@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-24T22:21:03.185Z",
+  "generated_at_utc": "2026-09-25T08:45:58.096Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "moneyview-ipo",
-    "url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
+    "slug": "snapdeal-ipo",
+    "url": "https://www.chittorgarh.com/ipo/snapdeal-ipo/2543/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"24 - 28 Sep\" covers today",
-    "date_text": "24 - 28 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"25 - 29 Sep\" covers today",
+    "date_text": "25 - 29 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 96652,
+      "main_content_bytes": 96649,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -82,13 +82,13 @@
     },
     {
       "index": 3,
-      "slug": "moneyview-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
+      "slug": "snapdeal-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/snapdeal-ipo/2543/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 91301,
+      "main_content_bytes": 89935,
       "tables_parsed": 13,
       "table_rows_parsed": 81,
       "fields_high_confidence": [

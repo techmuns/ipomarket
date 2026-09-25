@@ -1,40 +1,40 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
-  "slug": "moneyview-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/snapdeal-ipo/2543/",
+  "slug": "snapdeal-ipo",
   "fields": {
     "company_name": {
-      "value": "Moneyview IPO",
+      "value": "Acevector IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Moneyview IPO"
+      "source_snippet": "Acevector IPO"
     },
     "issue_size_cr": {
-      "value": "32,10,82,435 shares (agg. up to ₹ 1,092 Cr)",
+      "value": "13,12,50,000 shares (agg. up to ₹ 420 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "32,10,82,435 shares (agg. up to ₹ 1,092 Cr)"
+      "source_snippet": "13,12,50,000 shares (agg. up to ₹ 420 Cr)"
     },
     "price_band": {
-      "value": "₹32 to ₹34",
+      "value": "₹30 to ₹32",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹32 to ₹34"
+      "source_snippet": "₹30 to ₹32"
     },
     "lot_size": {
-      "value": "441 Shares",
+      "value": "468 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "441 Shares"
+      "source_snippet": "468 Shares"
     },
     "face_value": {
       "value": "₹ 1 per share",
@@ -45,28 +45,28 @@
       "source_snippet": "₹ 1 per share"
     },
     "open_date": {
-      "value": "2026-09-24",
+      "value": "2026-09-25",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"24 to 28 Sep, 2026\" → start=2026-09-24"
+      "source_snippet": "raw=\"25 to 29 Sep, 2026\" → start=2026-09-25"
     },
     "close_date": {
-      "value": "2026-09-28",
+      "value": "2026-09-29",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"24 to 28 Sep, 2026\" → end=2026-09-28"
+      "source_snippet": "raw=\"25 to 29 Sep, 2026\" → end=2026-09-29"
     },
     "listing_date": {
-      "value": "2026-10-01",
+      "value": "2026-10-05",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Thu, Oct 1, 2026 T\" → 2026-10-01"
+      "source_snippet": "raw=\"Mon, Oct 5, 2026 T\" → 2026-10-05"
     },
     "registrar": {
       "value": "MUFG Intime India Pvt.Ltd.",
@@ -74,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 moneyview.ipo@in.mpms.mufg.com <i class=\"fa fa-glob\" → \"MUFG Intime India Pvt.Ltd.\""
+      "source_snippet": "raw=\"MUFG Intime India Pvt.Ltd. 022-49186000 acevector.ipo@in.mpms.mufg.com <i class=\"fa fa-glob\" → \"MUFG Intime India Pvt.Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/moneyview-ipo-anchor-allocation-letter.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/snapdeal-ipo-anchor-investor-book.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/moneyview-ipo-anchor-allocation-letter.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/snapdeal-ipo-anchor-investor-book.pdf"
   ],
-  "noise_stripped_bytes": 91301,
-  "main_content_bytes": 91301,
+  "noise_stripped_bytes": 89935,
+  "main_content_bytes": 89935,
   "tables_parsed": 13,
   "table_rows_parsed": 81
 }
