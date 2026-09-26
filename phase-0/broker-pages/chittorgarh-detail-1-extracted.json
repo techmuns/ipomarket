@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/ipo_notes/va20260924_nityas-gems_rhp_final.pdf"
   ],
-  "noise_stripped_bytes": 88916,
-  "main_content_bytes": 88916,
+  "noise_stripped_bytes": 88915,
+  "main_content_bytes": 88915,
   "tables_parsed": 12,
   "table_rows_parsed": 72
 }
