@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
+  "source_url": "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
   "fields": {
     "company_name": {
-      "value": "SRIT India IPO",
+      "value": "Vishal Nirmiti IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "SRIT India IPO"
+      "source_snippet": "Vishal Nirmiti IPO"
     },
     "issue_size_cr": {
-      "value": "1,68,00,000 shares (agg. up to ₹ 218 Cr)",
+      "value": "80,90,909 shares (agg. up to ₹ 178 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,68,00,000 shares (agg. up to ₹ 218 Cr)"
+      "source_snippet": "80,90,909 shares (agg. up to ₹ 178 Cr)"
     },
     "price_band": {
-      "value": "₹123 to ₹130",
+      "value": "₹208 to ₹220",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹123 to ₹130"
+      "source_snippet": "₹208 to ₹220"
     },
     "lot_size": {
-      "value": "115 Shares",
+      "value": "68 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "115 Shares"
+      "source_snippet": "68 Shares"
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Tue, Oct 6, 2026 T",
+      "value": "Thu, Oct 8, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Tue, Oct 6, 2026 T"
+      "source_snippet": "Thu, Oct 8, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -81,17 +81,17 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://static1.squarespace.com/static/64bf881ed10e9e2c82cb9367/t/6ab39d3507e7c86aadbbfaf8/1790156118227/Red+Herring+Prospectus%28RHP%29.pdf"
+      "source_snippet": "https://www.saffronadvisor.com/files/offer-documents/Red_Herring_Prospectus__1_.pdf"
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://static1.squarespace.com/static/64bf881ed10e9e2c82cb9367/t/6ab39d3507e7c86aadbbfaf8/1790156118227/Red+Herring+Prospectus%28RHP%29.pdf"
+    "https://www.saffronadvisor.com/files/offer-documents/Red_Herring_Prospectus__1_.pdf"
   ],
-  "noise_stripped_bytes": 85710,
-  "main_content_bytes": 85710,
-  "tables_parsed": 11,
-  "table_rows_parsed": 65
+  "noise_stripped_bytes": 90333,
+  "main_content_bytes": 90333,
+  "tables_parsed": 12,
+  "table_rows_parsed": 74
 }

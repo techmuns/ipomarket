@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/snapdeal-ipo-anchor-investor-book.pdf"
   ],
-  "noise_stripped_bytes": 89935,
-  "main_content_bytes": 89935,
-  "tables_parsed": 13,
-  "table_rows_parsed": 81
+  "noise_stripped_bytes": 87770,
+  "main_content_bytes": 87770,
+  "tables_parsed": 12,
+  "table_rows_parsed": 66
 }

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-25T22:16:48.761Z",
+  "captured_at_utc": "2026-09-26T08:32:21.170Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 151163,
+      "bytes": 151152,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
+    "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
     "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
     "https://www.chittorgarh.com/ipo/shah-investors-home-ipo/2657/",
     "https://www.chittorgarh.com/ipo/snapdeal-ipo/2543/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
     "https://www.chittorgarh.com/ipo/ss-retail-ipo/2822/",
     "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
-    "https://www.chittorgarh.com/ipo/hero-motors-ipo/2225/",
-    "https://www.chittorgarh.com/ipo/manika-plastech-ipo/2483/"
+    "https://www.chittorgarh.com/ipo/hero-motors-ipo/2225/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
+      "url": "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
+      "url": "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
       "mode": "static",
       "status": 200,
-      "bytes": 299618,
-      "title": "SRIT India IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 303367,
+      "title": "Vishal Nirmiti IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
