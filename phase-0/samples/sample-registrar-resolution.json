@@ -1,18 +1,14 @@
 {
-  "totalIssues": 12,
+  "totalIssues": 8,
   "resolved": 0,
   "examples": {
+    "Runwal Enterprises Limited": null,
     "Orient Cables (India) Limited": null,
     "German Green Steel and Power Limited": null,
-    "Runwal Enterprises Limited": null,
     "AceVector Limited": null,
-    "Moneyview Limited": null,
     "A-One Steels India Limited": null,
-    "Adroit Industries (India) Limited": null,
-    "ArMee Infotech Limited": null,
-    "Elevate Campuses Limited": null,
-    "Swastika Infra Limited": null,
-    "Shah Investor's Home Limited": null,
-    "Srit India Limited": null
+    "Moneyview Limited": null,
+    "Srit India Limited": null,
+    "Shah Investor's Home Limited": null
   }
 }

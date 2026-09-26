@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Runwal Enterprises Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.290 to Rs.302",
+    "issueSize": "12111294",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "RUNWALENTR"
+  },
+  {
     "companyName": "Orient Cables (India) Limited",
     "issueEndDate": "29-Sep-2026",
     "issuePrice": "Rs.258 to Rs.272",
@@ -20,16 +30,6 @@
     "symbol": "GERMAN"
   },
   {
-    "companyName": "Runwal Enterprises Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.290 to Rs.302",
-    "issueSize": "12111294",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "RUNWALENTR"
-  },
-  {
     "companyName": "AceVector Limited",
     "issueEndDate": "29-Sep-2026",
     "issuePrice": "Rs.30 to Rs.32",
@@ -38,16 +38,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "ACEVECTOR"
-  },
-  {
-    "companyName": "Moneyview Limited",
-    "issueEndDate": "28-Sep-2026",
-    "issuePrice": "Rs.32 to Rs.34",
-    "issueSize": "232524175",
-    "issueStartDate": "24-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "MONEYVIEW"
   },
   {
     "companyName": "A-One Steels India Limited",
@@ -60,54 +50,14 @@
     "symbol": "AONESTEELS"
   },
   {
-    "companyName": "Adroit Industries (India) Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.126 to Rs.134",
-    "issueSize": "7872900",
-    "issueStartDate": "23-Sep-2026",
+    "companyName": "Moneyview Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.32 to Rs.34",
+    "issueSize": "232524175",
+    "issueStartDate": "24-Sep-2026",
     "series": "EQ",
-    "status": "Closed",
-    "symbol": "ADROITIND"
-  },
-  {
-    "companyName": "ArMee Infotech Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.350 to Rs.375",
-    "issueSize": "7430356",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "ARMEE"
-  },
-  {
-    "companyName": "Elevate Campuses Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.343 to Rs.362",
-    "issueSize": "33673468",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "ELEVATE"
-  },
-  {
-    "companyName": "Swastika Infra Limited",
-    "issueEndDate": "25-Sep-2026",
-    "issuePrice": "Rs.175 to Rs.185",
-    "issueSize": "6335001",
-    "issueStartDate": "23-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "SWASTIKAIN"
-  },
-  {
-    "companyName": "Shah Investor's Home Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.159 to Rs.167",
-    "issueSize": "3779440",
-    "issueStartDate": "28-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SHAHINVEST"
+    "status": "Active",
+    "symbol": "MONEYVIEW"
   },
   {
     "companyName": "Srit India Limited",
@@ -118,5 +68,15 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "SRIT"
+  },
+  {
+    "companyName": "Shah Investor's Home Limited",
+    "issueEndDate": "30-Sep-2026",
+    "issuePrice": "Rs.159 to Rs.167",
+    "issueSize": "3779440",
+    "issueStartDate": "28-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SHAHINVEST"
   }
 ]
