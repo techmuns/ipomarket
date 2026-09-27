@@ -2,13 +2,13 @@
   "total": 8,
   "valid": 8,
   "examples": {
+    "Shah Investor's Home Limited": "SHAHINVEST",
+    "Srit India Limited": "SRIT",
+    "AceVector Limited": "ACEVECTOR",
     "Runwal Enterprises Limited": "RUNWALENTR",
     "Orient Cables (India) Limited": "ORIENTCABL",
     "German Green Steel and Power Limited": "GERMAN",
-    "AceVector Limited": "ACEVECTOR",
-    "A-One Steels India Limited": "AONESTEELS",
     "Moneyview Limited": "MONEYVIEW",
-    "Srit India Limited": "SRIT",
-    "Shah Investor's Home Limited": "SHAHINVEST"
+    "A-One Steels India Limited": "AONESTEELS"
   }
 }
