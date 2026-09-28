@@ -20,16 +20,6 @@
     "symbol": "SRIT"
   },
   {
-    "companyName": "AceVector Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.30 to Rs.32",
-    "issueSize": "74229166",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ACEVECTOR"
-  },
-  {
     "companyName": "Runwal Enterprises Limited",
     "issueEndDate": "29-Sep-2026",
     "issuePrice": "Rs.290 to Rs.302",
@@ -40,14 +30,14 @@
     "symbol": "RUNWALENTR"
   },
   {
-    "companyName": "Orient Cables (India) Limited",
+    "companyName": "AceVector Limited",
     "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.258 to Rs.272",
-    "issueSize": "14976743",
+    "issuePrice": "Rs.30 to Rs.32",
+    "issueSize": "74229166",
     "issueStartDate": "25-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "ORIENTCABL"
+    "symbol": "ACEVECTOR"
   },
   {
     "companyName": "German Green Steel and Power Limited",
@@ -60,14 +50,14 @@
     "symbol": "GERMAN"
   },
   {
-    "companyName": "Moneyview Limited",
-    "issueEndDate": "28-Sep-2026",
-    "issuePrice": "Rs.32 to Rs.34",
-    "issueSize": "232524175",
-    "issueStartDate": "24-Sep-2026",
+    "companyName": "Orient Cables (India) Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.258 to Rs.272",
+    "issueSize": "14976743",
+    "issueStartDate": "25-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "MONEYVIEW"
+    "symbol": "ORIENTCABL"
   },
   {
     "companyName": "A-One Steels India Limited",
@@ -76,7 +66,39 @@
     "issueSize": "7384934",
     "issueStartDate": "24-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "AONESTEELS"
+  },
+  {
+    "companyName": "Moneyview Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.32 to Rs.34",
+    "issueSize": "232524175",
+    "issueStartDate": "24-Sep-2026",
+    "series": "EQ",
+    "status": "Closed",
+    "symbol": "MONEYVIEW"
+  },
+  {
+    "companyName": "Vishal Nirmiti Limited",
+    "issueEndDate": "05-Oct-2026",
+    "issuePrice": "Rs.208 to Rs.220",
+    "issueSize": "8471153",
+    "issueStartDate": "30-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "VNL"
+  },
+  {
+    "companyName": "Eventions Limited",
+    "issueEndDate": "05-Oct-2026",
+    "issuePrice": "Rs.112 to Rs.118",
+    "issueSize": "3230400",
+    "issueStartDate": "30-Sep-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.112 to Rs.118",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "EVENTIONS"
   }
 ]

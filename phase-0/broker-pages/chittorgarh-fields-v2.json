@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-28T09:40:43.852Z",
+  "captured_at_utc": "2026-09-28T18:35:44.358Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 341274,
+      "bytes": 341145,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
       "mode": "static",
       "status": 200,
-      "bytes": 316713,
+      "bytes": 316718,
       "title": "SRIT India IPO Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
