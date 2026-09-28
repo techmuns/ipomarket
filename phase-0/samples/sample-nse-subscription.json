@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "SHAHINVEST",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "3779440.0",
+    "noOfTime": "0.18642047499100395",
+    "noOfsharesBid": "704565.0",
     "srNo": null
   },
   {
@@ -24,24 +24,9 @@
     "status": "Active",
     "symbol": "SRIT",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
-    "srNo": null
-  },
-  {
-    "companyName": "AceVector Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.30 to Rs.32",
-    "issueSize": "74229166",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ACEVECTOR",
-    "category": "Total",
-    "noOfSharesOffered": "7.4229166E7",
-    "noOfTime": "0.178514089731252",
-    "noOfsharesBid": "1.3250952E7",
+    "noOfSharesOffered": "1.176E7",
+    "noOfTime": "0.49628954081632654",
+    "noOfsharesBid": "5836365.0",
     "srNo": null
   },
   {
@@ -55,23 +40,23 @@
     "symbol": "RUNWALENTR",
     "category": "Total",
     "noOfSharesOffered": "1.2111294E7",
-    "noOfTime": "0.24159152605823953",
-    "noOfsharesBid": "2925986.0",
+    "noOfTime": "0.3455283968831076",
+    "noOfsharesBid": "4184796.0",
     "srNo": null
   },
   {
-    "companyName": "Orient Cables (India) Limited",
+    "companyName": "AceVector Limited",
     "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.258 to Rs.272",
-    "issueSize": "14976743",
+    "issuePrice": "Rs.30 to Rs.32",
+    "issueSize": "74229166",
     "issueStartDate": "25-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "ORIENTCABL",
+    "symbol": "ACEVECTOR",
     "category": "Total",
-    "noOfSharesOffered": "1.4976743E7",
-    "noOfTime": "1.3155937843094456",
-    "noOfsharesBid": "1.970331E7",
+    "noOfSharesOffered": "7.4229166E7",
+    "noOfTime": "0.8898152513258737",
+    "noOfsharesBid": "6.6050244E7",
     "srNo": null
   },
   {
@@ -85,23 +70,23 @@
     "symbol": "GERMAN",
     "category": "Total",
     "noOfSharesOffered": "1.6062879E7",
-    "noOfTime": "1.477654286009376",
-    "noOfsharesBid": "2.3735382E7",
+    "noOfTime": "3.4497518159727156",
+    "noOfsharesBid": "5.5412946E7",
     "srNo": null
   },
   {
-    "companyName": "Moneyview Limited",
-    "issueEndDate": "28-Sep-2026",
-    "issuePrice": "Rs.32 to Rs.34",
-    "issueSize": "232524175",
-    "issueStartDate": "24-Sep-2026",
+    "companyName": "Orient Cables (India) Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.258 to Rs.272",
+    "issueSize": "14976743",
+    "issueStartDate": "25-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "MONEYVIEW",
+    "symbol": "ORIENTCABL",
     "category": "Total",
-    "noOfSharesOffered": "2.32524175E8",
-    "noOfTime": "4.725856406113472",
-    "noOfsharesBid": "1.098875862E9",
+    "noOfSharesOffered": "1.4976743E7",
+    "noOfTime": "4.570425292067841",
+    "noOfsharesBid": "6.8450085E7",
     "srNo": null
   },
   {
@@ -115,8 +100,23 @@
     "symbol": "AONESTEELS",
     "category": "Total",
     "noOfSharesOffered": "7384934.0",
-    "noOfTime": "0.9891488535984208",
-    "noOfsharesBid": "7304799.0",
+    "noOfTime": "5.846568297022018",
+    "noOfsharesBid": "4.3176521E7",
+    "srNo": null
+  },
+  {
+    "companyName": "Moneyview Limited",
+    "issueEndDate": "28-Sep-2026",
+    "issuePrice": "Rs.32 to Rs.34",
+    "issueSize": "232524175",
+    "issueStartDate": "24-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "MONEYVIEW",
+    "category": "Total",
+    "noOfSharesOffered": "2.32524175E8",
+    "noOfTime": "53.20970592842658",
+    "noOfsharesBid": "1.2372542973E10",
     "srNo": null
   },
   {
@@ -127,9 +127,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "BMISL",
-    "noOfsharesBid": "661200",
+    "noOfsharesBid": "2659200",
     "noOfSharesOffered": "2761200",
-    "noOfTime": "0.24"
+    "noOfTime": "0.96"
   },
   {
     "companyName": "Himalayan Solar Limited",
@@ -139,9 +139,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "HIMALAYAN",
-    "noOfsharesBid": "2820000",
+    "noOfsharesBid": "3760800",
     "noOfSharesOffered": "5852400",
-    "noOfTime": "0.48"
+    "noOfTime": "0.64"
   },
   {
     "companyName": "Green Asia Impex Limited",
@@ -151,8 +151,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "161600",
+    "noOfsharesBid": "2636800",
     "noOfSharesOffered": "7057600",
-    "noOfTime": "0.02"
+    "noOfTime": "0.37"
   }
 ]

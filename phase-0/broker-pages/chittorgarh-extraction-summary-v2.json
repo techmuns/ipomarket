@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-27T22:06:00.150Z",
+  "generated_at_utc": "2026-09-28T09:40:43.852Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "snapdeal-ipo",
-    "url": "https://www.chittorgarh.com/ipo/snapdeal-ipo/2543/",
+    "slug": "srit-india-ipo",
+    "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"25 - 29 Sep\" covers today",
-    "date_text": "25 - 29 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"28 - 30 Sep\" covers today",
+    "date_text": "28 - 30 Sep",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85190,
+      "main_content_bytes": 85193,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "snapdeal-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/snapdeal-ipo/2543/",
+      "slug": "srit-india-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 90793,
-      "tables_parsed": 13,
-      "table_rows_parsed": 81,
+      "main_content_bytes": 90699,
+      "tables_parsed": 12,
+      "table_rows_parsed": 75,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
@@ -111,7 +111,7 @@
         "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 1
+      "official_pdf_links_off_allowlist_count": 2
     }
   ]
 }
