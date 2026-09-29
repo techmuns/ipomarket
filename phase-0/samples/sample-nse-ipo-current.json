@@ -20,6 +20,16 @@
     "symbol": "SRIT"
   },
   {
+    "companyName": "German Green Steel and Power Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.132 to Rs.139",
+    "issueSize": "16062879",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "GERMAN"
+  },
+  {
     "companyName": "Runwal Enterprises Limited",
     "issueEndDate": "29-Sep-2026",
     "issuePrice": "Rs.290 to Rs.302",
@@ -40,16 +50,6 @@
     "symbol": "ACEVECTOR"
   },
   {
-    "companyName": "German Green Steel and Power Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.132 to Rs.139",
-    "issueSize": "16062879",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "GERMAN"
-  },
-  {
     "companyName": "Orient Cables (India) Limited",
     "issueEndDate": "29-Sep-2026",
     "issuePrice": "Rs.258 to Rs.272",
@@ -60,26 +60,6 @@
     "symbol": "ORIENTCABL"
   },
   {
-    "companyName": "A-One Steels India Limited",
-    "issueEndDate": "28-Sep-2026",
-    "issuePrice": "Rs.385 to Rs.405",
-    "issueSize": "7384934",
-    "issueStartDate": "24-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "AONESTEELS"
-  },
-  {
-    "companyName": "Moneyview Limited",
-    "issueEndDate": "28-Sep-2026",
-    "issuePrice": "Rs.32 to Rs.34",
-    "issueSize": "232524175",
-    "issueStartDate": "24-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "MONEYVIEW"
-  },
-  {
     "companyName": "Vishal Nirmiti Limited",
     "issueEndDate": "05-Oct-2026",
     "issuePrice": "Rs.208 to Rs.220",
@@ -88,6 +68,16 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "VNL"
+  },
+  {
+    "companyName": "Nityas Gems and Jewellery Limited",
+    "issueEndDate": "05-Oct-2026",
+    "issuePrice": "Rs.70 to Rs.75",
+    "issueSize": "14456000",
+    "issueStartDate": "30-Sep-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "NITYAS"
   },
   {
     "companyName": "Eventions Limited",

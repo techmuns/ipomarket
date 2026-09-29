@@ -10,8 +10,8 @@
     "symbol": "SHAHINVEST",
     "category": "Total",
     "noOfSharesOffered": "3779440.0",
-    "noOfTime": "0.22980388629003237",
-    "noOfsharesBid": "868530.0",
+    "noOfTime": "0.6710597337171644",
+    "noOfsharesBid": "2536230.0",
     "srNo": null
   },
   {
@@ -25,38 +25,8 @@
     "symbol": "SRIT",
     "category": "Total",
     "noOfSharesOffered": "1.176E7",
-    "noOfTime": "0.6973635204081633",
-    "noOfsharesBid": "8200995.0",
-    "srNo": null
-  },
-  {
-    "companyName": "Runwal Enterprises Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.290 to Rs.302",
-    "issueSize": "12111294",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "RUNWALENTR",
-    "category": "Total",
-    "noOfSharesOffered": "1.2111294E7",
-    "noOfTime": "0.45769849200258866",
-    "noOfsharesBid": "5543321.0",
-    "srNo": null
-  },
-  {
-    "companyName": "AceVector Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.30 to Rs.32",
-    "issueSize": "74229166",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "ACEVECTOR",
-    "category": "Total",
-    "noOfSharesOffered": "7.4229166E7",
-    "noOfTime": "1.0167813013014317",
-    "noOfsharesBid": "7.5474828E7",
+    "noOfTime": "2.2203898809523808",
+    "noOfsharesBid": "2.6111785E7",
     "srNo": null
   },
   {
@@ -70,8 +40,38 @@
     "symbol": "GERMAN",
     "category": "Total",
     "noOfSharesOffered": "1.6062879E7",
-    "noOfTime": "4.135994487663139",
-    "noOfsharesBid": "6.6435979E7",
+    "noOfTime": "17.927114746989005",
+    "noOfsharesBid": "2.87961075E8",
+    "srNo": null
+  },
+  {
+    "companyName": "Runwal Enterprises Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.290 to Rs.302",
+    "issueSize": "12111294",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "RUNWALENTR",
+    "category": "Total",
+    "noOfSharesOffered": "1.2111294E7",
+    "noOfTime": "0.9973246459048885",
+    "noOfsharesBid": "1.2078892E7",
+    "srNo": null
+  },
+  {
+    "companyName": "AceVector Limited",
+    "issueEndDate": "29-Sep-2026",
+    "issuePrice": "Rs.30 to Rs.32",
+    "issueSize": "74229166",
+    "issueStartDate": "25-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "ACEVECTOR",
+    "category": "Total",
+    "noOfSharesOffered": "7.4229166E7",
+    "noOfTime": "2.5952445700386826",
+    "noOfsharesBid": "1.9264284E8",
     "srNo": null
   },
   {
@@ -85,8 +85,8 @@
     "symbol": "ORIENTCABL",
     "category": "Total",
     "noOfSharesOffered": "1.4976743E7",
-    "noOfTime": "5.836354072444189",
-    "noOfsharesBid": "8.7409575E7",
+    "noOfTime": "44.72425780425023",
+    "noOfsharesBid": "6.69823715E8",
     "srNo": null
   },
   {
@@ -97,9 +97,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PAPADMALJI",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "3452800",
     "noOfSharesOffered": "2803200",
-    "noOfTime": ""
+    "noOfTime": "1.23"
   },
   {
     "companyName": "Bench Mark Infotech Services Limited",
@@ -109,9 +109,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "BMISL",
-    "noOfsharesBid": "3505200",
+    "noOfsharesBid": "182760000",
     "noOfSharesOffered": "2761200",
-    "noOfTime": "1.27"
+    "noOfTime": "66.19"
   },
   {
     "companyName": "Himalayan Solar Limited",
@@ -121,9 +121,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "HIMALAYAN",
-    "noOfsharesBid": "4234800",
+    "noOfsharesBid": "6530400",
     "noOfSharesOffered": "5852400",
-    "noOfTime": "0.72"
+    "noOfTime": "1.12"
   },
   {
     "companyName": "Green Asia Impex Limited",
@@ -133,8 +133,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "3020800",
+    "noOfsharesBid": "3627200",
     "noOfSharesOffered": "7057600",
-    "noOfTime": "0.43"
+    "noOfTime": "0.51"
   }
 ]

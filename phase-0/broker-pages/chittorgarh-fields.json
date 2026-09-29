@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-28T23:49:23.543Z",
+  "captured_at_utc": "2026-09-29T09:45:19.125Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
       "mode": "static",
       "status": 200,
-      "bytes": 303356,
+      "bytes": 303419,
       "title": "Vishal Nirmiti IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
