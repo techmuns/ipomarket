@@ -10,8 +10,8 @@
     "symbol": "SHAHINVEST",
     "category": "Total",
     "noOfSharesOffered": "3779440.0",
-    "noOfTime": "0.6710597337171644",
-    "noOfsharesBid": "2536230.0",
+    "noOfTime": "0.8627653832313782",
+    "noOfsharesBid": "3260770.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "SRIT",
     "category": "Total",
     "noOfSharesOffered": "1.176E7",
-    "noOfTime": "2.2203898809523808",
-    "noOfsharesBid": "2.6111785E7",
+    "noOfTime": "2.893628826530612",
+    "noOfsharesBid": "3.4029075E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "GERMAN",
     "category": "Total",
     "noOfSharesOffered": "1.6062879E7",
-    "noOfTime": "17.927114746989005",
-    "noOfsharesBid": "2.87961075E8",
+    "noOfTime": "23.205479229470633",
+    "noOfsharesBid": "3.72746805E8",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "RUNWALENTR",
     "category": "Total",
     "noOfSharesOffered": "1.2111294E7",
-    "noOfTime": "0.9973246459048885",
-    "noOfsharesBid": "1.2078892E7",
+    "noOfTime": "1.2773432797519406",
+    "noOfsharesBid": "1.547028E7",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "ACEVECTOR",
     "category": "Total",
     "noOfSharesOffered": "7.4229166E7",
-    "noOfTime": "2.5952445700386826",
-    "noOfsharesBid": "1.9264284E8",
+    "noOfTime": "3.3951344677643287",
+    "noOfsharesBid": "2.52018E8",
     "srNo": null
   },
   {
@@ -85,8 +85,8 @@
     "symbol": "ORIENTCABL",
     "category": "Total",
     "noOfSharesOffered": "1.4976743E7",
-    "noOfTime": "44.72425780425023",
-    "noOfsharesBid": "6.69823715E8",
+    "noOfTime": "61.86422575322285",
+    "noOfsharesBid": "9.2652461E8",
     "srNo": null
   },
   {
@@ -97,9 +97,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PAPADMALJI",
-    "noOfsharesBid": "3452800",
+    "noOfsharesBid": "3721600",
     "noOfSharesOffered": "2803200",
-    "noOfTime": "1.23"
+    "noOfTime": "1.33"
   },
   {
     "companyName": "Bench Mark Infotech Services Limited",
@@ -109,9 +109,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "BMISL",
-    "noOfsharesBid": "182760000",
+    "noOfsharesBid": "265002000",
     "noOfSharesOffered": "2761200",
-    "noOfTime": "66.19"
+    "noOfTime": "95.97"
   },
   {
     "companyName": "Himalayan Solar Limited",
@@ -121,9 +121,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "HIMALAYAN",
-    "noOfsharesBid": "6530400",
+    "noOfsharesBid": "6904800",
     "noOfSharesOffered": "5852400",
-    "noOfTime": "1.12"
+    "noOfTime": "1.18"
   },
   {
     "companyName": "Green Asia Impex Limited",
@@ -133,8 +133,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "3627200",
+    "noOfsharesBid": "3654400",
     "noOfSharesOffered": "7057600",
-    "noOfTime": "0.51"
+    "noOfTime": "0.52"
   }
 ]
