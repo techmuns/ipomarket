@@ -1,13 +1,23 @@
 [
   {
-    "companyName": "Shah Investor's Home Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.159 to Rs.167",
-    "issueSize": "3779440",
-    "issueStartDate": "28-Sep-2026",
+    "companyName": "Vishal Nirmiti Limited",
+    "issueEndDate": "05-Oct-2026",
+    "issuePrice": "Rs.208 to Rs.220",
+    "issueSize": "8471153",
+    "issueStartDate": "30-Sep-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "SHAHINVEST"
+    "symbol": "VNL"
+  },
+  {
+    "companyName": "Nityas Gems and Jewellery Limited",
+    "issueEndDate": "05-Oct-2026",
+    "issuePrice": "Rs.70 to Rs.75",
+    "issueSize": "14456000",
+    "issueStartDate": "30-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "NITYAS"
   },
   {
     "companyName": "Srit India Limited",
@@ -20,13 +30,23 @@
     "symbol": "SRIT"
   },
   {
+    "companyName": "Shah Investor's Home Limited",
+    "issueEndDate": "30-Sep-2026",
+    "issuePrice": "Rs.159 to Rs.167",
+    "issueSize": "3779440",
+    "issueStartDate": "28-Sep-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "SHAHINVEST"
+  },
+  {
     "companyName": "German Green Steel and Power Limited",
     "issueEndDate": "29-Sep-2026",
     "issuePrice": "Rs.132 to Rs.139",
     "issueSize": "16062879",
     "issueStartDate": "25-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "GERMAN"
   },
   {
@@ -36,7 +56,7 @@
     "issueSize": "12111294",
     "issueStartDate": "25-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "RUNWALENTR"
   },
   {
@@ -46,7 +66,7 @@
     "issueSize": "74229166",
     "issueStartDate": "25-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "ACEVECTOR"
   },
   {
@@ -56,39 +76,7 @@
     "issueSize": "14976743",
     "issueStartDate": "25-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "ORIENTCABL"
-  },
-  {
-    "companyName": "Vishal Nirmiti Limited",
-    "issueEndDate": "05-Oct-2026",
-    "issuePrice": "Rs.208 to Rs.220",
-    "issueSize": "8471153",
-    "issueStartDate": "30-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "VNL"
-  },
-  {
-    "companyName": "Nityas Gems and Jewellery Limited",
-    "issueEndDate": "05-Oct-2026",
-    "issuePrice": "Rs.70 to Rs.75",
-    "issueSize": "14456000",
-    "issueStartDate": "30-Sep-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "NITYAS"
-  },
-  {
-    "companyName": "Eventions Limited",
-    "issueEndDate": "05-Oct-2026",
-    "issuePrice": "Rs.112 to Rs.118",
-    "issueSize": "3230400",
-    "issueStartDate": "30-Sep-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.112 to Rs.118",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "EVENTIONS"
   }
 ]

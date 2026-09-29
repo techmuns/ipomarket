@@ -1,15 +1,14 @@
 {
-  "total": 9,
-  "valid": 9,
+  "total": 8,
+  "valid": 8,
   "examples": {
-    "Shah Investor's Home Limited": "SHAHINVEST",
+    "Vishal Nirmiti Limited": "VNL",
+    "Nityas Gems and Jewellery Limited": "NITYAS",
     "Srit India Limited": "SRIT",
+    "Shah Investor's Home Limited": "SHAHINVEST",
     "German Green Steel and Power Limited": "GERMAN",
     "Runwal Enterprises Limited": "RUNWALENTR",
     "AceVector Limited": "ACEVECTOR",
-    "Orient Cables (India) Limited": "ORIENTCABL",
-    "Vishal Nirmiti Limited": "VNL",
-    "Nityas Gems and Jewellery Limited": "NITYAS",
-    "Eventions Limited": "EVENTIONS"
+    "Orient Cables (India) Limited": "ORIENTCABL"
   }
 }
