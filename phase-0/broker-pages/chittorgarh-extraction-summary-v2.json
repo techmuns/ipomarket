@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-09-29T22:57:25.541Z",
+  "generated_at_utc": "2026-09-30T09:37:13.686Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "srit-india-ipo",
-    "url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
+    "slug": "nityas-gems-jewellery-ipo",
+    "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"28 - 30 Sep\" covers today",
-    "date_text": "28 - 30 Sep",
+    "reason": "current-open: list \"mainboard\" row date range \"30 Sep - 05 Oct\" covers today",
+    "date_text": "30 Sep - 05 Oct",
     "source_list": "mainboard"
   },
   "per_detail": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 85225,
+      "main_content_bytes": 85222,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "srit-india-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
+      "slug": "nityas-gems-jewellery-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 92052,
-      "tables_parsed": 13,
-      "table_rows_parsed": 81,
+      "main_content_bytes": 92765,
+      "tables_parsed": 12,
+      "table_rows_parsed": 78,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-29T22:57:25.541Z",
+  "captured_at_utc": "2026-09-30T09:37:13.686Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 180802,
+      "bytes": 183182,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
       "mode": "static",
       "status": 200,
-      "bytes": 298223,
+      "bytes": 312246,
       "title": "Nityas Gems &amp; Jewellery IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
       "mode": "static",
       "status": 200,
-      "bytes": 303910,
+      "bytes": 313096,
       "title": "Vishal Nirmiti IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "VNL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "8471153.0",
+    "noOfTime": "0.03485428724991745",
+    "noOfsharesBid": "295256.0",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "NITYAS",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.4456E7",
+    "noOfTime": "0.09142224681793028",
+    "noOfsharesBid": "1321600.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "SRIT",
     "category": "Total",
     "noOfSharesOffered": "1.176E7",
-    "noOfTime": "2.893628826530612",
-    "noOfsharesBid": "3.4029075E7",
+    "noOfTime": "63.891310799319726",
+    "noOfsharesBid": "7.51361815E8",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "SHAHINVEST",
     "category": "Total",
     "noOfSharesOffered": "3779440.0",
-    "noOfTime": "0.8627653832313782",
-    "noOfsharesBid": "3260770.0",
+    "noOfTime": "18.70038682979489",
+    "noOfsharesBid": "7.067699E7",
     "srNo": null
   },
   {
@@ -67,9 +67,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "EVENTIONS",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "3421200",
     "noOfSharesOffered": "3230400",
-    "noOfTime": ""
+    "noOfTime": "1.06"
   },
   {
     "companyName": "Papadmalji Agro Foods Limited",
@@ -79,9 +79,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PAPADMALJI",
-    "noOfsharesBid": "3721600",
+    "noOfsharesBid": "4472000",
     "noOfSharesOffered": "2803200",
-    "noOfTime": "1.33"
+    "noOfTime": "1.60"
   },
   {
     "companyName": "Green Asia Impex Limited",
@@ -91,8 +91,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "3654400",
+    "noOfsharesBid": "4204800",
     "noOfSharesOffered": "7057600",
-    "noOfTime": "0.52"
+    "noOfTime": "0.60"
   }
 ]
