@@ -1,14 +1,10 @@
 {
-  "total": 8,
-  "valid": 8,
+  "total": 4,
+  "valid": 4,
   "examples": {
     "Vishal Nirmiti Limited": "VNL",
     "Nityas Gems and Jewellery Limited": "NITYAS",
-    "Srit India Limited": "SRIT",
     "Shah Investor's Home Limited": "SHAHINVEST",
-    "German Green Steel and Power Limited": "GERMAN",
-    "Runwal Enterprises Limited": "RUNWALENTR",
-    "AceVector Limited": "ACEVECTOR",
-    "Orient Cables (India) Limited": "ORIENTCABL"
+    "Srit India Limited": "SRIT"
   }
 }

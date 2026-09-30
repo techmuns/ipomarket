@@ -30,36 +30,6 @@
     "srNo": null
   },
   {
-    "companyName": "Srit India Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.123 to Rs.130",
-    "issueSize": "11760000",
-    "issueStartDate": "28-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SRIT",
-    "category": "Total",
-    "noOfSharesOffered": "1.176E7",
-    "noOfTime": "88.83468367346939",
-    "noOfsharesBid": "1.04469588E9",
-    "srNo": null
-  },
-  {
-    "companyName": "Shah Investor's Home Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.159 to Rs.167",
-    "issueSize": "3779440",
-    "issueStartDate": "28-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SHAHINVEST",
-    "category": "Total",
-    "noOfSharesOffered": "3779440.0",
-    "noOfTime": "30.966984526808204",
-    "noOfsharesBid": "1.1703786E8",
-    "srNo": null
-  },
-  {
     "companyName": "Eventions Limited",
     "isBse": "1",
     "issueEndDate": "05-Oct-2026",

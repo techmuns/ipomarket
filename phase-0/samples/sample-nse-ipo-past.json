@@ -20,63 +20,23 @@
     "symbol": "NITYAS"
   },
   {
-    "companyName": "Srit India Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.123 to Rs.130",
-    "issueSize": "11760000",
-    "issueStartDate": "28-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SRIT"
-  },
-  {
     "companyName": "Shah Investor's Home Limited",
     "issueEndDate": "30-Sep-2026",
     "issuePrice": "Rs.159 to Rs.167",
     "issueSize": "3779440",
     "issueStartDate": "28-Sep-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "SHAHINVEST"
   },
   {
-    "companyName": "German Green Steel and Power Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.132 to Rs.139",
-    "issueSize": "16062879",
-    "issueStartDate": "25-Sep-2026",
+    "companyName": "Srit India Limited",
+    "issueEndDate": "30-Sep-2026",
+    "issuePrice": "Rs.123 to Rs.130",
+    "issueSize": "11760000",
+    "issueStartDate": "28-Sep-2026",
     "series": "EQ",
     "status": "Closed",
-    "symbol": "GERMAN"
-  },
-  {
-    "companyName": "Runwal Enterprises Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.290 to Rs.302",
-    "issueSize": "12111294",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "RUNWALENTR"
-  },
-  {
-    "companyName": "AceVector Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.30 to Rs.32",
-    "issueSize": "74229166",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "ACEVECTOR"
-  },
-  {
-    "companyName": "Orient Cables (India) Limited",
-    "issueEndDate": "29-Sep-2026",
-    "issuePrice": "Rs.258 to Rs.272",
-    "issueSize": "14976743",
-    "issueStartDate": "25-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "ORIENTCABL"
+    "symbol": "SRIT"
   }
 ]
