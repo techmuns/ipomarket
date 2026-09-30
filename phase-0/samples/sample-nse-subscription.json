@@ -10,8 +10,8 @@
     "symbol": "VNL",
     "category": "Total",
     "noOfSharesOffered": "8471153.0",
-    "noOfTime": "0.03485428724991745",
-    "noOfsharesBid": "295256.0",
+    "noOfTime": "0.03920505272422774",
+    "noOfsharesBid": "332112.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "NITYAS",
     "category": "Total",
     "noOfSharesOffered": "1.4456E7",
-    "noOfTime": "0.09142224681793028",
-    "noOfsharesBid": "1321600.0",
+    "noOfTime": "0.1093940232429441",
+    "noOfsharesBid": "1581400.0",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "SRIT",
     "category": "Total",
     "noOfSharesOffered": "1.176E7",
-    "noOfTime": "63.891310799319726",
-    "noOfsharesBid": "7.51361815E8",
+    "noOfTime": "88.83468367346939",
+    "noOfsharesBid": "1.04469588E9",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "SHAHINVEST",
     "category": "Total",
     "noOfSharesOffered": "3779440.0",
-    "noOfTime": "18.70038682979489",
-    "noOfsharesBid": "7.067699E7",
+    "noOfTime": "30.966984526808204",
+    "noOfsharesBid": "1.1703786E8",
     "srNo": null
   },
   {
@@ -67,7 +67,7 @@
     "series": "SME",
     "status": "Active",
     "symbol": "EVENTIONS",
-    "noOfsharesBid": "3421200",
+    "noOfsharesBid": "3423600",
     "noOfSharesOffered": "3230400",
     "noOfTime": "1.06"
   },
@@ -79,9 +79,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PAPADMALJI",
-    "noOfsharesBid": "4472000",
+    "noOfsharesBid": "4640000",
     "noOfSharesOffered": "2803200",
-    "noOfTime": "1.60"
+    "noOfTime": "1.66"
   },
   {
     "companyName": "Green Asia Impex Limited",
@@ -91,8 +91,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "4204800",
+    "noOfsharesBid": "4499200",
     "noOfSharesOffered": "7057600",
-    "noOfTime": "0.60"
+    "noOfTime": "0.64"
   }
 ]
