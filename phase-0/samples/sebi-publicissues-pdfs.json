@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-09-30T22:59:54.517Z",
+  "captured_at_utc": "2026-10-01T10:03:18.018Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,34 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45257,
+      "bytes": 45318,
       "tr_count": 26,
-      "pdfs_found": 16,
-      "notes": "static ok: tr=26, bytes=45257"
+      "pdfs_found": 17,
+      "notes": "static ok: tr=26, bytes=45318"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Royal%20Chain%20Limited_p.pdf",
+      "link_text": "Royal Chain Limited – Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/S%20G%20Encon%20Limited_p.pdf",
+      "link_text": "S G Encon Limited - Draft Abridged prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/S.%20D.%20INTERNATIONAL%20LIMITED_p.pdf",
+      "link_text": "S. D. INTERNATIONAL LIMITED - Draft Abridged prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/ULTRAVIBRANT%20INTEGRATED%20ENERGY%20LIMITED_Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "ULTRAVIBRANT INTEGRATED ENERGY LIMITED – Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Iris%20Global%20Services%20Limited%20-%20DAP_p.pdf",
       "link_text": "Iris Global Services Limited- Draft Abridged Prospectus",
@@ -85,21 +105,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Mahanadi%20Coalfields%20Limited%20_Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "Mahanadi Coalfields Ltd. - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Kataria%20Dhulchand%20Pannalal%20Jewellers%20Ltd%20-%20DAP_p.pdf",
-      "link_text": "Kataria Dhulchand Pannalal Jewellers Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Sembcorp%20Green%20Infra%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "Sembcorp Green Infra Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/ARAGEN%20LIFE%20SCIENCES%20LIMITED%20-%20DAP_p.pdf",
-      "link_text": "ARAGEN LIFE SCIENCES LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

@@ -38,5 +38,17 @@
     "series": "EQ",
     "status": "Closed",
     "symbol": "SRIT"
+  },
+  {
+    "companyName": "R.K. Fashion Accessories Limited",
+    "issueEndDate": "07-Oct-2026",
+    "issuePrice": "Rs.77 to Rs.82",
+    "issueSize": "4267200",
+    "issueStartDate": "05-Oct-2026",
+    "lotSize": "1600",
+    "priceBand": "Rs.77 to Rs.82",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "RKFAL"
   }
 ]
