@@ -40,29 +40,5 @@
     "noOfsharesBid": "5664000",
     "noOfSharesOffered": "3230400",
     "noOfTime": "1.75"
-  },
-  {
-    "companyName": "Papadmalji Agro Foods Limited",
-    "isBse": "1",
-    "issueEndDate": "01-Oct-2026",
-    "issueStartDate": "29-Sep-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "PAPADMALJI",
-    "noOfsharesBid": "6888000",
-    "noOfSharesOffered": "2803200",
-    "noOfTime": "2.46"
-  },
-  {
-    "companyName": "Green Asia Impex Limited",
-    "isBse": "1",
-    "issueEndDate": "01-Oct-2026",
-    "issueStartDate": "24-Sep-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "GREENASIA",
-    "noOfsharesBid": "6923200",
-    "noOfSharesOffered": "7057600",
-    "noOfTime": "0.98"
   }
 ]
