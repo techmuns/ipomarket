@@ -20,24 +20,14 @@
     "symbol": "NITYAS"
   },
   {
-    "companyName": "Shah Investor's Home Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.159 to Rs.167",
-    "issueSize": "3779440",
-    "issueStartDate": "28-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "SHAHINVEST"
-  },
-  {
-    "companyName": "Srit India Limited",
-    "issueEndDate": "30-Sep-2026",
-    "issuePrice": "Rs.123 to Rs.130",
-    "issueSize": "11760000",
-    "issueStartDate": "28-Sep-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "SRIT"
+    "companyName": "SMC Global Securities Limited",
+    "issueEndDate": "16-Oct-2026",
+    "issuePrice": "Rs.1000",
+    "issueSize": "750000",
+    "issueStartDate": "05-Oct-2026",
+    "series": "DEBT",
+    "status": "Forthcoming",
+    "symbol": "SMCG04"
   },
   {
     "companyName": "R.K. Fashion Accessories Limited",

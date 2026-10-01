@@ -10,8 +10,8 @@
     "symbol": "VNL",
     "category": "Total",
     "noOfSharesOffered": "8471153.0",
-    "noOfTime": "0.39670632793434374",
-    "noOfsharesBid": "3360560.0",
+    "noOfTime": "0.4393630949647586",
+    "noOfsharesBid": "3721912.0",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "NITYAS",
     "category": "Total",
     "noOfSharesOffered": "1.4456E7",
-    "noOfTime": "0.2756917542888766",
-    "noOfsharesBid": "3985400.0",
+    "noOfTime": "0.4291228555617045",
+    "noOfsharesBid": "6203400.0",
     "srNo": null
   },
   {
@@ -37,9 +37,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "EVENTIONS",
-    "noOfsharesBid": "5347200",
+    "noOfsharesBid": "5664000",
     "noOfSharesOffered": "3230400",
-    "noOfTime": "1.66"
+    "noOfTime": "1.75"
   },
   {
     "companyName": "Papadmalji Agro Foods Limited",
@@ -49,9 +49,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "PAPADMALJI",
-    "noOfsharesBid": "6691200",
+    "noOfsharesBid": "6888000",
     "noOfSharesOffered": "2803200",
-    "noOfTime": "2.39"
+    "noOfTime": "2.46"
   },
   {
     "companyName": "Green Asia Impex Limited",
@@ -61,8 +61,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "GREENASIA",
-    "noOfsharesBid": "6860800",
+    "noOfsharesBid": "6923200",
     "noOfSharesOffered": "7057600",
-    "noOfTime": "0.97"
+    "noOfTime": "0.98"
   }
 ]

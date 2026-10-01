@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-01T10:03:18.018Z",
+  "captured_at_utc": "2026-10-01T17:21:59.800Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,17 +14,32 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45318,
+      "bytes": 45285,
       "tr_count": 26,
       "pdfs_found": 17,
-      "notes": "static ok: tr=26, bytes=45318"
+      "notes": "static ok: tr=26, bytes=45285"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/DAP%20Jagatjit%20Agri%20Engineering%20Limited_p.pdf",
+      "link_text": "JAGATJIT AGRI ENGINEERING LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/EKKAA%20ELECTRONICS%20AP_p.pdf",
+      "link_text": "EKKAA ELECTRONICS (INDIA) LIMITED - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Royal%20Chain%20Limited_p.pdf",
       "link_text": "Royal Chain Limited – Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/AITMC%20Ventures%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "AITMC Ventures Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -90,21 +105,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/M%20K%20C%20AGRO%20FRESH%20LIMITED%20-%20DAP_p.pdf",
       "link_text": "M K C AGRO FRESH LIMITED - Draft Abridged prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/NOPAPERFORMS%20SOLUTIONS%20LIMITED%20-%20DAP_p.pdf",
-      "link_text": "NOPAPERFORMS SOLUTIONS LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Torrent%20Gas%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Torrent Gas Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Mahanadi%20Coalfields%20Limited%20_Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "Mahanadi Coalfields Ltd. - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
