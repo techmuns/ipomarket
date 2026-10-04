@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-04T09:42:24.844Z",
+  "captured_at_utc": "2026-10-04T15:47:35.937Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 150002,
+      "bytes": 148901,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
     "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
     "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
     "https://www.chittorgarh.com/ipo/srit-india-ipo/2858/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
     "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/",
     "https://www.chittorgarh.com/ipo/ss-retail-ipo/2822/",
-    "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/",
-    "https://www.chittorgarh.com/ipo/hero-motors-ipo/2225/"
+    "https://www.chittorgarh.com/ipo/jindal-supreme-ipo/2803/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
+      "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
+      "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
+      "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "mode": "static",
       "status": 200,
-      "bytes": 313013,
-      "title": "Nityas Gems &amp; Jewellery IPO Date, Price, GMP, Details",
+      "bytes": 248565,
+      "title": "Jio Platforms IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/vishal-nirmiti-ipo/2665/",
+      "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
       "mode": "static",
       "status": 200,
-      "bytes": 315445,
-      "title": "Vishal Nirmiti IPO Date, Price, GMP, Review, Details",
+      "bytes": 312736,
+      "title": "Nityas Gems &amp; Jewellery IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
