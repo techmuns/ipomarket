@@ -1,10 +1,9 @@
 {
-  "total": 4,
-  "valid": 4,
+  "total": 3,
+  "valid": 3,
   "examples": {
-    "Vishal Nirmiti Limited": "VNL",
-    "Nityas Gems and Jewellery Limited": "NITYAS",
     "SMC Global Securities Limited": "SMCG04",
-    "R.K. Fashion Accessories Limited": "RKFAL"
+    "Vishal Nirmiti Limited": "VNL",
+    "Nityas Gems and Jewellery Limited": "NITYAS"
   }
 }

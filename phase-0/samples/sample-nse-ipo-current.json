@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "SMC Global Securities Limited",
+    "issueEndDate": "16-Oct-2026",
+    "issuePrice": "Rs.1000",
+    "issueSize": "750000",
+    "issueStartDate": "05-Oct-2026",
+    "series": "DEBT",
+    "status": "Active",
+    "symbol": "SMCG04"
+  },
+  {
     "companyName": "Vishal Nirmiti Limited",
     "issueEndDate": "05-Oct-2026",
     "issuePrice": "Rs.208 to Rs.220",
@@ -18,27 +28,5 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "NITYAS"
-  },
-  {
-    "companyName": "SMC Global Securities Limited",
-    "issueEndDate": "16-Oct-2026",
-    "issuePrice": "Rs.1000",
-    "issueSize": "750000",
-    "issueStartDate": "05-Oct-2026",
-    "series": "DEBT",
-    "status": "Forthcoming",
-    "symbol": "SMCG04"
-  },
-  {
-    "companyName": "R.K. Fashion Accessories Limited",
-    "issueEndDate": "07-Oct-2026",
-    "issuePrice": "Rs.77 to Rs.82",
-    "issueSize": "4267200",
-    "issueStartDate": "05-Oct-2026",
-    "lotSize": "1600",
-    "priceBand": "Rs.77 to Rs.82",
-    "series": "SME",
-    "status": "Forthcoming",
-    "symbol": "RKFAL"
   }
 ]
