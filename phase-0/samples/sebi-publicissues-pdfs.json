@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-04T22:19:49.945Z",
+  "captured_at_utc": "2026-10-05T10:20:01.966Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,39 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45285,
+      "bytes": 43457,
       "tr_count": 26,
-      "pdfs_found": 17,
-      "notes": "static ok: tr=26, bytes=45285"
+      "pdfs_found": 13,
+      "notes": "static ok: tr=26, bytes=43457"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Sanghvi%20Housing_p.pdf",
+      "link_text": "Sanghvi Housing and Infrastructure Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/KATALINE%20LIMITED%20-%20DAP_p.pdf",
+      "link_text": "KATALINE LIMITED – Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/SHREEJIKRUPA%20PROJECT%20LIMITED%20-%20DAP_p.pdf",
+      "link_text": "SHREEJIKRUPA PROJECT LIMITED – Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/PCI%20INFRAPROJECTS%20LIMITED%20-%20AP_p.pdf",
+      "link_text": "PCI INFRAPROJECTS LIMITED – Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Anarock%20Property%20Consultants%20Limited%20-%20Prospectus_p.pdf",
+      "link_text": "Anarock Property Consultants Limited – Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/DAP%20Jagatjit%20Agri%20Engineering%20Limited_p.pdf",
       "link_text": "JAGATJIT AGRI ENGINEERING LIMITED - Draft Abridged Prospectus",
@@ -33,78 +58,33 @@
       "source": "static-alt"
     },
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Koolking%20Industries%20India%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Koolking Industries India Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/J%20Infratech%20Limited%20-%20DAP_p.pdf",
+      "link_text": "J Infratech Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Royal%20Chain%20Limited_p.pdf",
       "link_text": "Royal Chain Limited – Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Vardhman%20Appliances%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Vardhman Appliances Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Biocon%20Electric%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Biocon Electric Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/AITMC%20Ventures%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "AITMC Ventures Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/S%20G%20Encon%20Limited_p.pdf",
-      "link_text": "S G Encon Limited - Draft Abridged prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/S.%20D.%20INTERNATIONAL%20LIMITED_p.pdf",
-      "link_text": "S. D. INTERNATIONAL LIMITED - Draft Abridged prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/ULTRAVIBRANT%20INTEGRATED%20ENERGY%20LIMITED_Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "ULTRAVIBRANT INTEGRATED ENERGY LIMITED – Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Iris%20Global%20Services%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Iris Global Services Limited- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/JSW One Platforms Limited - Draft Abridged Prospectus_p.pdf",
-      "link_text": "JSW One Platforms Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Anjali%20Labtech%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Anjali Labtech Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/VARDAAN%20BIOTECH%20LIMITED_p.pdf",
-      "link_text": "VARDAAN BIOTECH LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/HitechFlowSolutionsDAP_p.pdf",
-      "link_text": "Hi-Tech Flow Solutions Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Anchor%20Offshore%20Services%20Limited-DA_p.pdf",
-      "link_text": "ANCHOR OFFSHORE SERVICES LIMITED- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Madhur%20Iron%20And%20Steel%20India%20Limited%20-%20Draft%20AP_p.pdf",
-      "link_text": "Madhur Iron & Steel India Limited- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/IBERIA%20PHARMACEUTICALS%20INDIA%20LIMITED_p.pdf",
-      "link_text": "IBERIA PHARMACEUTICALS INDIA LIMITED- Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Maharashtra%20Oil%20Extractions%20Limited%20-%20DAP_p.pdf",
-      "link_text": "Maharashtra Oil Extractions Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/M%20K%20C%20AGRO%20FRESH%20LIMITED%20-%20DAP_p.pdf",
-      "link_text": "M K C AGRO FRESH LIMITED - Draft Abridged prospectus",
       "source": "static-alt"
     }
   ]

@@ -1,80 +1,80 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
-  "slug": "nityas-gems-jewellery-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
+  "slug": "rkfashion-accessories-ipo",
   "fields": {
     "company_name": {
-      "value": "Nityas Gems & Jewellery IPO",
+      "value": "R.K.Fashion Accessories IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Nityas Gems & Jewellery IPO"
+      "source_snippet": "R.K.Fashion Accessories IPO"
     },
     "issue_size_cr": {
-      "value": "1,44,56,000 shares (agg. up to ₹ 108 Cr)",
+      "value": "42,67,200 shares (agg. up to ₹ 35 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,44,56,000 shares (agg. up to ₹ 108 Cr)"
+      "source_snippet": "42,67,200 shares (agg. up to ₹ 35 Cr)"
     },
     "price_band": {
-      "value": "₹70 to ₹75",
+      "value": "₹77 to ₹82",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹70 to ₹75"
+      "source_snippet": "₹77 to ₹82"
     },
     "lot_size": {
-      "value": "200 Shares",
+      "value": "1,600 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "200 Shares"
+      "source_snippet": "1,600 Shares"
     },
     "face_value": {
-      "value": "₹ 5 per share",
+      "value": "₹ 10 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 5 per share"
+      "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-09-30",
+      "value": "2026-10-05",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"30 Sep to 5 Oct, 2026\" → start=2026-09-30"
+      "source_snippet": "raw=\"5 to 7 Oct, 2026\" → start=2026-10-05"
     },
     "close_date": {
-      "value": "2026-10-05",
+      "value": "2026-10-07",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"30 Sep to 5 Oct, 2026\" → end=2026-10-05"
+      "source_snippet": "raw=\"5 to 7 Oct, 2026\" → end=2026-10-07"
     },
     "listing_date": {
-      "value": "2026-10-08",
+      "value": "2026-10-12",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Thu, Oct 8, 2026 T\" → 2026-10-08"
+      "source_snippet": "raw=\"Mon, Oct 12, 2026 T\" → 2026-10-12"
     },
     "registrar": {
-      "value": "Bigshare Services Pvt.Ltd.",
+      "value": "Cameo Corporate Services Ltd.",
       "found": true,
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Bigshare Services Pvt.Ltd. 8657578989/8069219065/8069219060 ipo@bigshareonline.com <i class\" → \"Bigshare Services Pvt.Ltd.\""
+      "source_snippet": "raw=\"Cameo Corporate Services Ltd. 044-28460390/28460391/28460392 investor@cameoindia.com <i cla\" → \"Cameo Corporate Services Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -99,8 +99,8 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 93000,
-  "main_content_bytes": 93000,
-  "tables_parsed": 12,
-  "table_rows_parsed": 78
+  "noise_stripped_bytes": 93489,
+  "main_content_bytes": 93489,
+  "tables_parsed": 11,
+  "table_rows_parsed": 77
 }

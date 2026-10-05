@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-04T22:19:49.945Z",
+  "captured_at_utc": "2026-10-05T10:20:01.966Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "nityas-gems-jewellery-ipo",
-    "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
+    "slug": "rkfashion-accessories-ipo",
+    "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"30 Sep - 05 Oct\" covers today",
-    "date_text": "30 Sep - 05 Oct",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"05 - 07 Oct\" covers today",
+    "date_text": "05 - 07 Oct",
+    "source_list": "sme"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
-      "slug": "nityas-gems-jewellery-ipo"
+      "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
+      "slug": "rkfashion-accessories-ipo"
     }
   ],
   "details": [
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
+      "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
       "mode": "static",
       "status": 200,
-      "bytes": 313013,
-      "title": "Nityas Gems &amp; Jewellery IPO Date, Price, GMP, Details",
+      "bytes": 311154,
+      "title": "R.K.Fashion Accessories IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

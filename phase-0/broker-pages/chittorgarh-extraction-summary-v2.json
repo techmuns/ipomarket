@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-10-04T22:19:49.945Z",
+  "generated_at_utc": "2026-10-05T10:20:01.966Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "nityas-gems-jewellery-ipo",
-    "url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
+    "slug": "rkfashion-accessories-ipo",
+    "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
     "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"30 Sep - 05 Oct\" covers today",
-    "date_text": "30 Sep - 05 Oct",
-    "source_list": "mainboard"
+    "reason": "current-open: list \"sme\" row date range \"05 - 07 Oct\" covers today",
+    "date_text": "05 - 07 Oct",
+    "source_list": "sme"
   },
   "per_detail": [
     {
@@ -82,15 +82,15 @@
     },
     {
       "index": 3,
-      "slug": "nityas-gems-jewellery-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
+      "slug": "rkfashion-accessories-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
       "found_count_full": 9,
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 93000,
-      "tables_parsed": 12,
-      "table_rows_parsed": 78,
+      "main_content_bytes": 93489,
+      "tables_parsed": 11,
+      "table_rows_parsed": 77,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
