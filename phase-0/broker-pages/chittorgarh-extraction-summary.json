@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T17:10:43.231Z",
+  "generated_at_utc": "2026-10-06T23:01:25.478Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.15,
   "per_detail": [
@@ -8,9 +8,9 @@
       "source_url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "found_count": 1,
       "precision_ratio": 0.1,
-      "main_content_bytes": 53583,
-      "tables_parsed": 10,
-      "table_rows_parsed": 52,
+      "main_content_bytes": 54854,
+      "tables_parsed": 11,
+      "table_rows_parsed": 56,
       "fields_high_confidence": [
         "company_name"
       ],
