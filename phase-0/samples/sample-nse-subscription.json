@@ -10,39 +10,9 @@
     "symbol": "SMCG04",
     "category": "Total",
     "noOfSharesOffered": "750000",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "1418",
+    "noOfTime": "0.01",
+    "noOfsharesBid": "4514",
     "srNo": " "
-  },
-  {
-    "companyName": "Vishal Nirmiti Limited",
-    "issueEndDate": "05-Oct-2026",
-    "issuePrice": "Rs.208 to Rs.220",
-    "issueSize": "8471153",
-    "issueStartDate": "30-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "VNL",
-    "category": "Total",
-    "noOfSharesOffered": "8471153.0",
-    "noOfTime": "1.1418993376698543",
-    "noOfsharesBid": "9673204.0",
-    "srNo": null
-  },
-  {
-    "companyName": "Nityas Gems and Jewellery Limited",
-    "issueEndDate": "05-Oct-2026",
-    "issuePrice": "Rs.70 to Rs.75",
-    "issueSize": "14456000",
-    "issueStartDate": "30-Sep-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "NITYAS",
-    "category": "Total",
-    "noOfSharesOffered": "1.4456E7",
-    "noOfTime": "1.3038461538461539",
-    "noOfsharesBid": "1.88484E7",
-    "srNo": null
   },
   {
     "companyName": "R.K. Fashion Accessories Limited",
@@ -52,20 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "RKFAL",
-    "noOfsharesBid": "1417600",
+    "noOfsharesBid": "1912000",
     "noOfSharesOffered": "4267200",
-    "noOfTime": "0.33"
-  },
-  {
-    "companyName": "Eventions Limited",
-    "isBse": "1",
-    "issueEndDate": "05-Oct-2026",
-    "issueStartDate": "30-Sep-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "EVENTIONS",
-    "noOfsharesBid": "7425600",
-    "noOfSharesOffered": "3230400",
-    "noOfTime": "2.30"
+    "noOfTime": "0.45"
   }
 ]

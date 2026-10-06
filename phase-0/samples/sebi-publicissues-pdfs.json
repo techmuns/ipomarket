@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-05T10:20:01.966Z",
+  "captured_at_utc": "2026-10-06T10:11:32.018Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,17 +14,67 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 43457,
+      "bytes": 44945,
       "tr_count": 26,
-      "pdfs_found": 13,
-      "notes": "static ok: tr=26, bytes=43457"
+      "pdfs_found": 16,
+      "notes": "static ok: tr=26, bytes=44945"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Pentacle%20Consultants%20(I)%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Pentacle Consultants (I) Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Electromech%20Infraprojects%20Limited%20-%20ADP_p.pdf",
+      "link_text": "Electromech Infraprojects Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Baanganga%20Gold%20&%20Diamond%20(I)%20Limited-Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Baanganga Gold & Diamond (I) Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Inox%20Air%20Products%20Limited-%20Draft%20Abridged%20prospectus_p.pdf",
+      "link_text": "Inox Air Products Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/B%20S%20Sponge%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "B S Sponge Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/EverBrandsIndiaLimitedDAP_p.pdf",
+      "link_text": "Everbrands India Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/PES%20Installations%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "PES Installations Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Sanghvi%20Housing_p.pdf",
       "link_text": "Sanghvi Housing and Infrastructure Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Tenty%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Tenty Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Tanvi%20Exports%20India%20Limited-%20%20draft%20abridged%20prospectus_p.pdf",
+      "link_text": "Tanvi Exports India Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/NNT%20DEVELOPERS%20LIMITED%20-%20%20Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "NNT DEVELOPERS LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -50,41 +100,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/DAP%20Jagatjit%20Agri%20Engineering%20Limited_p.pdf",
       "link_text": "JAGATJIT AGRI ENGINEERING LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/EKKAA%20ELECTRONICS%20AP_p.pdf",
-      "link_text": "EKKAA ELECTRONICS (INDIA) LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Koolking%20Industries%20India%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "Koolking Industries India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/J%20Infratech%20Limited%20-%20DAP_p.pdf",
-      "link_text": "J Infratech Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Royal%20Chain%20Limited_p.pdf",
-      "link_text": "Royal Chain Limited – Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Vardhman%20Appliances%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "Vardhman Appliances Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Biocon%20Electric%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "Biocon Electric Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/AITMC%20Ventures%20Limited%20-%20Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "AITMC Ventures Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

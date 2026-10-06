@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-10-05T10:20:01.966Z",
+  "generated_at_utc": "2026-10-06T10:11:32.018Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.3,
+  "average_precision_ratio": 0.15,
   "per_detail": [
     {
       "index": 1,
       "source_url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "found_count": 1,
       "precision_ratio": 0.1,
-      "main_content_bytes": 74125,
+      "main_content_bytes": 53915,
       "tables_parsed": 10,
       "table_rows_parsed": 52,
       "fields_high_confidence": [
@@ -33,30 +33,31 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
-      "found_count": 5,
-      "precision_ratio": 0.5,
-      "main_content_bytes": 93000,
-      "tables_parsed": 12,
-      "table_rows_parsed": 78,
+      "source_url": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
+      "found_count": 2,
+      "precision_ratio": 0.2,
+      "main_content_bytes": 56767,
+      "tables_parsed": 10,
+      "table_rows_parsed": 46,
       "fields_high_confidence": [
         "company_name",
-        "issue_size_cr",
-        "price_band",
-        "lot_size",
         "listing_date"
       ],
       "fields_medium_confidence": [],
-      "fields_rejected_low_confidence": [],
+      "fields_rejected_low_confidence": [
+        "issue_size_cr",
+        "official_pdf_links"
+      ],
       "fields_missing": [
+        "price_band",
+        "lot_size",
         "open_date",
         "close_date",
         "registrar",
-        "brlms",
-        "official_pdf_links"
+        "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }
