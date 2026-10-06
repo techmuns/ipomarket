@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T10:11:32.018Z",
+  "generated_at_utc": "2026-10-06T17:10:43.231Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.15,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "found_count": 1,
       "precision_ratio": 0.1,
-      "main_content_bytes": 53915,
+      "main_content_bytes": 53583,
       "tables_parsed": 10,
       "table_rows_parsed": 52,
       "fields_high_confidence": [
@@ -36,7 +36,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
       "found_count": 2,
       "precision_ratio": 0.2,
-      "main_content_bytes": 56767,
+      "main_content_bytes": 57026,
       "tables_parsed": 10,
       "table_rows_parsed": 46,
       "fields_high_confidence": [
