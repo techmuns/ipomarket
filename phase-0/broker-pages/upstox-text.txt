@@ -463,7 +463,6 @@ Investor Charter
 Client Bank Details
 Made with ♥ in India
 © 2026 Upstox
-FY 24     
 
 presents
 
@@ -480,3 +479,5 @@ English
 Got it
 
 Investor Awareness Month initiative by SEBI
+
+FY 24     

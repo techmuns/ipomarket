@@ -10,8 +10,8 @@
     "symbol": "GCFZCZP",
     "category": "Total",
     "noOfSharesOffered": "1000000",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "3800",
+    "noOfTime": "0.02",
+    "noOfsharesBid": "17519",
     "srNo": " "
   },
   {
@@ -26,7 +26,7 @@
     "category": "Total",
     "noOfSharesOffered": "750000",
     "noOfTime": "0.01",
-    "noOfsharesBid": "5277",
+    "noOfsharesBid": "5377",
     "srNo": " "
   },
   {
@@ -37,8 +37,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "RKFAL",
-    "noOfsharesBid": "10507200",
+    "noOfsharesBid": "11150400",
     "noOfSharesOffered": "4267200",
-    "noOfTime": "2.46"
+    "noOfTime": "2.61"
   }
 ]
