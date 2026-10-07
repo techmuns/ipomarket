@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-10-06T23:01:25.478Z",
+  "generated_at_utc": "2026-10-07T10:11:11.053Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
     "slug": "rkfashion-accessories-ipo",
     "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
-    "status": "current",
-    "reason": "current-open: list \"sme\" row date range \"05 - 07 Oct\" covers today",
+    "status": "fallback",
+    "reason": "fallback (no current-open found): most-recently-listed end date \"05 - 07 Oct\" from list \"sme\"",
     "date_text": "05 - 07 Oct",
     "source_list": "sme"
   },
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 64975,
+      "main_content_bytes": 65030,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [

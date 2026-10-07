@@ -12,28 +12,28 @@
       "source_snippet": "HD Fire Protect IPO"
     },
     "issue_size_cr": {
-      "value": "2,62,84,500 shares (agg. up to ₹ [.] Cr)",
-      "found": false,
-      "confidence": "low",
-      "method": "table[1].row[0]-rejected",
-      "why_missing": "value '2,62,84,500 shares (agg. up to ₹ [.] Cr)' failed Cr-money validation (likely sidebar/performance text)",
-      "source_snippet": "2,62,84,500 shares (agg. up to ₹ [.] Cr)"
+      "value": "2,62,84,500 shares (agg. up to ₹ 712 Cr)",
+      "found": true,
+      "confidence": "high",
+      "method": "table[1].row[0] label=\"Total Issue Size\"",
+      "why_missing": null,
+      "source_snippet": "2,62,84,500 shares (agg. up to ₹ 712 Cr)"
     },
     "price_band": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
-      "source_snippet": null
+      "value": "₹258 to ₹271",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[3] label=\"Price Band\"",
+      "why_missing": null,
+      "source_snippet": "₹258 to ₹271"
     },
     "lot_size": {
-      "value": null,
-      "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
-      "source_snippet": null
+      "value": "55 Shares",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[4] label=\"Lot Size\"",
+      "why_missing": null,
+      "source_snippet": "55 Shares"
     },
     "open_date": {
       "value": null,
@@ -84,14 +84,14 @@
       "source_snippet": "https://www.iiflcapital.com/institutional-equities/Upload/InvestmentBanking/Prospects/HD_Fire_Protect_Limited_-_RHP.pdf"
     }
   },
-  "found_count": 2,
-  "precision_ratio": 0.2,
+  "found_count": 5,
+  "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
     "https://www.iiflcapital.com/institutional-equities/Upload/InvestmentBanking/Prospects/HD_Fire_Protect_Limited_-_RHP.pdf"
   ],
-  "noise_stripped_bytes": 57026,
-  "main_content_bytes": 57026,
-  "tables_parsed": 10,
-  "table_rows_parsed": 46
+  "noise_stripped_bytes": 63360,
+  "main_content_bytes": 63360,
+  "tables_parsed": 12,
+  "table_rows_parsed": 63
 }

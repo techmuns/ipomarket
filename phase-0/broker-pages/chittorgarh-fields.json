@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-06T23:01:25.478Z",
+  "captured_at_utc": "2026-10-07T10:11:11.053Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "mode": "static",
       "status": 200,
-      "bytes": 234271,
+      "bytes": 228963,
       "title": "Jio Platforms IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
       "mode": "static",
       "status": 200,
-      "bytes": 242086,
+      "bytes": 265552,
       "title": "HD Fire Protect IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
