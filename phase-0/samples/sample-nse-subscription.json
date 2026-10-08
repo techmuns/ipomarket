@@ -1,20 +1,5 @@
 [
   {
-    "companyName": "Grace Cancer Foundation - ZCZP",
-    "issueEndDate": "09-Oct-2026",
-    "issuePrice": "Rs.10",
-    "issueSize": "1000000",
-    "issueStartDate": "07-Oct-2026",
-    "series": "DEBT",
-    "status": "Active",
-    "symbol": "GCFZCZP",
-    "category": "Total",
-    "noOfSharesOffered": "1000000",
-    "noOfTime": "0.02",
-    "noOfsharesBid": "17519",
-    "srNo": " "
-  },
-  {
     "companyName": "SMC Global Securities Limited",
     "issueEndDate": "16-Oct-2026",
     "issuePrice": "Rs.1000",
@@ -26,7 +11,7 @@
     "category": "Total",
     "noOfSharesOffered": "750000",
     "noOfTime": "0.01",
-    "noOfsharesBid": "5377",
+    "noOfsharesBid": "5857",
     "srNo": " "
   }
 ]

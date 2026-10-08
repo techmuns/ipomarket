@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.iiflcapital.com/institutional-equities/Upload/InvestmentBanking/Prospects/HD_Fire_Protect_Limited_-_RHP.pdf"
   ],
-  "noise_stripped_bytes": 63307,
-  "main_content_bytes": 63307,
+  "noise_stripped_bytes": 63360,
+  "main_content_bytes": 63360,
   "tables_parsed": 12,
   "table_rows_parsed": 63
 }

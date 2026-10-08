@@ -1,15 +1,5 @@
 [
   {
-    "companyName": "Grace Cancer Foundation - ZCZP",
-    "issueEndDate": "09-Oct-2026",
-    "issuePrice": "Rs.10",
-    "issueSize": "1000000",
-    "issueStartDate": "07-Oct-2026",
-    "series": "DEBT",
-    "status": "Active",
-    "symbol": "GCFZCZP"
-  },
-  {
     "companyName": "SMC Global Securities Limited",
     "issueEndDate": "16-Oct-2026",
     "issuePrice": "Rs.1000",
@@ -18,5 +8,15 @@
     "series": "DEBT",
     "status": "Active",
     "symbol": "SMCG04"
+  },
+  {
+    "companyName": "HD Fire Protect Limited",
+    "issueEndDate": "15-Oct-2026",
+    "issuePrice": "Rs.258 to Rs.271",
+    "issueSize": "26284500",
+    "issueStartDate": "13-Oct-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "HDFIRE"
   }
 ]

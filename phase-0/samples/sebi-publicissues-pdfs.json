@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-07T23:34:11.505Z",
+  "captured_at_utc": "2026-10-08T10:29:05.895Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 45855,
+      "bytes": 47917,
       "tr_count": 26,
-      "pdfs_found": 18,
-      "notes": "static ok: tr=26, bytes=45855"
+      "pdfs_found": 23,
+      "notes": "static ok: tr=26, bytes=47917"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Grace%20Renewable%20Energy%20Limited%20DAP_p.pdf",
+      "link_text": "Grace Renewable Energy Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/INTEGRUM%20ENERGY%20INFRASTRUCTURE%20LIMITED-Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "INTEGRUM ENERGY INFRASTRUCTURE LIMITED - Draft Abridged Prospectus",
@@ -58,13 +63,33 @@
       "source": "static-alt"
     },
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Arete%2022%20Limited_p.pdf",
+      "link_text": "Arete 22 Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/PES%20Installations%20Limited-%20Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "PES Installations Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Deon%20Energy%20Limited_p.pdf",
+      "link_text": "Deon Energy Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Rathod%20Jewellery%20Manufacturing%20Limited%20dap_p.pdf",
+      "link_text": "Rathod Jewellery Manufacturing Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Inox%20Clean%20Energy%20Limited_Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "Inox Clean Energy Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Rudra%20Green%20Ship%20Recycling%20Limited_Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Rudra Green Ship Recycling Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     },
     {
@@ -108,8 +133,8 @@
       "source": "static-alt"
     },
     {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/DAP%20Jagatjit%20Agri%20Engineering%20Limited_p.pdf",
-      "link_text": "JAGATJIT AGRI ENGINEERING LIMITED - Draft Abridged Prospectus",
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Kian%20M%20Export%20Limited_Draft%20Abridged%20Prospectus_p.pdf",
+      "link_text": "Kian-M Export Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]
