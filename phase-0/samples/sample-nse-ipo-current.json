@@ -1,7 +1,7 @@
 [
   {
     "companyName": "SMC Global Securities Limited",
-    "issueEndDate": "16-Oct-2026",
+    "issueEndDate": "09-Oct-2026",
     "issuePrice": "Rs.1000",
     "issueSize": "750000",
     "issueStartDate": "05-Oct-2026",
@@ -18,5 +18,17 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "HDFIRE"
+  },
+  {
+    "companyName": "Ravita Engineering Services Limited",
+    "issueEndDate": "15-Oct-2026",
+    "issuePrice": "Rs.105 to Rs.112",
+    "issueSize": "10362000",
+    "issueStartDate": "13-Oct-2026",
+    "lotSize": "1200",
+    "priceBand": "Rs.105 to Rs.112",
+    "series": "SME",
+    "status": "Forthcoming",
+    "symbol": "RAVITA"
   }
 ]
