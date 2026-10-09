@@ -1,9 +1,10 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 4,
+  "valid": 4,
   "examples": {
     "SMC Global Securities Limited": "SMCG04",
     "HD Fire Protect Limited": "HDFIRE",
+    "Vaibhav Vyapaar Limited": "LOANFRONT",
     "Ravita Engineering Services Limited": "RAVITA"
   }
 }
