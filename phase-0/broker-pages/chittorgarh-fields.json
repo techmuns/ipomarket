@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-09T10:34:32.037Z",
+  "captured_at_utc": "2026-10-09T17:26:15.675Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 126998,
+      "bytes": 127012,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 153838,
+      "bytes": 153904,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
+    "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
     "https://www.chittorgarh.com/ipo/fusion-cx-ipo/2455/",
     "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
     "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/swastika-infra-ipo/2287/",
     "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
     "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
-    "https://www.chittorgarh.com/ipo/nse-ipo/3151/",
-    "https://www.chittorgarh.com/ipo/sonaselection-india-ipo/2805/"
+    "https://www.chittorgarh.com/ipo/nse-ipo/3151/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/fusion-cx-ipo/2455/",
+      "url": "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/fusion-cx-ipo/2455/",
+      "url": "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
       "mode": "static",
       "status": 200,
-      "bytes": 258590,
-      "title": "Fusion CX IPO Date, Price, GMP, Review, Analysis &amp; Details",
+      "bytes": 242625,
+      "title": "Bonfiglioli Transmissions IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
