@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-09T17:26:15.675Z",
+  "captured_at_utc": "2026-10-09T23:13:59.555Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 153904,
+      "bytes": 152629,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
       "mode": "static",
       "status": 200,
-      "bytes": 242625,
+      "bytes": 242643,
       "title": "Bonfiglioli Transmissions IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
