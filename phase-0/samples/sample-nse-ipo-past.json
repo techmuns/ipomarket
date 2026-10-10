@@ -1,15 +1,5 @@
 [
   {
-    "companyName": "SMC Global Securities Limited",
-    "issueEndDate": "09-Oct-2026",
-    "issuePrice": "Rs.1000",
-    "issueSize": "750000",
-    "issueStartDate": "05-Oct-2026",
-    "series": "DEBT",
-    "status": "Closed",
-    "symbol": "SMCG04"
-  },
-  {
     "companyName": "HD Fire Protect Limited",
     "issueEndDate": "15-Oct-2026",
     "issuePrice": "Rs.258 to Rs.271",
