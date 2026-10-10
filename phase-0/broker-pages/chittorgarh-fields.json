@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-10T09:45:27.524Z",
+  "captured_at_utc": "2026-10-10T16:13:57.366Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 127012,
+      "bytes": 127077,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -30,6 +30,7 @@
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
     "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
+    "https://www.chittorgarh.com/ipo/sahajanand-medical-technologies-ipo/2550/",
     "https://www.chittorgarh.com/ipo/fusion-cx-ipo/2455/",
     "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
     "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
     "https://www.chittorgarh.com/ipo/swastika-infra-ipo/2287/",
     "https://www.chittorgarh.com/ipo/armee-infotech-ipo/2140/",
-    "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/",
-    "https://www.chittorgarh.com/ipo/nse-ipo/3151/"
+    "https://www.chittorgarh.com/ipo/varmora-granito-ipo/2563/"
   ],
   "picked_detail_urls": [
     {
