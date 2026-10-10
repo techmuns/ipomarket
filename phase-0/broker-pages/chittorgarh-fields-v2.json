@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-09T23:13:59.555Z",
+  "captured_at_utc": "2026-10-10T09:45:27.524Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 365216,
+      "bytes": 366158,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
       "mode": "static",
       "status": 200,
-      "bytes": 317331,
+      "bytes": 318349,
       "title": "R.K.Fashion Accessories IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
