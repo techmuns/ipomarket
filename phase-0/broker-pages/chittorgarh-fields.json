@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-11T22:51:00.632Z",
+  "captured_at_utc": "2026-10-12T10:40:44.994Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 127154,
+      "bytes": 127176,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,9 +29,9 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
-    "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
     "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
     "https://www.chittorgarh.com/ipo/zetwerk-ipo/3091/",
+    "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
     "https://www.chittorgarh.com/ipo/sahajanand-medical-technologies-ipo/2550/",
     "https://www.chittorgarh.com/ipo/fusion-cx-ipo/2455/",
     "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
+      "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
       "segment_guess": "unknown"
     }
   ],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
+      "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
       "mode": "static",
       "status": 200,
-      "bytes": 242643,
-      "title": "Bonfiglioli Transmissions IPO Date, Price, GMP, Details",
+      "bytes": 279104,
+      "title": "Tonbo Imaging India IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

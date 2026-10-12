@@ -64,7 +64,7 @@
       "value": "2026-10-12",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
+      "method": "table[0].row[1] label=\"Listed on\" iso-normalized",
       "why_missing": null,
       "source_snippet": "raw=\"Mon, Oct 12, 2026\" → 2026-10-12"
     },
@@ -99,8 +99,8 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 78573,
-  "main_content_bytes": 78573,
+  "noise_stripped_bytes": 78316,
+  "main_content_bytes": 78316,
   "tables_parsed": 12,
   "table_rows_parsed": 89
 }

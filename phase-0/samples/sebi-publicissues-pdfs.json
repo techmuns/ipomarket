@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-11T22:51:00.632Z",
+  "captured_at_utc": "2026-10-12T10:40:44.994Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 47917,
+      "bytes": 47554,
       "tr_count": 26,
-      "pdfs_found": 23,
-      "notes": "static ok: tr=26, bytes=47917"
+      "pdfs_found": 22,
+      "notes": "static ok: tr=26, bytes=47554"
     }
   ],
   "detail_urls_found": 31,
@@ -130,11 +130,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Anarock%20Property%20Consultants%20Limited%20-%20Prospectus_p.pdf",
       "link_text": "Anarock Property Consultants Limited – Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Kian%20M%20Export%20Limited_Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "Kian-M Export Limited - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

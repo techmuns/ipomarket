@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-10-11T22:51:00.632Z",
+  "generated_at_utc": "2026-10-12T10:40:44.994Z",
   "details_extracted": 2,
-  "average_precision_ratio": 0.1,
+  "average_precision_ratio": 0.3,
   "per_detail": [
     {
       "index": 1,
@@ -33,31 +33,31 @@
     },
     {
       "index": 2,
-      "source_url": "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
-      "found_count": 1,
-      "precision_ratio": 0.1,
-      "main_content_bytes": 58229,
-      "tables_parsed": 9,
-      "table_rows_parsed": 51,
+      "source_url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
+      "found_count": 5,
+      "precision_ratio": 0.5,
+      "main_content_bytes": 67384,
+      "tables_parsed": 12,
+      "table_rows_parsed": 77,
       "fields_high_confidence": [
-        "company_name"
+        "company_name",
+        "issue_size_cr",
+        "price_band",
+        "lot_size",
+        "listing_date"
       ],
       "fields_medium_confidence": [],
       "fields_rejected_low_confidence": [
-        "issue_size_cr",
-        "listing_date"
+        "official_pdf_links"
       ],
       "fields_missing": [
-        "price_band",
-        "lot_size",
         "open_date",
         "close_date",
         "registrar",
-        "brlms",
-        "official_pdf_links"
+        "brlms"
       ],
       "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }
