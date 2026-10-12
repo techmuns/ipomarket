@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://live.jmfl.com/od/UploadedFiles/CA86AB52-0D43-437A-8D1C-6E475C6CEF01.pdf"
   ],
-  "noise_stripped_bytes": 67384,
-  "main_content_bytes": 67384,
+  "noise_stripped_bytes": 67395,
+  "main_content_bytes": 67395,
   "tables_parsed": 12,
   "table_rows_parsed": 77
 }
