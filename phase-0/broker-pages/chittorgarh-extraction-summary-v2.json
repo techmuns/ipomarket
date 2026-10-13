@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-10-12T20:16:22.134Z",
+  "generated_at_utc": "2026-10-13T10:28:34.518Z",
   "details_extracted": 3,
-  "average_precision_ratio_full": 0.848,
+  "average_precision_ratio_full": 0.879,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
-    "slug": "rkfashion-accessories-ipo",
-    "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"05 - 07 Oct\" from list \"sme\"",
-    "date_text": "05 - 07 Oct",
-    "source_list": "sme"
+    "slug": "hd-fire-protect-ipo",
+    "url": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
+    "status": "current",
+    "reason": "current-open: list \"mainboard\" row date range \"13 - 15 Oct\" covers today",
+    "date_text": "13 - 15 Oct",
+    "source_list": "mainboard"
   },
   "per_detail": [
     {
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 65055,
+      "main_content_bytes": 65056,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -82,22 +82,23 @@
     },
     {
       "index": 3,
-      "slug": "rkfashion-accessories-ipo",
-      "source_url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
-      "found_count_full": 9,
+      "slug": "hd-fire-protect-ipo",
+      "source_url": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
+      "found_count_full": 10,
       "found_count_narrow": 5,
-      "precision_ratio_full": 0.818,
+      "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 79329,
+      "main_content_bytes": 70027,
       "tables_parsed": 13,
-      "table_rows_parsed": 95,
+      "table_rows_parsed": 76,
       "fields_high_confidence": [
         "company_name",
         "issue_size_cr",
         "price_band",
         "lot_size",
         "face_value",
-        "listing_date"
+        "listing_date",
+        "official_pdf_links"
       ],
       "fields_medium_confidence": [
         "open_date",
@@ -106,11 +107,12 @@
       ],
       "fields_rejected_low_confidence": [],
       "fields_missing": [
-        "brlms",
-        "official_pdf_links"
+        "brlms"
       ],
-      "official_pdf_links_on_allowlist": [],
-      "official_pdf_links_off_allowlist_count": 0
+      "official_pdf_links_on_allowlist": [
+        "https://www.bseindia.com/corporates/download/370731/IPO%20Open/RHPsigned_20261008112437.pdf"
+      ],
+      "official_pdf_links_off_allowlist_count": 1
     }
   ]
 }

@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "HDFIRE",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.8420492E7",
+    "noOfTime": "2.962127721669975",
+    "noOfsharesBid": "5.456385E7",
     "srNo": null
   },
   {
@@ -22,8 +22,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "LOANFRONT",
-    "noOfsharesBid": "",
+    "noOfsharesBid": "556000",
     "noOfSharesOffered": "5596000",
-    "noOfTime": ""
+    "noOfTime": "0.10"
   }
 ]

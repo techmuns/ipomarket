@@ -1,8 +1,11 @@
 {
-  "total": 3,
-  "valid": 3,
+  "total": 6,
+  "valid": 6,
   "examples": {
     "HD Fire Protect Limited": "HDFIRE",
+    "Tonbo Imaging India Limited": "TONBO",
+    "Sahajanand Medical Technologies Limited": "SMT",
+    "Bonfiglioli Transmissions Limited": "BONFIG",
     "Fusion CX Limited": "FUSIONCX",
     "Ravita Engineering Services Limited": "RAVITA"
   }

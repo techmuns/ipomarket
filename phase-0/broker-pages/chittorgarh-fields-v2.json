@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-12T20:16:22.134Z",
+  "captured_at_utc": "2026-10-13T10:28:34.518Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,12 +30,12 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "rkfashion-accessories-ipo",
-    "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"05 - 07 Oct\" from list \"sme\"",
-    "date_text": "05 - 07 Oct",
-    "source_list": "sme"
+    "slug": "hd-fire-protect-ipo",
+    "url": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
+    "status": "current",
+    "reason": "current-open: list \"mainboard\" row date range \"13 - 15 Oct\" covers today",
+    "date_text": "13 - 15 Oct",
+    "source_list": "mainboard"
   },
   "picked_detail_urls": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
-      "slug": "rkfashion-accessories-ipo"
+      "url": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
+      "slug": "hd-fire-protect-ipo"
     }
   ],
   "details": [
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 321293,
+      "bytes": 321336,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/rkfashion-accessories-ipo/3138/",
+      "url": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo/2628/",
       "mode": "static",
       "status": 200,
-      "bytes": 316367,
-      "title": "R.K.Fashion Accessories IPO Date, Price, GMP, Details",
+      "bytes": 315595,
+      "title": "HD Fire Protect IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

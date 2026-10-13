@@ -1,15 +1,18 @@
 {
-  "captured_at_utc": "2026-10-12T20:16:22.134Z",
+  "captured_at_utc": "2026-10-13T10:28:34.518Z",
   "url": "https://zerodha.com/ipo/440359/nfp-sampoorna-foods/",
   "final_url": "https://zerodha.com/ipo/440359/nfp-sampoorna-foods/",
   "status": 200,
   "title": "NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size",
   "render_mode": "server-rendered",
-  "raw_html_length": 38730,
-  "rendered_html_length": 39549,
+  "raw_html_length": 39921,
+  "rendered_html_length": 40740,
   "challenge_detected": false,
   "challenge_reasons": [],
   "headings": [
+    "Utilities",
+    "Updates",
+    "Education",
     "NFP Sampoorna Foods IPO",
     "NFP Sampoorna Foods IPO details",
     "Schedule of NFP Sampoorna Foods",
@@ -20,7 +23,11 @@
     "Strengths",
     "Risks",
     "Allotment Status for NFP Sampoorna Foods",
-    "Subscription Figures for NFP Sampoorna Foods"
+    "Subscription Figures for NFP Sampoorna Foods",
+    "Account",
+    "Support",
+    "Company",
+    "Quick links"
   ],
   "tables": [
     {
