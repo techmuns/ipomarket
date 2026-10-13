@@ -1,24 +1,28 @@
 {
-  "captured_at_utc": "2026-10-13T10:28:34.518Z",
+  "captured_at_utc": "2026-10-13T18:14:49.848Z",
   "url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "final_url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "status": 200,
   "title": "Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotment | Upstox",
   "render_mode": "server-rendered",
-  "raw_html_length": 348163,
-  "rendered_html_length": 405373,
+  "raw_html_length": 339212,
+  "rendered_html_length": 400395,
   "challenge_detected": false,
   "challenge_reasons": [],
   "headings": [
     "Vegorama Punjabi Angithi IPO",
     "Vegorama Punjabi Angithi Limited IPO Details",
-    "Checklist",
-    "Performance",
-    "Compare",
-    "Objectives",
-    "About Vegorama Punjabi Angithi Limited",
     "Vegorama Punjabi Angithi IPO Subscription Status",
-    "Frequently asked questions",
+    "Vegorama Punjabi Angithi IPO Timeline",
+    "About Vegorama Punjabi Angithi Limited",
+    "Vegorama Punjabi Angithi Limited Financials",
+    "Checklist",
+    "Objectives of Vegorama Punjabi Angithi Limited IPO",
+    "Compare",
+    "Vegorama Punjabi Angithi IPO Contact Details",
+    "How to apply for Vegorama Punjabi Angithi IPO?",
+    "Latest News on Vegorama Punjabi Angithi Limited IPO",
+    "Vegorama Punjabi Angithi Limited IPO FAQs",
     "How to invest in the Vegorama Punjabi Angithi IPO ?",
     "What is the issue size of Vegorama Punjabi Angithi IPO ?",
     "What is 'pre-apply' for Vegorama Punjabi Angithi IPO ?",
@@ -30,6 +34,7 @@
     "When will Vegorama Punjabi Angithi IPO shares be credited to your demat account?",
     "What is the lot size and minimum order quantity of the Vegorama Punjabi Angithi IPO ?",
     "What is the price band for the Vegorama Punjabi Angithi IPO ?",
+    "Interested in investing in Vegorama Punjabi Angithi IPO?",
     "SamajhseInvestingsimple"
   ],
   "tables": [
@@ -65,9 +70,26 @@
           "40.86X"
         ]
       ]
+    },
+    {
+      "caption": "",
+      "rows": [
+        [
+          "Company Name",
+          "Vegorama Punjabi Angithi Limited"
+        ]
+      ]
     }
   ],
   "doc_links": [
+    {
+      "text": "Jio Platforms IPO likely to launch this month: A look at its strengths and risks from DRHP3 min read",
+      "href": "https://upstox.com/news/market-news/ipo/jio-platforms-ipo-likely-to-launch-this-month-a-look-at-its-strengths-and-risks-from-rhp/article-201751/"
+    },
+    {
+      "text": "HD Fire Protect IPO: 10 key things retail investors should know from the RHP2 min read",
+      "href": "https://upstox.com/news/market-news/ipo/hd-fire-protect-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-201693/"
+    },
     {
       "text": "Derivatives",
       "href": "https://assets.upstox.com/website/risk-disclosures/derivatives.pdf"
@@ -102,8 +124,13 @@
     }
   ],
   "labels_detected": [
+    "Price Band",
     "Lot Size",
     "Issue Size",
+    "Registrar",
+    "Allotment Date",
+    "Listing Date",
+    "Face Value",
     "QIB",
     "NII",
     "Retail",

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-13T10:28:34.518Z",
+  "captured_at_utc": "2026-10-13T18:14:49.848Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 47431,
+      "bytes": 47066,
       "tr_count": 26,
-      "pdfs_found": 22,
-      "notes": "static ok: tr=26, bytes=47431"
+      "pdfs_found": 21,
+      "notes": "static ok: tr=26, bytes=47066"
     }
   ],
   "detail_urls_found": 31,
@@ -125,11 +125,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/SHREEJIKRUPA%20PROJECT%20LIMITED%20-%20DAP_p.pdf",
       "link_text": "SHREEJIKRUPA PROJECT LIMITED – Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/PCI%20INFRAPROJECTS%20LIMITED%20-%20AP_p.pdf",
-      "link_text": "PCI INFRAPROJECTS LIMITED – Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-13T10:28:34.518Z",
+  "captured_at_utc": "2026-10-13T18:14:49.848Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 152660,
+      "bytes": 151164,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
       "mode": "static",
       "status": 200,
-      "bytes": 279115,
+      "bytes": 279179,
       "title": "Tonbo Imaging India IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
