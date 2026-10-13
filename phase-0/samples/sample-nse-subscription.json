@@ -1,5 +1,20 @@
 [
   {
+    "companyName": "Fusion CX Limited",
+    "issueEndDate": "16-Oct-2026",
+    "issuePrice": "Rs.275 to Rs.289",
+    "issueSize": "14040000",
+    "issueStartDate": "14-Oct-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "FUSIONCX",
+    "category": "Total",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
+    "srNo": null
+  },
+  {
     "companyName": "HD Fire Protect Limited",
     "issueEndDate": "15-Oct-2026",
     "issuePrice": "Rs.258 to Rs.271",
@@ -13,6 +28,18 @@
     "noOfTime": "3.310666729205713",
     "noOfsharesBid": "6.098411E7",
     "srNo": null
+  },
+  {
+    "companyName": "Ravita Engineering Services Limited",
+    "isBse": "1",
+    "issueEndDate": "16-Oct-2026",
+    "issueStartDate": "14-Oct-2026",
+    "series": "SME",
+    "status": "Active",
+    "symbol": "RAVITA",
+    "noOfsharesBid": "",
+    "noOfSharesOffered": "7413600",
+    "noOfTime": ""
   },
   {
     "companyName": "Vaibhav Vyapaar Limited",

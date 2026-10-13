@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "Fusion CX Limited",
+    "issueEndDate": "16-Oct-2026",
+    "issuePrice": "Rs.275 to Rs.289",
+    "issueSize": "14040000",
+    "issueStartDate": "14-Oct-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "FUSIONCX"
+  },
+  {
     "companyName": "HD Fire Protect Limited",
     "issueEndDate": "15-Oct-2026",
     "issuePrice": "Rs.258 to Rs.271",
@@ -8,36 +18,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "HDFIRE"
-  },
-  {
-    "companyName": "Tonbo Imaging India Limited",
-    "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.665 to Rs.700",
-    "issueSize": "12174046",
-    "issueStartDate": "15-Oct-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "TONBO"
-  },
-  {
-    "companyName": "Zetwerk Manufacturing Businesses Limited",
-    "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.143 to Rs.151",
-    "issueSize": "342495665",
-    "issueStartDate": "15-Oct-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "ZETWERK"
-  },
-  {
-    "companyName": "Bonfiglioli Transmissions Limited",
-    "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.558 to Rs.586",
-    "issueSize": "43239042",
-    "issueStartDate": "15-Oct-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "BONFIG"
   },
   {
     "companyName": "Sahajanand Medical Technologies Limited",
@@ -50,25 +30,33 @@
     "symbol": "SMT"
   },
   {
-    "companyName": "Fusion CX Limited",
-    "issueEndDate": "16-Oct-2026",
-    "issuePrice": "Rs.275 to Rs.289",
-    "issueSize": "14040000",
-    "issueStartDate": "14-Oct-2026",
+    "companyName": "Bonfiglioli Transmissions Limited",
+    "issueEndDate": "19-Oct-2026",
+    "issuePrice": "Rs.558 to Rs.586",
+    "issueSize": "43239042",
+    "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "FUSIONCX"
+    "symbol": "BONFIG"
   },
   {
-    "companyName": "Ravita Engineering Services Limited",
-    "issueEndDate": "16-Oct-2026",
-    "issuePrice": "Rs.105 to Rs.112",
-    "issueSize": "7413600",
-    "issueStartDate": "14-Oct-2026",
-    "lotSize": "1200",
-    "priceBand": "Rs.105 to Rs.112",
-    "series": "SME",
+    "companyName": "Zetwerk Manufacturing Businesses Limited",
+    "issueEndDate": "19-Oct-2026",
+    "issuePrice": "Rs.143 to Rs.151",
+    "issueSize": "342495665",
+    "issueStartDate": "15-Oct-2026",
+    "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "RAVITA"
+    "symbol": "ZETWERK"
+  },
+  {
+    "companyName": "Tonbo Imaging India Limited",
+    "issueEndDate": "19-Oct-2026",
+    "issuePrice": "Rs.665 to Rs.700",
+    "issueSize": "12174046",
+    "issueStartDate": "15-Oct-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "TONBO"
   }
 ]
