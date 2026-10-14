@@ -1,12 +1,12 @@
 {
-  "captured_at_utc": "2026-10-13T23:16:16.597Z",
+  "captured_at_utc": "2026-10-14T08:38:11.641Z",
   "url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "final_url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "status": 200,
   "title": "Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotment | Upstox",
   "render_mode": "server-rendered",
   "raw_html_length": 339212,
-  "rendered_html_length": 402400,
+  "rendered_html_length": 402233,
   "challenge_detected": false,
   "challenge_reasons": [],
   "headings": [
@@ -83,12 +83,12 @@
   ],
   "doc_links": [
     {
-      "text": "Jio Platforms IPO likely to launch this month: A look at its strengths and risks from DRHP3 min read",
-      "href": "https://upstox.com/news/market-news/ipo/jio-platforms-ipo-likely-to-launch-this-month-a-look-at-its-strengths-and-risks-from-rhp/article-201751/"
+      "text": "Fusion CX IPO subscribed 11% so far on Day 1: Check anchor allocation, price band, lot size and key details3 min read",
+      "href": "https://upstox.com/news/market-news/ipo/fusion-cx-ipo-day-1-check-subscription-status-anchor-allocation-price-band-lot-size-and-key-details/article-201798/"
     },
     {
-      "text": "HD Fire Protect IPO: 10 key things retail investors should know from the RHP2 min read",
-      "href": "https://upstox.com/news/market-news/ipo/hd-fire-protect-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-201693/"
+      "text": "Jio Platforms IPO likely to launch this month: A look at its strengths and risks from DRHP3 min read",
+      "href": "https://upstox.com/news/market-news/ipo/jio-platforms-ipo-likely-to-launch-this-month-a-look-at-its-strengths-and-risks-from-rhp/article-201751/"
     },
     {
       "text": "Derivatives",
@@ -134,6 +134,7 @@
     "QIB",
     "NII",
     "Retail",
+    "Anchor",
     "P/E",
     "Revenue",
     "PAT",
