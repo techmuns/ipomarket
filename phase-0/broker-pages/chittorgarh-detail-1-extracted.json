@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "[.]",
-      "found": false,
-      "confidence": "low",
-      "method": "table[0].row[1]-rejected",
-      "why_missing": "value '[.]' failed date validation (expected \"Mon DD, YYYY\" or similar)",
-      "source_snippet": "[.]"
+      "value": "Wed, Oct 28, 2026 T",
+      "found": true,
+      "confidence": "high",
+      "method": "table[0].row[1] label=\"Listing Date\"",
+      "why_missing": null,
+      "source_snippet": "Wed, Oct 28, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -84,12 +84,12 @@
       "source_snippet": null
     }
   },
-  "found_count": 1,
-  "precision_ratio": 0.1,
+  "found_count": 2,
+  "precision_ratio": 0.2,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 53594,
-  "main_content_bytes": 53594,
+  "noise_stripped_bytes": 56140,
+  "main_content_bytes": 56140,
   "tables_parsed": 10,
   "table_rows_parsed": 52
 }

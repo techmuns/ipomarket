@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-14T08:38:11.641Z",
+  "captured_at_utc": "2026-10-14T15:48:47.631Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 127967,
+      "bytes": 128014,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 151959,
+      "bytes": 153063,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
+    "https://www.chittorgarh.com/ipo/paras-healthcare-ipo/2256/",
     "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
     "https://www.chittorgarh.com/ipo/zetwerk-ipo/3091/",
     "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo/2861/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
     "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
     "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/",
-    "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/",
-    "https://www.chittorgarh.com/ipo/swastika-infra-ipo/2287/"
+    "https://www.chittorgarh.com/ipo/elevate-campuses-ipo/2647/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
+      "url": "https://www.chittorgarh.com/ipo/paras-healthcare-ipo/2256/",
       "segment_guess": "unknown"
     }
   ],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "mode": "static",
       "status": 200,
-      "bytes": 228992,
+      "bytes": 239265,
       "title": "Jio Platforms IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
+      "url": "https://www.chittorgarh.com/ipo/paras-healthcare-ipo/2256/",
       "mode": "static",
       "status": 200,
-      "bytes": 279179,
-      "title": "Tonbo Imaging India IPO Date, Price, GMP, Review, Details",
+      "bytes": 252294,
+      "title": "Paras Healthcare IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
