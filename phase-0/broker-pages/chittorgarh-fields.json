@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-14T15:48:47.631Z",
+  "captured_at_utc": "2026-10-14T22:16:16.497Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 128014,
+      "bytes": 129605,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 153063,
+      "bytes": 153484,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/paras-healthcare-ipo/2256/",
       "mode": "static",
       "status": 200,
-      "bytes": 252294,
+      "bytes": 252468,
       "title": "Paras Healthcare IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
