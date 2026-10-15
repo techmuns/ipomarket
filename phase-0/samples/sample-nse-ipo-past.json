@@ -1,23 +1,13 @@
 [
   {
-    "companyName": "Tonbo Imaging India Limited",
+    "companyName": "Bonfiglioli Transmissions Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.665 to Rs.700",
-    "issueSize": "8526033",
+    "issuePrice": "Rs.558 to Rs.586",
+    "issueSize": "30282330",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "TONBO"
-  },
-  {
-    "companyName": "Sahajanand Medical Technologies Limited",
-    "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.327 to Rs.344",
-    "issueSize": "9750482",
-    "issueStartDate": "15-Oct-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SMT"
+    "symbol": "BONFIG"
   },
   {
     "companyName": "Zetwerk Manufacturing Businesses Limited",
@@ -30,14 +20,24 @@
     "symbol": "ZETWERK"
   },
   {
-    "companyName": "Bonfiglioli Transmissions Limited",
+    "companyName": "Sahajanand Medical Technologies Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.558 to Rs.586",
-    "issueSize": "30282330",
+    "issuePrice": "Rs.327 to Rs.344",
+    "issueSize": "9750482",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "BONFIG"
+    "symbol": "SMT"
+  },
+  {
+    "companyName": "Tonbo Imaging India Limited",
+    "issueEndDate": "19-Oct-2026",
+    "issuePrice": "Rs.665 to Rs.700",
+    "issueSize": "8526033",
+    "issueStartDate": "15-Oct-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TONBO"
   },
   {
     "companyName": "Fusion CX Limited",
@@ -56,7 +56,17 @@
     "issueSize": "18420492",
     "issueStartDate": "13-Oct-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "HDFIRE"
+  },
+  {
+    "companyName": "Jio Platforms Limited",
+    "issueEndDate": "23-Oct-2026",
+    "issuePrice": "Rs.1065 to Rs.1119",
+    "issueSize": "270000000",
+    "issueStartDate": "21-Oct-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "JPL"
   }
 ]

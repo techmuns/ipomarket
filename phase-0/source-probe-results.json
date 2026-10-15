@@ -23,7 +23,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"companyName\": \"Tonbo Imaging India Limited\",\n  \"issueEndDate\": \"19-Oct-2026\",\n  \"issuePrice\": \"Rs.665 to Rs.700\",\n  \"issueSize\": \"8526033\",\n  \"issueStartDate\": \"15-Oct-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"TONBO\"\n}",
+    "sample_record": "{\n  \"companyName\": \"Bonfiglioli Transmissions Limited\",\n  \"issueEndDate\": \"19-Oct-2026\",\n  \"issuePrice\": \"Rs.558 to Rs.586\",\n  \"issueSize\": \"30282330\",\n  \"issueStartDate\": \"15-Oct-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"BONFIG\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -31,9 +31,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary source for Live & Upcoming tab.",
     "fallback_source": "P-06",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 630,
-    "notes": "Total rows: 6, Active rows: 6"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 364,
+    "notes": "Total rows: 7, Active rows: 5"
   },
   {
     "probe_id": "P-02",
@@ -59,7 +59,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"companyName\": \"Tonbo Imaging India Limited\",\n  \"issueEndDate\": \"19-Oct-2026\",\n  \"issuePrice\": \"Rs.665 to Rs.700\",\n  \"issueSize\": \"8526033\",\n  \"issueStartDate\": \"15-Oct-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"TONBO\"\n}",
+    "sample_record": "{\n  \"companyName\": \"Bonfiglioli Transmissions Limited\",\n  \"issueEndDate\": \"19-Oct-2026\",\n  \"issuePrice\": \"Rs.558 to Rs.586\",\n  \"issueSize\": \"30282330\",\n  \"issueStartDate\": \"15-Oct-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"BONFIG\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -67,9 +67,9 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Upcoming/Pipeline tab.",
     "fallback_source": "P-08b",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 43,
-    "notes": "Total rows: 6, Forthcoming/upcoming rows: 0"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 102,
+    "notes": "Total rows: 7, Forthcoming/upcoming rows: 1"
   },
   {
     "probe_id": "P-03",
@@ -97,7 +97,7 @@
     "fields_missing": [
       "listingDate"
     ],
-    "sample_record": "{\n  \"companyName\": \"Tonbo Imaging India Limited\",\n  \"issueEndDate\": \"19-Oct-2026\",\n  \"issuePrice\": \"Rs.665 to Rs.700\",\n  \"issueSize\": \"8526033\",\n  \"issueStartDate\": \"15-Oct-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"TONBO\"\n}",
+    "sample_record": "{\n  \"companyName\": \"Bonfiglioli Transmissions Limited\",\n  \"issueEndDate\": \"19-Oct-2026\",\n  \"issuePrice\": \"Rs.558 to Rs.586\",\n  \"issueSize\": \"30282330\",\n  \"issueStartDate\": \"15-Oct-2026\",\n  \"series\": \"EQ\",\n  \"status\": \"Active\",\n  \"symbol\": \"BONFIG\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -105,14 +105,14 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Recently Listed.",
     "fallback_source": "P-15",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 45,
-    "notes": "Total rows: 6, Past/closed/listed rows: 0"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 79,
+    "notes": "Total rows: 7, Past/closed/listed rows: 1"
   },
   {
     "probe_id": "P-04",
     "source": "NSE — Live Subscription",
-    "url_or_endpoint": "https://www.nseindia.com/api/ipo-current-issue?symbol=TONBO",
+    "url_or_endpoint": "https://www.nseindia.com/api/ipo-current-issue?symbol=BONFIG",
     "fetch_method": "GET (after cookie warm-up + active-symbol discovery from P-01 endpoint)",
     "headers_or_cookies_required": [
       "User-Agent",
@@ -131,7 +131,7 @@
       "anchor",
       "subscription"
     ],
-    "sample_record": "[\n  {\n    \"companyName\": \"Tonbo Imaging India Limited\",\n    \"issueEndDate\": \"19-Oct-2026\",\n    \"issuePrice\": \"Rs.665 to Rs.700\",\n    \"issueSize\": \"8526033\",\n    \"issueStartDate\": \"15-Oct-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"TONBO\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"8526033.0\",\n    \"noOfTime\": \"2.6147755937608967\",\n    \"noOfsharesBid\": \"2.2293663E7\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Sahajanand Medical Technologies Limited\",\n    \"issueEndDate\": \"19-Oct-2026\",\n    \"issuePrice\": \"Rs.327 to Rs.344\",\n    \"issueSize\": \"9750482\",\n    \"issueStartDate\": \"15-Oct-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"SMT\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"9750482.0\",\n    \"noOfTime\": \"0.1343474096972847\",\n    \"noOfs…[truncated, total 3167 chars]",
+    "sample_record": "[\n  {\n    \"companyName\": \"Bonfiglioli Transmissions Limited\",\n    \"issueEndDate\": \"19-Oct-2026\",\n    \"issuePrice\": \"Rs.558 to Rs.586\",\n    \"issueSize\": \"30282330\",\n    \"issueStartDate\": \"15-Oct-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"BONFIG\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"3.028233E7\",\n    \"noOfTime\": \"0.34321748029296295\",\n    \"noOfsharesBid\": \"1.0393425E7\",\n    \"srNo\": null\n  },\n  {\n    \"companyName\": \"Zetwerk Manufacturing Businesses Limited\",\n    \"issueEndDate\": \"19-Oct-2026\",\n    \"issuePrice\": \"Rs.143 to Rs.151\",\n    \"issueSize\": \"185066845\",\n    \"issueStartDate\": \"15-Oct-2026\",\n    \"series\": \"EQ\",\n    \"status\": \"Active\",\n    \"symbol\": \"ZETWERK\",\n    \"category\": \"Total\",\n    \"noOfSharesOffered\": \"1.85066845E8\",\n    \"noOfTime\": \"0.136498436…[truncated, total 2440 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -139,9 +139,9 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE bidding (P-07).",
     "fallback_source": "P-07",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 584,
-    "notes": "Active candidate symbol: TONBO · Top-level keys: 0, 1, 2, 3, 4, 5, 6, 7"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 402,
+    "notes": "Active candidate symbol: BONFIG · Top-level keys: 0, 1, 2, 3, 4, 5"
   },
   {
     "probe_id": "P-05",
@@ -168,8 +168,8 @@
     "status": "YELLOW",
     "recommended_action": "Source reachable; 0 SME rows in current snapshot.",
     "fallback_source": "P-06b",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 1582,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 1207,
     "notes": "[nse-api-category-sme] JSON ok: rows=0 ; [nse-api-category-sme-ipo] JSON ok: rows=0 ; [nse-www1-legacy] non-ok: status=0, err=fetch failed"
   },
   {
@@ -197,8 +197,8 @@
     "status": "GREEN",
     "recommended_action": "Use as primary for Pipeline tab + DRHP master.",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 2188,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 4539,
     "notes": "[static-primary] static ok: tr=0, bytes=6035 (pdfs=0) ; [static-alt] static ok: tr=26, bytes=47137 (pdfs=21)"
   },
   {
@@ -225,8 +225,8 @@
     "status": "YELLOW",
     "recommended_action": "Endpoint reachable; show \"no observations today\" in Pipeline tab when empty.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 411,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 555,
     "notes": "static ok: tbody_rows=3, bytes=25899"
   },
   {
@@ -254,27 +254,27 @@
     "status": "GREEN",
     "recommended_action": "PDF download pipeline viable; proceed to Phase 5 RHP parsing (P-17).",
     "fallback_source": "P-10",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 3029,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 3423,
     "notes": "discovery=sebi-publicissues-pdfs.json; pdf_url=ct-2026/Paramotor%20Digital%20Technology%20Limited_DAP_p.pdf; bytes=616869; page_count=14; pdf-parse=ok"
   },
   {
     "probe_id": "P-10",
     "source": "NSE/BSE — DRHP Archive",
-    "url_or_endpoint": "https://www.bsesme.com/PublicIssues/SMEIPODRHP.aspx",
+    "url_or_endpoint": "https://www.bseindia.com/markets/PublicIssues/DRHP.aspx",
     "fetch_method": "GET (primary, then secondary)",
     "headers_or_cookies_required": [
       "User-Agent",
       "Referer"
     ],
-    "status_code": 0,
-    "response_type": "ERROR",
+    "status_code": 200,
+    "response_type": "HTML",
     "fields_found": [],
     "fields_missing": [
       "rows",
       "pdf links"
     ],
-    "sample_record": "",
+    "sample_record": "<!DOCTYPE html><html lang=\"en\" data-critters-container=\"\"><head>\n    <meta charset=\"utf-8\">\n    <title>\n      LIVE Stock/Share Market | Indian Stock/Share Market LIVE | BSE SENSEX | BSE (formerly Bombay Stock\n      Exchange)\n    </title>\n    <meta name=\"description\" content=\"BSE SENSEX - India's Index the World Tracks. Get live BSE SENSEX quotes. BSE Sensex Heat Map a great tool to track BSE SENSEX stocks. Gainers, losers, volume toppers in BSE SENSEX Stocks. Corporate announcements of BSE SENSEX stocks, Share Market Today | Share Market Live updates. Share Market Live Charts, News, Analysis, IPO News and more. Click here to stay updated and invest wisely!Get all the latest share market and India stock market news and updates on bseindia.com\">\n    <meta name=\"keywords\" content=\"BSE SENSEX,…[truncated, total 14287 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -282,9 +282,9 @@
     "status": "RED",
     "recommended_action": "Skip if SEBI (P-08) is GREEN.",
     "fallback_source": "P-08",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 35399,
-    "notes": "primary status=0; secondary status=0; rows=0; pdf-refs=0"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 11245,
+    "notes": "primary status=200; secondary status=0; rows=0; pdf-refs=0"
   },
   {
     "probe_id": "P-15",
@@ -302,7 +302,7 @@
     "fields_missing": [
       "OHLC rows"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;api&#46;bseindia&#46;com&#47;BseIndiaAPI&#47;api&#47;StockReachGraph&#47;w&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;ad25c017&#46;1792078552&#46;11557d53\n…[truncated, total 420 chars]",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;api&#46;bseindia&#46;com&#47;BseIndiaAPI&#47;api&#47;StockReachGraph&#47;w&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;a3f50f17&#46;1792102407&#46;2de6c3b6\n…[truncated, total 420 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -310,9 +310,9 @@
     "status": "RED",
     "recommended_action": "All historical attempts failed; Module 4 (Recently Listed) and Best/Worst leaderboards must defer to v1.5.",
     "fallback_source": "P-15b (current quote only)",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 6189,
-    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22098 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22098 chars] ; [bse:RELIANCE] BSE non-200 (status=403, err=) ; [bse:TCS] BSE non-200 (status=403, err=)"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 3718,
+    "notes": "[nse:RELIANCE] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22097 chars] ; [nse:TCS] NSE JSON parse failed: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON; body starts: \n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta content=\"noindex, nofollow\" name=…[truncated, total 22097 chars] ; [bse:RELIANCE] BSE non-200 (status=403, err=) ; [bse:TCS] BSE non-200 (status=403, err=)"
   },
   {
     "probe_id": "P-15b",
@@ -331,7 +331,7 @@
     "fields_missing": [
       "priceInfo"
     ],
-    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;e9b219b8&#46;1792078552&#46;42981002\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;e9b219b8&#46;1792078552&#46;42981002</P>\n</BODY>\n</HTML>\n",
+    "sample_record": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on this server.<P>\nReference&#32;&#35;18&#46;73cfdb17&#46;1792102407&#46;38d58b21\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;73cfdb17&#46;1792102407&#46;38d58b21</P>\n</BODY>\n</HTML>\n",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -339,8 +339,8 @@
     "status": "RED",
     "recommended_action": "Fall back to BSE quote.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 72,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 61,
     "notes": "Non-200. First bytes: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nseindia&#46;com&#47;api&#47;quote&#45;equity&#63;\" on …[truncated, total 399 chars]"
   },
   {
@@ -359,7 +359,7 @@
       "symbol"
     ],
     "fields_missing": [],
-    "sample_record": "{\n  \"Tonbo Imaging India Limited\": \"TONBO\",\n  \"Sahajanand Medical Technologies Limited\": \"SMT\",\n  \"Zetwerk Manufacturing Businesses Limited\": \"ZETWERK\",\n  \"Bonfiglioli Transmissions Limited\": \"BONFIG\",\n  \"Fusion CX Limited\": \"FUSIONCX\",\n  \"HD Fire Protect Limited\": \"HDFIRE\"\n}",
+    "sample_record": "{\n  \"Bonfiglioli Transmissions Limited\": \"BONFIG\",\n  \"Zetwerk Manufacturing Businesses Limited\": \"ZETWERK\",\n  \"Sahajanand Medical Technologies Limited\": \"SMT\",\n  \"Tonbo Imaging India Limited\": \"TONBO\",\n  \"Fusion CX Limited\": \"FUSIONCX\",\n  \"HD Fire Protect Limited\": \"HDFIRE\",\n  \"Jio Platforms Limited\": \"JPL\"\n}",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -367,9 +367,9 @@
     "status": "GREEN",
     "recommended_action": "Deterministic mapping; no manual override file needed for v1.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 55,
-    "notes": "total=6, validSymbolPattern=6, rate=100%"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 262,
+    "notes": "total=7, validSymbolPattern=7, rate=100%"
   },
   {
     "probe_id": "P-06",
@@ -394,8 +394,8 @@
     "status": "RED",
     "recommended_action": "Skip; NSE primary covers this.",
     "fallback_source": "P-01",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 20801,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 668,
     "notes": "<tr> count: 0, total bytes: 14287"
   },
   {
@@ -421,7 +421,7 @@
     "status": "RED",
     "recommended_action": "Skip if NSE Emerge is GREEN.",
     "fallback_source": "P-05",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
     "latency_ms": 10487,
     "notes": "Network error: fetch failed"
   },
@@ -448,8 +448,8 @@
     "status": "RED",
     "recommended_action": "Rely on NSE only (P-04).",
     "fallback_source": "P-04",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 20412,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 385,
     "notes": "Bid-link markers found: 0, bytes: 14287"
   },
   {
@@ -468,7 +468,7 @@
     "fields_missing": [
       "registrar field"
     ],
-    "sample_record": "{\n  \"Tonbo Imaging India Limited\": null,\n  \"Sahajanand Medical Technologies Limited\": null,\n  \"Zetwerk Manufacturing Businesses Limited\": null,\n  \"Bonfiglioli Transmissions Limited\": null,\n  \"Fusion CX Limited\": null,\n  \"HD Fire Protect Limited\": null\n}",
+    "sample_record": "{\n  \"Bonfiglioli Transmissions Limited\": null,\n  \"Zetwerk Manufacturing Businesses Limited\": null,\n  \"Sahajanand Medical Technologies Limited\": null,\n  \"Tonbo Imaging India Limited\": null,\n  \"Fusion CX Limited\": null,\n  \"HD Fire Protect Limited\": null,\n  \"Jio Platforms Limited\": null\n}",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "Medium",
     "legal_tos_risk": "Low",
@@ -476,9 +476,9 @@
     "status": "RED",
     "recommended_action": "Fall back to per-issue page scrape or manual seed.",
     "fallback_source": "P-12",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 430,
-    "notes": "Issues=6, registrars resolved by name match=0"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 255,
+    "notes": "Issues=7, registrars resolved by name match=0"
   },
   {
     "probe_id": "P-12",
@@ -494,7 +494,7 @@
       "landing page reachable"
     ],
     "fields_missing": [],
-    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37481 chars]",
+    "sample_record": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta name=\"description\" content=\"Link Intime\" />\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<link rel=\"icon\" type=\"image/png\" href=\"ima…[truncated, total 37480 chars]",
     "parsing_difficulty": "Easy",
     "anti_bot_risk": "Low",
     "legal_tos_risk": "Low",
@@ -502,8 +502,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out; do not scrape per-PAN.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 640,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 516,
     "notes": "primary=200, legacy=(skipped)"
   },
   {
@@ -528,8 +528,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 142,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 124,
     "notes": "primary=200, secondary=(skipped)"
   },
   {
@@ -554,8 +554,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 1056,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 1196,
     "notes": "status=200"
   },
   {
@@ -580,8 +580,8 @@
     "status": "GREEN",
     "recommended_action": "Store URL as link-out only.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 852,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 815,
     "notes": "status=200"
   },
   {
@@ -604,8 +604,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 994,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 1878,
     "notes": "No PDF URL discovered."
   },
   {
@@ -628,8 +628,8 @@
     "status": "YELLOW",
     "recommended_action": "PDF discovery selector may have drifted.",
     "fallback_source": "manual",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 250,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 263,
     "notes": "No PDF URL discovered."
   },
   {
@@ -647,7 +647,7 @@
     "fields_missing": [
       "gmp table"
     ],
-    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-lydcXxRIoxM76R60vBhNZ3&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5827 chars]",
+    "sample_record": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-X1CpEUBJzuqKyKVm7BUOng&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s…[truncated, total 5827 chars]",
     "parsing_difficulty": "Medium",
     "anti_bot_risk": "High",
     "legal_tos_risk": "Medium",
@@ -655,7 +655,7 @@
     "status": "RED",
     "recommended_action": "Skip; phase-6 feature flag stays off if all GMP probes fail.",
     "fallback_source": "P-20",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
     "latency_ms": 101,
     "notes": "Non-200 (Cloudflare expected). status=403"
   },
@@ -682,8 +682,8 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "P-21",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 1583,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 1267,
     "notes": "<tr> count: 0, bytes=103117"
   },
   {
@@ -709,8 +709,8 @@
     "status": "RED",
     "recommended_action": "Skip.",
     "fallback_source": "P-22",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 481,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 369,
     "notes": "<tr> count: 0, bytes=525831"
   },
   {
@@ -736,8 +736,8 @@
     "status": "RED",
     "recommended_action": "Skip; Phase 6 stays off if all GMP probes fail.",
     "fallback_source": "none",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 174,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 287,
     "notes": "<tr> count: 0, bytes=49270"
   },
   {
@@ -779,8 +779,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 4905,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 4300,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=39921 | rendered_len=40740 | challenge=false | headings=18 | tables=4 | doc_links=3 | labels=17"
   },
   {
@@ -821,9 +821,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 5846,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=339212 | rendered_len=402338 | challenge=false | headings=26 | tables=2 | doc_links=9 | labels=16"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 6799,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=339212 | rendered_len=400500 | challenge=false | headings=26 | tables=2 | doc_links=9 | labels=16"
   },
   {
     "probe_id": "P-24",
@@ -849,9 +849,9 @@
     "status": "RED",
     "recommended_action": "Sector unreachable from probed endpoints; manual sector-map.json required for v1.",
     "fallback_source": "phase-0/samples/sector-manual-map.json (curated)",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 999,
-    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 6 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=14287"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 327,
+    "notes": "[NSE equity quote] NSE non-200 (status=403, err=); body starts: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n …[truncated, total 399 chars] ; [NSE IPO list] 7 IPOs; per-row keys: companyName, issueEndDate, issuePrice, issueSize, issueStartDate, series, status, symbol; sector fields: (none) ; [BSE IPO list] BSE HTML; sector-related words found: (none); bytes=14287"
   },
   {
     "probe_id": "P-25",
@@ -880,9 +880,9 @@
     "status": "GREEN",
     "recommended_action": "Run P-26 to evaluate field extraction precision against the captured HTML (detail_discovery_source=static).",
     "fallback_source": "P-26 (field extraction off captured HTML)",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 1998,
-    "notes": "mainboard: static status=200 bytes=129605 | sme: static status=200 bytes=153484 | detail_urls_discovered=55 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=263793 | detail-2: static status=200 bytes=271561 | challenges_detected=false"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 185,
+    "notes": "mainboard: static status=200 bytes=129575 | sme: static status=200 bytes=153454 | detail_urls_discovered=55 | detail_discovery_source=static | detail_urls_picked=2 | detail-1: static status=200 bytes=263793 | detail-2: static status=200 bytes=271561 | challenges_detected=false"
   },
   {
     "probe_id": "P-26",
@@ -924,8 +924,8 @@
     "status": "RED",
     "recommended_action": "Extraction precision below the §Y.9.1 threshold. Per the Phase 5C.3 acceptance gate, recommend NO for Chittorgarh ingestion and keep it reference-only / manual.",
     "fallback_source": "P-25 (re-run to refresh HTML)",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 11,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 16,
     "notes": "details_extracted=2 | avg_precision=0.500 | official_pdf_links_on_allowlist=0 | official_pdf_links_off_allowlist=1 | d1: main=63355b tables=11 rows=63 | d2: main=66222b tables=12 rows=68"
   },
   {
@@ -967,8 +967,8 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 3539,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 3530,
     "notes": "final_url=https://zerodha.com/ipo/440359/nfp-sampoorna-foods/ | title=NFP Sampoorna Foods IPO: Check IPO date, Price range & Lot size | render_mode=server-rendered | raw_len=39921 | rendered_len=40740 | challenge=false | headings=18 | tables=4 | doc_links=3 | labels=17"
   },
   {
@@ -1009,9 +1009,9 @@
     "status": "GREEN",
     "recommended_action": "Use as information-architecture benchmark only. Do NOT scrape for production data.",
     "fallback_source": "Screenshots / PDF exports of the broker page provided by user",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 4719,
-    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=339212 | rendered_len=400941 | challenge=false | headings=26 | tables=2 | doc_links=9 | labels=16"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 6470,
+    "notes": "final_url=https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/ | title=Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotmen | render_mode=server-rendered | raw_len=339212 | rendered_len=402341 | challenge=false | headings=26 | tables=2 | doc_links=9 | labels=16"
   },
   {
     "probe_id": "P-25b",
@@ -1039,9 +1039,9 @@
     "status": "GREEN",
     "recommended_action": "All 3 detail pages captured cleanly. Run P-26b to evaluate per-field extraction precision.",
     "fallback_source": "P-26b (field extraction off captured HTML)",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 2933,
-    "notes": "third_ipo_status=current | third_ipo_slug=tonbo-imaging-india-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"15 - 19 Oct\" covers today\" | detail-1: static status=200 bytes=365056 | detail-2: static status=200 bytes=321336 | detail-3: static status=200 bytes=343318 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 2782,
+    "notes": "third_ipo_status=current | third_ipo_slug=tonbo-imaging-india-ipo | third_ipo_reason=\"current-open: list \"mainboard\" row date range \"15 - 19 Oct\" covers today\" | detail-1: static status=200 bytes=364960 | detail-2: static status=200 bytes=321293 | detail-3: static status=200 bytes=343318 | challenges_detected=false | robots_classification=allowed-prior-flag-was-over-match | robots_ipo_disallowed=false | robots: robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   {
     "probe_id": "P-26b",
@@ -1096,8 +1096,8 @@
     "status": "GREEN",
     "recommended_action": "Precision met (full=0.85 narrow=1.00). Ready for Phase 6A.2 planning approval.",
     "fallback_source": "P-25b (re-run to refresh HTML)",
-    "ran_at_utc": "2026-10-15T15:35:01.344Z",
-    "latency_ms": 18,
+    "ran_at_utc": "2026-10-15T22:13:01.364Z",
+    "latency_ms": 28,
     "notes": "details_extracted=3 | avg_full=0.848 | avg_narrow=1.000 | pdf_on_allowlist=2 | pdf_off_allowlist=1 | third_ipo=tonbo-imaging-india-ipo(current) | d1:onemi-technology-ipo full=0.91 narrow=1.00 | d2:bagmane-reit full=0.82 narrow=1.00 | d3:tonbo-imaging-india-ipo full=0.82 narrow=1.00"
   }
 ]

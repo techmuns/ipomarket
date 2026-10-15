@@ -1,32 +1,17 @@
 [
   {
-    "companyName": "Tonbo Imaging India Limited",
+    "companyName": "Bonfiglioli Transmissions Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.665 to Rs.700",
-    "issueSize": "8526033",
+    "issuePrice": "Rs.558 to Rs.586",
+    "issueSize": "30282330",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "TONBO",
+    "symbol": "BONFIG",
     "category": "Total",
-    "noOfSharesOffered": "8526033.0",
-    "noOfTime": "2.6147755937608967",
-    "noOfsharesBid": "2.2293663E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Sahajanand Medical Technologies Limited",
-    "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.327 to Rs.344",
-    "issueSize": "9750482",
-    "issueStartDate": "15-Oct-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SMT",
-    "category": "Total",
-    "noOfSharesOffered": "9750482.0",
-    "noOfTime": "0.1343474096972847",
-    "noOfsharesBid": "1309952.0",
+    "noOfSharesOffered": "3.028233E7",
+    "noOfTime": "0.34321748029296295",
+    "noOfsharesBid": "1.0393425E7",
     "srNo": null
   },
   {
@@ -45,18 +30,33 @@
     "srNo": null
   },
   {
-    "companyName": "Bonfiglioli Transmissions Limited",
+    "companyName": "Sahajanand Medical Technologies Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.558 to Rs.586",
-    "issueSize": "30282330",
+    "issuePrice": "Rs.327 to Rs.344",
+    "issueSize": "9750482",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "BONFIG",
+    "symbol": "SMT",
     "category": "Total",
-    "noOfSharesOffered": "3.028233E7",
-    "noOfTime": "0.34321748029296295",
-    "noOfsharesBid": "1.0393425E7",
+    "noOfSharesOffered": "9750482.0",
+    "noOfTime": "0.1343474096972847",
+    "noOfsharesBid": "1309952.0",
+    "srNo": null
+  },
+  {
+    "companyName": "Tonbo Imaging India Limited",
+    "issueEndDate": "19-Oct-2026",
+    "issuePrice": "Rs.665 to Rs.700",
+    "issueSize": "8526033",
+    "issueStartDate": "15-Oct-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TONBO",
+    "category": "Total",
+    "noOfSharesOffered": "8526033.0",
+    "noOfTime": "2.6147755937608967",
+    "noOfsharesBid": "2.2293663E7",
     "srNo": null
   },
   {
@@ -75,21 +75,6 @@
     "srNo": null
   },
   {
-    "companyName": "HD Fire Protect Limited",
-    "issueEndDate": "15-Oct-2026",
-    "issuePrice": "Rs.258 to Rs.271",
-    "issueSize": "18420492",
-    "issueStartDate": "13-Oct-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "HDFIRE",
-    "category": "Total",
-    "noOfSharesOffered": "1.8420492E7",
-    "noOfTime": "82.41370425936506",
-    "noOfsharesBid": "1.51810098E9",
-    "srNo": null
-  },
-  {
     "companyName": "Ravita Engineering Services Limited",
     "isBse": "1",
     "issueEndDate": "16-Oct-2026",
@@ -100,17 +85,5 @@
     "noOfsharesBid": "12010800",
     "noOfSharesOffered": "7413600",
     "noOfTime": "1.62"
-  },
-  {
-    "companyName": "Vaibhav Vyapaar Limited",
-    "isBse": "1",
-    "issueEndDate": "15-Oct-2026",
-    "issueStartDate": "13-Oct-2026",
-    "series": "SME",
-    "status": "Active",
-    "symbol": "LOANFRONT",
-    "noOfsharesBid": "17212000",
-    "noOfSharesOffered": "5596000",
-    "noOfTime": "3.08"
   }
 ]
