@@ -1,12 +1,12 @@
 {
-  "captured_at_utc": "2026-10-14T22:16:16.497Z",
+  "captured_at_utc": "2026-10-15T08:13:29.835Z",
   "url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "final_url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "status": 200,
   "title": "Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotment | Upstox",
   "render_mode": "server-rendered",
   "raw_html_length": 339212,
-  "rendered_html_length": 402621,
+  "rendered_html_length": 402559,
   "challenge_detected": false,
   "challenge_reasons": [],
   "headings": [
@@ -83,8 +83,8 @@
   ],
   "doc_links": [
     {
-      "text": "Fusion CX IPO subscribed 11% so far on Day 1: Check anchor allocation, price band, lot size and key details3 min read",
-      "href": "https://upstox.com/news/market-news/ipo/fusion-cx-ipo-day-1-check-subscription-status-anchor-allocation-price-band-lot-size-and-key-details/article-201798/"
+      "text": "HD Fire Protect IPO subscribed 36.44 times so far on Day 3: Check allotment date and steps2 min read",
+      "href": "https://upstox.com/news/market-news/ipo/hd-fire-protect-ipo-day-3-check-subscription-status-allotment-date-and-steps/article-201878/"
     },
     {
       "text": "Derivatives",
@@ -130,7 +130,6 @@
     "QIB",
     "NII",
     "Retail",
-    "Anchor",
     "P/E",
     "Revenue",
     "PAT",

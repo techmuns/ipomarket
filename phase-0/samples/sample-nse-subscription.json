@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "TONBO",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "8526033.0",
+    "noOfTime": "1.7416582835182552",
+    "noOfsharesBid": "1.4849436E7",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "SMT",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "9750482.0",
+    "noOfTime": "0.07404454466968916",
+    "noOfsharesBid": "721970.0",
     "srNo": null
   },
   {
@@ -39,9 +39,9 @@
     "status": "Active",
     "symbol": "ZETWERK",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.85066845E8",
+    "noOfTime": "0.024487498017270463",
+    "noOfsharesBid": "4531824.0",
     "srNo": null
   },
   {
@@ -54,9 +54,9 @@
     "status": "Active",
     "symbol": "BONFIG",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "3.028233E7",
+    "noOfTime": "0.19768541588444483",
+    "noOfsharesBid": "5986375.0",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "FUSIONCX",
     "category": "Total",
     "noOfSharesOffered": "1.404E7",
-    "noOfTime": "0.29716944444444443",
-    "noOfsharesBid": "4172259.0",
+    "noOfTime": "0.5914038461538461",
+    "noOfsharesBid": "8303310.0",
     "srNo": null
   },
   {
@@ -85,8 +85,8 @@
     "symbol": "HDFIRE",
     "category": "Total",
     "noOfSharesOffered": "1.8420492E7",
-    "noOfTime": "11.009213000391085",
-    "noOfsharesBid": "2.0279512E8",
+    "noOfTime": "28.724105469061303",
+    "noOfsharesBid": "5.29112155E8",
     "srNo": null
   },
   {
@@ -97,9 +97,9 @@
     "series": "SME",
     "status": "Active",
     "symbol": "RAVITA",
-    "noOfsharesBid": "7818000",
+    "noOfsharesBid": "10314000",
     "noOfSharesOffered": "7413600",
-    "noOfTime": "1.05"
+    "noOfTime": "1.39"
   },
   {
     "companyName": "Vaibhav Vyapaar Limited",
@@ -109,8 +109,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "LOANFRONT",
-    "noOfsharesBid": "2380000",
+    "noOfsharesBid": "7856000",
     "noOfSharesOffered": "5596000",
-    "noOfTime": "0.43"
+    "noOfTime": "1.40"
   }
 ]
