@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-15T22:13:01.364Z",
+  "captured_at_utc": "2026-10-16T08:06:18.095Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "mode": "static",
       "status": 200,
-      "bytes": 263793,
+      "bytes": 263794,
       "title": "Jio Platforms IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/paras-healthcare-ipo/2256/",
       "mode": "static",
       "status": 200,
-      "bytes": 271561,
+      "bytes": 271562,
       "title": "Paras Healthcare IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

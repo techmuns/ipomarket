@@ -10,8 +10,8 @@
     "symbol": "BONFIG",
     "category": "Total",
     "noOfSharesOffered": "3.028233E7",
-    "noOfTime": "0.34321748029296295",
-    "noOfsharesBid": "1.0393425E7",
+    "noOfTime": "0.5276137932583127",
+    "noOfsharesBid": "1.5977375E7",
     "srNo": null
   },
   {
@@ -25,8 +25,8 @@
     "symbol": "ZETWERK",
     "category": "Total",
     "noOfSharesOffered": "1.85066845E8",
-    "noOfTime": "0.13649843655139848",
-    "noOfsharesBid": "2.5261335E7",
+    "noOfTime": "0.15587830980746442",
+    "noOfsharesBid": "2.8847907E7",
     "srNo": null
   },
   {
@@ -40,8 +40,8 @@
     "symbol": "SMT",
     "category": "Total",
     "noOfSharesOffered": "9750482.0",
-    "noOfTime": "0.1343474096972847",
-    "noOfsharesBid": "1309952.0",
+    "noOfTime": "0.21495409150029712",
+    "noOfsharesBid": "2095906.0",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "TONBO",
     "category": "Total",
     "noOfSharesOffered": "8526033.0",
-    "noOfTime": "2.6147755937608967",
-    "noOfsharesBid": "2.2293663E7",
+    "noOfTime": "4.188998564748694",
+    "noOfsharesBid": "3.571554E7",
     "srNo": null
   },
   {
@@ -70,8 +70,8 @@
     "symbol": "FUSIONCX",
     "category": "Total",
     "noOfSharesOffered": "1.404E7",
-    "noOfTime": "0.8071004273504273",
-    "noOfsharesBid": "1.133169E7",
+    "noOfTime": "1.3504429487179488",
+    "noOfsharesBid": "1.8960219E7",
     "srNo": null
   },
   {
@@ -82,8 +82,8 @@
     "series": "SME",
     "status": "Active",
     "symbol": "RAVITA",
-    "noOfsharesBid": "12010800",
+    "noOfsharesBid": "20236800",
     "noOfSharesOffered": "7413600",
-    "noOfTime": "1.62"
+    "noOfTime": "2.73"
   }
 ]
