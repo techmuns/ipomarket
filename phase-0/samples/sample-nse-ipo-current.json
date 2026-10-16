@@ -1,13 +1,13 @@
 [
   {
-    "companyName": "Bonfiglioli Transmissions Limited",
+    "companyName": "Sahajanand Medical Technologies Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.558 to Rs.586",
-    "issueSize": "30282330",
+    "issuePrice": "Rs.327 to Rs.344",
+    "issueSize": "9750482",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "BONFIG"
+    "symbol": "SMT"
   },
   {
     "companyName": "Zetwerk Manufacturing Businesses Limited",
@@ -20,14 +20,14 @@
     "symbol": "ZETWERK"
   },
   {
-    "companyName": "Sahajanand Medical Technologies Limited",
+    "companyName": "Bonfiglioli Transmissions Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.327 to Rs.344",
-    "issueSize": "9750482",
+    "issuePrice": "Rs.558 to Rs.586",
+    "issueSize": "30282330",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "SMT"
+    "symbol": "BONFIG"
   },
   {
     "companyName": "Tonbo Imaging India Limited",
@@ -50,16 +50,6 @@
     "symbol": "FUSIONCX"
   },
   {
-    "companyName": "HD Fire Protect Limited",
-    "issueEndDate": "15-Oct-2026",
-    "issuePrice": "Rs.258 to Rs.271",
-    "issueSize": "18420492",
-    "issueStartDate": "13-Oct-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "HDFIRE"
-  },
-  {
     "companyName": "Jio Platforms Limited",
     "issueEndDate": "23-Oct-2026",
     "issuePrice": "Rs.1065 to Rs.1119",
@@ -68,5 +58,15 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "JPL"
+  },
+  {
+    "companyName": "Paras Healthcare Limited",
+    "issueEndDate": "23-Oct-2026",
+    "issuePrice": "Rs.660 to Rs.693",
+    "issueSize": "21969695",
+    "issueStartDate": "21-Oct-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "PARASHLTH"
   }
 ]
