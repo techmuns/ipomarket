@@ -1,17 +1,17 @@
 [
   {
-    "companyName": "Bonfiglioli Transmissions Limited",
+    "companyName": "Sahajanand Medical Technologies Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.558 to Rs.586",
-    "issueSize": "30282330",
+    "issuePrice": "Rs.327 to Rs.344",
+    "issueSize": "9750482",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "BONFIG",
+    "symbol": "SMT",
     "category": "Total",
-    "noOfSharesOffered": "3.028233E7",
-    "noOfTime": "0.5276137932583127",
-    "noOfsharesBid": "1.5977375E7",
+    "noOfSharesOffered": "9750482.0",
+    "noOfTime": "0.2817176627781068",
+    "noOfsharesBid": "2746883.0",
     "srNo": null
   },
   {
@@ -25,23 +25,23 @@
     "symbol": "ZETWERK",
     "category": "Total",
     "noOfSharesOffered": "1.85066845E8",
-    "noOfTime": "0.15587830980746442",
-    "noOfsharesBid": "2.8847907E7",
+    "noOfTime": "0.18804703781490412",
+    "noOfsharesBid": "3.4801272E7",
     "srNo": null
   },
   {
-    "companyName": "Sahajanand Medical Technologies Limited",
+    "companyName": "Bonfiglioli Transmissions Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.327 to Rs.344",
-    "issueSize": "9750482",
+    "issuePrice": "Rs.558 to Rs.586",
+    "issueSize": "30282330",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "SMT",
+    "symbol": "BONFIG",
     "category": "Total",
-    "noOfSharesOffered": "9750482.0",
-    "noOfTime": "0.21495409150029712",
-    "noOfsharesBid": "2095906.0",
+    "noOfSharesOffered": "3.028233E7",
+    "noOfTime": "0.7071277210175043",
+    "noOfsharesBid": "2.1413475E7",
     "srNo": null
   },
   {
@@ -55,8 +55,8 @@
     "symbol": "TONBO",
     "category": "Total",
     "noOfSharesOffered": "8526033.0",
-    "noOfTime": "4.188998564748694",
-    "noOfsharesBid": "3.571554E7",
+    "noOfTime": "5.200910904285733",
+    "noOfsharesBid": "4.4343138E7",
     "srNo": null
   },
   {
@@ -66,12 +66,12 @@
     "issueSize": "14040000",
     "issueStartDate": "14-Oct-2026",
     "series": "EQ",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "FUSIONCX",
     "category": "Total",
     "noOfSharesOffered": "1.404E7",
-    "noOfTime": "1.3504429487179488",
-    "noOfsharesBid": "1.8960219E7",
+    "noOfTime": "3.3267982905982905",
+    "noOfsharesBid": "4.6708248E7",
     "srNo": null
   },
   {
@@ -80,10 +80,10 @@
     "issueEndDate": "16-Oct-2026",
     "issueStartDate": "14-Oct-2026",
     "series": "SME",
-    "status": "Active",
+    "status": "Closed",
     "symbol": "RAVITA",
-    "noOfsharesBid": "20236800",
+    "noOfsharesBid": "49538400",
     "noOfSharesOffered": "7413600",
-    "noOfTime": "2.73"
+    "noOfTime": "6.68"
   }
 ]

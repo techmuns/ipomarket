@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-16T15:22:02.662Z",
+  "captured_at_utc": "2026-10-16T22:04:10.862Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 365902,
+      "bytes": 364694,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
       "mode": "static",
       "status": 200,
-      "bytes": 344401,
+      "bytes": 344400,
       "title": "Tonbo Imaging India IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

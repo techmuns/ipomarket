@@ -2,12 +2,12 @@
   "total": 7,
   "valid": 7,
   "examples": {
-    "Bonfiglioli Transmissions Limited": "BONFIG",
-    "Zetwerk Manufacturing Businesses Limited": "ZETWERK",
     "Sahajanand Medical Technologies Limited": "SMT",
+    "Zetwerk Manufacturing Businesses Limited": "ZETWERK",
+    "Bonfiglioli Transmissions Limited": "BONFIG",
     "Tonbo Imaging India Limited": "TONBO",
     "Fusion CX Limited": "FUSIONCX",
-    "HD Fire Protect Limited": "HDFIRE",
-    "Jio Platforms Limited": "JPL"
+    "Jio Platforms Limited": "JPL",
+    "Paras Healthcare Limited": "PARASHLTH"
   }
 }
