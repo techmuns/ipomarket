@@ -1,13 +1,13 @@
 [
   {
-    "companyName": "Bonfiglioli Transmissions Limited",
+    "companyName": "Sahajanand Medical Technologies Limited",
     "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.558 to Rs.586",
-    "issueSize": "30282330",
+    "issuePrice": "Rs.327 to Rs.344",
+    "issueSize": "9750482",
     "issueStartDate": "15-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "BONFIG"
+    "symbol": "SMT"
   },
   {
     "companyName": "Zetwerk Manufacturing Businesses Limited",
@@ -20,6 +20,16 @@
     "symbol": "ZETWERK"
   },
   {
+    "companyName": "Bonfiglioli Transmissions Limited",
+    "issueEndDate": "19-Oct-2026",
+    "issuePrice": "Rs.558 to Rs.586",
+    "issueSize": "30282330",
+    "issueStartDate": "15-Oct-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "BONFIG"
+  },
+  {
     "companyName": "Tonbo Imaging India Limited",
     "issueEndDate": "19-Oct-2026",
     "issuePrice": "Rs.665 to Rs.700",
@@ -28,16 +38,6 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "TONBO"
-  },
-  {
-    "companyName": "Sahajanand Medical Technologies Limited",
-    "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.327 to Rs.344",
-    "issueSize": "9750482",
-    "issueStartDate": "15-Oct-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "SMT"
   },
   {
     "companyName": "Fusion CX Limited",
@@ -58,5 +58,15 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "JPL"
+  },
+  {
+    "companyName": "Paras Healthcare Limited",
+    "issueEndDate": "23-Oct-2026",
+    "issuePrice": "Rs.660 to Rs.693",
+    "issueSize": "21969695",
+    "issueStartDate": "21-Oct-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "PARASHLTH"
   }
 ]
