@@ -1,5 +1,35 @@
 [
   {
+    "companyName": "Tonbo Imaging India Limited",
+    "issueEndDate": "19-Oct-2026",
+    "issuePrice": "Rs.665 to Rs.700",
+    "issueSize": "8526033",
+    "issueStartDate": "15-Oct-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "TONBO",
+    "category": "Total",
+    "noOfSharesOffered": "8526033.0",
+    "noOfTime": "5.200910904285733",
+    "noOfsharesBid": "4.4343138E7",
+    "srNo": null
+  },
+  {
+    "companyName": "Bonfiglioli Transmissions Limited",
+    "issueEndDate": "19-Oct-2026",
+    "issuePrice": "Rs.558 to Rs.586",
+    "issueSize": "30282330",
+    "issueStartDate": "15-Oct-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "BONFIG",
+    "category": "Total",
+    "noOfSharesOffered": "3.028233E7",
+    "noOfTime": "0.7071277210175043",
+    "noOfsharesBid": "2.1413475E7",
+    "srNo": null
+  },
+  {
     "companyName": "Sahajanand Medical Technologies Limited",
     "issueEndDate": "19-Oct-2026",
     "issuePrice": "Rs.327 to Rs.344",
@@ -28,62 +58,5 @@
     "noOfTime": "0.18804703781490412",
     "noOfsharesBid": "3.4801272E7",
     "srNo": null
-  },
-  {
-    "companyName": "Bonfiglioli Transmissions Limited",
-    "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.558 to Rs.586",
-    "issueSize": "30282330",
-    "issueStartDate": "15-Oct-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "BONFIG",
-    "category": "Total",
-    "noOfSharesOffered": "3.028233E7",
-    "noOfTime": "0.7071277210175043",
-    "noOfsharesBid": "2.1413475E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Tonbo Imaging India Limited",
-    "issueEndDate": "19-Oct-2026",
-    "issuePrice": "Rs.665 to Rs.700",
-    "issueSize": "8526033",
-    "issueStartDate": "15-Oct-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "TONBO",
-    "category": "Total",
-    "noOfSharesOffered": "8526033.0",
-    "noOfTime": "5.200910904285733",
-    "noOfsharesBid": "4.4343138E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Fusion CX Limited",
-    "issueEndDate": "16-Oct-2026",
-    "issuePrice": "Rs.275 to Rs.289",
-    "issueSize": "14040000",
-    "issueStartDate": "14-Oct-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "FUSIONCX",
-    "category": "Total",
-    "noOfSharesOffered": "1.404E7",
-    "noOfTime": "3.3267982905982905",
-    "noOfsharesBid": "4.6708248E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Ravita Engineering Services Limited",
-    "isBse": "1",
-    "issueEndDate": "16-Oct-2026",
-    "issueStartDate": "14-Oct-2026",
-    "series": "SME",
-    "status": "Closed",
-    "symbol": "RAVITA",
-    "noOfsharesBid": "49538400",
-    "noOfSharesOffered": "7413600",
-    "noOfTime": "6.68"
   }
 ]
