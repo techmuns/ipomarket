@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-17T21:25:37.239Z",
+  "captured_at_utc": "2026-10-18T07:58:20.251Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/paras-healthcare-ipo/2256/",
       "mode": "static",
       "status": 200,
-      "bytes": 271562,
+      "bytes": 270065,
       "title": "Paras Healthcare IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
