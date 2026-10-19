@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-10-18T21:28:27.233Z",
+  "generated_at_utc": "2026-10-19T08:46:21.892Z",
   "details_extracted": 3,
   "average_precision_ratio_full": 0.848,
   "average_precision_ratio_narrow": 1,
   "third_ipo_selection": {
     "slug": "tonbo-imaging-india-ipo",
     "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
-    "status": "current",
-    "reason": "current-open: list \"mainboard\" row date range \"15 - 19 Oct\" covers today",
+    "status": "fallback",
+    "reason": "fallback (no current-open found): most-recently-listed end date \"15 - 19 Oct\" from list \"mainboard\"",
     "date_text": "15 - 19 Oct",
     "source_list": "mainboard"
   },
@@ -20,7 +20,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.909,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 84805,
+      "main_content_bytes": 84735,
       "tables_parsed": 15,
       "table_rows_parsed": 104,
       "fields_high_confidence": [
@@ -54,7 +54,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 65055,
+      "main_content_bytes": 65043,
       "tables_parsed": 16,
       "table_rows_parsed": 73,
       "fields_high_confidence": [
@@ -88,7 +88,7 @@
       "found_count_narrow": 5,
       "precision_ratio_full": 0.818,
       "precision_ratio_narrow": 1,
-      "main_content_bytes": 73526,
+      "main_content_bytes": 73777,
       "tables_parsed": 13,
       "table_rows_parsed": 90,
       "fields_high_confidence": [

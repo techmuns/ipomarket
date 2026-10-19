@@ -1,12 +1,12 @@
 {
-  "captured_at_utc": "2026-10-18T21:28:27.233Z",
+  "captured_at_utc": "2026-10-19T08:46:21.892Z",
   "url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "final_url": "https://upstox.com/ipo/vegorama-punjabi-angithi-limited-ipo/",
   "status": 200,
   "title": "Vegorama Punjabi Angithi Limited IPO - Check IPO Date, Details, Price & Allotment | Upstox",
   "render_mode": "server-rendered",
   "raw_html_length": 339212,
-  "rendered_html_length": 402289,
+  "rendered_html_length": 402167,
   "challenge_detected": false,
   "challenge_reasons": [],
   "headings": [
@@ -83,12 +83,28 @@
   ],
   "doc_links": [
     {
-      "text": "New IPO Alert: Burma Burma operator Hunger Pangs files DRHP with SEBI2 min read",
-      "href": "https://upstox.com/news/market-news/ipo/new-ipo-alert-burma-burma-operator-hunger-pangs-files-drhp-with-sebi/article-202031/"
+      "text": "Jio Platforms IPO: RIL subsidiary gets ₹2.5 lakh crore demand for ₹8,110 crore anchor book3 min read",
+      "href": "https://upstox.com/news/market-news/ipo/jio-platforms-ipo-ril-subsidiary-gets-2-5-lakh-crore-demand-for-8-110-crore-anchor-book/article-202076/"
     },
     {
-      "text": "Fusion CX IPO subscribed 4.42 times so far on Day 3: Check allotment date and steps3 min read",
-      "href": "https://upstox.com/news/market-news/ipo/fusion-cx-ipo-day-3-check-subscription-status-allotment-date-and-steps/article-201959/"
+      "text": "Sahajanand Medical Technologies IPO subscribed 2.05 times so far on Day 3: Check allotment date2 min read",
+      "href": "https://upstox.com/news/market-news/ipo/sahajanand-medical-technologies-ipo-subscribed-2-05-times-so-far-on-day-3-check-allotment-date/article-202075/"
+    },
+    {
+      "text": "Zetwerk Manufacturing IPO fully subscribed on Day 3; check allotment date and steps3 min read",
+      "href": "https://upstox.com/news/market-news/ipo/zetwerk-manufacturing-ipo-subscribed-52-so-far-on-day-3-check-allotment-date-and-steps/article-202064/"
+    },
+    {
+      "text": "Bonfiglioli Transmissions IPO subscribed 2.91 times so far on Day 3: Check allotment date and steps2 min read",
+      "href": "https://upstox.com/news/market-news/ipo/bonfiglioli-transmissions-ipo-day-3-check-subscription-status-allotment-date-and-steps/article-202052/"
+    },
+    {
+      "text": "Tonbo Imaging India IPO Day 3: Check subscription status, allotment date and steps2 min read",
+      "href": "https://upstox.com/news/market-news/ipo/tonbo-imaging-india-ipo-day-3-check-subscription-status-allotment-date-and-steps/article-202047/"
+    },
+    {
+      "text": "Fusion CX IPO allotment: How to check status online on NSE, BSE, KFin Technologies; listing date, time here3 min read",
+      "href": "https://upstox.com/news/market-news/ipo/fusion-cx-ipo-allotment-how-to-check-status-online-on-nse-bse-k-fin-technologies-listing-date-time-here/article-202042/"
     },
     {
       "text": "Derivatives",
@@ -134,6 +150,7 @@
     "QIB",
     "NII",
     "Retail",
+    "Anchor",
     "P/E",
     "Revenue",
     "PAT",
