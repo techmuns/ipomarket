@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-19T17:27:18.107Z",
+  "captured_at_utc": "2026-10-19T22:54:07.840Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 364323,
+      "bytes": 364587,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 322312,
+      "bytes": 321334,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
       "mode": "static",
       "status": 200,
-      "bytes": 344850,
+      "bytes": 362794,
       "title": "Tonbo Imaging India IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
