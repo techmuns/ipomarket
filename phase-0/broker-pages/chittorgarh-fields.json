@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-19T08:46:21.892Z",
+  "captured_at_utc": "2026-10-19T17:27:18.107Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 130448,
+      "bytes": 130458,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 154280,
+      "bytes": 154290,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
       "mode": "static",
       "status": 200,
-      "bytes": 251071,
+      "bytes": 251372,
       "title": "BLS Polymers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "mode": "static",
       "status": 200,
-      "bytes": 278398,
+      "bytes": 277493,
       "title": "Jio Platforms IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
