@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-19T22:54:07.840Z",
+  "captured_at_utc": "2026-10-20T08:27:07.418Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 128770,
+      "bytes": 130331,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,8 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
+    "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
+    "https://www.chittorgarh.com/ipo/eaaa-india-alternatives-ipo/2061/",
     "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
     "https://www.chittorgarh.com/ipo/paras-healthcare-ipo/2256/",
     "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
@@ -45,9 +47,7 @@
     "https://www.chittorgarh.com/ipo/orient-cables-ipo/2532/",
     "https://www.chittorgarh.com/ipo/german-green-steel-and-power-ipo/2497/",
     "https://www.chittorgarh.com/ipo/runwal-enterprises-ipo/2298/",
-    "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/",
-    "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/",
-    "https://www.chittorgarh.com/ipo/adroit-industries-ipo/3007/"
+    "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
+      "url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
       "segment_guess": "unknown"
     }
   ],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
       "mode": "static",
       "status": 200,
-      "bytes": 251373,
+      "bytes": 251426,
       "title": "BLS Polymers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
+      "url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
       "mode": "static",
       "status": 200,
-      "bytes": 482058,
-      "title": "Jio Platforms IPO Date, Price, GMP, Review, Details",
+      "bytes": 246629,
+      "title": "SFC Environmental Technologies IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
