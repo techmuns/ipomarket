@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-20T15:38:50.751Z",
+  "captured_at_utc": "2026-10-20T22:16:03.002Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 128835,
+      "bytes": 131182,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 154242,
+      "bytes": 154274,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
       "mode": "static",
       "status": 200,
-      "bytes": 251426,
+      "bytes": 249929,
       "title": "BLS Polymers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
       "mode": "static",
       "status": 200,
-      "bytes": 246629,
+      "bytes": 246630,
       "title": "SFC Environmental Technologies IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
