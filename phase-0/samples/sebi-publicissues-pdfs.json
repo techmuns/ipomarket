@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-21T08:39:04.687Z",
+  "captured_at_utc": "2026-10-21T16:14:32.799Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,14 +14,19 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 46870,
+      "bytes": 46850,
       "tr_count": 26,
       "pdfs_found": 20,
-      "notes": "static ok: tr=26, bytes=46870"
+      "notes": "static ok: tr=26, bytes=46850"
     }
   ],
   "detail_urls_found": 31,
   "pdfs": [
+    {
+      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Draft%20Abridged%20prospectus%20of%20Hunger%20Pangs%20Limited_p.pdf",
+      "link_text": "Hunger Pangs Limited - Draft Abridged Prospectus",
+      "source": "static-alt"
+    },
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Paramotor%20Digital%20Technology%20Limited_DAP_p.pdf",
       "link_text": "Paramotor Digital Technology Limited - Draft Abridged Prospectus(UDRHP-I)",
@@ -115,11 +120,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Tanvi%20Exports%20India%20Limited-%20%20draft%20abridged%20prospectus_p.pdf",
       "link_text": "Tanvi Exports India Limited - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/NNT%20DEVELOPERS%20LIMITED%20-%20%20Draft%20Abridged%20Prospectus_p.pdf",
-      "link_text": "NNT DEVELOPERS LIMITED - Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

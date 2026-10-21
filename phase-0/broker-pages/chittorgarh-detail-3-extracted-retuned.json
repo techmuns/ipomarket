@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/jio-platform-anchor-book.pdf"
   ],
-  "noise_stripped_bytes": 72158,
-  "main_content_bytes": 72158,
+  "noise_stripped_bytes": 71281,
+  "main_content_bytes": 71281,
   "tables_parsed": 12,
   "table_rows_parsed": 76
 }
