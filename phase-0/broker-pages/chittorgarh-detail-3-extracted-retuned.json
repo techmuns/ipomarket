@@ -1,72 +1,72 @@
 {
   "detail_index": 3,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-3-rendered-v2.html",
-  "source_url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
-  "slug": "tonbo-imaging-india-ipo",
+  "source_url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
+  "slug": "jio-platforms-ipo",
   "fields": {
     "company_name": {
-      "value": "Tonbo Imaging India IPO",
+      "value": "Jio Platforms IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "Tonbo Imaging India IPO"
+      "source_snippet": "Jio Platforms IPO"
     },
     "issue_size_cr": {
-      "value": "1,21,74,046 shares (agg. up to ₹ 852 Cr)",
+      "value": "27,00,00,000 shares (agg. up to ₹ 30,213 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,21,74,046 shares (agg. up to ₹ 852 Cr)"
+      "source_snippet": "27,00,00,000 shares (agg. up to ₹ 30,213 Cr)"
     },
     "price_band": {
-      "value": "₹665 to ₹700",
+      "value": "₹1065 to ₹1119",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹665 to ₹700"
+      "source_snippet": "₹1065 to ₹1119"
     },
     "lot_size": {
-      "value": "21 Shares",
+      "value": "12 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[5] label=\"Lot Size\"",
+      "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "21 Shares"
+      "source_snippet": "12 Shares"
     },
     "face_value": {
-      "value": "₹ 2 per share",
+      "value": "₹ 10 per share",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[2] label=\"Face Value\"",
       "why_missing": null,
-      "source_snippet": "₹ 2 per share"
+      "source_snippet": "₹ 10 per share"
     },
     "open_date": {
-      "value": "2026-10-15",
+      "value": "2026-10-21",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split start, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"15 to 19 Oct, 2026\" → start=2026-10-15"
+      "source_snippet": "raw=\"21 to 23 Oct, 2026\" → start=2026-10-21"
     },
     "close_date": {
-      "value": "2026-10-19",
+      "value": "2026-10-23",
       "found": true,
       "confidence": "medium",
       "method": "table[0].row[0] label=\"IPO Date\" (range-split end, year-inherited)",
       "why_missing": null,
-      "source_snippet": "raw=\"15 to 19 Oct, 2026\" → end=2026-10-19"
+      "source_snippet": "raw=\"21 to 23 Oct, 2026\" → end=2026-10-23"
     },
     "listing_date": {
-      "value": "2026-10-23",
+      "value": "2026-10-28",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\" iso-normalized",
       "why_missing": null,
-      "source_snippet": "raw=\"Fri, Oct 23, 2026 T\" → 2026-10-23"
+      "source_snippet": "raw=\"Wed, Oct 28, 2026 T\" → 2026-10-28"
     },
     "registrar": {
       "value": "Kfin Technologies Ltd.",
@@ -74,7 +74,7 @@
       "confidence": "medium",
       "method": "class=\"registrar-name\" anchor (Chittorgarh-specific, contact-tail trimmed)",
       "why_missing": null,
-      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 tonbo.ipo@kfintech.com <a hr\" → \"Kfin Technologies Ltd.\""
+      "source_snippet": "raw=\"Kfin Technologies Ltd. 040-79615565 jioplatforms.ipo@kfintech.com </\" → \"Kfin Technologies Ltd.\""
     },
     "brlms": {
       "value": null,
@@ -90,7 +90,7 @@
       "confidence": "low",
       "method": "href[*.pdf] scan; 1 found but all off-allowlist",
       "why_missing": "1 PDF link(s) found but none on the official allow-list",
-      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/tonbo-imaging-india-ipo-anchor-list.pdf"
+      "source_snippet": "https://www.chittorgarh.net/reports/anchor-investor/jio-platform-anchor-book.pdf"
     }
   },
   "found_count_full": 9,
@@ -99,10 +99,10 @@
   "precision_ratio_narrow": 1,
   "official_pdf_links_on_allowlist": [],
   "official_pdf_links_off_allowlist": [
-    "https://www.chittorgarh.net/reports/anchor-investor/tonbo-imaging-india-ipo-anchor-list.pdf"
+    "https://www.chittorgarh.net/reports/anchor-investor/jio-platform-anchor-book.pdf"
   ],
-  "noise_stripped_bytes": 76766,
-  "main_content_bytes": 76766,
-  "tables_parsed": 14,
-  "table_rows_parsed": 98
+  "noise_stripped_bytes": 72158,
+  "main_content_bytes": 72158,
+  "tables_parsed": 12,
+  "table_rows_parsed": 76
 }

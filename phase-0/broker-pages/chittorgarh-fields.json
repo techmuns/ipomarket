@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-20T22:16:03.002Z",
+  "captured_at_utc": "2026-10-21T08:39:04.687Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
       "mode": "static",
       "status": 200,
-      "bytes": 249929,
+      "bytes": 251426,
       "title": "BLS Polymers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
       "mode": "static",
       "status": 200,
-      "bytes": 246630,
+      "bytes": 268489,
       "title": "SFC Environmental Technologies IPO Date, Price, GMP, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-20T22:16:03.002Z",
+  "captured_at_utc": "2026-10-21T08:39:04.687Z",
   "phases": [
     {
       "phase": "static-primary",
@@ -14,10 +14,10 @@
       "phase": "static-alt",
       "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10",
       "status": 200,
-      "bytes": 47137,
+      "bytes": 46870,
       "tr_count": 26,
-      "pdfs_found": 21,
-      "notes": "static ok: tr=26, bytes=47137"
+      "pdfs_found": 20,
+      "notes": "static ok: tr=26, bytes=46870"
     }
   ],
   "detail_urls_found": 31,
@@ -120,11 +120,6 @@
     {
       "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/NNT%20DEVELOPERS%20LIMITED%20-%20%20Draft%20Abridged%20Prospectus_p.pdf",
       "link_text": "NNT DEVELOPERS LIMITED - Draft Abridged Prospectus",
-      "source": "static-alt"
-    },
-    {
-      "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/KATALINE%20LIMITED%20-%20DAP_p.pdf",
-      "link_text": "KATALINE LIMITED – Draft Abridged Prospectus",
       "source": "static-alt"
     }
   ]

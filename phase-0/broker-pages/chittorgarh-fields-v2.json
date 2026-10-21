@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-20T22:16:03.002Z",
+  "captured_at_utc": "2026-10-21T08:39:04.687Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -30,11 +30,11 @@
     "note": "robots.txt: detail paths ALLOWED for *; the Phase 6A.1.1 flag was an OVER-MATCH (loose p.startsWith('/ipo') hit an unrelated rule). /ipo/onemi-technology-ipo/2576/→allowed (no matching rule); /ipo/bagmane-reit/3090/→allowed (no matching rule); /ipo/m-r-maniveni-ipo/2627/→allowed (no matching rule)"
   },
   "third_ipo_selection": {
-    "slug": "tonbo-imaging-india-ipo",
-    "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
-    "status": "fallback",
-    "reason": "fallback (no current-open found): most-recently-listed end date \"15 - 19 Oct\" from list \"mainboard\"",
-    "date_text": "15 - 19 Oct",
+    "slug": "jio-platforms-ipo",
+    "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
+    "status": "current",
+    "reason": "current-open: list \"mainboard\" row date range \"21 - 23 Oct\" covers today",
+    "date_text": "21 - 23 Oct",
     "source_list": "mainboard"
   },
   "picked_detail_urls": [
@@ -50,8 +50,8 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
-      "slug": "tonbo-imaging-india-ipo"
+      "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
+      "slug": "jio-platforms-ipo"
     }
   ],
   "details": [
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 364544,
+      "bytes": 364464,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -79,11 +79,11 @@
     },
     {
       "index": 3,
-      "url": "https://www.chittorgarh.com/ipo/tonbo-imaging-india-ipo/3215/",
+      "url": "https://www.chittorgarh.com/ipo/jio-platforms-ipo/3152/",
       "mode": "static",
       "status": 200,
-      "bytes": 362818,
-      "title": "Tonbo Imaging India IPO Date, Price, GMP, Review, Details",
+      "bytes": 489966,
+      "title": "Jio Platforms IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

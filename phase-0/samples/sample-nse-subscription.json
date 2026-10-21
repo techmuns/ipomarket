@@ -9,9 +9,9 @@
     "status": "Active",
     "symbol": "PARASHLTH",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.2083331E7",
+    "noOfTime": "0.06877863397104655",
+    "noOfsharesBid": "831075.0",
     "srNo": null
   },
   {
@@ -24,9 +24,9 @@
     "status": "Active",
     "symbol": "JPL",
     "category": "Total",
-    "noOfSharesOffered": "0.0",
-    "noOfTime": "0.00",
-    "noOfsharesBid": "0.0",
+    "noOfSharesOffered": "1.97525934E8",
+    "noOfTime": "0.9324489006086664",
+    "noOfsharesBid": "1.8418284E8",
     "srNo": null
   }
 ]
