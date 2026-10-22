@@ -1,39 +1,39 @@
 {
   "detail_index": 1,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-1-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
+  "source_url": "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
   "fields": {
     "company_name": {
-      "value": "BLS Polymers IPO",
+      "value": "Bombay Coated & Special Steels IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "BLS Polymers IPO"
+      "source_snippet": "Bombay Coated & Special Steels IPO"
     },
     "issue_size_cr": {
-      "value": "1,70,00,000 shares (agg. up to ₹ 255 Cr)",
+      "value": "[.] shares (agg. up to ₹ 183 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "1,70,00,000 shares (agg. up to ₹ 255 Cr)"
+      "source_snippet": "[.] shares (agg. up to ₹ 183 Cr)"
     },
     "price_band": {
-      "value": "₹142 to ₹150",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[3] label=\"Price Band\"",
-      "why_missing": null,
-      "source_snippet": "₹142 to ₹150"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Price Band\" / \"Price Range\" / \"Price\"",
+      "source_snippet": null
     },
     "lot_size": {
-      "value": "100 Shares",
-      "found": true,
-      "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
-      "why_missing": null,
-      "source_snippet": "100 Shares"
+      "value": null,
+      "found": false,
+      "confidence": null,
+      "method": null,
+      "why_missing": "no table row whose label matches \"Lot Size\" / \"Market Lot\" / \"Minimum Order Quantity\"",
+      "source_snippet": null
     },
     "open_date": {
       "value": null,
@@ -52,12 +52,12 @@
       "source_snippet": null
     },
     "listing_date": {
-      "value": "Tue, Nov 3, 2026 T",
+      "value": "Thu, Nov 5, 2026 T",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[1] label=\"Listing Date\"",
       "why_missing": null,
-      "source_snippet": "Tue, Nov 3, 2026 T"
+      "source_snippet": "Thu, Nov 5, 2026 T"
     },
     "registrar": {
       "value": null,
@@ -78,18 +78,20 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": null,
-      "method": null,
-      "why_missing": "no .pdf href found in the captured HTML",
-      "source_snippet": null
+      "confidence": "low",
+      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
+      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
+      "source_snippet": "https://www.chittorgarh.net/reports/ipo_notes/bombay-coated-special-steels-ltd-rhp.pdf"
     }
   },
-  "found_count": 5,
-  "precision_ratio": 0.5,
+  "found_count": 3,
+  "precision_ratio": 0.3,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 61747,
-  "main_content_bytes": 61747,
-  "tables_parsed": 11,
-  "table_rows_parsed": 59
+  "official_pdf_links_off_allowlist": [
+    "https://www.chittorgarh.net/reports/ipo_notes/bombay-coated-special-steels-ltd-rhp.pdf"
+  ],
+  "noise_stripped_bytes": 63224,
+  "main_content_bytes": 63224,
+  "tables_parsed": 10,
+  "table_rows_parsed": 55
 }

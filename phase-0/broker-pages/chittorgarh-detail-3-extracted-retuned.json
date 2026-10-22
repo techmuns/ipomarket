@@ -32,7 +32,7 @@
       "value": "12 Shares",
       "found": true,
       "confidence": "high",
-      "method": "table[0].row[4] label=\"Lot Size\"",
+      "method": "table[0].row[5] label=\"Lot Size\"",
       "why_missing": null,
       "source_snippet": "12 Shares"
     },
@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/jio-platform-anchor-book.pdf"
   ],
-  "noise_stripped_bytes": 71281,
-  "main_content_bytes": 71281,
+  "noise_stripped_bytes": 71069,
+  "main_content_bytes": 71069,
   "tables_parsed": 12,
-  "table_rows_parsed": 76
+  "table_rows_parsed": 77
 }

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-21T22:18:08.605Z",
+  "captured_at_utc": "2026-10-22T08:44:12.987Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 132876,
+      "bytes": 131958,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 155968,
+      "bytes": 155932,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -28,6 +28,7 @@
     }
   ],
   "discovered_detail_urls": [
+    "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
     "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
     "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
     "https://www.chittorgarh.com/ipo/eaaa-india-alternatives-ipo/2061/",
@@ -46,40 +47,39 @@
     "https://www.chittorgarh.com/ipo/snapdeal-ipo/2543/",
     "https://www.chittorgarh.com/ipo/orient-cables-ipo/2532/",
     "https://www.chittorgarh.com/ipo/german-green-steel-and-power-ipo/2497/",
-    "https://www.chittorgarh.com/ipo/runwal-enterprises-ipo/2298/",
-    "https://www.chittorgarh.com/ipo/moneyview-ipo/2936/"
+    "https://www.chittorgarh.com/ipo/runwal-enterprises-ipo/2298/"
   ],
   "picked_detail_urls": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
+      "url": "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
       "segment_guess": "unknown"
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
+      "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
       "segment_guess": "unknown"
     }
   ],
   "details": [
     {
       "index": 1,
-      "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
+      "url": "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
       "mode": "static",
       "status": 200,
-      "bytes": 252760,
-      "title": "BLS Polymers IPO Date, Price, GMP, Review, Details",
+      "bytes": 260163,
+      "title": "Bombay Coated and Special Steels IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
+      "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
       "mode": "static",
       "status": 200,
-      "bytes": 269808,
-      "title": "SFC Environmental Technologies IPO Date, Price, GMP, Details",
+      "bytes": 252760,
+      "title": "BLS Polymers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null

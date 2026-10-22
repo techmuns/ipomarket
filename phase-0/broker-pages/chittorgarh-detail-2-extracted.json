@@ -1,39 +1,39 @@
 {
   "detail_index": 2,
   "source_html_path": "/home/runner/work/ipomarket/ipomarket/phase-0/broker-pages/chittorgarh-detail-2-rendered.html",
-  "source_url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
+  "source_url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
   "fields": {
     "company_name": {
-      "value": "SFC Environmental Technologies IPO",
+      "value": "BLS Polymers IPO",
       "found": true,
       "confidence": "high",
       "method": "h1-cleaned",
       "why_missing": null,
-      "source_snippet": "SFC Environmental Technologies IPO"
+      "source_snippet": "BLS Polymers IPO"
     },
     "issue_size_cr": {
-      "value": "2,02,28,204 shares (agg. up to ₹ 668 Cr)",
+      "value": "1,70,00,000 shares (agg. up to ₹ 255 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "2,02,28,204 shares (agg. up to ₹ 668 Cr)"
+      "source_snippet": "1,70,00,000 shares (agg. up to ₹ 255 Cr)"
     },
     "price_band": {
-      "value": "₹313 to ₹330",
+      "value": "₹142 to ₹150",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[3] label=\"Price Band\"",
       "why_missing": null,
-      "source_snippet": "₹313 to ₹330"
+      "source_snippet": "₹142 to ₹150"
     },
     "lot_size": {
-      "value": "45 Shares",
+      "value": "100 Shares",
       "found": true,
       "confidence": "high",
       "method": "table[0].row[4] label=\"Lot Size\"",
       "why_missing": null,
-      "source_snippet": "45 Shares"
+      "source_snippet": "100 Shares"
     },
     "open_date": {
       "value": null,
@@ -78,20 +78,18 @@
     "official_pdf_links": {
       "value": null,
       "found": false,
-      "confidence": "low",
-      "method": "href[*.pdf] scan; 1 found but all off-allowlist",
-      "why_missing": "1 PDF link(s) found but none on the official allow-list (sebi/nse/bse/bsesme)",
-      "source_snippet": "https://sfcenvironment.com/wp-content/uploads/2026/10/SFC-Environmental-Technologies-Ltd_RHP-1.pdf"
+      "confidence": null,
+      "method": null,
+      "why_missing": "no .pdf href found in the captured HTML",
+      "source_snippet": null
     }
   },
   "found_count": 5,
   "precision_ratio": 0.5,
   "official_pdf_links_on_allowlist": [],
-  "official_pdf_links_off_allowlist": [
-    "https://sfcenvironment.com/wp-content/uploads/2026/10/SFC-Environmental-Technologies-Ltd_RHP-1.pdf"
-  ],
-  "noise_stripped_bytes": 66378,
-  "main_content_bytes": 66378,
+  "official_pdf_links_off_allowlist": [],
+  "noise_stripped_bytes": 61747,
+  "main_content_bytes": 61747,
   "tables_parsed": 11,
-  "table_rows_parsed": 68
+  "table_rows_parsed": 59
 }
