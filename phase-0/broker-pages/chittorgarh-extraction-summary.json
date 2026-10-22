@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-22T08:44:12.987Z",
+  "generated_at_utc": "2026-10-22T15:52:24.414Z",
   "details_extracted": 2,
   "average_precision_ratio": 0.4,
   "per_detail": [
@@ -8,7 +8,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
       "found_count": 3,
       "precision_ratio": 0.3,
-      "main_content_bytes": 63224,
+      "main_content_bytes": 62945,
       "tables_parsed": 10,
       "table_rows_parsed": 55,
       "fields_high_confidence": [
@@ -36,7 +36,7 @@
       "source_url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
       "found_count": 5,
       "precision_ratio": 0.5,
-      "main_content_bytes": 61747,
+      "main_content_bytes": 61643,
       "tables_parsed": 11,
       "table_rows_parsed": 59,
       "fields_high_confidence": [

@@ -18,5 +18,35 @@
     "series": "EQ",
     "status": "Active",
     "symbol": "JPL"
+  },
+  {
+    "companyName": "BLS Polymers Limited",
+    "issueEndDate": "29-Oct-2026",
+    "issuePrice": "Rs.142 to Rs.150",
+    "issueSize": "17000000",
+    "issueStartDate": "27-Oct-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "BLSPOLY"
+  },
+  {
+    "companyName": "SFC Environmental Technologies Limited",
+    "issueEndDate": "29-Oct-2026",
+    "issuePrice": "Rs.313 to Rs.330",
+    "issueSize": "20475082",
+    "issueStartDate": "27-Oct-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "SFCTECH"
+  },
+  {
+    "companyName": "EAAA India Alternatives Limited",
+    "issueEndDate": "28-Oct-2026",
+    "issuePrice": "Rs.1585 to Rs.1665",
+    "issueSize": "7570977",
+    "issueStartDate": "26-Oct-2026",
+    "series": "EQ",
+    "status": "Forthcoming",
+    "symbol": "EDELALTS"
   }
 ]

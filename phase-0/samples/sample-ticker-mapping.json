@@ -1,8 +1,11 @@
 {
-  "total": 2,
-  "valid": 2,
+  "total": 5,
+  "valid": 5,
   "examples": {
     "Paras Healthcare Limited": "PARASHLTH",
-    "Jio Platforms Limited": "JPL"
+    "Jio Platforms Limited": "JPL",
+    "BLS Polymers Limited": "BLSPOLY",
+    "SFC Environmental Technologies Limited": "SFCTECH",
+    "EAAA India Alternatives Limited": "EDELALTS"
   }
 }
