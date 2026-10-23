@@ -12,12 +12,12 @@
       "source_snippet": "M.K.Sons Fine Jewels IPO"
     },
     "issue_size_cr": {
-      "value": "2,04,00,000 shares (agg. up to ₹ 330 Cr)",
+      "value": "1,70,00,000 shares (agg. up to ₹ 275 Cr)",
       "found": true,
       "confidence": "high",
       "method": "table[1].row[0] label=\"Total Issue Size\"",
       "why_missing": null,
-      "source_snippet": "2,04,00,000 shares (agg. up to ₹ 330 Cr)"
+      "source_snippet": "1,70,00,000 shares (agg. up to ₹ 275 Cr)"
     },
     "price_band": {
       "value": "₹153 to ₹162",
@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.afsl.co.in/pdfnew/Red%20Herring%20Prospectus.pdf"
   ],
-  "noise_stripped_bytes": 70858,
-  "main_content_bytes": 70858,
+  "noise_stripped_bytes": 71769,
+  "main_content_bytes": 71769,
   "tables_parsed": 12,
   "table_rows_parsed": 74
 }
