@@ -103,8 +103,8 @@
     "https://www.bseindia.com/corporates/download/378749/IPO%20Open/6RedHerringProspectussigned_20260427195413.pdf"
   ],
   "official_pdf_links_off_allowlist": [],
-  "noise_stripped_bytes": 86332,
-  "main_content_bytes": 86332,
+  "noise_stripped_bytes": 86326,
+  "main_content_bytes": 86326,
   "tables_parsed": 16,
   "table_rows_parsed": 109
 }

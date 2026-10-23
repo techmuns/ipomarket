@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-22T22:17:08.105Z",
+  "captured_at_utc": "2026-10-23T08:28:23.893Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 132617,
+      "bytes": 132612,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 155745,
+      "bytes": 154684,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -29,6 +29,7 @@
   ],
   "discovered_detail_urls": [
     "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
+    "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/3100/",
     "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
     "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
     "https://www.chittorgarh.com/ipo/eaaa-india-alternatives-ipo/2061/",
@@ -46,8 +47,7 @@
     "https://www.chittorgarh.com/ipo/shah-investors-home-ipo/2657/",
     "https://www.chittorgarh.com/ipo/snapdeal-ipo/2543/",
     "https://www.chittorgarh.com/ipo/orient-cables-ipo/2532/",
-    "https://www.chittorgarh.com/ipo/german-green-steel-and-power-ipo/2497/",
-    "https://www.chittorgarh.com/ipo/runwal-enterprises-ipo/2298/"
+    "https://www.chittorgarh.com/ipo/german-green-steel-and-power-ipo/2497/"
   ],
   "picked_detail_urls": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
+      "url": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/3100/",
       "segment_guess": "unknown"
     }
   ],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
       "mode": "static",
       "status": 200,
-      "bytes": 260059,
+      "bytes": 279051,
       "title": "Bombay Coated and Special Steels IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -75,11 +75,11 @@
     },
     {
       "index": 2,
-      "url": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/",
+      "url": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/3100/",
       "mode": "static",
       "status": 200,
-      "bytes": 252591,
-      "title": "BLS Polymers IPO Date, Price, GMP, Review, Details",
+      "bytes": 285284,
+      "title": "M.K.Sons Fine Jewels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
       "error": null
