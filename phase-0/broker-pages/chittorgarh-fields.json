@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-23T15:43:54.644Z",
+  "captured_at_utc": "2026-10-23T22:08:13.932Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 132609,
+      "bytes": 130892,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 155745,
+      "bytes": 155343,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -78,7 +78,7 @@
       "url": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/3100/",
       "mode": "static",
       "status": 200,
-      "bytes": 288872,
+      "bytes": 288932,
       "title": "M.K.Sons Fine Jewels IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

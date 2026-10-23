@@ -90,8 +90,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.afsl.co.in/pdfnew/Red%20Herring%20Prospectus.pdf"
   ],
-  "noise_stripped_bytes": 71769,
-  "main_content_bytes": 71769,
+  "noise_stripped_bytes": 71768,
+  "main_content_bytes": 71768,
   "tables_parsed": 12,
   "table_rows_parsed": 74
 }
