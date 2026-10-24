@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-23T22:08:13.932Z",
+  "captured_at_utc": "2026-10-24T08:03:28.317Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -19,7 +19,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme",
       "mode": "static",
       "status": 200,
-      "bytes": 155343,
+      "bytes": 155258,
       "title": "SME IPO Dashboard (SME IPO at BSE SME and NSE Emerge)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
       "mode": "static",
       "status": 200,
-      "bytes": 279101,
+      "bytes": 281309,
       "title": "Bombay Coated and Special Steels IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
