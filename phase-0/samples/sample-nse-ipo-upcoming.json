@@ -1,25 +1,5 @@
 [
   {
-    "companyName": "Paras Healthcare Limited",
-    "issueEndDate": "23-Oct-2026",
-    "issuePrice": "Rs.660 to Rs.693",
-    "issueSize": "12083331",
-    "issueStartDate": "21-Oct-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "PARASHLTH"
-  },
-  {
-    "companyName": "Jio Platforms Limited",
-    "issueEndDate": "23-Oct-2026",
-    "issuePrice": "Rs.1065 to Rs.1119",
-    "issueSize": "197525934",
-    "issueStartDate": "21-Oct-2026",
-    "series": "EQ",
-    "status": "Closed",
-    "symbol": "JPL"
-  },
-  {
     "companyName": "M. K. Sons Fine Jewels Limited",
     "issueEndDate": "30-Oct-2026",
     "issuePrice": "Rs.153 to Rs.162",
