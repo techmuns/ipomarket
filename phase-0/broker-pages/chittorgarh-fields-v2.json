@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-25T08:20:32.120Z",
+  "captured_at_utc": "2026-10-25T14:56:50.162Z",
   "robots_posture": {
     "fetched": true,
     "status": 200,
@@ -60,7 +60,7 @@
       "url": "https://www.chittorgarh.com/ipo/onemi-technology-ipo/2576/",
       "mode": "static",
       "status": 200,
-      "bytes": 354074,
+      "bytes": 353975,
       "title": "OnEMI Technology IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -71,7 +71,7 @@
       "url": "https://www.chittorgarh.com/ipo/bagmane-reit/3090/",
       "mode": "static",
       "status": 200,
-      "bytes": 285582,
+      "bytes": 284561,
       "title": "Bagmane REIT Date, Price, GMP, Review, Analysis &amp; Details",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -82,7 +82,7 @@
       "url": "https://www.chittorgarh.com/ipo/core4-engineers-ipo/2969/",
       "mode": "static",
       "status": 200,
-      "bytes": 332073,
+      "bytes": 330576,
       "title": "Core4 Engineers IPO Date, Price, GMP, Review, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-25T08:20:32.120Z",
+  "captured_at_utc": "2026-10-25T14:56:50.162Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
       "mode": "static",
       "status": 200,
-      "bytes": 281309,
+      "bytes": 279812,
       "title": "Bombay Coated and Special Steels IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

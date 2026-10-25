@@ -101,8 +101,8 @@
   "official_pdf_links_off_allowlist": [
     "https://www.chittorgarh.net/reports/anchor-investor/core4-engineers-anchor-book.pdf"
   ],
-  "noise_stripped_bytes": 83118,
-  "main_content_bytes": 83118,
+  "noise_stripped_bytes": 82943,
+  "main_content_bytes": 82943,
   "tables_parsed": 13,
   "table_rows_parsed": 93
 }
