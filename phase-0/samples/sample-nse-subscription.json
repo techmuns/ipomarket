@@ -1,32 +1,17 @@
 [
   {
-    "companyName": "Paras Healthcare Limited",
-    "issueEndDate": "23-Oct-2026",
-    "issuePrice": "Rs.660 to Rs.693",
-    "issueSize": "12083331",
-    "issueStartDate": "21-Oct-2026",
+    "companyName": "EAAA India Alternatives Limited",
+    "issueEndDate": "28-Oct-2026",
+    "issuePrice": "Rs.1585 to Rs.1665",
+    "issueSize": "5299684",
+    "issueStartDate": "26-Oct-2026",
     "series": "EQ",
     "status": "Active",
-    "symbol": "PARASHLTH",
+    "symbol": "EDELALTS",
     "category": "Total",
-    "noOfSharesOffered": "1.2083331E7",
-    "noOfTime": "1.9150717629104095",
-    "noOfsharesBid": "2.3140446E7",
-    "srNo": null
-  },
-  {
-    "companyName": "Jio Platforms Limited",
-    "issueEndDate": "23-Oct-2026",
-    "issuePrice": "Rs.1065 to Rs.1119",
-    "issueSize": "197525934",
-    "issueStartDate": "21-Oct-2026",
-    "series": "EQ",
-    "status": "Active",
-    "symbol": "JPL",
-    "category": "Total",
-    "noOfSharesOffered": "1.97525934E8",
-    "noOfTime": "12.453487105141344",
-    "noOfsharesBid": "2.459886672E9",
+    "noOfSharesOffered": "0.0",
+    "noOfTime": "0.00",
+    "noOfsharesBid": "0.0",
     "srNo": null
   }
 ]

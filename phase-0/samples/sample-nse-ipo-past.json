@@ -1,5 +1,15 @@
 [
   {
+    "companyName": "EAAA India Alternatives Limited",
+    "issueEndDate": "28-Oct-2026",
+    "issuePrice": "Rs.1585 to Rs.1665",
+    "issueSize": "5299684",
+    "issueStartDate": "26-Oct-2026",
+    "series": "EQ",
+    "status": "Active",
+    "symbol": "EDELALTS"
+  },
+  {
     "companyName": "M. K. Sons Fine Jewels Limited",
     "issueEndDate": "30-Oct-2026",
     "issuePrice": "Rs.153 to Rs.162",
@@ -8,16 +18,6 @@
     "series": "EQ",
     "status": "Forthcoming",
     "symbol": "MKSONS"
-  },
-  {
-    "companyName": "SFC Environmental Technologies Limited",
-    "issueEndDate": "29-Oct-2026",
-    "issuePrice": "Rs.313 to Rs.330",
-    "issueSize": "20475082",
-    "issueStartDate": "27-Oct-2026",
-    "series": "EQ",
-    "status": "Forthcoming",
-    "symbol": "SFCTECH"
   },
   {
     "companyName": "BLS Polymers Limited",
@@ -30,13 +30,13 @@
     "symbol": "BLSPOLY"
   },
   {
-    "companyName": "EAAA India Alternatives Limited",
-    "issueEndDate": "28-Oct-2026",
-    "issuePrice": "Rs.1585 to Rs.1665",
-    "issueSize": "5299684",
-    "issueStartDate": "26-Oct-2026",
+    "companyName": "SFC Environmental Technologies Limited",
+    "issueEndDate": "29-Oct-2026",
+    "issuePrice": "Rs.313 to Rs.330",
+    "issueSize": "20475082",
+    "issueStartDate": "27-Oct-2026",
     "series": "EQ",
     "status": "Forthcoming",
-    "symbol": "EDELALTS"
+    "symbol": "SFCTECH"
   }
 ]

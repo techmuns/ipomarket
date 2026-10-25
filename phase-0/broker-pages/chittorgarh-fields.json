@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-10-25T14:56:50.162Z",
+  "captured_at_utc": "2026-10-25T21:43:41.258Z",
   "detail_discovery_source": "static",
   "dashboards": [
     {
@@ -7,7 +7,7 @@
       "url": "https://www.chittorgarh.com/ipo/ipo_dashboard.asp",
       "mode": "static",
       "status": 200,
-      "bytes": 130892,
+      "bytes": 131308,
       "title": "Mainboard IPO Dashboard (Main board IPO at BSE and NSE)",
       "challenge_detected": false,
       "challenge_reasons": [],
@@ -67,7 +67,7 @@
       "url": "https://www.chittorgarh.com/ipo/bombay-coated-and-special-steels-ipo/2671/",
       "mode": "static",
       "status": 200,
-      "bytes": 279812,
+      "bytes": 281309,
       "title": "Bombay Coated and Special Steels IPO Date, Details",
       "challenge_detected": false,
       "challenge_reasons": [],

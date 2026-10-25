@@ -2,9 +2,9 @@
   "total": 4,
   "valid": 4,
   "examples": {
+    "EAAA India Alternatives Limited": "EDELALTS",
     "M. K. Sons Fine Jewels Limited": "MKSONS",
-    "SFC Environmental Technologies Limited": "SFCTECH",
     "BLS Polymers Limited": "BLSPOLY",
-    "EAAA India Alternatives Limited": "EDELALTS"
+    "SFC Environmental Technologies Limited": "SFCTECH"
   }
 }
